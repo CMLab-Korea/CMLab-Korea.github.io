@@ -29,6 +29,30 @@ jobs:
             python -m playwright install chromium
             python scripts/collect_cmlab_sources.py --output capture
           fi
+      - name: Summarize captured public data
+        if: always()
+        run: |
+          python - <<'PYTHON'
+          import base64
+          import gzip
+          import json
+          import os
+          import textwrap
+          from pathlib import Path
+
+          files = {p.stem: json.loads(p.read_text()) for p in Path("capture").glob("*.json")}
+          if not files:
+              raise SystemExit(0)
+          payload = base64.b64encode(gzip.compress(json.dumps(files).encode())).decode()
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
+              summary.write("## Public CMLab source records\n\n")
+              for name, record in files.items():
+                  if name != "failures":
+                      summary.write(f"- {name}: {len(record['links'])} links and {len(record['media'])} media references\n")
+              if len(payload) < 900000:
+                  summary.write("\n<details><summary>JSON records (gzip and Base64)</summary>\n\n")
+                  summary.write("```text\n" + "\n".join(textwrap.wrap(payload, 100)) + "\n```\n\n</details>\n")
+          PYTHON
       - uses: actions/upload-artifact@v4
         if: always()
         with:
