@@ -9,7 +9,7 @@ on:
       - scripts/collect_cmlab_sources.py
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   capture:
@@ -29,33 +29,18 @@ jobs:
             python -m playwright install chromium
             python scripts/collect_cmlab_sources.py --output capture
           fi
-      - name: Summarize captured public data
-        if: always()
-        run: |
-          python - <<'PYTHON'
-          import base64
-          import gzip
-          import json
-          import os
-          import textwrap
-          from pathlib import Path
-
-          files = {p.stem: json.loads(p.read_text()) for p in Path("capture").glob("*.json")}
-          if not files:
-              raise SystemExit(0)
-          payload = base64.b64encode(gzip.compress(json.dumps(files).encode())).decode()
-          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
-              summary.write("## Public CMLab source records\n\n")
-              for name, record in files.items():
-                  if name != "failures":
-                      summary.write(f"- {name}: {len(record['links'])} links and {len(record['media'])} media references\n")
-              if len(payload) < 900000:
-                  summary.write("\n<details><summary>JSON records (gzip and Base64)</summary>\n\n")
-                  summary.write("```text\n" + "\n".join(textwrap.wrap(payload, 100)) + "\n```\n\n</details>\n")
-          PYTHON
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cmlab-legacy-sources
           path: capture/
           retention-days: 7
+      - name: Store reviewed-source inputs on the capture branch
+        if: success() && github.ref == 'refs/heads/codex/cmlab-v1-1-preview'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f capture/*.json
+          tree="$(git write-tree)"
+          commit="$(git commit-tree "$tree" -p HEAD -m "Capture public CMLab source records")"
+          git push origin "$commit:refs/heads/codex/cmlab-source-capture"
