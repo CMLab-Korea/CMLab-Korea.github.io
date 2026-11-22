@@ -118,7 +118,8 @@
     "teaser_video_label": "MoRel dynamic bicycle reconstruction demo",
     "cmlab_lead_authors": [
       "Weeyoung Kwon"
-    ]
+    ],
+    "featured_order": 1
   },
   {
     "id": 7,
@@ -141,7 +142,8 @@
     "code_url": "https://github.com/CMLab-Korea/CVPR26-FRAMER",
     "cmlab_lead_authors": [
       "Seungho Choi"
-    ]
+    ],
+    "featured_order": 2
   },
   {
     "id": 8,
@@ -527,7 +529,8 @@
       "Dahyeon Kye",
       "Jeahun Sung"
     ],
-    "teaser_alt": "CHIMERA overview comparing image morphing quality and efficiency"
+    "teaser_alt": "CHIMERA overview comparing image morphing quality and efficiency",
+    "featured_order": 4
   },
   {
     "id": 30,
@@ -562,12 +565,13 @@
     "authors": "Seungho Choi, Jihyong Oh†",
     "affiliations": [],
     "metadata_reviewed": false,
-    "teaser_alt": "A street scene restored by DiTTo",
+    "teaser_alt": "DiTTo restoration result showing a butterfly",
     "project_url": "https://cmlab-korea.github.io/DiTTo/",
     "code_url": "https://github.com/CMLab-Korea/DiTTo-arxiv",
     "cmlab_lead_authors": [
       "Seungho Choi"
-    ]
+    ],
+    "featured_order": 3
   },
   {
     "id": 32,

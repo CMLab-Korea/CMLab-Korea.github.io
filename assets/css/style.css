@@ -20,3 +20,46 @@
 .collaborators-section>h2{margin-top:25px}.collaborator-grid{display:grid;gap:15px}.collaborator-group-heading{color:#91b2f4;font-size:.85rem;letter-spacing:.15em;text-transform:uppercase;margin:27px 0 2px}.collab-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.collab-card{display:flex;align-items:center;gap:13px;padding:20px;border:1px solid rgba(150,180,246,.18);border-radius:18px;background:#0e1933;transition:transform .2s,border-color .2s}.collab-card:hover{transform:translateY(-3px);border-color:#5c81d0}.collab-badge{display:grid;place-items:center;flex:none;width:50px;height:50px;border-radius:12px;background:#203f87;color:#dce8ff;font-size:.9rem;font-weight:850}.collab-content{display:flex;flex-direction:column;gap:3px;min-width:0}.collab-content strong{font-size:.86rem}.collab-person{font-size:.73rem;color:#c4d4f3}.collab-content small{font-size:.65rem;color:#869bc1}.collab-work{font-size:.65rem;color:#91aaf2;line-height:1.4;margin-top:2px}.collab-arrow{margin-left:auto;color:#a0b9ee}
 @media(max-width:960px){.rich-paper{grid-template-columns:92px 160px minmax(0,1fr)!important;gap:14px!important}.collab-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.rich-paper{grid-template-columns:85px minmax(0,1fr)!important;gap:10px 14px!important}.paper-teaser{grid-column:2;grid-row:1}.venue-column{grid-column:1;grid-row:1}.paper-rich-body{grid-column:1/-1}.collab-cards{grid-template-columns:1fr}.collab-card{padding:16px}}
+
+/* Home illustrations, selected publications and updates */
+.home-icon-library{position:absolute;width:0;height:0;overflow:hidden}
+.home-icon{fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.stat-symbol.home-icon{width:25px;height:25px}
+.scene-chip .home-icon{display:block;width:23px;height:23px;margin:0 auto 5px}
+.area-emblem{position:absolute;top:48px;right:22px;width:clamp(60px,7vw,102px);aspect-ratio:1;color:#9ebcff;filter:drop-shadow(0 0 14px #537fff66);pointer-events:none}
+.area-emblem.motion{color:#9ccfff}
+.area-emblem.world{color:#a9bcff}
+.area-emblem.agent{color:#c5afff}
+body[data-page="home"] .area-card{min-height:330px}
+body[data-page="home"] .area-top{margin-bottom:112px}
+@media (prefers-reduced-motion:no-preference){
+  body[data-page="home"] .area-card:is(:hover,:focus-visible) .area-emblem{animation:area-lift .45s ease both}
+  @keyframes area-lift{50%{transform:translateY(-6px) scale(1.05)}}
+}
+#featured-work{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+#featured-work .feature-card{padding:12px 12px 16px;background:#10182b;border:1px solid var(--line);border-radius:14px}
+#featured-work .feature-card:is(:hover,:focus-visible){border-color:#6d99ff}
+.feature-poster{display:block;width:100%;aspect-ratio:2 / 1;object-fit:contain;border-radius:8px;background:#080e1c}
+#featured-work .feature-name{font-size:1.3rem;line-height:1.2;margin:12px 0 4px}
+.feature-venue{color:#a7baff;font-size:.72rem;margin:0 0 8px}
+.feature-title{color:#b7c6e3;font-size:.82rem;line-height:1.45;margin:0;overflow-wrap:anywhere}
+.news-filters:not(:empty){display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.news-filter,.news-category{font-size:.76rem;color:#b4caff;background:#101b34;border:1px solid var(--line);border-radius:6px;padding:4px 8px}
+.news-filter{cursor:pointer;font:inherit;font-size:.85rem}
+.news-filter[aria-pressed="true"]{border-color:#8eaaff;color:#f0f5ff;background:#203b70}
+.news-year{margin:24px 0 0}
+.news-year-list{list-style:none;padding:0;margin:0}
+.news-year-list .news-item{grid-template-columns:52px max-content 1fr;gap:12px;padding:14px 0}
+.news-year-list .news-category{font-size:.76rem}
+.news-headline{margin:0;line-height:1.45}
+.news-more{margin-top:22px}
+.news-more[hidden]{display:none}
+@media(max-width:900px){
+  #featured-work{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:480px){
+  #featured-work{gap:10px}
+  #featured-work .feature-card{padding:8px}
+  .news-year-list .news-item{grid-template-columns:38px max-content 1fr;gap:8px}
+  .news-headline{font-size:.85rem}
+}

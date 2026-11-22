@@ -73,13 +73,90 @@
   function safeURL(value) {try{const u=new URL(value,location.href);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}}
 
   if (page==='home') {
-    getData('news.json').then(items=>{
-      const target=$('#news-list'); if(!target) return;target.replaceChildren();
-      items.slice(0,4).forEach(x=>{
-        const a=node('a','news-item');a.href=safeURL(x.link);a.target='_blank';a.rel='noopener noreferrer';
-        const d=node('time','',x.date);const text=node('span','',x.headline);const arrow=node('b','','↗');a.append(d,text,arrow);target.appendChild(a);
+    const featured = $('#featured-work');
+    getData('publications.json').then(items => {
+      const papers = items.filter(p => Number.isInteger(p.featured_order) && p.featured_order > 0)
+        .sort((a, b) => a.featured_order - b.featured_order).slice(0, 4);
+      featured.replaceChildren(...papers.map(paper => {
+        const card = node('a', 'feature-card');
+        card.href = safeURL(paper.project_url || paper.url);
+        card.target = '_blank';
+        card.rel = 'noopener noreferrer';
+        if (paper.teaser) {
+          const image = node('img', 'feature-poster');
+          image.src = paper.teaser;
+          image.alt = paper.teaser_alt || '';
+          image.loading = 'lazy';
+          card.append(image);
+        }
+        card.append(
+          node('h3', 'feature-name', paper.short),
+          node('p', 'feature-venue', paper.type === 'Preprint' ? 'Preprint' : `${paper.venue} · ${paper.year}`),
+          node('p', 'feature-title', paper.title)
+        );
+        return card;
+      }));
+      featured.closest('section').hidden = papers.length === 0;
+    }).catch(() => { featured.textContent = 'Selected work is temporarily unavailable.'; });
+
+    const news = $('#news-list');
+    const filters = $('#news-filters');
+    const more = $('#news-more');
+    const initialNewsCount = 10;
+    getData('news.json').then(items => {
+      const entries = [...items].sort((a, b) => b.date.localeCompare(a.date));
+      const categories = ['All', ...new Set(entries.map(item => item.category))];
+      const dateLabel = new Intl.DateTimeFormat('en', {month: 'short', timeZone: 'UTC'});
+      let selection = 'All';
+      let expanded = false;
+
+      function renderNews() {
+        const matches = entries.filter(item => selection === 'All' || item.category === selection);
+        const visible = expanded ? matches : matches.slice(0, initialNewsCount);
+        news.replaceChildren();
+        let currentYear;
+        let list;
+        for (const entry of visible) {
+          const [year, month] = entry.date.split('-');
+          if (year !== currentYear) {
+            currentYear = year;
+            list = node('ul', 'news-year-list');
+            news.append(node('h3', 'news-year', year), list);
+          }
+          const item = node('li', 'news-item');
+          const time = node('time', '', dateLabel.format(new Date(Date.UTC(Number(year), Number(month) - 1, 1))));
+          time.dateTime = entry.date;
+          const category = node('span', 'news-category', entry.category);
+          item.append(time, category, node('p', 'news-headline', entry.headline));
+          list.append(item);
+        }
+        if (!visible.length) news.append(node('p', 'muted', 'No updates yet.'));
+        more.hidden = matches.length <= initialNewsCount;
+        more.setAttribute('aria-expanded', String(expanded));
+        more.textContent = expanded ? 'Show fewer updates' : `Show all ${matches.length} updates`;
+        for (const button of filters.querySelectorAll('button')) {
+          button.setAttribute('aria-pressed', String(button.textContent === selection));
+        }
+      }
+
+      if (categories.length > 2) {
+        for (const category of categories) {
+          const button = node('button', 'news-filter', category);
+          button.type = 'button';
+          button.addEventListener('click', () => {
+            selection = category;
+            expanded = false;
+            renderNews();
+          });
+          filters.append(button);
+        }
+      }
+      more.addEventListener('click', () => {
+        expanded = !expanded;
+        renderNews();
       });
-    }).catch(()=>{const target=$('#news-list');if(target)target.textContent='Visit the original CMLab site for recent news.'});
+      renderNews();
+    }).catch(() => { news.textContent = 'Research updates are temporarily unavailable.'; });
 
     const canvas=$('#particle-canvas');
     if (canvas && !matchMedia('(prefers-reduced-motion: reduce)').matches) {

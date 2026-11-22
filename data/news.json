@@ -1,22 +1,26 @@
 [
   {
-    "date": "2026.09",
+    "date": "2026-09",
     "headline": "MotionGrounder accepted at NeurIPS 2026.",
-    "link": "https://cmlab.cau.ac.kr/"
+    "category": "Publication",
+    "source_url": "https://cmlab.cau.ac.kr/"
   },
   {
-    "date": "2026.08",
+    "date": "2026-08",
     "headline": "PRIMEdit published in IEEE TPAMI.",
-    "link": "https://kaist-viclab.github.io/primedit-site/"
+    "category": "Publication",
+    "source_url": "https://kaist-viclab.github.io/primedit-site/"
   },
   {
-    "date": "2026.04",
+    "date": "2026-04",
     "headline": "MoRel and EcoSplat selected as CVPR 2026 Highlights.",
-    "link": "https://cmlab-korea.github.io/MoRel/"
+    "category": "Publication",
+    "source_url": "https://cmlab-korea.github.io/MoRel/"
   },
   {
-    "date": "2026.02",
+    "date": "2026-02",
     "headline": "Four papers accepted at CVPR 2026, including Findings.",
-    "link": "https://cmlab.cau.ac.kr/publications"
+    "category": "Publication",
+    "source_url": "https://cmlab.cau.ac.kr/publications"
   }
 ]
