@@ -1,0 +1,220 @@
+{
+  "title": "CMLab@CAU - Publications",
+  "sections": [
+    {
+      "tag": "h2",
+      "text": "Preprints / Under Review (*: equal contribution, †: corresponding author, 🤝 external/industry collaboration)",
+      "links": [
+        {
+          "label": "Copy heading link",
+          "href": "#h.ugoo1u2ta1eb",
+          "url": "https://cmlab.cau.ac.kr/publications#h.ugoo1u2ta1eb"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "Copy heading link",
+      "href": "#h.ugoo1u2ta1eb",
+      "url": "https://cmlab.cau.ac.kr/publications#h.ugoo1u2ta1eb"
+    }
+  ],
+  "media": [],
+  "publication_candidates": [
+    {
+      "id": 1,
+      "title": "Grounded Multi-Object Motion Transfer via Diffusion Transformer",
+      "review": "Title match needed"
+    },
+    {
+      "id": 2,
+      "title": "Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset",
+      "review": "Title match needed"
+    },
+    {
+      "id": 3,
+      "title": "Motion- and Exposure-Aware Joint Video Super-Resolution and Deblurring",
+      "review": "Title match needed"
+    },
+    {
+      "id": 4,
+      "title": "Scale-Agnostic Diffusion Priors for Temporally Consistent Arbitrary-Scale Video Super-Resolution",
+      "review": "Title match needed"
+    },
+    {
+      "id": 5,
+      "title": "A Comprehensive Survey of Advances in Video Frame Interpolation",
+      "review": "Title match needed"
+    },
+    {
+      "id": 6,
+      "title": "Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification",
+      "review": "Title match needed"
+    },
+    {
+      "id": 7,
+      "title": "Frequency-Aligned Self-Distillation with Adaptive Modulation Leveraging Diffusion Priors for Real-World Image Super-Resolution",
+      "review": "Title match needed"
+    },
+    {
+      "id": 8,
+      "title": "Efficiency-controllable Feed-forward 3D Gaussian Splatting from Multi-view Images",
+      "review": "Title match needed"
+    },
+    {
+      "id": 9,
+      "title": "Frequency- and Locality-Aware Implicit Neural Representations",
+      "review": "Title match needed"
+    },
+    {
+      "id": 10,
+      "title": "A Training-Free Generalist for Controllable Text-Image Manipulation",
+      "review": "Title match needed"
+    },
+    {
+      "id": 11,
+      "title": "Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing",
+      "review": "Title match needed"
+    },
+    {
+      "id": 12,
+      "title": "Motion Deblurring Dynamic 3D Gaussian Splatting for Blurry Monocular Video",
+      "review": "Title match needed"
+    },
+    {
+      "id": 13,
+      "title": "Iterative Implicit Neural Representations",
+      "review": "Title match needed"
+    },
+    {
+      "id": 14,
+      "title": "Arbitrary-Scale Image Super-Resolution via Sobolev Fourier Neural Operator",
+      "review": "Title match needed"
+    },
+    {
+      "id": 15,
+      "title": "Leveraging Prior Knowledge of Diffusion Model for Person Search",
+      "review": "Title match needed"
+    },
+    {
+      "id": 16,
+      "title": "Motion Deblurring Neural Radiance Fields for Blurry Monocular Video",
+      "review": "Title match needed"
+    },
+    {
+      "id": 17,
+      "title": "A Survey Towards Domain-Agnostic Person Matching",
+      "review": "Title match needed"
+    },
+    {
+      "id": 18,
+      "title": "Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video",
+      "review": "Title match needed"
+    },
+    {
+      "id": 19,
+      "title": "Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting",
+      "review": "Title match needed"
+    },
+    {
+      "id": 20,
+      "title": "Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions",
+      "review": "Title match needed"
+    },
+    {
+      "id": 21,
+      "title": "Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring",
+      "review": "Title match needed"
+    },
+    {
+      "id": 22,
+      "title": "Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting",
+      "review": "Title match needed"
+    },
+    {
+      "id": 23,
+      "title": "eXtreme Video Frame Interpolation",
+      "review": "Title match needed"
+    },
+    {
+      "id": 24,
+      "title": "A GAN-based Multi-Task Learning Method for SAR Target Image Generation with a Pose Estimator and an Auxiliary Classifier",
+      "review": "Title match needed"
+    },
+    {
+      "id": 25,
+      "title": "A CNN-based SAR Target Recognition Network with Pose Angle Marginalization Learning",
+      "review": "Title match needed"
+    },
+    {
+      "id": 26,
+      "title": "Deep Joint Frame Interpolation and Super-Resolution with a Multi-Scale Temporal Loss",
+      "review": "Title match needed"
+    },
+    {
+      "id": 27,
+      "title": "GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video",
+      "review": "Title match needed"
+    },
+    {
+      "id": 28,
+      "title": "Joint Learning of Super-Resolution and Inverse Tone-Mapping for 4K UHD HDR Applications",
+      "review": "Title match needed"
+    },
+    {
+      "id": 29,
+      "title": "Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metrics",
+      "review": "Title match needed"
+    },
+    {
+      "id": 30,
+      "title": "GT-Free and Plug-and-Play Test-Time Adaptation for Geometrically Consistent 3D Vision Foundation Models",
+      "review": "Title match needed"
+    },
+    {
+      "id": 31,
+      "title": "Scalable Order-aware All-in-One Image Restoration Agent",
+      "review": "Title match needed"
+    },
+    {
+      "id": 32,
+      "title": "Style-Content Disentangled Framework for Cross-Domain Object Compositing",
+      "review": "Title match needed"
+    },
+    {
+      "id": 33,
+      "title": "Reference-guided Super-Resolution and Refinement of AI Generated Content",
+      "review": "Title match needed"
+    },
+    {
+      "id": 34,
+      "title": "Semantic-aware Single-image Sticker Personalization with a Large-scale Sticker-tag Dataset",
+      "review": "Title match needed"
+    },
+    {
+      "id": 35,
+      "title": "Survey of Compactness and Compression for Efficient Static and Dynamic Gaussian Splatting",
+      "review": "Title match needed"
+    },
+    {
+      "id": 36,
+      "title": "Coupled Relightable 3D Gaussians and SDFs for Efficient Normal Alignment",
+      "review": "Title match needed"
+    },
+    {
+      "id": 37,
+      "title": "Training-free Style Control and Style Fidelity Metric for Text-Image Manipulation",
+      "review": "Title match needed"
+    },
+    {
+      "id": 38,
+      "title": "A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision",
+      "review": "Title match needed"
+    }
+  ],
+  "dated_entries": [],
+  "source_url": "https://cmlab.cau.ac.kr/publications",
+  "capture_method": "Playwright Chromium",
+  "frames": []
+}

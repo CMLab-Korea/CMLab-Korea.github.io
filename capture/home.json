@@ -1,0 +1,188 @@
+{
+  "title": "CMLab@CAU",
+  "sections": [
+    {
+      "tag": "h2",
+      "text": "Research Area",
+      "links": [
+        {
+          "label": "Copy heading link",
+          "href": "#h.1bor9x1h3wlf",
+          "url": "https://cmlab.cau.ac.kr/#h.1bor9x1h3wlf"
+        }
+      ]
+    },
+    {
+      "tag": "li",
+      "text": "✨ Pixel-Level Intelligence All-in-One Restoration / Super-Resolution / Deblurring / Demoiréing / AIGC refinement, etc.",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "✨ Pixel-Level Intelligence",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "All-in-One Restoration / Super-Resolution / Deblurring / Demoiréing / AIGC refinement, etc.",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "All-in-One Restoration / Super-Resolution / Deblurring / Demoiréing / AIGC refinement, etc.",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "🎞️ Video & Motion Intelligence Motion Modeling / Video Restoration / Frame Interpolation / Temporally Consistent Generation, etc.",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "🎞️ Video & Motion Intelligence",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "Motion Modeling / Video Restoration / Frame Interpolation / Temporally Consistent Generation, etc.",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "Motion Modeling / Video Restoration / Frame Interpolation / Temporally Consistent Generation, etc.",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "🌐 3D/4D World Representation Physical World Model / Dynamic 4D scenes / Gaussian Splatting / NeRF / Novel View Synthesis / Neural Rendering, etc.",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "🌐 3D/4D World Representation",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "Physical World Model / Dynamic 4D scenes / Gaussian Splatting / NeRF / Novel View Synthesis / Neural Rendering, etc.",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "Physical World Model / Dynamic 4D scenes / Gaussian Splatting / NeRF / Novel View Synthesis / Neural Rendering, etc.",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "🤖 Generative / Agentic Visual AI Multimodal Editing / Compositing / Personalization / Controllable Generation / Agentic Visual Systems, etc.",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "🤖 Generative / Agentic Visual AI",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "Multimodal Editing / Compositing / Personalization / Controllable Generation / Agentic Visual Systems, etc.",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "Multimodal Editing / Compositing / Personalization / Controllable Generation / Agentic Visual Systems, etc.",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "🏗️ Real-World AI Systems & Industry Translation Industry-driven Visual AI / Product-oriented Research / Multimedia Applications CAIO @ inshorts",
+      "links": [
+        {
+          "label": "inshorts",
+          "href": "https://www.inshorts.ai/en",
+          "url": "https://www.inshorts.ai/en"
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "text": "🏗️ Real-World AI Systems & Industry Translation",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "Industry-driven Visual AI / Product-oriented Research / Multimedia Applications",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "Industry-driven Visual AI / Product-oriented Research / Multimedia Applications",
+      "links": []
+    },
+    {
+      "tag": "li",
+      "text": "CAIO @ inshorts",
+      "links": [
+        {
+          "label": "inshorts",
+          "href": "https://www.inshorts.ai/en",
+          "url": "https://www.inshorts.ai/en"
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "text": "CAIO @ inshorts",
+      "links": [
+        {
+          "label": "inshorts",
+          "href": "https://www.inshorts.ai/en",
+          "url": "https://www.inshorts.ai/en"
+        }
+      ]
+    },
+    {
+      "tag": "p",
+      "text": "But not limited to.",
+      "links": []
+    },
+    {
+      "tag": "p",
+      "text": "For more details, please visit: https://cmlab.cau.ac.kr/publications.",
+      "links": [
+        {
+          "label": "https://cmlab.cau.ac.kr/publications",
+          "href": "https://cmlab.cau.ac.kr/publications",
+          "url": "https://cmlab.cau.ac.kr/publications"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "Copy heading link",
+      "href": "#h.1bor9x1h3wlf",
+      "url": "https://cmlab.cau.ac.kr/#h.1bor9x1h3wlf"
+    },
+    {
+      "label": "inshorts",
+      "href": "https://www.inshorts.ai/en",
+      "url": "https://www.inshorts.ai/en"
+    },
+    {
+      "label": "https://cmlab.cau.ac.kr/publications",
+      "href": "https://cmlab.cau.ac.kr/publications",
+      "url": "https://cmlab.cau.ac.kr/publications"
+    }
+  ],
+  "media": [],
+  "publication_candidates": [],
+  "dated_entries": [],
+  "source_url": "https://cmlab.cau.ac.kr/",
+  "capture_method": "Playwright Chromium",
+  "frames": [
+    {
+      "url": "https://drive.google.com/auth_warmup",
+      "error": "Frame.evaluate: Frame was detached"
+    }
+  ]
+}
