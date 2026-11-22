@@ -1,0 +1,48 @@
+#venue-metrics {
+  margin: 1rem 0 1.5rem;
+  border-block: 1px solid var(--line);
+}
+#venue-metrics summary {
+  padding: .9rem .25rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+#venue-metrics summary span {
+  margin-inline-start: .5rem;
+  color: var(--muted);
+  font-size: .8rem;
+  font-weight: 500;
+}
+#venue-metrics summary:focus-visible {
+  outline: 2px solid var(--highlight, var(--ice));
+  outline-offset: 2px;
+}
+.venue-metrics-content {
+  max-width: 44rem;
+  padding: 0 .25rem 1.25rem;
+}
+.venue-metrics-content p {
+  color: var(--muted);
+  font-size: .875rem;
+}
+.venue-metrics-content a {
+  color: var(--highlight, var(--ice));
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+.venue-metrics-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .875rem;
+  font-variant-numeric: tabular-nums;
+}
+.venue-metrics-content :is(th, td) {
+  padding: .4rem .25rem;
+  text-align: left;
+}
+.venue-metrics-content tr {
+  border-bottom: 1px solid var(--line);
+}
+.venue-metrics-content :is(th, td):nth-last-child(-n+2) {
+  text-align: right;
+}

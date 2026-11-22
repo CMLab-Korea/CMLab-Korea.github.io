@@ -1,6 +1,6 @@
 # v1.1 preview review — 2026-11-22
 
-The imported archive is the working snapshot for review. The direct comparison with the legacy website could not run because the cloud network proxy denied connections to `cmlab.cau.ac.kr` with HTTP 403. This result describes the proxy response. The status of the origin website is unknown from this environment.
+See [the source migration review](PUBLICATIONS-REVIEW.md) for the newer Playwright capture and link audit. This file records the initial preview review. The direct comparison with the legacy website could not run because the cloud network proxy denied connections to `cmlab.cau.ac.kr` with HTTP 403. This result describes the proxy response. The status of the origin website is unknown from this environment.
 
 | Area | Checked | Before publication |
 | --- | --- | --- |
