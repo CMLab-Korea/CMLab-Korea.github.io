@@ -1,0 +1,257 @@
+{
+  "notes": "Imported assets are attributed to the named project authors under the license stated on their project site. Pending records retain empty asset paths.",
+  "source_site": "https://cmlab.cau.ac.kr/",
+  "preferred": "assets/media/publications/{paper-short}/teaser.webp or preview.mp4",
+  "status": "Five project posters and one video imported; other project media pending source and rights review.",
+  "items": [
+    {
+      "paper": "MotionGrounder",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "PRIMEdit",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "FMA-Net++",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "AVSR-Diff",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "AceVFI",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "MoRel",
+      "image": "assets/media/publications/morel/teaser.webp",
+      "video": "assets/media/publications/morel/preview.mp4",
+      "status": "imported",
+      "source": "https://github.com/CMLab-Korea/MoRel/blob/2527d50a35a3b190f07160bd41fd4cc41076fa79/images/MoRel_approach.png",
+      "project": "https://cmlab-korea.github.io/MoRel/",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Resized and encoded as WebP; video excerpt resized, muted and encoded as H.264 MP4",
+      "video_source": "https://github.com/CMLab-Korea/MoRel/blob/2527d50a35a3b190f07160bd41fd4cc41076fa79/images/Ours_bike1_pose1.mp4"
+    },
+    {
+      "paper": "FRAMER",
+      "image": "assets/media/publications/framer/teaser.webp",
+      "video": "",
+      "status": "imported",
+      "source": "https://github.com/CMLab-Korea/FRAMER/blob/7636b47aeadc5b812a834064fdf8cf6dc2806e2c/images/tiger_framer.png",
+      "project": "https://cmlab-korea.github.io/FRAMER/",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Resized and encoded as WebP"
+    },
+    {
+      "paper": "EcoSplat",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "FLAIR",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "OmniText",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "MoCHA-former",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "MoBGS",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "I-INR",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "SoFoNO",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "DiffPS",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "MoBluRF",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "Domain Generalization for Person Re-identification",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "SplineGS",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "MoDec-GS",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "BiM-VFI",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "FMA-Net",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "DeMFI",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "XVFI",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "PeaceGAN",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "SPAM-Net",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "FISR",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "JSI-GAN",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "Deep SR-ITM",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "CHIMERA",
+      "image": "assets/media/publications/chimera/teaser.webp",
+      "video": "",
+      "status": "imported",
+      "source": "https://github.com/CMLab-Korea/CHIMERA/blob/f000b7d76ee1ac2f0e5a5c6679318aa931407ff3/src/assets/teaser_color.pdf",
+      "project": "https://cmlab-korea.github.io/CHIMERA/",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Rendered from PDF and encoded as WebP"
+    },
+    {
+      "paper": "Self-Geometry",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "DiTTo",
+      "image": "assets/media/publications/ditto/teaser.webp",
+      "video": "",
+      "status": "imported",
+      "source": "https://github.com/CMLab-Korea/DiTTo/blob/00c4eac6703e966b59c0fd97c9a42dd3fe1b469a/images/street_ditto.png",
+      "project": "https://cmlab-korea.github.io/DiTTo/",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Resized and encoded as WebP"
+    },
+    {
+      "paper": "Chameleon",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "RefGC-SR²",
+      "image": "assets/media/publications/refgc-sr2/teaser.webp",
+      "video": "",
+      "status": "imported",
+      "source": "https://github.com/CMLab-Korea/RefGC-SR2/blob/187004e9ef33479e78b014b5a3bf5f1024a4ce20/static/images/teaser.png",
+      "project": "https://cmlab-korea.github.io/RefGC-SR2/",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Resized and encoded as WebP"
+    },
+    {
+      "paper": "SEAL",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "SUCCESS-GS",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "COREA",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "Training-free Style Control",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    },
+    {
+      "paper": "R3eVision",
+      "image": "",
+      "video": "",
+      "status": "pending"
+    }
+  ]
+}

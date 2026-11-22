@@ -1,0 +1,168 @@
+[
+  {
+    "institution": "Chung-Ang University",
+    "unit": "Perceptual AI Lab",
+    "person": "Prof. Chanho Eom",
+    "category": "Academia",
+    "region": "South Korea",
+    "url": "https://pailab.cau.ac.kr/",
+    "works": []
+  },
+  {
+    "institution": "Chung-Ang University",
+    "unit": "VILab",
+    "person": "Prof. Jongwon Choi",
+    "category": "Academia",
+    "region": "South Korea",
+    "url": "https://www.vilab.cau.ac.kr/",
+    "works": [
+      "COREA"
+    ]
+  },
+  {
+    "institution": "KAIST",
+    "unit": "VICLab",
+    "person": "Prof. Munchurl Kim",
+    "category": "Academia",
+    "region": "South Korea",
+    "url": "https://www.viclab.kaist.ac.kr/",
+    "works": [
+      "EcoSplat",
+      "FMA-Net++"
+    ]
+  },
+  {
+    "institution": "Kyung Hee University",
+    "unit": "MLVC Lab",
+    "person": "Prof. Sung-Ho Bae",
+    "category": "Academia",
+    "region": "South Korea",
+    "url": "https://mlvc.khu.ac.kr/",
+    "works": [
+      "SUCCESS-GS",
+      "I-INR"
+    ]
+  },
+  {
+    "institution": "Konkuk University",
+    "unit": "Research group",
+    "person": "Prof. Hwijae Son",
+    "category": "Academia",
+    "region": "South Korea",
+    "url": "https://korea.konkuk.ac.kr/",
+    "works": [
+      "SoFoNO"
+    ]
+  },
+  {
+    "institution": "POSTECH",
+    "unit": "AM²-LABS",
+    "person": "Prof. Hyung Ju Hwang",
+    "category": "Academia",
+    "region": "South Korea",
+    "url": "https://am2.postech.ac.kr/",
+    "works": [
+      "SoFoNO"
+    ]
+  },
+  {
+    "institution": "Princeton University",
+    "unit": "E.Z. Lab",
+    "person": "Minkyu Jeon",
+    "category": "Academia",
+    "region": "USA",
+    "url": "https://ezlab.princeton.edu/",
+    "works": [
+      "CHIMERA"
+    ]
+  },
+  {
+    "institution": "Adobe Research",
+    "unit": "Research",
+    "person": "Dr. Soo Ye Kim",
+    "category": "Industry",
+    "region": "USA",
+    "url": "https://research.adobe.com/",
+    "works": [
+      "PRIMEdit",
+      "Chameleon",
+      "RefGC-SR²"
+    ]
+  },
+  {
+    "institution": "Oracle",
+    "unit": "Research",
+    "person": "Dr. Kyle Min",
+    "category": "Industry",
+    "region": "USA",
+    "url": "https://www.oracle.com/",
+    "works": [
+      "FLAIR"
+    ]
+  },
+  {
+    "institution": "Flawless AI",
+    "unit": "Research",
+    "person": "Dr. Juan Luis Gonzalez Bello",
+    "category": "Industry",
+    "region": "USA",
+    "url": "https://flawlessai.com/",
+    "works": [
+      "SplineGS",
+      "MoBGS",
+      "EcoSplat"
+    ]
+  },
+  {
+    "institution": "ETRI",
+    "unit": "Research",
+    "person": "Dr. Sangwoon Kwak",
+    "category": "Research Institute",
+    "region": "South Korea",
+    "url": "https://www.etri.re.kr/",
+    "works": [
+      "MoRel",
+      "MoDec-GS"
+    ]
+  },
+  {
+    "institution": "Razer",
+    "unit": "Industry",
+    "person": "Dr. Agus Gunawan",
+    "category": "Industry",
+    "region": "Singapore",
+    "url": "https://www.razer.com/",
+    "works": [
+      "PRIMEdit",
+      "OmniText",
+      "MotionGrounder"
+    ]
+  },
+  {
+    "institution": "NAVER AI Lab",
+    "unit": "Research",
+    "person": "Dr. Taekyung Kim",
+    "category": "Industry",
+    "region": "South Korea",
+    "url": "https://clova.ai/",
+    "works": []
+  },
+  {
+    "institution": "Inshorts",
+    "unit": "AI",
+    "person": "CEO Geon Chang Lee",
+    "category": "Industry",
+    "region": "South Korea",
+    "url": "https://www.inshorts.ai/",
+    "works": []
+  },
+  {
+    "institution": "Cornell Tech",
+    "unit": "Postdoctoral researcher",
+    "person": "Dr. Junho Kim",
+    "category": "Academia",
+    "region": "USA",
+    "url": "https://tech.cornell.edu/",
+    "works": []
+  }
+]
