@@ -9,7 +9,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://cmlab.cau.ac.kr"
 SOURCES = {
-    "publications": (ORIGIN + "/publications", r"Summary\s*:|International Publications|Under Review"),
+    "publications": (ORIGIN + "/publications", r"Summary\s*:"),
     "home": (ORIGIN + "/", r"\bNews\b"),
     "lab": (ORIGIN + "/cmlab", r"\bNews\b"),
 }
@@ -38,10 +38,10 @@ EXTRACT = r"""({savedHtml, sourceUrl, papers}) => {
     poster: el.getAttribute('poster'),
     poster_url: absolute(el.getAttribute('poster'))
   }));
-  const content = doc.querySelector('[role="main"], main') || doc.body;
+  const content = doc.body;
   const blocks = [...content.querySelectorAll('h1,h2,h3,h4,h5,h6,p,li,[role="heading"]')];
   const sections = blocks.filter(el => text(el)).map(el => ({
-    tag: el.tagName.toLowerCase(), text: text(el), links: links(el)
+    tag: el.tagName.toLowerCase(), text: text(el), links: links(el), media: media(el)
   }));
   const anchors = papers.map(paper => ({
     paper,
