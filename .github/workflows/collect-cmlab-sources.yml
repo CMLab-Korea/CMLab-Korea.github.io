@@ -1,0 +1,31 @@
+name: Capture CMLab legacy sources
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/cmlab-v1-1-preview]
+    paths:
+      - .github/workflows/collect-cmlab-sources.yml
+      - scripts/collect_cmlab_sources.py
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.58.0
+      - run: python -m playwright install --with-deps chromium
+      - run: python scripts/collect_cmlab_sources.py --output capture
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cmlab-legacy-sources
+          path: capture/
+          retention-days: 7
