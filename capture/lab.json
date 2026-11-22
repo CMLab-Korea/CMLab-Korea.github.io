@@ -2,6 +2,418 @@
   "title": "CMLab@CAU",
   "sections": [
     {
+      "tag": "p",
+      "text": "- If you are interested in our lab, please refer to this page:",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "CMLab",
+      "links": [
+        {
+          "label": "CMLab",
+          "href": "/cmlab",
+          "url": "https://cmlab.cau.ac.kr/cmlab"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Contact",
+      "links": [
+        {
+          "label": "Contact",
+          "href": "/contact",
+          "url": "https://cmlab.cau.ac.kr/contact"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Our TeamPrincipal Investigator (PI)Students",
+      "links": [
+        {
+          "label": "Our Team",
+          "href": "/our-team",
+          "url": "https://cmlab.cau.ac.kr/our-team"
+        },
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        },
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Principal Investigator (PI)",
+      "links": [
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Students",
+      "links": [
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Publications",
+      "links": [
+        {
+          "label": "Publications",
+          "href": "/publications",
+          "url": "https://cmlab.cau.ac.kr/publications"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Projects",
+      "links": [
+        {
+          "label": "Projects",
+          "href": "/projects",
+          "url": "https://cmlab.cau.ac.kr/projects"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Courses",
+      "links": [
+        {
+          "label": "Courses",
+          "href": "/courses",
+          "url": "https://cmlab.cau.ac.kr/courses"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Gallery",
+      "links": [
+        {
+          "label": "Gallery",
+          "href": "/gallery",
+          "url": "https://cmlab.cau.ac.kr/gallery"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "CMLab",
+      "links": [
+        {
+          "label": "CMLab",
+          "href": "/cmlab",
+          "url": "https://cmlab.cau.ac.kr/cmlab"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Contact",
+      "links": [
+        {
+          "label": "Contact",
+          "href": "/contact",
+          "url": "https://cmlab.cau.ac.kr/contact"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Our Team",
+      "links": [
+        {
+          "label": "Our Team",
+          "href": "/our-team",
+          "url": "https://cmlab.cau.ac.kr/our-team"
+        },
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        },
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Principal Investigator (PI)",
+      "links": [
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Students",
+      "links": [
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Publications",
+      "links": [
+        {
+          "label": "Publications",
+          "href": "/publications",
+          "url": "https://cmlab.cau.ac.kr/publications"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Projects",
+      "links": [
+        {
+          "label": "Projects",
+          "href": "/projects",
+          "url": "https://cmlab.cau.ac.kr/projects"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Courses",
+      "links": [
+        {
+          "label": "Courses",
+          "href": "/courses",
+          "url": "https://cmlab.cau.ac.kr/courses"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Gallery",
+      "links": [
+        {
+          "label": "Gallery",
+          "href": "/gallery",
+          "url": "https://cmlab.cau.ac.kr/gallery"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "MoreCMLabContactOur TeamPrincipal Investigator (PI)StudentsPublicationsProjectsCoursesGallery",
+      "links": [
+        {
+          "label": "CMLab",
+          "href": "/cmlab",
+          "url": "https://cmlab.cau.ac.kr/cmlab"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact",
+          "url": "https://cmlab.cau.ac.kr/contact"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team",
+          "url": "https://cmlab.cau.ac.kr/our-team"
+        },
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        },
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        },
+        {
+          "label": "Publications",
+          "href": "/publications",
+          "url": "https://cmlab.cau.ac.kr/publications"
+        },
+        {
+          "label": "Projects",
+          "href": "/projects",
+          "url": "https://cmlab.cau.ac.kr/projects"
+        },
+        {
+          "label": "Courses",
+          "href": "/courses",
+          "url": "https://cmlab.cau.ac.kr/courses"
+        },
+        {
+          "label": "Gallery",
+          "href": "/gallery",
+          "url": "https://cmlab.cau.ac.kr/gallery"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "CMLab",
+      "links": [
+        {
+          "label": "CMLab",
+          "href": "/cmlab",
+          "url": "https://cmlab.cau.ac.kr/cmlab"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Contact",
+      "links": [
+        {
+          "label": "Contact",
+          "href": "/contact",
+          "url": "https://cmlab.cau.ac.kr/contact"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Our TeamPrincipal Investigator (PI)Students",
+      "links": [
+        {
+          "label": "Our Team",
+          "href": "/our-team",
+          "url": "https://cmlab.cau.ac.kr/our-team"
+        },
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        },
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Principal Investigator (PI)",
+      "links": [
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Students",
+      "links": [
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Publications",
+      "links": [
+        {
+          "label": "Publications",
+          "href": "/publications",
+          "url": "https://cmlab.cau.ac.kr/publications"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Projects",
+      "links": [
+        {
+          "label": "Projects",
+          "href": "/projects",
+          "url": "https://cmlab.cau.ac.kr/projects"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Courses",
+      "links": [
+        {
+          "label": "Courses",
+          "href": "/courses",
+          "url": "https://cmlab.cau.ac.kr/courses"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Gallery",
+      "links": [
+        {
+          "label": "Gallery",
+          "href": "/gallery",
+          "url": "https://cmlab.cau.ac.kr/gallery"
+        }
+      ],
+      "media": []
+    },
+    {
       "tag": "h2",
       "text": "Research Area",
       "links": [
@@ -10,87 +422,104 @@
           "href": "#h.1bor9x1h3wlf",
           "url": "https://cmlab.cau.ac.kr/cmlab#h.1bor9x1h3wlf"
         }
-      ]
+      ],
+      "media": []
     },
     {
       "tag": "li",
       "text": "✨ Pixel-Level Intelligence All-in-One Restoration / Super-Resolution / Deblurring / Demoiréing / AIGC refinement, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
       "text": "✨ Pixel-Level Intelligence",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
       "text": "All-in-One Restoration / Super-Resolution / Deblurring / Demoiréing / AIGC refinement, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
       "text": "All-in-One Restoration / Super-Resolution / Deblurring / Demoiréing / AIGC refinement, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
       "text": "🎞️ Video & Motion Intelligence Motion Modeling / Video Restoration / Frame Interpolation / Temporally Consistent Generation, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
       "text": "🎞️ Video & Motion Intelligence",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
       "text": "Motion Modeling / Video Restoration / Frame Interpolation / Temporally Consistent Generation, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
       "text": "Motion Modeling / Video Restoration / Frame Interpolation / Temporally Consistent Generation, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
       "text": "🌐 3D/4D World Representation Physical World Model / Dynamic 4D scenes / Gaussian Splatting / NeRF / Novel View Synthesis / Neural Rendering, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
       "text": "🌐 3D/4D World Representation",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
       "text": "Physical World Model / Dynamic 4D scenes / Gaussian Splatting / NeRF / Novel View Synthesis / Neural Rendering, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
       "text": "Physical World Model / Dynamic 4D scenes / Gaussian Splatting / NeRF / Novel View Synthesis / Neural Rendering, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
       "text": "🤖 Generative / Agentic Visual AI Multimodal Editing / Compositing / Personalization / Controllable Generation / Agentic Visual Systems, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
       "text": "🤖 Generative / Agentic Visual AI",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
       "text": "Multimodal Editing / Compositing / Personalization / Controllable Generation / Agentic Visual Systems, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
       "text": "Multimodal Editing / Compositing / Personalization / Controllable Generation / Agentic Visual Systems, etc.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
@@ -101,22 +530,26 @@
           "href": "https://www.inshorts.ai/en",
           "url": "https://www.inshorts.ai/en"
         }
-      ]
+      ],
+      "media": []
     },
     {
       "tag": "p",
       "text": "🏗️ Real-World AI Systems & Industry Translation",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
       "text": "Industry-driven Visual AI / Product-oriented Research / Multimedia Applications",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
       "text": "Industry-driven Visual AI / Product-oriented Research / Multimedia Applications",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "li",
@@ -127,7 +560,8 @@
           "href": "https://www.inshorts.ai/en",
           "url": "https://www.inshorts.ai/en"
         }
-      ]
+      ],
+      "media": []
     },
     {
       "tag": "p",
@@ -138,12 +572,14 @@
           "href": "https://www.inshorts.ai/en",
           "url": "https://www.inshorts.ai/en"
         }
-      ]
+      ],
+      "media": []
     },
     {
       "tag": "p",
       "text": "But not limited to.",
-      "links": []
+      "links": [],
+      "media": []
     },
     {
       "tag": "p",
@@ -154,10 +590,1416 @@
           "href": "https://cmlab.cau.ac.kr/publications",
           "url": "https://cmlab.cau.ac.kr/publications"
         }
-      ]
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Selected Research Highlights: From Pixels to 4D Worlds",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "✨ Pixel-Level",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Agentic All-in-One Restoration[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/DiTTo/#",
+          "url": "https://cmlab-korea.github.io/DiTTo/#"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Agentic All-in-One Restoration[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/DiTTo/#",
+          "url": "https://cmlab-korea.github.io/DiTTo/#"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Refinement of AI Generated Content[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/RefGC-SR2/",
+          "url": "https://cmlab-korea.github.io/RefGC-SR2/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Refinement of AI Generated Content[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/RefGC-SR2/",
+          "url": "https://cmlab-korea.github.io/RefGC-SR2/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Super-Resolution[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/FRAMER/",
+          "url": "https://cmlab-korea.github.io/FRAMER/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Super-Resolution[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/FRAMER/",
+          "url": "https://cmlab-korea.github.io/FRAMER/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "🎞️ Video & Motion",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Video Super-Resolution + Deblurring[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/fmanetpp_site/",
+          "url": "https://kaist-viclab.github.io/fmanetpp_site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Video Super-Resolution + Deblurring[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/fmanetpp_site/",
+          "url": "https://kaist-viclab.github.io/fmanetpp_site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "eXtreme Video Frame Interpolation[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://github.com/JihyongOh/XVFI",
+          "url": "https://github.com/JihyongOh/XVFI"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "eXtreme Video Frame Interpolation[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://github.com/JihyongOh/XVFI",
+          "url": "https://github.com/JihyongOh/XVFI"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Arbitrary-Scale Video Super-Resolution[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/AVSR-Diff/",
+          "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Arbitrary-Scale Video Super-Resolution[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/AVSR-Diff/",
+          "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "🌐 3D/4D World",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "4D Motion Modeling[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "4D Motion Modeling[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Efficient Feed-forward 3D[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/ecosplat-site/",
+          "url": "https://kaist-viclab.github.io/ecosplat-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Efficient Feed-forward 3D[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/ecosplat-site/",
+          "url": "https://kaist-viclab.github.io/ecosplat-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "4D Motion Modeling[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "4D Motion Modeling[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "🤖 Generative / Agentic AI",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Object Compositing[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/Chameleon/",
+          "url": "https://cmlab-korea.github.io/Chameleon/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Object Compositing[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/Chameleon/",
+          "url": "https://cmlab-korea.github.io/Chameleon/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Morphing[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/CHIMERA/",
+          "url": "https://cmlab-korea.github.io/CHIMERA/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Morphing[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://cmlab-korea.github.io/CHIMERA/",
+          "url": "https://cmlab-korea.github.io/CHIMERA/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Text-Image Manipulation[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/omnitext-site/",
+          "url": "https://kaist-viclab.github.io/omnitext-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Text-Image Manipulation[Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/omnitext-site/",
+          "url": "https://kaist-viclab.github.io/omnitext-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Editing [Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/primedit-site/",
+          "url": "https://kaist-viclab.github.io/primedit-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "Editing [Project Page]",
+      "links": [
+        {
+          "label": "Project Page",
+          "href": "https://kaist-viclab.github.io/primedit-site/",
+          "url": "https://kaist-viclab.github.io/primedit-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "h2",
+      "text": "News (Click for previous news)",
+      "links": [
+        {
+          "label": "Copy heading link",
+          "href": "#h.51z2i28nxvb5",
+          "url": "https://cmlab.cau.ac.kr/cmlab#h.51z2i28nxvb5"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2026] One paper (🏃🏻MotionGrounder) has been accepted to NeurIPS 2026.",
+      "links": [
+        {
+          "label": "🏃🏻MotionGrounder",
+          "href": "https://kaist-viclab.github.io/motiongrounder-site/",
+          "url": "https://kaist-viclab.github.io/motiongrounder-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2026] One paper (🏃🏻MotionGrounder) has been accepted to NeurIPS 2026.",
+      "links": [
+        {
+          "label": "🏃🏻MotionGrounder",
+          "href": "https://kaist-viclab.github.io/motiongrounder-site/",
+          "url": "https://kaist-viclab.github.io/motiongrounder-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2026] Prof. Oh has been selected as an ECCV 2026 Outstanding Reviewer.",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee",
+          "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2026] Prof. Oh has been selected as an ECCV 2026 Outstanding Reviewer.",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee",
+          "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[08.2026] One paper (🎯 PRIMEdit) has been accepted to IEEE TPAMI (IF: 20.4).",
+      "links": [
+        {
+          "label": "🎯 PRIMEdit",
+          "href": "https://kaist-viclab.github.io/primedit-site/",
+          "url": "https://kaist-viclab.github.io/primedit-site/"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[08.2026] One paper (🎯 PRIMEdit) has been accepted to IEEE TPAMI (IF: 20.4).",
+      "links": [
+        {
+          "label": "🎯 PRIMEdit",
+          "href": "https://kaist-viclab.github.io/primedit-site/",
+          "url": "https://kaist-viclab.github.io/primedit-site/"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[07.2026] Prof. Oh has been selected as an Outstanding Instructor for Spring 2026 (CAU Teaching Evaluation).",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[07.2026] Prof. Oh has been selected as an Outstanding Instructor for Spring 2026 (CAU Teaching Evaluation).",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[06.2026] Two papers (֎FMA-Net++, 🔎AVSR-Diff) have been accepted to ECCV 2026.",
+      "links": [
+        {
+          "label": "֎FMA-Net++,",
+          "href": "https://kaist-viclab.github.io/fmanetpp_site/#",
+          "url": "https://kaist-viclab.github.io/fmanetpp_site/#"
+        },
+        {
+          "label": "🔎AVSR-Diff",
+          "href": "https://kaist-viclab.github.io/AVSR-Diff/",
+          "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[06.2026] Two papers (֎FMA-Net++, 🔎AVSR-Diff) have been accepted to ECCV 2026.",
+      "links": [
+        {
+          "label": "֎FMA-Net++,",
+          "href": "https://kaist-viclab.github.io/fmanetpp_site/#",
+          "url": "https://kaist-viclab.github.io/fmanetpp_site/#"
+        },
+        {
+          "label": "🔎AVSR-Diff",
+          "href": "https://kaist-viclab.github.io/AVSR-Diff/",
+          "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[05.2026] Prof. Oh has been selected as an CVPR 2026 Outstanding Reviewer (6.1%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[05.2026] Prof. Oh has been selected as an CVPR 2026 Outstanding Reviewer (6.1%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[04.2026] Two papers (🚂 MoRel, 🌱 EcoSplat) have been selected as CVPR 2026 🏅Highlights (3.6% ≈ 578/16,092).",
+      "links": [
+        {
+          "label": "🚂 MoRel",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        },
+        {
+          "label": "🌱 EcoSplat",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[04.2026] Two papers (🚂 MoRel, 🌱 EcoSplat) have been selected as CVPR 2026 🏅Highlights (3.6% ≈ 578/16,092).",
+      "links": [
+        {
+          "label": "🚂 MoRel",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        },
+        {
+          "label": "🌱 EcoSplat",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[03.2026] Seungho and Jeongho joined our lab in the spring of 2026. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[03.2026] Seungho and Jeongho joined our lab in the spring of 2026. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2026] 🂡 AceVFI, our comprehensive survey on Video Frame Interpolation, has been accepted to IEEE TCSVT (IF: 11.1).",
+      "links": [
+        {
+          "label": "🂡 AceVFI",
+          "href": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main",
+          "url": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2026] 🂡 AceVFI, our comprehensive survey on Video Frame Interpolation, has been accepted to IEEE TCSVT (IF: 11.1).",
+      "links": [
+        {
+          "label": "🂡 AceVFI",
+          "href": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main",
+          "url": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2026] Four papers (🚂 MoRel, 🖼️ FRAMER, 🌱 EcoSplat, ✨ FLAIR) have been accepted to CVPR 2026 (including 1 Findings).",
+      "links": [
+        {
+          "label": "🚂 MoRel",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        },
+        {
+          "label": "🖼️ FRAMER",
+          "href": "https://cmlab-korea.github.io/FRAMER/",
+          "url": "https://cmlab-korea.github.io/FRAMER/"
+        },
+        {
+          "label": "🌱 EcoSplat",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        },
+        {
+          "label": "✨ FLAIR",
+          "href": "https://cmlab-korea.github.io./FLAIR/",
+          "url": "https://cmlab-korea.github.io./FLAIR/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2026] Four papers (🚂 MoRel, 🖼️ FRAMER, 🌱 EcoSplat, ✨ FLAIR) have been accepted to CVPR 2026 (including 1 Findings).",
+      "links": [
+        {
+          "label": "🚂 MoRel",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        },
+        {
+          "label": "🖼️ FRAMER",
+          "href": "https://cmlab-korea.github.io/FRAMER/",
+          "url": "https://cmlab-korea.github.io/FRAMER/"
+        },
+        {
+          "label": "🌱 EcoSplat",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        },
+        {
+          "label": "✨ FLAIR",
+          "href": "https://cmlab-korea.github.io./FLAIR/",
+          "url": "https://cmlab-korea.github.io./FLAIR/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[01.2026] One paper on Training-Free Generalist for Text Image Manipulation (🖌OmniText) has been accepted to ICLR 2026.",
+      "links": [
+        {
+          "label": "🖌OmniText",
+          "href": "https://kaist-viclab.github.io/omnitext-site/",
+          "url": "https://kaist-viclab.github.io/omnitext-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[01.2026] One paper on Training-Free Generalist for Text Image Manipulation (🖌OmniText) has been accepted to ICLR 2026.",
+      "links": [
+        {
+          "label": "🖌OmniText",
+          "href": "https://kaist-viclab.github.io/omnitext-site/",
+          "url": "https://kaist-viclab.github.io/omnitext-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[12.2025] One paper on Video Demoiréing Transformer (☕️ MoCHA-former) has been accepted to Neurocomputing (IF: 6.5).",
+      "links": [
+        {
+          "label": "☕️ MoCHA-former",
+          "href": "https://cmlab-korea.github.io/MoCHA-former/",
+          "url": "https://cmlab-korea.github.io/MoCHA-former/"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[12.2025] One paper on Video Demoiréing Transformer (☕️ MoCHA-former) has been accepted to Neurocomputing (IF: 6.5).",
+      "links": [
+        {
+          "label": "☕️ MoCHA-former",
+          "href": "https://cmlab-korea.github.io/MoCHA-former/",
+          "url": "https://cmlab-korea.github.io/MoCHA-former/"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[11.2025] Two papers (♻️ I-INR, 🕵🏻‍♂️ MoBGS) have been accepted to AAAI 2026.",
+      "links": [
+        {
+          "label": "♻️ I-INR",
+          "href": "https://arxiv.org/abs/2504.17364",
+          "url": "https://arxiv.org/abs/2504.17364"
+        },
+        {
+          "label": "🕵🏻‍♂️ MoBGS",
+          "href": "https://arxiv.org/abs/2504.15122",
+          "url": "https://arxiv.org/abs/2504.15122"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[11.2025] Two papers (♻️ I-INR, 🕵🏻‍♂️ MoBGS) have been accepted to AAAI 2026.",
+      "links": [
+        {
+          "label": "♻️ I-INR",
+          "href": "https://arxiv.org/abs/2504.17364",
+          "url": "https://arxiv.org/abs/2504.17364"
+        },
+        {
+          "label": "🕵🏻‍♂️ MoBGS",
+          "href": "https://arxiv.org/abs/2504.15122",
+          "url": "https://arxiv.org/abs/2504.15122"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[10.2025] One paper on Arbitrary-Scale Super-Resolution (🌀SoFoNO) has been accepted to Neurocomputing (IF: 6.5).",
+      "links": [
+        {
+          "label": "🌀SoFoNO",
+          "href": "https://jongkwonoh.github.io/sofono-page/",
+          "url": "https://jongkwonoh.github.io/sofono-page/"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[10.2025] One paper on Arbitrary-Scale Super-Resolution (🌀SoFoNO) has been accepted to Neurocomputing (IF: 6.5).",
+      "links": [
+        {
+          "label": "🌀SoFoNO",
+          "href": "https://jongkwonoh.github.io/sofono-page/",
+          "url": "https://jongkwonoh.github.io/sofono-page/"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2025] MoBluRF🫨 [IEEE TPAMI (IF: 18.6)] has been featured on EurekAlert and CAU News as one of CAU’s global research highlights (Altmetric score 74).",
+      "links": [
+        {
+          "label": "MoBluRF🫨",
+          "href": "https://ieeexplore.ieee.org/document/11017407",
+          "url": "https://ieeexplore.ieee.org/document/11017407"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        },
+        {
+          "label": "EurekAlert",
+          "href": "https://www.eurekalert.org/news-releases/1098837",
+          "url": "https://www.eurekalert.org/news-releases/1098837"
+        },
+        {
+          "label": "CAU News",
+          "href": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140",
+          "url": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140"
+        },
+        {
+          "label": "Altmetric score 74",
+          "href": "https://www.altmetric.com/details/157703400/news",
+          "url": "https://www.altmetric.com/details/157703400/news"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2025] MoBluRF🫨 [IEEE TPAMI (IF: 18.6)] has been featured on EurekAlert and CAU News as one of CAU’s global research highlights (Altmetric score 74).",
+      "links": [
+        {
+          "label": "MoBluRF🫨",
+          "href": "https://ieeexplore.ieee.org/document/11017407",
+          "url": "https://ieeexplore.ieee.org/document/11017407"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        },
+        {
+          "label": "EurekAlert",
+          "href": "https://www.eurekalert.org/news-releases/1098837",
+          "url": "https://www.eurekalert.org/news-releases/1098837"
+        },
+        {
+          "label": "CAU News",
+          "href": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140",
+          "url": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140"
+        },
+        {
+          "label": "Altmetric score 74",
+          "href": "https://www.altmetric.com/details/157703400/news",
+          "url": "https://www.altmetric.com/details/157703400/news"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2025] Prof. Oh has been selected as an ICCV 2025 Outstanding Reviewer (3%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2025] Prof. Oh has been selected as an ICCV 2025 Outstanding Reviewer (3%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2025] SeokHyun, Yejong, and Hyungyu joined our lab in the fall of 2025 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2025] SeokHyun, Yejong, and Hyungyu joined our lab in the fall of 2025 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[08.2025] Prof. Oh has been selected as an Outstanding Instructor for Spring 2025 (CAU Teaching Evaluation).",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[08.2025] Prof. Oh has been selected as an Outstanding Instructor for Spring 2025 (CAU Teaching Evaluation).",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[07.2025] Prof. Oh will serve as a Program Committee for AAAI 2026.",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[07.2025] Prof. Oh will serve as a Program Committee for AAAI 2026.",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[06.2025] One paper (🔍 DiffPS) on Person Search has been accepted to ICCV 2025 and selected as a🏅Highlight Paper (2.35% ≈ 263/11,152).",
+      "links": [
+        {
+          "label": "DiffPS",
+          "href": "https://github.com/PerceptualAI-Lab/DiffPS",
+          "url": "https://github.com/PerceptualAI-Lab/DiffPS"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[06.2025] One paper (🔍 DiffPS) on Person Search has been accepted to ICCV 2025 and selected as a🏅Highlight Paper (2.35% ≈ 263/11,152).",
+      "links": [
+        {
+          "label": "DiffPS",
+          "href": "https://github.com/PerceptualAI-Lab/DiffPS",
+          "url": "https://github.com/PerceptualAI-Lab/DiffPS"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[05.2025] Two papers (MoBluRF🫨, DG-ReID🫆) have been accepted to IEEE TPAMI (IF: 18.6) and Neurocomputing (IF: 6.5), respectively.",
+      "links": [
+        {
+          "label": "MoBluRF🫨",
+          "href": "https://ieeexplore.ieee.org/document/11017407",
+          "url": "https://ieeexplore.ieee.org/document/11017407"
+        },
+        {
+          "label": "DG-ReID🫆",
+          "href": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/journal/neurocomputing",
+          "url": "https://www.sciencedirect.com/journal/neurocomputing"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[05.2025] Two papers (MoBluRF🫨, DG-ReID🫆) have been accepted to IEEE TPAMI (IF: 18.6) and Neurocomputing (IF: 6.5), respectively.",
+      "links": [
+        {
+          "label": "MoBluRF🫨",
+          "href": "https://ieeexplore.ieee.org/document/11017407",
+          "url": "https://ieeexplore.ieee.org/document/11017407"
+        },
+        {
+          "label": "DG-ReID🫆",
+          "href": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/journal/neurocomputing",
+          "url": "https://www.sciencedirect.com/journal/neurocomputing"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2025] Three papers (MoDec🎄-GS, ⏱️ BiM-VFI, ∿ SplineGS ) have been accepted to CVPR 2025.",
+      "links": [
+        {
+          "label": "MoDec🎄-GS",
+          "href": "https://kaist-viclab.github.io/MoDecGS-site/",
+          "url": "https://kaist-viclab.github.io/MoDecGS-site/"
+        },
+        {
+          "label": "⏱️ BiM-VFI",
+          "href": "https://kaist-viclab.github.io/BiM-VFI_site/",
+          "url": "https://kaist-viclab.github.io/BiM-VFI_site/"
+        },
+        {
+          "label": "∿ SplineGS",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2025] Three papers (MoDec🎄-GS, ⏱️ BiM-VFI, ∿ SplineGS ) have been accepted to CVPR 2025.",
+      "links": [
+        {
+          "label": "MoDec🎄-GS",
+          "href": "https://kaist-viclab.github.io/MoDecGS-site/",
+          "url": "https://kaist-viclab.github.io/MoDecGS-site/"
+        },
+        {
+          "label": "⏱️ BiM-VFI",
+          "href": "https://kaist-viclab.github.io/BiM-VFI_site/",
+          "url": "https://kaist-viclab.github.io/BiM-VFI_site/"
+        },
+        {
+          "label": "∿ SplineGS",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2025] Sukhun, Weeyoung, and Gyuwon joined our lab in the spring of 2025 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2025] Sukhun, Weeyoung, and Gyuwon joined our lab in the spring of 2025 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[11.2024] Prof. Oh joined inshorts as a CAIO to research and integrate Low-Level Vision techniques into real-world products.",
+      "links": [
+        {
+          "label": "inshorts",
+          "href": "https://www.inshorts.ai/en",
+          "url": "https://www.inshorts.ai/en"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[11.2024] Prof. Oh joined inshorts as a CAIO to research and integrate Low-Level Vision techniques into real-world products.",
+      "links": [
+        {
+          "label": "inshorts",
+          "href": "https://www.inshorts.ai/en",
+          "url": "https://www.inshorts.ai/en"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2024] Juhyun joined our lab in the fall of 2024 as MS student. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2024] Juhyun joined our lab in the fall of 2024 as MS student. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[08.2024] Prof. Oh will serve as a Program Committee for AAAI 2025.",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[08.2024] Prof. Oh will serve as a Program Committee for AAAI 2025.",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[06.17.2024] Prof. Oh was invited to talk on 🍎 FMA-Net and XVFI at the AIS (CVPR 2024 Workshop).",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        },
+        {
+          "label": "XVFI",
+          "href": "https://github.com/JihyongOh/XVFI",
+          "url": "https://github.com/JihyongOh/XVFI"
+        },
+        {
+          "label": "AIS (CVPR 2024 Workshop",
+          "href": "https://ai4streaming-workshop.github.io/",
+          "url": "https://ai4streaming-workshop.github.io/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[06.17.2024] Prof. Oh was invited to talk on 🍎 FMA-Net and XVFI at the AIS (CVPR 2024 Workshop).",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        },
+        {
+          "label": "XVFI",
+          "href": "https://github.com/JihyongOh/XVFI",
+          "url": "https://github.com/JihyongOh/XVFI"
+        },
+        {
+          "label": "AIS (CVPR 2024 Workshop",
+          "href": "https://ai4streaming-workshop.github.io/",
+          "url": "https://ai4streaming-workshop.github.io/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[05.29.2024] Prof. Oh has been selected as a CVPR 2024 Outstanding Reviewer (2%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[05.29.2024] Prof. Oh has been selected as a CVPR 2024 Outstanding Reviewer (2%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[04.05.2024] Our 🍎 FMA-Net (Final Review Scores: 5/5/4) has been selected as an 🏅Oral Paper (0.78% ≈ 90/11,532), which will be a huge honor to be presented in front of an audience of thousands of people.",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[04.05.2024] Our 🍎 FMA-Net (Final Review Scores: 5/5/4) has been selected as an 🏅Oral Paper (0.78% ≈ 90/11,532), which will be a huge honor to be presented in front of an audience of thousands of people.",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2024] One paper (🍎 FMA-Net) on Joint Video Super-Resolution and Deblurring has been accepted to CVPR 2024.",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2024] One paper (🍎 FMA-Net) on Joint Video Super-Resolution and Deblurring has been accepted to CVPR 2024.",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[11.2023] Dahyeon, Giyeol, Changhyun, Jeahun, and Hyunseo joined our lab in the spring of 2024 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[11.2023] Dahyeon, Giyeol, Changhyun, Jeahun, and Hyunseo joined our lab in the spring of 2024 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.01.2023] CMLab has been newly opened by Assistant Prof. Jihyong Oh.",
+      "links": [
+        {
+          "label": "Jihyong Oh",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.01.2023] CMLab has been newly opened by Assistant Prof. Jihyong Oh.",
+      "links": [
+        {
+          "label": "Jihyong Oh",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "h2",
+      "text": "Collaborators",
+      "links": [
+        {
+          "label": "Copy heading link",
+          "href": "#h.7274u7ulcv78",
+          "url": "https://cmlab.cau.ac.kr/cmlab#h.7274u7ulcv78"
+        }
+      ],
+      "media": []
     }
   ],
   "links": [
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "url": "https://cmlab.cau.ac.kr/contact"
+    },
+    {
+      "label": "",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "CMLab@CAU",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "CMLab",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "url": "https://cmlab.cau.ac.kr/contact"
+    },
+    {
+      "label": "Our Team",
+      "href": "/our-team",
+      "url": "https://cmlab.cau.ac.kr/our-team"
+    },
+    {
+      "label": "Principal Investigator (PI)",
+      "href": "/our-team/principal-investigator-pi",
+      "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+    },
+    {
+      "label": "Students",
+      "href": "/our-team/students",
+      "url": "https://cmlab.cau.ac.kr/our-team/students"
+    },
+    {
+      "label": "Publications",
+      "href": "/publications",
+      "url": "https://cmlab.cau.ac.kr/publications"
+    },
+    {
+      "label": "Projects",
+      "href": "/projects",
+      "url": "https://cmlab.cau.ac.kr/projects"
+    },
+    {
+      "label": "Courses",
+      "href": "/courses",
+      "url": "https://cmlab.cau.ac.kr/courses"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery",
+      "url": "https://cmlab.cau.ac.kr/gallery"
+    },
+    {
+      "label": "CMLab@CAU",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "CMLab",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "url": "https://cmlab.cau.ac.kr/contact"
+    },
+    {
+      "label": "Our Team",
+      "href": "/our-team",
+      "url": "https://cmlab.cau.ac.kr/our-team"
+    },
+    {
+      "label": "Principal Investigator (PI)",
+      "href": "/our-team/principal-investigator-pi",
+      "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+    },
+    {
+      "label": "Students",
+      "href": "/our-team/students",
+      "url": "https://cmlab.cau.ac.kr/our-team/students"
+    },
+    {
+      "label": "Publications",
+      "href": "/publications",
+      "url": "https://cmlab.cau.ac.kr/publications"
+    },
+    {
+      "label": "Projects",
+      "href": "/projects",
+      "url": "https://cmlab.cau.ac.kr/projects"
+    },
+    {
+      "label": "Courses",
+      "href": "/courses",
+      "url": "https://cmlab.cau.ac.kr/courses"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery",
+      "url": "https://cmlab.cau.ac.kr/gallery"
+    },
+    {
+      "label": "CMLab",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "url": "https://cmlab.cau.ac.kr/contact"
+    },
+    {
+      "label": "Our Team",
+      "href": "/our-team",
+      "url": "https://cmlab.cau.ac.kr/our-team"
+    },
+    {
+      "label": "Principal Investigator (PI)",
+      "href": "/our-team/principal-investigator-pi",
+      "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+    },
+    {
+      "label": "Students",
+      "href": "/our-team/students",
+      "url": "https://cmlab.cau.ac.kr/our-team/students"
+    },
+    {
+      "label": "Publications",
+      "href": "/publications",
+      "url": "https://cmlab.cau.ac.kr/publications"
+    },
+    {
+      "label": "Projects",
+      "href": "/projects",
+      "url": "https://cmlab.cau.ac.kr/projects"
+    },
+    {
+      "label": "Courses",
+      "href": "/courses",
+      "url": "https://cmlab.cau.ac.kr/courses"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery",
+      "url": "https://cmlab.cau.ac.kr/gallery"
+    },
     {
       "label": "Copy heading link",
       "href": "#h.1bor9x1h3wlf",
@@ -172,11 +2014,1527 @@
       "label": "https://cmlab.cau.ac.kr/publications",
       "href": "https://cmlab.cau.ac.kr/publications",
       "url": "https://cmlab.cau.ac.kr/publications"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://cmlab-korea.github.io/DiTTo/#",
+      "url": "https://cmlab-korea.github.io/DiTTo/#"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://cmlab-korea.github.io/RefGC-SR2/",
+      "url": "https://cmlab-korea.github.io/RefGC-SR2/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://cmlab-korea.github.io/FRAMER/",
+      "url": "https://cmlab-korea.github.io/FRAMER/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://kaist-viclab.github.io/fmanetpp_site/",
+      "url": "https://kaist-viclab.github.io/fmanetpp_site/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://github.com/JihyongOh/XVFI",
+      "url": "https://github.com/JihyongOh/XVFI"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://kaist-viclab.github.io/AVSR-Diff/",
+      "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://cmlab-korea.github.io/MoRel/",
+      "url": "https://cmlab-korea.github.io/MoRel/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://kaist-viclab.github.io/ecosplat-site/",
+      "url": "https://kaist-viclab.github.io/ecosplat-site/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://kaist-viclab.github.io/splinegs-site/",
+      "url": "https://kaist-viclab.github.io/splinegs-site/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://cmlab-korea.github.io/Chameleon/",
+      "url": "https://cmlab-korea.github.io/Chameleon/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://cmlab-korea.github.io/CHIMERA/",
+      "url": "https://cmlab-korea.github.io/CHIMERA/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://kaist-viclab.github.io/omnitext-site/",
+      "url": "https://kaist-viclab.github.io/omnitext-site/"
+    },
+    {
+      "label": "Project Page",
+      "href": "https://kaist-viclab.github.io/primedit-site/",
+      "url": "https://kaist-viclab.github.io/primedit-site/"
+    },
+    {
+      "label": "Copy heading link",
+      "href": "#h.51z2i28nxvb5",
+      "url": "https://cmlab.cau.ac.kr/cmlab#h.51z2i28nxvb5"
+    },
+    {
+      "label": "🏃🏻MotionGrounder",
+      "href": "https://kaist-viclab.github.io/motiongrounder-site/",
+      "url": "https://kaist-viclab.github.io/motiongrounder-site/"
+    },
+    {
+      "label": "Outstanding Reviewer",
+      "href": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee",
+      "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee"
+    },
+    {
+      "label": "🎯 PRIMEdit",
+      "href": "https://kaist-viclab.github.io/primedit-site/",
+      "url": "https://kaist-viclab.github.io/primedit-site/"
+    },
+    {
+      "label": "IEEE TPAMI",
+      "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+      "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+    },
+    {
+      "label": "Outstanding Instructor",
+      "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap",
+      "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+    },
+    {
+      "label": "֎FMA-Net++,",
+      "href": "https://kaist-viclab.github.io/fmanetpp_site/#",
+      "url": "https://kaist-viclab.github.io/fmanetpp_site/#"
+    },
+    {
+      "label": "🔎AVSR-Diff",
+      "href": "https://kaist-viclab.github.io/AVSR-Diff/",
+      "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+    },
+    {
+      "label": "Outstanding Reviewer",
+      "href": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf",
+      "url": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf"
+    },
+    {
+      "label": "🚂 MoRel",
+      "href": "https://cmlab-korea.github.io/MoRel/",
+      "url": "https://cmlab-korea.github.io/MoRel/"
+    },
+    {
+      "label": "🌱 EcoSplat",
+      "href": "https://kaist-viclab.github.io/splinegs-site/",
+      "url": "https://kaist-viclab.github.io/splinegs-site/"
+    },
+    {
+      "label": "🂡 AceVFI",
+      "href": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main",
+      "url": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main"
+    },
+    {
+      "label": "🚂 MoRel",
+      "href": "https://cmlab-korea.github.io/MoRel/",
+      "url": "https://cmlab-korea.github.io/MoRel/"
+    },
+    {
+      "label": "🖼️ FRAMER",
+      "href": "https://cmlab-korea.github.io/FRAMER/",
+      "url": "https://cmlab-korea.github.io/FRAMER/"
+    },
+    {
+      "label": "🌱 EcoSplat",
+      "href": "https://kaist-viclab.github.io/splinegs-site/",
+      "url": "https://kaist-viclab.github.io/splinegs-site/"
+    },
+    {
+      "label": "✨ FLAIR",
+      "href": "https://cmlab-korea.github.io./FLAIR/",
+      "url": "https://cmlab-korea.github.io./FLAIR/"
+    },
+    {
+      "label": "🖌OmniText",
+      "href": "https://kaist-viclab.github.io/omnitext-site/",
+      "url": "https://kaist-viclab.github.io/omnitext-site/"
+    },
+    {
+      "label": "☕️ MoCHA-former",
+      "href": "https://cmlab-korea.github.io/MoCHA-former/",
+      "url": "https://cmlab-korea.github.io/MoCHA-former/"
+    },
+    {
+      "label": "Neurocomputing",
+      "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+    },
+    {
+      "label": "♻️ I-INR",
+      "href": "https://arxiv.org/abs/2504.17364",
+      "url": "https://arxiv.org/abs/2504.17364"
+    },
+    {
+      "label": "🕵🏻‍♂️ MoBGS",
+      "href": "https://arxiv.org/abs/2504.15122",
+      "url": "https://arxiv.org/abs/2504.15122"
+    },
+    {
+      "label": "🌀SoFoNO",
+      "href": "https://jongkwonoh.github.io/sofono-page/",
+      "url": "https://jongkwonoh.github.io/sofono-page/"
+    },
+    {
+      "label": "Neurocomputing",
+      "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+    },
+    {
+      "label": "MoBluRF🫨",
+      "href": "https://ieeexplore.ieee.org/document/11017407",
+      "url": "https://ieeexplore.ieee.org/document/11017407"
+    },
+    {
+      "label": "IEEE TPAMI",
+      "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+      "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+    },
+    {
+      "label": "EurekAlert",
+      "href": "https://www.eurekalert.org/news-releases/1098837",
+      "url": "https://www.eurekalert.org/news-releases/1098837"
+    },
+    {
+      "label": "CAU News",
+      "href": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140",
+      "url": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140"
+    },
+    {
+      "label": "Altmetric score 74",
+      "href": "https://www.altmetric.com/details/157703400/news",
+      "url": "https://www.altmetric.com/details/157703400/news"
+    },
+    {
+      "label": "Outstanding Reviewer",
+      "href": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf",
+      "url": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf"
+    },
+    {
+      "label": "Outstanding Instructor",
+      "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+      "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+    },
+    {
+      "label": "DiffPS",
+      "href": "https://github.com/PerceptualAI-Lab/DiffPS",
+      "url": "https://github.com/PerceptualAI-Lab/DiffPS"
+    },
+    {
+      "label": "MoBluRF🫨",
+      "href": "https://ieeexplore.ieee.org/document/11017407",
+      "url": "https://ieeexplore.ieee.org/document/11017407"
+    },
+    {
+      "label": "DG-ReID🫆",
+      "href": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353"
+    },
+    {
+      "label": "IEEE TPAMI",
+      "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+      "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+    },
+    {
+      "label": "Neurocomputing",
+      "href": "https://www.sciencedirect.com/journal/neurocomputing",
+      "url": "https://www.sciencedirect.com/journal/neurocomputing"
+    },
+    {
+      "label": "MoDec🎄-GS",
+      "href": "https://kaist-viclab.github.io/MoDecGS-site/",
+      "url": "https://kaist-viclab.github.io/MoDecGS-site/"
+    },
+    {
+      "label": "⏱️ BiM-VFI",
+      "href": "https://kaist-viclab.github.io/BiM-VFI_site/",
+      "url": "https://kaist-viclab.github.io/BiM-VFI_site/"
+    },
+    {
+      "label": "∿ SplineGS",
+      "href": "https://kaist-viclab.github.io/splinegs-site/",
+      "url": "https://kaist-viclab.github.io/splinegs-site/"
+    },
+    {
+      "label": "inshorts",
+      "href": "https://www.inshorts.ai/en",
+      "url": "https://www.inshorts.ai/en"
+    },
+    {
+      "label": "🍎 FMA-Net",
+      "href": "https://kaist-viclab.github.io/fmanet-site/",
+      "url": "https://kaist-viclab.github.io/fmanet-site/"
+    },
+    {
+      "label": "XVFI",
+      "href": "https://github.com/JihyongOh/XVFI",
+      "url": "https://github.com/JihyongOh/XVFI"
+    },
+    {
+      "label": "AIS (CVPR 2024 Workshop",
+      "href": "https://ai4streaming-workshop.github.io/",
+      "url": "https://ai4streaming-workshop.github.io/"
+    },
+    {
+      "label": "Outstanding Reviewer",
+      "href": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf",
+      "url": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf"
+    },
+    {
+      "label": "🍎 FMA-Net",
+      "href": "https://kaist-viclab.github.io/fmanet-site/",
+      "url": "https://kaist-viclab.github.io/fmanet-site/"
+    },
+    {
+      "label": "🍎 FMA-Net",
+      "href": "https://kaist-viclab.github.io/fmanet-site/",
+      "url": "https://kaist-viclab.github.io/fmanet-site/"
+    },
+    {
+      "label": "Jihyong Oh",
+      "href": "/our-team/principal-investigator-pi",
+      "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+    },
+    {
+      "label": "Copy heading link",
+      "href": "#h.7274u7ulcv78",
+      "url": "https://cmlab.cau.ac.kr/cmlab#h.7274u7ulcv78"
     }
   ],
-  "media": [],
+  "media": [
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcwcOxdOxKEvjfs62MEa-gSIUX626Gi9bTF_sz_QiHsjYzSt_R5nFWpWNbLiOAK_CvOViHEPol2WvcIQWuB87F38-kmq7qgYpoKVSUPF1hcpedQflQfPpfcyHQFdgLPbx0Hj9FVsYfkERWwBEcphvSkqm2YzBTF67rOqZtqiNEUSpPri97qdPv2_0jCWxw=w16383",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcwcOxdOxKEvjfs62MEa-gSIUX626Gi9bTF_sz_QiHsjYzSt_R5nFWpWNbLiOAK_CvOViHEPol2WvcIQWuB87F38-kmq7qgYpoKVSUPF1hcpedQflQfPpfcyHQFdgLPbx0Hj9FVsYfkERWwBEcphvSkqm2YzBTF67rOqZtqiNEUSpPri97qdPv2_0jCWxw=w16383",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcwcOxdOxKEvjfs62MEa-gSIUX626Gi9bTF_sz_QiHsjYzSt_R5nFWpWNbLiOAK_CvOViHEPol2WvcIQWuB87F38-kmq7qgYpoKVSUPF1hcpedQflQfPpfcyHQFdgLPbx0Hj9FVsYfkERWwBEcphvSkqm2YzBTF67rOqZtqiNEUSpPri97qdPv2_0jCWxw=w16383",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcwcOxdOxKEvjfs62MEa-gSIUX626Gi9bTF_sz_QiHsjYzSt_R5nFWpWNbLiOAK_CvOViHEPol2WvcIQWuB87F38-kmq7qgYpoKVSUPF1hcpedQflQfPpfcyHQFdgLPbx0Hj9FVsYfkERWwBEcphvSkqm2YzBTF67rOqZtqiNEUSpPri97qdPv2_0jCWxw=w16383",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "iframe",
+      "alt": "Custom embed",
+      "src": "https://www.gstatic.com/atari/embeds/bbbac824948cd11ec13ee1bf92d30354/intermediate-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.smUXTMp7CeY.O%2Fd%3D1%2Frs%3DAHpOoo_-UMASGI-dbLvJPxfO6N46l3l46A%2Fm%3D__features__&r=313826017",
+      "url": "https://www.gstatic.com/atari/embeds/bbbac824948cd11ec13ee1bf92d30354/intermediate-frame-minified.html?jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.smUXTMp7CeY.O%2Fd%3D1%2Frs%3DAHpOoo_-UMASGI-dbLvJPxfO6N46l3l46A%2Fm%3D__features__&r=313826017",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf74CxK9Mr9k-lIzKo36h57DrvZaeuRVpv3Rpf6aUuG7YLBOZZHfGPN0TtHj6SWMLRruvbiIEmwR-tcZV086hzQhNL4gTe2azg3QMozbqlvLEJj4D_1870YUhK4HkRlaVzI4EuuKiSF5GaYEoeQY3AS9DEaygcLUHmz236tpbC4WVSJCHObEVI3pOqPLMnISsSBEhgh7hi_zzD7vpuIEJU4LnVZ4TqY1dYAUEcLyl0=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf74CxK9Mr9k-lIzKo36h57DrvZaeuRVpv3Rpf6aUuG7YLBOZZHfGPN0TtHj6SWMLRruvbiIEmwR-tcZV086hzQhNL4gTe2azg3QMozbqlvLEJj4D_1870YUhK4HkRlaVzI4EuuKiSF5GaYEoeQY3AS9DEaygcLUHmz236tpbC4WVSJCHObEVI3pOqPLMnISsSBEhgh7hi_zzD7vpuIEJU4LnVZ4TqY1dYAUEcLyl0=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQePsEdbjAgfIjlp1FVqAlCgZQ1lSX9Zg2jhOuXbPQC51lqzWisaVgh9jDutrsUxMfuxmAC3FGMd-wh33ASm0dDHIi_3WqBrwdgEJ5jmqS2w3qg4mCxdfW0DZ105H2M8IevyTpCJz9NBFrL0PeTq7-JcO4laHUqEw3qZhLZIm-4Sv5dM189Hrt-ba73ezUv521E5FXYFwjldEDqeEX7iMHYnWflg3dmnKFtxEer1oFI=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQePsEdbjAgfIjlp1FVqAlCgZQ1lSX9Zg2jhOuXbPQC51lqzWisaVgh9jDutrsUxMfuxmAC3FGMd-wh33ASm0dDHIi_3WqBrwdgEJ5jmqS2w3qg4mCxdfW0DZ105H2M8IevyTpCJz9NBFrL0PeTq7-JcO4laHUqEw3qZhLZIm-4Sv5dM189Hrt-ba73ezUv521E5FXYFwjldEDqeEX7iMHYnWflg3dmnKFtxEer1oFI=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfcpaDpwLFWc0zsCvqSwfqr9tvGXr1hAZy44DOn1LoG_NdcYHOUuj5AqGP69pW0byK32MNLEniigy2pLMeG7oYUb_9cBRrElVFtGVRmhZo2MyygSGIrFO2DG4jod1vP43Ed8WqPSWX4T91XMTMHBUSZq90XU_b8vBtBRZKyVvvfhhii7DmQvK4Y1mxdI36dUpGgLiYdjpi6lsXVLIdBdnsZkhs9WLAd9_-OVLWLatY=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfcpaDpwLFWc0zsCvqSwfqr9tvGXr1hAZy44DOn1LoG_NdcYHOUuj5AqGP69pW0byK32MNLEniigy2pLMeG7oYUb_9cBRrElVFtGVRmhZo2MyygSGIrFO2DG4jod1vP43Ed8WqPSWX4T91XMTMHBUSZq90XU_b8vBtBRZKyVvvfhhii7DmQvK4Y1mxdI36dUpGgLiYdjpi6lsXVLIdBdnsZkhs9WLAd9_-OVLWLatY=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfT5Y8AAvqqSoGiSOGz0R_DslkwH5Wj9SYueZgAmA-7UAV8x-LACat5TVyX-nIDU62HolUTogGvY1PekXhQEvPK-uv4BXtKjMXIqE4bY2hcWFBcuPGTDT39WSirkyg3mBhWzzhAP2phtx0yvFMdxV5b2Ryei9gT3qgljZDhCh_mb7UlORMOQVAJIhKLLhQyOgJPtdop9U1Xb8gm2epdmSBqJy4T634HOexIMrur=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfT5Y8AAvqqSoGiSOGz0R_DslkwH5Wj9SYueZgAmA-7UAV8x-LACat5TVyX-nIDU62HolUTogGvY1PekXhQEvPK-uv4BXtKjMXIqE4bY2hcWFBcuPGTDT39WSirkyg3mBhWzzhAP2phtx0yvFMdxV5b2Ryei9gT3qgljZDhCh_mb7UlORMOQVAJIhKLLhQyOgJPtdop9U1Xb8gm2epdmSBqJy4T634HOexIMrur=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe7vUfZ_jgxb3EEOhAMJ0kJJtEGwReK2Rb0TzXr60fJccMvlLpwFy4CEECLjba6KS9UEcb23z5gLtKRLIRUtaOHHzy2cJfAo8ZirqJwtVyru4RNZtxtxMtgo5Gt-Egssfy82-UI0kSlcmukbyk7W6zBG6NAvnBHggdOupFSbHO94mhXV1nr_5tPzdGytHIGBL0wgmlVH-vSBxpkR3beXSt6fkiH9aQlKT88-tZv=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe7vUfZ_jgxb3EEOhAMJ0kJJtEGwReK2Rb0TzXr60fJccMvlLpwFy4CEECLjba6KS9UEcb23z5gLtKRLIRUtaOHHzy2cJfAo8ZirqJwtVyru4RNZtxtxMtgo5Gt-Egssfy82-UI0kSlcmukbyk7W6zBG6NAvnBHggdOupFSbHO94mhXV1nr_5tPzdGytHIGBL0wgmlVH-vSBxpkR3beXSt6fkiH9aQlKT88-tZv=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeOFEN7rcVp8hSuOl_yk11B5a0ugJD8hxtBVrxEp0y1WrQTneSLPAzfBix4vihewLOQ2RdTBN27GcStKKntt8upqaE8kUwAjxkfhG4gRS3gmymOQzMZnIEqIl2a8ra1GNbUXcE_i8xV-7PxYa7_HDVB5kMSP-oFnYaELveLY9C19r4V_R1zO8Yp2ImVN6hmiLR68TnXLmBE8kN79yvjryCQ7WC3TM5Wa_QYNsX_C3I=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeOFEN7rcVp8hSuOl_yk11B5a0ugJD8hxtBVrxEp0y1WrQTneSLPAzfBix4vihewLOQ2RdTBN27GcStKKntt8upqaE8kUwAjxkfhG4gRS3gmymOQzMZnIEqIl2a8ra1GNbUXcE_i8xV-7PxYa7_HDVB5kMSP-oFnYaELveLY9C19r4V_R1zO8Yp2ImVN6hmiLR68TnXLmBE8kN79yvjryCQ7WC3TM5Wa_QYNsX_C3I=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdK4s08YTvOPsrs2rkk9VLgp5TID9fdIlswZgytCe3KElsGsZTVjvimDvKsA5viwY0asLg8Xjda_a0sSHXLZJmfmZka5U_aWGLGhKU-tkbjuBca7Fa7tmdnPmnQssmzbxVpUAXERtOMFg0GeW3JLXIuPsPUPooc9p2Lko5t0mLVYUaf0I9VXJy0ZtI-UmTfaTpSOflOGCcDAbzwiI6VT3Pawnq0EQJgKDwkVa6P=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdK4s08YTvOPsrs2rkk9VLgp5TID9fdIlswZgytCe3KElsGsZTVjvimDvKsA5viwY0asLg8Xjda_a0sSHXLZJmfmZka5U_aWGLGhKU-tkbjuBca7Fa7tmdnPmnQssmzbxVpUAXERtOMFg0GeW3JLXIuPsPUPooc9p2Lko5t0mLVYUaf0I9VXJy0ZtI-UmTfaTpSOflOGCcDAbzwiI6VT3Pawnq0EQJgKDwkVa6P=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcMQbKR3WelZ1gklUNXOhKs-m3u9awQt-xAPcD9widZUc79lxCwcH-GbGINjs6G19Cv0M1bbwlplJyL9m1Qe93UhVetcGcBXG7tpOpav-5MARuu7YKBPBxexr_IHw0_kRXlpTTmnZ52ldRL4djOwZ2tAY6D6gvHvXvc9s6w_QFXb9ElpkEoArjORub9rta4vx3Ltm6SRbEu10NAdfTQ5iC0uk6NBkrQjrO1AVBURyU=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcMQbKR3WelZ1gklUNXOhKs-m3u9awQt-xAPcD9widZUc79lxCwcH-GbGINjs6G19Cv0M1bbwlplJyL9m1Qe93UhVetcGcBXG7tpOpav-5MARuu7YKBPBxexr_IHw0_kRXlpTTmnZ52ldRL4djOwZ2tAY6D6gvHvXvc9s6w_QFXb9ElpkEoArjORub9rta4vx3Ltm6SRbEu10NAdfTQ5iC0uk6NBkrQjrO1AVBURyU=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf9gzyoiJBqpHyKRjm7d5QJYbA_iQ_6AYVn5qOFvyw43oVTZvKRjoPvQ0WP1UoPQNBYtt3fZdFGnU2l77-S8aOiB9KnIgx4JnU7sQElTKnnjSLOFsOAI_MpMku8_gem1-nwfqT4Jkb9QPI38quROMpkBwiEt_tUUaQeUs6KOhbrUsA1mptihsao-IMSpzky-zFQ8qwM5-YXgT1nClLbqSbCML-fqshmy6DfDTLL=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf9gzyoiJBqpHyKRjm7d5QJYbA_iQ_6AYVn5qOFvyw43oVTZvKRjoPvQ0WP1UoPQNBYtt3fZdFGnU2l77-S8aOiB9KnIgx4JnU7sQElTKnnjSLOFsOAI_MpMku8_gem1-nwfqT4Jkb9QPI38quROMpkBwiEt_tUUaQeUs6KOhbrUsA1mptihsao-IMSpzky-zFQ8qwM5-YXgT1nClLbqSbCML-fqshmy6DfDTLL=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeZ0qIsN6r1wYu1KyLh5Um32vTmCwmN7No169Gf1XywoZ3m-WMRTV8SCE6dT82HBfY597MvC-K6dsDhCVxFO0U1R7xCDt40Jo1owAGx7JLv85X6l_BfpIhH7c1YMBzAHlPCRuwzbtnGNMSwCOl36KAVrgz8nt6xSYfGwA2t9fPAAzHMRWwOVQoe_mDqr5G_YRAsaHK-MUggAS5fLlD_p2z19Ql9w1hGj7UjUmUjKoQ=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeZ0qIsN6r1wYu1KyLh5Um32vTmCwmN7No169Gf1XywoZ3m-WMRTV8SCE6dT82HBfY597MvC-K6dsDhCVxFO0U1R7xCDt40Jo1owAGx7JLv85X6l_BfpIhH7c1YMBzAHlPCRuwzbtnGNMSwCOl36KAVrgz8nt6xSYfGwA2t9fPAAzHMRWwOVQoe_mDqr5G_YRAsaHK-MUggAS5fLlD_p2z19Ql9w1hGj7UjUmUjKoQ=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfCpkHX8zgaJ4o_RNUlnFlHb5MD5bXD9j4jwDfHmdwYSf-zR8sjNr4rdpg1v0kqXwslKkkKhH16RzErXQQtOrNxAOZebYoxb3FyPRwxUF5vEVL1hg3JtKGsIXxTXS4gcOc6VNJ60MvKjpb1nq0cdThK0UOC6N14ifRbIFXpxNFDd0Fczj36rCjOrWKCuJFJXrzQkQJmIeUkdf3hq5k5Qp8kR_G6-0l129SMUJb6=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfCpkHX8zgaJ4o_RNUlnFlHb5MD5bXD9j4jwDfHmdwYSf-zR8sjNr4rdpg1v0kqXwslKkkKhH16RzErXQQtOrNxAOZebYoxb3FyPRwxUF5vEVL1hg3JtKGsIXxTXS4gcOc6VNJ60MvKjpb1nq0cdThK0UOC6N14ifRbIFXpxNFDd0Fczj36rCjOrWKCuJFJXrzQkQJmIeUkdf3hq5k5Qp8kR_G6-0l129SMUJb6=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeyUAV5V7vzeCJcASUGdVM1kCTvh4BzLw0rVI-X_oqxQ4NGKqM-a7Wl82kKLCFXSCuWNaFMIIn5WpYqqwZ5PgjRPhM40PvB5hC-J0j-TjjV6EAQLTcA7ABYO-GtxPsjalF_r4NLgFedrqtsTwUq-yOX99uNHr3ogOG-IPt-SJqARnyYqU8QNVO-ZsekZ0nHV6bZ6B_6rQtwkMAIKHKMnZzkwbrN_EkbZLf2Wvfr_As=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeyUAV5V7vzeCJcASUGdVM1kCTvh4BzLw0rVI-X_oqxQ4NGKqM-a7Wl82kKLCFXSCuWNaFMIIn5WpYqqwZ5PgjRPhM40PvB5hC-J0j-TjjV6EAQLTcA7ABYO-GtxPsjalF_r4NLgFedrqtsTwUq-yOX99uNHr3ogOG-IPt-SJqARnyYqU8QNVO-ZsekZ0nHV6bZ6B_6rQtwkMAIKHKMnZzkwbrN_EkbZLf2Wvfr_As=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfkDiGZvQ0ETTOOFbIVa2WrhVPt5biMoXiqLGD6jqUc9WI-ltX_dXeERk_5Q1vhQj_biIxb0GU6RzFba058WdlJarx305S9vKp8x-J3qRejtybVJ9HqzruOqSnkkasOFo2stgGjlIS3dufrTe26LyonQEzOS3aOmP_Y9umVypE4zS2kJt8Y06e3gc5kNSOVNRyf_2D0AUvG4RGQMUx3H-IDY44amPAJ9RxktZrskN0=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfkDiGZvQ0ETTOOFbIVa2WrhVPt5biMoXiqLGD6jqUc9WI-ltX_dXeERk_5Q1vhQj_biIxb0GU6RzFba058WdlJarx305S9vKp8x-J3qRejtybVJ9HqzruOqSnkkasOFo2stgGjlIS3dufrTe26LyonQEzOS3aOmP_Y9umVypE4zS2kJt8Y06e3gc5kNSOVNRyf_2D0AUvG4RGQMUx3H-IDY44amPAJ9RxktZrskN0=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQebYhOrmvfvZhq1oIx0F-Gsr_Qydw21EXfAPOWiLabl61-_xcbPn1e4qfy-8iCE2Q0AgBxvBu65PP1WwIozYhSVvqx-j1xNlX1oUv0vhg1V7t_K_VMK1sLSQhvO0X8fiFj1fYdaXxX0BlDKrKdgZu3DOweXVrEDUyfq_UVvwo7GC-mwqmwnMTmI6WXVgb2aWhAk5dqAXlUzxeQwy6WnG_QyH0N_i7gdp8ZQUy0o=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQebYhOrmvfvZhq1oIx0F-Gsr_Qydw21EXfAPOWiLabl61-_xcbPn1e4qfy-8iCE2Q0AgBxvBu65PP1WwIozYhSVvqx-j1xNlX1oUv0vhg1V7t_K_VMK1sLSQhvO0X8fiFj1fYdaXxX0BlDKrKdgZu3DOweXVrEDUyfq_UVvwo7GC-mwqmwnMTmI6WXVgb2aWhAk5dqAXlUzxeQwy6WnG_QyH0N_i7gdp8ZQUy0o=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeLPbbYoLpVdGQok17nQgUv_N4gwf0w60Xz90WP8aGcKsYDcnMdV-flI9vk73n1NYSE_G0JZouVK6e1465_095XGx6su5pawQUPFDrQ71Y3GLVnFKVHDIRwaZvPC3Bb1Pl_NSJrKaqWedzqj1b_AISs2RiCUwmUyLTWGArczj_Ns-PMJZfd23UW6duG=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeLPbbYoLpVdGQok17nQgUv_N4gwf0w60Xz90WP8aGcKsYDcnMdV-flI9vk73n1NYSE_G0JZouVK6e1465_095XGx6su5pawQUPFDrQ71Y3GLVnFKVHDIRwaZvPC3Bb1Pl_NSJrKaqWedzqj1b_AISs2RiCUwmUyLTWGArczj_Ns-PMJZfd23UW6duG=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcbs5W-Gh0XsyF3xEQtcXJP6RlGNrvZ4x4-3OJ-CEfyV6-w5xQfnrK3-p2USqHpU-FDshSN8LcB7KSFSOBALieeghaAU-oMQFs2UBD4K0CKZTmjJatIXVvUihREKE8GB21MwYgEc9yL1WSNO1Xb6TyKaBiP_Cxhb0lVqU-wckh8qG73RdZe_00WHwES_D561OSAGlB3O7CfW4IA6RH0SUkPXHO5yXPzu_nrpdR6=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcbs5W-Gh0XsyF3xEQtcXJP6RlGNrvZ4x4-3OJ-CEfyV6-w5xQfnrK3-p2USqHpU-FDshSN8LcB7KSFSOBALieeghaAU-oMQFs2UBD4K0CKZTmjJatIXVvUihREKE8GB21MwYgEc9yL1WSNO1Xb6TyKaBiP_Cxhb0lVqU-wckh8qG73RdZe_00WHwES_D561OSAGlB3O7CfW4IA6RH0SUkPXHO5yXPzu_nrpdR6=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe9hmf3TB6y-v-ItHb9cUsp5zBI33my1hLY1aD1U2klC74S6_FTjRBTFliqgdcAKtVYvTsceEYomjH5zdbj1K3ysSADkgBxSBjXhkBKqJB14IRyBhJzoWdOt9lcMYzjieLw0S5D1VhvUrurrJlb-rapCsrb151Cm7X9XN3eJ_k36dKWqdU1sZBZr_vSpwaPwDsp6_uIZqSF8Dapho9TNRxA9ZRIyKfw4t1MAwHQ=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe9hmf3TB6y-v-ItHb9cUsp5zBI33my1hLY1aD1U2klC74S6_FTjRBTFliqgdcAKtVYvTsceEYomjH5zdbj1K3ysSADkgBxSBjXhkBKqJB14IRyBhJzoWdOt9lcMYzjieLw0S5D1VhvUrurrJlb-rapCsrb151Cm7X9XN3eJ_k36dKWqdU1sZBZr_vSpwaPwDsp6_uIZqSF8Dapho9TNRxA9ZRIyKfw4t1MAwHQ=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfzypivUoUbw20OgIeUx0OgPHn5fBEc3VD5MW5_IKdeOW53rEikZUZviiHzeiBcK6D_2DsgKuo2CNMEkvgQIcdmRijC9iEl14BYAGm72BCjbb_urgd1GPU_J5ekx3rwJuUjYJv9oj8OK04HThrTTV6rlM5DqzQTx_GzSObAcs5y4h6XRkz2ZPHg3-5HqWnuY399mfipolx4JQYu0Sy8LYp-1p8BKJ0dJI6J-tAeH9g=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfzypivUoUbw20OgIeUx0OgPHn5fBEc3VD5MW5_IKdeOW53rEikZUZviiHzeiBcK6D_2DsgKuo2CNMEkvgQIcdmRijC9iEl14BYAGm72BCjbb_urgd1GPU_J5ekx3rwJuUjYJv9oj8OK04HThrTTV6rlM5DqzQTx_GzSObAcs5y4h6XRkz2ZPHg3-5HqWnuY399mfipolx4JQYu0Sy8LYp-1p8BKJ0dJI6J-tAeH9g=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfkdMhk3R8rKMb0njDtjtc7DlHrBzfddgqf9v9-g0_gbpZkSsKnjdNhmwzubHfHHLE3skNlRW4xH2XvdM7IaZ-qMNsZwr6pU24siyHanyeY1NvpBb1QaSC9L-nVt0UTmFl2kqD7IF1BmrIbpJj9AjAZ9W6LpDGTE-MdrMNoe-VViBfNXTj03bPo9AwLcF7JBuLA37NcSil09q26yZzqlma8VaKOsSkPDy4mJP48=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfkdMhk3R8rKMb0njDtjtc7DlHrBzfddgqf9v9-g0_gbpZkSsKnjdNhmwzubHfHHLE3skNlRW4xH2XvdM7IaZ-qMNsZwr6pU24siyHanyeY1NvpBb1QaSC9L-nVt0UTmFl2kqD7IF1BmrIbpJj9AjAZ9W6LpDGTE-MdrMNoe-VViBfNXTj03bPo9AwLcF7JBuLA37NcSil09q26yZzqlma8VaKOsSkPDy4mJP48=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfGoBnnbjkdSUH4xA8-8EWQdhfCjp9kBNUgqPmdicteOkDI-qKdPLVCnMUnLuSYKxc_8wJyZN_k9gsaquq_s9ryNOhstphxibZnaoscWEjRPLRfXNlppzgwx--ySA2WYkuFKmjrBW7xx_r15TsyVOfPrUIPnbiXheJ3NMGVDJYlGQQ_U3T8G_zPrOgnlQM=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfGoBnnbjkdSUH4xA8-8EWQdhfCjp9kBNUgqPmdicteOkDI-qKdPLVCnMUnLuSYKxc_8wJyZN_k9gsaquq_s9ryNOhstphxibZnaoscWEjRPLRfXNlppzgwx--ySA2WYkuFKmjrBW7xx_r15TsyVOfPrUIPnbiXheJ3NMGVDJYlGQQ_U3T8G_zPrOgnlQM=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe2WeJhCTOG7HFDJ1Q7jSeEvxLkqA4y_PMOAE6Zax9RRCK5-vBMioEplVnd8igcNwj0ve0ovwF3DhX--VJK0Tz-UD420bqekqMl2Ek2mO5nGB1k6ejwkyihSzAwTPEBOULGdRhZheMA12cL1y1WR0YiEdAEWe3vk63z0XMZ6xlbhH3oX6yzy3aMY3bBDMwJTNWdbaDJoi2VN2jRjpzT8ysdL77fHmQAm8WPRayY=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe2WeJhCTOG7HFDJ1Q7jSeEvxLkqA4y_PMOAE6Zax9RRCK5-vBMioEplVnd8igcNwj0ve0ovwF3DhX--VJK0Tz-UD420bqekqMl2Ek2mO5nGB1k6ejwkyihSzAwTPEBOULGdRhZheMA12cL1y1WR0YiEdAEWe3vk63z0XMZ6xlbhH3oX6yzy3aMY3bBDMwJTNWdbaDJoi2VN2jRjpzT8ysdL77fHmQAm8WPRayY=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfyMw9WZyIzWnkujPZinA32KxTiEes2i3TVfb-cc6kzfY4ctgQB75VP1nmfZOcE1XVy93N3CpDWTv2yYMN_zFaXNS30d2WsSAQFrqaHuGlaLgETTLfy9-Ank4jxTyze6eRfKn3u1RiVXzThz_dw2IDqSO8JBNNKsdedE91LyirrysTxRqR1qTOYkuSKDM9jnUlYCUuVnuHgkXXUI8OFvrIVsVRyf57UjjGqbK0VcDc=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfyMw9WZyIzWnkujPZinA32KxTiEes2i3TVfb-cc6kzfY4ctgQB75VP1nmfZOcE1XVy93N3CpDWTv2yYMN_zFaXNS30d2WsSAQFrqaHuGlaLgETTLfy9-Ank4jxTyze6eRfKn3u1RiVXzThz_dw2IDqSO8JBNNKsdedE91LyirrysTxRqR1qTOYkuSKDM9jnUlYCUuVnuHgkXXUI8OFvrIVsVRyf57UjjGqbK0VcDc=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf-GU1gAS578V23Xqy949MDTafdW8PjISSitXxUDQR6oDo8a3CyFF1aqzmjSfJATp6PPYxFHATgAMBV4Ce-_zvgFiK7aNOM3BOKj90LeBaZwCxizqON8GHgjyNX8IYnjBV9TnRbbnAtFmDbDhsqxP-QtGZ7BPK6BsLbOyyWIAMBXc-v5Eiksx_JNeBidNr1XCDIsi1OkEvNq9JfqMnLPBWQFImhbHwARnZT9A28Jho=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf-GU1gAS578V23Xqy949MDTafdW8PjISSitXxUDQR6oDo8a3CyFF1aqzmjSfJATp6PPYxFHATgAMBV4Ce-_zvgFiK7aNOM3BOKj90LeBaZwCxizqON8GHgjyNX8IYnjBV9TnRbbnAtFmDbDhsqxP-QtGZ7BPK6BsLbOyyWIAMBXc-v5Eiksx_JNeBidNr1XCDIsi1OkEvNq9JfqMnLPBWQFImhbHwARnZT9A28Jho=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQebNWASow0bm_Ry_tNc4KqT5dHpvcnwAv3dZqS-KhA3s9hriGYu911FH0iFwUir1X5xhI09tp-W6Lzb-R53QO_8AkBG-kV2tUQtkdNzJMZPV6HS3HT-0FUI920th8MKoif_IsMQqoiuk8yUCs90U-wctCPwgIx7Qdotd_XSuLlUfcnsF3tta_Ll4kZqnj2tqgYtC2sP2iNujdSt6cfsoZ3SrM-CdI5SsDZTvwtrK70=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQebNWASow0bm_Ry_tNc4KqT5dHpvcnwAv3dZqS-KhA3s9hriGYu911FH0iFwUir1X5xhI09tp-W6Lzb-R53QO_8AkBG-kV2tUQtkdNzJMZPV6HS3HT-0FUI920th8MKoif_IsMQqoiuk8yUCs90U-wctCPwgIx7Qdotd_XSuLlUfcnsF3tta_Ll4kZqnj2tqgYtC2sP2iNujdSt6cfsoZ3SrM-CdI5SsDZTvwtrK70=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdef9pO2FDlmWGTxaaPM2VpsLYDEYmWGN2tCGv_ZnzQATEtgQI0-UqOI2ET-A9VPJQmjl5-Zf6G3O8YPe1c08dBYR1CN3ek6yl2xAmd6m9WWG5j_ss5fXMImyQpUcsPQRmxtZZX_UynerofYJxbqeYYOSqPR_3WTeoBGhvC27jQOXPcaxENL5Qc4p1k1z-J5PcXXXvTcMo8Y4rIQrcS2NyZoMV83CcS1E2pgWIq=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdef9pO2FDlmWGTxaaPM2VpsLYDEYmWGN2tCGv_ZnzQATEtgQI0-UqOI2ET-A9VPJQmjl5-Zf6G3O8YPe1c08dBYR1CN3ek6yl2xAmd6m9WWG5j_ss5fXMImyQpUcsPQRmxtZZX_UynerofYJxbqeYYOSqPR_3WTeoBGhvC27jQOXPcaxENL5Qc4p1k1z-J5PcXXXvTcMo8Y4rIQrcS2NyZoMV83CcS1E2pgWIq=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcsKK5Vongs1IXH0Wo9PsohrM8qoidDsF5GbKPaYwvkv9EacsLydqR4PYXH3CIboutglBwr4-y308T0X11_PdRjH35RnZawaiF78LvMA4l2sPoDbWHQXkAL25CYQiu6bDY7o27Z7RxRDSQ_m3jocyimGAALbEL0dltqRadsSdEZlPgoouWZKDCukjIVP4DActmPBFKGAqa-hyD8VKgH2fo2OIX2M0mIOCLR2ObYCrg=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcsKK5Vongs1IXH0Wo9PsohrM8qoidDsF5GbKPaYwvkv9EacsLydqR4PYXH3CIboutglBwr4-y308T0X11_PdRjH35RnZawaiF78LvMA4l2sPoDbWHQXkAL25CYQiu6bDY7o27Z7RxRDSQ_m3jocyimGAALbEL0dltqRadsSdEZlPgoouWZKDCukjIVP4DActmPBFKGAqa-hyD8VKgH2fo2OIX2M0mIOCLR2ObYCrg=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfG36fFAUUDKj8Leifgs1VuKohk_X4nXy8dMMfLXCHN3RC1fWl3Cw9-vf0D4npdQfmmS1Ze6vUqtRZW1odhl-KImBsEV8CoGQ2BrPByMQk800G2cpGFFPuN5HyLZ38lUYVNmO4HgQCwitmgANJGyGsIv0UEcJlTNyOq0sDoFrZoU8kOgo3MQa4eH1qaUtOf3h-X7UJ2fwFg1CYc4XKmhMBzixiPWA5bPhvp0e7_O98=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfG36fFAUUDKj8Leifgs1VuKohk_X4nXy8dMMfLXCHN3RC1fWl3Cw9-vf0D4npdQfmmS1Ze6vUqtRZW1odhl-KImBsEV8CoGQ2BrPByMQk800G2cpGFFPuN5HyLZ38lUYVNmO4HgQCwitmgANJGyGsIv0UEcJlTNyOq0sDoFrZoU8kOgo3MQa4eH1qaUtOf3h-X7UJ2fwFg1CYc4XKmhMBzixiPWA5bPhvp0e7_O98=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc4R_ZsC5iKzaQ1hV074mHZh19zOPCIqId7EYO_J7fGv5ozUr_GQ3yliIxYqRW857FplJR-ZTfpocyX6tsKzmAelDLXQnffknfMv6wVEKx7wUtTzWy9bSIw0KLQn8mJJgStJZ5FWvPheaK1_cjU1DN4ZFtwzgWs4_SVSU3q8uMu0jpeabOYJsfUbU1SHj26JEBIiLSQW_4bjWJIjh05TGhh0wBEhUl5NoIVV8vy=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc4R_ZsC5iKzaQ1hV074mHZh19zOPCIqId7EYO_J7fGv5ozUr_GQ3yliIxYqRW857FplJR-ZTfpocyX6tsKzmAelDLXQnffknfMv6wVEKx7wUtTzWy9bSIw0KLQn8mJJgStJZ5FWvPheaK1_cjU1DN4ZFtwzgWs4_SVSU3q8uMu0jpeabOYJsfUbU1SHj26JEBIiLSQW_4bjWJIjh05TGhh0wBEhUl5NoIVV8vy=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdu1vZBo9BYdGpnS_Irug_uzUwCRde8ExL2olOtU6lihPkxfYfvxRnJaKK4-nxnKoCpjGQfEH6rJIsDh4MWXC2P0zjlNC-qySe2lEl9IOFOVOSvnQQ74XKyRToniy5eTtKzecUIJvrJb88JDYi2A_iwbx_26FYa42apmcxs8qrVpABsPjFACeRhBXdLl9n2hgiIx4yeftAFEOkvTAKAAWXE7AfipF8DeNykUpMoKGE=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdu1vZBo9BYdGpnS_Irug_uzUwCRde8ExL2olOtU6lihPkxfYfvxRnJaKK4-nxnKoCpjGQfEH6rJIsDh4MWXC2P0zjlNC-qySe2lEl9IOFOVOSvnQQ74XKyRToniy5eTtKzecUIJvrJb88JDYi2A_iwbx_26FYa42apmcxs8qrVpABsPjFACeRhBXdLl9n2hgiIx4yeftAFEOkvTAKAAWXE7AfipF8DeNykUpMoKGE=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcy0njPhe8ai12kfJvWcGcuPlpzRcVAD-JdTVTBYZSnmjXo92YIyTDUVxAC-3sn6p9O8bwellud72uOy7WWKGJ16aOwD005jPeMFGkmV9-JOXOQxyjYbdlUDQm8ILOHivGiYWAAMovTcPLQg7_VOIdrq5v08ehVw9A9pmdUYbgwCdm8J7PPZ4IMoZG3omC7KW01lMxJ6ac-GsUxqygQNijsU8hOyhRecwsP2lX9ouM=w1280",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcy0njPhe8ai12kfJvWcGcuPlpzRcVAD-JdTVTBYZSnmjXo92YIyTDUVxAC-3sn6p9O8bwellud72uOy7WWKGJ16aOwD005jPeMFGkmV9-JOXOQxyjYbdlUDQm8ILOHivGiYWAAMovTcPLQg7_VOIdrq5v08ehVw9A9pmdUYbgwCdm8J7PPZ4IMoZG3omC7KW01lMxJ6ac-GsUxqygQNijsU8hOyhRecwsP2lX9ouM=w1280",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    }
+  ],
   "publication_candidates": [],
-  "dated_entries": [],
+  "dated_entries": [
+    {
+      "tag": "li",
+      "text": "[09.2026] One paper (🏃🏻MotionGrounder) has been accepted to NeurIPS 2026.",
+      "links": [
+        {
+          "label": "🏃🏻MotionGrounder",
+          "href": "https://kaist-viclab.github.io/motiongrounder-site/",
+          "url": "https://kaist-viclab.github.io/motiongrounder-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2026] One paper (🏃🏻MotionGrounder) has been accepted to NeurIPS 2026.",
+      "links": [
+        {
+          "label": "🏃🏻MotionGrounder",
+          "href": "https://kaist-viclab.github.io/motiongrounder-site/",
+          "url": "https://kaist-viclab.github.io/motiongrounder-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2026] Prof. Oh has been selected as an ECCV 2026 Outstanding Reviewer.",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee",
+          "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2026] Prof. Oh has been selected as an ECCV 2026 Outstanding Reviewer.",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee",
+          "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[08.2026] One paper (🎯 PRIMEdit) has been accepted to IEEE TPAMI (IF: 20.4).",
+      "links": [
+        {
+          "label": "🎯 PRIMEdit",
+          "href": "https://kaist-viclab.github.io/primedit-site/",
+          "url": "https://kaist-viclab.github.io/primedit-site/"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[08.2026] One paper (🎯 PRIMEdit) has been accepted to IEEE TPAMI (IF: 20.4).",
+      "links": [
+        {
+          "label": "🎯 PRIMEdit",
+          "href": "https://kaist-viclab.github.io/primedit-site/",
+          "url": "https://kaist-viclab.github.io/primedit-site/"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[07.2026] Prof. Oh has been selected as an Outstanding Instructor for Spring 2026 (CAU Teaching Evaluation).",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[07.2026] Prof. Oh has been selected as an Outstanding Instructor for Spring 2026 (CAU Teaching Evaluation).",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[06.2026] Two papers (֎FMA-Net++, 🔎AVSR-Diff) have been accepted to ECCV 2026.",
+      "links": [
+        {
+          "label": "֎FMA-Net++,",
+          "href": "https://kaist-viclab.github.io/fmanetpp_site/#",
+          "url": "https://kaist-viclab.github.io/fmanetpp_site/#"
+        },
+        {
+          "label": "🔎AVSR-Diff",
+          "href": "https://kaist-viclab.github.io/AVSR-Diff/",
+          "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[06.2026] Two papers (֎FMA-Net++, 🔎AVSR-Diff) have been accepted to ECCV 2026.",
+      "links": [
+        {
+          "label": "֎FMA-Net++,",
+          "href": "https://kaist-viclab.github.io/fmanetpp_site/#",
+          "url": "https://kaist-viclab.github.io/fmanetpp_site/#"
+        },
+        {
+          "label": "🔎AVSR-Diff",
+          "href": "https://kaist-viclab.github.io/AVSR-Diff/",
+          "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[05.2026] Prof. Oh has been selected as an CVPR 2026 Outstanding Reviewer (6.1%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[05.2026] Prof. Oh has been selected as an CVPR 2026 Outstanding Reviewer (6.1%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[04.2026] Two papers (🚂 MoRel, 🌱 EcoSplat) have been selected as CVPR 2026 🏅Highlights (3.6% ≈ 578/16,092).",
+      "links": [
+        {
+          "label": "🚂 MoRel",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        },
+        {
+          "label": "🌱 EcoSplat",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[04.2026] Two papers (🚂 MoRel, 🌱 EcoSplat) have been selected as CVPR 2026 🏅Highlights (3.6% ≈ 578/16,092).",
+      "links": [
+        {
+          "label": "🚂 MoRel",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        },
+        {
+          "label": "🌱 EcoSplat",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[03.2026] Seungho and Jeongho joined our lab in the spring of 2026. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[03.2026] Seungho and Jeongho joined our lab in the spring of 2026. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2026] 🂡 AceVFI, our comprehensive survey on Video Frame Interpolation, has been accepted to IEEE TCSVT (IF: 11.1).",
+      "links": [
+        {
+          "label": "🂡 AceVFI",
+          "href": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main",
+          "url": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2026] 🂡 AceVFI, our comprehensive survey on Video Frame Interpolation, has been accepted to IEEE TCSVT (IF: 11.1).",
+      "links": [
+        {
+          "label": "🂡 AceVFI",
+          "href": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main",
+          "url": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2026] Four papers (🚂 MoRel, 🖼️ FRAMER, 🌱 EcoSplat, ✨ FLAIR) have been accepted to CVPR 2026 (including 1 Findings).",
+      "links": [
+        {
+          "label": "🚂 MoRel",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        },
+        {
+          "label": "🖼️ FRAMER",
+          "href": "https://cmlab-korea.github.io/FRAMER/",
+          "url": "https://cmlab-korea.github.io/FRAMER/"
+        },
+        {
+          "label": "🌱 EcoSplat",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        },
+        {
+          "label": "✨ FLAIR",
+          "href": "https://cmlab-korea.github.io./FLAIR/",
+          "url": "https://cmlab-korea.github.io./FLAIR/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2026] Four papers (🚂 MoRel, 🖼️ FRAMER, 🌱 EcoSplat, ✨ FLAIR) have been accepted to CVPR 2026 (including 1 Findings).",
+      "links": [
+        {
+          "label": "🚂 MoRel",
+          "href": "https://cmlab-korea.github.io/MoRel/",
+          "url": "https://cmlab-korea.github.io/MoRel/"
+        },
+        {
+          "label": "🖼️ FRAMER",
+          "href": "https://cmlab-korea.github.io/FRAMER/",
+          "url": "https://cmlab-korea.github.io/FRAMER/"
+        },
+        {
+          "label": "🌱 EcoSplat",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        },
+        {
+          "label": "✨ FLAIR",
+          "href": "https://cmlab-korea.github.io./FLAIR/",
+          "url": "https://cmlab-korea.github.io./FLAIR/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[01.2026] One paper on Training-Free Generalist for Text Image Manipulation (🖌OmniText) has been accepted to ICLR 2026.",
+      "links": [
+        {
+          "label": "🖌OmniText",
+          "href": "https://kaist-viclab.github.io/omnitext-site/",
+          "url": "https://kaist-viclab.github.io/omnitext-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[01.2026] One paper on Training-Free Generalist for Text Image Manipulation (🖌OmniText) has been accepted to ICLR 2026.",
+      "links": [
+        {
+          "label": "🖌OmniText",
+          "href": "https://kaist-viclab.github.io/omnitext-site/",
+          "url": "https://kaist-viclab.github.io/omnitext-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[12.2025] One paper on Video Demoiréing Transformer (☕️ MoCHA-former) has been accepted to Neurocomputing (IF: 6.5).",
+      "links": [
+        {
+          "label": "☕️ MoCHA-former",
+          "href": "https://cmlab-korea.github.io/MoCHA-former/",
+          "url": "https://cmlab-korea.github.io/MoCHA-former/"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[12.2025] One paper on Video Demoiréing Transformer (☕️ MoCHA-former) has been accepted to Neurocomputing (IF: 6.5).",
+      "links": [
+        {
+          "label": "☕️ MoCHA-former",
+          "href": "https://cmlab-korea.github.io/MoCHA-former/",
+          "url": "https://cmlab-korea.github.io/MoCHA-former/"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[11.2025] Two papers (♻️ I-INR, 🕵🏻‍♂️ MoBGS) have been accepted to AAAI 2026.",
+      "links": [
+        {
+          "label": "♻️ I-INR",
+          "href": "https://arxiv.org/abs/2504.17364",
+          "url": "https://arxiv.org/abs/2504.17364"
+        },
+        {
+          "label": "🕵🏻‍♂️ MoBGS",
+          "href": "https://arxiv.org/abs/2504.15122",
+          "url": "https://arxiv.org/abs/2504.15122"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[11.2025] Two papers (♻️ I-INR, 🕵🏻‍♂️ MoBGS) have been accepted to AAAI 2026.",
+      "links": [
+        {
+          "label": "♻️ I-INR",
+          "href": "https://arxiv.org/abs/2504.17364",
+          "url": "https://arxiv.org/abs/2504.17364"
+        },
+        {
+          "label": "🕵🏻‍♂️ MoBGS",
+          "href": "https://arxiv.org/abs/2504.15122",
+          "url": "https://arxiv.org/abs/2504.15122"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[10.2025] One paper on Arbitrary-Scale Super-Resolution (🌀SoFoNO) has been accepted to Neurocomputing (IF: 6.5).",
+      "links": [
+        {
+          "label": "🌀SoFoNO",
+          "href": "https://jongkwonoh.github.io/sofono-page/",
+          "url": "https://jongkwonoh.github.io/sofono-page/"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[10.2025] One paper on Arbitrary-Scale Super-Resolution (🌀SoFoNO) has been accepted to Neurocomputing (IF: 6.5).",
+      "links": [
+        {
+          "label": "🌀SoFoNO",
+          "href": "https://jongkwonoh.github.io/sofono-page/",
+          "url": "https://jongkwonoh.github.io/sofono-page/"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2025] MoBluRF🫨 [IEEE TPAMI (IF: 18.6)] has been featured on EurekAlert and CAU News as one of CAU’s global research highlights (Altmetric score 74).",
+      "links": [
+        {
+          "label": "MoBluRF🫨",
+          "href": "https://ieeexplore.ieee.org/document/11017407",
+          "url": "https://ieeexplore.ieee.org/document/11017407"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        },
+        {
+          "label": "EurekAlert",
+          "href": "https://www.eurekalert.org/news-releases/1098837",
+          "url": "https://www.eurekalert.org/news-releases/1098837"
+        },
+        {
+          "label": "CAU News",
+          "href": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140",
+          "url": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140"
+        },
+        {
+          "label": "Altmetric score 74",
+          "href": "https://www.altmetric.com/details/157703400/news",
+          "url": "https://www.altmetric.com/details/157703400/news"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2025] MoBluRF🫨 [IEEE TPAMI (IF: 18.6)] has been featured on EurekAlert and CAU News as one of CAU’s global research highlights (Altmetric score 74).",
+      "links": [
+        {
+          "label": "MoBluRF🫨",
+          "href": "https://ieeexplore.ieee.org/document/11017407",
+          "url": "https://ieeexplore.ieee.org/document/11017407"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        },
+        {
+          "label": "EurekAlert",
+          "href": "https://www.eurekalert.org/news-releases/1098837",
+          "url": "https://www.eurekalert.org/news-releases/1098837"
+        },
+        {
+          "label": "CAU News",
+          "href": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140",
+          "url": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140"
+        },
+        {
+          "label": "Altmetric score 74",
+          "href": "https://www.altmetric.com/details/157703400/news",
+          "url": "https://www.altmetric.com/details/157703400/news"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2025] Prof. Oh has been selected as an ICCV 2025 Outstanding Reviewer (3%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2025] Prof. Oh has been selected as an ICCV 2025 Outstanding Reviewer (3%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2025] SeokHyun, Yejong, and Hyungyu joined our lab in the fall of 2025 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2025] SeokHyun, Yejong, and Hyungyu joined our lab in the fall of 2025 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[08.2025] Prof. Oh has been selected as an Outstanding Instructor for Spring 2025 (CAU Teaching Evaluation).",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[08.2025] Prof. Oh has been selected as an Outstanding Instructor for Spring 2025 (CAU Teaching Evaluation).",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[07.2025] Prof. Oh will serve as a Program Committee for AAAI 2026.",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[07.2025] Prof. Oh will serve as a Program Committee for AAAI 2026.",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[06.2025] One paper (🔍 DiffPS) on Person Search has been accepted to ICCV 2025 and selected as a🏅Highlight Paper (2.35% ≈ 263/11,152).",
+      "links": [
+        {
+          "label": "DiffPS",
+          "href": "https://github.com/PerceptualAI-Lab/DiffPS",
+          "url": "https://github.com/PerceptualAI-Lab/DiffPS"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[06.2025] One paper (🔍 DiffPS) on Person Search has been accepted to ICCV 2025 and selected as a🏅Highlight Paper (2.35% ≈ 263/11,152).",
+      "links": [
+        {
+          "label": "DiffPS",
+          "href": "https://github.com/PerceptualAI-Lab/DiffPS",
+          "url": "https://github.com/PerceptualAI-Lab/DiffPS"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[05.2025] Two papers (MoBluRF🫨, DG-ReID🫆) have been accepted to IEEE TPAMI (IF: 18.6) and Neurocomputing (IF: 6.5), respectively.",
+      "links": [
+        {
+          "label": "MoBluRF🫨",
+          "href": "https://ieeexplore.ieee.org/document/11017407",
+          "url": "https://ieeexplore.ieee.org/document/11017407"
+        },
+        {
+          "label": "DG-ReID🫆",
+          "href": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/journal/neurocomputing",
+          "url": "https://www.sciencedirect.com/journal/neurocomputing"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[05.2025] Two papers (MoBluRF🫨, DG-ReID🫆) have been accepted to IEEE TPAMI (IF: 18.6) and Neurocomputing (IF: 6.5), respectively.",
+      "links": [
+        {
+          "label": "MoBluRF🫨",
+          "href": "https://ieeexplore.ieee.org/document/11017407",
+          "url": "https://ieeexplore.ieee.org/document/11017407"
+        },
+        {
+          "label": "DG-ReID🫆",
+          "href": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353"
+        },
+        {
+          "label": "IEEE TPAMI",
+          "href": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34",
+          "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+        },
+        {
+          "label": "Neurocomputing",
+          "href": "https://www.sciencedirect.com/journal/neurocomputing",
+          "url": "https://www.sciencedirect.com/journal/neurocomputing"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2025] Three papers (MoDec🎄-GS, ⏱️ BiM-VFI, ∿ SplineGS ) have been accepted to CVPR 2025.",
+      "links": [
+        {
+          "label": "MoDec🎄-GS",
+          "href": "https://kaist-viclab.github.io/MoDecGS-site/",
+          "url": "https://kaist-viclab.github.io/MoDecGS-site/"
+        },
+        {
+          "label": "⏱️ BiM-VFI",
+          "href": "https://kaist-viclab.github.io/BiM-VFI_site/",
+          "url": "https://kaist-viclab.github.io/BiM-VFI_site/"
+        },
+        {
+          "label": "∿ SplineGS",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2025] Three papers (MoDec🎄-GS, ⏱️ BiM-VFI, ∿ SplineGS ) have been accepted to CVPR 2025.",
+      "links": [
+        {
+          "label": "MoDec🎄-GS",
+          "href": "https://kaist-viclab.github.io/MoDecGS-site/",
+          "url": "https://kaist-viclab.github.io/MoDecGS-site/"
+        },
+        {
+          "label": "⏱️ BiM-VFI",
+          "href": "https://kaist-viclab.github.io/BiM-VFI_site/",
+          "url": "https://kaist-viclab.github.io/BiM-VFI_site/"
+        },
+        {
+          "label": "∿ SplineGS",
+          "href": "https://kaist-viclab.github.io/splinegs-site/",
+          "url": "https://kaist-viclab.github.io/splinegs-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2025] Sukhun, Weeyoung, and Gyuwon joined our lab in the spring of 2025 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2025] Sukhun, Weeyoung, and Gyuwon joined our lab in the spring of 2025 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[11.2024] Prof. Oh joined inshorts as a CAIO to research and integrate Low-Level Vision techniques into real-world products.",
+      "links": [
+        {
+          "label": "inshorts",
+          "href": "https://www.inshorts.ai/en",
+          "url": "https://www.inshorts.ai/en"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[11.2024] Prof. Oh joined inshorts as a CAIO to research and integrate Low-Level Vision techniques into real-world products.",
+      "links": [
+        {
+          "label": "inshorts",
+          "href": "https://www.inshorts.ai/en",
+          "url": "https://www.inshorts.ai/en"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.2024] Juhyun joined our lab in the fall of 2024 as MS student. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.2024] Juhyun joined our lab in the fall of 2024 as MS student. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[08.2024] Prof. Oh will serve as a Program Committee for AAAI 2025.",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[08.2024] Prof. Oh will serve as a Program Committee for AAAI 2025.",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[06.17.2024] Prof. Oh was invited to talk on 🍎 FMA-Net and XVFI at the AIS (CVPR 2024 Workshop).",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        },
+        {
+          "label": "XVFI",
+          "href": "https://github.com/JihyongOh/XVFI",
+          "url": "https://github.com/JihyongOh/XVFI"
+        },
+        {
+          "label": "AIS (CVPR 2024 Workshop",
+          "href": "https://ai4streaming-workshop.github.io/",
+          "url": "https://ai4streaming-workshop.github.io/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[06.17.2024] Prof. Oh was invited to talk on 🍎 FMA-Net and XVFI at the AIS (CVPR 2024 Workshop).",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        },
+        {
+          "label": "XVFI",
+          "href": "https://github.com/JihyongOh/XVFI",
+          "url": "https://github.com/JihyongOh/XVFI"
+        },
+        {
+          "label": "AIS (CVPR 2024 Workshop",
+          "href": "https://ai4streaming-workshop.github.io/",
+          "url": "https://ai4streaming-workshop.github.io/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[05.29.2024] Prof. Oh has been selected as a CVPR 2024 Outstanding Reviewer (2%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[05.29.2024] Prof. Oh has been selected as a CVPR 2024 Outstanding Reviewer (2%).",
+      "links": [
+        {
+          "label": "Outstanding Reviewer",
+          "href": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf",
+          "url": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[04.05.2024] Our 🍎 FMA-Net (Final Review Scores: 5/5/4) has been selected as an 🏅Oral Paper (0.78% ≈ 90/11,532), which will be a huge honor to be presented in front of an audience of thousands of people.",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[04.05.2024] Our 🍎 FMA-Net (Final Review Scores: 5/5/4) has been selected as an 🏅Oral Paper (0.78% ≈ 90/11,532), which will be a huge honor to be presented in front of an audience of thousands of people.",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[02.2024] One paper (🍎 FMA-Net) on Joint Video Super-Resolution and Deblurring has been accepted to CVPR 2024.",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[02.2024] One paper (🍎 FMA-Net) on Joint Video Super-Resolution and Deblurring has been accepted to CVPR 2024.",
+      "links": [
+        {
+          "label": "🍎 FMA-Net",
+          "href": "https://kaist-viclab.github.io/fmanet-site/",
+          "url": "https://kaist-viclab.github.io/fmanet-site/"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[11.2023] Dahyeon, Giyeol, Changhyun, Jeahun, and Hyunseo joined our lab in the spring of 2024 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[11.2023] Dahyeon, Giyeol, Changhyun, Jeahun, and Hyunseo joined our lab in the spring of 2024 as MS students. Welcome!",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[09.01.2023] CMLab has been newly opened by Assistant Prof. Jihyong Oh.",
+      "links": [
+        {
+          "label": "Jihyong Oh",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[09.01.2023] CMLab has been newly opened by Assistant Prof. Jihyong Oh.",
+      "links": [
+        {
+          "label": "Jihyong Oh",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    }
+  ],
   "source_url": "https://cmlab.cau.ac.kr/cmlab",
   "capture_method": "Playwright Chromium",
   "frames": []
