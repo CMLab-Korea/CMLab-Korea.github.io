@@ -1,68 +1,111 @@
 [
   {
+    "group": "core",
+    "degree": "Ph.D. candidate",
     "name": "Dahyeon Kye",
-    "degree": "Ph.D.",
-    "group": "core",
-    "note": "Lab Manager"
+    "photo": "assets/img/people/dahyeon-kye.webp",
+    "semester": "26-1",
+    "note": "Lab Manager",
+    "url": "https://rpdahxn.github.io/",
+    "alumni": {
+      "from": "24-1",
+      "to": "25-2",
+      "phd_since": "26-1"
+    }
   },
   {
+    "group": "core",
+    "degree": "Ph.D. candidate",
     "name": "Jeahun Sung",
-    "degree": "Ph.D.",
-    "group": "core",
-    "note": ""
+    "photo": "assets/img/people/jeahun-sung.webp",
+    "semester": "26-1",
+    "email": "jhseong@cau.ac.kr",
+    "alumni": {
+      "from": "24-1",
+      "to": "25-2",
+      "phd_since": "26-1"
+    }
   },
   {
-    "name": "Seungho Choi",
-    "degree": "Ph.D.",
     "group": "core",
-    "note": ""
+    "degree": "Ph.D. candidate",
+    "name": "Choi Seungho",
+    "photo": "assets/img/people/choi-seungho.webp",
+    "semester": "26-1",
+    "url": "https://oh-gnues-iohc.github.io/",
+    "aliases": [
+      "Seungho Choi"
+    ]
   },
   {
+    "group": "core",
+    "degree": "Ph.D. candidate",
     "name": "Changhyun Roh",
-    "degree": "Ph.D.",
-    "group": "core",
-    "note": ""
+    "photo": "assets/img/people/changhyun-roh.webp",
+    "semester": "26-2",
+    "email": "changhyunroh@cau.ac.kr",
+    "alumni": {
+      "from": "24-1",
+      "to": "26-1",
+      "phd_since": "26-2"
+    }
   },
   {
+    "group": "core",
+    "degree": "M.S. candidate",
     "name": "Sukhun Ko",
-    "degree": "M.S.",
-    "group": "core",
-    "note": ""
+    "photo": "assets/img/people/sukhun-ko.webp",
+    "semester": "25-1",
+    "url": "https://hun-hub.github.io/"
   },
   {
+    "group": "core",
+    "degree": "M.S. candidate",
     "name": "Weeyoung Kwon",
-    "degree": "M.S.",
-    "group": "core",
-    "note": ""
+    "photo": "assets/img/people/weeyoung-kwon.webp",
+    "semester": "25-1",
+    "url": "https://klavna.github.io/WeeyoungKwon.github.io/"
   },
   {
+    "group": "core",
+    "degree": "M.S. candidate",
     "name": "SeokHyun Yoon",
-    "degree": "M.S.",
-    "group": "core",
-    "note": ""
+    "photo": "assets/img/people/seokhyun-yoon.webp",
+    "semester": "25-2",
+    "email": "hisn16@cau.ac.kr",
+    "aliases": [
+      "Seokhyun Youn",
+      "SeokHyun Youn"
+    ],
+    "author_name": "Seokhyun Youn"
   },
   {
+    "group": "core",
+    "degree": "M.S. candidate",
     "name": "Jeongho Seo",
-    "degree": "M.S.",
-    "group": "core",
-    "note": ""
+    "photo": "assets/img/people/jeongho-seo.webp",
+    "semester": "26-1",
+    "email": "jeonghoseo@cau.ac.kr"
   },
   {
+    "group": "intern",
+    "degree": "Research intern",
     "name": "Yujin Jeong",
-    "degree": "Research Intern",
-    "group": "intern",
-    "note": ""
+    "photo": "assets/img/people/yujin-jeong.webp",
+    "semester": "27-1"
   },
   {
+    "group": "intern",
+    "degree": "Research intern",
     "name": "Moonseung Choi",
-    "degree": "Research Intern",
-    "group": "intern",
-    "note": ""
+    "photo": "assets/img/people/moonseung-choi.webp",
+    "semester": "27-1"
   },
   {
-    "name": "Sangmin Kim",
-    "degree": "Research Intern",
     "group": "intern",
-    "note": ""
+    "degree": "Research intern",
+    "name": "Sangmin Kim",
+    "photo": "assets/img/people/sangmin-kim.webp",
+    "semester": "28-1"
   }
 ]

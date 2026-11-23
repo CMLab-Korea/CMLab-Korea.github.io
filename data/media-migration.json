@@ -18,15 +18,21 @@
     },
     {
       "paper": "FMA-Net++",
-      "image": "",
+      "image": "assets/media/publications/paper-3/teaser.webp",
       "video": "",
-      "status": "pending"
+      "status": "imported",
+      "project": "https://kaist-viclab.github.io/fmanetpp_site/",
+      "source": "https://github.com/KAIST-VICLab/FMA-Net-PlusPlus/blob/9b17a97c5c84cf96418f5e7277c12d5c7881b44a/assets/framework.png",
+      "changes": "Resized project result or method figure and encoded as WebP"
     },
     {
       "paper": "AVSR-Diff",
-      "image": "",
+      "image": "assets/media/publications/paper-4/teaser.webp",
       "video": "",
-      "status": "pending"
+      "status": "imported",
+      "project": "https://kaist-viclab.github.io/AVSR-Diff/",
+      "source": "https://github.com/KAIST-VICLab/AVSR-Diff/blob/cf3fd4f836de52e571eeebb97c45c1394588d7f5/assets/qualitative.png",
+      "changes": "Resized project result or method figure and encoded as WebP"
     },
     {
       "paper": "AceVFI",
@@ -75,15 +81,21 @@
     },
     {
       "paper": "MoCHA-former",
-      "image": "",
+      "image": "assets/media/publications/paper-11/teaser.webp",
       "video": "",
-      "status": "pending"
+      "status": "imported",
+      "project": "https://cmlab-korea.github.io/MoCHA-former/",
+      "source": "https://github.com/CMLab-Korea/Neurocomputing26-MoCHA-former/blob/f46939cc0fad8026af776a2c2be5781a47e67094/assets/MoCHA-former-main.png",
+      "changes": "Resized project result or method figure and encoded as WebP"
     },
     {
       "paper": "MoBGS",
-      "image": "",
+      "image": "assets/media/publications/paper-12/teaser.webp",
       "video": "",
-      "status": "pending"
+      "status": "imported",
+      "project": "https://kaist-viclab.github.io/mobgs-site/",
+      "source": "https://github.com/KAIST-VICLab/MoBGS/blob/0a1e0d32df159a4a0ec11cab8af663a97ae1a1a0/assets/architecture.png",
+      "changes": "Resized project result or method figure and encoded as WebP"
     },
     {
       "paper": "I-INR",
@@ -105,9 +117,12 @@
     },
     {
       "paper": "MoBluRF",
-      "image": "",
+      "image": "assets/media/publications/paper-16/teaser.webp",
       "video": "",
-      "status": "pending"
+      "status": "imported",
+      "project": "https://kaist-viclab.github.io/moblurf-site/",
+      "source": "https://github.com/KAIST-VICLab/MoBluRF/blob/3320e5c965fca556ec27488534200014a8297bcd/assets/architecture.png",
+      "changes": "Resized project result or method figure and encoded as WebP"
     },
     {
       "paper": "Domain Generalization for Person Re-identification",
@@ -117,9 +132,12 @@
     },
     {
       "paper": "SplineGS",
-      "image": "",
+      "image": "assets/media/publications/paper-18/teaser.webp",
       "video": "",
-      "status": "pending"
+      "status": "imported",
+      "project": "https://kaist-viclab.github.io/splinegs-site/",
+      "source": "https://github.com/KAIST-VICLab/SplineGS/blob/5030b35285b91afb73eccb9b7783797f31d97d39/assets/architecture.png",
+      "changes": "Resized project result or method figure and encoded as WebP"
     },
     {
       "paper": "MoDec-GS",
@@ -129,15 +147,21 @@
     },
     {
       "paper": "BiM-VFI",
-      "image": "",
-      "video": "",
-      "status": "pending"
+      "image": "assets/media/publications/bim-vfi/teaser.webp",
+      "video": "assets/media/publications/bim-vfi/preview.mp4",
+      "status": "imported",
+      "video_source": "https://github.com/wonozlo/wonozlo.github.io/blob/4be2a6ef73ef3136503049a9f9c17db47f7ec700/static/gifs/bimvfi.gif",
+      "project": "https://kaist-viclab.github.io/BiM-VFI_site/",
+      "changes": "Eight-second H.264 excerpt and first-frame WebP poster from the first author’s homepage demo"
     },
     {
       "paper": "FMA-Net",
-      "image": "",
+      "image": "assets/media/publications/paper-21/teaser.webp",
       "video": "",
-      "status": "pending"
+      "status": "imported",
+      "project": "https://kaist-viclab.github.io/fmanet-site/",
+      "source": "https://github.com/KAIST-VICLab/FMA-Net/blob/f362b080359810fdc33a6b6040c622b69aa31c7b/assets/result.png",
+      "changes": "Resized project result or method figure and encoded as WebP"
     },
     {
       "paper": "DeMFI",

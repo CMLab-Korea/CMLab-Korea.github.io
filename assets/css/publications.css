@@ -63,3 +63,46 @@
 }
 .paper-verification a:hover { color: var(--highlight); }
 .paper-rich-body { min-width: 0; overflow-wrap: anywhere; }
+
+.distinguished-paper {
+  background: linear-gradient(110deg, rgba(60, 102, 200, .19), rgba(18, 29, 57, .12) 82%);
+  border-left: 2px solid rgba(150, 194, 255, .65);
+  padding-inline: 12px;
+}
+.paper-author-link { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #6786c480; }
+.paper-author-link:hover, .paper-author-link:focus-visible { color: #c8e9ff; text-decoration-color: currentColor; }
+.author-mark { font-size: .7em; }
+.paper-source-mark { font-size: .84em; }
+.paper-affiliations { align-items: center; }
+.paper-affiliations > svg { width: 18px; height: 18px; fill: none; stroke: var(--highlight); stroke-width: 1.65; }
+.affiliation-tag { display: inline-flex; gap: 6px; align-items: center; }
+.paper-org-logo { width: 32px; height: 22px; border-radius: 3px; object-fit: contain; background: #fff; padding: 2px; }
+.area-dropdown { position: relative; min-width: 0; z-index: 4; }
+.area-dropdown summary {
+  min-height: 52px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .6rem .8rem;
+  color: var(--text);
+  background: #131d35;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  font-size: .86rem;
+}
+.area-dropdown summary::after { content: "⌄"; margin-left: .4rem; }
+.area-dropdown summary::-webkit-details-marker { display: none; }
+.area-choices {
+  position: absolute; right: 0; top: calc(100% + 4px);
+  width: max(100%, 210px); max-width: 85vw;
+  background: #131d35; border: 1px solid var(--line); border-radius: 8px; padding: 4px;
+}
+.area-choice {
+  display: block; width: 100%; border: 0; border-radius: 5px; padding: .45rem .65rem;
+  background: transparent; text-align: left; color: var(--text); cursor: pointer;
+}
+.area-choice:hover, .area-choice:focus-visible, .area-choice[aria-pressed="true"] { background: var(--layer2); }
+.area-choice .paper-area, .area-dropdown summary .paper-area { color: inherit; }

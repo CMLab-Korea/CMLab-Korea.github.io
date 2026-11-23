@@ -604,7 +604,7 @@
     "area": "Video & Motion Intelligence",
     "status": "Published",
     "venue_short": "ECCV'26",
-    "teaser": "",
+    "teaser": "assets/media/publications/paper-3/teaser.webp",
     "teaser_video": "",
     "authors": "Geunhyuk Youk, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [
@@ -655,7 +655,8 @@
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
-    ]
+    ],
+    "teaser_alt": "FMA-Net++ framework diagram"
   },
   {
     "id": 4,
@@ -667,7 +668,7 @@
     "area": "Video & Motion Intelligence",
     "status": "Published",
     "venue_short": "ECCV'26",
-    "teaser": "",
+    "teaser": "assets/media/publications/paper-4/teaser.webp",
     "teaser_video": "",
     "authors": "Geunhyuk Youk, Jeonghyeok Do, Dayeon Kim, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [
@@ -718,7 +719,8 @@
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
-    ]
+    ],
+    "teaser_alt": "AVSR-Diff qualitative comparisons across scales"
   },
   {
     "id": 5,
@@ -1115,7 +1117,7 @@
     "area": "Video & Motion Intelligence",
     "status": "Published",
     "venue_short": "Neurocomputing'26",
-    "teaser": "",
+    "teaser": "assets/media/publications/paper-11/teaser.webp",
     "teaser_video": "",
     "authors": "Jeahun Sung, Changhyun Roh, Chanho Eom, and Jihyong Oh†",
     "affiliations": [],
@@ -1151,7 +1153,8 @@
     "project_url": "https://cmlab-korea.github.io/MoCHA-former/",
     "code_url": "https://github.com/CMLab-Korea/MoCHA-former-arXiv",
     "arxiv_url": "https://arxiv.org/pdf/2508.14423",
-    "source_venue": "Neurocomputing (IF=6.5) vol. 669, 132477, March 07, 2026 (DOI: https://doi.org/10.1016/j.neucom.2025.132477)"
+    "source_venue": "Neurocomputing (IF=6.5) vol. 669, 132477, March 07, 2026 (DOI: https://doi.org/10.1016/j.neucom.2025.132477)",
+    "teaser_alt": "MoCHA-former framework diagram"
   },
   {
     "id": 12,
@@ -1163,7 +1166,7 @@
     "area": "3D/4D World Modeling",
     "status": "Published",
     "venue_short": "AAAI'26",
-    "teaser": "",
+    "teaser": "assets/media/publications/paper-12/teaser.webp",
     "teaser_video": "",
     "authors": "Minh-Quan Viet Bui*, Jongmin Park*, Juan Luis Gonzalez Bello, Jaeho Moon, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
@@ -1210,7 +1213,8 @@
     "organizations": [
       "flawless",
       "kaist"
-    ]
+    ],
+    "teaser_alt": "MoBGS architecture diagram"
   },
   {
     "id": 13,
@@ -1378,7 +1382,7 @@
     "area": "3D/4D World Modeling",
     "status": "Published",
     "venue_short": "TPAMI'25",
-    "teaser": "",
+    "teaser": "assets/media/publications/paper-16/teaser.webp",
     "teaser_video": "",
     "authors": "Minh-Quan Viet Bui*, Jongmin Park*, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
@@ -1431,7 +1435,8 @@
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
-    ]
+    ],
+    "teaser_alt": "MoBluRF architecture diagram"
   },
   {
     "id": 17,
@@ -1494,7 +1499,7 @@
     "area": "3D/4D World Modeling",
     "status": "Published",
     "venue_short": "CVPR'25",
-    "teaser": "",
+    "teaser": "assets/media/publications/paper-18/teaser.webp",
     "teaser_video": "",
     "authors": "Jongmin Park*, Minh-Quan Viet Bui*, Juan Luis Gonzalez Bello, Jaeho Moon, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
@@ -1535,7 +1540,8 @@
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
-    ]
+    ],
+    "teaser_alt": "SplineGS architecture diagram"
   },
   {
     "id": 19,
@@ -1652,7 +1658,7 @@
     "area": "Video & Motion Intelligence",
     "status": "Published",
     "venue_short": "CVPR'24",
-    "teaser": "",
+    "teaser": "assets/media/publications/paper-21/teaser.webp",
     "teaser_video": "",
     "authors": "Geunhyuk Youk, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
@@ -1713,7 +1719,8 @@
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
-    ]
+    ],
+    "teaser_alt": "FMA-Net joint video super-resolution and deblurring results"
   },
   {
     "id": 22,

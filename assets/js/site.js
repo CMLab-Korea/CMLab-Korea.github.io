@@ -205,6 +205,9 @@
     const year = $('#paper-year');
     const venue = $('#paper-venue');
     const area = $('#paper-area');
+    let selectedArea = 'all';
+    const identities = new Map();
+    let institutions = {};
     const counter = $('#paper-count');
     const feedback = $('#paper-feedback');
     const areas = new Map([
@@ -257,9 +260,14 @@
       const names = paper.authors.split(/, and |, | and /).map(name => name.trim()).filter(Boolean);
       names.forEach((name, i) => {
         if (i) line.append(', ');
-        const plain = name.replace(/[†*‡]/g, '').trim();
-        const emphasize = plain === 'Jihyong Oh' || paper.cmlab_lead_authors?.includes(plain);
-        line.append(node('span', emphasize ? 'paper-author-highlight' : '', name));
+        const marks = name.match(/[†*‡]+$/)?.[0] || '';
+        const plain = name.slice(0, name.length - marks.length).trim();
+        const member = identities.get(identityKey(plain));
+        const label = member?.author_name || plain;
+        const author = member?.url ? externalLink(label, member.url, 'paper-author-link') : node('span', '', label);
+        if (member?.local) author.classList.add('paper-author-highlight');
+        line.append(author);
+        if (marks) line.append(node('sup', 'author-mark', marks));
       });
       return line;
     }
@@ -267,18 +275,14 @@
     function areaTag(name) {
       const {label, icon} = areas.get(name);
       const tag = node('span', 'paper-area');
-      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-      const use = document.createElementNS(svg.namespaceURI, 'use');
-      use.setAttribute('href', 'assets/img/research-symbols.svg#' + icon);
-      svg.setAttribute('aria-hidden', 'true');
-      svg.append(use);
-      tag.append(svg, label);
+      tag.append(symbol('assets/img/research-symbols.svg', icon), label);
       return tag;
     }
 
     function paperRow(paper) {
       const row = node('article', 'paper-row rich-paper');
       row.id = 'paper-' + paper.id;
+      if (paper.distinction_percent) row.classList.add('distinguished-paper');
       const badge = node('div', 'venue-column');
       badge.append(node('span', 'venue-abbr', venueBadge(paper)));
       badge.append(node('span', 'venue-kind', paper.type === 'Preprint' ? String(paper.year) : paper.type));
@@ -295,6 +299,7 @@
           video.src = paper.teaser_video;
           video.controls = video.playsInline = video.muted = true;
           video.preload = 'none';
+          video.loop = true;
           if (paper.teaser) video.poster = paper.teaser;
           video.setAttribute('aria-label', paper.teaser_video_label || paper.short);
           teaser.append(video);
@@ -315,12 +320,26 @@
       const destination = paper.venue_url && links.has(paper.venue_url) ? paper.venue_url
         : paper.arxiv_url && links.has(paper.arxiv_url) ? paper.arxiv_url : undefined;
       const title = node('h3');
+      if (paper.mark) {
+        const mark = node('span', 'paper-source-mark', paper.mark);
+        mark.setAttribute('aria-hidden', 'true');
+        title.append(mark, ' ');
+      }
       title.append(destination ? externalLink(paper.title, destination, 'paper-title') : paper.title);
       body.append(node('div', 'paper-overline', paper.short), title);
       if (paper.authors) body.append(authorLine(paper));
-      if (paper.affiliations?.length) {
+      const organizations = (paper.organizations || []).map(id => institutions[id]).filter(Boolean);
+      const affiliationLabels = [...new Set([...(paper.affiliations || []), ...organizations.map(org => org.name)])];
+      if (affiliationLabels.length) {
         const affiliations = node('div', 'paper-affiliations');
-        affiliations.append(...paper.affiliations.map(name => node('span', 'affiliation-tag', name)));
+        affiliations.setAttribute('aria-label', 'Research collaborators');
+        affiliations.append(symbol('assets/img/news-icons.svg', 'collaboration'));
+        for (const name of affiliationLabels) {
+          const badge = node('span', 'affiliation-tag', name);
+          const logo = organizations.find(org => org.name === name)?.logo;
+          if (logo) badge.prepend(photo(logo, 'paper-org-logo', ''));
+          affiliations.append(badge);
+        }
         body.append(affiliations);
       }
       const tags = node('div', 'paper-areas');
@@ -342,11 +361,25 @@
       return row;
     }
 
-    getData('publications.json').then(items => {
+    Promise.all([
+      getData('publications.json'),
+      getData('people.json').catch(() => []),
+      getData('collaborators.json').catch(() => []),
+      getData('institutions.json').catch(() => ({}))
+    ]).then(([items, people, collaborators, organizations]) => {
+      institutions = organizations;
+      for (const person of collaborators) {
+        for (const key of identityNames(person)) identities.set(key, person);
+      }
+      for (const person of people) {
+        for (const key of identityNames(person)) identities.set(key, {...person, local: true});
+      }
+      identities.set(identityKey('Jihyong Oh'), {local: true, url: 'people.html#principal-investigator'});
+
       for (const value of [...new Set(items.map(p => p.year))].sort((a, b) => b - a)) year.add(new Option(value, value));
       const venues = [...new Set(items.filter(p => p.type !== 'Preprint').map(venueName))].sort();
       for (const name of venues) venue.add(new Option(name, name));
-      for (const [name, {label}] of areas) area.add(new Option(label, name));
+
 
       function render() {
         const query = search.value.trim().toLowerCase();
@@ -357,7 +390,7 @@
           return (type.value === 'all' || p.type === type.value)
             && (year.value === 'all' || String(p.year) === year.value)
             && (venue.value === 'all' || venueName(p) === venue.value)
-            && (area.value === 'all' || tags.includes(area.value))
+            && (selectedArea === 'all' || tags.includes(selectedArea))
             && keywords.includes(query);
         });
         const preprints = matches.filter(p => p.type === 'Preprint');
@@ -372,48 +405,223 @@
       }
 
       search.addEventListener('input', render);
-      for (const select of [type, year, venue, area]) select.addEventListener('change', render);
+      for (const select of [type, year, venue]) select.addEventListener('change', render);
+      const summary = $('summary', area);
+      const choices = $('.area-choices', area);
+      for (const key of ['all', ...areas.keys()]) {
+        const choice = node('button', 'area-choice');
+        choice.type = 'button';
+        choice.setAttribute('aria-pressed', String(key === selectedArea));
+        choice.append(key === 'all' ? 'All areas' : areaTag(key));
+        choice.addEventListener('click', () => {
+          selectedArea = key;
+          summary.replaceChildren(key === 'all' ? 'All areas' : areaTag(key));
+          for (const button of choices.children) button.setAttribute('aria-pressed', String(button === choice));
+          area.open = false;
+          summary.focus();
+          render();
+        });
+        choices.append(choice);
+      }
+      area.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && area.open) {
+          area.open = false;
+          summary.focus();
+        }
+      });
+      document.addEventListener('click', event => {
+        if (!area.contains(event.target)) area.open = false;
+      });
       render();
       if (/^#paper-\d+$/.test(location.hash)) {
         document.getElementById(location.hash.slice(1))?.scrollIntoView();
       }
     }).catch(() => {
       counter.textContent = 'Publications unavailable';
-      feedback.textContent = 'Use the original publications archive above to browse papers.';
+      feedback.textContent = 'Try refreshing the page to load the publication list.';
       feedback.hidden = false;
     });
   }
-  if(page==='people'){
-    getData('people.json').then(items=>{
-      const map={core:'#core-people',intern:'#intern-people'};
-      for(const [group,sel] of Object.entries(map)){
-        const target=$(sel);if(!target)continue;
-        items.filter(x=>x.group===group).forEach(p=>{
-          const article=node('article','person-card');
-          const initials=p.name.split(' ').map(n=>n[0]).slice(0,2).join('').toUpperCase();
-          article.append(node('div','person-avatar',initials),node('h3','',p.name),node('p','',p.degree));
-          if(p.note)article.appendChild(node('small','',p.note));target.appendChild(article);
-        });
-      }
-    }).catch(()=>{const target=$('#core-people');if(target)target.textContent='Member data unavailable. Visit the original CMLab Students page.'});
+  function identityKey(name) {
+    return name.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
   }
-  if (page==='people') {
-    getData('collaborators.json').then(items=>{
-      const target=$('#collaborators-grid');if(!target)return;
-      const order=['Academia','Research Institute','Industry'];
-      order.forEach(category=>{
-        const group=items.filter(x=>x.category===category);if(!group.length)return;
-        const heading=node('h3','collaborator-group-heading',category);target.append(heading);
-        const wrap=node('div','collab-cards');
-        group.forEach(c=>{
-          const a=node('a','collab-card');a.href=safeURL(c.url);a.target='_blank';a.rel='noopener noreferrer';
-          const badge=node('div','collab-badge',c.institution.replace(/[^A-Za-z\s]/g,'').split(/\s+/).map(t=>t[0]).slice(0,3).join('').toUpperCase());
-          const content=node('div','collab-content');content.append(node('strong','',c.institution),node('span','collab-person',c.person),node('small','',c.unit));
-          if(c.works?.length)content.append(node('span','collab-work',c.works.slice(0,3).join(' · ')));
-          a.append(badge,content,node('span','collab-arrow','↗'));wrap.append(a);
-        });target.append(wrap);
+
+  function identityNames(person) {
+    return [person.name || person.person, ...(person.aliases || [])].map(identityKey);
+  }
+
+  function nameLink(name, url, className = 'profile-link') {
+    if (!url) return node('span', '', name);
+    const a = node('a', className, name);
+    a.href = url;
+    return a;
+  }
+
+  function photo(src, className, alt) {
+    const img = node('img', className);
+    img.src = src;
+    img.alt = alt;
+    img.loading = 'lazy';
+    return img;
+  }
+
+  function symbol(path, id) {
+    const namespace = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(namespace, 'svg');
+    const use = document.createElementNS(namespace, 'use');
+    use.setAttribute('href', path + '#' + id);
+    svg.setAttribute('aria-hidden', 'true');
+    svg.append(use);
+    return svg;
+  }
+
+  if (page === 'people') {
+    getData('people.json').then(people => {
+      for (const person of people) {
+        const card = node('article', 'person-card');
+        const semester = person.group === 'intern' ? '(' + person.semester + ')' : '[' + person.semester + ']';
+        const heading = node('h3');
+        heading.append(nameLink(person.name, person.url));
+        card.append(photo(person.photo, 'member-photo', person.name), heading,
+          node('p', '', person.degree + ' ' + semester));
+        if (person.note) card.append(node('small', 'member-note', person.note));
+        if (person.email) card.append(nameLink('Email', 'mailto:' + person.email));
+        $('#' + person.group + '-people').append(card);
+        if (person.alumni) {
+          const {from, to, phd_since} = person.alumni;
+          const alumni = node('article', 'alumni-card');
+          alumni.append(node('h3', '', person.name), node('p', '', 'M.S. · ' + from + ' → ' + to),
+            node('p', 'member-note', 'Ph.D. candidate at CMLab · since ' + phd_since));
+          $('#alumni').append(alumni);
+        }
+      }
+    }).catch(() => { $('#core-people').textContent = 'Member profiles are temporarily unavailable.'; });
+
+    Promise.all([getData('collaborators.json'), getData('institutions.json'), getData('publications.json')])
+      .then(([collaborators, institutions, papers]) => {
+        const grid = $('#collaborators-grid');
+        for (const category of ['Academia', 'Research Institute', 'Industry']) {
+          const group = collaborators.filter(p => p.category === category);
+          if (!group.length) continue;
+          const cards = node('div', 'collab-cards');
+          for (const person of group) {
+            const organization = institutions[person.organization];
+            const names = identityNames(person);
+            const card = node('article', 'collab-card directory-card');
+            const pictures = node('div', 'collab-pictures');
+            if (person.photo) pictures.append(photo(person.photo, 'collab-photo', person.person));
+            if (organization.logo) pictures.append(photo(organization.logo, 'organization-logo', organization.name));
+            if (pictures.childElementCount) card.append(pictures);
+            const heading = node('h4');
+            heading.append(nameLink(person.person, person.url));
+            card.append(heading, node('p', '', [person.role, person.unit, organization.name].filter(Boolean).join(' · ')));
+            if (person.collaborative_lab) {
+              const label = nameLink('Close research collaboration', person.lab_url, 'lab-partner');
+              label.prepend(symbol('assets/img/news-icons.svg', 'collaboration'));
+              card.append(label);
+            }
+            const works = node('div', 'collab-paper-links');
+            for (const paper of papers.filter(p => (p.authors || '').split(/,|\band\b/).some(n => names.includes(identityKey(n))))) {
+              const url = [paper.project_url, paper.venue_url, paper.arxiv_url]
+                .find(value => value && !paper.unavailable_urls?.includes(value));
+              works.append(nameLink(paper.short + ' [' + paper.venue_short + ']', url, 'profile-link'));
+            }
+            if (works.childElementCount) card.append(works);
+            cards.append(card);
+          }
+          grid.append(node('h3', 'collaborator-group-heading', category), cards);
+        }
+      }).catch(() => { $('#collaborators-grid').textContent = 'Collaborator profiles are temporarily unavailable.'; });
+  }
+
+  if (page === 'teaching') {
+    getData('courses.json').then(courses => {
+      const history = $('#course-history');
+      for (const semester of new Set(courses.map(course => course.semester))) {
+        const [year, term] = semester.split('-');
+        const group = node('section', 'course-semester');
+        group.append(node('h2', '', (term === '1' ? 'Spring' : 'Fall') + ' 20' + year));
+        const list = node('ul', 'course-list');
+        for (const course of courses.filter(item => item.semester === semester)) {
+          const entry = node('li', 'course-item');
+          const text = node('div');
+          text.append(node('h3', '', course.title), node('p', '', course.ko));
+          entry.append(text, node('span', 'directory-meta', course.level + ' · ' + course.code));
+          if (course.award) {
+            const award = nameLink('Outstanding Instructor', course.award, 'course-award');
+            award.prepend(symbol('assets/img/news-icons.svg', 'award'));
+            entry.append(award);
+          }
+          list.append(entry);
+        }
+        group.append(list);
+        history.append(group);
+      }
+    }).catch(() => { $('#course-history').textContent = 'Course history is temporarily unavailable.'; });
+  }
+
+  if (page === 'life') {
+    const icons = new Map([['Conference', 'conference'], ['Seminar', 'seminar'],
+      ['Lab gathering', 'people'], ['Milestone', 'award'], ['Outreach', 'event']]);
+    function galleryBadge(category) {
+      const badge = node('span', 'gallery-category', category);
+      if (icons.has(category)) badge.prepend(symbol('assets/img/news-icons.svg', icons.get(category)));
+      return badge;
+    }
+    getData('gallery.json').then(events => {
+      const gallery = $('#gallery-events');
+      const filters = $('#gallery-filters');
+      const cards = events.map(event => {
+        const card = node('article', 'gallery-card');
+        card.id = event.id;
+        if (event.images.length) {
+          const frame = node('div', 'gallery-photo');
+          const img = photo(event.images[0], '', event.title);
+          frame.append(img);
+          if (event.images.length > 1) {
+            let index = 0;
+            const controls = node('div', 'gallery-controls');
+            const status = node('span', '', '1 / ' + event.images.length);
+            status.setAttribute('aria-live', 'polite');
+            for (const [label, arrow, step] of [['Previous photo', '←', -1], ['Next photo', '→', 1]]) {
+              const button = node('button', '', arrow);
+              button.type = 'button';
+              button.setAttribute('aria-label', label);
+              button.addEventListener('click', () => {
+                index = (index + step + event.images.length) % event.images.length;
+                img.src = event.images[index];
+                status.textContent = (index + 1) + ' / ' + event.images.length;
+              });
+              controls.append(button);
+              if (step === -1) controls.append(status);
+            }
+            frame.append(controls);
+          }
+          card.append(frame);
+        }
+        const body = node('div', 'gallery-card-body');
+        body.append(galleryBadge(event.category), node('h3', '', event.title),
+          node('p', 'directory-meta', event.date + ' · ' + event.location));
+        for (const detail of event.details) body.append(node('p', '', detail));
+        for (const link of event.links) {
+          body.append(nameLink(link.label, link.url || 'publications.html#paper-' + link.paper_id));
+        }
+        card.append(body);
+        return card;
       });
-    }).catch(()=>{const target=$('#collaborators-grid');if(target)target.textContent='See the collaborators section on the original CMLab website.'});
+      gallery.replaceChildren(...cards);
+      for (const category of ['All', ...icons.keys()]) {
+        const tab = node('button', 'directory-filter');
+        tab.type = 'button';
+        tab.setAttribute('aria-pressed', String(category === 'All'));
+        tab.append(galleryBadge(category));
+        tab.addEventListener('click', () => {
+          for (const button of filters.children) button.setAttribute('aria-pressed', String(button === tab));
+          cards.forEach((card, i) => { card.hidden = category !== 'All' && events[i].category !== category; });
+        });
+        filters.append(tab);
+      }
+    }).catch(() => { $('#gallery-events').textContent = 'Lab Life is temporarily unavailable.'; });
   }
 
 })();

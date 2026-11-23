@@ -34,6 +34,13 @@ Home’s Research Vision figure uses responsive WebP derivatives and links to th
 
 After the catalog is complete and approved, migrate the Home At a Glance publication counts to `data/publications.json` before retiring the legacy site. Keep the career-wide PI citation metrics and venue metrics distinct.
 
+## Maintain People, Teaching and Lab Life
+
+- Keep display names, aliases, contact links, portraits and semesters in `data/people.json`. Keep collaborator profile links and their institution IDs in `data/collaborators.json` and institution marks in `data/institutions.json`. Papers link authors and People lists collaborative work by matching the catalog’s bylines to those names and aliases. Publication logos correspond to source affiliations tracked on the paper.
+- Place a paper poster called `teaser.webp` (other browser-readable image formats are also supported) and optional `preview.mp4` in `assets/media/publications/paper-<id>/`. The ID is the stable number in `data/publications.json`.
+- Add numbered photo files such as `01.webp` and `02.webp` to the matching folder in `assets/img/gallery/`. The folder name matches the event ID in `data/gallery.json`. Gallery controls appear when an event has more than one image.
+- Run `python3 scripts/index_site_media.py` after adding media and review the resulting catalog changes with the media provenance. Teaching records and the university’s Outstanding Instructor links live in `data/courses.json`.
+
 ## Release review
 
 See [REVIEW.md](REVIEW.md) for confirmed source matches and open checks. Follow [AGENTS.md](AGENTS.md) for ongoing updates.
