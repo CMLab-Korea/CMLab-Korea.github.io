@@ -1,0 +1,302 @@
+[
+  {
+    "url": "https://iclr.cc/#child-menu",
+    "label": "Skip to yearly menu bar"
+  },
+  {
+    "url": "https://iclr.cc/#main",
+    "label": "Skip to main content"
+  },
+  {
+    "url": "https://iclr.cc/#",
+    "label": "ICLR"
+  },
+  {
+    "url": "https://iclr.cc/FAQ",
+    "label": "Help/FAQ"
+  },
+  {
+    "url": "https://iclr.cc/Help/Contact",
+    "label": "Contact ICLR"
+  },
+  {
+    "url": "https://iclr.cc/Profile/create",
+    "label": "Create Profile"
+  },
+  {
+    "url": "https://iclr.cc/public/CodeOfConduct",
+    "label": "Code of Conduct"
+  },
+  {
+    "url": "https://iclr.cc/public/JournalToConference",
+    "label": "Journal To Conference Track"
+  },
+  {
+    "url": "https://iclr.cc/public/DiversityInclusion",
+    "label": "Diversity & Inclusion"
+  },
+  {
+    "url": "https://openreview.net/group?id=ICLR.cc",
+    "label": "Proceedings at OpenReview"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/FutureMeetings",
+    "label": "Future Meetings"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2025/Press",
+    "label": "Press"
+  },
+  {
+    "url": "https://iclr.cc/Sponsors/sponsorinfo",
+    "label": "Exhibitor Information"
+  },
+  {
+    "url": "https://blog.iclr.cc/",
+    "label": "ICLR Blog"
+  },
+  {
+    "url": "https://twitter.com/iclr_conf?ref_src=twsrc%5Etfw",
+    "label": "ICLR Twitter"
+  },
+  {
+    "url": "https://iclr.cc/About",
+    "label": "About ICLR"
+  },
+  {
+    "url": "https://iclr.cc/Downloads",
+    "label": "Downloads"
+  },
+  {
+    "url": "https://iclr.cc/public/PrivacyPolicy",
+    "label": "Privacy Policy"
+  },
+  {
+    "url": "https://iclr.cc/resetpassword",
+    "label": "Reset Password"
+  },
+  {
+    "url": "https://iclr.cc/MyStuff",
+    "label": "My Stuff"
+  },
+  {
+    "url": "https://iclr.cc/accounts/login?nextp=/",
+    "label": "Login"
+  },
+  {
+    "url": "https://iclr.cc/#",
+    "label": "Select Year: (2027)"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/index.html",
+    "label": "2027"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2026",
+    "label": "2026"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2025",
+    "label": "2025"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2024",
+    "label": "2024"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2023",
+    "label": "2023"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2022",
+    "label": "2022"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2021",
+    "label": "2021"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2020",
+    "label": "2020"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2019",
+    "label": "2019"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2018",
+    "label": "2018"
+  },
+  {
+    "url": "https://iclr.cc/archive/www/2017.html",
+    "label": "2017"
+  },
+  {
+    "url": "https://iclr.cc/archive/www/2016.html",
+    "label": "2016"
+  },
+  {
+    "url": "https://iclr.cc/archive/www/2015.html",
+    "label": "2015"
+  },
+  {
+    "url": "https://iclr.cc/archive/2014/",
+    "label": "2014"
+  },
+  {
+    "url": "https://iclr.cc/archive/2013/",
+    "label": "2013"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/Dates",
+    "label": "Dates"
+  },
+  {
+    "url": "https://iclr.cc/#",
+    "label": "Calls"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+    "label": "Call for Papers"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/CallForWorkshops",
+    "label": "Call for Workshops"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/WorkshopGuidelines",
+    "label": "Workshop Proposal Guide"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/CallForBlogPosts",
+    "label": "Call For Blog Posts"
+  },
+  {
+    "url": "https://iclr.cc/#",
+    "label": "Guides"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/AuthorGuidelines",
+    "label": "Author Guide"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/AreaChairGuidelines",
+    "label": "Area Chair Guide"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/SeniorAreaChairGuidelines",
+    "label": "Senior Area Chair Guide"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/ReviewerGuidelines",
+    "label": "Reviewer Guide"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/AIPolicyForReviewers",
+    "label": "AI Policy for Reviewers"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/AIPolicyForAuthors",
+    "label": "AI Policy for Authors"
+  },
+  {
+    "url": "https://iclr.cc/#",
+    "label": "Organization"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/Board",
+    "label": "Board"
+  },
+  {
+    "url": "https://iclr.cc/",
+    "label": "California"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/Dates",
+    "label": "April 26-30, 2027"
+  },
+  {
+    "url": "https://iclr.cc/",
+    "label": "Register Starting Dec 23"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/Pricing",
+    "label": "Pricing"
+  },
+  {
+    "url": "https://iclr.cc/FAQ/CancellationPolicy",
+    "label": "Cancellation Policy"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2026/index.html",
+    "label": "ICLR 2026"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+    "label": "Call for Papers"
+  },
+  {
+    "url": "https://iclr.cc/sponsors/apply",
+    "label": "Apply"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+    "label": "Call for papers"
+  },
+  {
+    "url": "https://iclr.cc/",
+    "label": "Book your room (December)"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2026/Sponsors",
+    "label": "2026 Exhibitors"
+  },
+  {
+    "url": "https://iclr.cc/sponsors/apply",
+    "label": "Apply"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/Sponsors",
+    "label": "View Exhibitors"
+  },
+  {
+    "url": "mailto:andrea.brown@aicons.org?subject=ICLR%202027%20Exhibitors",
+    "label": "Contact Us"
+  },
+  {
+    "url": "https://iclr.cc/Sponsors/sponsorinfo/",
+    "label": "Exhibitor Info »"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2027/Dates",
+    "label": "View All Dates"
+  },
+  {
+    "url": "https://iclr.cc/set_timezone?nextp=/",
+    "label": "Conference local time zone"
+  },
+  {
+    "url": "https://iclr.cc/public/PrivacyPolicy",
+    "label": "Our Privacy Policy »"
+  },
+  {
+    "url": "https://iclr.cc/About",
+    "label": "About ICLR"
+  },
+  {
+    "url": "https://iclr.cc/Sponsors/sponsorinfo",
+    "label": "Sponsor / Exhibitor Information"
+  },
+  {
+    "url": "https://iclr.cc/Conferences/2025/Press",
+    "label": "Press"
+  },
+  {
+    "url": "https://iclr.cc/Help/Contact",
+    "label": "Email"
+  },
+  {
+    "url": "https://openreview.net/group?id=ICLR.cc",
+    "label": "ICLR Proceedings at OpenReview"
+  }
+]

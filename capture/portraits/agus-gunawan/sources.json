@@ -1,0 +1,42 @@
+{
+  "title": "Agus Gunawan",
+  "url": "https://agusgun.github.io/",
+  "head": "Agus Gunawan\n\nPh.D., KAIST\n\nI build controllable, user-guided deep learning systems for low-level vision and computational photography, including but not limited to, image and video editing, colorization, and restoration. I am currently a Senior Data Scientist on the computer vision team at Razer AI.\n\nI was advised by Prof. Munchurl Kim. Before KAIST, I did my B.E. in Computer Science at ITB and worked as an ML engineer on NLP, search, and recommendation systems.\n\nEmail\nGoogle Scholar\nLinkedIn\nGitHub\nRESEARCH\nINDUSTRY\nPROJECTS\nResearch\nPUBLICATIONS\nOmniText: A Training-Free Generalist for Controllable Text-Image Manipulation\n\nAgus Gunawan*, Samuel Teodoro*, Chen Yun, Soo Ye Kim, Jihyong Oh, Munchurl Kim\nICLR, 2026\npaper / arXiv / project page / code\n\nOmniText is a training-free generalist capable of tackling diverse text image manipulation such as text insertion, editing, rescaling, repositioning, removal, and style-controlled text insertion and editing.\n\nPRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset\n\nSamuel Teodoro*, Agus Gunawan*, Soo Ye Kim, Jihyong Oh, Munchurl Kim\nUnder review\narXiv / project page\n\nPRIMEdit is a zero-shot multi-instance video editing framework that uses novel probability redistribution and sampling techniques to enable faithful instance edits while preventing unintended changes in diverse video scenarios.\n\nModernizing Old Photos Using Multiple References via Photorealistic Style Transfer\n\nAgus Gunawan, Soo Ye Kim, Hyeonjun Sim, Jae-Ho Lee, Munchurl Kim\nCVPR, 2023\npaper / arXiv / project page / code / video\n\nWe present old photo modernization using multiple references by performing stylization and enhancement in a unified manner. In order to modernize old photos, we propose a novel multi-reference-based old photo modernization (MROPM) framework consisting of a network MROPM-Net and a novel synthetic data generation scheme.\n\nUnderstanding and Improving Group Normalization\n\nAgus Gunawan, Xu Yin, Kang Zhang\nPreprint, 2022\narXiv / code\n\nWe find that GN’s inferior performance against Batch normalization (BN) is caused by: unstable training performance and sensitivity to distortion, whether it comes from external noise or perturbations introduced by the regularization. In addition, we found that GN can only help the neural network training in some specific period, unlike BN, which hel",
+  "items": [
+    {
+      "url": "https://agusgun.github.io/images/omnitext/before.webp",
+      "alt": "Text-image manipulation before and after OmniText",
+      "context": "OmniText: A Training-Free Generalist for Controllable Text-Image Manipulation\n\nAgus Gunawan*, Samuel Teodoro*, Chen Yun, Soo Ye Kim, Jihyong Oh, Munchurl Kim\nICLR, 2026\npaper / arXiv / project page / code\n\nOmniText is a training-free generalist capable of tackling diverse text image manipulation such as text insertion, editing, rescaling, repositioning, removal, and s",
+      "w": 680,
+      "h": 129
+    },
+    {
+      "url": "https://agusgun.github.io/images/omnitext/after.webp",
+      "alt": "",
+      "context": "OmniText: A Training-Free Generalist for Controllable Text-Image Manipulation\n\nAgus Gunawan*, Samuel Teodoro*, Chen Yun, Soo Ye Kim, Jihyong Oh, Munchurl Kim\nICLR, 2026\npaper / arXiv / project page / code\n\nOmniText is a training-free generalist capable of tackling diverse text image manipulation such as text insertion, editing, rescaling, repositioning, removal, and s",
+      "w": 680,
+      "h": 242
+    },
+    {
+      "url": "https://agusgun.github.io/images/mropm/before.webp",
+      "alt": "Old photo before and after modernization",
+      "context": "Modernizing Old Photos Using Multiple References via Photorealistic Style Transfer\n\nAgus Gunawan, Soo Ye Kim, Hyeonjun Sim, Jae-Ho Lee, Munchurl Kim\nCVPR, 2023\npaper / arXiv / project page / code / video\n\nWe present old photo modernization using multiple references by performing stylization and enhancement in a unified manner. In order to modernize old photos, we prop",
+      "w": 680,
+      "h": 382
+    },
+    {
+      "url": "https://agusgun.github.io/images/mropm/after.webp",
+      "alt": "",
+      "context": "Modernizing Old Photos Using Multiple References via Photorealistic Style Transfer\n\nAgus Gunawan, Soo Ye Kim, Hyeonjun Sim, Jae-Ho Lee, Munchurl Kim\nCVPR, 2023\npaper / arXiv / project page / code / video\n\nWe present old photo modernization using multiple references by performing stylization and enhancement in a unified manner. In order to modernize old photos, we prop",
+      "w": 680,
+      "h": 406
+    },
+    {
+      "url": "https://agusgun.github.io/images/ugn/before.webp",
+      "alt": "Group normalization training behavior comparison",
+      "context": "Understanding and Improving Group Normalization\n\nAgus Gunawan, Xu Yin, Kang Zhang\nPreprint, 2022\narXiv / code\n\nWe find that GN’s inferior performance against Batch normalization (BN) is caused by: unstable training performance and sensitivity to distortion, whether it comes from external noise or perturbations introduced by the regularization. In addition, we found th",
+      "w": 680,
+      "h": 155
+    }
+  ]
+}

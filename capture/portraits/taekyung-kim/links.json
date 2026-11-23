@@ -1,0 +1,310 @@
+[
+  {
+    "url": "https://taekyungkim918.github.io/#about",
+    "label": "Taekyung Kim"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#about",
+    "label": "About"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#publications",
+    "label": "Publications"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/assets/pdf/cv.pdf",
+    "label": "CV"
+  },
+  {
+    "url": "mailto:taekyungkim918@gmail.com",
+    "label": "taekyungkim918@gmail.com"
+  },
+  {
+    "url": "https://scholar.google.com/citations?user=u-9bdkwAAAAJ",
+    "label": "Google Scholar"
+  },
+  {
+    "url": "https://www.linkedin.com/in/taekyung-kim-76b074335/",
+    "label": "LinkedIn"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#publications",
+    "label": "Physical AI"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#publications",
+    "label": "LLMs, MLLMs, and agents"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#publications",
+    "label": "Interpretability"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#publications",
+    "label": "Scalable representation learning (earlier work)"
+  },
+  {
+    "url": "https://kaist.ac.kr/",
+    "label": "KAIST"
+  },
+  {
+    "url": "https://ee.kaist.ac.kr/en/professor/12157/",
+    "label": "Prof. Changick Kim"
+  },
+  {
+    "url": "https://kaist.ac.kr/",
+    "label": "KAIST"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#hallucination-filtered-memory",
+    "label": "HaMS"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#spark",
+    "label": "SPARK"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#beneath-cot",
+    "label": "Beneath CoT"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#isotropic-perturbation",
+    "label": "Aether"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#orca",
+    "label": "ORCA"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#muco",
+    "label": "MuCo"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#spark",
+    "label": "SPARK"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#map-the-flow",
+    "label": "Map the Flow"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#aligned-novel-view",
+    "label": "MoAI"
+  },
+  {
+    "url": "https://taekyungkim918.github.io/#visualscratchpad",
+    "label": "VisualScratchpad"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.16135",
+    "label": "Paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.09496",
+    "label": "Paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/2610.14351",
+    "label": "Paper"
+  },
+  {
+    "url": "https://watch-wam.github.io/",
+    "label": "Project"
+  },
+  {
+    "url": "https://arxiv.org/abs/2606.15631",
+    "label": "Paper"
+  },
+  {
+    "url": "https://recap-robot.github.io/",
+    "label": "Project"
+  },
+  {
+    "url": "https://arxiv.org/abs/2611.12102v1",
+    "label": "Paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.04753",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/beneath-cot",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.10292",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/aether",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2510.15510",
+    "label": "Paper"
+  },
+  {
+    "url": "https://orca-rc.github.io/",
+    "label": "Project"
+  },
+  {
+    "url": "https://arxiv.org/abs/2602.06393",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/muco",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2510.13251",
+    "label": "Paper"
+  },
+  {
+    "url": "https://map-the-flow.github.io/",
+    "label": "Project"
+  },
+  {
+    "url": "https://arxiv.org/abs/2506.11924",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/cvlab-kaist/MoAI",
+    "label": "Code"
+  },
+  {
+    "url": "https://cvlab-kaist.github.io/MoAI/",
+    "label": "Project"
+  },
+  {
+    "url": "https://arxiv.org/abs/2603.07335",
+    "label": "Paper"
+  },
+  {
+    "url": "https://hyesulim.github.io/visual_scratchpad_projectpage/",
+    "label": "Project"
+  },
+  {
+    "url": "https://arxiv.org/abs/2507.06543",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/tobo",
+    "label": "Code"
+  },
+  {
+    "url": "https://token-bottleneck.github.io/",
+    "label": "Project"
+  },
+  {
+    "url": "https://arxiv.org/abs/2306.11339",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/augsub",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2401.00254",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/dtm",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2404.09490",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/tc-clip",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2404.17507",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/hype",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2310.13593",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/lut",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2302.01571",
+    "label": "Paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/2305.00729",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/naver-ai/cl-vs-mim",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2011.14670",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/bismex/MetaBIN",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2007.09375",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/TKKim93/APE",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/1912.01230",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/bismex/HiCMD",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/1909.13247",
+    "label": "Paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/1908.00262",
+    "label": "Paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/1909.00597",
+    "label": "Paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/1909.00589",
+    "label": "Paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/1905.05396",
+    "label": "Paper"
+  },
+  {
+    "url": "https://github.com/TKKim93/DivMatch",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/1910.00950",
+    "label": "Paper"
+  },
+  {
+    "url": "https://jekyllrb.com/",
+    "label": "Jekyll"
+  },
+  {
+    "url": "https://github.com/bogoli/-folio",
+    "label": "*folio"
+  }
+]

@@ -1,0 +1,698 @@
+[
+  {
+    "url": "https://neurips.cc/#child-menu",
+    "label": "Skip to yearly menu bar"
+  },
+  {
+    "url": "https://neurips.cc/#main",
+    "label": "Skip to main content"
+  },
+  {
+    "url": "https://neurips.cc/#",
+    "label": "NeurIPS"
+  },
+  {
+    "url": "https://neurips.cc/FAQ",
+    "label": "Help/FAQ"
+  },
+  {
+    "url": "https://neurips.cc/Help/Contact",
+    "label": "Contact NeurIPS"
+  },
+  {
+    "url": "https://neurips.cc/Profile/create",
+    "label": "Create Profile"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2023/EthicsGuidelines",
+    "label": "Code of Ethics"
+  },
+  {
+    "url": "https://neurips.cc/public/CodeOfConduct",
+    "label": "Code of Conduct"
+  },
+  {
+    "url": "https://neurips.cc/public/JournalToConference",
+    "label": "Journal To Conference Track"
+  },
+  {
+    "url": "https://neurips.cc/public/DiversityInclusion",
+    "label": "Diversity & Inclusion"
+  },
+  {
+    "url": "https://proceedings.neurips.cc/",
+    "label": "Proceedings"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/FutureMeetings",
+    "label": "Future Meetings"
+  },
+  {
+    "url": "https://neurips.cc/public/PressPolicy",
+    "label": "Press"
+  },
+  {
+    "url": "https://neurips.cc/Exhibitors/exhibitorinfo",
+    "label": "Exhibitor Information"
+  },
+  {
+    "url": "https://neurips.cc/public/PrivacyPolicy",
+    "label": "Privacy Policy"
+  },
+  {
+    "url": "https://neurips.cc/Downloads",
+    "label": "Downloads"
+  },
+  {
+    "url": "https://neurips.cc/MyStuff",
+    "label": "My Stuff"
+  },
+  {
+    "url": "https://neurips.cc/accounts/login?nextp=/virtual/2026/loc/atlanta/poster/150328",
+    "label": "Login"
+  },
+  {
+    "url": "https://neurips.cc/#",
+    "label": "Select Year: (2026)"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026",
+    "label": "2026"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2025",
+    "label": "2025"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2024",
+    "label": "2024"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2023",
+    "label": "2023"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2022",
+    "label": "2022"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2021",
+    "label": "2021"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2020",
+    "label": "2020"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2019",
+    "label": "2019"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2018",
+    "label": "2018"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2017",
+    "label": "2017"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2016",
+    "label": "2016"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2015",
+    "label": "2015"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2014",
+    "label": "2014"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2013",
+    "label": "2013"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2012",
+    "label": "2012"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2011",
+    "label": "2011"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2010",
+    "label": "2010"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2009",
+    "label": "2009"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2008",
+    "label": "2008"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2007",
+    "label": "2007"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2006",
+    "label": "2006"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/PastConferences",
+    "label": "Earlier Conferences"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Dates",
+    "label": "Dates"
+  },
+  {
+    "url": "https://neurips.cc/#",
+    "label": "Submit"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/PosterInstructions",
+    "label": "Poster Instructions"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+    "label": "Call for Papers"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/MainTrackHandbook",
+    "label": "Main Track Handbook"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/ReviewerGuidelines",
+    "label": "Reviewing Guidelines"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForEvaluationsDatasets",
+    "label": "Call for Evaluations & Datasets"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/EvaluationsDatasetsFAQ",
+    "label": "Evaluations and Datasets FAQ"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/EvaluationsDatasetsReviewerGuidelines",
+    "label": "Reviewing Guidelines"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForPositionPapers",
+    "label": "Call for Position Papers"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForReproducibility",
+    "label": "Call for Reproducibility"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForTutorials",
+    "label": "Call for Tutorials"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForCompetitions",
+    "label": "Call For Competitions"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CompetitionReviewerGuidelines",
+    "label": "Competition Track Reviewing Guidelines"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForWorkshops",
+    "label": "Call for Workshops"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForAffinityEvents",
+    "label": "Call For Affinity Events"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallforEducationalResources",
+    "label": "Call for Educational Resources"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForCreativeAI",
+    "label": "Call For Creative AI"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallforSocials",
+    "label": "Call for Social Events"
+  },
+  {
+    "url": "https://neurips.cc/public/JournalToConference",
+    "label": "Call for Journal Papers"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/CallForExpo",
+    "label": "Call for Expo"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/ai-reviewing-experiment",
+    "label": "AI Reviewing Experiment"
+  },
+  {
+    "url": "https://neurips.cc/#",
+    "label": "Attend"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Hotels",
+    "label": "Hotels"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Visa",
+    "label": "Visa Information"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/FinancialAssistance",
+    "label": "Volunteering and Financial Assistance"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Children",
+    "label": "Attending with Children"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/atlanta/index.html",
+    "label": "At the Conference - Atlanta"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/sydney/index.html",
+    "label": "At the Conference - Sydney"
+  },
+  {
+    "url": "https://neurips.cc/#",
+    "label": "Organizers"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Committees",
+    "label": "Organizing Committee"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/ProgramCommittee",
+    "label": "Program Committee"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Board",
+    "label": "NeurIPS Board"
+  },
+  {
+    "url": "https://neurips.cc/About",
+    "label": "NeurIPS Foundation"
+  },
+  {
+    "url": "https://neurips.cc/#",
+    "label": "Exhibitors"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Sponsors",
+    "label": "2026 Exhibitors"
+  },
+  {
+    "url": "https://neurips.cc/sponsors/sponsorportal",
+    "label": "Portal"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/VenueInformation",
+    "label": "EAC Information"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Pricing",
+    "label": "Pricing"
+  },
+  {
+    "url": "https://neurips.cc/Register/view-registration",
+    "label": "Registration"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Pricing",
+    "label": "Pricing"
+  },
+  {
+    "url": "https://neurips.cc/Register/view-registration",
+    "label": "Registration"
+  },
+  {
+    "url": "https://neurips-europe.cc/",
+    "label": "Pricing"
+  },
+  {
+    "url": "https://neurips-europe.cc/",
+    "label": "Registration"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Hotels",
+    "label": "View Hotel Information"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/sydney/index.html",
+    "label": "Start Here"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/sydney/eventlistwithbios/Invited%20Talk",
+    "label": "Invited Speakers"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/sydney/calendar?filter_events=&filter_rooms=",
+    "label": "Schedule"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/atlanta/index.html",
+    "label": "Start Here"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/atlanta/eventlistwithbios/Invited%20Talk",
+    "label": "Invited Speakers"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/atlanta/calendar?filter_events=&filter_rooms=",
+    "label": "Schedule"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/paris/index.html",
+    "label": "Start Here"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/paris/eventlistwithbios/Invited%20Talk",
+    "label": "Invited Speakers"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/paris/calendar?filter_events=&filter_rooms=",
+    "label": "Schedule"
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/loc/sydney/papers.html",
+    "label": "All Papers"
+  },
+  {
+    "url": "https://neurips.cc/Register",
+    "label": "Register"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/AuthorRegistration",
+    "label": "Author Registration Information"
+  },
+  {
+    "url": "https://neurips.cc/careers/",
+    "label": "Career site"
+  },
+  {
+    "url": "https://blog.neurips.cc/2026/08/27/navigating-neurips-2026-a-breakdown-of-the-multi-site-registration-process/",
+    "label": "blog post"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/ai-reviewing-experiment",
+    "label": "AI Reviewing Experiment"
+  },
+  {
+    "url": "https://blog.neurips.cc/",
+    "label": "View All Entries"
+  },
+  {
+    "url": "https://blog.neurips.cc/2026/11/08/neurips-newsletter-october-2026/",
+    "label": "NeurIPS Newsletter – October 2026\nNov 08, 2026"
+  },
+  {
+    "url": "https://blog.neurips.cc/2026/11/04/mlrc-2026-announcing-the-accepted-papers/",
+    "label": "MLRC 2026: Announcing the Accepted Papers\nNov 04, 2026"
+  },
+  {
+    "url": "https://blog.neurips.cc/2026/10/25/neurips-2026-invited-speaker-topics/",
+    "label": "NeurIPS 2026 Invited Speaker Topics\nOct 25, 2026"
+  },
+  {
+    "url": "https://blog.neurips.cc/2026/10/21/australasian-ai-research-gatherings-connecting-neurips-2026-with-the-ajcai-2026-and-acml-2026/",
+    "label": "Australasian AI Research Gatherings: Connecting NeurIPS 2026 with the AJCAI 2026 and ACML 2026\nOct 22, 2026"
+  },
+  {
+    "url": "https://blog.neurips.cc/2026/10/15/announcing-the-neurips-2026-journal-track/",
+    "label": "Announcing the NeurIPS 2026 Journal Track\nOct 15, 2026"
+  },
+  {
+    "url": "https://blog.neurips.cc/2026/10/12/making-ai-science-more-accessible-at-neurips/",
+    "label": "Making AI Science More Accessible at NeurIPS\nOct 12, 2026"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Dates",
+    "label": "View All Dates"
+  },
+  {
+    "url": "https://neurips.cc/set_timezone?nextp=/",
+    "label": "Conference local time zone"
+  },
+  {
+    "url": "https://neurips.cc/sponsors/prospectus",
+    "label": "Application and Prospectus"
+  },
+  {
+    "url": "https://neurips.cc/sponsors/sponsors-list?year=2026",
+    "label": "View 2026 Sponsors"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/VenueInformation",
+    "label": "EAC, Booth, & Onsite Info"
+  },
+  {
+    "url": "http://www.csie.ntu.edu.tw/~htlin/",
+    "label": "Hsuan-Tien (Tien) Lin"
+  },
+  {
+    "url": "https://sites.google.com/corp/view/razp/home",
+    "label": "Razvan Pascanu"
+  },
+  {
+    "url": "http://www.cc.gatech.edu/~riedl/",
+    "label": "Mark Riedl"
+  },
+  {
+    "url": "https://irfanessa.gatech.edu/",
+    "label": "Irfan Essa"
+  },
+  {
+    "url": "https://people.irisa.fr/Laetitia.Chapel/",
+    "label": "Laetitia Chapel"
+  },
+  {
+    "url": "https://remi.flamary.com/",
+    "label": "Rémi Flamary"
+  },
+  {
+    "url": "https://pierremarion23.github.io/",
+    "label": "Pierre Marion"
+  },
+  {
+    "url": "https://perso.ens-lyon.fr/edwige.cyffers/",
+    "label": "Edwige Cyffers"
+  },
+  {
+    "url": "https://davidrolnick.com/",
+    "label": "David Rolnick"
+  },
+  {
+    "url": "https://deisenroth.cc/",
+    "label": "Marc Deisenroth"
+  },
+  {
+    "url": "https://weis.ml/",
+    "label": "Caroline Weis"
+  },
+  {
+    "url": "https://shengpu-tang.me/",
+    "label": "Shengpu Tang"
+  },
+  {
+    "url": "https://www.michaelito-ai.com/",
+    "label": "Michael Ito"
+  },
+  {
+    "url": "https://sarafridov.github.io/",
+    "label": "Sara Fridovich-Keil"
+  },
+  {
+    "url": "http://web.mit.edu/lrosasco/www/",
+    "label": "Lorenzo Rosasco"
+  },
+  {
+    "url": "https://kaski-lab.com/",
+    "label": "Samuel Kaski"
+  },
+  {
+    "url": "https://www.koniusz.com/",
+    "label": "Piotr Koniusz"
+  },
+  {
+    "url": "https://semfe.ntua.gr/en/papamarkou-theodore",
+    "label": "Theodore Papamarkou"
+  },
+  {
+    "url": "https://khoadoan.me/",
+    "label": "Khoa D Doan"
+  },
+  {
+    "url": "https://shaohua0116.github.io/",
+    "label": "Shao-Hua Sun"
+  },
+  {
+    "url": "http://krikamol.org/",
+    "label": "Krikamol Muandet"
+  },
+  {
+    "url": "https://apeterswu.github.io/",
+    "label": "Lijun Wu"
+  },
+  {
+    "url": "https://alexdrouin.com/",
+    "label": "Alexandre Drouin"
+  },
+  {
+    "url": "https://konstantinapalla.netlify.app/",
+    "label": "Konstantina Palla"
+  },
+  {
+    "url": "https://www.alexluresearch.com/",
+    "label": "Alex X Lu"
+  },
+  {
+    "url": "http://mintresearch.org/",
+    "label": "Seth Lazar"
+  },
+  {
+    "url": "https://stanhua.rbind.io/",
+    "label": "Stanley Bryan Hua"
+  },
+  {
+    "url": "http://stanford.edu/~eadeli/",
+    "label": "Ehsan Adeli"
+  },
+  {
+    "url": "https://people.iith.ac.in/vineethnb/",
+    "label": "Vineeth N Balasubramanian"
+  },
+  {
+    "url": "https://aadirupa.github.io/",
+    "label": "Aadirupa Saha"
+  },
+  {
+    "url": "https://chriswolfvision.github.io/www",
+    "label": "Christian Wolf"
+  },
+  {
+    "url": "https://kkhetarpal.github.io/",
+    "label": "Khimya Khetarpal"
+  },
+  {
+    "url": "https://haneul-yoo.github.io/",
+    "label": "Haneul Yoo"
+  },
+  {
+    "url": "https://scholar.google.com/citations?user=7NxaE1MAAAAJ&amp;hl=en",
+    "label": "Traian Rebedea"
+  },
+  {
+    "url": "https://profiles.uts.edu.au/Shoujin.Wang",
+    "label": "Shoujin Wang"
+  },
+  {
+    "url": "https://sthy.land/",
+    "label": "Stephanie Hyland"
+  },
+  {
+    "url": "http://cs.princeton.edu/~olgarus",
+    "label": "Olga Russakovsky"
+  },
+  {
+    "url": "http://mossmoss24.github.io/",
+    "label": "Emanuel Moss"
+  },
+  {
+    "url": "http://sarthakvarora.github.io/",
+    "label": "Sarthak Arora"
+  },
+  {
+    "url": "https://www.linkedin.com/in/yachna-sharma/",
+    "label": "Yachna Sharma"
+  },
+  {
+    "url": "http://piotrmirowski.ai/",
+    "label": "Piotr Mirowski"
+  },
+  {
+    "url": "https://www.linkedin.com/in/immanuelkoh/",
+    "label": "Immanuel Koh"
+  },
+  {
+    "url": "http://drib.net/",
+    "label": "Tom White"
+  },
+  {
+    "url": "https://wywywang.github.io/",
+    "label": "Wei-Yao Wang"
+  },
+  {
+    "url": "https://lamnguyen-mltd.github.io/",
+    "label": "Lam Nguyen"
+  },
+  {
+    "url": "http://www.ulrichpaquet.com/",
+    "label": "Ulrich Paquet"
+  },
+  {
+    "url": "https://www.deltalab.sites.tau.ac.il/",
+    "label": "Noam Koenigstein"
+  },
+  {
+    "url": "https://koustuvsinha.com/",
+    "label": "Koustuv Sinha"
+  },
+  {
+    "url": "http://www.csie.ntu.edu.tw/~sdlin/",
+    "label": "Shou-De Lin"
+  },
+  {
+    "url": "https://frellsen.org/",
+    "label": "Jes Frellsen"
+  },
+  {
+    "url": "https://www.joydeepb.com/",
+    "label": "Joydeep Biswas"
+  },
+  {
+    "url": "https://demfier.github.io/",
+    "label": "Gaurav Sahu"
+  },
+  {
+    "url": "https://wdempsey.github.io/",
+    "label": "Walter Dempsey"
+  },
+  {
+    "url": "http://a-lucic.github.io/",
+    "label": "Ana Lucic"
+  },
+  {
+    "url": "https://fp-santos.github.io/",
+    "label": "Fernando P. Santos"
+  },
+  {
+    "url": "https://neurips.cc/About",
+    "label": "More about the Neural Information Processing Systems foundation »"
+  },
+  {
+    "url": "https://neurips.cc/public/PrivacyPolicy",
+    "label": "Our Privacy Policy »"
+  },
+  {
+    "url": "https://neurips.cc/Conferences/2026/Press",
+    "label": "Press"
+  },
+  {
+    "url": "https://proceedings.neurips.cc/",
+    "label": "Proceedings"
+  },
+  {
+    "url": "https://neurips.cc/Help/Contact",
+    "label": "Email"
+  },
+  {
+    "url": "https://proceedings.neurips.cc/",
+    "label": "NeurIPS Proceedings"
+  }
+]

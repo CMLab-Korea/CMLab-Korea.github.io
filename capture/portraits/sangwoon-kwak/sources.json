@@ -1,0 +1,42 @@
+{
+  "title": "About me - Sangwoon Kwak",
+  "url": "https://skwak-kaist.github.io/",
+  "head": "Sangwoon Kwak\n\t\nCV\n\t\nSangwoon Kwak\n\nSenior Researcher at ETRI · Ph.D.\n\nDaejeon, Korea\nETRI\nEmail\nGoogle Scholar\nORCID\nResearchGate\nGitHub\nAbout me\nI am a Senior Researcher at the Media Research Division of the ETRI, based in Daejeon, Korea. I received my Ph.D. in Electrical Engineering from KAIST, advised by Prof. Munchurl Kim (VICLab).\nMy research lies at the intersection of immersive video and computer vision, with a focus on 3D/4D scene representation, novel view synthesis, and video coding for machines (VCM). I am particularly interested in efficient and application-friendly 3D/4D Gaussian Splatting for immersive media services of real-world videos.\nYou can reach me at s.kwak [at] etri.re.kr.\nEducation\nPh.D. in Electrical Engineering, KAIST\nAdvisor: Prof. Munchurl Kim (VICLab)\nMar. 2021 – Feb. 2026\nM.S. in Electrical Engineering, KAIST\nAdvisor: Prof. Youngchul Sung (SISReL)\nMar. 2012 – Feb. 2014\nB.S. in Electrical and Electronic Engineering, Yonsei University\nNational Science & Engineering Scholarship (Full tuition)\nMar. 2008 – Feb. 2012\nExperience\nSenior Researcher, Media Research Division, ETRI\nMar. 2014 – Present\nSpatial Computing Technologies for ultra-realistic metaverse services (MIV, NeRF, 3DGS) [video]\nVideo Coding for Machines (international standardization at ISO/IEC JTC1/SC29 MPEG)\nLight field view synthesis & rendering for 6DoF immersive video [video]\nSelected Publications\nMoRel: Long-Range Flicker-Free 4D Motion Modeling Anchor Relay-based Bidirectional Blending via with Hierarchical Densification\nS. Kwak*, W. Kwon*, J. Jeong, G. Kim, W.-S. Cheong, J. Oh (* Equal contribution)\nCVPR, 2026  ⭐ Highlight\n🌐 Project Page  |  📄 arXiv  |  💻 Code  |  🎥 Video\nMoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting\nS. Kwak, J. Kim, J. Jeong, W.-S. Cheong, J. Oh, M. Kim\nCVPR, 2025\n🌐 Project Page  |  📄 arXiv  |  💻 Code  |  🎥 Video\nFeature-Guided Machine-Centric Image Coding for Downstream Tasks\nS. Kwak, J. Yun, H. Choo, M. Kim\nIEEE ICMEW, 2023\n📄 Paper\nView Synthesis with Sparse Light Field for 6DoF Immersive Video\nS. Kwak, J. Yun, J.-Y. Jeong, Y. Kim, I. Ihm, W.-S. Cheong, J. Seo\nETRI Journal, 2022\n🎥 Video\nSitemap\nFOLLOW: GITHUB FEED\n© 2026 Sangwoon Kwak, Powered by Jekyll & AcademicPages, a fork of Minimal Mistakes.\nSite last updated 2026-04-17",
+  "items": [
+    {
+      "url": "https://skwak-kaist.github.io/images/profile.jpg",
+      "alt": "Sangwoon Kwak",
+      "context": "Sangwoon Kwak\n\nSenior Researcher at ETRI · Ph.D.\n\nDaejeon, Korea\nETRI\nEmail\nGoogle Scholar\nORCID\nResearchGate\nGitHub",
+      "w": 1238,
+      "h": 1252
+    },
+    {
+      "url": "https://skwak-kaist.github.io/images/kaist.png",
+      "alt": "",
+      "context": "I am a Senior Researcher at the Media Research Division of the ETRI, based in Daejeon, Korea. I received my Ph.D. in Electrical Engineering from KAIST, advised by Prof. Munchurl Kim (VICLab).\nMy research lies at the intersection of immersive video and computer vision, with a focus on 3D/4D scene representation, novel view synthesis, and video coding for machines (VCM)",
+      "w": 886,
+      "h": 876
+    },
+    {
+      "url": "https://skwak-kaist.github.io/images/kaist.png",
+      "alt": "",
+      "context": "I am a Senior Researcher at the Media Research Division of the ETRI, based in Daejeon, Korea. I received my Ph.D. in Electrical Engineering from KAIST, advised by Prof. Munchurl Kim (VICLab).\nMy research lies at the intersection of immersive video and computer vision, with a focus on 3D/4D scene representation, novel view synthesis, and video coding for machines (VCM)",
+      "w": 886,
+      "h": 876
+    },
+    {
+      "url": "https://skwak-kaist.github.io/images/yonsei.png",
+      "alt": "",
+      "context": "I am a Senior Researcher at the Media Research Division of the ETRI, based in Daejeon, Korea. I received my Ph.D. in Electrical Engineering from KAIST, advised by Prof. Munchurl Kim (VICLab).\nMy research lies at the intersection of immersive video and computer vision, with a focus on 3D/4D scene representation, novel view synthesis, and video coding for machines (VCM)",
+      "w": 507,
+      "h": 505
+    },
+    {
+      "url": "https://skwak-kaist.github.io/images/ETRI.png",
+      "alt": "",
+      "context": "I am a Senior Researcher at the Media Research Division of the ETRI, based in Daejeon, Korea. I received my Ph.D. in Electrical Engineering from KAIST, advised by Prof. Munchurl Kim (VICLab).\nMy research lies at the intersection of immersive video and computer vision, with a focus on 3D/4D scene representation, novel view synthesis, and video coding for machines (VCM)",
+      "w": 505,
+      "h": 225
+    }
+  ]
+}

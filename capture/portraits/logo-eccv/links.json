@@ -1,0 +1,662 @@
+[
+  {
+    "url": "https://eccv.ecva.net/#child-menu",
+    "label": "Skip to yearly menu bar"
+  },
+  {
+    "url": "https://eccv.ecva.net/#main",
+    "label": "Skip to main content"
+  },
+  {
+    "url": "https://eccv.ecva.net/#",
+    "label": "Select Year: (2026)"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026",
+    "label": "2026"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2024",
+    "label": "2024"
+  },
+  {
+    "url": "https://eccv2022.ecva.net/",
+    "label": "2022"
+  },
+  {
+    "url": "https://eccv.ecva.net/MyStuff",
+    "label": "My Stuff"
+  },
+  {
+    "url": "https://eccv.ecva.net/Profile/create",
+    "label": "Create Profile"
+  },
+  {
+    "url": "https://eccv.ecva.net/resetpassword",
+    "label": "Reset Password"
+  },
+  {
+    "url": "https://eccv.ecva.net/accounts/login?nextp=/virtual/2026/poster/5962",
+    "label": "Login"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Dates",
+    "label": "Dates"
+  },
+  {
+    "url": "https://eccv.ecva.net/#",
+    "label": "Policies"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CodeOfConduct",
+    "label": "Code of Conduct"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/EthicsGuidelines",
+    "label": "Ethics Guidelines"
+  },
+  {
+    "url": "https://www.springernature.com/gp/authors/book-authors-code-of-conduct",
+    "label": "Springer Nature Code of Conduct"
+  },
+  {
+    "url": "https://eccv.ecva.net/#",
+    "label": "Calls"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForPapers",
+    "label": "Call for Papers"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForWorkshops",
+    "label": "Call for Workshops"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForTutorials",
+    "label": "Call for Tutorials"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForDemos",
+    "label": "Call for Demos"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForDoctoralConsortium",
+    "label": "Call for Doctoral Consortium"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForSpeedMentoring",
+    "label": "Call for Speed Mentoring"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForArt",
+    "label": "Call for Art"
+  },
+  {
+    "url": "https://eccv.ecva.net/#",
+    "label": "Authors"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/AuthorGuide",
+    "label": "Submission Guide"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/SubmissionPolicies",
+    "label": "Submission Policies & Paper Kit"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/AuthorPractices",
+    "label": "Suggested Practices"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/EthicsGuidelines",
+    "label": "Ethics Guidelines"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/FAQs",
+    "label": "Author FAQs"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/AuthorContributionTypes",
+    "label": "Guidance to Authors on Contribution Types"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/YouTubeVideoPosterUpload",
+    "label": "YouTube and Poster Upload Instructions"
+  },
+  {
+    "url": "https://eccv.ecva.net/#",
+    "label": "Reviewers"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/ReviewerGuide",
+    "label": "Reviewer Guidelines"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/ReviewerFAQs",
+    "label": "Reviewer FAQs"
+  },
+  {
+    "url": "https://eccv.ecva.net/#",
+    "label": "ACs & SACs"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/ACGuideLines",
+    "label": "Area Chair Guidelines"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/ACGuidance",
+    "label": "Guidance to ACs on Contribution Types"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/SACGuide",
+    "label": "Senior Area Chair Guidelines"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/ReviewerContributionTypes",
+    "label": "Guidance to Reviewers on Contribution Types"
+  },
+  {
+    "url": "https://eccv.ecva.net/#",
+    "label": "Expo / Sponsors"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Sponsors",
+    "label": "Sponsors"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Expo",
+    "label": "Expo"
+  },
+  {
+    "url": "https://eccv.ecva.net/#",
+    "label": "Organization"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Committees",
+    "label": "Organizing Committee"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee",
+    "label": "Program Committee"
+  },
+  {
+    "url": "https://eccv.ecva.net/#",
+    "label": "Attend"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/FAQ",
+    "label": "ECCV 2026 FAQ"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/DEI",
+    "label": "Diversity, Equity, and Inclusion"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Hotels",
+    "label": "Book Hotel"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Registration",
+    "label": "Register"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Venues",
+    "label": "Venue"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/SocialEvents",
+    "label": "Social Events"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/index.html",
+    "label": "Conference Site"
+  },
+  {
+    "url": "https://www.ecva.net/",
+    "label": "European Computer Vision Association (ECVA)"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Springer_Science%2BBusiness_Media",
+    "label": "Springer Science+Business Media"
+  },
+  {
+    "url": "https://twitter.com/eccvconf",
+    "label": "Follow ECCV on Twitter (X)"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Registration",
+    "label": "Register"
+  },
+  {
+    "url": "https://apps.apple.com/us/app/cvent-events/id1491335576",
+    "label": "Apple iOS"
+  },
+  {
+    "url": "https://play.google.com/store/apps/details?id=com.cvent.mobile.eventapp&hl=en_US",
+    "label": "Android"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/AcceptedPapers",
+    "label": "Poster Lookup"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/calendar",
+    "label": "Schedule"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/events/tutorial",
+    "label": "Tutorials"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/eventlistwithbios/keynotes-panels",
+    "label": "Keynotes and Panels"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/events/oral",
+    "label": "Orals"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/calendar?filter_events=Demo+Session&filter_rooms=",
+    "label": "Demos"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/index.html",
+    "label": "Virtual Site"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/events/workshop",
+    "label": "Workshops"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/papers.html",
+    "label": "Papers"
+  },
+  {
+    "url": "https://eccv.ecva.net/",
+    "label": "Awards (coming soon)"
+  },
+  {
+    "url": "https://eccv.ecva.net/virtual/2026/events/spotlight",
+    "label": "Spotlights"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032369833",
+    "label": "I"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032369680",
+    "label": "II"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032368454",
+    "label": "III"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032369864",
+    "label": "IV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373687",
+    "label": "V"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370198",
+    "label": "VI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370099",
+    "label": "VII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370259",
+    "label": "VIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370341",
+    "label": "IX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032368386",
+    "label": "X"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373496",
+    "label": "XI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370433",
+    "label": "XII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372703",
+    "label": "XIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372314",
+    "label": "XIV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372413",
+    "label": "XV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373823",
+    "label": "XVI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372512",
+    "label": "XVII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375162",
+    "label": "XVIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375490",
+    "label": "XIX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375520",
+    "label": "XX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375735",
+    "label": "XXI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375193",
+    "label": "XXII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375919",
+    "label": "XXIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375551",
+    "label": "XXIV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374608",
+    "label": "XXV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375940",
+    "label": "XXVI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032376015",
+    "label": "XXVII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032376237",
+    "label": "XXVIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032376268",
+    "label": "XXIX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375308",
+    "label": "XXX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374899",
+    "label": "XXXI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374318",
+    "label": "XXXII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032371669",
+    "label": "XXXIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374493",
+    "label": "XXXIV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374639",
+    "label": "XXXV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032371317",
+    "label": "XXXVI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374660",
+    "label": "XXXVII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374462",
+    "label": "XXXVIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374349",
+    "label": "XXXIX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373205",
+    "label": "XL"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374288",
+    "label": "XLI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374219",
+    "label": "XLII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032374189",
+    "label": "XLIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032375766",
+    "label": "XLIV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372246",
+    "label": "XLV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372802",
+    "label": "XLVI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373137",
+    "label": "XLVII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373717",
+    "label": "XLVIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373618",
+    "label": "XLIX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373588",
+    "label": "L"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373557",
+    "label": "LI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372345",
+    "label": "LII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372543",
+    "label": "LIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372574",
+    "label": "LIV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372604",
+    "label": "LV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373236",
+    "label": "LVI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373342",
+    "label": "LVII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370822",
+    "label": "LVIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370853",
+    "label": "LIX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370914",
+    "label": "LX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370945",
+    "label": "LXI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370976",
+    "label": "LXII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032372109",
+    "label": "LXIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032371959",
+    "label": "LXIV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032371881",
+    "label": "LXV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032377173",
+    "label": "LXVI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032371737",
+    "label": "LXVII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032371515",
+    "label": "LXVIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370228",
+    "label": "LXIX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370129",
+    "label": "LXX"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370150",
+    "label": "LXXI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032371348",
+    "label": "LXXII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032371379",
+    "label": "LXXIII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370280",
+    "label": "LXXIV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370310",
+    "label": "LXXV"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370372",
+    "label": "LXXVI"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032370402",
+    "label": "LXXVII"
+  },
+  {
+    "url": "https://link.springer.com/book/9783032373922",
+    "label": "LXXVIII"
+  },
+  {
+    "url": "https://eccv.ecva.net/careers",
+    "label": "Job Board"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/YouTubeVideoPosterUpload",
+    "label": "Instructions"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/AcceptedPapers",
+    "label": "Accepted Papers"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/SocialEvents",
+    "label": "Social Events"
+  },
+  {
+    "url": "https://docs.google.com/document/d/1DCMcCdtZbrYtG1oi7qeT8--D3GPc9mLg/edit?usp=sharing&ouid=109589091050595853627&rtpof=true&sd=true",
+    "label": "here"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForDoctoralConsortium",
+    "label": "Call for Doctoral Consortium has been posted"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Hotels",
+    "label": "Book Your Hotel"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Tutorials",
+    "label": "Accepted Tutorials have been posted here"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForPapers",
+    "label": "Call for Papers"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForTutorials",
+    "label": "Tutorial proposal submission deadline"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/CallForWorkshops",
+    "label": "Workshop proposal submission deadline"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2026/Dates",
+    "label": "All dates"
+  },
+  {
+    "url": "https://eccv.ecva.net/set_timezone?nextp=/",
+    "label": "Conference local time zone"
+  },
+  {
+    "url": "https://eccv.ecva.net/public/PrivacyPolicy",
+    "label": "Our Privacy Policy »"
+  },
+  {
+    "url": "https://eccv.ecva.net/Help/Contact",
+    "label": "Contact ECCV"
+  },
+  {
+    "url": "https://link.springer.com/book/10.1007/978-3-031-73033-7",
+    "label": "ECCV 2024 Proceedings"
+  },
+  {
+    "url": "https://eccv.ecva.net/Conferences/2024",
+    "label": "ECCV 2024 website"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "title": "Geon Yeong Park | KAIST",
+  "url": "https://geonyeong-park.github.io/",
+  "head": "Geon Yeong Park\nPostdoctoral researcher\nKAIST\npky3436 (at) kaist.ac.kr\n\n\n    \n\n\nAbout Me\n\nI am a Postdoctoral researcher at KAIST, advised by Prof. Jong Chul Ye. I recently worked as a Research Scientist Intern at Meta Reality Labs (London) in the 2025 summer. During my postdoc, I’ll be working on world models with Jin-Hwa Kim at NAVER AI Lab.\n\nMy research focuses on diffusion models and their applications, including multi-modal generation, editing, and reconstruction. Recently, I have been exploring physically grounded world models.\n\nExperience\nKAIST, Postdoctoral researcher (Mar 2026 - Feb 2027)\nMeta Reality Labs, Research Intern (May 2025 - Oct 2025). Advised by Thu Nguyen-Phuoc, Andrea Vedaldi, Roman Shapovalov\nPromedius, Research Intern (Mar 2021 - Sep 2021)\nLooxid Labs, Research Intern (Sep 2018 - Jan 2019)\nNAVER Clova, Service Planning Intern (Jun 2018 - Aug 2018)\nNews\n[Jun. 2026] One paper (MeshReGen) accepted at ECCV 2026.\n[Feb. 2026] One paper (WorldGen) accepted at CVPR 2026.\n[Nov. 2025] One paper (DreamMakeup) accepted at WACV 2026.\n[Jun. 2025] One paper (Inference-time distillation) accepted at ICCV 2025.\n[Feb. 2025] One paper (VideoGuide) accepted at CVPR 2025.\n[Feb. 2025] TReg is selected as a spotlight paper in ICLR 2025.\n[Jan. 2025] Two papers (CFG++, TReg) accepted at ICLR 2025.\n[Jan. 2025] DreamMakeup wins 2025 CES Innovation Awards (co-worked with AmorePacific)\n[Jan. 2025] CFG++ receives 31st Samsung Humantech Paper Award (2nd in Signal Processing)\n[Dec. 2024] I will join Meta Reality Labs Research in London as a Research Scientist Intern in 2025 summer (Mentor: Dr. Thu Nguyen-Phuoc)\n[Dec. 2024] One paper (SMA) accepted at AAAI 2025.\n[Nov. 2024] VMC is presented as an oral presentation at KCCV 2024, and wins finalist award at Qualcomm Innovation Fellowship Award 2024.\n[Jul. 2024] Two papers (Dreamsampler, DreamMotion) accepted at ECCV 2024.\n[Jun. 2024] CFG++ is available on arxiv. A simple fix to CFG that enables lower guidance scales, improves sample quality and invertibility.\n[Mar. 2024] Dreamsampler, DreamMotion, Treg is available on arxiv.\n[Mar. 2024] Three papers (Self-supervised debiasing, VMC, CDS) accepted at CVPR 2024.\n[Jan. 2024] EBCA receives 30th Samsung Humantech Paper Award (3rd in Signal Processing)\n[Dec. 2023] One poster session (EBCA) at NeurIPS 2023 in New Orleans.\nPublications\nFlowLong: Inference-time Long Video Generat",
+  "items": [
+    {
+      "url": "https://geonyeong-park.github.io/assets/img/flowlong.gif",
+      "alt": "",
+      "context": "FlowLong: Inference-time Long Video Generation via Manifold-constrained Tweedie Matching\nJangho Park*, Geon Yeong Park*, Gihyun Kwon, Jong Chul Ye\nPreprint, 2026\nPDF Project Page",
+      "w": 320,
+      "h": 240
+    },
+    {
+      "url": "https://geonyeong-park.github.io/assets/img/meshregen.gif",
+      "alt": "",
+      "context": "ECCV\nMeshReGen: A Unified 3D Geometry Regeneration Framework\nGeon Yeong Park, Roman Shapovalov, Rakesh Ranjan, Jong Chul Ye, Andrea Vedaldi, Thu Nguyen-Phuoc\nThe European Conference on Computer Vision (ECCV), 2026\nPDF Project Page",
+      "w": 1920,
+      "h": 1080
+    },
+    {
+      "url": "https://geonyeong-park.github.io/assets/img/worldgen.png",
+      "alt": "",
+      "context": "CVPR\nWorldGen: From Text to Traversable and Interactive 3D Worlds\nMeta 3D Gen Team\nIEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.\nPDF News",
+      "w": 1904,
+      "h": 1190
+    },
+    {
+      "url": "https://geonyeong-park.github.io/assets/img/distillation_pp.png",
+      "alt": "",
+      "context": "ICCV\nInference-Time Diffusion Model Distillation\nGeon Yeong Park, Sang Wan Lee, Jong Chul Ye\nIEEE/CVF Conference on Computer Vision (ICCV), 2025.\nPDF Code",
+      "w": 1130,
+      "h": 497
+    },
+    {
+      "url": "https://geonyeong-park.github.io/assets/img/videoguide.gif",
+      "alt": "",
+      "context": "CVPR\nVideoGuide: Improving Video Diffusion Models without Training Through a Teacher's Guide\nDohun Lee*, Bryan S Kim*, Geon Yeong Park, Jong Chul Ye\nIEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025.\nPDF Code Project Page",
+      "w": 385,
+      "h": 412
+    }
+  ]
+}

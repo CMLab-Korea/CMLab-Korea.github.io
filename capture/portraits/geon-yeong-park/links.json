@@ -1,0 +1,398 @@
+[
+  {
+    "url": "https://geonyeong-park.github.io/",
+    "label": "KAIST"
+  },
+  {
+    "url": "https://bispl.weebly.com/",
+    "label": "Jong Chul Ye"
+  },
+  {
+    "url": "https://tech.facebook.com/reality-labs/",
+    "label": "Meta Reality Labs"
+  },
+  {
+    "url": "https://wityworks.com/",
+    "label": "Jin-Hwa Kim"
+  },
+  {
+    "url": "https://naver-career.gitbook.io/en/teams/naver-ai-lab",
+    "label": "NAVER AI Lab"
+  },
+  {
+    "url": "https://www.linkedin.com/in/thu-nguyen-phuoc-0196ba18/?originalSubdomain=uk",
+    "label": "Thu Nguyen-Phuoc"
+  },
+  {
+    "url": "https://www.robots.ox.ac.uk/~vedaldi/",
+    "label": "Andrea Vedaldi"
+  },
+  {
+    "url": "http://shapovalov.ro/",
+    "label": "Roman Shapovalov"
+  },
+  {
+    "url": "https://geonyeong-park.github.io/meshregen/",
+    "label": "MeshReGen"
+  },
+  {
+    "url": "https://arxiv.org/abs/2511.16825",
+    "label": "WorldGen"
+  },
+  {
+    "url": "https://arxiv.org/abs/2510.10918",
+    "label": "DreamMakeup"
+  },
+  {
+    "url": "https://arxiv.org/abs/2412.08871",
+    "label": "Inference-time distillation"
+  },
+  {
+    "url": "https://dohunlee1.github.io/videoguide.github.io/",
+    "label": "VideoGuide"
+  },
+  {
+    "url": "https://arxiv.org/abs/2311.15658",
+    "label": "TReg"
+  },
+  {
+    "url": "https://cfgpp-diffusion.github.io/",
+    "label": "CFG++"
+  },
+  {
+    "url": "https://arxiv.org/abs/2311.15658",
+    "label": "TReg"
+  },
+  {
+    "url": "https://www.ces.tech/ces-innovation-awards/2025/wanna-beauty-ai-virtual-makeup-powered-by-generative-ai/",
+    "label": "2025 CES Innovation Awards"
+  },
+  {
+    "url": "https://www.apgroup.com/int/en/index.html",
+    "label": "AmorePacific"
+  },
+  {
+    "url": "https://cfgpp-diffusion.github.io/",
+    "label": "CFG++"
+  },
+  {
+    "url": "https://about.meta.com/realitylabs/",
+    "label": "Meta Reality Labs Research"
+  },
+  {
+    "url": "https://geonyeong-park.github.io/spectral-motion-alignment/",
+    "label": "SMA"
+  },
+  {
+    "url": "https://video-motion-customization.github.io/",
+    "label": "VMC"
+  },
+  {
+    "url": "https://kcvs.kr/?act=info.workshop&pseq=7",
+    "label": "KCCV 2024"
+  },
+  {
+    "url": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2024-south-korea",
+    "label": "Qualcomm Innovation Fellowship Award 2024"
+  },
+  {
+    "url": "https://arxiv.org/abs/2403.11415",
+    "label": "Dreamsampler"
+  },
+  {
+    "url": "https://arxiv.org/abs/2403.12002",
+    "label": "DreamMotion"
+  },
+  {
+    "url": "https://arxiv.org/abs/2406.08070v1",
+    "label": "CFG++"
+  },
+  {
+    "url": "https://arxiv.org/abs/2403.11415",
+    "label": "Dreamsampler"
+  },
+  {
+    "url": "https://arxiv.org/abs/2403.12002",
+    "label": "DreamMotion"
+  },
+  {
+    "url": "https://arxiv.org/abs/2311.15658",
+    "label": "Treg"
+  },
+  {
+    "url": "https://arxiv.org/abs/2210.05248",
+    "label": "Self-supervised debiasing"
+  },
+  {
+    "url": "https://video-motion-customization.github.io/",
+    "label": "VMC"
+  },
+  {
+    "url": "https://hyelinnam.github.io/CDS/",
+    "label": "CDS"
+  },
+  {
+    "url": "https://arxiv.org/abs/2306.09869",
+    "label": "EBCA"
+  },
+  {
+    "url": "https://arxiv.org/abs/2306.09869",
+    "label": "EBCA"
+  },
+  {
+    "url": "https://arxiv.org/abs/2605.20910",
+    "label": "FlowLong: Inference-time Long Video Generation via Manifold-constrained Tweedie Matching"
+  },
+  {
+    "url": "https://arxiv.org/abs/2605.20910",
+    "label": "PDF"
+  },
+  {
+    "url": "https://flowlong-video.github.io/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://arxiv.org/abs/2604.28134",
+    "label": "MeshReGen: A Unified 3D Geometry Regeneration Framework"
+  },
+  {
+    "url": "https://arxiv.org/abs/2604.28134",
+    "label": "PDF"
+  },
+  {
+    "url": "https://geonyeong-park.github.io/meshregen/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2511.16825",
+    "label": "WorldGen: From Text to Traversable and Interactive 3D Worlds"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2511.16825",
+    "label": "PDF"
+  },
+  {
+    "url": "https://www.meta.com/ko-kr/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/",
+    "label": "News"
+  },
+  {
+    "url": "https://arxiv.org/abs/2412.08871",
+    "label": "Inference-Time Diffusion Model Distillation"
+  },
+  {
+    "url": "https://arxiv.org/abs/2412.08871",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/geonyeong-park/inference_distillation",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2410.04364",
+    "label": "VideoGuide: Improving Video Diffusion Models without Training Through a Teacher's Guide"
+  },
+  {
+    "url": "https://arxiv.org/abs/2410.04364",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/DoHunLee1/VideoGuide",
+    "label": "Code"
+  },
+  {
+    "url": "https://dohunlee1.github.io/videoguide.github.io/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2406.08070v1",
+    "label": "CFG++: Manifold-constrained Classifier Free Guidance For Diffusion Models"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2406.08070v1",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/CFGpp-diffusion/CFGpp",
+    "label": "Code"
+  },
+  {
+    "url": "https://cfgpp-diffusion.github.io/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2311.15658.pdf",
+    "label": "Regularization by Texts for Latent Diffusion Inverse Solvers"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2311.15658.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://treg-inverse.github.io/treg-inverse/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://geonyeong-park.github.io/",
+    "label": "DreamMakeup: Face Makeup Customization using Latent Diffusion Models"
+  },
+  {
+    "url": "https://dreammakeup.github.io/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://www.ces.tech/ces-innovation-awards/2025/wanna-beauty-ai-virtual-makeup-powered-by-generative-ai/",
+    "label": "News"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2403.15249",
+    "label": "Spectral Motion Alignment for Video Motion Transfer using Diffusion Models"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2403.15249",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/geonyeong-park/Spectral-Motion-Alignment",
+    "label": "Code"
+  },
+  {
+    "url": "https://geonyeong-park.github.io/spectral-motion-alignment/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2403.11415.pdf",
+    "label": "DreamSampler: Unifying Diffusion Sampling and Score Distillation for Image Manipulation"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2403.11415.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2403.12002.pdf",
+    "label": "DreamMotion: Space-Time Self-Similarity Score Distillation for Zero-Shot Video Editing"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2403.12002.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://hyeonho99.github.io/dreammotion/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://video-motion-customization.github.io/static/video-motion-customization(vmc)-arxiv.pdf",
+    "label": "VMC: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models"
+  },
+  {
+    "url": "https://video-motion-customization.github.io/static/video-motion-customization(vmc)-arxiv.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/HyeonHo99/Video-Motion-Customization",
+    "label": "Code"
+  },
+  {
+    "url": "https://video-motion-customization.github.io/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://drive.google.com/drive/folders/1GUDnosOkYQ50-1bHHIBitRMeamkd2qao",
+    "label": "Data"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2311.18608.pdf",
+    "label": "Contrastive Denoising Score for Text-guided Latent Diffusion Image Editing"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2311.18608.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/HyelinNAM/ContrastiveDenoisingScore",
+    "label": "Code"
+  },
+  {
+    "url": "https://hyelinnam.github.io/CDS/",
+    "label": "Project Page"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2210.05248.pdf",
+    "label": "Self-supervised debiasing using low rank regularization"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2210.05248.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/geonyeong-park/Low-rank-regularization",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2306.09869.pdf",
+    "label": "Energy-Based Cross Attention for Bayesian Context Update in Text-to-Image Diffusion Models"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2306.09869.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/EnergyAttention/Energy-Based-CrossAttention",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2210.05247.pdf",
+    "label": "Training Debiased Subnetworks with Contrastive Weight Pruning"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2210.05247.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/geonyeong-park/DCWP",
+    "label": "Code"
+  },
+  {
+    "url": "https://www.slideshare.net/ssuserf6f0a0/dcwpcvpr2023pptx-256490941",
+    "label": "Slides"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2104.01575.pdf",
+    "label": "Reliably fast adversarial training via latent adversarial perturbation"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2104.01575.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/geonyeong-park/SLAT",
+    "label": "Code"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2104.01568.pdf",
+    "label": "Information-theoretic regularization for Multi-source Domain Adaptation"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2104.01568.pdf",
+    "label": "PDF"
+  },
+  {
+    "url": "https://github.com/geonyeong-park/MIAN",
+    "label": "Code"
+  },
+  {
+    "url": "https://www.nature.com/articles/s41467-019-13632-1",
+    "label": "Task complexity interacts with state-space uncertainty in the arbitration between model-based and model-free learning"
+  },
+  {
+    "url": "https://www.nature.com/articles/s41467-019-13632-1",
+    "label": "PDF"
+  },
+  {
+    "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1005575707",
+    "label": "News"
+  },
+  {
+    "url": "https://github.com/yaoyao-liu/minimal-light",
+    "label": "Minimal Light"
+  }
+]

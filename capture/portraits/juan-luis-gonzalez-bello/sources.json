@@ -1,0 +1,42 @@
+{
+  "title": "Juan L. Gonzalez Bello",
+  "url": "https://sites.google.com/view/juan-luis-gb/home",
+  "head": "Skip to main content\nSkip to navigation\nJuan L. Gonzalez Bello\t\nHomeEducationTeaching ExperienceProfessional ExperienceAwards\n\t\nJUAN LUIS GONZALEZ BELLO\nABOUT ME\n\nI am a passionate computer vision/ML/AI senior research scientist at Flawless AI, specializing in high and low-level computer vision. I studied Electrical Engineering at UNAM and got my Ph.D. in August 2023 at KAIST. With more than eight years of experience in research, I primarily work on cutting-edge topics such as novel-view synthesis, self-supervised monocular/stereo depth estimation, neural radiance fields, 3D Gaussian splatting, and image and video reconstruction and generation. As the first author, I have contributed to several noteworthy papers published in prestigious international conferences and journals, including ICIP, ICLR, NeurIPS, CVPR, and TPAMI. On the other hand, my professional experience extends from project management and manufacturing at P&G (full-time) to computer vision research at META (intern), Adobe (intern), and Flawless (full-time).\n\nEmail: juanluisgb dot phd at gmail dot com\n\nOffice: Santa Monica, California\n\n[LinkedIn] [Twitter] [Google Scholar] [CV ] [GitHub]\n\nNEWS\n\nI have been promoted to Senior Research Scientist at Flawless AI in Santa Monica!\n\nWorking on Perception and Video Diffusion Models!\n\nEcoSplat Accepted to CVPR2026 as a Highlight!\n\nBaby Yann Lewis born in March!\n\nZero-shot Video Deraining accepted to WACV2026!\n\nMobGS Accepted to AAAI2026!\n\nICLR2020 WORK\nSingle View Deep 3D Pan\nNEURIPS2020 WORK\nForget About the LiDAR\nCVPR2021 WORK\nPLADE-Net\nCVPR2024 WORK\nNVSVDE-Net\nIEEE ACCESS WORK\nProNeRF\nRESEARCH INTERESTS\n\nLow-level computer vision problems\n\n3D Gaussian Splatting\n\nNeural Radiance Fields\n\nStereo/Monocular depth estimation\n\nSelf-, semi-, and un-supervised deep learning\n\nNovel view synthesis\n\nImage super-resolution, sharpening\n\nView-dependent effects\n\nHigh-level computer vision\n\nGenerative models\n\nUtilizing diffusion priors for low-level vision\n\nRobotics\n\nI would like it in the future!\n\nSCIENTIFIC PUBLICATIONS\nNovel View Synthesis with View-Dependent Effects from a Single Image\n\nJuan Luis Gonzalez Bello and Munchurl Kim\n\nCVPR2024\n\nIn this paper, we address single image-based novel view synthesis (NVS) by firstly integrating view-dependent effects (VDE) into the process. Our approach leverages camera motion priors to model VDE, treating negative disparity ",
+  "items": [
+    {
+      "url": "https://sites.google.com/sitesv-images-rt/APXyLQdkLpn-vJ0k0fL2yaQKievERK8LvTm6k6h-n-QWfFYmiqpt_qMDznC19mu9k6jYTKTnIiysIgFzk2WEHE1e3fF_K8mfxPk5V5_vC83lhP8gkvpO6BdnyLyE864tYdY5NRvVTo0bUk0Mv0pPE6PiCM7jKyrehkpw31LU5qYeN355tCkIYcaWEl0_egDsYEQp6X-pFwkA4kcn2giHnDrhYDATGPY0QkplCVP2a5XC_u4=w1280",
+      "alt": "",
+      "context": "ABOUT ME\n\nI am a passionate computer vision/ML/AI senior research scientist at Flawless AI, specializing in high and low-level computer vision. I studied Electrical Engineering at UNAM and got my Ph.D. in August 2023 at KAIST. With more than eight years of experience in research, I primarily work on cutting-edge topics such as novel-view synthesis, self-supervised mon",
+      "w": 1280,
+      "h": 1494
+    },
+    {
+      "url": "https://sites.google.com/sitesv-images-rt/APXyLQeO02_XPmcuOKIl_FotQYxv1wTEyAc8IJ7gQCCMEmjRSjnrD3xMXUCaiEkrRsMRQtvh7aEMupSN379yT2wVyHVsIHryyj1PTyRYucooV6gYosHBXi10zt9uNfPQVF8qLrXt9CBBorasD6vadFDnRXdw9O5rCzLnLE_OGK7v_sA4QkfWWWG2rKyYds4aFnikbQGKPK4h9OuF_LRjT2OWMCeOMrPZEshhDMApJEcV=w1280",
+      "alt": "",
+      "context": "ICLR2020 WORK\nSingle View Deep 3D Pan\nNEURIPS2020 WORK\nForget About the LiDAR\nCVPR2021 WORK\nPLADE-Net",
+      "w": 1200,
+      "h": 358
+    },
+    {
+      "url": "https://sites.google.com/sitesv-images-rt/APXyLQcyokW3ADB3UJZHuBPMjbGlkGv2qOwtMYwNxmYpziV9xt1ipRAWz6bds9xKB2YyBGqBzlE_KVRPCaCmNpJ_SprmmnNm7P-1ersqIRNicY5MLLAqvC3rmzUJ7Ag3Y5Tu7M8YAQ5pAVrsoNVXznWJxc8zulwLNGivlP5welOfwMacRHf1K8oSI9wcejUPNhi_iE4TT3cOW2vGhLznC2cwsuv5wEzIIphkj8AJu9-vo8o=w1280",
+      "alt": "",
+      "context": "ICLR2020 WORK\nSingle View Deep 3D Pan\nNEURIPS2020 WORK\nForget About the LiDAR\nCVPR2021 WORK\nPLADE-Net",
+      "w": 1200,
+      "h": 358
+    },
+    {
+      "url": "https://sites.google.com/sitesv-images-rt/APXyLQfmyWFLlWWIWUU5skHsEroDZlnJ1XeZLEA_kvNL_NmSBHaib4Z6oj1rPK2jd-UnE8_EYwy-bQX_yu0b5jYKsuus9dvNdj-5PdNY9Gqew4vPr9DhOktppWCZ99xcOLGog1prG5mrsDe6nWYoiaz4dPgNzDXz3Xe3-fsS_XIiM-bjYxb-AE2KBffpt_v1OELrJKJioTmVLKBOpiOEQVVCJ9Ho0UIYxH-aEhlCRFFBS1o=w1280",
+      "alt": "",
+      "context": "ICLR2020 WORK\nSingle View Deep 3D Pan\nNEURIPS2020 WORK\nForget About the LiDAR\nCVPR2021 WORK\nPLADE-Net",
+      "w": 960,
+      "h": 287
+    },
+    {
+      "url": "https://sites.google.com/sitesv-images-rt/APXyLQdOUhTW2Xlpt-mo73m2onbCE2-LECXJcaGjO8uc7nTsta_vMIkmdhfVFPG7N3mRJkv_oulPkA50-p7NYY6z3qUKQsv7ShMnfGLp3f9O2nqPpGuduc9IkcFs5WzyvLohxL8DR5EErymSiXUIs2tdgLRMneR6zkYzVJDmxes-kU2-xJCUMa_oDh0ZOKQvUX08jWhS_zEltvnN5OzpWyBSwdhEHaRPg1HSr3a2sGj1vlI=w1280",
+      "alt": "",
+      "context": "CVPR2024 WORK\nNVSVDE-Net\nIEEE ACCESS WORK\nProNeRF",
+      "w": 586,
+      "h": 219
+    }
+  ]
+}

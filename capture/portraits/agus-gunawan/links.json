@@ -1,0 +1,238 @@
+[
+  {
+    "url": "https://razer.ai/",
+    "label": "Razer AI"
+  },
+  {
+    "url": "https://www.viclab.kaist.ac.kr/professor",
+    "label": "Prof. Munchurl Kim"
+  },
+  {
+    "url": "https://itb.ac.id/",
+    "label": "ITB"
+  },
+  {
+    "url": "mailto:agusgunw19@gmail.com",
+    "label": "Email"
+  },
+  {
+    "url": "https://scholar.google.com/citations?hl=en&user=WJLA424AAAAJ",
+    "label": "Google Scholar"
+  },
+  {
+    "url": "https://www.linkedin.com/in/agusgun",
+    "label": "LinkedIn"
+  },
+  {
+    "url": "https://github.com/agusgun/",
+    "label": "GitHub"
+  },
+  {
+    "url": "https://agusgun.github.io/#research",
+    "label": "RESEARCH"
+  },
+  {
+    "url": "https://agusgun.github.io/#experience",
+    "label": "INDUSTRY"
+  },
+  {
+    "url": "https://agusgun.github.io/#projects",
+    "label": "PROJECTS"
+  },
+  {
+    "url": "https://kaist-viclab.github.io/omnitext-site",
+    "label": "OmniText: A Training-Free Generalist for Controllable Text-Image Manipulation"
+  },
+  {
+    "url": "https://sites.google.com/view/sooyekim",
+    "label": "Soo Ye Kim"
+  },
+  {
+    "url": "https://sites.google.com/view/ozbro",
+    "label": "Jihyong Oh"
+  },
+  {
+    "url": "https://www.viclab.kaist.ac.kr/professor",
+    "label": "Munchurl Kim"
+  },
+  {
+    "url": "https://openreview.net/pdf?id=zF7GyVXVw6",
+    "label": "paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/2510.24093",
+    "label": "arXiv"
+  },
+  {
+    "url": "https://kaist-viclab.github.io/omnitext-site",
+    "label": "project page"
+  },
+  {
+    "url": "https://github.com/KAIST-VICLab/OmniText",
+    "label": "code"
+  },
+  {
+    "url": "https://kaist-viclab.github.io/primedit-site/",
+    "label": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset"
+  },
+  {
+    "url": "https://sites.google.com/view/sooyekim",
+    "label": "Soo Ye Kim"
+  },
+  {
+    "url": "https://sites.google.com/view/ozbro",
+    "label": "Jihyong Oh"
+  },
+  {
+    "url": "https://www.viclab.kaist.ac.kr/professor",
+    "label": "Munchurl Kim"
+  },
+  {
+    "url": "https://arxiv.org/abs/2412.12877",
+    "label": "arXiv"
+  },
+  {
+    "url": "https://kaist-viclab.github.io/primedit-site/",
+    "label": "project page"
+  },
+  {
+    "url": "https://kaist-viclab.github.io/old-photo-modernization",
+    "label": "Modernizing Old Photos Using Multiple References via Photorealistic Style Transfer"
+  },
+  {
+    "url": "https://sites.google.com/view/sooyekim",
+    "label": "Soo Ye Kim"
+  },
+  {
+    "url": "https://sites.google.com/view/hjsim",
+    "label": "Hyeonjun Sim"
+  },
+  {
+    "url": "https://scholar.google.com/citations?user=FW4BUN0AAAAJ&hl=en",
+    "label": "Jae-Ho Lee"
+  },
+  {
+    "url": "https://www.viclab.kaist.ac.kr/professor",
+    "label": "Munchurl Kim"
+  },
+  {
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Gunawan_Modernizing_Old_Photos_Using_Multiple_References_via_Photorealistic_Style_Transfer_CVPR_2023_paper.pdf",
+    "label": "paper"
+  },
+  {
+    "url": "https://arxiv.org/abs/2304.04461",
+    "label": "arXiv"
+  },
+  {
+    "url": "https://kaist-viclab.github.io/old-photo-modernization",
+    "label": "project page"
+  },
+  {
+    "url": "https://github.com/KAIST-VICLab/old-photo-modernization",
+    "label": "code"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=XMmk_PQtE9Y",
+    "label": "video"
+  },
+  {
+    "url": "https://arxiv.org/abs/2207.01972",
+    "label": "Understanding and Improving Group Normalization"
+  },
+  {
+    "url": "https://www.researchgate.net/profile/Xu-Yin-3/research",
+    "label": "Xu Yin"
+  },
+  {
+    "url": "https://scholar.google.com/citations?user=nj19btQAAAAJ&hl=en",
+    "label": "Kang Zhang"
+  },
+  {
+    "url": "https://arxiv.org/abs/2207.01972",
+    "label": "arXiv"
+  },
+  {
+    "url": "https://github.com/agusgun/UnderstandingGroupNorm",
+    "label": "code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2207.02066",
+    "label": "Test-time Adaptation for Real Image Denoising via Meta-transfer Learning"
+  },
+  {
+    "url": "https://dblp.org/pid/214/8126.html",
+    "label": "Muhammad Adi Nugroho"
+  },
+  {
+    "url": "https://scholar.google.com/citations?user=X-SyELwAAAAJ&hl=en",
+    "label": "Se Jin Park"
+  },
+  {
+    "url": "https://arxiv.org/abs/2207.02066",
+    "label": "arXiv"
+  },
+  {
+    "url": "https://github.com/agusgun/TTAID",
+    "label": "code"
+  },
+  {
+    "url": "https://arxiv.org/abs/2201.06045",
+    "label": "CISRNet: Compressed Image Super-Resolution Network"
+  },
+  {
+    "url": "https://scholar.google.com/citations?user=uf4EpUsAAAAJ&hl=en",
+    "label": "Sultan R H Madjid"
+  },
+  {
+    "url": "https://arxiv.org/abs/2201.06045",
+    "label": "arXiv"
+  },
+  {
+    "url": "https://github.com/agusgun/CISR",
+    "label": "code"
+  },
+  {
+    "url": "https://www.researchgate.net/publication/338631354_Key_Frame_Extraction_with_Face_Biometric_Features_in_Multi-shot_Human_Re-identification_System",
+    "label": "Key Frame Extraction with Face Biometric Features in Multi-shot Human Re-identification System"
+  },
+  {
+    "url": "https://scholar.google.com/citations?user=lyaV0HgAAAAJ&hl=en",
+    "label": "Dwi H Widyantoro"
+  },
+  {
+    "url": "https://www.researchgate.net/publication/338631354_Key_Frame_Extraction_with_Face_Biometric_Features_in_Multi-shot_Human_Re-identification_System",
+    "label": "ResearchGate"
+  },
+  {
+    "url": "https://drive.google.com/file/d/1k-W4yyK4-n-snx60rxikgcCW7Pp3YK7V/view?usp=sharing",
+    "label": "seamls - poster"
+  },
+  {
+    "url": "https://github.com/agusgun/person-reid",
+    "label": "code"
+  },
+  {
+    "url": "https://holylovenia.github.io/",
+    "label": "Holy Lovenia"
+  },
+  {
+    "url": "https://razer.ai/",
+    "label": "Razer AI"
+  },
+  {
+    "url": "https://sembly.com/",
+    "label": "Sembly"
+  },
+  {
+    "url": "https://airyrooms.com/",
+    "label": "Airy"
+  },
+  {
+    "url": "https://glair.ai/",
+    "label": "GLAIR"
+  },
+  {
+    "url": "https://www.bukalapak.com/",
+    "label": "Bukalapak"
+  }
+]

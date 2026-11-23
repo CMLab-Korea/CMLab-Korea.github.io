@@ -1,0 +1,102 @@
+[
+  {
+    "url": "https://www.ieee.org/security-privacy.html",
+    "label": "Privacy Policy"
+  },
+  {
+    "url": "https://iccv.thecvf.com/#child-menu",
+    "label": "Skip to yearly menu bar"
+  },
+  {
+    "url": "https://iccv.thecvf.com/#main",
+    "label": "Skip to main content"
+  },
+  {
+    "url": "https://iccv.thecvf.com/MyStuff",
+    "label": "My Stuff"
+  },
+  {
+    "url": "https://iccv.thecvf.com/Profile/create",
+    "label": "Create Profile"
+  },
+  {
+    "url": "https://iccv.thecvf.com/resetpassword",
+    "label": "Reset Password"
+  },
+  {
+    "url": "https://iccv.thecvf.com/accounts/login?nextp=/",
+    "label": "Login"
+  },
+  {
+    "url": "https://iccv.thecvf.com/#",
+    "label": "Select Year: (2027)"
+  },
+  {
+    "url": "https://iccv.thecvf.com/Conferences/2027",
+    "label": "2027"
+  },
+  {
+    "url": "https://iccv.thecvf.com/Conferences/2025",
+    "label": "2025"
+  },
+  {
+    "url": "https://iccv.thecvf.com/#",
+    "label": "Policies"
+  },
+  {
+    "url": "https://iccv.thecvf.com/Conferences/2027/CodeOfConduct",
+    "label": "Code of Conduct"
+  },
+  {
+    "url": "https://iccv.thecvf.com/Conferences/2027/Dates",
+    "label": "Dates"
+  },
+  {
+    "url": "https://iccv.thecvf.com/#",
+    "label": "Calls"
+  },
+  {
+    "url": "https://iccv.thecvf.com/#",
+    "label": "Attend"
+  },
+  {
+    "url": "https://iccv.thecvf.com/Conferences/2027/CodeOfConduct",
+    "label": "Code of Conduct"
+  },
+  {
+    "url": "https://iccv.thecvf.com/#",
+    "label": "Organization"
+  },
+  {
+    "url": "https://iccv.thecvf.com/Conferences/2027/Committees",
+    "label": "Organizing Committee"
+  },
+  {
+    "url": "https://www.google.com/maps/search/Hong+Kong+Convention+and+Expo+Center/@22.2811256,114.1704659,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D",
+    "label": "Hong Kong Convention and Expo Center"
+  },
+  {
+    "url": "https://iccv.thecvf.com/Conferences/2027/Dates",
+    "label": "October 3–7, 2027"
+  },
+  {
+    "url": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hkcec.com/en&ved=2ahUKEwjyxqSw84uXAxUnQEEAHZTeO4oQFnoECBsQAQ&usg=AOvVaw1tdoHdaGt7MFgTW0f4cVSB",
+    "label": "Hong Kong Convention and Expo Center"
+  },
+  {
+    "url": "https://support.conferences.computer.org/iccv/help-desk/",
+    "label": "ICCV Help Desk"
+  },
+  {
+    "url": "https://www.computer.org/",
+    "label": "IEEE Computer Society"
+  },
+  {
+    "url": "https://www.thecvf.com/",
+    "label": "The Computer Vision Foundation"
+  },
+  {
+    "url": "https://openaccess.thecvf.com/menu",
+    "label": "ICCV Proceedings"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "title": "2027 Conference",
+  "url": "https://iccv.thecvf.com/",
+  "head": "This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. To learn more, view the following link: Privacy Policy\nManage Preferences\nSkip to yearly menu bar\nSkip to main content\nMain Navigation\nMy Stuff\nCreate Profile\nReset Password\n Login\nSelect Year: (2027) \nPolicies \nDates\nCalls \nAttend \nOrganization \n\n\n\nICCV 2027\n\nInternational Conference on Computer Vision, ICCV 2027\n\n Hong Kong Convention and Expo Center\n October 3–7, 2027\nQuick Links\nLatest Announcements\nAbout the Conference\nThe International Conference on Computer Vision (ICCV) is a premier biennial research event sponsored by the IEEE, held alongside CVPR and ECCV as a top tier venue for computer vision.\nVenue\n\nICCV 2027 will be held at the Hong Kong Convention and Expo Center (HKCEC) October 2–8, 2027\n\n\n\nContact Us\n\nICCV Help Desk\n\nPlease contact us with questions about the following topics:\n\nAuthor - Paper Submission, Author - Open Review Issues, Author - Camera-Ready Paper, Registration - General, Registration - Cancellation, Childcare/Guests, Expo/Guests, Lodging, Visa Letter, Reviewer - Open Review Issues, Reviewer - General Issues, Area Chair Issues,\n\nUSEFUL LINKS\n\tIEEE Computer Society\n\tThe Computer Vision Foundation\n\nICCV Proceedings",
+  "items": [
+    {
+      "url": "https://iccv.thecvf.com/static/core/img/iccv-navbar-logo.svg",
+      "alt": "conference_logo",
+      "context": "",
+      "w": 1333,
+      "h": 667
+    },
+    {
+      "url": "https://media.eventhosts.cc/Conferences/ICCV2027/hong-kong-convention-and-exhibition-centre.jpg",
+      "alt": "Hong Kong Convention and Exhibition Centre on the Victoria Harbour waterfront",
+      "context": "About the Conference\nThe International Conference on Computer Vision (ICCV) is a premier biennial research event sponsored by the IEEE, held alongside CVPR and ECCV as a top tier venue for computer vision.\nVenue\n\nICCV 2027 will be held at the Hong Kong Convention and Expo Center (HKCEC) October 2–8, 2027",
+      "w": 900,
+      "h": 600
+    },
+    {
+      "url": "https://media.icml.cc/Conferences/CVPR2023/img/ieee_cs_.svg",
+      "alt": "IEEE Logo",
+      "context": "IEEE Computer Society",
+      "w": 1333,
+      "h": 407
+    },
+    {
+      "url": "https://media.icml.cc/Conferences/CVPR2023/img/CVF-transparent-background.svg",
+      "alt": "",
+      "context": "The Computer Vision Foundation",
+      "w": 1795,
+      "h": 1159
+    }
+  ]
+}

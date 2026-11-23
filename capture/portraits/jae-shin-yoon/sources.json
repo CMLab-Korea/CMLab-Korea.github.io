@@ -1,0 +1,42 @@
+{
+  "title": "Jae Shin Yoon",
+  "url": "https://gorokee.github.io/jsyoon/",
+  "head": "Jae Shin Yoon (윤재신)\n   \n\nI am a Research Scientist at Adobe Research. Here, I am testing myself if I can become color, lighting, and low-level vision scientist for generation, post-processing, and fine-grained controls, hoping that the quality satisfies professional image/video editors and creators.\n\nEmail: jaeyoon [at] adobe.com, jsyoon4325 [at] gmail.com\nCV | Google Scholar\n\nI received Ph.D. degree in Computer Science and Engineering at the University of Minnesota (UMN), Twin Cities, advised by Prof. Hyun Soo Park.  I received MS degree in Department of Robotics from Korea Advanced Institute of Science and Technology (KAIST) under the supervision of Prof. In So Kweon. I received my bachelor degree in Electrical Engineering from Hanyang University under the supervision of Prof. Yong Ho Song. I was an exchange student at Kobe University. My general research interest lies in computer&robot vision and machine learning.\n\nIndustry\n\nResearch Scientist at Adobe Research, San Jose , USA | 2022 - present\n\nInternship at Adobe Research, San Jose , USA | 2021 (June - Aug.)\n\nInternship at NVIDIA Research, Santa Clara, USA | 2019 (Feb. - Aug.)\n\nInternship at Facebook Reality Labs, Oculus, Pittsburgh, USA | 2018 (June - Aug.)\n\n\nResearch & Productization\n\n\t\nControllable Cinemagraph Generation from A Still Image\nVan Thanh Le, Daichi Ito, Aniruddha Mahapatra, Long Mai, Krishna Kumar Singh, Kuldeep Kulkarni, Feng Liu, Yun Fu, Jae Shin Yoon\nEurographics (short paper) 2026\n[PDF] [Project Page]\n\n\t\nRelightful Video Portrait Harmonization\nJunmyeong Choi, Jae Shin Yoon, Luchao Qi, Roni Sengupta, Joon-Young Lee\nIEEE Computer Vision and Pattern Recognition (CVPR) 2026\n[PDF] [Project Page]\n\n\t\nJOG3R: Towards 3D-Consistent Video Generators\nChun-Hao Paul Huang, Niloy Mitra, Hyeonho Jeong, Jae Shin Yoon, Duygu Ceylan\nThe British Machine Vision Conference (BMVC) 2025\n[PDF] [Project Page]\n\n\t\nCan3Tok: Canonical 3D Tokenization and Latent Modeling of Scene-Level 3D Gaussians\nQuankai Gao, Iliyan Georgiev, Tuanfeng Yang Wang, Krishna Kumar Singh, { Ulrich Neumann*, Jae Shin Yoon* }\n*indicates joint last authors\nIEEE International Conference on Computer Vision (ICCV) 2025\n[PDF] [Project Page] [Code]\n\n\t\nIntrinsicEdit: Precise generative image manipulation in intrinsic space\nLinjie Lyu, Valentin Deschaintre, Yannick Hold-Geoffroy, Miloš Hašan, Jae Shin Yoon, Thomas Leimkühler, Christian Theobalt, ",
+  "items": [
+    {
+      "url": "https://gorokee.github.io/jsyoon/JaeShin_homepage/jae_shin.jpg",
+      "alt": "",
+      "context": "Jae Shin Yoon (윤재신)\n   \n\nI am a Research Scientist at Adobe Research. Here, I am testing myself if I can become color, lighting, and low-level vision scientist for generation, post-processing, and fine-grained controls, hoping that the quality satisfies professional image/video editors and creators.\n\nEmail: jaeyoon [at] adobe.com, jsyoon4325 [at] gmail.com\nCV | Google",
+      "w": 641,
+      "h": 960
+    },
+    {
+      "url": "https://gorokee.github.io/jsyoon/JaeShin_homepage/thanh_cine.jpg",
+      "alt": "",
+      "context": "Controllable Cinemagraph Generation from A Still Image\nVan Thanh Le, Daichi Ito, Aniruddha Mahapatra, Long Mai, Krishna Kumar Singh, Kuldeep Kulkarni, Feng Liu, Yun Fu, Jae Shin Yoon\nEurographics (short paper) 2026\n[PDF] [Project Page]",
+      "w": 612,
+      "h": 308
+    },
+    {
+      "url": "https://gorokee.github.io/jsyoon/JaeShin_homepage/joger.jpg",
+      "alt": "",
+      "context": "JOG3R: Towards 3D-Consistent Video Generators\nChun-Hao Paul Huang, Niloy Mitra, Hyeonho Jeong, Jae Shin Yoon, Duygu Ceylan\nThe British Machine Vision Conference (BMVC) 2025\n[PDF] [Project Page]",
+      "w": 1411,
+      "h": 672
+    },
+    {
+      "url": "https://gorokee.github.io/jsyoon/JaeShin_homepage/cantok.jpg",
+      "alt": "",
+      "context": "Can3Tok: Canonical 3D Tokenization and Latent Modeling of Scene-Level 3D Gaussians\nQuankai Gao, Iliyan Georgiev, Tuanfeng Yang Wang, Krishna Kumar Singh, { Ulrich Neumann*, Jae Shin Yoon* }\n*indicates joint last authors\nIEEE International Conference on Computer Vision (ICCV) 2025\n[PDF] [Project Page] [Code]",
+      "w": 793,
+      "h": 445
+    },
+    {
+      "url": "https://gorokee.github.io/jsyoon/JaeShin_homepage/intrinsic2025.png",
+      "alt": "",
+      "context": "IntrinsicEdit: Precise generative image manipulation in intrinsic space\nLinjie Lyu, Valentin Deschaintre, Yannick Hold-Geoffroy, Miloš Hašan, Jae Shin Yoon, Thomas Leimkühler, Christian Theobalt, Iliyan Georgiev\nSIGGRAPH 2025 (TOG)\n[PDF] [Project Page]",
+      "w": 532,
+      "h": 352
+    }
+  ]
+}

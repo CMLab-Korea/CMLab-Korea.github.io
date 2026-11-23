@@ -1,0 +1,530 @@
+[
+  {
+    "url": "https://www.microsoft.com/en-us/#primaryArea",
+    "label": "Skip to main content"
+  },
+  {
+    "url": "https://www.microsoft.com/microsoft-365",
+    "label": "Microsoft 365"
+  },
+  {
+    "url": "https://azure.microsoft.com/en-us?ocid=cmm4r4ppnhp",
+    "label": "Azure"
+  },
+  {
+    "url": "https://copilot.com/?fromcode=cmmuaql67jy",
+    "label": "Copilot"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/windows/",
+    "label": "Windows"
+  },
+  {
+    "url": "https://www.microsoft.com/surface",
+    "label": "Surface"
+  },
+  {
+    "url": "https://www.xbox.com/",
+    "label": "XBOX"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/sale?icid=DSM_TopNavDeals",
+    "label": "Deals"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/business",
+    "label": "Small Business"
+  },
+  {
+    "url": "https://support.microsoft.com/en-us",
+    "label": "Support"
+  },
+  {
+    "url": "https://apps.microsoft.com/home",
+    "label": "Windows Apps"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
+    "label": "Outlook"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+    "label": "OneDrive"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+    "label": "Microsoft Teams"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app",
+    "label": "OneNote"
+  },
+  {
+    "url": "https://www.microsoft.com/edge",
+    "label": "Microsoft Edge"
+  },
+  {
+    "url": "https://support.microsoft.com/en-us/office/moving-from-skype-to-microsoft-teams-free-3c0caa26-d9db-4179-bcb3-930ae2c87570?icid=DSM_All_Skype",
+    "label": "Moving from Skype to Teams"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/pc?icid=CNavDevicesPC",
+    "label": "Computers"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/xbox?icid=DSM_All_ShopXbox",
+    "label": "Shop XBOX"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/accessories?icid=CNavDevicesAccessories",
+    "label": "Accessories"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/virtualreality?icid=CNavVirtualReality",
+    "label": "VR & mixed reality"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/certified-refurbished-products",
+    "label": "Certified Refurbished"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/microsoft-trade-in",
+    "label": "Trade-in for cash"
+  },
+  {
+    "url": "https://www.xbox.com/en-us/games/store/xbox-game-pass-ultimate/cfq7ttc0khs0?icid=DSM_All_XboxGamePassUltimate",
+    "label": "XBOX Game Pass Ultimate"
+  },
+  {
+    "url": "https://www.xbox.com/en-us/games/store/pc-game-pass/cfq7ttc0kgq8?icid=CNavAllPCGamePass",
+    "label": "PC Game Pass"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/xboxgames?icid=DSM_All_XboxGames",
+    "label": "XBOX games"
+  },
+  {
+    "url": "https://apps.microsoft.com/games",
+    "label": "PC games"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/ai?icid=DSM_All_AI",
+    "label": "Microsoft AI"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/security",
+    "label": "Microsoft Security"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/dynamics-365",
+    "label": "Dynamics 365"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-365/business",
+    "label": "Microsoft 365 for business"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/power-platform",
+    "label": "Microsoft Power Platform"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/windows-365",
+    "label": "Windows 365"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/business?icid=CNavBusinessStore",
+    "label": "Small Business"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/sovereignty?icid=DSM_More_Sovereignty",
+    "label": "Digital Sovereignty"
+  },
+  {
+    "url": "https://azure.microsoft.com/en-us/",
+    "label": "Azure"
+  },
+  {
+    "url": "https://developer.microsoft.com/en-us/",
+    "label": "Microsoft Developer"
+  },
+  {
+    "url": "https://learn.microsoft.com/",
+    "label": "Microsoft Learn"
+  },
+  {
+    "url": "https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_All_SupportAIMarketplace&ocid=cmm3atxvn98",
+    "label": "Support for AI marketplace apps"
+  },
+  {
+    "url": "https://techcommunity.microsoft.com/",
+    "label": "Microsoft Tech Community"
+  },
+  {
+    "url": "https://marketplace.microsoft.com/?icid=DSM_All_Marketplace&ocid=cmm3atxvn98",
+    "label": "Microsoft Marketplace"
+  },
+  {
+    "url": "https://www.microsoft.com/software-development-companies?icid=DSM_All_SoftwareCompanies&ocid=cmm3atxvn98",
+    "label": "Software companies"
+  },
+  {
+    "url": "https://visualstudio.microsoft.com/",
+    "label": "Visual Studio"
+  },
+  {
+    "url": "https://www.microsoft.com/rewards",
+    "label": "Microsoft Rewards"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/download",
+    "label": "Free downloads & security"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/education",
+    "label": "Education"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/gift-cards?icid=DSM_All_GiftCards",
+    "label": "Gift cards"
+  },
+  {
+    "url": "https://www.microsoft.com/licensing/",
+    "label": "Licensing"
+  },
+  {
+    "url": "https://unlocked.microsoft.com/",
+    "label": "Unlocked stories"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/sitemap",
+    "label": "View Sitemap"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/sale?icid=mscom_marcom_TS1a_HOLFY27&OCID=cmmb78t9kqh",
+    "label": "Shop deals"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/configure/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr?icid=mscom_marcom_PRCP1a_SurfacePro12-13in_HOLFY27&OCID=cmmb78t9kqh",
+    "label": "Shop now"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/configure/surface-laptop-13-8-inch-8th-edition/8mzbmmcjzpmf?icid=mscom_marcom_PRCP2a_SurfaceLaptop8-13.8in_HOLFY27&OCID=cmmb78t9kqh",
+    "label": "Shop now"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/windows/shop-pcs?icid=mscom_marcom_PRCP3a_WindowsLaptopsXBOXGamesOffer",
+    "label": "Shop now"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra?icid=mscom_marcom_PRCP4a_SurfaceLaptopUltra",
+    "label": "Shop now"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/collections/XboxControllers?icid=mscom_marcom_PRCP5a_XboxControllers",
+    "label": "Shop now"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/p/xbox-series-s/942j774tp9jn?icid=mscom_marcom_PRCP6a_XboxSeriesS",
+    "label": "Shop now"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/d/surface-mouse-2nd-edition/8wg5vqp0x4bv?icid=mscom_marcom_PRCP7a_SurfaceMouse2_Fall27",
+    "label": "Shop now"
+  },
+  {
+    "url": "https://www.xbox.com/en-US/xbox-game-pass?icid=mscom_marcom_PRCP8a_GamePass#join",
+    "label": "Join now"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products?icid=mscom_marcom_PMPH1a_M365HolidayOffer_cmm6k1abc17",
+    "label": "Get offer​"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/?icid=mscom_marcom_BRCP1a_CopilotatIgnite",
+    "label": "Explore the news"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/?icid=mscom_marcom_BRCP2a_SecurityatIgnite",
+    "label": "Explore the news"
+  },
+  {
+    "url": "https://azure.microsoft.com/en-us/blog/microsoft-ignite-2026-whats-new-in-azure-the-platform-purpose-built-for-ai/?icid=mscom_marcom_BRCP3a_AzureatIgnite",
+    "label": "Explore the news"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/ai/see-you-in-the-work?icid=mscom_marcom_BRCP4a_SeeYouInTheWork",
+    "label": "Explore their stories"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/d/surface-laptop-ultra-for-business/8wg5vqp0x4d1?icid=mscom_marcom_BRCP5a_SurfaceLaptopUltraBusiness",
+    "label": "Shop now"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/ai?icid=mscom_marcom_BRCP6a_AI",
+    "label": "Learn more"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-teams/small-medium-business?icid=mscom_marcom_BRCP7a_TeamsForBusiness",
+    "label": "Shop plans and pricing"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/configure/surface-laptop-13-8-inch-8th-edition/8mzbmmcjzpmf?icid=mscom_marcom_BMPH1a_SurfaceLaptop8-13.8in_HOLFY27&OCID=cmmb78t9kqh",
+    "label": "Shop now"
+  },
+  {
+    "url": "https://unlocked.microsoft.com/alertcalifornia-ai-wildfire-detection/?icid=mscom_marcom_CPAI1a_ProjectCondor",
+    "label": "Read the story"
+  },
+  {
+    "url": "https://unlocked.microsoft.com/copilot-special-education-teacher/?icid=mscom_marcom_CPAI2a_CopilotSpecialEducation",
+    "label": "Read the story"
+  },
+  {
+    "url": "https://news.microsoft.com/source/features/ai/local-know-how-helps-communities-make-the-most-of-new-technology-and-opportunities/?icid=mscom_marcom_CPAI3a_MicrosoftInvestingNonprofitsAI",
+    "label": "Read the story"
+  },
+  {
+    "url": "https://news.microsoft.com/source/features/digital-transformation/hoop-dreams-how-a-coachs-vision-for-a-high-tech-basketball-gym-is-inspiring-kids-to-aim-for-the-perfect-shot?icid=mscom_marcom_SAM1a_Shoot360",
+    "label": "Read the story"
+  },
+  {
+    "url": "https://unlocked.microsoft.com/nfl-greatness/?icid=mscom_marcom_SAM2a_BuildingNFLGreatness",
+    "label": "Read the story"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra?icid=DSM_Footer_WhatsNew_SurfaceLaptopUltra",
+    "label": "Surface Laptop Ultra"
+  },
+  {
+    "url": "https://www.microsoft.com/surface/devices/surface-pro",
+    "label": "Surface Pro"
+  },
+  {
+    "url": "https://www.microsoft.com/surface/devices/surface-laptop",
+    "label": "Surface Laptop"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/surface/devices/surface-rtx-spark-dev-box?icid=DSM_Footer_WhatsNew_SurfaceRTXSparkDevBox",
+    "label": "Surface RTX Spark Dev Box"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/copilot?icid=DSM_Footer_WhatsNew_Copilot",
+    "label": "Explore Copilot"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-products-and-apps",
+    "label": "Explore Microsoft products"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/windows/apps-for-windows?icid=DSM_Footer_WhatsNew_Windows11apps",
+    "label": "Windows 11 apps"
+  },
+  {
+    "url": "https://account.microsoft.com/",
+    "label": "Account profile"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/download",
+    "label": "Download Center"
+  },
+  {
+    "url": "https://go.microsoft.com/fwlink/?linkid=2139749",
+    "label": "Microsoft Store support"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/returns",
+    "label": "Returns"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/order-tracking",
+    "label": "Order tracking"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/certified-refurbished-products",
+    "label": "Certified Refurbished"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/why-microsoft-store?icid=footer_why-msft-store?icid=DSM_Footer_MicrosoftStore_WhyBuy",
+    "label": "Why buy from Microsoft Store"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/payment-financing-options?icid=footer_financing_vcc",
+    "label": "Flexible Payments"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/education",
+    "label": "Microsoft in education"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/education/devices/overview",
+    "label": "Devices for education"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/education/products/teams",
+    "label": "Microsoft Teams for Education"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/education/products/microsoft-365",
+    "label": "Microsoft 365 Education"
+  },
+  {
+    "url": "https://www.microsoft.com/education/how-to-buy",
+    "label": "How to buy for your school"
+  },
+  {
+    "url": "https://education.microsoft.com/",
+    "label": "Educator training and development"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/education",
+    "label": "Deals for students and parents"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/education/ai-in-education",
+    "label": "AI for education"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/ai?icid=DSM_Footer_AI",
+    "label": "Microsoft AI"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/security",
+    "label": "Microsoft Security"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/dynamics-365",
+    "label": "Dynamics 365"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-365/business",
+    "label": "Microsoft 365"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/power-platform",
+    "label": "Microsoft Power Platform"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+    "label": "Microsoft Teams"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/copilot?icid=DSM_Footer_Business_Copilot",
+    "label": "Microsoft Copilot"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/b/business?icid=CNavBusinessStore",
+    "label": "Small Business"
+  },
+  {
+    "url": "https://azure.microsoft.com/en-us/",
+    "label": "Azure"
+  },
+  {
+    "url": "https://developer.microsoft.com/en-us/",
+    "label": "Microsoft Developer"
+  },
+  {
+    "url": "https://learn.microsoft.com/",
+    "label": "Microsoft Learn"
+  },
+  {
+    "url": "https://www.microsoft.com/software-development-companies/offers-benefits/isv-success?icid=DSM_Footer_SupportAIMarketplace&ocid=cmm3atxvn98",
+    "label": "Support for AI marketplace apps"
+  },
+  {
+    "url": "https://techcommunity.microsoft.com/",
+    "label": "Microsoft Tech Community"
+  },
+  {
+    "url": "https://marketplace.microsoft.com/?icid=DSM_Footer_Marketplace&ocid=cmm3atxvn98",
+    "label": "Microsoft Marketplace"
+  },
+  {
+    "url": "https://www.microsoft.com/software-development-companies?icid=DSM_Footer_SoftwareCompanies&ocid=cmm3atxvn98",
+    "label": "Software companies"
+  },
+  {
+    "url": "https://visualstudio.microsoft.com/",
+    "label": "Visual Studio"
+  },
+  {
+    "url": "https://careers.microsoft.com/",
+    "label": "Careers"
+  },
+  {
+    "url": "https://www.microsoft.com/about",
+    "label": "About Microsoft"
+  },
+  {
+    "url": "https://news.microsoft.com/source/?icid=DSM_Footer_Company_CompanyNews",
+    "label": "Company news"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/privacy?icid=DSM_Footer_Company_Privacy",
+    "label": "Privacy at Microsoft"
+  },
+  {
+    "url": "https://www.microsoft.com/investor/default.aspx",
+    "label": "Investors"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/diversity/default?icid=DSM_Footer_Company_Diversity",
+    "label": "Diversity and inclusion"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/accessibility",
+    "label": "Accessibility"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
+    "label": "Sustainability"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/locale",
+    "label": "English (United States)"
+  },
+  {
+    "url": "https://aka.ms/yourcaliforniaprivacychoices",
+    "label": "Your Privacy Choices"
+  },
+  {
+    "url": "https://go.microsoft.com/fwlink/?linkid=2259814",
+    "label": "Consumer Health Privacy"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/sitemap1.aspx",
+    "label": "Sitemap"
+  },
+  {
+    "url": "https://support.microsoft.com/contactus",
+    "label": "Contact Microsoft"
+  },
+  {
+    "url": "https://go.microsoft.com/fwlink/?LinkId=521839",
+    "label": "Privacy"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/#",
+    "label": "Manage cookies"
+  },
+  {
+    "url": "https://go.microsoft.com/fwlink/?LinkID=206977",
+    "label": "Terms of use"
+  },
+  {
+    "url": "https://go.microsoft.com/fwlink/?linkid=2196228",
+    "label": "Trademarks"
+  },
+  {
+    "url": "https://go.microsoft.com/fwlink/?linkid=2196227",
+    "label": "Safety & eco"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/legal/compliance/recycling",
+    "label": "Recycling"
+  },
+  {
+    "url": "https://choice.microsoft.com/",
+    "label": "About our ads"
+  }
+]

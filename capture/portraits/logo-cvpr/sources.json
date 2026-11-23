@@ -1,0 +1,35 @@
+{
+  "title": "2027 Conference",
+  "url": "https://cvpr.thecvf.com/",
+  "head": "This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. To learn more, view the following link: Privacy Policy\nManage Preferences\nSkip to yearly menu bar\nSkip to main content\nMain Navigation\nCVPR \nMy Stuff\nReset Password\n Login\nSelect Year: (2027) \nDates\nCalls \nGuides \nAttend \nExpo \nOrganization \n\n\n\nCVPR 2027\n Seattle WA\n June 20–24, 2027\nQuick Links\nCall For Papers\nCall For Workshops\nLatest Announcements\nOct 28: CVPR 2026 Program Committee Releases Compute Report\nOct 2: Call for Workshops\nSep 3: Call For Papers\nAbout the Conference\nAbout CVPR\n\nThe IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) is the premier annual computer vision event comprising the main conference and several co-located workshops and short courses. With its high quality and low cost, it provides an exceptional value for students, academics and industry researchers.\n\n\n\nContact Us\n\nCVPR Help Desk\n\nPlease contact us with questions about the following topics:\n\nAuthor - Paper Submission, Author - Open Review Issues, Author - Camera-Ready Paper, Registration - General, Registration - Cancellation, Childcare/Guests, Expo/Guests, Lodging, Visa Letter, Reviewer - Open Review Issues, Reviewer - General Issues, Area Chair Issues,\n\nWebsite and Invitation Letter Help\n\nUse the website help link for issues including login, inactive accounts, invitation letters papers not associated with a registration.\n\nUSEFUL LINKS\n\tIEEE Computer Society\n\tThe Computer Vision Foundation\nCVPR Proceedings\nCode of Conduct\n\nCVF Proceedings",
+  "items": [
+    {
+      "url": "https://cvpr.thecvf.com/static/core/img/cvpr-navbar-logo.svg",
+      "alt": "conference_logo",
+      "context": "",
+      "w": 300,
+      "h": 147
+    },
+    {
+      "url": "https://media.eventhosts.cc/Conferences/CVPR2027/img/cvpr-2027-hero.jpg",
+      "alt": "Seattle skyline with the Space Needle and Mount Rainier. CVPR 2027, June 20–24, 2027, Seattle, WA",
+      "context": "CVPR 2027\n Seattle WA\n June 20–24, 2027",
+      "w": 2400,
+      "h": 1598
+    },
+    {
+      "url": "https://media.icml.cc/Conferences/CVPR2023/img/ieee_cs_.svg",
+      "alt": "IEEE Logo",
+      "context": "IEEE Computer Society",
+      "w": 1333,
+      "h": 407
+    },
+    {
+      "url": "https://media.icml.cc/Conferences/CVPR2023/img/CVF-transparent-background.svg",
+      "alt": "",
+      "context": "The Computer Vision Foundation",
+      "w": 1795,
+      "h": 1159
+    }
+  ]
+}
