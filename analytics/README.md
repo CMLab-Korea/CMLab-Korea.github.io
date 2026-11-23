@@ -1,5 +1,7 @@
 # Visitor counts
 
+[Cloudflare 화면을 따라 하는 한국어 설정 가이드](SETUP_KO.md)
+
 GitHub Pages hosts the visitor interface. A Cloudflare Worker and D1 database store unique browser counts across the site and per Korean calendar day. The public breakdown groups visitors by country and page path. It uses a random browser ID and Cloudflare country codes. The application does not read, store, or publish IP addresses.
 
 1. Create a D1 database in a Cloudflare account controlled by CMLab and apply `schema.sql`.

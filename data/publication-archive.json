@@ -1,23 +1,30 @@
 [
   {
     "id": "R14",
-    "text": "Sukhun Ko*, Seokhyun Youn*, Weeyoung Kwon, and Jihyong Oh†, \"BAND-LOCALIZED SPLATTING: FREQUENCY-SELECTIVE APPEARANCE MODELING FOR HIGH-FREQUENCY SURFACE RECONSTRUCTION\", MLOW @ ICIP'26 Satellite Workshop."
+    "title": "BAND-LOCALIZED SPLATTING: FREQUENCY-SELECTIVE APPEARANCE MODELING FOR HIGH-FREQUENCY SURFACE RECONSTRUCTION",
+    "authors": "Sukhun Ko*, Seokhyun Youn*, Weeyoung Kwon, and Jihyong Oh†",
+    "venue": "MLOW @ ICIP'26 Satellite Workshop."
   },
   {
     "id": "R13",
-    "text": "Jeongho Seo, Weeyoung Kwon, Seokhyun Youn, Seungho Choi and Jihyong Oh†, \"테스트 타임 최적화를 활용한 동적 장면 블러 제거를 위한 FFN 기반 4D 재구성 연구\", Summer Annual Conference of IEIE (2026년도 대한전자공학회 하계학술대회), 2026."
+    "title": "테스트 타임 최적화를 활용한 동적 장면 블러 제거를 위한 FFN 기반 4D 재구성 연구",
+    "authors": "Jeongho Seo, Weeyoung Kwon, Seokhyun Youn, Seungho Choi and Jihyong Oh†",
+    "venue": "Summer Annual Conference of IEIE (2026년도 대한전자공학회 하계학술대회), 2026."
   },
   {
     "id": "R12",
-    "text": "Weeyoung Kwon, Sangwoon Kwak, Jun Young Jeong, Won-Sik Cheong and Jihyong Oh†, \"효율적인 4D Gaussian Splatting을 위한 Plug-and-Play 동적 마스크 증류\", 2026 The Korean Institute of Broadcast and Media Engineers Summer Conference (한국방송•미디어공학회 2026년 하계학술대회), 특별세션 8 - GS 기반 이머시브 미디어."
+    "title": "효율적인 4D Gaussian Splatting을 위한 Plug-and-Play 동적 마스크 증류",
+    "authors": "Weeyoung Kwon, Sangwoon Kwak, Jun Young Jeong, Won-Sik Cheong and Jihyong Oh†",
+    "venue": "2026 The Korean Institute of Broadcast and Media Engineers Summer Conference (한국방송•미디어공학회 2026년 하계학술대회), 특별세션 8 - GS 기반 이머시브 미디어."
   },
   {
     "id": "R11",
-    "text": "Seokhyun Youn and Jihyong Oh†, \"GausPart: Part-wise Material Property Assignment to 3D Gaussians via MLLM\", ITC-CSCC, 2026."
+    "title": "GausPart: Part-wise Material Property Assignment to 3D Gaussians via MLLM",
+    "authors": "Seokhyun Youn and Jihyong Oh†",
+    "venue": "ITC-CSCC, 2026."
   },
   {
     "id": "R10",
-    "text": "Sukhun Ko, Chanho Eom, and Jihyong Oh†, \"Implicit Neural Representations: A Holistic Survey of Techniques, Applications, and Challenges\", IEIE Transactions on Smart Processing and Computing (IEIE SPC), Vol. 15, No. 3, p.396-409, 2026.",
     "links": [
       {
         "label": "Paper",
@@ -27,79 +34,100 @@
         "label": "DOI",
         "url": "https://doi.org/10.5573/IEIESPC.2026.15.3.396"
       }
-    ]
+    ],
+    "title": "Implicit Neural Representations: A Holistic Survey of Techniques, Applications, and Challenges",
+    "authors": "Sukhun Ko, Chanho Eom, and Jihyong Oh†",
+    "venue": "IEIE Transactions on Smart Processing and Computing (IEIE SPC), Vol. 15, No. 3, p.396-409, 2026."
   },
   {
     "id": "R9",
-    "text": "Jeahun Sung and Jihyong Oh†, \"MC-Former: Moiré-Content Decoupling for Spatio-Temporal Transformers in RAW Video Demoiréing\", ICEIC, 2026. [Special Session: Non-IEEE Publication Track]"
+    "title": "MC-Former: Moiré-Content Decoupling for Spatio-Temporal Transformers in RAW Video Demoiréing",
+    "authors": "Jeahun Sung and Jihyong Oh†",
+    "venue": "ICEIC, 2026. [Special Session: Non-IEEE Publication Track]"
   },
   {
     "id": "R8",
-    "text": "Dahyeon Kye and Jihyong Oh†, \"이중 DDIM 인버전 기반 제로샷 이미지 모핑 기법 연구\", Autumn Annual Conference of IEIE, 2025 (대한전자공학회 2025년도 추계학술대회).",
     "links": [
       {
         "label": "Paper",
         "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12551334"
       }
-    ]
+    ],
+    "title": "이중 DDIM 인버전 기반 제로샷 이미지 모핑 기법 연구",
+    "authors": "Dahyeon Kye and Jihyong Oh†",
+    "venue": "Autumn Annual Conference of IEIE, 2025 (대한전자공학회 2025년도 추계학술대회)."
   },
   {
     "id": "R7",
-    "text": "Weeyoung Kwon and Jihyong Oh†, \"Toward Real-World 3D Rendering\", 방송과 미디어 제30권 제3호, 2025.",
     "links": [
       {
         "label": "Paper",
         "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12301261"
       }
-    ]
+    ],
+    "title": "Toward Real-World 3D Rendering",
+    "authors": "Weeyoung Kwon and Jihyong Oh†",
+    "venue": "방송과 미디어 제30권 제3호, 2025."
   },
   {
     "id": "R6",
-    "text": "Dahyeon Kye*, Jaeho Choi*, Sukhun Ko, Weeyoung Kwon, Changhyun Roh, Jeahun Sung, Heeyoung Cho†, and Jihyong Oh†, \"AI-Based Short-Form Animation Generation Utilizing Greek Mythological Hero’s Journey\", Summer Annual Conference of IEIE (2025년도 대한전자공학회 하계학술대회 논문집), 2025.",
     "links": [
       {
         "label": "Paper",
         "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12332584"
       }
-    ]
+    ],
+    "title": "AI-Based Short-Form Animation Generation Utilizing Greek Mythological Hero’s Journey",
+    "authors": "Dahyeon Kye*, Jaeho Choi*, Sukhun Ko, Weeyoung Kwon, Changhyun Roh, Jeahun Sung, Heeyoung Cho†, and Jihyong Oh†",
+    "venue": "Summer Annual Conference of IEIE (2025년도 대한전자공학회 하계학술대회 논문집), 2025."
   },
   {
     "id": "R5",
-    "text": "Hyunseo Lee, Changhyun Roh, Jihyong Oh, and Chanho Eom†, \"Enhancing Motion Fluidity and Visual Consistency in Film Production with AI Generative Models\", Moving Image and Technology (MINT), Vol. 5, No. 3, December 2025.",
     "links": [
       {
         "label": "Paper",
         "url": "https://drive.google.com/file/d/1ubzLyBCJZV5byoNDEuh8JM48pp285nlw/view"
       }
-    ]
+    ],
+    "title": "Enhancing Motion Fluidity and Visual Consistency in Film Production with AI Generative Models",
+    "authors": "Hyunseo Lee, Changhyun Roh, Jihyong Oh, and Chanho Eom†",
+    "venue": "Moving Image and Technology (MINT), Vol. 5, No. 3, December 2025."
   },
   {
     "id": "R4",
-    "text": "Dahyeon Kye, Jeahun Sung, Chanho Eom, and Jihyong Oh†, “Evaluation of Generative Models for Mosaic Media Art\", Moving Image & Technology (MINT), 2024.",
     "links": [
       {
         "label": "Paper",
         "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12344263"
       }
-    ]
+    ],
+    "title": "Evaluation of Generative Models for Mosaic Media Art",
+    "authors": "Dahyeon Kye, Jeahun Sung, Chanho Eom, and Jihyong Oh†",
+    "venue": "Moving Image & Technology (MINT), 2024."
   },
   {
     "id": "R3",
-    "text": "Jeahun Sung, Chanho Eom, and Jihyong Oh†, “State of the Art on Demoiréing Models\", Journal of Arts and Imaging Science (TechArt), 2025.",
     "links": [
       {
         "label": "Paper",
         "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12044921"
       }
-    ]
+    ],
+    "title": "State of the Art on Demoiréing Models",
+    "authors": "Jeahun Sung, Chanho Eom, and Jihyong Oh†",
+    "venue": "Journal of Arts and Imaging Science (TechArt), 2025."
   },
   {
     "id": "R2",
-    "text": "Jihyong Oh and Munchurl Kim†, “SAR Image Generation based on GAN with an Auxiliary Classifier\", 2018 한국군사과학기술학회 (KIMST) 창립 20주년 종합학술대회."
+    "title": "SAR Image Generation based on GAN with an Auxiliary Classifier",
+    "authors": "Jihyong Oh and Munchurl Kim†",
+    "venue": "2018 한국군사과학기술학회 (KIMST) 창립 20주년 종합학술대회."
   },
   {
     "id": "R1",
-    "text": "Gwang-Young Youm, Jihyong Oh, and Munchurl Kim†, “A Deep Convolution Network for Fast SAR Automatic Target Detection and Recognition\", 2018 한국군사과학기술학회 (KIMST) 창립 20주년 종합학술대회."
+    "title": "A Deep Convolution Network for Fast SAR Automatic Target Detection and Recognition",
+    "authors": "Gwang-Young Youm, Jihyong Oh, and Munchurl Kim†",
+    "venue": "2018 한국군사과학기술학회 (KIMST) 창립 20주년 종합학술대회."
   },
   {
     "id": "I2",

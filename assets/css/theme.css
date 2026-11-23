@@ -50,9 +50,9 @@
 [data-theme="light"] :is(.hero-content > p, .page-hero p, .area-card p, .area-copy p, .area-keywords, .feature-title, .stats-foot, .stat > span:last-child, .cta-card p, .paper-row p, .paper-area, .publication-header, .mini-stats span, .pi-panel p, .person-card p, .person-card small, .collab-person, .collab-content small, .glass-panel p, .industry-card p, .check-stack, .steps-grid p, .footer p, .footer-bottom) { color: var(--muted); }
 [data-theme="light"] :is(.mini-stats strong, .venue-abbr) { color: var(--text); }
 [data-theme="light"] :is(.stats-grid, .mini-stats) { --conference-color: #075989; --journal-color: #4e43ac; }
-[data-theme="light"] :is(.area-card, .stats-shell, .cta-card, .person-card.phd-member) { background: var(--panel-light); border-color: var(--line); box-shadow: none; }
+[data-theme="light"] :is(.area-card, .stats-shell, .cta-card) { background: var(--panel-light); border-color: var(--line); box-shadow: none; }
 [data-theme="light"] :is(.area-emblem, .area-emblem.motion, .area-emblem.world, .area-emblem.agent) { color: #375bb3; filter: drop-shadow(0 0 9px #789cfb70); }
-[data-theme="light"] :is(.pi-panel, .person-card, .collab-card, .glass-panel, .industry-card, .steps-grid > div, .collab-paper-links .profile-link, .collab-paper-links > span, .area-dropdown summary, .area-choices, .pub-toolbar input, .pub-toolbar select, #featured-work .feature-card) { background: var(--layer); color: var(--text); border-color: var(--line); }
+[data-theme="light"] :is(.pi-panel, .person-card:not(.phd-member), .collab-card, .glass-panel, .industry-card, .steps-grid > div, .collab-paper-links .profile-link, .collab-paper-links > span:not(.active-project), .area-dropdown summary, .area-choices, .pub-toolbar input, .pub-toolbar select, #featured-work .feature-card) { background: var(--layer); color: var(--text); border-color: var(--line); }
 [data-theme="light"] .pub-toolbar input::placeholder { color: var(--muted); }
 [data-theme="light"] :is(.feature-poster, .affiliation-tag, .news-filter, .news-category, .archive-notice, .paper-row:hover, .gallery-photo) { background: var(--layer2); color: var(--entry-ink); border-color: var(--line); }
 [data-theme="light"] :is(.news-filter[aria-pressed="true"], .news-section .news-filter[aria-pressed="true"]) { background: #dce7ff; border-color: #3366c0; color: #103b86; }

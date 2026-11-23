@@ -72,6 +72,49 @@
   function node(tag, cls, content) {const n=document.createElement(tag);if(cls)n.className=cls;if(content!==undefined)n.textContent=content;return n}
   function safeURL(value) {try{const u=new URL(value,location.href);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}}
 
+  function watchProjectMonths(projects, render) {
+    const koreaMonth = new Intl.DateTimeFormat('sv-SE', {
+      timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit'
+    });
+    let previousMonth;
+    let timer;
+
+    function update() {
+      clearTimeout(timer);
+      const now = Date.now();
+      const month = koreaMonth.format(now);
+      if (month !== previousMonth) {
+        previousMonth = month;
+        const groups = {ongoing: [], completed: [], upcoming: []};
+        for (const project of projects) {
+          const phase = project.start > month ? 'upcoming'
+            : project.end < month ? 'completed' : 'ongoing';
+          groups[phase].push(project);
+        }
+        render(groups);
+      }
+      const [year, monthNumber] = month.split('-').map(Number);
+      const nextMonth = Date.UTC(year, monthNumber, 1) - 9 * 60 * 60 * 1000;
+      timer = setTimeout(update, Math.min(nextMonth - now, 2_147_483_647));
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) update();
+    });
+    update();
+  }
+
+  const ongoingCounter = $('[data-ongoing-count]');
+  if (ongoingCounter) {
+    getData('projects.json').then(({projects}) => {
+      watchProjectMonths(projects, ({ongoing}) => {
+        ongoingCounter.textContent = ongoing.length;
+        const link = ongoingCounter.closest('[data-project-count-link]');
+        if (link) link.hidden = false;
+      });
+    }).catch(() => { /* Keep the unavailable count hidden or shown as a dash. */ });
+  }
+
   function paperTitleParts(paper) {
     const [prefix, ...rest] = paper.title.split(':');
     if (rest.length && identityKey(prefix) === identityKey(paper.short || '')) {
@@ -358,9 +401,9 @@
       return link;
     }
 
-    function authorLine(paper) {
+    function authorLine(authors) {
       const line = node('p', 'paper-authors');
-      const names = paper.authors.split(/, and |, | and /).map(name => name.trim()).filter(Boolean);
+      const names = authors.split(/,\s*(?:and\s+)?|\s+and\s+/i).map(name => name.trim()).filter(Boolean);
       names.forEach((name, i) => {
         if (i) line.append(', ');
         const marks = name.match(/[†*‡]+$/)?.[0] || '';
@@ -419,13 +462,15 @@
       titleLabel.append(title);
       if (destination) heading.append(titleLabel);
       body.append(heading);
-      if (paper.authors) body.append(authorLine(paper));
+      if (paper.authors) body.append(authorLine(paper.authors));
       const organizations = (paper.organizations || []).map(id => institutions[id]).filter(Boolean);
       const affiliationLabels = [...new Set([...(paper.affiliations || []), ...organizations.map(org => org.name)])];
       if (affiliationLabels.length) {
         const affiliations = node('div', 'paper-affiliations');
         affiliations.setAttribute('aria-label', 'Research collaborators');
-        affiliations.append(symbol('assets/img/news-icons.svg', 'collaboration'));
+        const icon = symbol('assets/img/news-icons.svg', 'collaboration');
+        icon.classList.add('paper-collaboration-icon');
+        affiliations.append(icon);
         for (const name of affiliationLabels) {
           const badge = node('span', 'affiliation-tag', name);
           const logo = organizations.find(org => org.name === name)?.logo;
@@ -453,12 +498,11 @@
       return row;
     }
 
-    Promise.all([
-      getData('publications.json'),
+    const authorDirectory = Promise.all([
       getData('people.json').catch(() => []),
       getData('collaborators.json').catch(() => []),
       getData('institutions.json').catch(() => ({}))
-    ]).then(([items, people, collaborators, organizations]) => {
+    ]).then(([people, collaborators, organizations]) => {
       institutions = organizations;
       for (const person of collaborators) {
         for (const key of identityNames(person)) identities.set(key, person);
@@ -467,7 +511,9 @@
         for (const key of identityNames(person)) identities.set(key, {...person, local: true});
       }
       identities.set(identityKey('Jihyong Oh'), {local: true, url: 'people.html#principal-investigator'});
+    });
 
+    Promise.all([getData('publications.json'), authorDirectory]).then(([items]) => {
       for (const value of [...new Set(items.map(p => p.year))].sort((a, b) => b - a)) year.add(new Option(value, value));
       const venueCounts = new Map();
       for (const paper of items.filter(p => p.type !== 'Preprint')) {
@@ -541,7 +587,7 @@
     });
 
     const archive = $('#publication-archive');
-    getData('publication-archive.json').then(records => {
+    Promise.all([getData('publication-archive.json'), authorDirectory]).then(([records]) => {
       for (const list of $$('[data-records]', archive)) {
         const entries = records.filter(record => record.id.startsWith(list.dataset.records));
         list.replaceChildren(...entries.map(record => {
@@ -553,7 +599,12 @@
             time.dateTime = record.date;
             body.append(time);
           }
-          body.append(node('p', '', record.text));
+          if (record.title) {
+            body.append(node('h4', 'archive-paper-title', record.title), authorLine(record.authors),
+              node('p', 'archive-venue', record.venue));
+          } else {
+            body.append(node('p', '', record.text));
+          }
           for (const {label, url} of record.links || []) {
             body.append(externalLink(label + ' ↗', safeURL(url), 'archive-link'));
           }
@@ -575,9 +626,6 @@
     const roles = {L: 'PI / Research Lead', U: 'Unit Lead', P: 'Participating Researcher'};
     const status = $('#projects-status');
     const formatMonth = value => value.replace(/^(\d{4})-(\d{2})$/, '$2.$1');
-    const currentMonth = new Intl.DateTimeFormat('sv-SE', {
-      timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit'
-    }).format(new Date());
 
     function projectCard(project, organizations) {
       const card = node('article', 'project-card');
@@ -631,21 +679,18 @@
     }
 
     getData('projects.json').then(({projects, organizations}) => {
-      const groups = {ongoing: [], completed: [], upcoming: []};
-      for (const project of projects) {
-        const phase = project.start > currentMonth ? 'upcoming'
-          : project.end < currentMonth ? 'completed' : 'ongoing';
-        groups[phase].push(project);
-      }
-      for (const [phase, entries] of Object.entries(groups)) {
-        const section = $('#' + phase + '-projects');
-        const heading = $('h2', section);
-        heading.append(node('span', 'project-count', entries.length));
-        $('.project-grid', section).replaceChildren(...entries.map(project => projectCard(project, organizations)));
-        section.hidden = entries.length === 0;
-        const jump = $(`.project-jumps a[href="#${section.id}"]`);
-        if (jump) jump.hidden = section.hidden;
-      }
+      const cards = new Map(projects.map(project => [project.id, projectCard(project, organizations)]));
+      watchProjectMonths(projects, groups => {
+        for (const [phase, entries] of Object.entries(groups)) {
+          const section = $('#' + phase + '-projects');
+          $('.project-count', section).textContent = entries.length;
+          $('.project-grid', section).replaceChildren(...entries.map(project => cards.get(project.id)));
+          section.hidden = entries.length === 0;
+          const jump = $(`.project-jumps a[href="#${section.id}"]`);
+          $('.project-count', jump).textContent = entries.length;
+          jump.hidden = section.hidden;
+        }
+      });
       status.hidden = true;
       if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
     }).catch(() => { status.textContent = 'Project information is temporarily unavailable.'; });
@@ -716,12 +761,16 @@
     Promise.all([getData('collaborators.json'), getData('institutions.json'), getData('publications.json')])
       .then(([collaborators, institutions, papers]) => {
         const grid = $('#collaborators-grid');
-        const universityOrder = ['princeton', 'cornell-tech', 'kaist', 'snu', 'postech', 'khu', 'cau', 'konkuk'];
+        const organizationOrder = {
+          Industry: ['microsoft', 'adobe', 'oracle', 'razer', 'flawless', 'naver-ai', 'naver-cloud', 'lunit', 'inshorts'],
+          Academia: ['princeton', 'cornell-tech', 'kaist', 'snu', 'postech', 'khu', 'cau', 'konkuk']
+        };
         for (const category of ['Industry', 'Academia', 'Research Institute']) {
           const group = collaborators.filter(p => p.category === category);
-          if (category === 'Academia') {
-            const rank = person => universityOrder.includes(person.organization)
-              ? universityOrder.indexOf(person.organization) : universityOrder.length;
+          const order = organizationOrder[category];
+          if (order) {
+            const rank = person => order.includes(person.organization)
+              ? order.indexOf(person.organization) : order.length;
             group.sort((a, b) => rank(a) - rank(b));
           }
           if (!group.length) continue;
@@ -730,29 +779,30 @@
             const organization = institutions[person.organization] || {name: person.institution};
             const names = identityNames(person);
             const card = node('article', 'collab-card directory-card');
-            const pictures = node('div', 'collab-pictures');
-            if (person.photo) pictures.append(photo(person.photo, 'collab-photo', person.person));
-            if (organization.logo) {
-              const logo = photo(organization.logo, 'organization-logo', organization.name);
-              if (organization.logo_vertical) {
-                const picture = node('picture');
-                const mobile = node('source');
-                mobile.media = '(max-width: 480px)';
-                mobile.srcset = organization.logo_vertical;
-                picture.append(mobile, logo);
-                pictures.append(picture);
-              } else pictures.append(logo);
-            }
-            if (pictures.childElementCount) card.append(pictures);
+            const header = node('div', 'collab-card-header');
+            const name = node('div', 'collab-identity');
             const heading = node('h4');
             heading.append(nameLink(person.person, person.url));
-            card.append(heading, node('p', '', [person.role, person.unit, organization.name].filter(Boolean).join(' · ')));
+            name.append(heading, node('p', 'collab-organization', organization.name));
+            const position = [person.role, person.unit].filter(Boolean).join(' · ');
+            if (position) name.append(node('p', 'collab-position', position));
+            header.append(name);
+            const logo = organization.compact_logo || organization.logo;
+            if (logo) {
+              header.append(photo(logo, 'organization-logo', ''));
+            }
+            card.append(header);
             if (person.collaborative_lab) {
               const label = nameLink('Close research collaboration', person.lab_url, 'lab-partner');
               label.prepend(symbol('assets/img/news-icons.svg', 'collaboration'));
               card.append(label);
             }
             const works = node('div', 'collab-paper-links');
+            if (person.ongoing) {
+              const ongoing = node('span', 'lab-partner active-project', 'Active project');
+              ongoing.prepend(symbol('assets/img/news-icons.svg', 'collaboration'));
+              works.append(ongoing);
+            }
             for (const paper of papers.filter(p => !person.exclude_paper_ids?.includes(p.id)
               && (p.authors || '').split(/,|\band\b/).some(n => names.includes(identityKey(n))))) {
               const url = [paper.project_url, paper.venue_url, paper.arxiv_url]
@@ -760,11 +810,6 @@
               works.append(nameLink(paper.short + ' [' + paper.venue_short + ']', url, 'profile-link'));
             }
             if (works.childElementCount) card.append(works);
-            else if (person.ongoing) {
-              const ongoing = node('span', 'lab-partner', 'Active project');
-              ongoing.prepend(symbol('assets/img/news-icons.svg', 'collaboration'));
-              card.append(ongoing);
-            }
             cards.append(card);
           }
           grid.append(node('h3', 'collaborator-group-heading', category), cards);
