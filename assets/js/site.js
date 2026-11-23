@@ -482,7 +482,8 @@
         const semester = person.group === 'intern' ? '(' + person.semester + ')' : '[' + person.semester + ']';
         const heading = node('h3');
         heading.append(nameLink(person.name, person.url));
-        card.append(photo(person.photo, 'member-photo', person.name), heading,
+        if (person.photo) card.append(photo(person.photo, 'member-photo', person.name));
+        card.append(heading,
           node('p', '', person.degree + ' ' + semester));
         if (person.note) card.append(node('small', 'member-note', person.note));
         if (person.email) card.append(nameLink('Email', 'mailto:' + person.email));
@@ -505,7 +506,7 @@
           if (!group.length) continue;
           const cards = node('div', 'collab-cards');
           for (const person of group) {
-            const organization = institutions[person.organization];
+            const organization = institutions[person.organization] || {name: person.institution};
             const names = identityNames(person);
             const card = node('article', 'collab-card directory-card');
             const pictures = node('div', 'collab-pictures');
