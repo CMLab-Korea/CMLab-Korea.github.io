@@ -4,7 +4,27 @@ from PIL import Image
 from playwright.sync_api import sync_playwright
 from urllib.parse import urlsplit
 from concurrent.futures import ThreadPoolExecutor
-pages={'sung-ho-bae-team':'https://mlvc.khu.ac.kr/team'}
+pages={
+'geon-yeong-park':'https://geonyeong-park.github.io/',
+'jae-shin-yoon':'https://gorokee.github.io/jsyoon/',
+'ziyu-wan':'https://raywzy.com/',
+'sangwoon-kwak':'https://skwak-kaist.github.io/',
+'kyle-min':'https://sites.google.com/view/kylemin',
+'soo-ye-kim':'https://sites.google.com/view/sooyekim',
+'juan-luis-gonzalez-bello':'https://sites.google.com/view/juan-luis-gb/home',
+'agus-gunawan':'https://agusgun.github.io/',
+'geon-chang-lee':'https://www.linkedin.com/in/andy-lee-b4122a98/',
+'taekyung-kim':'https://taekyungkim918.github.io/',
+'logo-cornell-tech':'https://tech.cornell.edu/',
+'logo-microsoft':'https://www.microsoft.com/en-us/',
+'logo-ieee':'https://www.ieee.org/',
+'logo-cvpr':'https://cvpr.thecvf.com/',
+'logo-eccv':'https://eccv.ecva.net/',
+'logo-iccv':'https://iccv.thecvf.com/',
+'logo-aaai':'https://aaai.org/',
+'logo-neurips':'https://neurips.cc/',
+'logo-iclr':'https://iclr.cc/'
+}
 def capture(item):
  slug,url=item
  target=Path('capture/portraits')/slug
@@ -24,11 +44,11 @@ def capture(item):
     if candidate:
      page.goto(candidate,wait_until='domcontentloaded',timeout=20000)
      page.wait_for_timeout(1400)
-   candidates=page.evaluate(r"""() => [...document.images].filter(i=>!i.closest('header, nav, footer')).map(i=>{
+   candidates=page.evaluate(r"""isLogo => [...document.images].filter(i=>isLogo || !i.closest('header, nav, footer')).map(i=>{
     const box=i.closest('section, article, li, tr')||i.parentElement?.parentElement;
     return {url:i.currentSrc||i.src,alt:i.alt,context:box?.innerText?.trim().slice(0,370)||'',w:i.naturalWidth,h:i.naturalHeight};
-   }).filter(i=>i.w>=90&&i.h>=90).slice(0,36)""")
-   (target/'sources.json').write_text(json.dumps({'title':page.title(),'url':page.url,'items':candidates},ensure_ascii=False,indent=2))
+   }).filter(i=>isLogo ? i.w>=80 && i.h>=16 : i.w>=85 && i.h>=85).slice(0, isLogo ? 10 : 5)""",slug.startswith('logo-'))
+   (target/'sources.json').write_text(json.dumps({'title':page.title(),'url':page.url,'head':page.locator('body').inner_text()[:2400],'items':candidates},ensure_ascii=False,indent=2))
    for i,item in enumerate(candidates):
     im=page.locator('img').evaluate_all('(items,url)=>items.findIndex(i=>(i.currentSrc||i.src)===url)',item['url'])
     if im<0:continue
@@ -41,4 +61,4 @@ def capture(item):
     except Exception:continue
   except Exception as e:(target/'error.txt').write_text(str(e).splitlines()[0])
   finally:b.close()
-with ThreadPoolExecutor(max_workers=4) as pool: list(pool.map(capture,pages.items()))
+with ThreadPoolExecutor(max_workers=6) as pool: list(pool.map(capture,pages.items()))
