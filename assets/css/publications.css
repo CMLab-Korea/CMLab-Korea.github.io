@@ -28,7 +28,6 @@
 }
 .paper-author-highlight { color: var(--highlight); font-weight: 700; }
 .paper-row { scroll-margin-top: 100px; }
-.paper-row.without-teaser .paper-rich-body { grid-column: 2 / -1; }
 .paper-areas { display: flex; gap: .45rem 1rem; flex-wrap: wrap; margin-top: 10px; }
 .paper-area {
   display: inline-flex;
@@ -53,7 +52,6 @@
 @media (max-width: 700px) {
   .publication-header a { display: inline-block; }
   #publication-list > section { margin-block: 12px 36px; }
-  #publication-list .without-teaser .paper-rich-body { grid-column: 2; grid-row: 1; }
 }
 
 .paper-verification {
@@ -72,7 +70,6 @@
 .paper-author-link { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #6786c480; }
 .paper-author-link:hover, .paper-author-link:focus-visible { color: #c8e9ff; text-decoration-color: currentColor; }
 .author-mark { font-size: .7em; }
-.paper-source-mark { font-size: .84em; }
 .paper-affiliations { align-items: center; }
 .paper-affiliations > svg { width: 18px; height: 18px; fill: none; stroke: var(--highlight); stroke-width: 1.65; }
 .affiliation-tag { display: inline-flex; gap: 6px; align-items: center; }
@@ -109,3 +106,82 @@
 
 .publication-legend { margin: .35rem 0 0; max-width: 100%; color: var(--muted); line-height: 1.5; }
 .publication-legend strong { color: var(--highlight); }
+
+.paper-nickname { color: #aab8ff; }
+.paper-teaser {
+  background: var(--layer);
+  border-color: var(--line);
+  position: relative;
+}
+.paper-teaser img, .paper-teaser video { position: absolute; inset: 0; object-fit: contain; }
+.paper-teaser:empty {
+  background: radial-gradient(ellipse at 22% 12%, #688fff26, transparent 65%), var(--layer);
+  border-style: dashed;
+}
+.record-number {
+  --record-color: var(--highlight);
+  display: inline-grid;
+  place-items: center;
+  width: 2.5rem;
+  min-height: 1.65rem;
+  padding-inline: .25rem;
+  border-radius: 5px;
+  border: 1px solid color-mix(in srgb, var(--record-color) 38%, transparent);
+  background: color-mix(in srgb, var(--record-color) 9%, transparent);
+  color: var(--record-color);
+  font: 700 .73rem/1 'Space Grotesk', system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+.record-journal, .record-s { --record-color: #bba9ff; }
+.record-i, .record-p { --record-color: #7ecddb; }
+[data-theme="light"] .paper-nickname { color: #4b51a7; }
+[data-theme="light"] :is(.record-journal, .record-s) { --record-color: #6349a5; }
+[data-theme="light"] :is(.record-i, .record-p) { --record-color: #146775; }
+
+.publication-archive { margin-top: 4rem; }
+.publication-archive h2 { font-size: clamp(1.55rem, 3.2vw, 2.55rem); margin-bottom: 1.3rem; }
+.archive-group {
+  margin-block: .65rem;
+  background: var(--layer);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.archive-group summary {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  cursor: pointer;
+  padding: .8rem 1.15rem;
+  font-weight: 700;
+}
+.archive-group summary::-webkit-details-marker { display: none; }
+.archive-group summary::after {
+  content: '';
+  width: .5rem;
+  height: .5rem;
+  margin-inline: .3rem .2rem;
+  border: solid var(--highlight);
+  border-width: 0 2px 2px 0;
+  transform: translateY(-.15rem) rotate(45deg);
+  flex: none;
+}
+.archive-group[open] summary::after { transform: translateY(.1rem) rotate(225deg); }
+.archive-count { margin-left: auto; color: var(--muted); font-size: .78rem; font-variant-numeric: tabular-nums; }
+.archive-group h3 { font-size: 1rem; margin: 1rem 1.15rem .5rem; }
+.archive-records { padding: 0 clamp(.7rem, 2vw, 1.15rem) .5rem; margin: 0; list-style: none; }
+.archive-record {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .7rem;
+  align-items: start;
+  border-top: 1px solid var(--line);
+  padding-block: .85rem;
+}
+.archive-record p { margin: 0; overflow-wrap: anywhere; font-size: .9rem; }
+.archive-date { color: var(--muted); font-size: .78rem; }
+.archive-link { display: inline-block; margin: .25rem .7rem 0 0; color: var(--highlight); font-size: .8rem; }
+.archive-link:hover { text-decoration: underline; }
+
+@media (max-width: 700px) {
+  .paper-teaser { width: min(100%, 225px); }
+}

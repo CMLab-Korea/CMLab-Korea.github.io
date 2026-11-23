@@ -1,0 +1,204 @@
+[
+  {
+    "id": "R14",
+    "text": "Sukhun Ko*, Seokhyun Youn*, Weeyoung Kwon, and Jihyong Oh†, \"BAND-LOCALIZED SPLATTING: FREQUENCY-SELECTIVE APPEARANCE MODELING FOR HIGH-FREQUENCY SURFACE RECONSTRUCTION\", MLOW @ ICIP'26 Satellite Workshop."
+  },
+  {
+    "id": "R13",
+    "text": "Jeongho Seo, Weeyoung Kwon, Seokhyun Youn, Seungho Choi and Jihyong Oh†, \"테스트 타임 최적화를 활용한 동적 장면 블러 제거를 위한 FFN 기반 4D 재구성 연구\", Summer Annual Conference of IEIE (2026년도 대한전자공학회 하계학술대회), 2026."
+  },
+  {
+    "id": "R12",
+    "text": "Weeyoung Kwon, Sangwoon Kwak, Jun Young Jeong, Won-Sik Cheong and Jihyong Oh†, \"효율적인 4D Gaussian Splatting을 위한 Plug-and-Play 동적 마스크 증류\", 2026 The Korean Institute of Broadcast and Media Engineers Summer Conference (한국방송•미디어공학회 2026년 하계학술대회), 특별세션 8 - GS 기반 이머시브 미디어."
+  },
+  {
+    "id": "R11",
+    "text": "Seokhyun Youn and Jihyong Oh†, \"GausPart: Part-wise Material Property Assignment to 3D Gaussians via MLLM\", ITC-CSCC, 2026."
+  },
+  {
+    "id": "R10",
+    "text": "Sukhun Ko, Chanho Eom, and Jihyong Oh†, \"Implicit Neural Representations: A Holistic Survey of Techniques, Applications, and Challenges\", IEIE Transactions on Smart Processing and Computing (IEIE SPC), Vol. 15, No. 3, p.396-409, 2026.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://ieiespc.org/ieiespc/XmlViewer/f454942"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.5573/IEIESPC.2026.15.3.396"
+      }
+    ]
+  },
+  {
+    "id": "R9",
+    "text": "Jeahun Sung and Jihyong Oh†, \"MC-Former: Moiré-Content Decoupling for Spatio-Temporal Transformers in RAW Video Demoiréing\", ICEIC, 2026. [Special Session: Non-IEEE Publication Track]"
+  },
+  {
+    "id": "R8",
+    "text": "Dahyeon Kye and Jihyong Oh†, \"이중 DDIM 인버전 기반 제로샷 이미지 모핑 기법 연구\", Autumn Annual Conference of IEIE, 2025 (대한전자공학회 2025년도 추계학술대회).",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12551334"
+      }
+    ]
+  },
+  {
+    "id": "R7",
+    "text": "Weeyoung Kwon and Jihyong Oh†, \"Toward Real-World 3D Rendering\", 방송과 미디어 제30권 제3호, 2025.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12301261"
+      }
+    ]
+  },
+  {
+    "id": "R6",
+    "text": "Dahyeon Kye*, Jaeho Choi*, Sukhun Ko, Weeyoung Kwon, Changhyun Roh, Jeahun Sung, Heeyoung Cho†, and Jihyong Oh†, \"AI-Based Short-Form Animation Generation Utilizing Greek Mythological Hero’s Journey\", Summer Annual Conference of IEIE (2025년도 대한전자공학회 하계학술대회 논문집), 2025.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12332584"
+      }
+    ]
+  },
+  {
+    "id": "R5",
+    "text": "Hyunseo Lee, Changhyun Roh, Jihyong Oh, and Chanho Eom†, \"Enhancing Motion Fluidity and Visual Consistency in Film Production with AI Generative Models\", Moving Image and Technology (MINT), Vol. 5, No. 3, December 2025.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://drive.google.com/file/d/1ubzLyBCJZV5byoNDEuh8JM48pp285nlw/view"
+      }
+    ]
+  },
+  {
+    "id": "R4",
+    "text": "Dahyeon Kye, Jeahun Sung, Chanho Eom, and Jihyong Oh†, “Evaluation of Generative Models for Mosaic Media Art\", Moving Image & Technology (MINT), 2024.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12344263"
+      }
+    ]
+  },
+  {
+    "id": "R3",
+    "text": "Jeahun Sung, Chanho Eom, and Jihyong Oh†, “State of the Art on Demoiréing Models\", Journal of Arts and Imaging Science (TechArt), 2025.",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12044921"
+      }
+    ]
+  },
+  {
+    "id": "R2",
+    "text": "Jihyong Oh and Munchurl Kim†, “SAR Image Generation based on GAN with an Auxiliary Classifier\", 2018 한국군사과학기술학회 (KIMST) 창립 20주년 종합학술대회."
+  },
+  {
+    "id": "R1",
+    "text": "Gwang-Young Youm, Jihyong Oh, and Munchurl Kim†, “A Deep Convolution Network for Fast SAR Automatic Target Detection and Recognition\", 2018 한국군사과학기술학회 (KIMST) 창립 20주년 종합학술대회."
+  },
+  {
+    "id": "I2",
+    "text": "US Application No. 19/810,559, “Method and Apparatus for Object Search Based on Diffusion Model” [Chanho Eom, Giyeol Kim, Myeongju Kang, Sooyoung Yang, Jihyong Oh]",
+    "date": "2026-09-17"
+  },
+  {
+    "id": "I1",
+    "text": "CN Application No. 202611444958.9, “Method and Apparatus for Object Search Based on Diffusion Model” [Chanho Eom, Giyeol Kim, Myeongju Kang, Sooyoung Yang, Jihyong Oh]",
+    "date": "2026-09-17"
+  },
+  {
+    "id": "P10",
+    "text": "출원번호: 10-2026-0234550, \"물리적 인과관계 추론 기반 다중 턴 이미지 편집 장치 및 방법 (Apparatus and Method for Multi-Turn Image Editing Based on Physical Cause-and-Effect Reasoning)\" [오지형, 성제훈, 최승호]",
+    "date": "2026-11-20"
+  },
+  {
+    "id": "P9",
+    "text": "출원번호: 10-2026-0111361, \"인공지능 생성 콘텐츠의 참조 기반 초해상도화 및 정제 방법 및 장치 (Apparatus and Method for Reference-guided Super-Resolution and Refinement of AI-Generated Content)\" [오지형, 계다현, 성제훈]",
+    "date": "2026-06-18"
+  },
+  {
+    "id": "P8",
+    "text": "출원번호: 10-2026-0111362, \"스타일-콘텐츠 분리 기반 크로스 도메인 객체 합성 방법 및 장치 (Apparatus and Method for Cross-Domain Object Compositing Based on Style-Content Disentanglement)\" [오지형, 고석훈]",
+    "date": "2026-06-18"
+  },
+  {
+    "id": "P7",
+    "text": "출원번호: 10-2026-0111360, \"순서 인식형 올인원 이미지 복원 장치 및 방법 (Apparatus and Method for Multi-Degradation Image Restoration Based on Order-aware Restoration)\" [오지형, 최승호]",
+    "date": "2026-06-18"
+  },
+  {
+    "id": "P6",
+    "text": "출원번호: 10-2026-0028291, \"소볼레프 푸리에 신경 연산자를 이용한 임의 배율 영상 초해상화 방법 및 장치 (Arbitrary-scale image super-resolution method and apparatus using a Sobolev Fourier neural operator)\" [오지형, 황형주, 오종권, 손휘재]",
+    "date": "2026-02-12"
+  },
+  {
+    "id": "P5",
+    "text": "출원번호: 10-2026-0018369, \"이종 3차원 표현 간의 양방향 기하 감독 기반 단계적 정렬 방법 및 장치 (Method and Apparatus for Progressive Alignment Between Heterogeneous 3D Representations Using Bidirectional Geometric Supervision)\" [오지형, 최종원, 정호준, 이재윤]",
+    "date": "2026-01-29"
+  },
+  {
+    "id": "P4",
+    "text": "출원번호: 10-2026-0018370, \"적응적 캐시 주입 및 시맨틱 앵커 프롬프트를 이용한 제로샷 이미지 모핑 장치 및 방법 (Zero-shot Image Morphing Apparatus and Method Using Adaptive Cache Injection and Semantic Anchor Prompting)\" [오지형, 성제훈, 계다현]",
+    "date": "2026-01-29"
+  },
+  {
+    "id": "P3",
+    "text": "출원번호: 10-2026-0018368, \"주파수 정렬 자기 증류와 적응형 모듈레이션을 이용한 실세계 이미지 초해상도 학습 방법 및 장치 (Method and Apparatus for Real-World Image Super-Resolution Using Frequency-Aligned Self-Distillation and Adaptive Modulation)\" [오지형, 최승호]",
+    "date": "2026-01-29"
+  },
+  {
+    "id": "P2",
+    "text": "출원번호: 10-2025-0138709, \"무아레 조건부 하이브리드 적응형 트랜스포머를 이용한 비디오 무아레 제거 방법 및 장치 (Moire-Conditioned Hybrid Adaptive Transformer for Video Demoireing method and device)\" [오지형, 성제훈, 엄찬호]",
+    "date": "2025-09-25"
+  },
+  {
+    "id": "P1",
+    "text": "출원번호: 10-2025-0138708, \"주파수 및 지역성 인식 암묵적 신경 표현 방법 및 장치 (Frequency and locality-aware implicit neural representation method and device)\" [오지형, 고석훈, 엄찬호]",
+    "date": "2025-09-25"
+  },
+  {
+    "id": "S8",
+    "text": "Copyright Registration No. C-2026-030601, “의미 인지형 단일 이미지 스티커 개인화 소프트웨어 (Semantic-aware Single-image Sticker Personalization Software),” Korea Copyright Commission [오지형, 엄찬호, 노창현]",
+    "date": "2026-06-22"
+  },
+  {
+    "id": "S7",
+    "text": "Copyright Registration No. C-2026-029350, “순서 인지형 올인원 이미지 복원 에이전트 소프트웨어 (Order-aware All-in-One Image Restoration Agent Software),” Korea Copyright Commission [오지형, 최승호]",
+    "date": "2026-06-15"
+  },
+  {
+    "id": "S6",
+    "text": "Copyright Registration No. C-2026-027540, “플러그 앤 플레이 동적 마스크 증류 기반 효율적 4차원 가우시안 스플래팅 소프트웨어 (Plug-and-Play Dynamic Mask Distillation Software for Efficient 4D Gaussian Splatting),” Korea Copyright Commission [오지형, 권의영]",
+    "date": "2026-06-05"
+  },
+  {
+    "id": "S5",
+    "text": "Copyright Registration No. C-2026-013418, “확산 사전지식 및 주파수 정렬 기반 자가 증류형 고해상도 복원 프레임워크 (Frequency-Aligned Self-Distilled Super-Resolution Framework leveraging Diffusion Priors),” Korea Copyright Commission [오지형, 최승호]",
+    "date": "2026-03-16"
+  },
+  {
+    "id": "S4",
+    "text": "Copyright Registration No. C-2025-033896, “비디오 디무아레를 위한 무아레 조건부 하이브리드 적응형 트랜스포머 (MoCHA-former: Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing),” Korea Copyright Commission [오지형, 성제훈]",
+    "date": "2025-08-28"
+  },
+  {
+    "id": "S3",
+    "text": "Copyright Registration No. C-2025-033291, “주파수 및 지역성 인식 암묵적 신경 표현 방법 및 장치 (FLAIR: Frequency- and Locality-Aware Implicit Neural Representations),” Korea Copyright Commission [오지형, 고석훈, 엄찬호]",
+    "date": "2025-08-26"
+  },
+  {
+    "id": "S2",
+    "text": "Copyright Registration No. C-2025-009979, “확산 모델 기반 비디오 복원 모델 연구 및 고해상도 데이터 활용 기술 개발,” Korea Copyright Commission [오지형, 계다현, 엄찬호]",
+    "date": "2025-03-18"
+  },
+  {
+    "id": "S1",
+    "text": "Copyright Registration No. C-2024-048330, “로와 에스알지비 도메인을 동시에 활용한 디모아레 모델 (Raw 와 sRGB 도메인을 동시에 활용한 비디오 디모아레 모델),” Korea Copyright Commission [오지형, 성제훈, 엄찬호]",
+    "date": "2024-11-27"
+  }
+]

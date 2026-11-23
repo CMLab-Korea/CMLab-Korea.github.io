@@ -37,6 +37,9 @@
         "text": "Outstanding Reviewer",
         "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee"
       },
+      {
+        "text": " (6.37%)"
+      },
       "."
     ],
     "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
@@ -51,7 +54,7 @@
     "date": "2026-08",
     "category": "Publication",
     "headline": [
-      "One paper ( ",
+      "One paper (",
       {
         "text": "PRIMEdit",
         "url": "https://kaist-viclab.github.io/primedit-site/"
@@ -160,7 +163,7 @@
     "date": "2026-04",
     "category": "Award",
     "headline": [
-      "Two papers ( ",
+      "Two papers (",
       {
         "text": "MoRel",
         "url": "https://cmlab-korea.github.io/MoRel/"
@@ -243,7 +246,7 @@
     "date": "2026-02",
     "category": "Publication",
     "headline": [
-      "Four papers ( ",
+      "Four papers (",
       {
         "text": "MoRel",
         "url": "https://cmlab-korea.github.io/MoRel/"
@@ -551,7 +554,7 @@
     "date": "2025-06",
     "category": "Publication",
     "headline": [
-      "One paper ( ",
+      "One paper (",
       {
         "text": "DiffPS",
         "url": "https://perceptualai-lab.github.io/DiffPS/"
@@ -814,7 +817,7 @@
     "date": "2024-02",
     "category": "Publication",
     "headline": [
-      "One paper ( ",
+      "One paper (",
       {
         "text": "FMA-Net",
         "url": "https://kaist-viclab.github.io/fmanet-site/"
