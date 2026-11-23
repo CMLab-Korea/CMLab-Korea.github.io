@@ -3,7 +3,7 @@ name: Capture CMLab legacy sources
 on:
   workflow_dispatch:
   push:
-    branches: [codex/cmlab-v1-1-preview]
+    branches: [codex/cmlab-people-and-life]
     paths:
       - .github/workflows/collect-cmlab-sources.yml
       - scripts/collect_cmlab_sources.py
@@ -36,7 +36,7 @@ jobs:
           path: capture/
           retention-days: 7
       - name: Store reviewed-source inputs on the capture branch
-        if: success() && github.ref == 'refs/heads/codex/cmlab-v1-1-preview'
+        if: success() && github.ref == 'refs/heads/codex/cmlab-people-and-life'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

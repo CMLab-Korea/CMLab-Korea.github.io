@@ -12,6 +12,7 @@ SOURCES = {
     "publications": (ORIGIN + "/publications", r"Summary\s*:"),
     "home": (ORIGIN + "/", r"\bNews\b"),
     "lab": (ORIGIN + "/cmlab", r"\bNews\b"),
+    "courses": (ORIGIN + "/courses", r"\bCourses?\b"),
 }
 
 EXTRACT = r"""({savedHtml, sourceUrl, papers}) => {
@@ -77,6 +78,7 @@ def main():
     parser.add_argument("--publications-html", type=Path)
     parser.add_argument("--home-html", type=Path)
     parser.add_argument("--lab-html", type=Path)
+    parser.add_argument("--courses-html", type=Path)
     parser.add_argument("--chromium", help="Use an existing Chromium executable")
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
@@ -86,7 +88,7 @@ def main():
         browser = playwright.chromium.launch(executable_path=args.chromium)
         for name, (url, ready_text) in SOURCES.items():
             saved = getattr(args, name + "_html")
-            if any((args.publications_html, args.home_html, args.lab_html)) and not saved:
+            if any((args.publications_html, args.home_html, args.lab_html, args.courses_html)) and not saved:
                 continue
             page = browser.new_page(viewport={"width": 1440, "height": 900}, locale="en-US")
             try:
