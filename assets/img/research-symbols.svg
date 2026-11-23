@@ -6,7 +6,7 @@
     <path d="M3 6h18v12H3zM7 6v12M17 6v12M10 9l4 3-4 3z"/>
   </symbol>
   <symbol id="world" viewBox="0 0 24 24">
-    <path d="m17 5-5-3-9 5v10l8 5m3-3V10l5-3v10m-9 2v-7l4-2"/><circle cx="11" cy="22" r="1"/>
+    <path d="M17 5 12 2 3 7v10l8 5M10 19v-7l10-6v11M15 9v11"/><circle cx="11" cy="22" r="1"/>
   </symbol>
   <symbol id="agent" viewBox="0 0 24 24">
     <path d="M12 2c0 6-2 8-8 8 6 0 8 2 8 8 0-6 2-8 8-8-6 0-8-2-8-8zm6 14v6m-3-3h6M4 2v4M2 4h4"/>
