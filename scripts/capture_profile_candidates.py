@@ -4,8 +4,7 @@ from PIL import Image
 from playwright.sync_api import sync_playwright
 from urllib.parse import urlsplit
 from concurrent.futures import ThreadPoolExecutor
-pages={'sung-ho-bae-scholar':'https://scholar.google.co.kr/citations?user=EULut5oAAAAJ&hl=ko',
- 'sung-ho-bae-lab':'https://mlvc.khu.ac.kr/home'}
+pages={'sung-ho-bae-team':'https://mlvc.khu.ac.kr/team'}
 def capture(item):
  slug,url=item
  target=Path('capture/portraits')/slug
