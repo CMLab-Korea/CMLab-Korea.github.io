@@ -2,7 +2,7 @@ name: Deploy CMLab website to GitHub Pages
 on:
   workflow_dispatch:
   push:
-    branches: [main, codex/cmlab-deploy-and-profile]
+    branches: [main]
   pull_request:
     branches: [main]
 permissions:

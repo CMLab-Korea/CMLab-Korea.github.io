@@ -11,7 +11,8 @@
       "from": "24-1",
       "to": "25-2",
       "phd_since": "26-1"
-    }
+    },
+    "sort_family_ko": "계"
   },
   {
     "group": "core",
@@ -24,7 +25,8 @@
       "from": "24-1",
       "to": "25-2",
       "phd_since": "26-1"
-    }
+    },
+    "sort_family_ko": "성"
   },
   {
     "group": "core",
@@ -35,7 +37,8 @@
     "url": "https://oh-gnues-iohc.github.io/",
     "aliases": [
       "Seungho Choi"
-    ]
+    ],
+    "sort_family_ko": "최"
   },
   {
     "group": "core",
@@ -48,7 +51,8 @@
       "from": "24-1",
       "to": "26-1",
       "phd_since": "26-2"
-    }
+    },
+    "sort_family_ko": "노"
   },
   {
     "group": "core",
@@ -56,7 +60,8 @@
     "name": "Sukhun Ko",
     "photo": "assets/img/people/sukhun-ko.webp",
     "semester": "25-1",
-    "url": "https://hun-hub.github.io/"
+    "url": "https://hun-hub.github.io/",
+    "sort_family_ko": "고"
   },
   {
     "group": "core",
@@ -64,7 +69,8 @@
     "name": "Weeyoung Kwon",
     "photo": "assets/img/people/weeyoung-kwon.webp",
     "semester": "25-1",
-    "url": "https://klavna.github.io/WeeyoungKwon.github.io/"
+    "url": "https://klavna.github.io/WeeyoungKwon.github.io/",
+    "sort_family_ko": "권"
   },
   {
     "group": "core",
@@ -77,7 +83,8 @@
       "Seokhyun Youn",
       "SeokHyun Youn"
     ],
-    "author_name": "Seokhyun Youn"
+    "author_name": "Seokhyun Youn",
+    "sort_family_ko": "윤"
   },
   {
     "group": "core",
@@ -85,27 +92,23 @@
     "name": "Jeongho Seo",
     "photo": "assets/img/people/jeongho-seo.webp",
     "semester": "26-1",
-    "email": "jeonghoseo@cau.ac.kr"
+    "email": "jeonghoseo@cau.ac.kr",
+    "sort_family_ko": "서"
   },
   {
     "group": "intern",
     "degree": "Research intern",
     "name": "Yujin Jeong",
     "photo": "assets/img/people/yujin-jeong.webp",
-    "semester": "27-1"
+    "semester": "27-1",
+    "sort_family_ko": "정"
   },
   {
     "group": "intern",
     "degree": "Research intern",
     "name": "Moonseung Choi",
     "photo": "assets/img/people/moonseung-choi.webp",
-    "semester": "27-1"
-  },
-  {
-    "group": "intern",
-    "degree": "Research intern",
-    "name": "Sangmin Kim",
-    "photo": "assets/img/people/sangmin-kim.webp",
-    "semester": "28-1"
+    "semester": "27-1",
+    "sort_family_ko": "최"
   }
 ]

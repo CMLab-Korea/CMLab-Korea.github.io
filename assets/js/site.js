@@ -109,8 +109,9 @@
     const more = $('#news-more');
     const initialNewsCount = 10;
     getData('news.json').then(items => {
-      const entries = [...items].sort((a, b) => b.date.localeCompare(a.date));
-      const categories = ['All', 'Publication', 'Award', 'Funding', 'People', 'Event', 'Service'];
+      const categories = ['All', 'Publication', 'Award', 'People', 'Event'];
+      const entries = items.filter(item => categories.includes(item.category))
+        .sort((a, b) => b.date.localeCompare(a.date));
 
       function categoryIcon(category) {
         const svgNamespace = 'http://www.w3.org/2000/svg';
@@ -477,7 +478,11 @@
 
   if (page === 'people') {
     getData('people.json').then(people => {
-      for (const person of people) {
+      const intake = person => person.alumni?.from || person.semester;
+      const sorted = [...people].sort((a, b) => intake(a).localeCompare(intake(b))
+        || (a.sort_family_ko || '').localeCompare(b.sort_family_ko || '', 'ko')
+        || a.name.localeCompare(b.name));
+      for (const person of sorted) {
         const card = node('article', 'person-card');
         const semester = person.group === 'intern' ? '(' + person.semester + ')' : '[' + person.semester + ']';
         const heading = node('h3');
@@ -501,8 +506,8 @@
     Promise.all([getData('collaborators.json'), getData('institutions.json'), getData('publications.json')])
       .then(([collaborators, institutions, papers]) => {
         const grid = $('#collaborators-grid');
-        for (const category of ['Academia', 'Research Institute', 'Industry']) {
-          const group = collaborators.filter(p => p.category === category);
+        for (const category of ['Ongoing collaborations', 'Academia', 'Research Institute', 'Industry']) {
+          const group = collaborators.filter(p => p.ongoing ? category === 'Ongoing collaborations' : p.category === category);
           if (!group.length) continue;
           const cards = node('div', 'collab-cards');
           for (const person of group) {
@@ -516,13 +521,19 @@
             const heading = node('h4');
             heading.append(nameLink(person.person, person.url));
             card.append(heading, node('p', '', [person.role, person.unit, organization.name].filter(Boolean).join(' · ')));
+            if (person.ongoing) {
+              const ongoing = node('span', 'lab-partner', 'Active project');
+              ongoing.prepend(symbol('assets/img/news-icons.svg', 'collaboration'));
+              card.append(ongoing);
+            }
             if (person.collaborative_lab) {
               const label = nameLink('Close research collaboration', person.lab_url, 'lab-partner');
               label.prepend(symbol('assets/img/news-icons.svg', 'collaboration'));
               card.append(label);
             }
             const works = node('div', 'collab-paper-links');
-            for (const paper of papers.filter(p => (p.authors || '').split(/,|\band\b/).some(n => names.includes(identityKey(n))))) {
+            for (const paper of papers.filter(p => !person.exclude_paper_ids?.includes(p.id)
+              && (p.authors || '').split(/,|\band\b/).some(n => names.includes(identityKey(n))))) {
               const url = [paper.project_url, paper.venue_url, paper.arxiv_url]
                 .find(value => value && !paper.unavailable_urls?.includes(value));
               works.append(nameLink(paper.short + ' [' + paper.venue_short + ']', url, 'profile-link'));
@@ -623,6 +634,76 @@
         filters.append(tab);
       }
     }).catch(() => { $('#gallery-events').textContent = 'Lab Life is temporarily unavailable.'; });
+  }
+
+  const visitorPanel = $('.visitor-stats');
+  if (visitorPanel) {
+    const status = $('.visitor-status', visitorPanel);
+    const numbers = new Intl.NumberFormat('en');
+    const dialog = $('details', visitorPanel);
+    function displayCounts(result) {
+      for (const key of ['total', 'today']) {
+        if (!Number.isSafeInteger(result[key]) || result[key] < 0) throw new Error('Invalid visitor total');
+        $('[data-visitors="' + key + '"]', visitorPanel).textContent = numbers.format(result[key]);
+      }
+      status.hidden = true;
+    }
+
+    async function configureVisitorStats() {
+      const {endpoint} = await getData('visitor-settings.json');
+      if (!endpoint) return;
+      const url = new URL(endpoint);
+      if (url.protocol !== 'https:') throw new Error('Visitor stats require HTTPS');
+
+      let id;
+      try {
+        id = localStorage.getItem('cmlab-visitor-id') || crypto.randomUUID();
+        localStorage.setItem('cmlab-visitor-id', id);
+      } catch {
+        id = null;
+      }
+      const path = page === '404' ? '/404.html'
+        : location.pathname === '/' ? '/index.html' : location.pathname;
+      const recordVisit = Boolean(id && location.origin === 'https://cmlab-korea.github.io');
+      const request = recordVisit ? {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({id, path})
+      } : {};
+      const result = await fetch(url, request);
+      if (!result.ok) throw new Error('Visitor statistics unavailable');
+      displayCounts(await result.json());
+
+      let detailsLoaded = false;
+      dialog.addEventListener('toggle', async () => {
+        if (!dialog.open || detailsLoaded) return;
+        const detailsStatus = $('.visitor-detail-status', dialog);
+        try {
+          const response = await fetch(url);
+          if (!response.ok) throw new Error('Visitor breakdown unavailable');
+          const breakdown = await response.json();
+          const countryNames = new Intl.DisplayNames(['en'], {type: 'region'});
+          for (const [key, list] of [['countries', breakdown.countries], ['pages', breakdown.pages]]) {
+            const rows = Array.isArray(list) ? list : [];
+            const target = $('[data-visitor-breakdown="' + key + '"]', dialog);
+            target.replaceChildren(...rows.map(row => {
+              const label = key === 'countries' && /^[A-Z]{2}$/.test(row.label) ? countryNames.of(row.label) : row.label;
+              const item = node('li');
+              item.append(node('span', '', label), node('span', '', numbers.format(row.count)));
+              return item;
+            }));
+            if (!rows.length) target.append(node('li', '', 'No visits recorded yet.'));
+          }
+          detailsStatus.hidden = true;
+          detailsLoaded = true;
+        } catch {
+          detailsStatus.hidden = false;
+          detailsStatus.textContent = 'Visitor breakdown is temporarily unavailable.';
+        }
+      });
+    }
+
+    configureVisitorStats().catch(() => { status.textContent = 'Visitor statistics are temporarily unavailable.'; });
   }
 
 })();

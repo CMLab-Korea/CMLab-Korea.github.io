@@ -41,6 +41,10 @@ After the catalog is complete and approved, migrate the Home At a Glance publica
 - Add numbered photo files such as `01.webp` and `02.webp` to the matching folder in `assets/img/gallery/`. The folder name matches the event ID in `data/gallery.json`. Gallery controls appear when an event has more than one image.
 - Run `python3 scripts/index_site_media.py` after adding media and review the resulting catalog changes with the media provenance. Teaching records and the university’s Outstanding Instructor links live in `data/courses.json`.
 
+## Visitor statistics
+
+The footer supports total and daily visitor counts and a public country and page breakdown. Connect the [visitor counter backend](analytics/README.md) and set its HTTPS endpoint in `data/visitor-settings.json` to enable live counts.
+
 ## Release review
 
 See [REVIEW.md](REVIEW.md) for confirmed source matches and open checks. Follow [AGENTS.md](AGENTS.md) for ongoing updates.
