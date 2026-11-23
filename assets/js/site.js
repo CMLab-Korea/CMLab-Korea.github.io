@@ -79,7 +79,7 @@
         .sort((a, b) => a.featured_order - b.featured_order).slice(0, 4);
       featured.replaceChildren(...papers.map(paper => {
         const card = node('a', 'feature-card');
-        card.href = safeURL(paper.project_url || paper.url);
+        card.href = safeURL(paper.project_url || paper.venue_url || paper.arxiv_url);
         card.target = '_blank';
         card.rel = 'noopener noreferrer';
         if (paper.teaser) {
@@ -89,9 +89,14 @@
           image.loading = 'lazy';
           card.append(image);
         }
+        const venue = node('p', 'feature-venue', paper.venue_short || paper.venue);
+        if (paper.distinction && paper.distinction_percent) {
+          const label = [paper.distinction, paper.distinction_percent].filter(Boolean).join(' · ');
+          venue.append(' · ', node('strong', 'feature-distinction', label));
+        }
         card.append(
           node('h3', 'feature-name', paper.short),
-          node('p', 'feature-venue', paper.type === 'Preprint' ? 'Preprint' : `${paper.venue} · ${paper.year}`),
+          venue,
           node('p', 'feature-title', paper.title)
         );
         return card;
@@ -105,8 +110,35 @@
     const initialNewsCount = 10;
     getData('news.json').then(items => {
       const entries = [...items].sort((a, b) => b.date.localeCompare(a.date));
-      const categories = ['All', ...new Set(entries.map(item => item.category))];
-      const dateLabel = new Intl.DateTimeFormat('en', {month: 'short', timeZone: 'UTC'});
+      const categories = ['All', 'Publication', 'Award', 'Funding', 'People', 'Event', 'Service'];
+
+      function categoryIcon(category) {
+        const svgNamespace = 'http://www.w3.org/2000/svg';
+        const icon = document.createElementNS(svgNamespace, 'svg');
+        icon.setAttribute('class', 'news-icon');
+        icon.setAttribute('aria-hidden', 'true');
+        const use = document.createElementNS(svgNamespace, 'use');
+        use.setAttribute('href', 'assets/img/news-icons.svg#' + category.toLowerCase());
+        icon.append(use);
+        return icon;
+      }
+
+      function renderHeadline(parts) {
+        const headline = node('p', 'news-headline');
+        for (const part of Array.isArray(parts) ? parts : [parts]) {
+          if (typeof part === 'string') {
+            headline.append(part);
+          } else if (part.url) {
+            const link = node('a', '', part.text);
+            link.href = safeURL(part.url);
+            headline.append(link);
+          } else {
+            headline.append(node('strong', '', part.text));
+          }
+        }
+        return headline;
+      }
+
       let selection = 'All';
       let expanded = false;
 
@@ -117,20 +149,21 @@
         let currentYear;
         let list;
         for (const entry of visible) {
-          const [year, month] = entry.date.split('-');
+          const [year, month, day] = entry.date.split('-');
           if (year !== currentYear) {
             currentYear = year;
             list = node('ul', 'news-year-list');
             news.append(node('h3', 'news-year', year), list);
           }
           const item = node('li', 'news-item');
-          const time = node('time', '', dateLabel.format(new Date(Date.UTC(Number(year), Number(month) - 1, 1))));
+          const time = node('time', '', day ? [month, day, year].join('/') : [month, year].join('/'));
           time.dateTime = entry.date;
           const category = node('span', 'news-category', entry.category);
-          item.append(time, category, node('p', 'news-headline', entry.headline));
+          category.prepend(categoryIcon(entry.category));
+          item.append(time, category, renderHeadline(entry.headline));
           list.append(item);
         }
-        if (!visible.length) news.append(node('p', 'muted', 'No updates yet.'));
+        if (!visible.length) news.append(node('p', 'muted', 'No updates in this category yet.'));
         more.hidden = matches.length <= initialNewsCount;
         more.setAttribute('aria-expanded', String(expanded));
         more.textContent = expanded ? 'Show fewer updates' : `Show all ${matches.length} updates`;
@@ -139,17 +172,16 @@
         }
       }
 
-      if (categories.length > 2) {
-        for (const category of categories) {
-          const button = node('button', 'news-filter', category);
-          button.type = 'button';
-          button.addEventListener('click', () => {
-            selection = category;
-            expanded = false;
-            renderNews();
-          });
-          filters.append(button);
-        }
+      for (const category of categories) {
+        const button = node('button', 'news-filter', category);
+        button.type = 'button';
+        if (category !== 'All') button.prepend(categoryIcon(category));
+        button.addEventListener('click', () => {
+          selection = category;
+          expanded = false;
+          renderNews();
+        });
+        filters.append(button);
       }
       more.addEventListener('click', () => {
         expanded = !expanded;
@@ -167,65 +199,189 @@
       function frame(){if (visible){ctx.clearRect(0,0,w,h);ctx.fillStyle='rgba(163,195,255,.52)';for(const p of pts){p.y-=p.s;if(p.y<0)p.y=h;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill()}}requestAnimationFrame(frame)}requestAnimationFrame(frame);
     }
   }
-  if(page==='publications') {
-    const container=$('#publication-list'),search=$('#paper-search'),type=$('#paper-type'),year=$('#paper-year'),venueFilter=$('#paper-venue'),area=$('#paper-area'),counter=$('#paper-count');
-    getData('publications.json').then(items=>{
-      const years=[...new Set(items.map(x=>x.year))].sort((a,b)=>b-a);
-      years.forEach(y=>{const opt=node('option','',String(y));opt.value=String(y);year.appendChild(opt)});
-      [...new Set(items.map(p => p.venue))].sort().forEach(venue => {
-        const option = node('option', '', venue);
-        option.value = venue;
-        venueFilter.append(option);
-      });
-      function show(){
-        const query=(search.value||'').trim().toLowerCase();
-        const result=items.filter(p=>(type.value==='all'||p.type===type.value)&&(year.value==='all'||String(p.year)===year.value)&&(venueFilter.value==='all'||p.venue===venueFilter.value)&&(area.value==='all'||p.area===area.value)&&(!query||[p.short, p.title, p.venue, p.area, p.authors].join(' ').toLowerCase().includes(query)));
-        counter.textContent=`${result.length} OF ${items.length} ENTRIES`;
-        container.replaceChildren();
-        if(!result.length){container.appendChild(node('p','archive-notice','No records match these filters.'));return}
-        for(const p of result){
-          const row=node('article','paper-row rich-paper');
-          const venue=node('div','venue-column');
-          venue.append(node('span','venue-abbr',p.venue_short || (p.venue+' '+p.year)),node('span','venue-kind',p.type==='Preprint'?'UNDER REVIEW':p.type.toUpperCase()));
-          const teaser=node('div','paper-teaser');
-          if(p.teaser_video){
-            const video=node('video','paper-video');video.src=p.teaser_video;video.muted=true;video.controls=true;video.playsInline=true;video.preload='none';video.poster=p.teaser;video.setAttribute('aria-label',p.teaser_video_label);teaser.append(video);
-          } else if(p.teaser){
-            const image=node('img','paper-image');image.src=p.teaser;image.alt=p.teaser_alt;image.loading='lazy';image.onerror=()=>{image.remove();teaser.append(node('span','teaser-placeholder',p.short))};teaser.append(image);
-          } else {teaser.append(node('span','teaser-placeholder',p.short));}
-          const body=node('div','paper-rich-body');
-          const title=node('h3');const link=node('a','paper-title',p.title);link.href=safeURL(p.url);link.target='_blank';link.rel='noopener noreferrer';title.append(link);
-          const over=node('div','paper-overline',p.short);body.append(over,title);
-          if(p.authors){
-            const line=node('p','paper-authors');
-            const names=p.authors.split(/, and |, | and /).map(x=>x.trim()).filter(Boolean);
-            names.forEach((name,i)=>{
-              if(i)line.append(document.createTextNode(', '));
-              const plain=name.replace(/[†*‡]/g,'').trim();
-              const isPI=plain==='Jihyong Oh';
-              const isMember=p.cmlab_lead_authors?.includes(plain);
-              line.append(node('span',isPI?'author-pi':isMember?'author-cmlab':'',name));
-            });body.append(line);
-          }else{body.append(node('p','paper-authors muted','Authors: see original publication entry'));}
-          if(p.affiliations?.length){
-            const chips=node('div','paper-affiliations');p.affiliations.forEach(name=>chips.append(node('span','affiliation-tag',name)));body.append(chips);
-          }
-          const footer=node('div','paper-meta');footer.append(node('span','',p.venue+' · '+p.year));
-          const archive = p.url === 'https://cmlab.cau.ac.kr/publications';
-          for (const [label, href] of [[archive ? 'Archive' : 'Paper', p.url], ['Project', p.project_url], ['Code', p.code_url]]) {
-            if (!href) continue;
-            const open = node('a', 'paper-open', label + ' ↗');
-            open.href = safeURL(href);
-            open.target = '_blank';
-            open.rel = 'noopener noreferrer';
-            footer.append(open);
-          }
-          body.append(footer);
-          row.append(venue,teaser,body);container.appendChild(row);
+  if (page === 'publications') {
+    const search = $('#paper-search');
+    const type = $('#paper-type');
+    const year = $('#paper-year');
+    const venue = $('#paper-venue');
+    const area = $('#paper-area');
+    const counter = $('#paper-count');
+    const feedback = $('#paper-feedback');
+    const areas = new Map([
+      ['Pixel-Level Intelligence', {label: 'Pixel-Level', icon: 'pixel'}],
+      ['Video & Motion Intelligence', {label: 'Video & Motion', icon: 'motion'}],
+      ['3D/4D World Modeling', {label: '3D/4D World', icon: 'world'}],
+      ['Generative & Agentic Visual AI', {label: 'Generative / Agentic AI', icon: 'agent'}]
+    ]);
+
+    function paperAreas(paper) {
+      return [...new Set(paper.areas || [paper.area])].filter(name => areas.has(name));
+    }
+
+    function venueName(paper) {
+      return venueBadge(paper).split("'")[0];
+    }
+
+    function venueBadge(paper) {
+      return paper.venue_short;
+    }
+
+    function paperLinks(paper) {
+      const links = new Map();
+      const resources = [
+        [venueBadge(paper), paper.venue_url],
+        ['Project', paper.project_url],
+        ['arXiv', paper.arxiv_url],
+        ['Code', paper.code_url],
+        ['Dataset', paper.dataset_url],
+        ...(paper.additional_links || []).map(({label, url}) => [label, url])
+      ];
+      for (const [label, url] of resources) {
+        if (url && /^https?:\/\//.test(url) && !links.has(url) && !paper.unavailable_urls?.includes(url)) {
+          links.set(url, label);
         }
       }
-      [search,type,year,venueFilter,area].forEach(x=>x.addEventListener(x===search?'input':'change',show));show();
-    }).catch(()=>{container.textContent='Publication data is unavailable. See the original CMLab publications archive.'});
+      return links;
+    }
+
+    function externalLink(label, url, className) {
+      const link = node('a', className, label);
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      return link;
+    }
+
+    function authorLine(paper) {
+      const line = node('p', 'paper-authors');
+      const names = paper.authors.split(/, and |, | and /).map(name => name.trim()).filter(Boolean);
+      names.forEach((name, i) => {
+        if (i) line.append(', ');
+        const plain = name.replace(/[†*‡]/g, '').trim();
+        const emphasize = plain === 'Jihyong Oh' || paper.cmlab_lead_authors?.includes(plain);
+        line.append(node('span', emphasize ? 'paper-author-highlight' : '', name));
+      });
+      return line;
+    }
+
+    function areaTag(name) {
+      const {label, icon} = areas.get(name);
+      const tag = node('span', 'paper-area');
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      const use = document.createElementNS(svg.namespaceURI, 'use');
+      use.setAttribute('href', 'assets/img/research-symbols.svg#' + icon);
+      svg.setAttribute('aria-hidden', 'true');
+      svg.append(use);
+      tag.append(svg, label);
+      return tag;
+    }
+
+    function paperRow(paper) {
+      const row = node('article', 'paper-row rich-paper');
+      row.id = 'paper-' + paper.id;
+      const badge = node('div', 'venue-column');
+      badge.append(node('span', 'venue-abbr', venueBadge(paper)));
+      badge.append(node('span', 'venue-kind', paper.type === 'Preprint' ? String(paper.year) : paper.type));
+      if (paper.distinction && paper.distinction_percent) {
+        badge.append(node('span', 'paper-distinction', [paper.distinction, paper.distinction_percent].filter(Boolean).join(' · ')));
+      }
+      if (paper.venue.includes('Findings')) badge.append(node('span', 'venue-kind', 'Findings'));
+      row.append(badge);
+
+      if (paper.teaser_video || paper.teaser) {
+        const teaser = node('div', 'paper-teaser');
+        if (paper.teaser_video) {
+          const video = node('video', 'paper-video');
+          video.src = paper.teaser_video;
+          video.controls = video.playsInline = video.muted = true;
+          video.preload = 'none';
+          if (paper.teaser) video.poster = paper.teaser;
+          video.setAttribute('aria-label', paper.teaser_video_label || paper.short);
+          teaser.append(video);
+        } else {
+          const image = node('img', 'paper-image');
+          image.loading = 'lazy';
+          image.alt = paper.teaser_alt || paper.short;
+          image.src = paper.teaser;
+          teaser.append(image);
+        }
+        row.append(teaser);
+      } else {
+        row.classList.add('without-teaser');
+      }
+
+      const body = node('div', 'paper-rich-body');
+      const links = paperLinks(paper);
+      const destination = paper.venue_url && links.has(paper.venue_url) ? paper.venue_url
+        : paper.arxiv_url && links.has(paper.arxiv_url) ? paper.arxiv_url : undefined;
+      const title = node('h3');
+      title.append(destination ? externalLink(paper.title, destination, 'paper-title') : paper.title);
+      body.append(node('div', 'paper-overline', paper.short), title);
+      if (paper.authors) body.append(authorLine(paper));
+      if (paper.affiliations?.length) {
+        const affiliations = node('div', 'paper-affiliations');
+        affiliations.append(...paper.affiliations.map(name => node('span', 'affiliation-tag', name)));
+        body.append(affiliations);
+      }
+      const tags = node('div', 'paper-areas');
+      tags.append(...paperAreas(paper).map(areaTag));
+      body.append(tags);
+      if (links.size) {
+        const resources = node('div', 'paper-meta');
+        for (const [url, label] of links) resources.append(externalLink(label + ' ↗', url, 'paper-open'));
+        body.append(resources);
+      }
+      if (paper.verification) {
+        const review = node('p', 'paper-verification');
+        const link = node('a', '', paper.verification);
+        link.href = 'PUBLICATIONS-REVIEW.md#' + paper.verification.toLowerCase().replaceAll(' ', '-');
+        review.append(link);
+        body.append(review);
+      }
+      row.append(body);
+      return row;
+    }
+
+    getData('publications.json').then(items => {
+      for (const value of [...new Set(items.map(p => p.year))].sort((a, b) => b - a)) year.add(new Option(value, value));
+      const venues = [...new Set(items.filter(p => p.type !== 'Preprint').map(venueName))].sort();
+      for (const name of venues) venue.add(new Option(name, name));
+      for (const [name, {label}] of areas) area.add(new Option(label, name));
+
+      function render() {
+        const query = search.value.trim().toLowerCase();
+        const matches = items.filter(p => {
+          const tags = paperAreas(p);
+          const keywords = [p.short, p.title, p.authors, p.venue, venueBadge(p), p.distinction,
+            ...tags, ...tags.map(name => areas.get(name).label)].join(' ').toLowerCase();
+          return (type.value === 'all' || p.type === type.value)
+            && (year.value === 'all' || String(p.year) === year.value)
+            && (venue.value === 'all' || venueName(p) === venue.value)
+            && (area.value === 'all' || tags.includes(area.value))
+            && keywords.includes(query);
+        });
+        const preprints = matches.filter(p => p.type === 'Preprint');
+        const published = matches.filter(p => p.type !== 'Preprint');
+        $('#preprint-section').hidden = preprints.length === 0;
+        $('#international-section').hidden = published.length === 0;
+        $('#preprint-list').replaceChildren(...preprints.map(paperRow));
+        $('#published-list').replaceChildren(...published.map(paperRow));
+        counter.textContent = `${matches.length} of ${items.length} entries`;
+        feedback.textContent = 'No publications match these filters.';
+        feedback.hidden = matches.length > 0;
+      }
+
+      search.addEventListener('input', render);
+      for (const select of [type, year, venue, area]) select.addEventListener('change', render);
+      render();
+      if (/^#paper-\d+$/.test(location.hash)) {
+        document.getElementById(location.hash.slice(1))?.scrollIntoView();
+      }
+    }).catch(() => {
+      counter.textContent = 'Publications unavailable';
+      feedback.textContent = 'Use the original publications archive above to browse papers.';
+      feedback.hidden = false;
+    });
   }
   if(page==='people'){
     getData('people.json').then(items=>{

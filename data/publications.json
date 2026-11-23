@@ -1,536 +1,59 @@
 [
   {
-    "id": 1,
-    "short": "MotionGrounder",
-    "title": "Grounded Multi-Object Motion Transfer via Diffusion Transformer",
-    "year": 2026,
-    "venue": "NeurIPS",
-    "type": "Conference",
-    "area": "Generative & Agentic Visual AI",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "NEURIPS'26",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "Samuel Teodoro, Yun Chen, Agus Gunawan, Soo Ye Kim, Jihyong Oh†, Munchurl Kim†",
-    "affiliations": [
-      "Adobe Research",
-      "KAIST"
-    ],
-    "metadata_reviewed": true
-  },
-  {
-    "id": 2,
-    "short": "PRIMEdit",
-    "title": "Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset",
-    "year": 2026,
-    "venue": "IEEE TPAMI",
-    "type": "Journal",
-    "area": "Generative & Agentic Visual AI",
-    "url": "https://kaist-viclab.github.io/primedit-site/",
-    "status": "Published",
-    "venue_short": "TPAMI",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "Samuel Teodoro*, Agus Gunawan*, Soo Ye Kim, Jihyong Oh†, Munchurl Kim†",
-    "affiliations": [
-      "Adobe Research",
-      "KAIST"
-    ],
-    "metadata_reviewed": true
-  },
-  {
-    "id": 3,
-    "short": "FMA-Net++",
-    "title": "Motion- and Exposure-Aware Joint Video Super-Resolution and Deblurring",
-    "year": 2026,
-    "venue": "ECCV",
-    "type": "Conference",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "ECCV'26",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "Geunhyuk Youk, Jihyong Oh, Munchurl Kim†",
-    "affiliations": [
-      "KAIST"
-    ],
-    "metadata_reviewed": true
-  },
-  {
-    "id": 4,
-    "short": "AVSR-Diff",
-    "title": "Scale-Agnostic Diffusion Priors for Temporally Consistent Arbitrary-Scale Video Super-Resolution",
-    "year": 2026,
-    "venue": "ECCV",
-    "type": "Conference",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "ECCV'26",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "Geunhyuk Youk, Jeonghyeok Do, Dayeon Kim, Jihyong Oh, Munchurl Kim†",
-    "affiliations": [
-      "KAIST"
-    ],
-    "metadata_reviewed": true
-  },
-  {
-    "id": 5,
-    "short": "AceVFI",
-    "title": "A Comprehensive Survey of Advances in Video Frame Interpolation",
-    "year": 2026,
-    "venue": "IEEE TCSVT",
-    "type": "Journal",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "TCSVT",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "Dahyeon Kye, Changhyun Roh, Sukhun Ko, Chanho Eom, Jihyong Oh†",
-    "affiliations": [],
-    "metadata_reviewed": true
-  },
-  {
-    "id": 6,
-    "short": "MoRel",
-    "title": "Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification",
-    "year": 2026,
-    "venue": "CVPR · Highlight",
-    "type": "Conference",
-    "area": "3D/4D World Modeling",
-    "url": "https://arxiv.org/abs/2512.09270",
-    "status": "Published",
-    "venue_short": "CVPR'26",
-    "teaser": "assets/media/publications/morel/teaser.webp",
-    "teaser_video": "assets/media/publications/morel/preview.mp4",
-    "authors": "Sangwoon Kwak*, Weeyoung Kwon*, Jun Young Jeong, Geonho Kim, Won-Sik Cheong, Jihyong Oh†",
-    "affiliations": [
-      "ETRI"
-    ],
-    "metadata_reviewed": true,
-    "teaser_alt": "Diagram of the MoRel anchor relay method",
-    "project_url": "https://cmlab-korea.github.io/MoRel/",
-    "code_url": "https://github.com/CMLab-Korea/CVPR26-MoRel",
-    "teaser_video_label": "MoRel dynamic bicycle reconstruction demo",
-    "cmlab_lead_authors": [
-      "Weeyoung Kwon"
-    ],
-    "featured_order": 1
-  },
-  {
-    "id": 7,
-    "short": "FRAMER",
-    "title": "Frequency-Aligned Self-Distillation with Adaptive Modulation Leveraging Diffusion Priors for Real-World Image Super-Resolution",
-    "year": 2026,
-    "venue": "CVPR",
-    "type": "Conference",
-    "area": "Pixel-Level Intelligence",
-    "url": "https://arxiv.org/abs/2512.01390",
-    "status": "Published",
-    "venue_short": "CVPR'26",
-    "teaser": "assets/media/publications/framer/teaser.webp",
-    "teaser_video": "",
-    "authors": "Seungho Choi, Jeahun Sung, Jihyong Oh†",
-    "affiliations": [],
-    "metadata_reviewed": true,
-    "teaser_alt": "FRAMER super-resolution result showing a tiger",
-    "project_url": "https://cmlab-korea.github.io/FRAMER/",
-    "code_url": "https://github.com/CMLab-Korea/CVPR26-FRAMER",
-    "cmlab_lead_authors": [
-      "Seungho Choi"
-    ],
-    "featured_order": 2
-  },
-  {
-    "id": 8,
-    "short": "EcoSplat",
-    "title": "Efficiency-controllable Feed-forward 3D Gaussian Splatting from Multi-view Images",
-    "year": 2026,
-    "venue": "CVPR · Highlight",
-    "type": "Conference",
-    "area": "3D/4D World Modeling",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "CVPR'26",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "Jongmin Park*, Minh-Quan Viet Bui*, Juan Luis Gonzalez Bello, Jaeho Moon, Jihyong Oh†, Munchurl Kim†",
-    "affiliations": [
-      "KAIST"
-    ],
-    "metadata_reviewed": true
-  },
-  {
-    "id": 9,
-    "short": "FLAIR",
-    "title": "Frequency- and Locality-Aware Implicit Neural Representations",
-    "year": 2026,
-    "venue": "CVPR Findings",
-    "type": "Conference",
-    "area": "Pixel-Level Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "CVPR'26",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "Sukhun Ko, SeokHyun Youn, Dahyeon Kye, Kyle Min, Chanho Eom, Jihyong Oh†",
-    "affiliations": [
-      "Oracle"
-    ],
-    "metadata_reviewed": true
-  },
-  {
-    "id": 10,
-    "short": "OmniText",
-    "title": "A Training-Free Generalist for Controllable Text-Image Manipulation",
-    "year": 2026,
-    "venue": "ICLR",
-    "type": "Conference",
-    "area": "Generative & Agentic Visual AI",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "ICLR'26",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 11,
-    "short": "MoCHA-former",
-    "title": "Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing",
-    "year": 2026,
-    "venue": "Neurocomputing",
-    "type": "Journal",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "NEUROCOMPUTING",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 12,
-    "short": "MoBGS",
-    "title": "Motion Deblurring Dynamic 3D Gaussian Splatting for Blurry Monocular Video",
-    "year": 2026,
-    "venue": "AAAI",
-    "type": "Conference",
-    "area": "3D/4D World Modeling",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "AAAI'26",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 13,
-    "short": "I-INR",
-    "title": "Iterative Implicit Neural Representations",
-    "year": 2026,
-    "venue": "AAAI",
-    "type": "Conference",
-    "area": "Pixel-Level Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "AAAI'26",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 14,
-    "short": "SoFoNO",
-    "title": "Arbitrary-Scale Image Super-Resolution via Sobolev Fourier Neural Operator",
-    "year": 2026,
-    "venue": "Neurocomputing",
-    "type": "Journal",
-    "area": "Pixel-Level Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "NEUROCOMPUTING",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 15,
-    "short": "DiffPS",
-    "title": "Leveraging Prior Knowledge of Diffusion Model for Person Search",
-    "year": 2025,
-    "venue": "ICCV · Highlight",
-    "type": "Conference",
-    "area": "Generative & Agentic Visual AI",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "ICCV'25",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 16,
-    "short": "MoBluRF",
-    "title": "Motion Deblurring Neural Radiance Fields for Blurry Monocular Video",
-    "year": 2025,
-    "venue": "IEEE TPAMI",
-    "type": "Journal",
-    "area": "3D/4D World Modeling",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "TPAMI",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 17,
-    "short": "Domain Generalization for Person Re-identification",
-    "title": "A Survey Towards Domain-Agnostic Person Matching",
-    "year": 2025,
-    "venue": "Neurocomputing",
-    "type": "Journal",
-    "area": "Generative & Agentic Visual AI",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "NEUROCOMPUTING",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 18,
-    "short": "SplineGS",
-    "title": "Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video",
-    "year": 2025,
-    "venue": "CVPR",
-    "type": "Conference",
-    "area": "3D/4D World Modeling",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "CVPR'25",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 19,
-    "short": "MoDec-GS",
-    "title": "Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting",
-    "year": 2025,
-    "venue": "CVPR",
-    "type": "Conference",
-    "area": "3D/4D World Modeling",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "CVPR'25",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 20,
-    "short": "BiM-VFI",
-    "title": "Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions",
-    "year": 2025,
-    "venue": "CVPR",
-    "type": "Conference",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "CVPR'25",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 21,
-    "short": "FMA-Net",
-    "title": "Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring",
-    "year": 2024,
-    "venue": "CVPR · Oral",
-    "type": "Conference",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "CVPR'24",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 22,
-    "short": "DeMFI",
-    "title": "Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting",
-    "year": 2022,
-    "venue": "ECCV",
-    "type": "Conference",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "ECCV'22",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 23,
-    "short": "XVFI",
-    "title": "eXtreme Video Frame Interpolation",
-    "year": 2021,
-    "venue": "ICCV · Oral",
-    "type": "Conference",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "ICCV'21",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 24,
-    "short": "PeaceGAN",
-    "title": "A GAN-based Multi-Task Learning Method for SAR Target Image Generation with a Pose Estimator and an Auxiliary Classifier",
-    "year": 2021,
-    "venue": "Remote Sensing",
-    "type": "Journal",
-    "area": "Generative & Agentic Visual AI",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "REMOTE SENSING",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 25,
-    "short": "SPAM-Net",
-    "title": "A CNN-based SAR Target Recognition Network with Pose Angle Marginalization Learning",
-    "year": 2021,
-    "venue": "IEEE TCSVT",
-    "type": "Journal",
-    "area": "Pixel-Level Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "TCSVT",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 26,
-    "short": "FISR",
-    "title": "Deep Joint Frame Interpolation and Super-Resolution with a Multi-Scale Temporal Loss",
-    "year": 2020,
-    "venue": "AAAI",
-    "type": "Conference",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "AAAI'20",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 27,
-    "short": "JSI-GAN",
-    "title": "GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video",
-    "year": 2020,
-    "venue": "AAAI",
-    "type": "Conference",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "AAAI'20",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
-    "id": 28,
-    "short": "Deep SR-ITM",
-    "title": "Joint Learning of Super-Resolution and Inverse Tone-Mapping for 4K UHD HDR Applications",
-    "year": 2019,
-    "venue": "ICCV · Oral",
-    "type": "Conference",
-    "area": "Video & Motion Intelligence",
-    "url": "https://cmlab.cau.ac.kr/publications",
-    "status": "Published",
-    "venue_short": "ICCV'19",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "",
-    "affiliations": [],
-    "metadata_reviewed": false
-  },
-  {
     "id": 29,
     "short": "CHIMERA",
-    "title": "Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metrics",
+    "title": "Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metric",
     "year": 2025,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "Generative & Agentic Visual AI",
-    "url": "https://arxiv.org/abs/2512.07155",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "assets/media/publications/chimera/teaser.webp",
     "teaser_video": "",
-    "authors": "Dahyeon Kye*, Jeahun Sung*, Minkyu Jeon, Jihyong Oh†",
+    "authors": "Dahyeon Kye*, Jeahun Sung*, Minkyu Jeon, and Jihyong Oh†",
     "affiliations": [
       "Princeton University"
     ],
-    "metadata_reviewed": false,
-    "project_url": "https://cmlab-korea.github.io/CHIMERA/",
+    "metadata_reviewed": true,
     "cmlab_lead_authors": [
       "Dahyeon Kye",
       "Jeahun Sung"
     ],
     "teaser_alt": "CHIMERA overview comparing image morphing quality and efficiency",
-    "featured_order": 4
+    "featured_order": 4,
+    "areas": [
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2512.07155"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/CHIMERA/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/CMLab-Korea/ECCV26-CHIMERA"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdJscxmCI6hFGAYxUeGEBDa1qZCR80PJTEfLetd_Bizfug8Cb7W3TsFNx1zVSHEDWMtIIsXUwYJobYdubVnOqcGPCmIXycbYvJ0xzCHH_tk5hp52nXexWM6YEn3aMilnLg-t5iuAas_AehGn9oWvwc91tN2DTfE4WXAGA2ueWtwG2Yu7mdDO1MQrhuQqqvML9tEjVxepLqPaNPsrejVSs3M3ZJ200awKtW6IE1VO7w=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdJscxmCI6hFGAYxUeGEBDa1qZCR80PJTEfLetd_Bizfug8Cb7W3TsFNx1zVSHEDWMtIIsXUwYJobYdubVnOqcGPCmIXycbYvJ0xzCHH_tk5hp52nXexWM6YEn3aMilnLg-t5iuAas_AehGn9oWvwc91tN2DTfE4WXAGA2ueWtwG2Yu7mdDO1MQrhuQqqvML9tEjVxepLqPaNPsrejVSs3M3ZJ200awKtW6IE1VO7w=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2512.07155",
+    "project_url": "https://cmlab-korea.github.io/CHIMERA/",
+    "code_url": "https://github.com/CMLab-Korea/ECCV26-CHIMERA",
+    "unavailable_urls": [
+      "https://github.com/CMLab-Korea/ECCV26-CHIMERA"
+    ],
+    "verification": "needs verification 29"
   },
   {
     "id": 30,
@@ -540,14 +63,36 @@
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "3D/4D World Modeling",
-    "url": "https://cmlab-korea.github.io/Self-Geometry/",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "",
     "teaser_video": "",
-    "authors": "",
+    "authors": "Seokhyun Youn, Dahyeon Kye, Sung-Ho Bae†, and Jihyong Oh†",
     "affiliations": [],
-    "metadata_reviewed": false
+    "metadata_reviewed": true,
+    "areas": [
+      "3D/4D World Modeling"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2026",
+        "url": "https://arxiv.org/abs/2608.10708"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/Self-Geometry/"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe21XQDOyc0Dl-_cyjtgpzY0cVuYNdU0ozXWHmeRzehj_Mi9O5SOvpAEKbPedGZte5E2YgnBZOoZhdNZzvuL6S0h6SfNMY6-vJgVak9dAtUZ-y7c1X4l7Z0GtmFajBpO1jV_TVzMCIYAPD7uHl9QlVSwPQ-kO0uDvpeXjlCI-_uj1leEUXahd2uDzHGrX5mkjxtKWh5TAsgBapn9hbuVGMxnclWCUu5wYRL5cNjuvU=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe21XQDOyc0Dl-_cyjtgpzY0cVuYNdU0ozXWHmeRzehj_Mi9O5SOvpAEKbPedGZte5E2YgnBZOoZhdNZzvuL6S0h6SfNMY6-vJgVak9dAtUZ-y7c1X4l7Z0GtmFajBpO1jV_TVzMCIYAPD7uHl9QlVSwPQ-kO0uDvpeXjlCI-_uj1leEUXahd2uDzHGrX5mkjxtKWh5TAsgBapn9hbuVGMxnclWCUu5wYRL5cNjuvU=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2608.10708",
+    "project_url": "https://cmlab-korea.github.io/Self-Geometry/"
   },
   {
     "id": 31,
@@ -557,21 +102,43 @@
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "Pixel-Level Intelligence",
-    "url": "https://arxiv.org/abs/2605.30915",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "assets/media/publications/ditto/teaser.webp",
     "teaser_video": "",
-    "authors": "Seungho Choi, Jihyong Oh†",
+    "authors": "Seungho Choi, and Jihyong Oh†",
     "affiliations": [],
-    "metadata_reviewed": false,
+    "metadata_reviewed": true,
     "teaser_alt": "DiTTo restoration result showing a butterfly",
-    "project_url": "https://cmlab-korea.github.io/DiTTo/",
-    "code_url": "https://github.com/CMLab-Korea/DiTTo-arxiv",
     "cmlab_lead_authors": [
       "Seungho Choi"
     ],
-    "featured_order": 3
+    "featured_order": 3,
+    "areas": [
+      "Pixel-Level Intelligence",
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2026",
+        "url": "https://arxiv.org/abs/2605.30915"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/DiTTo/"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfg9WihSF06X7jp48HgXnOC-1hIOsZxWLmAyp4Gq_70ay5B5kZKSxBywVKMLqxlbBftrSDXB3mTQPNjOFi9WJofho33KpubdtauQuFN7frLqi_ahIg3ERMdPP7-P0inrT8N6cXY0SiDna-6N0ulgrTV9Rk7jAYGh-a6nMQSnx3yRTUAg1S18isejUGBHvUxIcUxMF4KBTafMoebukf3clvPmWPKbB-nHSDgPO50g7o=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfg9WihSF06X7jp48HgXnOC-1hIOsZxWLmAyp4Gq_70ay5B5kZKSxBywVKMLqxlbBftrSDXB3mTQPNjOFi9WJofho33KpubdtauQuFN7frLqi_ahIg3ERMdPP7-P0inrT8N6cXY0SiDna-6N0ulgrTV9Rk7jAYGh-a6nMQSnx3yRTUAg1S18isejUGBHvUxIcUxMF4KBTafMoebukf3clvPmWPKbB-nHSDgPO50g7o=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2605.30915",
+    "project_url": "https://cmlab-korea.github.io/DiTTo/",
+    "code_url": "https://github.com/CMLab-Korea/DiTTo-arxiv"
   },
   {
     "id": 32,
@@ -581,20 +148,42 @@
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "Generative & Agentic Visual AI",
-    "url": "https://arxiv.org/abs/2606.01079",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "",
     "teaser_video": "",
-    "authors": "Sukhun Ko, Jeahun Sung, Soo Ye Kim†, Jihyong Oh†",
+    "authors": "Sukhun Ko, Soo Ye Kim† and Jihyong Oh†",
     "affiliations": [
       "Adobe Research"
     ],
     "metadata_reviewed": false,
-    "project_url": "https://cmlab-korea.github.io/Chameleon/",
     "cmlab_lead_authors": [
       "Sukhun Ko"
-    ]
+    ],
+    "areas": [
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2026",
+        "url": "https://arxiv.org/abs/2606.01079"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/Chameleon/"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeZ0qIsN6r1wYu1KyLh5Um32vTmCwmN7No169Gf1XywoZ3m-WMRTV8SCE6dT82HBfY597MvC-K6dsDhCVxFO0U1R7xCDt40Jo1owAGx7JLv85X6l_BfpIhH7c1YMBzAHlPCRuwzbtnGNMSwCOl36KAVrgz8nt6xSYfGwA2t9fPAAzHMRWwOVQoe_mDqr5G_YRAsaHK-MUggAS5fLlD_p2z19Ql9w1hGj7UjUmUjKoQ=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeZ0qIsN6r1wYu1KyLh5Um32vTmCwmN7No169Gf1XywoZ3m-WMRTV8SCE6dT82HBfY597MvC-K6dsDhCVxFO0U1R7xCDt40Jo1owAGx7JLv85X6l_BfpIhH7c1YMBzAHlPCRuwzbtnGNMSwCOl36KAVrgz8nt6xSYfGwA2t9fPAAzHMRWwOVQoe_mDqr5G_YRAsaHK-MUggAS5fLlD_p2z19Ql9w1hGj7UjUmUjKoQ=w1280"
+      }
+    ],
+    "verification": "needs verification 32",
+    "arxiv_url": "https://arxiv.org/abs/2606.01079",
+    "project_url": "https://cmlab-korea.github.io/Chameleon/"
   },
   {
     "id": 33,
@@ -604,17 +193,40 @@
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "Pixel-Level Intelligence",
-    "url": "https://arxiv.org/abs/2606.15158",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "assets/media/publications/refgc-sr2/teaser.webp",
     "teaser_video": "",
-    "authors": "Soo Ye Kim†, Jihyong Oh†",
+    "authors": "Jeahun Sung*, Dahyeon Kye*, Soo Ye Kim† and Jihyong Oh†",
     "affiliations": [
       "Adobe Research"
     ],
     "metadata_reviewed": false,
     "teaser_alt": "Reference-guided image enhancement examples from RefGC-SR²",
+    "areas": [
+      "Pixel-Level Intelligence",
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2026",
+        "url": "https://arxiv.org/pdf/2606.15158"
+      },
+      {
+        "label": "Project_Page",
+        "url": "https://cmlab-korea.github.io/RefGC-SR2/"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc6LP1_VdZLU0ZVQ9yXfO2Yhodc_mcEjsi3kWqpXobE0P2fIGQp8iOZdKcZ20jaDDVQR0yRLT-ZwAFTU2hpqomaewePFbF4Ee58GbHfnhs4n4ACDGz_AaOVlz26rJO2JLd4-eKVlgaV5Uqh87RoDKj9VcHoSvaiwWBjBunpqB8LMhEbuFP0MQF9Hga_MOo3flOGCaCa3DIrFLvbFYSV_1BkTFR2903mA2INsMs5tOo=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc6LP1_VdZLU0ZVQ9yXfO2Yhodc_mcEjsi3kWqpXobE0P2fIGQp8iOZdKcZ20jaDDVQR0yRLT-ZwAFTU2hpqomaewePFbF4Ee58GbHfnhs4n4ACDGz_AaOVlz26rJO2JLd4-eKVlgaV5Uqh87RoDKj9VcHoSvaiwWBjBunpqB8LMhEbuFP0MQF9Hga_MOo3flOGCaCa3DIrFLvbFYSV_1BkTFR2903mA2INsMs5tOo=w1280"
+      }
+    ],
+    "verification": "needs verification 33",
+    "arxiv_url": "https://arxiv.org/pdf/2606.15158",
     "project_url": "https://cmlab-korea.github.io/RefGC-SR2/",
     "code_url": "https://github.com/CMLab-Korea/arXiv26-RefGC-SR2"
   },
@@ -626,14 +238,36 @@
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "Generative & Agentic Visual AI",
-    "url": "https://cmlab.cau.ac.kr/publications",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "",
     "teaser_video": "",
-    "authors": "",
+    "authors": "Changhyun Roh, Yonghyun Jeong, Jonghyun Lee, Chanho Eom† and Jihyong Oh†",
     "affiliations": [],
-    "metadata_reviewed": false
+    "metadata_reviewed": true,
+    "areas": [
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2026",
+        "url": "https://arxiv.org/abs/2604.26883"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/SEAL/"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQd-_zS0LPjA7Phe1fITvg8jayIYKK-Mft0yAhzQp7KupMJwAk-bnZj8TzJAC2hmR3EPUABwOaxWwWmppD2s84IA8T8FW0l3qk75BQqSFv8I8ZmLpHNdjB9ByDeFvVBp66vVYGfV2vCuRmUt1tJ3Jp4BWUSFAVyiTNnSk5GPnmfriD-3TrLod0FJY44PsRSERBrVhaetc_GWRgShvsgD3BaRitySCYfcaVe1pMFRHVs=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQd-_zS0LPjA7Phe1fITvg8jayIYKK-Mft0yAhzQp7KupMJwAk-bnZj8TzJAC2hmR3EPUABwOaxWwWmppD2s84IA8T8FW0l3qk75BQqSFv8I8ZmLpHNdjB9ByDeFvVBp66vVYGfV2vCuRmUt1tJ3Jp4BWUSFAVyiTNnSk5GPnmfriD-3TrLod0FJY44PsRSERBrVhaetc_GWRgShvsgD3BaRitySCYfcaVe1pMFRHVs=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2604.26883",
+    "project_url": "https://cmlab-korea.github.io/SEAL/"
   },
   {
     "id": 35,
@@ -643,14 +277,47 @@
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "3D/4D World Modeling",
-    "url": "https://cmlab.cau.ac.kr/publications",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "",
     "teaser_video": "",
-    "authors": "",
+    "authors": "Seokhyun Youn*, Soohyun Lee*, Geonho Kim*, Weeyoung Kwon, Sung-Ho Bae† and Jihyong Oh†",
     "affiliations": [],
-    "metadata_reviewed": false
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/CMLab-Korea/Awesome-Efficient-GS",
+    "areas": [
+      "3D/4D World Modeling"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2512.07197"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/Awesome-Efficient-GS/"
+      },
+      {
+        "label": "Awesome-Efficient-GS",
+        "url": "https://github.com/CMLab-Korea/Awesome-Efficient-GS"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdw_zOzQmKJ6TeTyBOKs54ZDhJ5shefz2hOr-XW4TKS82oT5-gKr9lokXKVp4-E-k1Ie5_YZHr2KHq00MvFPN1n_1RiXcL1fGLcX2HoRe-TRDkKJ1w-kMpusOWUVpddmMVkM-sY75pE59Zuws7O2058aY8h3eAq-Ijb85OAkEFG3MS8ySUn69bf1jKAW_Xf5hoHBofEU46VPB9QSLmix1Y22MMP04weyOBa_EBTLNk=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdw_zOzQmKJ6TeTyBOKs54ZDhJ5shefz2hOr-XW4TKS82oT5-gKr9lokXKVp4-E-k1Ie5_YZHr2KHq00MvFPN1n_1RiXcL1fGLcX2HoRe-TRDkKJ1w-kMpusOWUVpddmMVkM-sY75pE59Zuws7O2058aY8h3eAq-Ijb85OAkEFG3MS8ySUn69bf1jKAW_Xf5hoHBofEU46VPB9QSLmix1Y22MMP04weyOBa_EBTLNk=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2512.07197",
+    "project_url": "https://cmlab-korea.github.io/Awesome-Efficient-GS/",
+    "additional_links": [
+      {
+        "label": "Awesome-Efficient-GS",
+        "url": "https://github.com/CMLab-Korea/Awesome-Efficient-GS"
+      }
+    ]
   },
   {
     "id": 36,
@@ -660,14 +327,36 @@
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "3D/4D World Modeling",
-    "url": "https://cmlab.cau.ac.kr/publications",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "",
     "teaser_video": "",
-    "authors": "",
+    "authors": "Jaeyoon Lee*, Hojoon Jung*, Seongtae Hwang, Jihyong Oh†, and Jongwon Choi†",
     "affiliations": [],
-    "metadata_reviewed": false
+    "metadata_reviewed": true,
+    "areas": [
+      "3D/4D World Modeling"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://www.arxiv.org/abs/2512.07107"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cau-vilab.github.io/COREA/"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfTrXPGGr6grC1FakmIVRAXNBfnxbvE-ooTbZ6WjnSke4ouhS6YkkJbcSFrM3Zq3Q4mOgVEW2aUSbv6SFz_kgyTI0nu1bKmuAMMqe-4_vgTFNSlqV1h5cULNZyGyYdEiBuoNL3mJTuJsCdEziG_iyW29JO1n7NaMBhsXoCCBz1IjQpg-bz3JR5oSoRPoCZFBeDFiCFBPpqh92k85ehelJ9rNSztOh1NCIwwIITveGk=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfTrXPGGr6grC1FakmIVRAXNBfnxbvE-ooTbZ6WjnSke4ouhS6YkkJbcSFrM3Zq3Q4mOgVEW2aUSbv6SFz_kgyTI0nu1bKmuAMMqe-4_vgTFNSlqV1h5cULNZyGyYdEiBuoNL3mJTuJsCdEziG_iyW29JO1n7NaMBhsXoCCBz1IjQpg-bz3JR5oSoRPoCZFBeDFiCFBPpqh92k85ehelJ9rNSztOh1NCIwwIITveGk=w1280"
+      }
+    ],
+    "arxiv_url": "https://www.arxiv.org/abs/2512.07107",
+    "project_url": "https://cau-vilab.github.io/COREA/"
   },
   {
     "id": 37,
@@ -677,14 +366,26 @@
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "Generative & Agentic Visual AI",
-    "url": "https://cmlab.cau.ac.kr/publications",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "",
     "teaser_video": "",
-    "authors": "",
+    "authors": "Agus Gunawan*, Samuel Teodoro*, Soo Ye Kim, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
-    "metadata_reviewed": false
+    "metadata_reviewed": false,
+    "areas": [
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQffb1SJG8BXMEGqhpcHVQ-HlzCEnr-SsoQnB3VHJn76AX6uQrQLBpjX_4wH61tXpTlPOkpk4OkUNFzx_vFjWgXWKQVZrjoly0jo8_H1iFXsM1p3vCkV5D2mO46mPEKb3yaIPKHYDGmIDmRW7L88mft7kCJDCHIy4wO85ZgUnv61JLGFoXP4m22tumIpWX5i6opSKu-AB1QpMGF2l67Ek8Sq0bfT7_BK7nfFDpCFLiA=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQffb1SJG8BXMEGqhpcHVQ-HlzCEnr-SsoQnB3VHJn76AX6uQrQLBpjX_4wH61tXpTlPOkpk4OkUNFzx_vFjWgXWKQVZrjoly0jo8_H1iFXsM1p3vCkV5D2mO46mPEKb3yaIPKHYDGmIDmRW7L88mft7kCJDCHIy4wO85ZgUnv61JLGFoXP4m22tumIpWX5i6opSKu-AB1QpMGF2l67Ek8Sq0bfT7_BK7nfFDpCFLiA=w1280"
+      }
+    ],
+    "verification": "needs verification 37"
   },
   {
     "id": 38,
@@ -694,13 +395,1627 @@
     "venue": "Preprint / Under Review",
     "type": "Preprint",
     "area": "3D/4D World Modeling",
-    "url": "https://cmlab.cau.ac.kr/publications",
     "status": "Preprint / Under Review",
-    "venue_short": "PREPRINT",
+    "venue_short": "Preprint",
     "teaser": "",
     "teaser_video": "",
-    "authors": "",
+    "authors": "Weeyoung Kwon, Jeahun Sung, Minkyu Jeon, Chanho Eom, and Jihyong Oh†",
     "affiliations": [],
-    "metadata_reviewed": false
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision",
+    "areas": [
+      "3D/4D World Modeling",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2506.16262"
+      },
+      {
+        "label": "Awesome-3D-Low-Level-Vision",
+        "url": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision/tree/main"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdOyHWXwikf0JJ0DZiDJ6QJqKIw4dVauswkfYjTkL2KFCYc7osdIz8pIVxl5k05-wDYGm1FGOeGELJIriZFM2yvJXS6KEqo_Qkv_pc7lmlYGYb4bKFQfBGrb2zmK-pxlpFyWnVOpCc8z6L3Eft21sXejzA8l0xYsAb5TaC4xOH8FN3-6K18LfYn6lDZjq0nI99w5PzFgBDhklGEraiYEErqlHdJBDsriKAnWtV7O2A=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdOyHWXwikf0JJ0DZiDJ6QJqKIw4dVauswkfYjTkL2KFCYc7osdIz8pIVxl5k05-wDYGm1FGOeGELJIriZFM2yvJXS6KEqo_Qkv_pc7lmlYGYb4bKFQfBGrb2zmK-pxlpFyWnVOpCc8z6L3Eft21sXejzA8l0xYsAb5TaC4xOH8FN3-6K18LfYn6lDZjq0nI99w5PzFgBDhklGEraiYEErqlHdJBDsriKAnWtV7O2A=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2506.16262",
+    "additional_links": [
+      {
+        "label": "Awesome-3D-Low-Level-Vision",
+        "url": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision/tree/main"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "short": "MotionGrounder",
+    "title": "Grounded Multi-Object Motion Transfer via Diffusion Transformer",
+    "year": 2026,
+    "venue": "NeurIPS",
+    "type": "Conference",
+    "area": "Generative & Agentic Visual AI",
+    "status": "Published",
+    "venue_short": "NeurIPS'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Samuel Teodoro, Yun Chen, Agus Gunawan, Soo Ye Kim, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [
+      "Adobe Research",
+      "KAIST"
+    ],
+    "metadata_reviewed": false,
+    "areas": [
+      "Generative & Agentic Visual AI",
+      "Video & Motion Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2026",
+        "url": "https://arxiv.org/abs/2604.00853"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/motiongrounder-site/"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc1_QhF3TqeHMPBt_yFOG2Sv8rCtIH5zt9QAx5ap9fz-8IwCzqwB4ep9bO0n039SW19CchODNIgmMImbLBougBM4aORL6j_3TpMwea69eROnxNhmJgdaaB1Bl73bH1ScRVSbITjMfNRCkLVlJMjdEUpa8QeOmYU3VjN7nHjT0iy24C8Qug6d9HM_wkEGNbzjmyTKm7fXJmAtFLRCT1VWSuZ3NJY8TYH9z0XnqB2suw=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc1_QhF3TqeHMPBt_yFOG2Sv8rCtIH5zt9QAx5ap9fz-8IwCzqwB4ep9bO0n039SW19CchODNIgmMImbLBougBM4aORL6j_3TpMwea69eROnxNhmJgdaaB1Bl73bH1ScRVSbITjMfNRCkLVlJMjdEUpa8QeOmYU3VjN7nHjT0iy24C8Qug6d9HM_wkEGNbzjmyTKm7fXJmAtFLRCT1VWSuZ3NJY8TYH9z0XnqB2suw=w1280"
+      }
+    ],
+    "verification": "needs verification 1",
+    "arxiv_url": "https://arxiv.org/abs/2604.00853",
+    "project_url": "https://kaist-viclab.github.io/motiongrounder-site/",
+    "source_venue": "NeurIPS 2026 (Acceptance Rate: 25.7% ≈ 7,900/30,709)"
+  },
+  {
+    "id": 2,
+    "short": "PRIMEdit",
+    "title": "Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset",
+    "year": 2026,
+    "venue": "IEEE TPAMI",
+    "type": "Journal",
+    "area": "Generative & Agentic Visual AI",
+    "status": "Published",
+    "venue_short": "TPAMI'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Samuel Teodoro*, Agus Gunawan*, Soo Ye Kim, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [
+      "Adobe Research",
+      "KAIST"
+    ],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/PRIMEdit",
+    "areas": [
+      "Generative & Agentic Visual AI",
+      "Video & Motion Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2412.12877"
+      },
+      {
+        "label": "IEEE TPAMI",
+        "url": "https://ieeexplore.ieee.org/document/11646984"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/primedit-site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/PRIMEdit"
+      },
+      {
+        "label": "MIVE Dataset",
+        "url": "https://drive.google.com/file/d/1JByzWLx2U0ezr8GOMUkqcOv0Tr3Wcka-/view"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc_EG8snzAEPDqB23AtRz_3NGWMBXlrEq2QGlNUMCAE1l_TiydfIwcJ7RelLa2fvwB6RA39EbQQlN1X30XN0DgAVvMblfFxct2pRmXRRC1h16xZZyBzhmp4teQ5fixORAMtL9KBbO3vDDiBXL1MzYdCneIl48p2KY3BvweRS3Ecl32xWKEhGNG-5F4K_bay08A5GkAqwW4ZAf965rBhnOv7_WgIL8qJcWz10SJ5=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc_EG8snzAEPDqB23AtRz_3NGWMBXlrEq2QGlNUMCAE1l_TiydfIwcJ7RelLa2fvwB6RA39EbQQlN1X30XN0DgAVvMblfFxct2pRmXRRC1h16xZZyBzhmp4teQ5fixORAMtL9KBbO3vDDiBXL1MzYdCneIl48p2KY3BvweRS3Ecl32xWKEhGNG-5F4K_bay08A5GkAqwW4ZAf965rBhnOv7_WgIL8qJcWz10SJ5=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2412.12877",
+    "venue_url": "https://ieeexplore.ieee.org/document/11646984",
+    "project_url": "https://kaist-viclab.github.io/primedit-site/",
+    "code_url": "https://github.com/KAIST-VICLab/PRIMEdit",
+    "dataset_url": "https://drive.google.com/file/d/1JByzWLx2U0ezr8GOMUkqcOv0Tr3Wcka-/view",
+    "source_venue": "IEEE TPAMI (IF=20.4) vol. 48, issue 11, pp. 15571 - 15588, Nov. 2026. (DOI: 10.1109/TPAMI.2026.3722239)"
+  },
+  {
+    "id": 3,
+    "short": "FMA-Net++",
+    "title": "Motion- and Exposure-Aware Joint Video Super-Resolution and Deblurring",
+    "year": 2026,
+    "venue": "ECCV",
+    "type": "Conference",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "ECCV'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Geunhyuk Youk, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [
+      "KAIST"
+    ],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/FMA-Net-PlusPlus",
+    "areas": [
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "†",
+        "url": "https://weidixie.github.io/"
+      },
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2512.04390"
+      },
+      {
+        "label": "ECCV'26",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-032-37035-8_35"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/fmanetpp_site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/FMA-Net-PlusPlus"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQd4EsJoJPGD6SAJ5-tH4k3mpw0F59pHO1kabJ5wwQSKVxWQf04iF435txB-K_uxZd0WZqOBngPFyNmBYb5P7rELPaqHrVcJ1b2cChmr8Soh8G0gezWCrL8oWGC6P9vBxvpTs9IiDd7aiEvP1yNNMSTx_kika6bkpFh9TpUs5ucjEc_j-Zh4ZjvI0eCTx7ZlcClvLkf9Quv-ZpgSKn0jiLKATfSqpSNByujEf2e1=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQd4EsJoJPGD6SAJ5-tH4k3mpw0F59pHO1kabJ5wwQSKVxWQf04iF435txB-K_uxZd0WZqOBngPFyNmBYb5P7rELPaqHrVcJ1b2cChmr8Soh8G0gezWCrL8oWGC6P9vBxvpTs9IiDd7aiEvP1yNNMSTx_kika6bkpFh9TpUs5ucjEc_j-Zh4ZjvI0eCTx7ZlcClvLkf9Quv-ZpgSKn0jiLKATfSqpSNByujEf2e1=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2512.04390",
+    "venue_url": "https://link.springer.com/chapter/10.1007/978-3-032-37035-8_35",
+    "project_url": "https://kaist-viclab.github.io/fmanetpp_site/",
+    "code_url": "https://github.com/KAIST-VICLab/FMA-Net-PlusPlus",
+    "source_venue": "ECCV 2026 (Acceptance Rate: 27.5% ≈ 2,883/10,473)"
+  },
+  {
+    "id": 4,
+    "short": "AVSR-Diff",
+    "title": "Scale-Agnostic Diffusion Priors for Temporally Consistent Arbitrary-Scale Video Super-Resolution",
+    "year": 2026,
+    "venue": "ECCV",
+    "type": "Conference",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "ECCV'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Geunhyuk Youk, Jeonghyeok Do, Dayeon Kim, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [
+      "KAIST"
+    ],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/AVSR-Diff",
+    "areas": [
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "†",
+        "url": "https://weidixie.github.io/"
+      },
+      {
+        "label": "arXiv2026",
+        "url": "https://arxiv.org/abs/2607.00987"
+      },
+      {
+        "label": "ECCV'26",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-032-37517-9_5"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/AVSR-Diff"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeOFEN7rcVp8hSuOl_yk11B5a0ugJD8hxtBVrxEp0y1WrQTneSLPAzfBix4vihewLOQ2RdTBN27GcStKKntt8upqaE8kUwAjxkfhG4gRS3gmymOQzMZnIEqIl2a8ra1GNbUXcE_i8xV-7PxYa7_HDVB5kMSP-oFnYaELveLY9C19r4V_R1zO8Yp2ImVN6hmiLR68TnXLmBE8kN79yvjryCQ7WC3TM5Wa_QYNsX_C3I=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeOFEN7rcVp8hSuOl_yk11B5a0ugJD8hxtBVrxEp0y1WrQTneSLPAzfBix4vihewLOQ2RdTBN27GcStKKntt8upqaE8kUwAjxkfhG4gRS3gmymOQzMZnIEqIl2a8ra1GNbUXcE_i8xV-7PxYa7_HDVB5kMSP-oFnYaELveLY9C19r4V_R1zO8Yp2ImVN6hmiLR68TnXLmBE8kN79yvjryCQ7WC3TM5Wa_QYNsX_C3I=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2607.00987",
+    "venue_url": "https://link.springer.com/chapter/10.1007/978-3-032-37517-9_5",
+    "project_url": "https://kaist-viclab.github.io/AVSR-Diff/",
+    "code_url": "https://github.com/KAIST-VICLab/AVSR-Diff",
+    "source_venue": "ECCV 2026 (Acceptance Rate: 27.5% ≈ 2,883/10,473)"
+  },
+  {
+    "id": 5,
+    "short": "AceVFI",
+    "title": "A Comprehensive Survey of Advances in Video Frame Interpolation",
+    "year": 2026,
+    "venue": "IEEE TCSVT",
+    "type": "Journal",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "TCSVT'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Dahyeon Kye, Changhyun Roh, Sukhun Ko, Chanho Eom, and Jihyong Oh†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation",
+    "areas": [
+      "Video & Motion Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2506.01061"
+      },
+      {
+        "label": "IEEE TCSVT",
+        "url": "https://ieeexplore.ieee.org/document/11427010"
+      },
+      {
+        "label": "Awesome-Video-Frame-Interpolation",
+        "url": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf_t6LGklbiQRO7RI-WWHshSEZL8-oE_gUsgo5OXTbu5TNTAwLZknbPu0MQs-YGw9p-R_3wB3GC64JYC7vokmjwCluuiXAtsHyAcETPryRYW_X_McDbPXBIO3Ca7Tte-cj4fLRI293S6dW8rZ-iYs47TIwh_5KlcOX-q6q4WleLN4sOiVUgVGY2aa1gcqecjOFiljx3eX_S9cnUDK-Sh_0XaPVANpBtIiLKf_ad=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf_t6LGklbiQRO7RI-WWHshSEZL8-oE_gUsgo5OXTbu5TNTAwLZknbPu0MQs-YGw9p-R_3wB3GC64JYC7vokmjwCluuiXAtsHyAcETPryRYW_X_McDbPXBIO3Ca7Tte-cj4fLRI293S6dW8rZ-iYs47TIwh_5KlcOX-q6q4WleLN4sOiVUgVGY2aa1gcqecjOFiljx3eX_S9cnUDK-Sh_0XaPVANpBtIiLKf_ad=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2506.01061",
+    "venue_url": "https://ieeexplore.ieee.org/document/11427010",
+    "additional_links": [
+      {
+        "label": "Awesome-Video-Frame-Interpolation",
+        "url": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation"
+      }
+    ],
+    "source_venue": "IEEE TCSVT (IF=11.1) vol. 36, issue 7, pp. 9477-9501, July 2026. (DOI: 10.1109/TCSVT.2026.3672288)"
+  },
+  {
+    "id": 6,
+    "short": "MoRel",
+    "title": "Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification",
+    "year": 2026,
+    "venue": "CVPR · Highlight",
+    "type": "Conference",
+    "area": "3D/4D World Modeling",
+    "status": "Published",
+    "venue_short": "CVPR'26",
+    "teaser": "assets/media/publications/morel/teaser.webp",
+    "teaser_video": "assets/media/publications/morel/preview.mp4",
+    "authors": "Sangwoon Kwak*, Weeyoung Kwon*, Jun Young Jeong, Geonho Kim, Won-Sik Cheong, and Jihyong Oh†",
+    "affiliations": [
+      "ETRI"
+    ],
+    "metadata_reviewed": true,
+    "teaser_alt": "Diagram of the MoRel anchor relay method",
+    "teaser_video_label": "MoRel dynamic bicycle reconstruction demo",
+    "cmlab_lead_authors": [
+      "Weeyoung Kwon"
+    ],
+    "featured_order": 1,
+    "metadata_source": "https://github.com/CMLab-Korea/MoRel",
+    "distinction": "Highlight",
+    "distinction_percent": "3.6%",
+    "distinction_source": "https://cmlab.cau.ac.kr/publications",
+    "areas": [
+      "3D/4D World Modeling",
+      "Video & Motion Intelligence"
+    ],
+    "source_title": "Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectioanl Blending with Hierarchical Densification",
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://www.arxiv.org/abs/2512.09270"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/MoRel/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/CMLab-Korea/CVPR26-MoRel"
+      },
+      {
+        "label": "CVPR2026",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Kwak_MoRel_Long-Range_Flicker-Free_4D_Motion_Modeling_via_Anchor_Relay-based_Bidirectioanl_CVPR_2026_paper.html"
+      },
+      {
+        "label": "Video",
+        "url": "https://youtu.be/QAhEOTfg8bw?si=mLo6vrNwz3eespRO"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe3oaGZH1-d6IfPsQI_AUIdRKvNQ0uJupS9Ma9wlQ-GVU2DxLoxdKAyGcfLeX2E1rCMCcuMoqYcRyv8gg5I729Z8gBLM8w5jZSkuUt5frUxFK7Qobe_z4qiJnztKPu06pRZSJK4V8mInmIE06i-jnb2E1zIc1M48P5dc-yzACOEfBy4nwJuHoKKBKjJIpuzj2v9ZsodRpe3WAkCwld-jldI-mJsRmhl1inIo04c=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe3oaGZH1-d6IfPsQI_AUIdRKvNQ0uJupS9Ma9wlQ-GVU2DxLoxdKAyGcfLeX2E1rCMCcuMoqYcRyv8gg5I729Z8gBLM8w5jZSkuUt5frUxFK7Qobe_z4qiJnztKPu06pRZSJK4V8mInmIE06i-jnb2E1zIc1M48P5dc-yzACOEfBy4nwJuHoKKBKjJIpuzj2v9ZsodRpe3WAkCwld-jldI-mJsRmhl1inIo04c=w1280"
+      }
+    ],
+    "arxiv_url": "https://www.arxiv.org/abs/2512.09270",
+    "project_url": "https://cmlab-korea.github.io/MoRel/",
+    "code_url": "https://github.com/CMLab-Korea/CVPR26-MoRel",
+    "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Kwak_MoRel_Long-Range_Flicker-Free_4D_Motion_Modeling_via_Anchor_Relay-based_Bidirectioanl_CVPR_2026_paper.html",
+    "additional_links": [
+      {
+        "label": "Video",
+        "url": "https://youtu.be/QAhEOTfg8bw?si=mLo6vrNwz3eespRO"
+      }
+    ],
+    "source_venue": "CVPR 2026 (🏅Highlight Paper Rate: 3.6% ≈ 578/16,092)"
+  },
+  {
+    "id": 7,
+    "short": "FRAMER",
+    "title": "Frequency-Aligned Self-Distillation with Adaptive Modulation Leveraging Diffusion Priors for Real-World Image Super-Resolution",
+    "year": 2026,
+    "venue": "CVPR",
+    "type": "Conference",
+    "area": "Pixel-Level Intelligence",
+    "status": "Published",
+    "venue_short": "CVPR'26",
+    "teaser": "assets/media/publications/framer/teaser.webp",
+    "teaser_video": "",
+    "authors": "Seungho Choi, Jeahun Sung, and Jihyong Oh†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "teaser_alt": "FRAMER super-resolution result showing a tiger",
+    "cmlab_lead_authors": [
+      "Seungho Choi"
+    ],
+    "featured_order": 2,
+    "metadata_source": "https://github.com/CMLab-Korea/FRAMER",
+    "areas": [
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2512.01390"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/FRAMER/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/CMLab-Korea/CVPR26-FRAMER"
+      },
+      {
+        "label": "CVPR2026",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Choi_FRAMER_Frequency-Aligned_Self-Distillation_with_Adaptive_Modulation_Leveraging_Diffusion_Priors_for_CVPR_2026_paper.html"
+      },
+      {
+        "label": "Video",
+        "url": "https://youtu.be/MkVoTBUwJ0o?si=VXUyLtzc7Sh18d4-"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfcpaDpwLFWc0zsCvqSwfqr9tvGXr1hAZy44DOn1LoG_NdcYHOUuj5AqGP69pW0byK32MNLEniigy2pLMeG7oYUb_9cBRrElVFtGVRmhZo2MyygSGIrFO2DG4jod1vP43Ed8WqPSWX4T91XMTMHBUSZq90XU_b8vBtBRZKyVvvfhhii7DmQvK4Y1mxdI36dUpGgLiYdjpi6lsXVLIdBdnsZkhs9WLAd9_-OVLWLatY=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfcpaDpwLFWc0zsCvqSwfqr9tvGXr1hAZy44DOn1LoG_NdcYHOUuj5AqGP69pW0byK32MNLEniigy2pLMeG7oYUb_9cBRrElVFtGVRmhZo2MyygSGIrFO2DG4jod1vP43Ed8WqPSWX4T91XMTMHBUSZq90XU_b8vBtBRZKyVvvfhhii7DmQvK4Y1mxdI36dUpGgLiYdjpi6lsXVLIdBdnsZkhs9WLAd9_-OVLWLatY=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2512.01390",
+    "project_url": "https://cmlab-korea.github.io/FRAMER/",
+    "code_url": "https://github.com/CMLab-Korea/CVPR26-FRAMER",
+    "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Choi_FRAMER_Frequency-Aligned_Self-Distillation_with_Adaptive_Modulation_Leveraging_Diffusion_Priors_for_CVPR_2026_paper.html",
+    "additional_links": [
+      {
+        "label": "Video",
+        "url": "https://youtu.be/MkVoTBUwJ0o?si=VXUyLtzc7Sh18d4-"
+      }
+    ],
+    "source_venue": "CVPR 2026 (Acceptance Rate: 25.42% ≈ 4,090/16,092)"
+  },
+  {
+    "id": 8,
+    "short": "EcoSplat",
+    "title": "Efficiency-controllable Feed-forward 3D Gaussian Splatting from Multi-view Images",
+    "year": 2026,
+    "venue": "CVPR · Highlight",
+    "type": "Conference",
+    "area": "3D/4D World Modeling",
+    "status": "Published",
+    "venue_short": "CVPR'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Jongmin Park*, Minh-Quan Viet Bui*, Juan Luis Gonzalez, Jaeho Moon, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [
+      "KAIST"
+    ],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/EcoSplat",
+    "distinction": "Highlight",
+    "distinction_percent": "3.6%",
+    "distinction_source": "https://cmlab.cau.ac.kr/publications",
+    "areas": [
+      "3D/4D World Modeling"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2512.18692"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/ecosplat-site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/EcoSplat"
+      },
+      {
+        "label": "CVPR2026",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bui_EcoSplat_Efficiency-controllable_Feed-forward_3D_Gaussian_Splatting_from_Multi-view_Images_CVPR_2026_paper.html"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcVhZb28PE9MYJGyYqIPWi1mRxuYe_pOFqRyQelLW-JJNyuXcKlGrw2C8DsjdxQX65F7W_76jVMunQV6zWHNSEQ-W50p492iHiqnBowX7CI8OeLCpnOqZA9SSKQOVQQqDetb6SeWgOO386k9fMALiHHJlR8jB9LuQQHuTldu697V3qLEc0n0-HPPvoLvr-8fdAnpPpYlDFu1wjZ1tf6-vmq_Qi385FFoX-zrCdQEjI=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcVhZb28PE9MYJGyYqIPWi1mRxuYe_pOFqRyQelLW-JJNyuXcKlGrw2C8DsjdxQX65F7W_76jVMunQV6zWHNSEQ-W50p492iHiqnBowX7CI8OeLCpnOqZA9SSKQOVQQqDetb6SeWgOO386k9fMALiHHJlR8jB9LuQQHuTldu697V3qLEc0n0-HPPvoLvr-8fdAnpPpYlDFu1wjZ1tf6-vmq_Qi385FFoX-zrCdQEjI=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2512.18692",
+    "project_url": "https://kaist-viclab.github.io/ecosplat-site/",
+    "code_url": "https://github.com/KAIST-VICLab/EcoSplat",
+    "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bui_EcoSplat_Efficiency-controllable_Feed-forward_3D_Gaussian_Splatting_from_Multi-view_Images_CVPR_2026_paper.html",
+    "source_venue": "CVPR 2026 (🏅Highlight Paper Rate: 3.6% ≈ 578/16,092)"
+  },
+  {
+    "id": 9,
+    "short": "FLAIR",
+    "title": "Frequency- and Locality-Aware Implicit Neural Representations",
+    "year": 2026,
+    "venue": "CVPR Findings",
+    "type": "Conference",
+    "area": "Pixel-Level Intelligence",
+    "status": "Published",
+    "venue_short": "CVPR'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Sukhun Ko, SeokHyun Youn, Dahyeon Kye, Kyle Min, Chanho Eom, and Jihyong Oh†",
+    "affiliations": [
+      "Oracle"
+    ],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/CMLab-Korea/CVPRF26-FLAIR",
+    "areas": [
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://www.arxiv.org/abs/2508.13544"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/FLAIR/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/CMLab-Korea/CVPRF26-FLAIR"
+      },
+      {
+        "label": "CVPRF2026",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026F/html/Ko_FLAIR_Frequency-_and_Locality-Aware_Implicit_Neural_Representations_CVPRF_2026_paper.html"
+      },
+      {
+        "label": "Video",
+        "url": "https://youtu.be/kc-E0tKhWIo?si=zvbIj3KcBtcrPvdD"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfaapzeNJ_0rf07dLRuN1no-0Z9nIAb40mADs_5V7EQMultdYlFDYIRCkYswk4rUKlO4890mlAq52HMRszyCzCrRCBqizxEnfjWTeyiVBlhjC94n37_oQOl2Ww1JvXGcAvbOagJBlLyETTwFmuffHfSUG8szw9DfZK3xBGMQdqYTRtvXcfMtBYAXWr4cO4JItY2y7o2Vy_PUBloVsZNgts0iETVO77Xxrm7ZdeB=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfaapzeNJ_0rf07dLRuN1no-0Z9nIAb40mADs_5V7EQMultdYlFDYIRCkYswk4rUKlO4890mlAq52HMRszyCzCrRCBqizxEnfjWTeyiVBlhjC94n37_oQOl2Ww1JvXGcAvbOagJBlLyETTwFmuffHfSUG8szw9DfZK3xBGMQdqYTRtvXcfMtBYAXWr4cO4JItY2y7o2Vy_PUBloVsZNgts0iETVO77Xxrm7ZdeB=w1280"
+      }
+    ],
+    "arxiv_url": "https://www.arxiv.org/abs/2508.13544",
+    "project_url": "https://cmlab-korea.github.io/FLAIR/",
+    "code_url": "https://github.com/CMLab-Korea/CVPRF26-FLAIR",
+    "venue_url": "https://openaccess.thecvf.com/content/CVPR2026F/html/Ko_FLAIR_Frequency-_and_Locality-Aware_Implicit_Neural_Representations_CVPRF_2026_paper.html",
+    "additional_links": [
+      {
+        "label": "Video",
+        "url": "https://youtu.be/kc-E0tKhWIo?si=zvbIj3KcBtcrPvdD"
+      }
+    ],
+    "source_venue": "CVPR 2026 (Findings) (Acceptance Rate: 36.1% ≈ (4,090+1,717)/16,092)"
+  },
+  {
+    "id": 10,
+    "short": "OmniText",
+    "title": "A Training-Free Generalist for Controllable Text-Image Manipulation",
+    "year": 2026,
+    "venue": "ICLR",
+    "type": "Conference",
+    "area": "Generative & Agentic Visual AI",
+    "status": "Published",
+    "venue_short": "ICLR'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Agus Gunawan*, Samuel Teodoro*, Yun Chen, Soo Ye Kim, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/OmniText",
+    "areas": [
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "ICLR2026",
+        "url": "https://openreview.net/forum?id=zF7GyVXVw6&noteId=zPrBypnAl3"
+      },
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2510.24093"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/omnitext-site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/OmniText"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcvxqL3H1Bw_tcA4XpaQ0bWpgj3mceGJQnylA5io2Sg2hDfW8ajMtKJgkMp5nmKtf6FaZNgQKgxx3A_0mmE6TnrvcKeMIeGuUeQV3kl_uXT3lpYhO4TtYsQJN1sqou8WZ8WUPS13ygfnQNmceNedk0VE3ngaXzfltA3Ur5aUNWTjrqp87oBkTQkyfjnQqYtSNE3HuRafACuN-D5GVa8qNk9QxDfgNtzdsYY8gKGq2Q=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcvxqL3H1Bw_tcA4XpaQ0bWpgj3mceGJQnylA5io2Sg2hDfW8ajMtKJgkMp5nmKtf6FaZNgQKgxx3A_0mmE6TnrvcKeMIeGuUeQV3kl_uXT3lpYhO4TtYsQJN1sqou8WZ8WUPS13ygfnQNmceNedk0VE3ngaXzfltA3Ur5aUNWTjrqp87oBkTQkyfjnQqYtSNE3HuRafACuN-D5GVa8qNk9QxDfgNtzdsYY8gKGq2Q=w1280"
+      }
+    ],
+    "venue_url": "https://openreview.net/forum?id=zF7GyVXVw6&noteId=zPrBypnAl3",
+    "arxiv_url": "https://arxiv.org/abs/2510.24093",
+    "project_url": "https://kaist-viclab.github.io/omnitext-site/",
+    "code_url": "https://github.com/KAIST-VICLab/OmniText",
+    "dataset_url": "https://huggingface.co/datasets/agusgun/OmniText-Bench",
+    "source_venue": "ICLR 2026 (Acceptance Rate: 28% ≈ 5,320/19,000)"
+  },
+  {
+    "id": 11,
+    "short": "MoCHA-former",
+    "title": "Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing",
+    "year": 2026,
+    "venue": "Neurocomputing",
+    "type": "Journal",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "Neurocomputing'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Jeahun Sung, Changhyun Roh, Chanho Eom, and Jihyong Oh†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/CMLab-Korea/Neurocomputing26-MoCHA-former",
+    "areas": [
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "Neurocomputing",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225031492?via%3Dihub"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/MoCHA-former/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/CMLab-Korea/MoCHA-former-arXiv"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQevCM7CE6uInbW_jY6Dm2LO00gfWEzVEgdbzybef_uXdjqPIxhbzNPDbbcut3chTMEOLatZ5L3gGx9XCqsuYqTH3Absu5XeBD_2HPnR0yoyc42_3M1tHb5VysetG2v3gGSobtSX4MSm5rMHNtzDC_HozcPWx3n4Ex9x6yjT6iTvZIz2YCp4QmtO5NBxGcB6jFM0sSwdub5hzwQJ1MGV6QlnybXu7utfbm0f3eha=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQevCM7CE6uInbW_jY6Dm2LO00gfWEzVEgdbzybef_uXdjqPIxhbzNPDbbcut3chTMEOLatZ5L3gGx9XCqsuYqTH3Absu5XeBD_2HPnR0yoyc42_3M1tHb5VysetG2v3gGSobtSX4MSm5rMHNtzDC_HozcPWx3n4Ex9x6yjT6iTvZIz2YCp4QmtO5NBxGcB6jFM0sSwdub5hzwQJ1MGV6QlnybXu7utfbm0f3eha=w1280"
+      }
+    ],
+    "venue_url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225031492?via%3Dihub",
+    "project_url": "https://cmlab-korea.github.io/MoCHA-former/",
+    "code_url": "https://github.com/CMLab-Korea/MoCHA-former-arXiv",
+    "arxiv_url": "https://arxiv.org/pdf/2508.14423",
+    "source_venue": "Neurocomputing (IF=6.5) vol. 669, 132477, March 07, 2026 (DOI: https://doi.org/10.1016/j.neucom.2025.132477)"
+  },
+  {
+    "id": 12,
+    "short": "MoBGS",
+    "title": "Motion Deblurring Dynamic 3D Gaussian Splatting for Blurry Monocular Video",
+    "year": 2026,
+    "venue": "AAAI",
+    "type": "Conference",
+    "area": "3D/4D World Modeling",
+    "status": "Published",
+    "venue_short": "AAAI'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Minh-Quan Viet Bui*, Jongmin Park*, Juan Luis Gonzalez Bello, Jaeho Moon, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/MoBGS",
+    "areas": [
+      "3D/4D World Modeling",
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2504.15122"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/mobgs-site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/MoBGS"
+      },
+      {
+        "label": "AAAI2026",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37234"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcf67acMqWC3YySMQNyZ9_gqI8kbMqKtgAjekrT_iWrR-fl6HYxMBYFm2geN-seU-xxDZeIB3cdNjU51h7g6Bu8RyEj1etmQpGcOUY94-X-Gi_MTCq-bafRFjAH7IGOQnN9tzGp9ww0fs15xQhhm8B67-GH2a0saFl-uaIwZKV31DFUExGo2jhPCh3fuQZ0Zzyb7A9RBg_wD-S9VoGQdxzDzLKElq9WfcBh8RLlHRQ=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcf67acMqWC3YySMQNyZ9_gqI8kbMqKtgAjekrT_iWrR-fl6HYxMBYFm2geN-seU-xxDZeIB3cdNjU51h7g6Bu8RyEj1etmQpGcOUY94-X-Gi_MTCq-bafRFjAH7IGOQnN9tzGp9ww0fs15xQhhm8B67-GH2a0saFl-uaIwZKV31DFUExGo2jhPCh3fuQZ0Zzyb7A9RBg_wD-S9VoGQdxzDzLKElq9WfcBh8RLlHRQ=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2504.15122",
+    "project_url": "https://kaist-viclab.github.io/mobgs-site/",
+    "code_url": "https://github.com/KAIST-VICLab/MoBGS",
+    "venue_url": "https://ojs.aaai.org/index.php/AAAI/article/view/37234",
+    "source_venue": "AAAI 2026 (Acceptance Rate: 17.6% ≈ 4,167/23,680)"
+  },
+  {
+    "id": 13,
+    "short": "I-INR",
+    "title": "Iterative Implicit Neural Representations",
+    "year": 2026,
+    "venue": "AAAI",
+    "type": "Conference",
+    "area": "Pixel-Level Intelligence",
+    "status": "Published",
+    "venue_short": "AAAI'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Ali Haider*, Muhammad Salman Ali*, Maryam Qamar, Tahir Khalil, Soo Ye Kim, Jihyong Oh†, Enzo Tartaglione, and Sung-Ho Bae†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "areas": [
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2504.17364"
+      },
+      {
+        "label": "AAAI2026",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/42451"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe7fCzJQRsmpgJ3-pugiPbRS5wtjcftuVrg1EGItxRXQl_Z40EVag0YzKUhUx6bAPYIy_y11kFpJseA4tfqxTWllpAj4h0bHabr1WG9AQDNIqsWUlrVe6zQxxzdV85AyVDhRJ4hMvSpydiDR6SQQKMIjhMJSzZ53WFd54IVxxpB35Wx-VUwV9ShUPnVR7FEb2bJWY1ZfYX0gDu8wOk3sNxBgP3MHYu2_N7MJWvA=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe7fCzJQRsmpgJ3-pugiPbRS5wtjcftuVrg1EGItxRXQl_Z40EVag0YzKUhUx6bAPYIy_y11kFpJseA4tfqxTWllpAj4h0bHabr1WG9AQDNIqsWUlrVe6zQxxzdV85AyVDhRJ4hMvSpydiDR6SQQKMIjhMJSzZ53WFd54IVxxpB35Wx-VUwV9ShUPnVR7FEb2bJWY1ZfYX0gDu8wOk3sNxBgP3MHYu2_N7MJWvA=w1280"
+      },
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdgrMuPoiJMuxwJVpHdRRzrgh1otr6Sj1Dj8xcjhfObWYvDwBTtxKGt_LeWh2eXPi5naqQ99SBjlQNZUQCsptvMLwQskkf2tvmaFu8ouo32PBwu_0Yw3LT3rglucqDjkXY6r7otfoiMzCQ9CT4JLvqXwizdFyVLM4VGFxUAOTgq6BW05bqG8aqhMsDeP7Nlcx_-EhiN7FiKpienBzNNwjiqXIU4S7lGzuBesBOy=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdgrMuPoiJMuxwJVpHdRRzrgh1otr6Sj1Dj8xcjhfObWYvDwBTtxKGt_LeWh2eXPi5naqQ99SBjlQNZUQCsptvMLwQskkf2tvmaFu8ouo32PBwu_0Yw3LT3rglucqDjkXY6r7otfoiMzCQ9CT4JLvqXwizdFyVLM4VGFxUAOTgq6BW05bqG8aqhMsDeP7Nlcx_-EhiN7FiKpienBzNNwjiqXIU4S7lGzuBesBOy=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2504.17364",
+    "venue_url": "https://ojs.aaai.org/index.php/AAAI/article/view/42451",
+    "source_venue": "AAAI 2026 (Acceptance Rate: 17.6% ≈ 4,167/23,680)"
+  },
+  {
+    "id": 14,
+    "short": "SoFoNO",
+    "title": "Arbitrary-Scale Image Super-Resolution via Sobolev Fourier Neural Operator",
+    "year": 2026,
+    "venue": "Neurocomputing",
+    "type": "Journal",
+    "area": "Pixel-Level Intelligence",
+    "status": "Published",
+    "venue_short": "Neurocomputing'26",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Jong Kwon Oh*, Hwijae Son*, Hyung Ju Hwang, and Jihyong Oh†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/CMLab-Korea/Neurocomputing26-SoFoNO",
+    "areas": [
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "Neurocomputing",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://jongkwonoh.github.io/sofono-page/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/JongKwonOh/SoFoNO"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf1Fji80VYFSn_P06_Let97BwCHMinYP4H7pehHV9k944mVr1ldHDsXScZS6WKe7ZcFL6LGE1eOL_GaPPs_G4NdTeCKvFywnO0uBr0CkRJUYmWlbCHKgt6dEqV9G-kHdDDN6MHYS5ci_Waep6Vd8GpWQRVHtoOOGH1EXOSslywn4QkTUTmRswWexw9-I5QixAuCW3BXz2CVuVKIitfjCdfcsw_rxaRISWQhmKGSGNA=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf1Fji80VYFSn_P06_Let97BwCHMinYP4H7pehHV9k944mVr1ldHDsXScZS6WKe7ZcFL6LGE1eOL_GaPPs_G4NdTeCKvFywnO0uBr0CkRJUYmWlbCHKgt6dEqV9G-kHdDDN6MHYS5ci_Waep6Vd8GpWQRVHtoOOGH1EXOSslywn4QkTUTmRswWexw9-I5QixAuCW3BXz2CVuVKIitfjCdfcsw_rxaRISWQhmKGSGNA=w1280"
+      }
+    ],
+    "venue_url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165",
+    "project_url": "https://jongkwonoh.github.io/sofono-page/",
+    "code_url": "https://github.com/JongKwonOh/SoFoNO",
+    "source_venue": "Neurocomputing (IF=6.5) vol. 661, 14 January 2026, 131944 (DOI: https://doi.org/10.1016/j.neucom.2025.131944)"
+  },
+  {
+    "id": 15,
+    "short": "DiffPS",
+    "title": "Leveraging Prior Knowledge of Diffusion Model for Person Search",
+    "year": 2025,
+    "venue": "ICCV · Highlight",
+    "type": "Conference",
+    "area": "Generative & Agentic Visual AI",
+    "status": "Published",
+    "venue_short": "ICCV'25",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Giyeol Kim*, Sooyoung Yang*, Jihyong Oh, Myungjoo Kang, and Chanho Eom†",
+    "affiliations": [],
+    "metadata_reviewed": false,
+    "distinction": "Highlight",
+    "distinction_percent": "2.35%",
+    "distinction_source": "https://cmlab.cau.ac.kr/publications",
+    "areas": [
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "ICCV2025",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Kim_Leveraging_Prior_Knowledge_of_Diffusion_Model_for_Person_Search_ICCV_2025_paper.pdf"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://perceptualai-lab.github.io/DiffPS/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/PerceptualAI-Lab/DiffPS"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe6tvcZ59JvndgCcTiVwot2yO7yZqUnBiQRVRBR8e5K01ABBwa_XU2ouJCpFIMO1H_XqHHaqVaWRuRTCh29UGs2-6mk0Yx6lzhso3VEUvgzvJsL0EXFfgncOtOgI1CKD0CbkoSPHKNuHyBSwaExQ55YgM4s26yvmYAUNlsRZlZ92AT4MqzJSvlhuo1sWPANl9cYdS5kIGBE0VCribbzX4Du9BN7vvl4cOZYQ1cyXb0=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe6tvcZ59JvndgCcTiVwot2yO7yZqUnBiQRVRBR8e5K01ABBwa_XU2ouJCpFIMO1H_XqHHaqVaWRuRTCh29UGs2-6mk0Yx6lzhso3VEUvgzvJsL0EXFfgncOtOgI1CKD0CbkoSPHKNuHyBSwaExQ55YgM4s26yvmYAUNlsRZlZ92AT4MqzJSvlhuo1sWPANl9cYdS5kIGBE0VCribbzX4Du9BN7vvl4cOZYQ1cyXb0=w1280"
+      }
+    ],
+    "verification": "needs verification 15",
+    "venue_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Kim_Leveraging_Prior_Knowledge_of_Diffusion_Model_for_Person_Search_ICCV_2025_paper.pdf",
+    "project_url": "https://perceptualai-lab.github.io/DiffPS/",
+    "code_url": "https://github.com/PerceptualAI-Lab/DiffPS",
+    "source_venue": "ICCV 2025 (🏅Highlight Paper Rate: 2.35% ≈ 263/11,152)"
+  },
+  {
+    "id": 16,
+    "short": "MoBluRF",
+    "title": "Motion Deblurring Neural Radiance Fields for Blurry Monocular Video",
+    "year": 2025,
+    "venue": "IEEE TPAMI",
+    "type": "Journal",
+    "area": "3D/4D World Modeling",
+    "status": "Published",
+    "venue_short": "TPAMI'25",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Minh-Quan Viet Bui*, Jongmin Park*, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/MoBluRF",
+    "areas": [
+      "3D/4D World Modeling",
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "IEEE TPAMI",
+        "url": "https://ieeexplore.ieee.org/document/11017407"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/moblurf-site/"
+      },
+      {
+        "label": "DyBluRF 🫨",
+        "url": "https://kaist-viclab.github.io/dyblurf-site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/MoBluRF"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfEh0gm-E1TMEe4iifCUI4VTMVcfymM3eLofN4tqC4hESXyGIz5SZ2NH9tlwJ9T51po4R1FibgyryFvejP602UT21OjDbXojKYKqQJUjQsTy5wfnK0Jm1-rjRuhEMuLWGRjkFVHZgGHgxWieZdWoJTwE8ew1_0I0iNzon4DOqvy9zlnn6GZH8m6Kd2uM3bifcd8lC8gmR1CD-3rSDJYvLJtxx-kEMoLB4U5rQ_wUu0=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfEh0gm-E1TMEe4iifCUI4VTMVcfymM3eLofN4tqC4hESXyGIz5SZ2NH9tlwJ9T51po4R1FibgyryFvejP602UT21OjDbXojKYKqQJUjQsTy5wfnK0Jm1-rjRuhEMuLWGRjkFVHZgGHgxWieZdWoJTwE8ew1_0I0iNzon4DOqvy9zlnn6GZH8m6Kd2uM3bifcd8lC8gmR1CD-3rSDJYvLJtxx-kEMoLB4U5rQ_wUu0=w1280"
+      }
+    ],
+    "venue_url": "https://ieeexplore.ieee.org/document/11017407",
+    "project_url": "https://kaist-viclab.github.io/moblurf-site/",
+    "code_url": "https://github.com/KAIST-VICLab/MoBluRF",
+    "arxiv_url": "https://arxiv.org/abs/2312.13528",
+    "dataset_url": "https://huggingface.co/datasets/ImJongminPark/BlurryIPhone",
+    "additional_links": [
+      {
+        "label": "DyBluRF 🫨",
+        "url": "https://kaist-viclab.github.io/dyblurf-site/"
+      }
+    ],
+    "source_venue": "IEEE TPAMI (IF=18.6) vol. 47, issue 9, pp. 7752-7770, Sep. 2025 (DOI: 10.1109/TPAMI.2025.3574644)"
+  },
+  {
+    "id": 17,
+    "short": "Domain Generalization for Person Re-identification",
+    "title": "A Survey Towards Domain-Agnostic Person Matching",
+    "year": 2025,
+    "venue": "Neurocomputing",
+    "type": "Journal",
+    "area": "Generative & Agentic Visual AI",
+    "status": "Published",
+    "venue_short": "Neurocomputing'25",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Hyunseo Lee, Juhyun Park, Jihyong Oh, and Chanho Eom†",
+    "affiliations": [],
+    "metadata_reviewed": false,
+    "areas": [
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "†",
+        "url": "https://weidixie.github.io/"
+      },
+      {
+        "label": "Neurocomputing",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353"
+      },
+      {
+        "label": "Awesome-Domain-Generalizable-Person-Re-identification",
+        "url": "https://github.com/PerceptualAI-Lab/Awesome-Domain-Generalizable-Person-Re-ID"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcdy33Lm8RBZhGx8d9WJzu0MWve_CiJROjkjBhfcTwdANP9Ev7zK7Ef4j1YZwtAC638fkeQvVKwlV_z0Gn_MlVuVfig673yYmw1Y0swS9iCTzixSk_Fsz1g94-b1Lrz2uL0C0rceNk4421-LV7qtpKyOcun3tXLhV_7HREoPfZzeL3St0fVDw72qTGETRPGA_nv5b_f5c1atF75xwMHuu_r3SjoTP2FT4oTxs3iQbg=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcdy33Lm8RBZhGx8d9WJzu0MWve_CiJROjkjBhfcTwdANP9Ev7zK7Ef4j1YZwtAC638fkeQvVKwlV_z0Gn_MlVuVfig673yYmw1Y0swS9iCTzixSk_Fsz1g94-b1Lrz2uL0C0rceNk4421-LV7qtpKyOcun3tXLhV_7HREoPfZzeL3St0fVDw72qTGETRPGA_nv5b_f5c1atF75xwMHuu_r3SjoTP2FT4oTxs3iQbg=w1280"
+      }
+    ],
+    "verification": "needs verification 17",
+    "venue_url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353",
+    "additional_links": [
+      {
+        "label": "Awesome-Domain-Generalizable-Person-Re-identification",
+        "url": "https://github.com/PerceptualAI-Lab/Awesome-Domain-Generalizable-Person-Re-ID"
+      }
+    ],
+    "source_venue": "Neurocomputing (IF=6.5) vol. 649, no. 10, pp. 130763-130782, Oct. 07, 2025 (DOI: https://doi.org/10.1016/j.neucom.2025.130763)"
+  },
+  {
+    "id": 18,
+    "short": "SplineGS",
+    "title": "Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video",
+    "year": 2025,
+    "venue": "CVPR",
+    "type": "Conference",
+    "area": "3D/4D World Modeling",
+    "status": "Published",
+    "venue_short": "CVPR'25",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Jongmin Park*, Minh-Quan Viet Bui*, Juan Luis Gonzalez Bello, Jaeho Moon, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/SplineGS",
+    "areas": [
+      "3D/4D World Modeling",
+      "Video & Motion Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2024",
+        "url": "https://arxiv.org/abs/2412.09982"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/splinegs-site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/SplineGS"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf9gzyoiJBqpHyKRjm7d5QJYbA_iQ_6AYVn5qOFvyw43oVTZvKRjoPvQ0WP1UoPQNBYtt3fZdFGnU2l77-S8aOiB9KnIgx4JnU7sQElTKnnjSLOFsOAI_MpMku8_gem1-nwfqT4Jkb9QPI38quROMpkBwiEt_tUUaQeUs6KOhbrUsA1mptihsao-IMSpzky-zFQ8qwM5-YXgT1nClLbqSbCML-fqshmy6DfDTLL=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQf9gzyoiJBqpHyKRjm7d5QJYbA_iQ_6AYVn5qOFvyw43oVTZvKRjoPvQ0WP1UoPQNBYtt3fZdFGnU2l77-S8aOiB9KnIgx4JnU7sQElTKnnjSLOFsOAI_MpMku8_gem1-nwfqT4Jkb9QPI38quROMpkBwiEt_tUUaQeUs6KOhbrUsA1mptihsao-IMSpzky-zFQ8qwM5-YXgT1nClLbqSbCML-fqshmy6DfDTLL=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2412.09982",
+    "project_url": "https://kaist-viclab.github.io/splinegs-site/",
+    "code_url": "https://github.com/KAIST-VICLab/SplineGS",
+    "venue_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Park_SplineGS_Robust_Motion-Adaptive_Spline_for_Real-Time_Dynamic_3D_Gaussians_from_CVPR_2025_paper.pdf",
+    "source_venue": "CVPR 2025 (Acceptance Rate: 22.1% ≈ 2,878/13,008)"
+  },
+  {
+    "id": 19,
+    "short": "MoDec-GS",
+    "title": "Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting",
+    "year": 2025,
+    "venue": "CVPR",
+    "type": "Conference",
+    "area": "3D/4D World Modeling",
+    "status": "Published",
+    "venue_short": "CVPR'25",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Sangwoon Kwak, Joonsoo Kim, Jun Young Jeong, Won-Sik Cheong, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "areas": [
+      "3D/4D World Modeling",
+      "Video & Motion Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2501.03714"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/MoDecGS-site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/skwak-kaist/MoDec-GS"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQezRnbrQBE3uvh1KsWfXvkHp3aMrrg1qap53irALUD022VhoaHPcvLl8AkvGglefG39b4iv98OPLeUq8MYH_nwgXnWeG-mpijVloJa-0JBw3hDbjEqJykk3078w7wFnPe_XcwX9VnyZmjdTBpYJ5NG1Y8ubH83FeR_Ll71VA4cRvi0eg6_vDvxx1rFE5OjHbGQ2uUq2ny9lORjw2yl96ljqHdBKUny3roLIvvivc4g=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQezRnbrQBE3uvh1KsWfXvkHp3aMrrg1qap53irALUD022VhoaHPcvLl8AkvGglefG39b4iv98OPLeUq8MYH_nwgXnWeG-mpijVloJa-0JBw3hDbjEqJykk3078w7wFnPe_XcwX9VnyZmjdTBpYJ5NG1Y8ubH83FeR_Ll71VA4cRvi0eg6_vDvxx1rFE5OjHbGQ2uUq2ny9lORjw2yl96ljqHdBKUny3roLIvvivc4g=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2501.03714",
+    "project_url": "https://kaist-viclab.github.io/MoDecGS-site/",
+    "code_url": "https://github.com/skwak-kaist/MoDec-GS",
+    "source_venue": "CVPR 2025 (Acceptance Rate: 22.1% ≈ 2,878/13,008)"
+  },
+  {
+    "id": 20,
+    "short": "BiM-VFI",
+    "title": "Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions",
+    "year": 2025,
+    "venue": "CVPR",
+    "type": "Conference",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "CVPR'25",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Wonyong Seo, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/BiM-VFI",
+    "areas": [
+      "Video & Motion Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2024",
+        "url": "https://arxiv.org/abs/2412.11365"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/BiM-VFI_site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/BiM-VFI"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQczAYQ_esfCS0i3IpdF5ui_CQcwdfN4kQelTeZCVAuz_8SmDy5CkuSbbY2p1dE6fMDkB3BG6tZYIdP_ypWKsWYNidZKmmyu_vAuD0jzQ9w6DJ4-j2ZVNmQVRiiP98CRNaptzyaJ6NUlTbleln9kcMMRuR5Y7W-Bf8yX8L6flXFyfjlljA_Xtp5s2fSo2w0A8W3OijN-8Dh389OJiHovByKbYuZp6KLoLxZNANNyu44=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQczAYQ_esfCS0i3IpdF5ui_CQcwdfN4kQelTeZCVAuz_8SmDy5CkuSbbY2p1dE6fMDkB3BG6tZYIdP_ypWKsWYNidZKmmyu_vAuD0jzQ9w6DJ4-j2ZVNmQVRiiP98CRNaptzyaJ6NUlTbleln9kcMMRuR5Y7W-Bf8yX8L6flXFyfjlljA_Xtp5s2fSo2w0A8W3OijN-8Dh389OJiHovByKbYuZp6KLoLxZNANNyu44=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2412.11365",
+    "project_url": "https://kaist-viclab.github.io/BiM-VFI_site/",
+    "code_url": "https://github.com/KAIST-VICLab/BiM-VFI",
+    "source_venue": "CVPR 2025 (Acceptance Rate: 22.1% ≈ 2,878/13,008)"
+  },
+  {
+    "id": 21,
+    "short": "FMA-Net",
+    "title": "Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring",
+    "year": 2024,
+    "venue": "CVPR · Oral",
+    "type": "Conference",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "CVPR'24",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Geunhyuk Youk, Jihyong Oh†, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/KAIST-VICLab/FMA-Net",
+    "distinction": "Oral",
+    "distinction_percent": "0.78%",
+    "distinction_source": "https://cmlab.cau.ac.kr/publications",
+    "areas": [
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2024",
+        "url": "https://arxiv.org/abs/2401.03707"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://kaist-viclab.github.io/fmanet-site/"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/KAIST-VICLab/FMA-Net"
+      },
+      {
+        "label": "Demo",
+        "url": "https://www.youtube.com/watch?v=kO7KavOH6vw"
+      },
+      {
+        "label": "Video6mins",
+        "url": "https://www.youtube.com/watch?v=G6qqJXztJDM"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfv3LBKa2tnUmzpRTU-AJIqzFhLUUW7v4JBP1hURl4xWg3gpPYt0PZX8bXdj8VhxZe7r3NO4dIMH2o-enS-jgCOZLXZ_6y9zezfuLHczjVIq8V0gFCrX3mfHGi0-WWO-ieZT8pNcub-OQJlu8OWIej-CzJylDj1Nbu3ZgaYoa1qJy8yaB374gzweI81DJ7at4AnJDxKstqrDXTIy9ceXRZXEZIemXzbg-bI0VyhDIY=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQfv3LBKa2tnUmzpRTU-AJIqzFhLUUW7v4JBP1hURl4xWg3gpPYt0PZX8bXdj8VhxZe7r3NO4dIMH2o-enS-jgCOZLXZ_6y9zezfuLHczjVIq8V0gFCrX3mfHGi0-WWO-ieZT8pNcub-OQJlu8OWIej-CzJylDj1Nbu3ZgaYoa1qJy8yaB374gzweI81DJ7at4AnJDxKstqrDXTIy9ceXRZXEZIemXzbg-bI0VyhDIY=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2401.03707",
+    "project_url": "https://kaist-viclab.github.io/fmanet-site/",
+    "code_url": "https://github.com/KAIST-VICLab/FMA-Net",
+    "additional_links": [
+      {
+        "label": "Demo",
+        "url": "https://www.youtube.com/watch?v=kO7KavOH6vw"
+      },
+      {
+        "label": "Video6mins",
+        "url": "https://www.youtube.com/watch?v=G6qqJXztJDM"
+      }
+    ],
+    "source_venue": "CVPR 2024 (🏅Oral Paper Rate: 0.78% ≈ 90/11532, Acceptance Rate: 23.6% ≈ 2,719/11,532)"
+  },
+  {
+    "id": 22,
+    "short": "DeMFI",
+    "title": "Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting",
+    "year": 2022,
+    "venue": "ECCV",
+    "type": "Conference",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "ECCV'22",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Jihyong Oh and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/JihyongOh/DeMFI",
+    "areas": [
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "ECCV2022",
+        "url": "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670193.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670193-supp.pdf"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/JihyongOh/DeMFI"
+      },
+      {
+        "label": "Demo",
+        "url": "https://www.youtube.com/watch?v=J93tW1uwRy0"
+      },
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/1iKj_kASk1FphCCw2794LRLl6jWO6BvGr/view?usp=sharing"
+      },
+      {
+        "label": "Video5mins",
+        "url": "https://youtu.be/cMNkP9qJCR4"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeqAcz3QHH5c6SqY0-lkdhLZolSN6uYqhRRbCD-A4Wb3-Lu88VseHMKCt52PthMxOI7w87DWFuK_MatfUhguIn2CBqdlzc0nOO1jCIBXmRi0J4B4nRu8BXvC0dYxqWEYmSFi5b_cLo_e14aFGDxfvuUF7-yVjkZ91MOHaotbFT0vCwiTeJhMXNGeypWB28g03GOyShyTnIW3loybUx8hlopUtNR43B3Ux-m4hIijlo=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeqAcz3QHH5c6SqY0-lkdhLZolSN6uYqhRRbCD-A4Wb3-Lu88VseHMKCt52PthMxOI7w87DWFuK_MatfUhguIn2CBqdlzc0nOO1jCIBXmRi0J4B4nRu8BXvC0dYxqWEYmSFi5b_cLo_e14aFGDxfvuUF7-yVjkZ91MOHaotbFT0vCwiTeJhMXNGeypWB28g03GOyShyTnIW3loybUx8hlopUtNR43B3Ux-m4hIijlo=w1280"
+      }
+    ],
+    "venue_url": "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670193.pdf",
+    "code_url": "https://github.com/JihyongOh/DeMFI",
+    "arxiv_url": "https://arxiv.org/abs/2111.09985",
+    "additional_links": [
+      {
+        "label": "Supp",
+        "url": "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670193-supp.pdf"
+      },
+      {
+        "label": "Demo",
+        "url": "https://www.youtube.com/watch?v=J93tW1uwRy0"
+      },
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/1iKj_kASk1FphCCw2794LRLl6jWO6BvGr/view?usp=sharing"
+      },
+      {
+        "label": "Video5mins",
+        "url": "https://youtu.be/cMNkP9qJCR4"
+      }
+    ],
+    "source_venue": "ECCV 2022 (Acceptance Rate: 28% ≈ 1,650/5,803 )"
+  },
+  {
+    "id": 23,
+    "short": "XVFI",
+    "title": "eXtreme Video Frame Interpolation",
+    "year": 2021,
+    "venue": "ICCV · Oral",
+    "type": "Conference",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "ICCV'21",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Hyeonjun Sim*, Jihyong Oh*, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/JihyongOh/XVFI",
+    "areas": [
+      "Video & Motion Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2103.16206v2"
+      },
+      {
+        "label": "ICCV2021",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Sim_XVFI_eXtreme_Video_Frame_Interpolation_ICCV_2021_paper.pdf"
+      },
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/supplemental/Sim_XVFI_eXtreme_Video_ICCV_2021_supplemental.pdf"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/JihyongOh/XVFI"
+      },
+      {
+        "label": "X4K1000FPS",
+        "url": "https://github.com/JihyongOh/XVFI#X4K1000FPS"
+      },
+      {
+        "label": "Demo",
+        "url": "https://www.youtube.com/watch?v=5qAiffYFJh8"
+      },
+      {
+        "label": "Oral12mins",
+        "url": "https://www.youtube.com/watch?v=igwy1TJQiRc&t=11s&ab_channel=VICLabKAIST"
+      },
+      {
+        "label": "Flowframes(GUI)",
+        "url": "https://nmkd.itch.io/flowframes"
+      },
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/16HtZdAKmUWLPkKR9FQX9ua-xDM3-ei6c/view?usp=sharing"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe7vUfZ_jgxb3EEOhAMJ0kJJtEGwReK2Rb0TzXr60fJccMvlLpwFy4CEECLjba6KS9UEcb23z5gLtKRLIRUtaOHHzy2cJfAo8ZirqJwtVyru4RNZtxtxMtgo5Gt-Egssfy82-UI0kSlcmukbyk7W6zBG6NAvnBHggdOupFSbHO94mhXV1nr_5tPzdGytHIGBL0wgmlVH-vSBxpkR3beXSt6fkiH9aQlKT88-tZv=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe7vUfZ_jgxb3EEOhAMJ0kJJtEGwReK2Rb0TzXr60fJccMvlLpwFy4CEECLjba6KS9UEcb23z5gLtKRLIRUtaOHHzy2cJfAo8ZirqJwtVyru4RNZtxtxMtgo5Gt-Egssfy82-UI0kSlcmukbyk7W6zBG6NAvnBHggdOupFSbHO94mhXV1nr_5tPzdGytHIGBL0wgmlVH-vSBxpkR3beXSt6fkiH9aQlKT88-tZv=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2103.16206v2",
+    "venue_url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Sim_XVFI_eXtreme_Video_Frame_Interpolation_ICCV_2021_paper.pdf",
+    "code_url": "https://github.com/JihyongOh/XVFI",
+    "dataset_url": "https://github.com/JihyongOh/XVFI#X4K1000FPS",
+    "additional_links": [
+      {
+        "label": "Supp",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/supplemental/Sim_XVFI_eXtreme_Video_ICCV_2021_supplemental.pdf"
+      },
+      {
+        "label": "Demo",
+        "url": "https://www.youtube.com/watch?v=5qAiffYFJh8"
+      },
+      {
+        "label": "Oral12mins",
+        "url": "https://www.youtube.com/watch?v=igwy1TJQiRc&t=11s&ab_channel=VICLabKAIST"
+      },
+      {
+        "label": "Flowframes(GUI)",
+        "url": "https://nmkd.itch.io/flowframes"
+      },
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/16HtZdAKmUWLPkKR9FQX9ua-xDM3-ei6c/view?usp=sharing"
+      }
+    ],
+    "source_venue": "ICCV 2021 (🏅Oral Paper Rate: 3%, Acceptance Rate: 25.9% ≈ 1,617/6,236)",
+    "distinction": "Oral",
+    "distinction_percent": "3%",
+    "distinction_source": "https://cmlab.cau.ac.kr/publications"
+  },
+  {
+    "id": 24,
+    "short": "PeaceGAN",
+    "title": "A GAN-based Multi-Task Learning Method for SAR Target Image Generation with a Pose Estimator and an Auxiliary Classifier",
+    "year": 2021,
+    "venue": "Remote Sensing",
+    "type": "Journal",
+    "area": "Generative & Agentic Visual AI",
+    "status": "Published",
+    "venue_short": "Remote Sensing'21",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Jihyong Oh and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "areas": [
+      "Generative & Agentic Visual AI"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "Remote Sensing",
+        "url": "https://www.mdpi.com/2072-4292/13/19/3939"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc2ZamrfPa-RGSOtNIa7QJRn3DLBo7PlINe6mnnav6YFL99Y21rDIo9bYOUZs_fHkPkUKT9ay6jmyrgZWZPmClU6OABFYDnqgCnuUxIzYhn-068nRTbwfHNysGIA0x5rxZ7uLvLSWz-WcDDEWc6DTHm9UwxFJCIDeli8-ceos3B3DjQ43hWlRbuwxMmOirGyCelN0Ql6ne8av-jg5NKmWzUR73sTRrLDMv7ZWov=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc2ZamrfPa-RGSOtNIa7QJRn3DLBo7PlINe6mnnav6YFL99Y21rDIo9bYOUZs_fHkPkUKT9ay6jmyrgZWZPmClU6OABFYDnqgCnuUxIzYhn-068nRTbwfHNysGIA0x5rxZ7uLvLSWz-WcDDEWc6DTHm9UwxFJCIDeli8-ceos3B3DjQ43hWlRbuwxMmOirGyCelN0Ql6ne8av-jg5NKmWzUR73sTRrLDMv7ZWov=w1280"
+      }
+    ],
+    "venue_url": "https://www.mdpi.com/2072-4292/13/19/3939",
+    "source_venue": "Remote Sensing (IF=5.0) vol. 13, issue 19: 3939, Oct. 2021 (DOI: https://doi.org/10.3390/rs13193939)"
+  },
+  {
+    "id": 25,
+    "short": "SPAM-Net",
+    "title": "A CNN-based SAR Target Recognition Network with Pose Angle Marginalization Learning",
+    "year": 2021,
+    "venue": "IEEE TCSVT",
+    "type": "Journal",
+    "area": "Pixel-Level Intelligence",
+    "status": "Published",
+    "venue_short": "TCSVT'21",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Jihyong Oh*, Gwang-Young Youm*, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": false,
+    "areas": [
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "Paper",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9064495"
+      },
+      {
+        "label": "IEEE TCSVT",
+        "url": "https://ieeexplore.ieee.org/document/9064495"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcTkBC1N6e-1nKXA8IY-h80EvjK6ec_C0_csXnSaBKpOSEmumj3LEYqXotWC7_K93_3AkpbHKJ026uVVJHjv24Jv_B4O7sqiIE7ahLqs0pQ-mdGmFdD2oZQSRTdMlUmOhzErhrmMYrBDKcGqxJpj4y0BP21O_YPY0PC3qQIQ1I_peyidKUdqn5q9GWB-0sV1M1Rn7hOjGHIGzLrkrXdzjCPu7EMaq6By7V0Vp2Y8Y0=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcTkBC1N6e-1nKXA8IY-h80EvjK6ec_C0_csXnSaBKpOSEmumj3LEYqXotWC7_K93_3AkpbHKJ026uVVJHjv24Jv_B4O7sqiIE7ahLqs0pQ-mdGmFdD2oZQSRTdMlUmOhzErhrmMYrBDKcGqxJpj4y0BP21O_YPY0PC3qQIQ1I_peyidKUdqn5q9GWB-0sV1M1Rn7hOjGHIGzLrkrXdzjCPu7EMaq6By7V0Vp2Y8Y0=w1280"
+      }
+    ],
+    "verification": "needs verification 25",
+    "venue_url": "https://ieeexplore.ieee.org/document/9064495",
+    "additional_links": [
+      {
+        "label": "PDF",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9064495"
+      }
+    ],
+    "source_venue": "IEEE TCSVT (IF=8.4) vol. 31, issue 2, pp. 701-714, Feb. 2021. (DOI: 10.1109/TCSVT.2020.2987346)"
+  },
+  {
+    "id": 26,
+    "short": "FISR",
+    "title": "Deep Joint Frame Interpolation and Super-Resolution with a Multi-Scale Temporal Loss",
+    "year": 2020,
+    "venue": "AAAI",
+    "type": "Conference",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "AAAI'20",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Soo Ye Kim*, Jihyong Oh*, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/JihyongOh/FISR",
+    "areas": [
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "Paper",
+        "url": "https://ojs.aaai.org//index.php/AAAI/article/view/6788"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/JihyongOh/FISR"
+      },
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/1LIlt_HWS4jaJLPta9lSOrfS9RRfmxKgW/view"
+      },
+      {
+        "label": "Spotlight-PPT",
+        "url": "https://drive.google.com/file/d/1llHkfjzZiydoay1u63V3gtn8z-DkN9x_/view"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeJ4tNrLIDDLfxkqjkJ4Eu175lrLOvz0cPkOTeGRahCgEulMVoBTztWGMlPPE_9-zFkZNLbiJ0ciGVwrU8JNWhGiNhEQl40VkomCsMs15_f48GBfAbkQQURnhQ6SW188gZIWZzLggFDA04BpAaKe5uTDHC9WvrPJr2p_-uWj2krBwz5e0ORpAhFzkVEC-s6aNFO6kosTKvweVnjnKdk9GtglpDmGhlbMzteX0iFQCE=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeJ4tNrLIDDLfxkqjkJ4Eu175lrLOvz0cPkOTeGRahCgEulMVoBTztWGMlPPE_9-zFkZNLbiJ0ciGVwrU8JNWhGiNhEQl40VkomCsMs15_f48GBfAbkQQURnhQ6SW188gZIWZzLggFDA04BpAaKe5uTDHC9WvrPJr2p_-uWj2krBwz5e0ORpAhFzkVEC-s6aNFO6kosTKvweVnjnKdk9GtglpDmGhlbMzteX0iFQCE=w1280"
+      }
+    ],
+    "venue_url": "https://ojs.aaai.org//index.php/AAAI/article/view/6788",
+    "code_url": "https://github.com/JihyongOh/FISR",
+    "arxiv_url": "https://arxiv.org/abs/1912.07213",
+    "additional_links": [
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/1LIlt_HWS4jaJLPta9lSOrfS9RRfmxKgW/view"
+      },
+      {
+        "label": "Spotlight-PPT",
+        "url": "https://drive.google.com/file/d/1llHkfjzZiydoay1u63V3gtn8z-DkN9x_/view"
+      }
+    ],
+    "source_venue": "AAAI 2020 (Acceptance Rate: 20.6% ≈ 1,591/7,737 )"
+  },
+  {
+    "id": 27,
+    "short": "JSI-GAN",
+    "title": "GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video",
+    "year": 2020,
+    "venue": "AAAI",
+    "type": "Conference",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "AAAI'20",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Soo Ye Kim*, Jihyong Oh*, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/JihyongOh/JSI-GAN",
+    "areas": [
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "Paper",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/6789"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/JihyongOh/JSI-GAN"
+      },
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/1Kkn7tyyo1Kwyl_ArB4fu5oXlsHONb7Nc/view"
+      },
+      {
+        "label": "Spotlight-PPT",
+        "url": "https://drive.google.com/file/d/1UPniH8-b2PQf9Hte5UUmNcN7EqgoqsMW/view"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQesVihiLEqzCt3QzCqcWscZgEyE53fUc2dJUFZCrVmOCVbR_1ThiYWjIiAIyKAZoVjXUd6YvUciO2hOT5nXrt_kZ4xAvskTYcSk2n_wRrdK4aa4tymeyI1XZwHdpLtoC6u0hj-u6tesLKovpR_nziFamfse8QznXbfyHtiwobXCZd_HdvJw73Lz9U9naUglO5Bp8K3XpdmOaQNU9QFPdoEY5eoOfGULtyBAbMqk=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQesVihiLEqzCt3QzCqcWscZgEyE53fUc2dJUFZCrVmOCVbR_1ThiYWjIiAIyKAZoVjXUd6YvUciO2hOT5nXrt_kZ4xAvskTYcSk2n_wRrdK4aa4tymeyI1XZwHdpLtoC6u0hj-u6tesLKovpR_nziFamfse8QznXbfyHtiwobXCZd_HdvJw73Lz9U9naUglO5Bp8K3XpdmOaQNU9QFPdoEY5eoOfGULtyBAbMqk=w1280"
+      }
+    ],
+    "venue_url": "https://ojs.aaai.org/index.php/AAAI/article/view/6789",
+    "code_url": "https://github.com/JihyongOh/JSI-GAN",
+    "arxiv_url": "https://arxiv.org/abs/1909.04391",
+    "additional_links": [
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/1Kkn7tyyo1Kwyl_ArB4fu5oXlsHONb7Nc/view"
+      },
+      {
+        "label": "Spotlight-PPT",
+        "url": "https://drive.google.com/file/d/1UPniH8-b2PQf9Hte5UUmNcN7EqgoqsMW/view"
+      }
+    ],
+    "source_venue": "AAAI 2020 (Acceptance Rate: 20.6% ≈ 1,591/7,737 )"
+  },
+  {
+    "id": 28,
+    "short": "Deep SR-ITM",
+    "title": "Joint Learning of Super-Resolution and Inverse Tone-Mapping for 4K UHD HDR Applications",
+    "year": 2019,
+    "venue": "ICCV · Oral",
+    "type": "Conference",
+    "area": "Video & Motion Intelligence",
+    "status": "Published",
+    "venue_short": "ICCV'19",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Soo Ye Kim, Jihyong Oh, and Munchurl Kim†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/JihyongOh/Deep-SR-ITM",
+    "areas": [
+      "Video & Motion Intelligence",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "Paper",
+        "url": "http://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_Deep_SR-ITM_Joint_Learning_of_Super-Resolution_and_Inverse_Tone-Mapping_for_ICCV_2019_paper.pdf"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/sooyekim/Deep-SR-ITM"
+      },
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/1rznbov090SV1d6Yb3ek8gSp7GcvawgwO/view"
+      },
+      {
+        "label": "Oral-PPT",
+        "url": "https://drive.google.com/file/d/16Fq5J4JdH3a531yHXOSb1iVxokC9XEWy/view"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc51f-rD2ToEi3NSsx8qQhV-5J484Di-FjynsJbhy-KJcnvnykHfupzLhPZl20_pNUc2xC_TKCL-s3HXd9J3hLBBjExdOeFcCnZQPe9-LVB2366ji1R5pxtdqNTC6-L1_TnkI8chY9M3ipl2BJNsrkFyfkvIJJrVf_S4cb-nCxI84cTRmBKtWCjKQNU2_Lm7Iqqd60PsVMeomam15b8xToddkc3gtCA37jILIcB=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc51f-rD2ToEi3NSsx8qQhV-5J484Di-FjynsJbhy-KJcnvnykHfupzLhPZl20_pNUc2xC_TKCL-s3HXd9J3hLBBjExdOeFcCnZQPe9-LVB2366ji1R5pxtdqNTC6-L1_TnkI8chY9M3ipl2BJNsrkFyfkvIJJrVf_S4cb-nCxI84cTRmBKtWCjKQNU2_Lm7Iqqd60PsVMeomam15b8xToddkc3gtCA37jILIcB=w1280"
+      }
+    ],
+    "venue_url": "http://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_Deep_SR-ITM_Joint_Learning_of_Super-Resolution_and_Inverse_Tone-Mapping_for_ICCV_2019_paper.pdf",
+    "code_url": "https://github.com/sooyekim/Deep-SR-ITM",
+    "additional_links": [
+      {
+        "label": "Poster",
+        "url": "https://drive.google.com/file/d/1rznbov090SV1d6Yb3ek8gSp7GcvawgwO/view"
+      },
+      {
+        "label": "Oral-PPT",
+        "url": "https://drive.google.com/file/d/16Fq5J4JdH3a531yHXOSb1iVxokC9XEWy/view"
+      }
+    ],
+    "source_venue": "ICCV 2019 (🏅Oral Paper Rate: 4 %, Acceptance Rate: 25% ≈ 1,077/4,303)",
+    "distinction": "Oral",
+    "distinction_percent": "4%",
+    "distinction_source": "https://cmlab.cau.ac.kr/publications",
+    "unavailable_urls": [
+      "http://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_Deep_SR-ITM_Joint_Learning_of_Super-Resolution_and_Inverse_Tone-Mapping_for_ICCV_2019_paper.pdf"
+    ],
+    "verification": "needs verification 28"
   }
 ]

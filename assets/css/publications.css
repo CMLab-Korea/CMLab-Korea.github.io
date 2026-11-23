@@ -1,0 +1,65 @@
+.pub-intro {
+  padding-block: clamp(68px, 8vw, 115px) 32px;
+}
+.pub-intro h1 {
+  margin: 0;
+  font-size: clamp(2.85rem, 7vw, 6rem);
+  line-height: 1.05;
+  letter-spacing: -.065em;
+}
+.pub-intro .mini-stats { margin-top: 28px; }
+.publication-header a:hover, .paper-open:hover { text-decoration: underline; }
+#publication-list > section { margin-block: 24px 56px; }
+#publication-list h2 {
+  margin: 0 0 22px;
+  font-size: clamp(1.65rem, 3.3vw, 2.7rem);
+  line-height: 1.15;
+  letter-spacing: -.045em;
+}
+#publication-list .venue-abbr { overflow-wrap: anywhere; white-space: normal; }
+#publication-list .venue-kind { text-transform: uppercase; }
+.paper-distinction {
+  padding-left: .55rem;
+  border-left: 2px solid currentColor;
+  color: var(--highlight);
+  font-size: .8rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.paper-author-highlight { color: var(--highlight); font-weight: 700; }
+.paper-row { scroll-margin-top: 100px; }
+.paper-row.without-teaser .paper-rich-body { grid-column: 2 / -1; }
+.paper-areas { display: flex; gap: .45rem 1rem; flex-wrap: wrap; margin-top: 10px; }
+.paper-area {
+  display: inline-flex;
+  align-items: center;
+  gap: .32rem;
+  color: #bbcae6;
+  font-size: .74rem;
+  line-height: 1.3;
+}
+.paper-area svg {
+  height: 17px;
+  width: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.paper-rich-body .paper-affiliations { margin-top: 6px; }
+.paper-meta { justify-content: flex-start; margin-top: 12px; gap: 8px 18px; }
+.paper-open { color: var(--highlight); white-space: normal; overflow-wrap: anywhere; }
+@media (max-width: 700px) {
+  .publication-header a { display: inline-block; }
+  #publication-list > section { margin-block: 12px 36px; }
+  #publication-list .without-teaser .paper-rich-body { grid-column: 2; grid-row: 1; }
+}
+
+.paper-verification {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: .75rem;
+}
+.paper-verification a:hover { color: var(--highlight); }
+.paper-rich-body { min-width: 0; overflow-wrap: anywhere; }

@@ -1,0 +1,898 @@
+{
+  "title": "CMLab@CAU - Courses",
+  "sections": [
+    {
+      "tag": "li",
+      "text": "CMLab",
+      "links": [
+        {
+          "label": "CMLab",
+          "href": "/cmlab",
+          "url": "https://cmlab.cau.ac.kr/cmlab"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Contact",
+      "links": [
+        {
+          "label": "Contact",
+          "href": "/contact",
+          "url": "https://cmlab.cau.ac.kr/contact"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Our TeamPrincipal Investigator (PI)Students",
+      "links": [
+        {
+          "label": "Our Team",
+          "href": "/our-team",
+          "url": "https://cmlab.cau.ac.kr/our-team"
+        },
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        },
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Principal Investigator (PI)",
+      "links": [
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Students",
+      "links": [
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Publications",
+      "links": [
+        {
+          "label": "Publications",
+          "href": "/publications",
+          "url": "https://cmlab.cau.ac.kr/publications"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Projects",
+      "links": [
+        {
+          "label": "Projects",
+          "href": "/projects",
+          "url": "https://cmlab.cau.ac.kr/projects"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Courses",
+      "links": [
+        {
+          "label": "Courses",
+          "href": "/courses",
+          "url": "https://cmlab.cau.ac.kr/courses"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Gallery",
+      "links": [
+        {
+          "label": "Gallery",
+          "href": "/gallery",
+          "url": "https://cmlab.cau.ac.kr/gallery"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "CMLab",
+      "links": [
+        {
+          "label": "CMLab",
+          "href": "/cmlab",
+          "url": "https://cmlab.cau.ac.kr/cmlab"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Contact",
+      "links": [
+        {
+          "label": "Contact",
+          "href": "/contact",
+          "url": "https://cmlab.cau.ac.kr/contact"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Our Team",
+      "links": [
+        {
+          "label": "Our Team",
+          "href": "/our-team",
+          "url": "https://cmlab.cau.ac.kr/our-team"
+        },
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        },
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Principal Investigator (PI)",
+      "links": [
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Students",
+      "links": [
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Publications",
+      "links": [
+        {
+          "label": "Publications",
+          "href": "/publications",
+          "url": "https://cmlab.cau.ac.kr/publications"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Projects",
+      "links": [
+        {
+          "label": "Projects",
+          "href": "/projects",
+          "url": "https://cmlab.cau.ac.kr/projects"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Courses",
+      "links": [
+        {
+          "label": "Courses",
+          "href": "/courses",
+          "url": "https://cmlab.cau.ac.kr/courses"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Gallery",
+      "links": [
+        {
+          "label": "Gallery",
+          "href": "/gallery",
+          "url": "https://cmlab.cau.ac.kr/gallery"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "MoreCMLabContactOur TeamPrincipal Investigator (PI)StudentsPublicationsProjectsCoursesGallery",
+      "links": [
+        {
+          "label": "CMLab",
+          "href": "/cmlab",
+          "url": "https://cmlab.cau.ac.kr/cmlab"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact",
+          "url": "https://cmlab.cau.ac.kr/contact"
+        },
+        {
+          "label": "Our Team",
+          "href": "/our-team",
+          "url": "https://cmlab.cau.ac.kr/our-team"
+        },
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        },
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        },
+        {
+          "label": "Publications",
+          "href": "/publications",
+          "url": "https://cmlab.cau.ac.kr/publications"
+        },
+        {
+          "label": "Projects",
+          "href": "/projects",
+          "url": "https://cmlab.cau.ac.kr/projects"
+        },
+        {
+          "label": "Courses",
+          "href": "/courses",
+          "url": "https://cmlab.cau.ac.kr/courses"
+        },
+        {
+          "label": "Gallery",
+          "href": "/gallery",
+          "url": "https://cmlab.cau.ac.kr/gallery"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "CMLab",
+      "links": [
+        {
+          "label": "CMLab",
+          "href": "/cmlab",
+          "url": "https://cmlab.cau.ac.kr/cmlab"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Contact",
+      "links": [
+        {
+          "label": "Contact",
+          "href": "/contact",
+          "url": "https://cmlab.cau.ac.kr/contact"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Our TeamPrincipal Investigator (PI)Students",
+      "links": [
+        {
+          "label": "Our Team",
+          "href": "/our-team",
+          "url": "https://cmlab.cau.ac.kr/our-team"
+        },
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        },
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Principal Investigator (PI)",
+      "links": [
+        {
+          "label": "Principal Investigator (PI)",
+          "href": "/our-team/principal-investigator-pi",
+          "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Students",
+      "links": [
+        {
+          "label": "Students",
+          "href": "/our-team/students",
+          "url": "https://cmlab.cau.ac.kr/our-team/students"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Publications",
+      "links": [
+        {
+          "label": "Publications",
+          "href": "/publications",
+          "url": "https://cmlab.cau.ac.kr/publications"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Projects",
+      "links": [
+        {
+          "label": "Projects",
+          "href": "/projects",
+          "url": "https://cmlab.cau.ac.kr/projects"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Courses",
+      "links": [
+        {
+          "label": "Courses",
+          "href": "/courses",
+          "url": "https://cmlab.cau.ac.kr/courses"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "Gallery",
+      "links": [
+        {
+          "label": "Gallery",
+          "href": "/gallery",
+          "url": "https://cmlab.cau.ac.kr/gallery"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "h1",
+      "text": "Courses (*: undergraduate course)",
+      "links": [
+        {
+          "label": "Copy heading link",
+          "href": "#h.upbtixt1dalm",
+          "url": "https://cmlab.cau.ac.kr/courses#h.upbtixt1dalm"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[26-2] [60059] 월드 모델 및 에이전틱 시각지능 특강 (Special Seminar on World Models and Agentic Visual Intelligence)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[26-2] [60059] 월드 모델 및 에이전틱 시각지능 특강 (Special Seminar on World Models and Agentic Visual Intelligence)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[26-2] [58270] 생성 AI (Generative AI)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[26-2] [58270] 생성 AI (Generative AI)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "*[26-1] [58905] 파이썬과인공지능및실습 (Python and Artificial Intelligence)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "*[26-1] [58905] 파이썬과인공지능및실습 (Python and Artificial Intelligence)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "*[26-1] [59400] 생성AI 개론 (Introduction to Generative AI) [Outstanding Instructor]",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "*[26-1] [59400] 생성AI 개론 (Introduction to Generative AI) [Outstanding Instructor]",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[26-1] [59582] 멀티모달AI시스템I (Multimodal AI System I)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[26-1] [59582] 멀티모달AI시스템I (Multimodal AI System I)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[25-2] [56146] 생성네트워크와 창작 (Generative AI and Creation)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[25-2] [56146] 생성네트워크와 창작 (Generative AI and Creation)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[25-2] [57983] 인공지능 창작프로젝트 (AI Creation Project)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[25-2] [57983] 인공지능 창작프로젝트 (AI Creation Project)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[25-1] [58755] 인공지능 영상 화질 개선 및 복원 (AI-based Media Enhancement and Restoration (Low-level Vision))",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[25-1] [58755] 인공지능 영상 화질 개선 및 복원 (AI-based Media Enhancement and Restoration (Low-level Vision))",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[25-1] [36303] 영상공학기초 (Computer Vision Basics)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[25-1] [36303] 영상공학기초 (Computer Vision Basics)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "*[25-1] [57073] 파이썬과 인공지능 (Python and Artificial Intelligence) [Outstanding Instructor]",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "*[25-1] [57073] 파이썬과 인공지능 (Python and Artificial Intelligence) [Outstanding Instructor]",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "*[25-1] [57074] 파이썬과 인공지능 실습 (Practice for Python and Artificial Intelligence) [Outstanding Instructor]",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "*[25-1] [57074] 파이썬과 인공지능 실습 (Practice for Python and Artificial Intelligence) [Outstanding Instructor]",
+      "links": [
+        {
+          "label": "Outstanding Instructor",
+          "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+          "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+        }
+      ],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[24-2] [58271] 인공지능 영상 화질 개선 및 복원 특강 (Special Seminar on AI-based Low-Level Vision)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[24-2] [58271] 인공지능 영상 화질 개선 및 복원 특강 (Special Seminar on AI-based Low-Level Vision)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[24-2] [58270] 생성 AI (Generative AI)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[24-2] [58270] 생성 AI (Generative AI)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "*[24-2] [17086] 이산수학 (Discrete Mathematics)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "*[24-2] [17086] 이산수학 (Discrete Mathematics)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[24-1] [57983] 인공지능 창작프로젝트 (AI Creation Project)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[24-1] [57983] 인공지능 창작프로젝트 (AI Creation Project)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "*[24-1] [57073] 파이썬과 인공지능 (Python and Artificial Intelligence)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "*[24-1] [57073] 파이썬과 인공지능 (Python and Artificial Intelligence)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "*[24-1] [57074] 파이썬과 인공지능 실습 (Practice for Python and Artificial Intelligence)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "*[24-1] [57074] 파이썬과 인공지능 실습 (Practice for Python and Artificial Intelligence)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[24-1] [36303] 영상공학기초 (Computer Vision Basics)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[24-1] [36303] 영상공학기초 (Computer Vision Basics)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[23-2] [36303] 영상공학수학 (Computer Vision Mathematics)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[23-2] [36303] 영상공학수학 (Computer Vision Mathematics)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "li",
+      "text": "[23-2] [56146] 생성네트워크와 창작 (Generative AI and Creation)",
+      "links": [],
+      "media": []
+    },
+    {
+      "tag": "p",
+      "text": "[23-2] [56146] 생성네트워크와 창작 (Generative AI and Creation)",
+      "links": [],
+      "media": []
+    }
+  ],
+  "links": [
+    {
+      "label": "",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "CMLab@CAU",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "CMLab",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "url": "https://cmlab.cau.ac.kr/contact"
+    },
+    {
+      "label": "Our Team",
+      "href": "/our-team",
+      "url": "https://cmlab.cau.ac.kr/our-team"
+    },
+    {
+      "label": "Principal Investigator (PI)",
+      "href": "/our-team/principal-investigator-pi",
+      "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+    },
+    {
+      "label": "Students",
+      "href": "/our-team/students",
+      "url": "https://cmlab.cau.ac.kr/our-team/students"
+    },
+    {
+      "label": "Publications",
+      "href": "/publications",
+      "url": "https://cmlab.cau.ac.kr/publications"
+    },
+    {
+      "label": "Projects",
+      "href": "/projects",
+      "url": "https://cmlab.cau.ac.kr/projects"
+    },
+    {
+      "label": "Courses",
+      "href": "/courses",
+      "url": "https://cmlab.cau.ac.kr/courses"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery",
+      "url": "https://cmlab.cau.ac.kr/gallery"
+    },
+    {
+      "label": "CMLab@CAU",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "CMLab",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "url": "https://cmlab.cau.ac.kr/contact"
+    },
+    {
+      "label": "Our Team",
+      "href": "/our-team",
+      "url": "https://cmlab.cau.ac.kr/our-team"
+    },
+    {
+      "label": "Principal Investigator (PI)",
+      "href": "/our-team/principal-investigator-pi",
+      "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+    },
+    {
+      "label": "Students",
+      "href": "/our-team/students",
+      "url": "https://cmlab.cau.ac.kr/our-team/students"
+    },
+    {
+      "label": "Publications",
+      "href": "/publications",
+      "url": "https://cmlab.cau.ac.kr/publications"
+    },
+    {
+      "label": "Projects",
+      "href": "/projects",
+      "url": "https://cmlab.cau.ac.kr/projects"
+    },
+    {
+      "label": "Courses",
+      "href": "/courses",
+      "url": "https://cmlab.cau.ac.kr/courses"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery",
+      "url": "https://cmlab.cau.ac.kr/gallery"
+    },
+    {
+      "label": "CMLab",
+      "href": "/cmlab",
+      "url": "https://cmlab.cau.ac.kr/cmlab"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "url": "https://cmlab.cau.ac.kr/contact"
+    },
+    {
+      "label": "Our Team",
+      "href": "/our-team",
+      "url": "https://cmlab.cau.ac.kr/our-team"
+    },
+    {
+      "label": "Principal Investigator (PI)",
+      "href": "/our-team/principal-investigator-pi",
+      "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+    },
+    {
+      "label": "Students",
+      "href": "/our-team/students",
+      "url": "https://cmlab.cau.ac.kr/our-team/students"
+    },
+    {
+      "label": "Publications",
+      "href": "/publications",
+      "url": "https://cmlab.cau.ac.kr/publications"
+    },
+    {
+      "label": "Projects",
+      "href": "/projects",
+      "url": "https://cmlab.cau.ac.kr/projects"
+    },
+    {
+      "label": "Courses",
+      "href": "/courses",
+      "url": "https://cmlab.cau.ac.kr/courses"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery",
+      "url": "https://cmlab.cau.ac.kr/gallery"
+    },
+    {
+      "label": "Copy heading link",
+      "href": "#h.upbtixt1dalm",
+      "url": "https://cmlab.cau.ac.kr/courses#h.upbtixt1dalm"
+    },
+    {
+      "label": "Outstanding Instructor",
+      "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap",
+      "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+    },
+    {
+      "label": "Outstanding Instructor",
+      "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+      "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+    },
+    {
+      "label": "Outstanding Instructor",
+      "href": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap",
+      "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+    }
+  ],
+  "media": [
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcJF7MOkvALfQzmIlgJO9lP7XXcI3HXBkijzZqApTcMsdN53khFsqRyMImdID0yT2CmbmdBe-GcPIgFiflMgsKptMHg6MQ3eTKBIBOwiEz3cspP1JFF2KF1Ep_hpNPKe5AqV_Z6OOVN-jT3xZ475qdiJhvDCVv5zaBpGROCMLZwl3yhhtV579Redtgv_hM=w16383",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcJF7MOkvALfQzmIlgJO9lP7XXcI3HXBkijzZqApTcMsdN53khFsqRyMImdID0yT2CmbmdBe-GcPIgFiflMgsKptMHg6MQ3eTKBIBOwiEz3cspP1JFF2KF1Ep_hpNPKe5AqV_Z6OOVN-jT3xZ475qdiJhvDCVv5zaBpGROCMLZwl3yhhtV579Redtgv_hM=w16383",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    },
+    {
+      "tag": "img",
+      "alt": "",
+      "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcJF7MOkvALfQzmIlgJO9lP7XXcI3HXBkijzZqApTcMsdN53khFsqRyMImdID0yT2CmbmdBe-GcPIgFiflMgsKptMHg6MQ3eTKBIBOwiEz3cspP1JFF2KF1Ep_hpNPKe5AqV_Z6OOVN-jT3xZ475qdiJhvDCVv5zaBpGROCMLZwl3yhhtV579Redtgv_hM=w16383",
+      "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcJF7MOkvALfQzmIlgJO9lP7XXcI3HXBkijzZqApTcMsdN53khFsqRyMImdID0yT2CmbmdBe-GcPIgFiflMgsKptMHg6MQ3eTKBIBOwiEz3cspP1JFF2KF1Ep_hpNPKe5AqV_Z6OOVN-jT3xZ475qdiJhvDCVv5zaBpGROCMLZwl3yhhtV579Redtgv_hM=w16383",
+      "data_src": null,
+      "srcset": null,
+      "poster": null,
+      "poster_url": null
+    }
+  ],
+  "publication_candidates": [],
+  "dated_entries": [],
+  "source_url": "https://cmlab.cau.ac.kr/courses",
+  "capture_method": "Playwright Chromium",
+  "frames": []
+}
