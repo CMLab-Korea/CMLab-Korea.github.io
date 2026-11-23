@@ -1,5 +1,5 @@
 const SITE = 'https://cmlab-korea.github.io';
-const PATHS = new Set(['/index.html', '/publications.html', '/people.html', '/join.html',
+const PATHS = new Set(['/index.html', '/publications.html', '/people.html', '/projects.html', '/join.html',
   '/life.html', '/research.html', '/teaching.html', '/collaborate.html', '/404.html']);
 
 function koreanDay() {

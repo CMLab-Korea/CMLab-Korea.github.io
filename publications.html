@@ -3,9 +3,11 @@
     <h1>Publications</h1>
     <div class="mini-stats">
       <span><strong data-stat="preprint">10</strong> PREPRINTS / UNDER REVIEW</span>
-      <span><strong data-stat="total">28</strong> PEER-REVIEWED</span>
-      <span><strong data-stat="conference">20</strong> TOP-TIER AI/CV CONFERENCE PAPERS</span>
-      <span><strong data-stat="journal">8</strong> SCIE-INDEXED JOURNAL PAPERS</span>
+      <div class="publication-equation">
+        <span><strong data-stat="total">28</strong> PEER-REVIEWED</span>
+        <span><span class="publication-operator">=</span><strong data-stat="conference">20</strong> TOP-TIER AI/CV CONFERENCE PAPERS</span>
+        <span><span class="publication-operator">+</span><strong data-stat="journal">8</strong> SCIE-INDEXED JOURNAL PAPERS</span>
+      </div>
     </div>
   </header>
   <div class="section-wrap publication-section">
@@ -22,12 +24,24 @@
       <details id="paper-area" class="area-dropdown"><summary aria-label="Filter by research area">All areas</summary><div class="area-choices" role="group" aria-label="Research areas"></div></details>
     </div>
     <div class="publication-header">
-      <span id="paper-count" role="status">Loading publications…</span><p class="publication-legend"><strong>*</strong> Equal contribution <span aria-hidden="true">·</span> <strong>†</strong> Corresponding author <span aria-hidden="true">·</span> <strong>🤝</strong> External or industry collaboration</p>
+      <span id="paper-count" role="status">Loading publications…</span>
+      <p class="publication-legend">
+        <span><sup class="author-mark" aria-hidden="true">*</sup> Equal contribution</span>
+        <span aria-hidden="true">·</span>
+        <span><sup class="author-mark" aria-hidden="true">†</sup> Corresponding author</span>
+        <span aria-hidden="true">·</span>
+        <span><svg class="paper-collaboration-icon" aria-hidden="true"><use href="assets/img/news-icons.svg#collaboration"/></svg> External or industry collaboration</span>
+      </p>
 
     </div>
     <div id="publication-list">
       <section id="preprint-section" aria-labelledby="preprint-heading" hidden>
-        <h2 id="preprint-heading">Preprints / Under Review</h2>
+        <div class="preprint-heading-row">
+          <h2 id="preprint-heading">Preprints / Under Review</h2>
+          <a class="preprint-project-count" href="projects.html#ongoing-projects" data-project-count-link hidden>
+            <strong>+<span data-ongoing-count></span></strong> ongoing projects
+          </a>
+        </div>
         <div class="publication-list" id="preprint-list"></div>
       </section>
       <section id="international-section" aria-labelledby="international-heading" hidden>

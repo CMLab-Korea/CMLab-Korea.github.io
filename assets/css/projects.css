@@ -16,6 +16,7 @@
   font-weight: 700;
 }
 .project-jumps a:hover { border-color: currentColor; }
+.project-jumps .project-count { font-size: .74rem; margin-left: .25rem; }
 .projects-content { padding-block: 1rem 6rem; }
 .projects-content section { scroll-margin-top: 105px; margin-bottom: 3rem; }
 .projects-content h2 {

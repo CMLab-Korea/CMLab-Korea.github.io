@@ -8,9 +8,7 @@
     "category": "Academia",
     "url": "https://pailab.cau.ac.kr/members_1/faculty",
     "collaborative_lab": true,
-    "lab_url": "https://pailab.cau.ac.kr/",
-    "photo": "assets/img/collaborators/chanho-eom.webp",
-    "photo_source": "https://pailab.cau.ac.kr/members_1/faculty"
+    "lab_url": "https://pailab.cau.ac.kr/"
   },
   {
     "person": "Munchurl Kim",
@@ -29,8 +27,7 @@
       27,
       28
     ],
-    "photo": "assets/img/collaborators/munchurl-kim.webp",
-    "photo_source": "https://www.viclab.kaist.ac.kr/professor"
+    "ongoing": true
   },
   {
     "person": "Geon Chang Lee",
@@ -39,7 +36,8 @@
     "institution": "inshorts",
     "unit": "",
     "category": "Industry",
-    "url": "https://www.linkedin.com/in/andy-lee-b4122a98/"
+    "url": "https://www.linkedin.com/in/andy-lee-b4122a98/",
+    "ongoing": true
   },
   {
     "person": "Jongwon Choi",
@@ -49,8 +47,7 @@
     "unit": "VILab",
     "category": "Academia",
     "url": "https://www.vilab.cau.ac.kr/members/members",
-    "photo": "assets/img/collaborators/jongwon-choi.webp",
-    "photo_source": "https://www.vilab.cau.ac.kr/members/members"
+    "ongoing": true
   },
   {
     "person": "Sung-Ho Bae",
@@ -59,9 +56,7 @@
     "institution": "Kyung Hee University",
     "unit": "MLVC Lab",
     "category": "Academia",
-    "url": "https://scholar.google.co.kr/citations?user=EULut5oAAAAJ&hl=ko",
-    "photo": "assets/img/collaborators/sung-ho-bae.webp",
-    "photo_source": "https://mlvc.khu.ac.kr/team"
+    "url": "https://scholar.google.co.kr/citations?user=EULut5oAAAAJ&hl=ko"
   },
   {
     "person": "Hwijae Son",
@@ -70,9 +65,7 @@
     "institution": "Konkuk University",
     "unit": "",
     "category": "Academia",
-    "url": "https://hwijaeson.github.io/",
-    "photo": "assets/img/collaborators/hwijae-son.webp",
-    "photo_source": "https://github.com/hwijaeson/hwijaeson.github.io/blob/d0b8417a4279198a85d6242b71394b65dd97514a/images/hwijae.jpg"
+    "url": "https://hwijaeson.github.io/"
   },
   {
     "person": "Hyung Ju Hwang",
@@ -81,9 +74,7 @@
     "institution": "POSTECH",
     "unit": "AM²-LABS",
     "category": "Academia",
-    "url": "https://hjhwang.postech.ac.kr/hjhwang/res/professor.do",
-    "photo": "assets/img/collaborators/hyung-ju-hwang.webp",
-    "photo_source": "https://hjhwang.postech.ac.kr/hjhwang/res/professor.do"
+    "url": "https://hjhwang.postech.ac.kr/hjhwang/res/professor.do"
   },
   {
     "person": "Kyle Min",
@@ -93,9 +84,7 @@
     "unit": "",
     "category": "Industry",
     "url": "https://sites.google.com/view/kylemin",
-    "role_source": "https://sites.google.com/view/kylemin",
-    "photo": "assets/img/collaborators/kyle-min.webp",
-    "photo_source": "https://sites.google.com/view/kylemin"
+    "role_source": "https://sites.google.com/view/kylemin"
   },
   {
     "person": "Soo Ye Kim",
@@ -111,8 +100,7 @@
       28
     ],
     "role_source": "https://sites.google.com/view/sooyekim",
-    "photo": "assets/img/collaborators/soo-ye-kim.webp",
-    "photo_source": "https://sites.google.com/view/sooyekim"
+    "ongoing": true
   },
   {
     "person": "Juan Luis Gonzalez Bello",
@@ -125,9 +113,7 @@
     "aliases": [
       "Juan Luis Gonzalez"
     ],
-    "role_source": "https://sites.google.com/view/juan-luis-gb/home",
-    "photo": "assets/img/collaborators/juan-luis-gonzalez-bello.webp",
-    "photo_source": "https://sites.google.com/view/juan-luis-gb/home"
+    "role_source": "https://sites.google.com/view/juan-luis-gb/home"
   },
   {
     "person": "Sangwoon Kwak",
@@ -138,8 +124,7 @@
     "category": "Research Institute",
     "url": "https://skwak-kaist.github.io/",
     "role_source": "https://skwak-kaist.github.io/",
-    "photo": "assets/img/collaborators/sangwoon-kwak.webp",
-    "photo_source": "https://skwak-kaist.github.io/"
+    "ongoing": true
   },
   {
     "person": "Minkyu Jeon",
@@ -148,9 +133,7 @@
     "institution": "Princeton University",
     "unit": "E.Z. Lab",
     "category": "Academia",
-    "url": "https://minkyujeon.github.io/",
-    "photo": "assets/img/collaborators/minkyu-jeon.webp",
-    "photo_source": "https://github.com/minkyujeon/minkyujeon.github.io/blob/f14c1f9f1fe024eb96593c354dfb4327c299ea69/assets/img/profile.jpg"
+    "url": "https://minkyujeon.github.io/"
   },
   {
     "person": "Agus Gunawan",
@@ -160,9 +143,7 @@
     "unit": "",
     "category": "Industry",
     "url": "https://agusgun.github.io/",
-    "role_source": "https://agusgun.github.io/",
-    "photo": "assets/img/collaborators/agus-gunawan.webp",
-    "photo_source": "https://agusgun.github.io/"
+    "role_source": "https://agusgun.github.io/"
   },
   {
     "person": "Junho Kim",
@@ -172,9 +153,7 @@
     "unit": "",
     "category": "Academia",
     "url": "https://www.junhokim.xyz/",
-    "ongoing": true,
-    "photo": "assets/img/collaborators/junho-kim.webp",
-    "photo_source": "https://www.junhokim-xyz.com/"
+    "ongoing": true
   },
   {
     "person": "Taekyung Kim",
@@ -184,9 +163,8 @@
     "unit": "",
     "category": "Industry",
     "url": "https://taekyungkim918.github.io/",
-    "photo": "assets/img/collaborators/taekyung-kim.webp",
-    "photo_source": "https://taekyungkim918.github.io/",
-    "role_source": "https://taekyungkim918.github.io/"
+    "role_source": "https://taekyungkim918.github.io/",
+    "ongoing": true
   },
   {
     "person": "Geunhyuk Youk",
@@ -195,9 +173,7 @@
     "institution": "KAIST",
     "unit": "VICLab",
     "category": "Academia",
-    "url": "https://geunhyukyouk.github.io/",
-    "photo": "assets/img/collaborators/geunhyuk-youk.webp",
-    "photo_source": "https://github.com/geunhyukyouk/geunhyukyouk.github.io/blob/ba17d4309deb98e73191298801e99e4e2ec050f0/static/images/profile.jpg"
+    "url": "https://geunhyukyouk.github.io/"
   },
   {
     "person": "Jongmin Park",
@@ -206,9 +182,7 @@
     "institution": "Seoul National University",
     "unit": "PI Lab",
     "category": "Academia",
-    "url": "https://imjongminpark.github.io/",
-    "photo": "assets/img/collaborators/jongmin-park.webp",
-    "photo_source": "https://github.com/imjongminpark/imjongminpark.github.io/blob/285000bc3d0400b2d3c1345958cf3f5a461c9b49/images/profile.jpg"
+    "url": "https://imjongminpark.github.io/"
   },
   {
     "person": "Minh-Quan Viet Bui",
@@ -220,9 +194,7 @@
     "url": "https://quan5609.github.io/#",
     "aliases": [
       "Quan Bui"
-    ],
-    "photo": "assets/img/collaborators/quan-bui.webp",
-    "photo_source": "https://github.com/quan5609/quan5609.github.io/blob/e696aafb4f1a339ed9d7e6af6847340dd415cf66/images/profile.jpg"
+    ]
   },
   {
     "person": "Jaeho Moon",
@@ -231,9 +203,7 @@
     "institution": "KAIST",
     "unit": "VICLab",
     "category": "Academia",
-    "url": "https://sites.google.com/view/jaehomoon",
-    "photo": "assets/img/collaborators/jaeho-moon.webp",
-    "photo_source": "https://sites.google.com/view/jaehomoon"
+    "url": "https://sites.google.com/view/jaehomoon"
   },
   {
     "person": "Wonyong Seo",
@@ -242,9 +212,7 @@
     "institution": "KAIST",
     "unit": "VICLab",
     "category": "Academia",
-    "url": "https://wonozlo.github.io/",
-    "photo": "assets/img/collaborators/wonyong-seo.webp",
-    "photo_source": "https://github.com/wonozlo/wonozlo.github.io/blob/4be2a6ef73ef3136503049a9f9c17db47f7ec700/static/images/hero.png"
+    "url": "https://wonozlo.github.io/"
   },
   {
     "person": "Samuel Teodoro",
@@ -253,9 +221,7 @@
     "institution": "KAIST",
     "unit": "VICLab",
     "category": "Academia",
-    "url": "https://sateodoro.github.io/",
-    "photo": "assets/img/collaborators/samuel-teodoro.webp",
-    "photo_source": "https://github.com/sateodoro/sateodoro.github.io/blob/c74a96108356e6d792e21173c0cc5029c5b8935e/static/images/profile.jpg"
+    "url": "https://sateodoro.github.io/"
   },
   {
     "person": "Hojoon Jung",
@@ -265,8 +231,7 @@
     "unit": "VILab",
     "category": "Academia",
     "url": "https://sites.google.com/view/hjjung-homepage/%ED%99%88",
-    "photo": "assets/img/collaborators/hojoon-jung.webp",
-    "photo_source": "https://sites.google.com/view/hjjung-homepage/%ED%99%88"
+    "ongoing": true
   },
   {
     "person": "Jaeyoon Lee",
@@ -279,9 +244,8 @@
     "aliases": [
       "JaeYoon Lee"
     ],
-    "photo": "assets/img/collaborators/jaeyoon-lee.webp",
-    "photo_source": "https://sites.google.com/vilab.cau.ac.kr/jaeyoonlee",
-    "author_name": "Jaeyoon Lee"
+    "author_name": "Jaeyoon Lee",
+    "ongoing": true
   },
   {
     "person": "Jong Kwon Oh",
@@ -300,8 +264,7 @@
     "category": "Academia",
     "url": "https://geonyeong-park.github.io/",
     "role_source": "https://geonyeong-park.github.io/",
-    "photo": "assets/img/collaborators/geon-yeong-park.webp",
-    "photo_source": "https://geonyeong-park.github.io/"
+    "ongoing": true
   },
   {
     "person": "Jae Shin Yoon",
@@ -312,8 +275,7 @@
     "category": "Industry",
     "url": "https://gorokee.github.io/jsyoon/",
     "role_source": "https://gorokee.github.io/jsyoon/",
-    "photo": "assets/img/collaborators/jae-shin-yoon.webp",
-    "photo_source": "https://gorokee.github.io/jsyoon/"
+    "ongoing": true
   },
   {
     "person": "Ziyu Wan",
@@ -322,6 +284,23 @@
     "institution": "Microsoft",
     "unit": "AI Superintelligence",
     "category": "Industry",
-    "url": "http://raywzy.com/"
+    "url": "http://raywzy.com/",
+    "ongoing": true
+  },
+  {
+    "person": "Yonghyun Jeong",
+    "organization": "naver-cloud",
+    "institution": "NAVER Cloud",
+    "category": "Industry",
+    "url": "https://www.linkedin.com/in/yonghyun-jeong-5a5116248/?locale=en"
+  },
+  {
+    "person": "Jonghyun Lee",
+    "role": "Research Scientist",
+    "organization": "lunit",
+    "institution": "Lunit Inc.",
+    "category": "Industry",
+    "url": "https://tomtom1103.github.io/",
+    "role_source": "https://tomtom1103.github.io/"
   }
 ]

@@ -13,10 +13,33 @@
 .alumni-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 235px), 1fr)); gap: 14px; }
 .alumni-card { padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--layer); }
 .alumni-card h3, .alumni-card p, .directory-card h4, .directory-card p { margin: 0 0 .4rem; }
-.directory-card { display: block; }
-.collab-pictures { display: flex; align-items: center; gap: 12px; height: 58px; margin-bottom: 12px; }
-.collab-photo { width: 57px; height: 57px; border-radius: 50%; object-fit: cover; }
-.organization-logo { width: 70px; height: 52px; object-fit: contain; background: #fff; padding: 5px; border-radius: 7px; }
+.collab-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.directory-card { display: flex; flex-direction: column; align-items: stretch; gap: .65rem; }
+.collab-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: .55rem; }
+.collab-identity { min-width: 0; }
+.directory-card h4 { margin-bottom: .2rem; line-height: 1.3; overflow-wrap: anywhere; }
+.directory-card .collab-organization { color: var(--text); font-size: .8rem; line-height: 1.4; margin-bottom: .15rem; overflow-wrap: anywhere; }
+.directory-card .collab-position { color: var(--muted); font-size: .74rem; line-height: 1.4; margin-bottom: 0; overflow-wrap: anywhere; }
+.organization-logo {
+  flex: 0 0 auto;
+  width: clamp(52px, 6.3vw, 87px);
+  height: 43px;
+  object-fit: contain;
+  background: #fff;
+  padding: 5px;
+  border-radius: 6px;
+}
+.directory-card .collab-paper-links { gap: .35rem; margin-top: 0; }
+.directory-card .collab-paper-links .active-project {
+  background: color-mix(in srgb, var(--highlight) 12%, var(--layer));
+  color: var(--highlight);
+  border-color: color-mix(in srgb, var(--highlight) 45%, var(--line));
+  font-weight: 700;
+}
+.directory-card .active-project svg { width: .96rem; height: .96rem; }
+@media (max-width: 1150px) { .collab-cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 880px) { .collab-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 530px) { .collab-cards { grid-template-columns: minmax(0, 1fr); } }
 .collab-paper-links { display: flex; flex-wrap: wrap; gap: .4rem .65rem; margin-top: .75rem; font-size: .76rem; }
 .lab-partner, .course-award, .gallery-category { display: inline-flex; gap: .38rem; align-items: center; }
 .lab-partner svg, .course-award svg, .gallery-category svg {
@@ -89,9 +112,14 @@
 #research-network { scroll-margin-top: 110px; }
 .person-card:has(.member-photo) p { overflow-wrap: anywhere; }
 .person-card.phd-member {
-  border-color: #708bb58c;
-  background: linear-gradient(145deg, #203452 0%, #111b31 35%, #111b31 82%, #182944 100%);
-  box-shadow: inset 0 1px 0 #a2c8ff45, 0 0 0 1px #5588cc12;
+  --phd-edge: linear-gradient(145deg, #9fc7fb 0%, #45648b 27%, #24344f 57%, #5868a5 85%, #798fc6 100%);
+  border-color: transparent;
+  background: linear-gradient(149deg, var(--layer2), var(--layer) 44%, var(--layer) 80%, var(--layer2)) padding-box,
+    var(--phd-edge) border-box;
+  box-shadow: 0 3px 16px #507cc91c;
+}
+[data-theme="light"] .person-card.phd-member {
+  --phd-edge: linear-gradient(145deg, #6c93cb, #a9c0e6 30%, #d3dcf4 55%, #8f86ba 90%);
 }
 .pi-logo picture { display: block; width: 100%; height: 100%; }
 .pi-logo.service-logo {

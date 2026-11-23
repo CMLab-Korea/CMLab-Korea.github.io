@@ -64,11 +64,15 @@
   },
   "naver-cloud": {
     "name": "NAVER Cloud",
-    "logo": "assets/img/institutions/naver-cloud.webp"
+    "logo": "assets/img/institutions/naver-cloud.webp",
+    "compact_logo": "assets/img/institutions/naver-cloud-mark.webp",
+    "compact_logo_source": "https://github.com/CMLab-Korea/SEAL/blob/8542f267ba09d8606cc5eecfaa7a7487c5c57fd9/assets/naver.png"
   },
   "lunit": {
-    "name": "Lunit",
-    "logo": "assets/img/institutions/lunit.webp"
+    "name": "Lunit Inc.",
+    "logo": "assets/img/institutions/lunit.webp",
+    "compact_logo": "assets/img/institutions/lunit-mark.webp",
+    "compact_logo_source": "https://github.com/CMLab-Korea/SEAL/blob/8542f267ba09d8606cc5eecfaa7a7487c5c57fd9/assets/lunit.png"
   },
   "dexter": {
     "name": "Dexter Studios",
