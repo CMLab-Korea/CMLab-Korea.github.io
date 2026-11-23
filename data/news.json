@@ -1,0 +1,864 @@
+[
+  {
+    "date": "2026-09",
+    "category": "Publication",
+    "headline": [
+      "One paper (",
+      {
+        "text": "🏃🏻MotionGrounder",
+        "url": "https://kaist-viclab.github.io/motiongrounder-site/"
+      },
+      ") has been accepted to ",
+      {
+        "text": "NeurIPS 2026",
+        "highlight": true
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🏃🏻MotionGrounder",
+        "url": "https://kaist-viclab.github.io/motiongrounder-site/"
+      }
+    ]
+  },
+  {
+    "date": "2026-09",
+    "category": "Award",
+    "headline": [
+      "Prof. Oh has been selected as an ",
+      {
+        "text": "ECCV 2026",
+        "highlight": true
+      },
+      " ",
+      {
+        "text": "Outstanding Reviewer",
+        "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee"
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "Outstanding Reviewer",
+        "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee"
+      }
+    ]
+  },
+  {
+    "date": "2026-08",
+    "category": "Publication",
+    "headline": [
+      "One paper (",
+      {
+        "text": "🎯 PRIMEdit",
+        "url": "https://kaist-viclab.github.io/primedit-site/"
+      },
+      ") has been accepted to ",
+      {
+        "text": "IEEE TPAMI",
+        "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+      },
+      " (IF: 20.4)."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🎯 PRIMEdit",
+        "url": "https://kaist-viclab.github.io/primedit-site/"
+      },
+      {
+        "label": "IEEE TPAMI",
+        "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+      }
+    ]
+  },
+  {
+    "date": "2026-07",
+    "category": "Award",
+    "headline": [
+      "Prof. Oh has been selected as an ",
+      {
+        "text": "Outstanding Instructor",
+        "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+      },
+      " for Spring 2026 (CAU Teaching Evaluation)."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "Outstanding Instructor",
+        "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+      }
+    ]
+  },
+  {
+    "date": "2026-06",
+    "category": "Publication",
+    "headline": [
+      "Two papers (",
+      {
+        "text": "֎FMA-Net++,",
+        "url": "https://kaist-viclab.github.io/fmanetpp_site/#"
+      },
+      " ",
+      {
+        "text": "🔎AVSR-Diff",
+        "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+      },
+      ") have been accepted to ",
+      {
+        "text": "ECCV 2026",
+        "highlight": true
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "֎FMA-Net++,",
+        "url": "https://kaist-viclab.github.io/fmanetpp_site/#"
+      },
+      {
+        "label": "🔎AVSR-Diff",
+        "url": "https://kaist-viclab.github.io/AVSR-Diff/"
+      }
+    ]
+  },
+  {
+    "date": "2026-05",
+    "category": "Award",
+    "headline": [
+      "Prof. Oh has been selected as an ",
+      {
+        "text": "CVPR 2026",
+        "highlight": true
+      },
+      " ",
+      {
+        "text": "Outstanding Reviewer",
+        "url": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf"
+      },
+      " (",
+      {
+        "text": "6.1%",
+        "highlight": true
+      },
+      ")."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "Outstanding Reviewer",
+        "url": "https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2026-04",
+    "category": "Award",
+    "headline": [
+      "Two papers (",
+      {
+        "text": "🚂 MoRel",
+        "url": "https://cmlab-korea.github.io/MoRel/"
+      },
+      ", ",
+      {
+        "text": "🌱 EcoSplat",
+        "highlight": true
+      },
+      ") have been selected as ",
+      {
+        "text": "CVPR 2026",
+        "highlight": true
+      },
+      " 🏅",
+      {
+        "text": "Highlights",
+        "highlight": true
+      },
+      " (",
+      {
+        "text": "3.6%",
+        "highlight": true
+      },
+      " ≈ 578/16,092)."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🚂 MoRel",
+        "url": "https://cmlab-korea.github.io/MoRel/"
+      },
+      {
+        "label": "🌱 EcoSplat",
+        "url": "https://kaist-viclab.github.io/splinegs-site/"
+      }
+    ],
+    "link_issues": [
+      {
+        "id": "URL2",
+        "label": "🌱 EcoSplat",
+        "url": "https://kaist-viclab.github.io/splinegs-site/"
+      }
+    ]
+  },
+  {
+    "date": "2026-03",
+    "category": "People",
+    "headline": [
+      "Seungho and Jeongho joined our lab in the spring of 2026. Welcome!"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": []
+  },
+  {
+    "date": "2026-02",
+    "category": "Publication",
+    "headline": [
+      {
+        "text": "🂡 AceVFI",
+        "url": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main"
+      },
+      ", our comprehensive survey on Video Frame Interpolation, has been accepted to IEEE TCSVT (IF: 11.1)."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🂡 AceVFI",
+        "url": "https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation/tree/main"
+      }
+    ]
+  },
+  {
+    "date": "2026-02",
+    "category": "Publication",
+    "headline": [
+      "Four papers (",
+      {
+        "text": "🚂 MoRel",
+        "url": "https://cmlab-korea.github.io/MoRel/"
+      },
+      ", ",
+      {
+        "text": "🖼️ FRAMER",
+        "url": "https://cmlab-korea.github.io/FRAMER/"
+      },
+      ", ",
+      {
+        "text": "🌱 EcoSplat",
+        "highlight": true
+      },
+      ", ",
+      {
+        "text": "✨ FLAIR",
+        "highlight": true
+      },
+      ") have been accepted to ",
+      {
+        "text": "CVPR 2026",
+        "highlight": true
+      },
+      " (including 1 Findings)."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🚂 MoRel",
+        "url": "https://cmlab-korea.github.io/MoRel/"
+      },
+      {
+        "label": "🖼️ FRAMER",
+        "url": "https://cmlab-korea.github.io/FRAMER/"
+      },
+      {
+        "label": "🌱 EcoSplat",
+        "url": "https://kaist-viclab.github.io/splinegs-site/"
+      },
+      {
+        "label": "✨ FLAIR",
+        "url": "https://cmlab-korea.github.io./FLAIR/"
+      }
+    ],
+    "link_issues": [
+      {
+        "id": "URL2",
+        "label": "🌱 EcoSplat",
+        "url": "https://kaist-viclab.github.io/splinegs-site/"
+      },
+      {
+        "id": "URL1",
+        "label": "✨ FLAIR",
+        "url": "https://cmlab-korea.github.io./FLAIR/"
+      }
+    ]
+  },
+  {
+    "date": "2026-01",
+    "category": "Publication",
+    "headline": [
+      "One paper on Training-Free Generalist for Text Image Manipulation (",
+      {
+        "text": "🖌OmniText",
+        "url": "https://kaist-viclab.github.io/omnitext-site/"
+      },
+      ") has been accepted to ",
+      {
+        "text": "ICLR 2026",
+        "highlight": true
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🖌OmniText",
+        "url": "https://kaist-viclab.github.io/omnitext-site/"
+      }
+    ]
+  },
+  {
+    "date": "2025-12",
+    "category": "Publication",
+    "headline": [
+      "One paper on Video Demoiréing Transformer (",
+      {
+        "text": "☕️ MoCHA-former",
+        "url": "https://cmlab-korea.github.io/MoCHA-former/"
+      },
+      ") has been accepted to ",
+      {
+        "text": "Neurocomputing",
+        "highlight": true
+      },
+      " (IF: 6.5)."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "☕️ MoCHA-former",
+        "url": "https://cmlab-korea.github.io/MoCHA-former/"
+      },
+      {
+        "label": "Neurocomputing",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+      }
+    ],
+    "link_issues": [
+      {
+        "id": "URL3",
+        "label": "Neurocomputing",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+      }
+    ]
+  },
+  {
+    "date": "2025-11",
+    "category": "Publication",
+    "headline": [
+      "Two papers (",
+      {
+        "text": "♻️ I-INR",
+        "url": "https://arxiv.org/abs/2504.17364"
+      },
+      ", ",
+      {
+        "text": "🕵🏻‍♂️ MoBGS",
+        "url": "https://arxiv.org/abs/2504.15122"
+      },
+      ") have been accepted to ",
+      {
+        "text": "AAAI 2026",
+        "highlight": true
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "♻️ I-INR",
+        "url": "https://arxiv.org/abs/2504.17364"
+      },
+      {
+        "label": "🕵🏻‍♂️ MoBGS",
+        "url": "https://arxiv.org/abs/2504.15122"
+      }
+    ]
+  },
+  {
+    "date": "2025-10",
+    "category": "Publication",
+    "headline": [
+      "One paper on Arbitrary-Scale Super-Resolution (",
+      {
+        "text": "🌀SoFoNO",
+        "url": "https://jongkwonoh.github.io/sofono-page/"
+      },
+      ") has been accepted to ",
+      {
+        "text": "Neurocomputing",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+      },
+      " (IF: 6.5)."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🌀SoFoNO",
+        "url": "https://jongkwonoh.github.io/sofono-page/"
+      },
+      {
+        "label": "Neurocomputing",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0925231225026165"
+      }
+    ]
+  },
+  {
+    "date": "2025-09",
+    "category": "Publication",
+    "headline": [
+      {
+        "text": "MoBluRF🫨",
+        "url": "https://ieeexplore.ieee.org/document/11017407"
+      },
+      " [",
+      {
+        "text": "IEEE TPAMI",
+        "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+      },
+      " (IF: 18.6)] has been featured on ",
+      {
+        "text": "EurekAlert",
+        "url": "https://www.eurekalert.org/news-releases/1098837"
+      },
+      " and ",
+      {
+        "text": "CAU News",
+        "url": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140"
+      },
+      " as one of CAU’s global research highlights (",
+      {
+        "text": "Altmetric score 74",
+        "url": "https://www.altmetric.com/details/157703400/news"
+      },
+      ")."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "MoBluRF🫨",
+        "url": "https://ieeexplore.ieee.org/document/11017407"
+      },
+      {
+        "label": "IEEE TPAMI",
+        "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+      },
+      {
+        "label": "EurekAlert",
+        "url": "https://www.eurekalert.org/news-releases/1098837"
+      },
+      {
+        "label": "CAU News",
+        "url": "https://neweng.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=920&CONTENTS_NO=&SITE_NO=3&BOARD_SEQ=14&BOARD_CATEGORY_NO=&P_TAB_NO=&TAB_NO=&BBS_SEQ=140"
+      },
+      {
+        "label": "Altmetric score 74",
+        "url": "https://www.altmetric.com/details/157703400/news"
+      }
+    ]
+  },
+  {
+    "date": "2025-09",
+    "category": "Award",
+    "headline": [
+      "Prof. Oh has been selected as an ",
+      {
+        "text": "ICCV 2025",
+        "highlight": true
+      },
+      " ",
+      {
+        "text": "Outstanding Reviewer",
+        "url": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf"
+      },
+      " (",
+      {
+        "text": "3%",
+        "highlight": true
+      },
+      ")."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "Outstanding Reviewer",
+        "url": "https://media.eventhosts.cc/Conferences/ICCV2025/iccv25_main_program.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2025-09",
+    "category": "People",
+    "headline": [
+      "SeokHyun, Yejong, and Hyungyu joined our lab in the fall of 2025 as MS students. Welcome!"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": []
+  },
+  {
+    "date": "2025-08",
+    "category": "Award",
+    "headline": [
+      "Prof. Oh has been selected as an ",
+      {
+        "text": "Outstanding Instructor",
+        "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+      },
+      " for Spring 2025 (CAU Teaching Evaluation)."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "Outstanding Instructor",
+        "url": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+      }
+    ]
+  },
+  {
+    "date": "2025-07",
+    "category": "Service",
+    "headline": [
+      "Prof. Oh will serve as a Program Committee for ",
+      {
+        "text": "AAAI 2026",
+        "highlight": true
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": []
+  },
+  {
+    "date": "2025-06",
+    "category": "Publication",
+    "headline": [
+      "One paper (🔍 ",
+      {
+        "text": "DiffPS",
+        "url": "https://github.com/PerceptualAI-Lab/DiffPS"
+      },
+      ") on Person Search has been accepted to ",
+      {
+        "text": "ICCV 2025",
+        "highlight": true
+      },
+      " and selected as a🏅",
+      {
+        "text": "Highlight",
+        "highlight": true
+      },
+      " Paper (",
+      {
+        "text": "2.35%",
+        "highlight": true
+      },
+      " ≈ 263/11,152)."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "DiffPS",
+        "url": "https://github.com/PerceptualAI-Lab/DiffPS"
+      }
+    ]
+  },
+  {
+    "date": "2025-05",
+    "category": "Publication",
+    "headline": [
+      "Two papers (",
+      {
+        "text": "MoBluRF🫨",
+        "url": "https://ieeexplore.ieee.org/document/11017407"
+      },
+      ", ",
+      {
+        "text": "DG-ReID🫆",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353"
+      },
+      ") have been accepted to ",
+      {
+        "text": "IEEE TPAMI",
+        "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+      },
+      " (IF: 18.6) and ",
+      {
+        "text": "Neurocomputing",
+        "url": "https://www.sciencedirect.com/journal/neurocomputing"
+      },
+      " (IF: 6.5), respectively."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "MoBluRF🫨",
+        "url": "https://ieeexplore.ieee.org/document/11017407"
+      },
+      {
+        "label": "DG-ReID🫆",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353"
+      },
+      {
+        "label": "IEEE TPAMI",
+        "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34"
+      },
+      {
+        "label": "Neurocomputing",
+        "url": "https://www.sciencedirect.com/journal/neurocomputing"
+      }
+    ]
+  },
+  {
+    "date": "2025-02",
+    "category": "Publication",
+    "headline": [
+      "Three papers (",
+      {
+        "text": "MoDec🎄-GS",
+        "url": "https://kaist-viclab.github.io/MoDecGS-site/"
+      },
+      ", ",
+      {
+        "text": "⏱️ BiM-VFI",
+        "url": "https://kaist-viclab.github.io/BiM-VFI_site/"
+      },
+      ", ",
+      {
+        "text": "∿ SplineGS",
+        "url": "https://kaist-viclab.github.io/splinegs-site/"
+      },
+      " ) have been accepted to ",
+      {
+        "text": "CVPR 2025",
+        "highlight": true
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "MoDec🎄-GS",
+        "url": "https://kaist-viclab.github.io/MoDecGS-site/"
+      },
+      {
+        "label": "⏱️ BiM-VFI",
+        "url": "https://kaist-viclab.github.io/BiM-VFI_site/"
+      },
+      {
+        "label": "∿ SplineGS",
+        "url": "https://kaist-viclab.github.io/splinegs-site/"
+      }
+    ]
+  },
+  {
+    "date": "2025-02",
+    "category": "People",
+    "headline": [
+      "Sukhun, Weeyoung, and Gyuwon joined our lab in the spring of 2025 as MS students. Welcome!"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": []
+  },
+  {
+    "date": "2024-11",
+    "category": "People",
+    "headline": [
+      "Prof. Oh joined ",
+      {
+        "text": "inshorts",
+        "url": "https://www.inshorts.ai/en"
+      },
+      " as a CAIO to research and integrate Low-Level Vision techniques into real-world products."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "inshorts",
+        "url": "https://www.inshorts.ai/en"
+      }
+    ]
+  },
+  {
+    "date": "2024-09",
+    "category": "People",
+    "headline": [
+      "Juhyun joined our lab in the fall of 2024 as MS student. Welcome!"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": []
+  },
+  {
+    "date": "2024-08",
+    "category": "Service",
+    "headline": [
+      "Prof. Oh will serve as a Program Committee for ",
+      {
+        "text": "AAAI 2025",
+        "highlight": true
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": []
+  },
+  {
+    "date": "2024-06",
+    "category": "Event",
+    "headline": [
+      "Prof. Oh was invited to talk on ",
+      {
+        "text": "🍎 FMA-Net",
+        "url": "https://kaist-viclab.github.io/fmanet-site/"
+      },
+      " and ",
+      {
+        "text": "XVFI",
+        "url": "https://github.com/JihyongOh/XVFI"
+      },
+      " at the ",
+      {
+        "text": "AIS (CVPR 2024 Workshop",
+        "url": "https://ai4streaming-workshop.github.io/"
+      },
+      ")."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🍎 FMA-Net",
+        "url": "https://kaist-viclab.github.io/fmanet-site/"
+      },
+      {
+        "label": "XVFI",
+        "url": "https://github.com/JihyongOh/XVFI"
+      },
+      {
+        "label": "AIS (CVPR 2024 Workshop",
+        "url": "https://ai4streaming-workshop.github.io/"
+      }
+    ]
+  },
+  {
+    "date": "2024-05",
+    "category": "Award",
+    "headline": [
+      "Prof. Oh has been selected as a ",
+      {
+        "text": "CVPR 2024",
+        "highlight": true
+      },
+      " ",
+      {
+        "text": "Outstanding Reviewer",
+        "url": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf"
+      },
+      " (",
+      {
+        "text": "2%",
+        "highlight": true
+      },
+      ")."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "Outstanding Reviewer",
+        "url": "https://media.eventhosts.cc/Conferences/CVPR2024/CVPR_main_conf_2024.pdf"
+      }
+    ]
+  },
+  {
+    "date": "2024-04",
+    "category": "Award",
+    "headline": [
+      "Our ",
+      {
+        "text": "🍎 FMA-Net",
+        "url": "https://kaist-viclab.github.io/fmanet-site/"
+      },
+      " (Final Review Scores: 5/5/4) has been selected as an 🏅",
+      {
+        "text": "Oral Paper",
+        "highlight": true
+      },
+      " (",
+      {
+        "text": "0.78%",
+        "highlight": true
+      },
+      " ≈ 90/11,532), which will be a huge honor to be presented in front of an audience of thousands of people."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🍎 FMA-Net",
+        "url": "https://kaist-viclab.github.io/fmanet-site/"
+      }
+    ]
+  },
+  {
+    "date": "2024-02",
+    "category": "Publication",
+    "headline": [
+      "One paper (",
+      {
+        "text": "🍎 FMA-Net",
+        "url": "https://kaist-viclab.github.io/fmanet-site/"
+      },
+      ") on Joint Video Super-Resolution and Deblurring has been accepted to ",
+      {
+        "text": "CVPR 2024",
+        "highlight": true
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "🍎 FMA-Net",
+        "url": "https://kaist-viclab.github.io/fmanet-site/"
+      }
+    ]
+  },
+  {
+    "date": "2023-11",
+    "category": "People",
+    "headline": [
+      "Dahyeon, Giyeol, Changhyun, Jeahun, and Hyunseo joined our lab in the spring of 2024 as MS students. Welcome!"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": []
+  },
+  {
+    "date": "2023-09-01",
+    "category": "Event",
+    "headline": [
+      "CMLab has been newly opened by Assistant Prof. ",
+      {
+        "text": "Jihyong Oh",
+        "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+      },
+      "."
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
+    "source_links": [
+      {
+        "label": "Jihyong Oh",
+        "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
+      }
+    ]
+  }
+]

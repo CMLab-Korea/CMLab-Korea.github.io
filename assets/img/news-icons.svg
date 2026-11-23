@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="publication" viewBox="0 0 24 24">
+    <path d="M5 3h10l4 4v14H5z M15 3v5h4 M8 12h8 M8 16h6"/>
+  </symbol>
+  <symbol id="award" viewBox="0 0 24 24">
+    <circle cx="12" cy="8" r="5"/>
+    <path d="m9 13-2 8 5-3 5 3-2-8"/>
+  </symbol>
+  <symbol id="funding" viewBox="0 0 24 24">
+    <ellipse cx="10" cy="6" rx="7" ry="3"/>
+    <path d="M3 6v8c0 2 3 3 7 3 M17 6v3 M3 10c0 2 3 3 7 3 M16 12v8 M12 16h8"/>
+  </symbol>
+  <symbol id="people" viewBox="0 0 24 24">
+    <circle cx="9" cy="7" r="3"/>
+    <path d="M3 20v-2a6 6 0 0 1 12 0v2 M16 4a3 3 0 0 1 0 6 M18 14a5 5 0 0 1 3 5v1"/>
+  </symbol>
+  <symbol id="event" viewBox="0 0 24 24">
+    <rect x="3" y="5" width="18" height="16" rx="2"/>
+    <path d="M7 3v4 M17 3v4 M3 10h18 M8 15h3"/>
+  </symbol>
+  <symbol id="service" viewBox="0 0 24 24">
+    <path d="M6 5h3 M15 5h3v16H6V5 M9 4h6v4H9z M9 14l2 2 4-5"/>
+  </symbol>
+</svg>

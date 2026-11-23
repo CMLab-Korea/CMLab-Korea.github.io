@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Dahyeon Kye",
+    "degree": "Ph.D.",
+    "group": "core",
+    "note": "Lab Manager"
+  },
+  {
+    "name": "Jeahun Sung",
+    "degree": "Ph.D.",
+    "group": "core",
+    "note": ""
+  },
+  {
+    "name": "Seungho Choi",
+    "degree": "Ph.D.",
+    "group": "core",
+    "note": ""
+  },
+  {
+    "name": "Changhyun Roh",
+    "degree": "Ph.D.",
+    "group": "core",
+    "note": ""
+  },
+  {
+    "name": "Sukhun Ko",
+    "degree": "M.S.",
+    "group": "core",
+    "note": ""
+  },
+  {
+    "name": "Weeyoung Kwon",
+    "degree": "M.S.",
+    "group": "core",
+    "note": ""
+  },
+  {
+    "name": "SeokHyun Yoon",
+    "degree": "M.S.",
+    "group": "core",
+    "note": ""
+  },
+  {
+    "name": "Jeongho Seo",
+    "degree": "M.S.",
+    "group": "core",
+    "note": ""
+  },
+  {
+    "name": "Yujin Jeong",
+    "degree": "Research Intern",
+    "group": "intern",
+    "note": ""
+  },
+  {
+    "name": "Moonseung Choi",
+    "degree": "Research Intern",
+    "group": "intern",
+    "note": ""
+  },
+  {
+    "name": "Sangmin Kim",
+    "degree": "Research Intern",
+    "group": "intern",
+    "note": ""
+  }
+]
