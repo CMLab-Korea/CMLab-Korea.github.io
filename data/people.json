@@ -31,14 +31,15 @@
   {
     "group": "core",
     "degree": "Ph.D. candidate",
-    "name": "Choi Seungho",
+    "name": "Seungho Choi",
     "photo": "assets/img/people/choi-seungho.webp",
     "semester": "26-1",
     "url": "https://oh-gnues-iohc.github.io/",
     "aliases": [
-      "Seungho Choi"
+      "Choi Seungho"
     ],
-    "sort_family_ko": "최"
+    "sort_family_ko": "최",
+    "author_name": "Seungho Choi"
   },
   {
     "group": "core",
@@ -75,16 +76,15 @@
   {
     "group": "core",
     "degree": "M.S. candidate",
-    "name": "SeokHyun Yoon",
+    "name": "Seokhyun Youn",
     "photo": "assets/img/people/seokhyun-yoon.webp",
     "semester": "25-2",
     "email": "hisn16@cau.ac.kr",
     "aliases": [
-      "Seokhyun Youn",
-      "SeokHyun Youn"
+      "SeokHyun Yoon"
     ],
-    "author_name": "Seokhyun Youn",
-    "sort_family_ko": "윤"
+    "sort_family_ko": "윤",
+    "author_name": "Seokhyun Youn"
   },
   {
     "group": "core",
@@ -110,5 +110,12 @@
     "photo": "assets/img/people/moonseung-choi.webp",
     "semester": "27-1",
     "sort_family_ko": "최"
+  },
+  {
+    "group": "intern",
+    "degree": "Research intern",
+    "name": "Eunseong Cho",
+    "semester": "27-2",
+    "sort_family_ko": "조"
   }
 ]

@@ -44,3 +44,5 @@
   }
   .news-item .news-headline { grid-column: 1 / -1; }
 }
+
+.news-headline a, .news-headline strong { font-weight: 650; }

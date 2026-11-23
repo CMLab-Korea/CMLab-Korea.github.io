@@ -44,14 +44,19 @@
     "logo": "assets/img/institutions/razer.webp"
   },
   "naver-ai": {
-    "name": "NAVER AI Lab"
+    "name": "NAVER AI Lab",
+    "logo": "assets/img/institutions/naver-ai-horizontal.webp",
+    "logo_vertical": "assets/img/institutions/naver-ai-vertical.webp",
+    "logo_source": "NAVER AI Lab brand PDFs supplied by CMLab"
   },
   "inshorts": {
     "name": "inshorts",
     "logo": "assets/img/institutions/inshorts.webp"
   },
   "cornell-tech": {
-    "name": "Cornell Tech"
+    "name": "Cornell Tech",
+    "logo": "assets/img/institutions/cornell-tech.webp",
+    "logo_source": "https://tech.cornell.edu/"
   },
   "snu": {
     "name": "Seoul National University",
@@ -68,5 +73,10 @@
   "dexter": {
     "name": "Dexter Studios",
     "logo": "assets/img/institutions/dexter.webp"
+  },
+  "microsoft": {
+    "name": "Microsoft",
+    "logo": "assets/img/institutions/microsoft.webp",
+    "logo_source": "https://www.microsoft.com/en-us/"
   }
 }

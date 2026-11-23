@@ -20,7 +20,7 @@ The preview bundles the lab's official logo from the [branding repository](https
 
 ## Home updates
 
-Set `featured_order` to a unique positive number on up to four records in `data/publications.json`. Home uses those records in ascending order and reads the title, venue, project link and poster from the same entry as Publications. Remove the field from papers leaving Selected Work.
+Home selects two preprints and two peer-reviewed papers from the first six of each group in `data/publications.json`. Keep the catalog in publication order. Titles, links and posters come from the same entries as Publications.
 
 Add news to `data/news.json` with a `YYYY-MM` date, headline, and category. Use `YYYY-MM-DD` for the lab opening entry. Use Publication, Award, Funding, People, Event, or Service as applicable. Keep an optional `source_url` for editorial verification. Home displays the latest ten entries and offers the rest when available.
 
