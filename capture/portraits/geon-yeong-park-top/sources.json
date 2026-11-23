@@ -1,0 +1,55 @@
+{
+  "url": "https://geonyeong-park.github.io/",
+  "title": "Geon Yeong Park | KAIST",
+  "head": "Geon Yeong Park\nPostdoctoral researcher\nKAIST\npky3436 (at) kaist.ac.kr\n\n\n    \n\n\nAbout Me\n\nI am a Postdoctoral researcher at KAIST, advised by Prof. Jong Chul Ye. I recently worked as a Research Scientist Intern at Meta Reality Labs (London) in the 2025 summer. During my postdoc, I’ll be working on world models with Jin-Hwa Kim at NAVER AI Lab.\n\nMy research focuses on diffusion models and their applications, including multi-modal generation, editing, and reconstruction. Recently, I have been exploring physically grounded world models.\n\nExperience\nKAIST, Postdoctoral researcher (Mar 2026 - Feb 2027)\nMeta Reality Labs, Research Intern (May 2025 - Oct 2025). Advised by Thu Nguyen-Phuoc, Andrea Vedaldi, Roman Shapovalov\nPromedius, Research Intern (Mar 2021 - Sep 2021)\nLooxid Labs, Research Intern (Sep 2018 - Jan 2019)\nNAVER Clova, Service Planning Intern (Jun 2018 - Aug 2018)\nNews\n[Jun. 2026] One paper (MeshReGen) accepted at ECCV 2026.\n[Feb. 2026] One paper (WorldGen) accepted at CVPR 2026.\n[Nov. 2025] One paper (DreamMakeup) accepted at WACV 2026.\n[Jun. 2025] One paper (Inference-time distillation) accepted at ICCV 2025.\n[Feb. 2025] One paper (VideoGuide) accepted at CVPR 2025.\n[Feb. 2025] TReg is selected as a spotlight paper in ICLR 2025.\n[Jan. 2025] Two papers (CFG++, TReg) accepted at ICLR 2025.\n[Jan. 2025] DreamMakeup wins 2025 CES Innovation Awards (co-worked with AmorePacific)\n[Jan. 2025] CFG++ receives 31st Samsung Humantech Paper Award (2nd in Signal Processing)\n[Dec. 2024] I will join Meta Reality Labs Research in London as a Research Scientist Intern in 2025 summer (Mentor: Dr. Thu Nguyen-Phuoc)\n[Dec. 2024] One paper (SMA) accepted at AAAI 2025.\n[Nov. 2024] VMC is presented as an oral presentation at KCCV 2024, and wins finalist award at Qualcomm Innovation Fellowship Award 2024.\n[Jul. 2024] Two papers (Dreamsampler, DreamMotion) accepted at ECCV 2024.\n[Jun. 2024] CFG++ is available on arxiv. A simple fix to CFG that enables lower guidance scales, improves sample quality and invertibility.\n[Mar. 2024] Dreamsampler, DreamMotion, Treg is available on arxiv.\n[Mar. 2024] Three papers (Self-supervised debiasing, VMC, CDS) accepted at CVPR 2024.\n[Jan. 2024] EB",
+  "items": [
+    {
+      "alt": "avatar",
+      "html": "<img src=\"./assets/img/avatar_.jpg\" alt=\"avatar\">",
+      "context": "Geon Yeong Park\nPostdoctoral researcher\nKAIST\npky3436 (at) kaist.ac.kr\n\n\n    \n\n",
+      "idx": 0
+    },
+    {
+      "alt": null,
+      "html": "<img src=\"./assets/img/flowlong.gif\" class=\"teaser img-fluid z-depth-1\" style=\"width=100;height=40%\">",
+      "context": "About Me\n\nI am a Postdoctoral researcher at KAIST, advised by Prof. Jong Chul Ye. I recently worked as a Research Scientist Intern at Meta Reality Labs (London) in the 2025 summer. During my postdoc, I’ll be working on world models with Jin-Hwa Kim at NAVER AI Lab.\n\nMy research focuses on diffusion models and their app",
+      "idx": 1
+    },
+    {
+      "alt": null,
+      "html": "<img src=\"./assets/img/meshregen.gif\" class=\"teaser img-fluid z-depth-1\" style=\"width=100;height=40%\">",
+      "context": "About Me\n\nI am a Postdoctoral researcher at KAIST, advised by Prof. Jong Chul Ye. I recently worked as a Research Scientist Intern at Meta Reality Labs (London) in the 2025 summer. During my postdoc, I’ll be working on world models with Jin-Hwa Kim at NAVER AI Lab.\n\nMy research focuses on diffusion models and their app",
+      "idx": 2
+    },
+    {
+      "alt": null,
+      "html": "<img src=\"./assets/img/worldgen.png\" class=\"teaser img-fluid z-depth-1\" style=\"width=100;height=40%\">",
+      "context": "About Me\n\nI am a Postdoctoral researcher at KAIST, advised by Prof. Jong Chul Ye. I recently worked as a Research Scientist Intern at Meta Reality Labs (London) in the 2025 summer. During my postdoc, I’ll be working on world models with Jin-Hwa Kim at NAVER AI Lab.\n\nMy research focuses on diffusion models and their app",
+      "idx": 3
+    },
+    {
+      "alt": null,
+      "html": "<img src=\"./assets/img/distillation_pp.png\" class=\"teaser img-fluid z-depth-1\" style=\"width=100;height=40%\">",
+      "context": "About Me\n\nI am a Postdoctoral researcher at KAIST, advised by Prof. Jong Chul Ye. I recently worked as a Research Scientist Intern at Meta Reality Labs (London) in the 2025 summer. During my postdoc, I’ll be working on world models with Jin-Hwa Kim at NAVER AI Lab.\n\nMy research focuses on diffusion models and their app",
+      "idx": 4
+    },
+    {
+      "alt": null,
+      "html": "<img src=\"./assets/img/videoguide.gif\" class=\"teaser img-fluid z-depth-1\" style=\"width=100;height=40%\">",
+      "context": "About Me\n\nI am a Postdoctoral researcher at KAIST, advised by Prof. Jong Chul Ye. I recently worked as a Research Scientist Intern at Meta Reality Labs (London) in the 2025 summer. During my postdoc, I’ll be working on world models with Jin-Hwa Kim at NAVER AI Lab.\n\nMy research focuses on diffusion models and their app",
+      "idx": 5
+    },
+    {
+      "alt": null,
+      "html": "<img src=\"./assets/img/preprint_cfg++.png\" class=\"teaser img-fluid z-depth-1\" style=\"width=100;height=40%\">",
+      "context": "About Me\n\nI am a Postdoctoral researcher at KAIST, advised by Prof. Jong Chul Ye. I recently worked as a Research Scientist Intern at Meta Reality Labs (London) in the 2025 summer. During my postdoc, I’ll be working on world models with Jin-Hwa Kim at NAVER AI Lab.\n\nMy research focuses on diffusion models and their app",
+      "idx": 6
+    },
+    {
+      "alt": null,
+      "html": "<img src=\"./assets/img/preprint_treg.png\" class=\"teaser img-fluid z-depth-1\" style=\"width=100;height=40%\">",
+      "context": "About Me\n\nI am a Postdoctoral researcher at KAIST, advised by Prof. Jong Chul Ye. I recently worked as a Research Scientist Intern at Meta Reality Labs (London) in the 2025 summer. During my postdoc, I’ll be working on world models with Jin-Hwa Kim at NAVER AI Lab.\n\nMy research focuses on diffusion models and their app",
+      "idx": 7
+    }
+  ]
+}

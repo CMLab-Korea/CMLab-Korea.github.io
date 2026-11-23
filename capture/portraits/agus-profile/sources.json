@@ -1,0 +1,55 @@
+{
+  "url": "https://agusgun.github.io/",
+  "title": "Agus Gunawan",
+  "head": "Agus Gunawan\n\nPh.D., KAIST\n\nI build controllable, user-guided deep learning systems for low-level vision and computational photography, including but not limited to, image and video editing, colorization, and restoration. I am currently a Senior Data Scientist on the computer vision team at Razer AI.\n\nI was advised by Prof. Munchurl Kim. Before KAIST, I did my B.E. in Computer Science at ITB and worked as an ML engineer on NLP, search, and recommendation systems.\n\nEmail\nGoogle Scholar\nLinkedIn\nGitHub\nRESEARCH\nINDUSTRY\nPROJECTS\nResearch\nPUBLICATIONS\nOmniText: A Training-Free Generalist for Controllable Text-Image Manipulation\n\nAgus Gunawan*, Samuel Teodoro*, Chen Yun, Soo Ye Kim, Jihyong Oh, Munchurl Kim\nICLR, 2026\npaper / arXiv / project page / code\n\nOmniText is a training-free generalist capable of tackling diverse text image manipulation such as text insertion, editing, rescaling, repositioning, removal, and style-controlled text insertion and editing.\n\nPRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset\n\nSamuel Teodoro*, Agus Gunawan*, Soo Ye Kim, Jihyong Oh, Munchurl Kim\nUnder review\narXiv / project page\n\nPRIMEdit is a zero-shot multi-instance video editing framework that uses novel probability redistribution and sampling techniques to enable faithful instance edits while preventing unintended changes in diverse video scenarios.\n\nModernizing Old Photos Using Multiple References via Photorealistic Style Transfer\n\nAgus Gunawan, Soo Ye Kim, Hyeonjun Sim, Jae-Ho Lee, Munchurl Kim\nCVPR, 2023\npaper / arXiv / project page / code / video\n\nWe present old photo modernization using multiple references by performing stylization and enhancement in a unified manner. In order to modernize old photos, we propose a novel multi-reference-based old photo modernization (MROPM) framework consisting of a network MROPM-Net and a novel synthetic data generation scheme.\n\nUnderstanding and Improving Group Normalization\n\nAgus Gunawan, Xu Yin, Kang Zhang\nPreprint, 2022\narXiv / code\n\nWe find that GN’s inferior performance against Batch normalization (BN) is caused by: unstable training performance and sensitivity to distortion, wheth",
+  "items": [
+    {
+      "alt": "Agus Gunawan",
+      "html": "<img src=\"/_astro/agusgun-headshot.CEvJsBxH_Z7sLpS.webp\" srcset=\"/_astro/agusgun-headshot.CEvJsBxH_lQyhW.webp 176w, /_astro/agusgun-headshot.CEvJsBxH_xFDgl.webp 352w\" sizes=\"176px\" alt=\"Agus Gunawan\" loading=\"eager\" fetchpriority=\"high\" decoding=\"async\" width=\"576\" height=\"720\" class=\"hero__photo\">",
+      "context": "Agus Gunawan\n\nPh.D., KAIST\n\nI build controllable, user-guided deep learning systems for low-level vision and computational photography, including but not limited to, image and video editing, colorization, and restoration. I am currently a Senior Data Scientist on the computer vision team at Razer AI.\n\nI was advised by ",
+      "idx": 0
+    },
+    {
+      "alt": "Text-image manipulation before and after OmniText",
+      "html": "<img src=\"/images/omnitext/before.webp\" width=\"680\" height=\"129\" alt=\"Text-image manipulation before and after OmniText\" loading=\"lazy\" decoding=\"async\">",
+      "context": "OmniText: A Training-Free Generalist for Controllable Text-Image Manipulation\n\nAgus Gunawan*, Samuel Teodoro*, Chen Yun, Soo Ye Kim, Jihyong Oh, Munchurl Kim\nICLR, 2026\npaper / arXiv / project page / code\n\nOmniText is a training-free generalist capable of tackling diverse text image manipulation such as text insertion,",
+      "idx": 1
+    },
+    {
+      "alt": "",
+      "html": "<img class=\"media__after\" src=\"/images/omnitext/after.webp\" width=\"680\" height=\"242\" alt=\"\" aria-hidden=\"true\" loading=\"lazy\" decoding=\"async\">",
+      "context": "OmniText: A Training-Free Generalist for Controllable Text-Image Manipulation\n\nAgus Gunawan*, Samuel Teodoro*, Chen Yun, Soo Ye Kim, Jihyong Oh, Munchurl Kim\nICLR, 2026\npaper / arXiv / project page / code\n\nOmniText is a training-free generalist capable of tackling diverse text image manipulation such as text insertion,",
+      "idx": 2
+    },
+    {
+      "alt": "Old photo before and after modernization",
+      "html": "<img src=\"/images/mropm/before.webp\" width=\"680\" height=\"382\" alt=\"Old photo before and after modernization\" loading=\"lazy\" decoding=\"async\">",
+      "context": "Modernizing Old Photos Using Multiple References via Photorealistic Style Transfer\n\nAgus Gunawan, Soo Ye Kim, Hyeonjun Sim, Jae-Ho Lee, Munchurl Kim\nCVPR, 2023\npaper / arXiv / project page / code / video\n\nWe present old photo modernization using multiple references by performing stylization and enhancement in a unified",
+      "idx": 3
+    },
+    {
+      "alt": "",
+      "html": "<img class=\"media__after\" src=\"/images/mropm/after.webp\" width=\"680\" height=\"406\" alt=\"\" aria-hidden=\"true\" loading=\"lazy\" decoding=\"async\">",
+      "context": "Modernizing Old Photos Using Multiple References via Photorealistic Style Transfer\n\nAgus Gunawan, Soo Ye Kim, Hyeonjun Sim, Jae-Ho Lee, Munchurl Kim\nCVPR, 2023\npaper / arXiv / project page / code / video\n\nWe present old photo modernization using multiple references by performing stylization and enhancement in a unified",
+      "idx": 4
+    },
+    {
+      "alt": "Group normalization training behavior comparison",
+      "html": "<img src=\"/images/ugn/before.webp\" width=\"680\" height=\"155\" alt=\"Group normalization training behavior comparison\" loading=\"lazy\" decoding=\"async\">",
+      "context": "Understanding and Improving Group Normalization\n\nAgus Gunawan, Xu Yin, Kang Zhang\nPreprint, 2022\narXiv / code\n\nWe find that GN’s inferior performance against Batch normalization (BN) is caused by: unstable training performance and sensitivity to distortion, whether it comes from external noise or perturbations introduc",
+      "idx": 5
+    },
+    {
+      "alt": "",
+      "html": "<img class=\"media__after\" src=\"/images/ugn/after.webp\" width=\"680\" height=\"416\" alt=\"\" aria-hidden=\"true\" loading=\"lazy\" decoding=\"async\">",
+      "context": "Understanding and Improving Group Normalization\n\nAgus Gunawan, Xu Yin, Kang Zhang\nPreprint, 2022\narXiv / code\n\nWe find that GN’s inferior performance against Batch normalization (BN) is caused by: unstable training performance and sensitivity to distortion, whether it comes from external noise or perturbations introduc",
+      "idx": 6
+    },
+    {
+      "alt": "Real image denoising before and after test-time adaptation",
+      "html": "<img src=\"/images/ttaid/before.webp\" width=\"680\" height=\"312\" alt=\"Real image denoising before and after test-time adaptation\" loading=\"lazy\" decoding=\"async\">",
+      "context": "Test-time Adaptation for Real Image Denoising via Meta-transfer Learning\n\nAgus Gunawan*, Muhammad Adi Nugroho*, Se Jin Park*\nPreprint, 2022\narXiv / code\n\nWe propose to improve real image denoising performance through a better learning strategy that can enable test-time adaptation on the multi-task network using two-sta",
+      "idx": 7
+    }
+  ]
+}
