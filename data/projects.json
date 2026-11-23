@@ -1,0 +1,341 @@
+{
+  "source_url": "https://cmlab.cau.ac.kr/projects",
+  "organizations": {
+    "msit": {
+      "name": "Ministry of Science and ICT (MSIT)",
+      "logo": "assets/img/project-orgs/msit.webp"
+    },
+    "iitp": {
+      "name": "Institute for Information & Communications Technology Planning & Evaluation (IITP)",
+      "logo": "assets/img/project-orgs/iitp.webp"
+    },
+    "keti": {
+      "name": "Korea Electronics Technology Institute (KETI)",
+      "logo": "assets/img/project-orgs/keti.webp"
+    },
+    "etri": {
+      "name": "Electronics and Telecommunications Research Institute (ETRI)",
+      "logo": "assets/img/project-orgs/etri.webp"
+    },
+    "nipa": {
+      "name": "National IT Industry Promotion Agency (NIPA)",
+      "logo": "assets/img/project-orgs/nipa.webp"
+    },
+    "aica": {
+      "name": "Artificial Intelligence Industry Cluster Agency (AICA)",
+      "logo": "assets/img/project-orgs/aica.webp"
+    },
+    "gwangju": {
+      "name": "Gwangju Metropolitan City",
+      "logo": "assets/img/project-orgs/gwangju.webp"
+    },
+    "nrf": {
+      "name": "National Research Foundation of Korea (NRF)",
+      "logo": "assets/img/project-orgs/nrf.webp"
+    },
+    "dexter": {
+      "name": "Dexter Studios",
+      "logo": "assets/img/project-orgs/dexter.webp"
+    },
+    "inshorts": {
+      "name": "inshorts",
+      "logo": "assets/img/project-orgs/inshorts.webp",
+      "url": "https://www.inshorts.ai/"
+    },
+    "moe": {
+      "name": "Ministry of Education",
+      "logo": "assets/img/project-orgs/moe.webp"
+    },
+    "ucla-artsci": {
+      "name": "UCLA Art|Sci Center",
+      "logo": "assets/img/project-orgs/ucla-artsci.webp",
+      "url": "https://artsci.ucla.edu/"
+    },
+    "seoul": {
+      "name": "Seoul Metropolitan Government",
+      "logo": "assets/img/project-orgs/seoul.webp"
+    },
+    "seoul-institute": {
+      "name": "The Seoul Institute",
+      "logo": "assets/img/project-orgs/seoul-institute.webp"
+    },
+    "seoul-rise": {
+      "name": "Seoul RISE Center",
+      "logo": "assets/img/project-orgs/seoul-rise.webp"
+    },
+    "mcst": {
+      "name": "Ministry of Culture, Sports and Tourism (MCST)",
+      "logo": "assets/img/project-orgs/mcst.webp"
+    },
+    "kocca": {
+      "name": "Korea Creative Content Agency (KOCCA)",
+      "logo": "assets/img/project-orgs/kocca.webp"
+    },
+    "mnd": {
+      "name": "Ministry of National Defense",
+      "logo": "assets/img/project-orgs/mnd.webp"
+    },
+    "bk21": {
+      "name": "Brain Korea 21",
+      "logo": "assets/img/project-orgs/bk21.webp"
+    }
+  },
+  "projects": [
+    {
+      "id": "L9",
+      "role": "L",
+      "support_type": "Compute support",
+      "organizations": [
+        "msit",
+        "iitp",
+        "keti"
+      ],
+      "start": "2026-07",
+      "end": "2026-11",
+      "title": "2026년도 AI연구용 컴퓨팅 지원 프로젝트",
+      "programs": [
+        "AI 연구용 컴퓨팅 지원 프로젝트"
+      ],
+      "topic": "Development of VLM Agent-based Complex Degradation Diagnosis-based Feed-forward 4D Dynamic Scene Reconstruction Technology",
+      "compute": "H100 × 16"
+    },
+    {
+      "id": "L8",
+      "role": "L",
+      "support_type": "Funding",
+      "organizations": [
+        "msit",
+        "etri"
+      ],
+      "start": "2026-05",
+      "end": "2026-11",
+      "title": "동적 공간 사전정보를 이용한 4DGS 생성 소프트웨어 구현",
+      "programs": [
+        "연구용역사업"
+      ],
+      "topic": "Development of 4DGS Generation Software Leveraging Dynamic Spatial Priors"
+    },
+    {
+      "id": "L7",
+      "role": "L",
+      "support_type": "Compute support",
+      "organizations": [
+        "nipa",
+        "msit"
+      ],
+      "start": "2026-04",
+      "end": "2026-07",
+      "title": "「첨단 GPU 활용 지원 사업」사용자 모집 공고 (25-1차)",
+      "url": "https://www.nipa.kr/home/2-2/16423",
+      "topic": "대규모 병렬 학습을 통한 Feed-Forward 3D 장면 생성 및 상호작용 환경 자동 구축 기술 개발",
+      "compute": "B200 × 8"
+    },
+    {
+      "id": "L6",
+      "role": "L",
+      "support_type": "Compute support",
+      "organizations": [
+        "aica",
+        "msit",
+        "gwangju"
+      ],
+      "start": "2026-02",
+      "end": "2026-03",
+      "title": "2026년 AI데이터센터 서비스 이용자 정기모집",
+      "url": "https://www.aica-gj.kr/sub.php?PID=0401&page=&category=&searchText=&searchType=&action=Read&idx=2776",
+      "topic": "A Generative Physics Simulation Framework Using a Feed-forward 3D Foundation Model and MLLM",
+      "compute": "H100 × 4"
+    },
+    {
+      "id": "L5",
+      "role": "L",
+      "support_type": "Funding",
+      "organizations": [
+        "msit",
+        "nrf"
+      ],
+      "start": "2025-09",
+      "end": "2028-08",
+      "title": "유저 상호작용형 AI 기반 차세대 멀티모달 몰입형 콘텐츠 기술",
+      "programs": [
+        "우수연구 - 중견연구 (창의연구형)"
+      ],
+      "topic": "User-Interactive Next-Generation AI for Multi-Modal Immersive Content Technology"
+    },
+    {
+      "id": "L4",
+      "role": "L",
+      "support_type": "Funding",
+      "organizations": [
+        "dexter"
+      ],
+      "start": "2025-09",
+      "end": "2025-12",
+      "title": "모바일 어플리케이션 개발을 위한 백엔드 플랫폼 개발",
+      "programs": [
+        "용역사업"
+      ],
+      "topic": "Style Transfer"
+    },
+    {
+      "id": "L3",
+      "role": "L",
+      "support_type": "Funding",
+      "organizations": [
+        "msit",
+        "etri"
+      ],
+      "start": "2025-06",
+      "end": "2025-11",
+      "title": "실세계 비디오의 효과적인 표현을 위한 동적 3D 가우시안 생성 소프트웨어 구현",
+      "programs": [
+        "연구용역사업"
+      ],
+      "topic": "Spatio-temporally Unbounded 4D Gaussian Splatting via Anchor Relay"
+    },
+    {
+      "id": "L2",
+      "role": "L",
+      "support_type": "Funding",
+      "organizations": [
+        "msit",
+        "etri"
+      ],
+      "start": "2024-06",
+      "end": "2024-11",
+      "title": "3차원 가우시안 기반 장면 표현 데이터 압축 소프트웨어 구현",
+      "programs": [
+        "연구용역사업"
+      ],
+      "topic": "Gaussian Splatting for Dynamic Scenes Compression"
+    },
+    {
+      "id": "L1",
+      "role": "L",
+      "support_type": "Funding",
+      "organizations": [
+        "inshorts"
+      ],
+      "start": "2023-09",
+      "end": "2024-03",
+      "title": "컴퓨터비전 AI 기술 R&D 자문 용역",
+      "programs": [
+        "연구용역사업"
+      ],
+      "topic": "Low-Level Vision"
+    },
+    {
+      "id": "P7",
+      "role": "P",
+      "support_type": "Funding",
+      "organizations": [
+        "moe",
+        "nrf",
+        "ucla-artsci"
+      ],
+      "start": "2025-09",
+      "end": "2031-08",
+      "title": "감성 AI 기반 글로벌 문화콘텐츠 스토리텔링과 이미지 생성 연구",
+      "programs": [
+        "글로벌인문사회융합연구지원사업 (연구소지원형-국외형)"
+      ],
+      "topic": "Affective AI-Based Storytelling and Image Generation for Global Cultural Content"
+    },
+    {
+      "id": "P6",
+      "role": "P",
+      "support_type": "Funding",
+      "organizations": [
+        "seoul",
+        "seoul-institute",
+        "seoul-rise"
+      ],
+      "start": "2025-09",
+      "end": "2030-08",
+      "title": "산업현장 중심 창조산업 인재 양성을 위한 C.R.E.A.T.E. 플랫폼 구축",
+      "topic": "창조산업 인재 양성",
+      "programs": [
+        "서울시 지역혁신중심 대학지원체계 (RISE)"
+      ]
+    },
+    {
+      "id": "P5",
+      "role": "P",
+      "support_type": "Funding",
+      "organizations": [
+        "msit",
+        "iitp"
+      ],
+      "start": "2025-07",
+      "end": "2028-12",
+      "title": "AGI 발현을 위한 메타인지 프레임워크 핵심기술 개발 및 실증",
+      "programs": [
+        "인간지향적차세대도전형AI기술개발 (창의도전형R&D)"
+      ],
+      "topic": "Agentic Low-Level Vision"
+    },
+    {
+      "id": "P4",
+      "role": "P",
+      "support_type": "Funding",
+      "organizations": [
+        "msit",
+        "iitp"
+      ],
+      "start": "2024-07",
+      "end": "2029-12",
+      "title": "메타버스 융합대학원 (중앙대학교)",
+      "programs": [
+        "메타버스 융합대학원"
+      ]
+    },
+    {
+      "id": "P3",
+      "role": "P",
+      "support_type": "Funding",
+      "organizations": [
+        "mcst",
+        "kocca"
+      ],
+      "start": "2024-04",
+      "end": "2026-12",
+      "title": "생성형 AI 및 클라우드 기반 콘텐츠 제작 R&D 인재 양성",
+      "programs": [
+        "문화기술연구개발지원사업"
+      ],
+      "topic": "Video Demoiréing"
+    },
+    {
+      "id": "P2",
+      "role": "P",
+      "support_type": "Funding",
+      "organizations": [
+        "mnd"
+      ],
+      "start": "2024-01",
+      "end": "2026-12",
+      "title": "군 특화 AI 교육과정 개설•운영",
+      "programs": [
+        "국방ICT융합사업"
+      ],
+      "lectures": "머신러닝 (Machine Learning), AI 핵심동향 (AI Key Trends), 콘텐츠 품질 최신 딥러닝 (Low-Level Vision)"
+    },
+    {
+      "id": "P1",
+      "role": "P",
+      "support_type": "Funding",
+      "organizations": [
+        "moe",
+        "bk21"
+      ],
+      "start": "2023-09",
+      "end": "2027-08",
+      "title": "BK21 플러스 4차 사업",
+      "programs": [
+        "중앙대학교 첨단영상대학원 - 인공지능 콘텐츠 미래산업 교육연구단",
+        "BK21_미래인재양성사업"
+      ],
+      "topic": "Emoticon Generation, Cartoon Interpolation"
+    }
+  ]
+}

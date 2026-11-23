@@ -2,7 +2,7 @@
   {
     "id": 29,
     "short": "CHIMERA",
-    "title": "Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metric",
+    "title": "CHIMERA: Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metric",
     "year": 2025,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
@@ -53,7 +53,6 @@
       "https://github.com/CMLab-Korea/ECCV26-CHIMERA"
     ],
     "verification": "needs verification 29",
-    "mark": "🦁",
     "source_affiliations": "PrincetonUniv.",
     "organizations": [
       "princeton"
@@ -62,7 +61,7 @@
   {
     "id": 30,
     "short": "Self-Geometry",
-    "title": "GT-Free and Plug-and-Play Test-Time Adaptation for Geometrically Consistent 3D Vision Foundation Models",
+    "title": "Self-Geometry: GT-Free and Plug-and-Play Test-Time Adaptation for Geometrically Consistent 3D Vision Foundation Models",
     "year": 2026,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
@@ -97,7 +96,6 @@
     ],
     "arxiv_url": "https://arxiv.org/abs/2608.10708",
     "project_url": "https://cmlab-korea.github.io/Self-Geometry/",
-    "mark": "🔌",
     "source_affiliations": "KyungheeUniv.",
     "organizations": [
       "khu"
@@ -106,7 +104,7 @@
   {
     "id": 31,
     "short": "DiTTo",
-    "title": "Scalable Order-aware All-in-One Image Restoration Agent",
+    "title": "DiTTo: Scalable Order-aware All-in-One Image Restoration Agent",
     "year": 2026,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
@@ -146,13 +144,12 @@
     ],
     "arxiv_url": "https://arxiv.org/abs/2605.30915",
     "project_url": "https://cmlab-korea.github.io/DiTTo/",
-    "code_url": "https://github.com/CMLab-Korea/DiTTo-arxiv",
-    "mark": "🫠"
+    "code_url": "https://github.com/CMLab-Korea/DiTTo-arxiv"
   },
   {
     "id": 32,
     "short": "Chameleon",
-    "title": "Style-Content Disentangled Framework for Cross-Domain Object Compositing",
+    "title": "Chameleon: Style-Content Disentangled Framework for Cross-Domain Object Compositing",
     "year": 2026,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
@@ -193,7 +190,6 @@
     "verification": "needs verification 32",
     "arxiv_url": "https://arxiv.org/abs/2606.01079",
     "project_url": "https://cmlab-korea.github.io/Chameleon/",
-    "mark": "🦎",
     "source_affiliations": "AdobeResearch",
     "organizations": [
       "adobe"
@@ -202,7 +198,7 @@
   {
     "id": 33,
     "short": "RefGC-SR²",
-    "title": "Reference-guided Super-Resolution and Refinement of AI Generated Content",
+    "title": "RefGC-SR²: Reference-guided Super-Resolution and Refinement of AI Generated Content",
     "year": 2026,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
@@ -243,7 +239,6 @@
     "arxiv_url": "https://arxiv.org/pdf/2606.15158",
     "project_url": "https://cmlab-korea.github.io/RefGC-SR2/",
     "code_url": "https://github.com/CMLab-Korea/arXiv26-RefGC-SR2",
-    "mark": "🪄",
     "source_affiliations": "AdobeResearch",
     "organizations": [
       "adobe"
@@ -252,7 +247,7 @@
   {
     "id": 34,
     "short": "SEAL",
-    "title": "Semantic-aware Single-image Sticker Personalization with a Large-scale Sticker-tag Dataset",
+    "title": "SEAL: Semantic-aware Single-image Sticker Personalization with a Large-scale Sticker-tag Dataset",
     "year": 2026,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
@@ -287,7 +282,6 @@
     ],
     "arxiv_url": "https://arxiv.org/abs/2604.26883",
     "project_url": "https://cmlab-korea.github.io/SEAL/",
-    "mark": "🦦",
     "source_affiliations": "Naver Cloud,Lunit Inc.",
     "organizations": [
       "naver-cloud",
@@ -297,7 +291,7 @@
   {
     "id": 35,
     "short": "SUCCESS-GS",
-    "title": "Survey of Compactness and Compression for Efficient Static and Dynamic Gaussian Splatting",
+    "title": "SUCCESS-GS: Survey of Compactness and Compression for Efficient Static and Dynamic Gaussian Splatting",
     "year": 2025,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
@@ -343,7 +337,6 @@
         "url": "https://github.com/CMLab-Korea/Awesome-Efficient-GS"
       }
     ],
-    "mark": "🏆",
     "source_affiliations": "KyungheeUniv.",
     "organizations": [
       "khu"
@@ -352,7 +345,7 @@
   {
     "id": 36,
     "short": "COREA",
-    "title": "Coupled Relightable 3D Gaussians and SDFs for Efficient Normal Alignment",
+    "title": "COREA: Coupled Relightable 3D Gaussians and SDFs for Efficient Normal Alignment",
     "year": 2025,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
@@ -386,8 +379,7 @@
       }
     ],
     "arxiv_url": "https://www.arxiv.org/abs/2512.07107",
-    "project_url": "https://cau-vilab.github.io/COREA/",
-    "mark": "🇰🇷"
+    "project_url": "https://cau-vilab.github.io/COREA/"
   },
   {
     "id": 37,
@@ -417,7 +409,6 @@
       }
     ],
     "verification": "needs verification 37",
-    "mark": "✏️",
     "source_affiliations": "RAZER,KAIST",
     "organizations": [
       "razer",
@@ -427,7 +418,7 @@
   {
     "id": 38,
     "short": "R3eVision",
-    "title": "A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision",
+    "title": "R3eVision: A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision",
     "year": 2025,
     "venue": "Preprint / Under Review",
     "type": "Preprint",
@@ -469,7 +460,6 @@
         "url": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision/tree/main"
       }
     ],
-    "mark": "🧊",
     "source_affiliations": "PrincetonUniv.",
     "organizations": [
       "princeton"
@@ -478,7 +468,7 @@
   {
     "id": 1,
     "short": "MotionGrounder",
-    "title": "Grounded Multi-Object Motion Transfer via Diffusion Transformer",
+    "title": "MotionGrounder: Grounded Multi-Object Motion Transfer via Diffusion Transformer",
     "year": 2026,
     "venue": "NeurIPS",
     "type": "Conference",
@@ -519,17 +509,17 @@
     "arxiv_url": "https://arxiv.org/abs/2604.00853",
     "project_url": "https://kaist-viclab.github.io/motiongrounder-site/",
     "source_venue": "NeurIPS 2026 (Acceptance Rate: 25.7% ≈ 7,900/30,709)",
-    "mark": "🏃🏻",
     "source_affiliations": "AdobeResearch,KAIST",
     "organizations": [
       "adobe",
       "kaist"
-    ]
+    ],
+    "catalog_number": "C20"
   },
   {
     "id": 2,
     "short": "PRIMEdit",
-    "title": "Probability Redistribution for Instance-aware Multi-object Video Editing with Benchmark Dataset",
+    "title": "PRIMEdit: Probability Redistribution for Instance-aware Multi-object Video Editing with a New Benchmark Dataset",
     "year": 2026,
     "venue": "IEEE TPAMI",
     "type": "Journal",
@@ -585,17 +575,17 @@
     "code_url": "https://github.com/KAIST-VICLab/PRIMEdit",
     "dataset_url": "https://drive.google.com/file/d/1JByzWLx2U0ezr8GOMUkqcOv0Tr3Wcka-/view",
     "source_venue": "IEEE TPAMI (IF=20.4) vol. 48, issue 11, pp. 15571 - 15588, Nov. 2026. (DOI: 10.1109/TPAMI.2026.3722239)",
-    "mark": "🎯",
     "source_affiliations": "AdobeResearch,KAIST",
     "organizations": [
       "adobe",
       "kaist"
-    ]
+    ],
+    "catalog_number": "J8"
   },
   {
     "id": 3,
     "short": "FMA-Net++",
-    "title": "Motion- and Exposure-Aware Joint Video Super-Resolution and Deblurring",
+    "title": "FMA-Net++: Motion- and Exposure-Aware Joint Video Super-Resolution and Deblurring",
     "year": 2026,
     "venue": "ECCV",
     "type": "Conference",
@@ -649,17 +639,17 @@
     "project_url": "https://kaist-viclab.github.io/fmanetpp_site/",
     "code_url": "https://github.com/KAIST-VICLab/FMA-Net-PlusPlus",
     "source_venue": "ECCV 2026 (Acceptance Rate: 27.5% ≈ 2,883/10,473)",
-    "mark": "֎",
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
     ],
-    "teaser_alt": "FMA-Net++ framework diagram"
+    "teaser_alt": "FMA-Net++ framework diagram",
+    "catalog_number": "C19"
   },
   {
     "id": 4,
     "short": "AVSR-Diff",
-    "title": "Scale-Agnostic Diffusion Priors for Temporally Consistent Arbitrary-Scale Video Super-Resolution",
+    "title": "AVSR-Diff: Scale-Agnostic Diffusion Priors for Temporally Consistent Arbitrary-Scale Video Super-Resolution",
     "year": 2026,
     "venue": "ECCV",
     "type": "Conference",
@@ -713,17 +703,17 @@
     "project_url": "https://kaist-viclab.github.io/AVSR-Diff/",
     "code_url": "https://github.com/KAIST-VICLab/AVSR-Diff",
     "source_venue": "ECCV 2026 (Acceptance Rate: 27.5% ≈ 2,883/10,473)",
-    "mark": "🔎",
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
     ],
-    "teaser_alt": "AVSR-Diff qualitative comparisons across scales"
+    "teaser_alt": "AVSR-Diff qualitative comparisons across scales",
+    "catalog_number": "C18"
   },
   {
     "id": 5,
     "short": "AceVFI",
-    "title": "A Comprehensive Survey of Advances in Video Frame Interpolation",
+    "title": "AceVFI: A Comprehensive Survey of Advances in Video Frame Interpolation",
     "year": 2026,
     "venue": "IEEE TCSVT",
     "type": "Journal",
@@ -770,12 +760,12 @@
       }
     ],
     "source_venue": "IEEE TCSVT (IF=11.1) vol. 36, issue 7, pp. 9477-9501, July 2026. (DOI: 10.1109/TCSVT.2026.3672288)",
-    "mark": "🂡"
+    "catalog_number": "J7"
   },
   {
     "id": 6,
     "short": "MoRel",
-    "title": "Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification",
+    "title": "MoRel: Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification",
     "year": 2026,
     "venue": "CVPR · Highlight",
     "type": "Conference",
@@ -844,16 +834,16 @@
       }
     ],
     "source_venue": "CVPR 2026 (🏅Highlight Paper Rate: 3.6% ≈ 578/16,092)",
-    "mark": "🚂",
     "source_affiliations": "ETRI",
     "organizations": [
       "etri"
-    ]
+    ],
+    "catalog_number": "C17"
   },
   {
     "id": 7,
     "short": "FRAMER",
-    "title": "Frequency-Aligned Self-Distillation with Adaptive Modulation Leveraging Diffusion Priors for Real-World Image Super-Resolution",
+    "title": "FRAMER: Frequency-Aligned Self-Distillation with Adaptive Modulation Leveraging Diffusion Priors for Real-World Image Super-Resolution",
     "year": 2026,
     "venue": "CVPR",
     "type": "Conference",
@@ -914,12 +904,12 @@
       }
     ],
     "source_venue": "CVPR 2026 (Acceptance Rate: 25.42% ≈ 4,090/16,092)",
-    "mark": "🖼️"
+    "catalog_number": "C16"
   },
   {
     "id": 8,
     "short": "EcoSplat",
-    "title": "Efficiency-controllable Feed-forward 3D Gaussian Splatting from Multi-view Images",
+    "title": "EcoSplat: Efficiency-controllable Feed-forward 3D Gaussian Splatting from Multi-view Images",
     "year": 2026,
     "venue": "CVPR · Highlight",
     "type": "Conference",
@@ -971,16 +961,16 @@
     "code_url": "https://github.com/KAIST-VICLab/EcoSplat",
     "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bui_EcoSplat_Efficiency-controllable_Feed-forward_3D_Gaussian_Splatting_from_Multi-view_Images_CVPR_2026_paper.html",
     "source_venue": "CVPR 2026 (🏅Highlight Paper Rate: 3.6% ≈ 578/16,092)",
-    "mark": "🌱",
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
-    ]
+    ],
+    "catalog_number": "C15"
   },
   {
     "id": 9,
     "short": "FLAIR",
-    "title": "Frequency- and Locality-Aware Implicit Neural Representations",
+    "title": "FLAIR: Frequency- and Locality-Aware Implicit Neural Representations",
     "year": 2026,
     "venue": "CVPR Findings",
     "type": "Conference",
@@ -1039,16 +1029,16 @@
       }
     ],
     "source_venue": "CVPR 2026 (Findings) (Acceptance Rate: 36.1% ≈ (4,090+1,717)/16,092)",
-    "mark": "✨",
     "source_affiliations": "Oracle",
     "organizations": [
       "oracle"
-    ]
+    ],
+    "catalog_number": "C14"
   },
   {
     "id": 10,
     "short": "OmniText",
-    "title": "A Training-Free Generalist for Controllable Text-Image Manipulation",
+    "title": "OmniText: A Training-Free Generalist for Controllable Text-Image Manipulation",
     "year": 2026,
     "venue": "ICLR",
     "type": "Conference",
@@ -1096,17 +1086,17 @@
     "code_url": "https://github.com/KAIST-VICLab/OmniText",
     "dataset_url": "https://huggingface.co/datasets/agusgun/OmniText-Bench",
     "source_venue": "ICLR 2026 (Acceptance Rate: 28% ≈ 5,320/19,000)",
-    "mark": "🖌",
     "source_affiliations": "AdobeResearch,KAIST",
     "organizations": [
       "adobe",
       "kaist"
-    ]
+    ],
+    "catalog_number": "C13"
   },
   {
     "id": 11,
     "short": "MoCHA-former",
-    "title": "Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing",
+    "title": "MoCHA-former: Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing",
     "year": 2026,
     "venue": "Neurocomputing",
     "type": "Journal",
@@ -1150,12 +1140,13 @@
     "code_url": "https://github.com/CMLab-Korea/MoCHA-former-arXiv",
     "arxiv_url": "https://arxiv.org/pdf/2508.14423",
     "source_venue": "Neurocomputing (IF=6.5) vol. 669, 132477, March 07, 2026 (DOI: https://doi.org/10.1016/j.neucom.2025.132477)",
-    "teaser_alt": "MoCHA-former framework diagram"
+    "teaser_alt": "MoCHA-former framework diagram",
+    "catalog_number": "J6"
   },
   {
     "id": 12,
     "short": "MoBGS",
-    "title": "Motion Deblurring Dynamic 3D Gaussian Splatting for Blurry Monocular Video",
+    "title": "MoBGS: Motion Deblurring Dynamic 3D Gaussian Splatting for Blurry Monocular Video",
     "year": 2026,
     "venue": "AAAI",
     "type": "Conference",
@@ -1204,18 +1195,18 @@
     "code_url": "https://github.com/KAIST-VICLab/MoBGS",
     "venue_url": "https://ojs.aaai.org/index.php/AAAI/article/view/37234",
     "source_venue": "AAAI 2026 (Acceptance Rate: 17.6% ≈ 4,167/23,680)",
-    "mark": "🕵🏻‍",
     "source_affiliations": "FlawlessAI,KAIST",
     "organizations": [
       "flawless",
       "kaist"
     ],
-    "teaser_alt": "MoBGS architecture diagram"
+    "teaser_alt": "MoBGS architecture diagram",
+    "catalog_number": "C12"
   },
   {
     "id": 13,
     "short": "I-INR",
-    "title": "Iterative Implicit Neural Representations",
+    "title": "I-INR: Iterative Implicit Neural Representations",
     "year": 2026,
     "venue": "AAAI",
     "type": "Conference",
@@ -1260,12 +1251,13 @@
     "organizations": [
       "adobe",
       "khu"
-    ]
+    ],
+    "catalog_number": "C11"
   },
   {
     "id": 14,
     "short": "SoFoNO",
-    "title": "Arbitrary-Scale Image Super-Resolution via Sobolev Fourier Neural Operator",
+    "title": "SoFoNO: Arbitrary-Scale Image Super-Resolution via Sobolev Fourier Neural Operator",
     "year": 2026,
     "venue": "Neurocomputing",
     "type": "Journal",
@@ -1307,12 +1299,12 @@
     "project_url": "https://jongkwonoh.github.io/sofono-page/",
     "code_url": "https://github.com/JongKwonOh/SoFoNO",
     "source_venue": "Neurocomputing (IF=6.5) vol. 661, 14 January 2026, 131944 (DOI: https://doi.org/10.1016/j.neucom.2025.131944)",
-    "mark": "🌀",
     "source_affiliations": "POSTECH,KonkukUniv.",
     "organizations": [
       "postech",
       "konkuk"
-    ]
+    ],
+    "catalog_number": "J5"
   },
   {
     "id": 15,
@@ -1362,16 +1354,16 @@
     "project_url": "https://perceptualai-lab.github.io/DiffPS/",
     "code_url": "https://github.com/PerceptualAI-Lab/DiffPS",
     "source_venue": "ICCV 2025 (🏅Highlight Paper Rate: 2.35% ≈ 263/11,152)",
-    "mark": "🔍",
     "source_affiliations": "SeoulNationalUniv.",
     "organizations": [
       "snu"
-    ]
+    ],
+    "catalog_number": "C10"
   },
   {
     "id": 16,
     "short": "MoBluRF",
-    "title": "Motion Deblurring Neural Radiance Fields for Blurry Monocular Video",
+    "title": "MoBluRF: Motion Deblurring Neural Radiance Fields for Blurry Monocular Video",
     "year": 2025,
     "venue": "IEEE TPAMI",
     "type": "Journal",
@@ -1427,17 +1419,17 @@
       }
     ],
     "source_venue": "IEEE TPAMI (IF=18.6) vol. 47, issue 9, pp. 7752-7770, Sep. 2025 (DOI: 10.1109/TPAMI.2025.3574644)",
-    "mark": "🫨",
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
     ],
-    "teaser_alt": "MoBluRF architecture diagram"
+    "teaser_alt": "MoBluRF architecture diagram",
+    "catalog_number": "J4"
   },
   {
     "id": 17,
     "short": "Domain Generalization for Person Re-identification",
-    "title": "A Survey Towards Domain-Agnostic Person Matching",
+    "title": "Domain Generalization for Person Re-identification: A Survey Towards Domain-Agnostic Person Matching",
     "year": 2025,
     "venue": "Neurocomputing",
     "type": "Journal",
@@ -1483,12 +1475,12 @@
       }
     ],
     "source_venue": "Neurocomputing (IF=6.5) vol. 649, no. 10, pp. 130763-130782, Oct. 07, 2025 (DOI: https://doi.org/10.1016/j.neucom.2025.130763)",
-    "mark": "🫆"
+    "catalog_number": "J3"
   },
   {
     "id": 18,
     "short": "SplineGS",
-    "title": "Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video",
+    "title": "SplineGS: Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video",
     "year": 2025,
     "venue": "CVPR",
     "type": "Conference",
@@ -1532,17 +1524,17 @@
     "code_url": "https://github.com/KAIST-VICLab/SplineGS",
     "venue_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Park_SplineGS_Robust_Motion-Adaptive_Spline_for_Real-Time_Dynamic_3D_Gaussians_from_CVPR_2025_paper.pdf",
     "source_venue": "CVPR 2025 (Acceptance Rate: 22.1% ≈ 2,878/13,008)",
-    "mark": "∿",
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
     ],
-    "teaser_alt": "SplineGS architecture diagram"
+    "teaser_alt": "SplineGS architecture diagram",
+    "catalog_number": "C9"
   },
   {
     "id": 19,
     "short": "MoDec-GS",
-    "title": "Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting",
+    "title": "MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting",
     "year": 2025,
     "venue": "CVPR",
     "type": "Conference",
@@ -1584,17 +1576,17 @@
     "project_url": "https://kaist-viclab.github.io/MoDecGS-site/",
     "code_url": "https://github.com/skwak-kaist/MoDec-GS",
     "source_venue": "CVPR 2025 (Acceptance Rate: 22.1% ≈ 2,878/13,008)",
-    "mark": "🎄",
     "source_affiliations": "ETRI,KAIST",
     "organizations": [
       "etri",
       "kaist"
-    ]
+    ],
+    "catalog_number": "C8"
   },
   {
     "id": 20,
     "short": "BiM-VFI",
-    "title": "Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions",
+    "title": "BiM-VFI: Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions",
     "year": 2025,
     "venue": "CVPR",
     "type": "Conference",
@@ -1636,18 +1628,18 @@
     "project_url": "https://kaist-viclab.github.io/BiM-VFI_site/",
     "code_url": "https://github.com/KAIST-VICLab/BiM-VFI",
     "source_venue": "CVPR 2025 (Acceptance Rate: 22.1% ≈ 2,878/13,008)",
-    "mark": "⏱️",
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
     ],
     "teaser_alt": "BiM-VFI frame interpolation result",
-    "teaser_video_label": "BiM-VFI frame interpolation demo"
+    "teaser_video_label": "BiM-VFI frame interpolation demo",
+    "catalog_number": "C7"
   },
   {
     "id": 21,
     "short": "FMA-Net",
-    "title": "Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring",
+    "title": "FMA-Net: Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring",
     "year": 2024,
     "venue": "CVPR · Oral",
     "type": "Conference",
@@ -1711,17 +1703,17 @@
       }
     ],
     "source_venue": "CVPR 2024 (🏅Oral Paper Rate: 0.78% ≈ 90/11532, Acceptance Rate: 23.6% ≈ 2,719/11,532)",
-    "mark": "🍎",
     "source_affiliations": "KAIST",
     "organizations": [
       "kaist"
     ],
-    "teaser_alt": "FMA-Net joint video super-resolution and deblurring results"
+    "teaser_alt": "FMA-Net joint video super-resolution and deblurring results",
+    "catalog_number": "C6"
   },
   {
     "id": 22,
     "short": "DeMFI",
-    "title": "Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting",
+    "title": "DeMFI: Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting",
     "year": 2022,
     "venue": "ECCV",
     "type": "Conference",
@@ -1793,12 +1785,13 @@
         "url": "https://youtu.be/cMNkP9qJCR4"
       }
     ],
-    "source_venue": "ECCV 2022 (Acceptance Rate: 28% ≈ 1,650/5,803 )"
+    "source_venue": "ECCV 2022 (Acceptance Rate: 28% ≈ 1,650/5,803 )",
+    "catalog_number": "C5"
   },
   {
     "id": 23,
     "short": "XVFI",
-    "title": "eXtreme Video Frame Interpolation",
+    "title": "XVFI: eXtreme Video Frame Interpolation",
     "year": 2021,
     "venue": "ICCV · Oral",
     "type": "Conference",
@@ -1889,12 +1882,13 @@
     "source_venue": "ICCV 2021 (🏅Oral Paper Rate: 3%, Acceptance Rate: 25.9% ≈ 1,617/6,236)",
     "distinction": "Oral",
     "distinction_percent": "3%",
-    "distinction_source": "https://cmlab.cau.ac.kr/publications"
+    "distinction_source": "https://cmlab.cau.ac.kr/publications",
+    "catalog_number": "C4"
   },
   {
     "id": 24,
     "short": "PeaceGAN",
-    "title": "A GAN-based Multi-Task Learning Method for SAR Target Image Generation with a Pose Estimator and an Auxiliary Classifier",
+    "title": "PeaceGAN: A GAN-based Multi-Task Learning Method for SAR Target Image Generation with a Pose Estimator and an Auxiliary Classifier",
     "year": 2021,
     "venue": "Remote Sensing",
     "type": "Journal",
@@ -1924,12 +1918,13 @@
       }
     ],
     "venue_url": "https://www.mdpi.com/2072-4292/13/19/3939",
-    "source_venue": "Remote Sensing (IF=5.0) vol. 13, issue 19: 3939, Oct. 2021 (DOI: https://doi.org/10.3390/rs13193939)"
+    "source_venue": "Remote Sensing (IF=5.0) vol. 13, issue 19: 3939, Oct. 2021 (DOI: https://doi.org/10.3390/rs13193939)",
+    "catalog_number": "J2"
   },
   {
     "id": 25,
     "short": "SPAM-Net",
-    "title": "A CNN-based SAR Target Recognition Network with Pose Angle Marginalization Learning",
+    "title": "SPAM-Net: A CNN-based SAR Target Recognition Network with Pose Angle Marginalization Learning",
     "year": 2021,
     "venue": "IEEE TCSVT",
     "type": "Journal",
@@ -1970,12 +1965,13 @@
         "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9064495"
       }
     ],
-    "source_venue": "IEEE TCSVT (IF=8.4) vol. 31, issue 2, pp. 701-714, Feb. 2021. (DOI: 10.1109/TCSVT.2020.2987346)"
+    "source_venue": "IEEE TCSVT (IF=8.4) vol. 31, issue 2, pp. 701-714, Feb. 2021. (DOI: 10.1109/TCSVT.2020.2987346)",
+    "catalog_number": "J1"
   },
   {
     "id": 26,
     "short": "FISR",
-    "title": "Deep Joint Frame Interpolation and Super-Resolution with a Multi-Scale Temporal Loss",
+    "title": "FISR: Deep Joint Frame Interpolation and Super-Resolution with a Multi-Scale Temporal Loss",
     "year": 2020,
     "venue": "AAAI",
     "type": "Conference",
@@ -2031,12 +2027,13 @@
         "url": "https://drive.google.com/file/d/1llHkfjzZiydoay1u63V3gtn8z-DkN9x_/view"
       }
     ],
-    "source_venue": "AAAI 2020 (Acceptance Rate: 20.6% ≈ 1,591/7,737 )"
+    "source_venue": "AAAI 2020 (Acceptance Rate: 20.6% ≈ 1,591/7,737 )",
+    "catalog_number": "C3"
   },
   {
     "id": 27,
     "short": "JSI-GAN",
-    "title": "GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video",
+    "title": "JSI-GAN: GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video",
     "year": 2020,
     "venue": "AAAI",
     "type": "Conference",
@@ -2092,12 +2089,13 @@
         "url": "https://drive.google.com/file/d/1UPniH8-b2PQf9Hte5UUmNcN7EqgoqsMW/view"
       }
     ],
-    "source_venue": "AAAI 2020 (Acceptance Rate: 20.6% ≈ 1,591/7,737 )"
+    "source_venue": "AAAI 2020 (Acceptance Rate: 20.6% ≈ 1,591/7,737 )",
+    "catalog_number": "C2"
   },
   {
     "id": 28,
     "short": "Deep SR-ITM",
-    "title": "Joint Learning of Super-Resolution and Inverse Tone-Mapping for 4K UHD HDR Applications",
+    "title": "Deep SR-ITM: Joint Learning of Super-Resolution and Inverse Tone-Mapping for 4K UHD HDR Applications",
     "year": 2019,
     "venue": "ICCV · Oral",
     "type": "Conference",
@@ -2159,6 +2157,7 @@
     "unavailable_urls": [
       "http://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_Deep_SR-ITM_Joint_Learning_of_Super-Resolution_and_Inverse_Tone-Mapping_for_ICCV_2019_paper.pdf"
     ],
-    "verification": "needs verification 28"
+    "verification": "needs verification 28",
+    "catalog_number": "C1"
   }
 ]

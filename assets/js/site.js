@@ -72,6 +72,28 @@
   function node(tag, cls, content) {const n=document.createElement(tag);if(cls)n.className=cls;if(content!==undefined)n.textContent=content;return n}
   function safeURL(value) {try{const u=new URL(value,location.href);return ['https:','http:'].includes(u.protocol)?u.href:'#'}catch{return '#'}}
 
+  function paperTitleParts(paper) {
+    const [prefix, ...rest] = paper.title.split(':');
+    if (rest.length && identityKey(prefix) === identityKey(paper.short || '')) {
+      return {nickname: prefix.trim(), title: rest.join(':').trim()};
+    }
+    return {title: paper.title};
+  }
+
+  function paperMedia(paper, imageClass, videoClass, controls) {
+    if (!paper.teaser_video) {
+      return paper.teaser ? photo(paper.teaser, imageClass, paper.teaser_alt || '') : null;
+    }
+    const video = node('video', videoClass);
+    video.src = paper.teaser_video;
+    video.controls = controls;
+    video.playsInline = video.muted = video.loop = true;
+    video.preload = controls ? 'none' : 'metadata';
+    if (paper.teaser) video.poster = paper.teaser;
+    video.setAttribute('aria-label', paper.teaser_video_label || `${paper.short || paper.title} teaser`);
+    return video;
+  }
+
   if (page==='home') {
     const featured = $('#featured-work');
     getData('publications.json').then(items => {
@@ -84,6 +106,20 @@
       let paused = motion.matches;
       let previous = [];
       let timer;
+      const mediaVisibility = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
+        for (const entry of entries) {
+          entry.target.dataset.visible = String(entry.isIntersecting);
+          updateFeatureVideo(entry.target);
+        }
+      }, {threshold: .2}) : null;
+
+      function updateFeatureVideo(video) {
+        if (video.dataset.visible === 'true' && !document.hidden && !motion.matches && !paused) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      }
 
       function choosePair(pool) {
         const fresh = pool.filter(paper => !previous.includes(paper.id));
@@ -105,10 +141,11 @@
           card.target = '_blank';
           card.rel = 'noopener noreferrer';
         }
-        if (paper.teaser) {
-          card.append(photo(paper.teaser, 'feature-poster', paper.teaser_alt || ''));
+        const media = paperMedia(paper, 'feature-poster', 'feature-poster', false);
+        if (media) {
+          card.append(media);
         } else {
-          const placeholder = node('span', 'feature-poster feature-placeholder', paper.mark || paper.short);
+          const placeholder = node('span', 'feature-poster feature-placeholder', paper.short);
           placeholder.setAttribute('aria-hidden', 'true');
           card.append(placeholder);
         }
@@ -116,20 +153,26 @@
         if (paper.distinction && paper.distinction_percent) {
           venue.append(' · ', node('strong', 'feature-distinction', paper.distinction + ' · ' + paper.distinction_percent));
         }
-        card.append(node('h3', 'feature-name', paper.short), venue, node('p', 'feature-title', paper.title));
+        const {title} = paperTitleParts(paper);
+        card.append(node('h3', 'feature-name', paper.short || title), venue);
+        if (paper.short) card.append(node('p', 'feature-title', title));
         return card;
       }
 
       function showWorks() {
         const papers = pools.flatMap(choosePair);
         previous = papers.map(paper => paper.id);
+        mediaVisibility?.disconnect();
+        $$('video', featured).forEach(video => video.pause());
         featured.replaceChildren(...papers.map(featureCard));
+        $$('video', featured).forEach(video => mediaVisibility?.observe(video));
         featured.closest('section').hidden = papers.length === 0;
       }
 
       function schedule() {
         clearTimeout(timer);
         pause.textContent = paused ? 'Resume' : 'Pause';
+        $$('video', featured).forEach(updateFeatureVideo);
         if (paused || document.hidden || featured.matches(':hover, :focus-within')) return;
         timer = setTimeout(() => {
           showWorks();
@@ -344,6 +387,9 @@
       row.id = 'paper-' + paper.id;
       if (paper.distinction_percent) row.classList.add('distinguished-paper');
       const badge = node('div', 'venue-column');
+      if (paper.catalog_number) {
+        badge.append(node('span', `record-number record-${paper.type.toLowerCase()}`, paper.catalog_number));
+      }
       badge.append(node('span', 'venue-abbr', venueBadge(paper)));
       badge.append(node('span', 'venue-kind', paper.type === 'Preprint' ? String(paper.year) : paper.type));
       if (paper.distinction && paper.distinction_percent) {
@@ -352,41 +398,27 @@
       if (paper.venue.includes('Findings')) badge.append(node('span', 'venue-kind', 'Findings'));
       row.append(badge);
 
-      if (paper.teaser_video || paper.teaser) {
-        const teaser = node('div', 'paper-teaser');
-        if (paper.teaser_video) {
-          const video = node('video', 'paper-video');
-          video.src = paper.teaser_video;
-          video.controls = video.playsInline = video.muted = true;
-          video.preload = 'none';
-          video.loop = true;
-          if (paper.teaser) video.poster = paper.teaser;
-          video.setAttribute('aria-label', paper.teaser_video_label || paper.short);
-          teaser.append(video);
-        } else {
-          const image = node('img', 'paper-image');
-          image.loading = 'lazy';
-          image.alt = paper.teaser_alt || paper.short;
-          image.src = paper.teaser;
-          teaser.append(image);
-        }
-        row.append(teaser);
-      } else {
-        row.classList.add('without-teaser');
-      }
+      const teaser = node('div', 'paper-teaser');
+      const media = paperMedia(paper, 'paper-image', 'paper-video', true);
+      if (media) teaser.append(media);
+      else teaser.setAttribute('aria-hidden', 'true');
+      row.append(teaser);
 
       const body = node('div', 'paper-rich-body');
       const links = paperLinks(paper);
       const destination = paper.venue_url && links.has(paper.venue_url) ? paper.venue_url
         : paper.arxiv_url && links.has(paper.arxiv_url) ? paper.arxiv_url : undefined;
-      const title = node('h3');
-      if (paper.mark) {
-        const mark = node('span', 'paper-source-mark', paper.mark);
-        mark.setAttribute('aria-hidden', 'true');
-        title.append(mark, ' ');
+      const heading = node('h3');
+      const {nickname, title} = paperTitleParts(paper);
+      const titleLabel = destination ? externalLink('', destination, 'paper-title') : heading;
+      if (nickname) {
+        titleLabel.append(node('span', 'paper-nickname', nickname), ': ');
+      } else if (identityKey(paper.short || '') && !identityKey(title).startsWith(identityKey(paper.short))) {
+        body.append(node('div', 'paper-overline', paper.short));
       }
-      title.append(destination ? externalLink(paper.title, destination, 'paper-title') : paper.title);
-      body.append(node('div', 'paper-overline', paper.short), title);
+      titleLabel.append(title);
+      if (destination) heading.append(titleLabel);
+      body.append(heading);
       if (paper.authors) body.append(authorLine(paper));
       const organizations = (paper.organizations || []).map(id => institutions[id]).filter(Boolean);
       const affiliationLabels = [...new Set([...(paper.affiliations || []), ...organizations.map(org => org.name)])];
@@ -507,6 +539,116 @@
       feedback.textContent = 'Try refreshing the page to load the publication list.';
       feedback.hidden = false;
     });
+
+    const archive = $('#publication-archive');
+    getData('publication-archive.json').then(records => {
+      for (const list of $$('[data-records]', archive)) {
+        const entries = records.filter(record => record.id.startsWith(list.dataset.records));
+        list.replaceChildren(...entries.map(record => {
+          const entry = node('li', 'archive-record');
+          entry.append(node('span', 'record-number record-' + record.id[0].toLowerCase(), record.id));
+          const body = node('div');
+          if (record.date) {
+            const time = node('time', 'archive-date', record.date.replaceAll('-', '.'));
+            time.dateTime = record.date;
+            body.append(time);
+          }
+          body.append(node('p', '', record.text));
+          for (const {label, url} of record.links || []) {
+            body.append(externalLink(label + ' ↗', safeURL(url), 'archive-link'));
+          }
+          entry.append(body);
+          return entry;
+        }));
+      }
+      for (const details of $$('details', archive)) {
+        $('.archive-count', details).textContent = $$('.archive-record', details).length;
+      }
+      archive.hidden = false;
+    }).catch(() => {
+      archive.replaceChildren(node('p', 'archive-notice', 'Additional publication records are temporarily unavailable.'));
+      archive.hidden = false;
+    });
+  }
+
+  if (page === 'projects') {
+    const roles = {L: 'PI / Research Lead', U: 'Unit Lead', P: 'Participating Researcher'};
+    const status = $('#projects-status');
+    const formatMonth = value => value.replace(/^(\d{4})-(\d{2})$/, '$2.$1');
+    const currentMonth = new Intl.DateTimeFormat('sv-SE', {
+      timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit'
+    }).format(new Date());
+
+    function projectCard(project, organizations) {
+      const card = node('article', 'project-card');
+      card.id = 'project-' + project.id.toLowerCase();
+      const meta = node('div', 'project-meta');
+      const rolesLabel = node('span', 'project-role project-role-' + project.role.toLowerCase());
+      rolesLabel.append(node('b', '', project.id), node('span', '', roles[project.role]));
+      const dates = node('span', 'project-dates');
+      for (const [index, date] of [project.start, project.end].entries()) {
+        if (index) dates.append(' – ');
+        const time = node('time', '', formatMonth(date));
+        time.dateTime = date;
+        dates.append(time);
+      }
+      meta.append(rolesLabel, dates);
+
+      const title = node('h3', '', project.title);
+      title.lang = 'ko';
+      card.append(meta, title);
+      if (project.topic) card.append(node('p', 'project-topic', project.topic));
+      if (project.lectures) card.append(node('p', 'project-topic', project.lectures));
+      if (project.programs?.length) card.append(node('p', 'project-program', project.programs.join(' · ')));
+
+      const support = node('div', 'project-support');
+      support.append(node('span', 'project-tag', project.support_type));
+      if (project.compute) support.append(node('span', 'project-tag', project.compute));
+      if (project.url) {
+        const link = nameLink('Program ↗', safeURL(project.url), 'project-link');
+        support.append(link);
+      }
+      card.append(support);
+
+      const logos = node('ul', 'project-organizations');
+      logos.setAttribute('aria-label', 'Project organizations');
+      for (const key of project.organizations) {
+        const org = organizations[key];
+        if (!org) continue;
+        const li = node('li');
+        const mark = org.logo ? photo(org.logo, 'project-logo', org.name) : org.name;
+        if (org.url) {
+          const link = nameLink('', safeURL(org.url));
+          link.append(mark);
+          li.append(link);
+        } else {
+          li.append(mark);
+        }
+        logos.append(li);
+      }
+      card.append(logos);
+      return card;
+    }
+
+    getData('projects.json').then(({projects, organizations}) => {
+      const groups = {ongoing: [], completed: [], upcoming: []};
+      for (const project of projects) {
+        const phase = project.start > currentMonth ? 'upcoming'
+          : project.end < currentMonth ? 'completed' : 'ongoing';
+        groups[phase].push(project);
+      }
+      for (const [phase, entries] of Object.entries(groups)) {
+        const section = $('#' + phase + '-projects');
+        const heading = $('h2', section);
+        heading.append(node('span', 'project-count', entries.length));
+        $('.project-grid', section).replaceChildren(...entries.map(project => projectCard(project, organizations)));
+        section.hidden = entries.length === 0;
+        const jump = $(`.project-jumps a[href="#${section.id}"]`);
+        if (jump) jump.hidden = section.hidden;
+      }
+      status.hidden = true;
+      if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+    }).catch(() => { status.textContent = 'Project information is temporarily unavailable.'; });
   }
   function identityKey(name) {
     return name.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
