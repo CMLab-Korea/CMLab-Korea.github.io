@@ -4,17 +4,8 @@ from PIL import Image
 from playwright.sync_api import sync_playwright
 from urllib.parse import urlsplit
 from concurrent.futures import ThreadPoolExecutor
-pages={
- 'chanho-eom':'https://pailab.cau.ac.kr/members_1/faculty',
- 'munchurl-kim':'https://www.viclab.kaist.ac.kr/professor',
- 'sung-ho-bae':'https://mlvc.khu.ac.kr/home',
- 'hyung-ju-hwang':'https://hjhwang.postech.ac.kr/hjhwang/res/professor.do',
- 'jongwon-choi':'https://www.vilab.cau.ac.kr/members/members',
- 'junho-kim':'https://www.junhokim.xyz/',
- 'jaeho-moon':'https://sites.google.com/view/jaehomoon',
- 'hojoon-jung':'https://sites.google.com/view/hjjung-homepage/%ED%99%88',
- 'jaeyoon-lee':'https://sites.google.com/vilab.cau.ac.kr/jaeyoonlee'
-}
+pages={'sung-ho-bae-scholar':'https://scholar.google.co.kr/citations?user=EULut5oAAAAJ&hl=ko',
+ 'sung-ho-bae-lab':'https://mlvc.khu.ac.kr/home'}
 def capture(item):
  slug,url=item
  target=Path('capture/portraits')/slug
@@ -26,6 +17,14 @@ def capture(item):
    response=page.goto(url,wait_until='domcontentloaded',timeout=23000)
    if response and not response.ok:raise RuntimeError(str(response.status))
    page.wait_for_timeout(1500)
+   links=page.evaluate("""() => [...document.querySelectorAll('a[href]')].map(a=>({url:a.href,label:a.innerText.trim()})).filter(a=>a.label)""")
+   (target/'links.json').write_text(json.dumps(links,ensure_ascii=False,indent=2))
+   if slug.endswith('-lab'):
+    candidate=next((x['url'] for x in links if re.search(r'professor|faculty|^PI$',x['label'],re.I)
+      and urlsplit(x['url']).netloc==urlsplit(page.url).netloc),None)
+    if candidate:
+     page.goto(candidate,wait_until='domcontentloaded',timeout=20000)
+     page.wait_for_timeout(1400)
    candidates=page.evaluate(r"""() => [...document.images].filter(i=>!i.closest('header, nav, footer')).map(i=>{
     const box=i.closest('section, article, li, tr')||i.parentElement?.parentElement;
     return {url:i.currentSrc||i.src,alt:i.alt,context:box?.innerText?.trim().slice(0,370)||'',w:i.naturalWidth,h:i.naturalHeight};
