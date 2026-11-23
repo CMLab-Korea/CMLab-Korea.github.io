@@ -21,4 +21,13 @@
   <symbol id="service" viewBox="0 0 24 24">
     <path d="M6 5h3 M15 5h3v16H6V5 M9 4h6v4H9z M9 14l2 2 4-5"/>
   </symbol>
+  <symbol id="collaboration" viewBox="0 0 24 24">
+    <path d="m2 11 4-6 4 2-4 7zm20 0-4-6-4 2 4 7zM9 8l3-1 4 3-2 2-3-2-2 2 6 5 3-3M6 14l5 5 2-1 2-1"/>
+  </symbol>
+  <symbol id="conference" viewBox="0 0 24 24">
+    <path d="M4 3h16v12H4zm8 12v6m-4 0h8M8 11l3-3 2 2 3-4"/>
+  </symbol>
+  <symbol id="seminar" viewBox="0 0 24 24">
+    <path d="M4 4h16v12H9l-5 4zm4 5h8m-8 3h5"/>
+  </symbol>
 </svg>

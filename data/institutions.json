@@ -1,0 +1,72 @@
+{
+  "cau": {
+    "name": "Chung-Ang University",
+    "logo": "assets/img/institutions/cau.webp"
+  },
+  "kaist": {
+    "name": "KAIST",
+    "logo": "assets/img/institutions/kaist.webp"
+  },
+  "khu": {
+    "name": "Kyung Hee University",
+    "logo": "assets/img/institutions/khu.webp"
+  },
+  "konkuk": {
+    "name": "Konkuk University",
+    "logo": "assets/img/institutions/konkuk.webp"
+  },
+  "postech": {
+    "name": "POSTECH",
+    "logo": "assets/img/institutions/postech.webp"
+  },
+  "princeton": {
+    "name": "Princeton University",
+    "logo": "assets/img/institutions/princeton.webp"
+  },
+  "adobe": {
+    "name": "Adobe Research",
+    "logo": "assets/img/institutions/adobe.webp"
+  },
+  "oracle": {
+    "name": "Oracle",
+    "logo": "assets/img/institutions/oracle.webp"
+  },
+  "flawless": {
+    "name": "Flawless AI",
+    "logo": "assets/img/institutions/flawless.webp"
+  },
+  "etri": {
+    "name": "ETRI",
+    "logo": "assets/img/institutions/etri.webp"
+  },
+  "razer": {
+    "name": "Razer",
+    "logo": "assets/img/institutions/razer.webp"
+  },
+  "naver-ai": {
+    "name": "NAVER AI Lab"
+  },
+  "inshorts": {
+    "name": "inshorts",
+    "logo": "assets/img/institutions/inshorts.webp"
+  },
+  "cornell-tech": {
+    "name": "Cornell Tech"
+  },
+  "snu": {
+    "name": "Seoul National University",
+    "logo": "assets/img/institutions/snu.webp"
+  },
+  "naver-cloud": {
+    "name": "NAVER Cloud",
+    "logo": "assets/img/institutions/naver-cloud.webp"
+  },
+  "lunit": {
+    "name": "Lunit",
+    "logo": "assets/img/institutions/lunit.webp"
+  },
+  "dexter": {
+    "name": "Dexter Studios",
+    "logo": "assets/img/institutions/dexter.webp"
+  }
+}

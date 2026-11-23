@@ -64,3 +64,41 @@ body[data-page="home"] .area-top{margin-bottom:112px}
   .news-year-list .news-item{grid-template-columns:38px max-content 1fr;gap:8px}
   .news-headline{font-size:.85rem}
 }
+
+/* Shared CMLab identity and publication totals */
+.brand .brand-mark { display: block; width: 44px; height: 44px; filter: none; flex: none; }
+.brand-copy { display: grid; gap: 4px; min-width: 0; }
+.brand .brand-word { line-height: .95; font-size: 1.72rem; }
+.brand .brand-word span:nth-child(1) { color: #40b2ff; }
+.brand .brand-word span:nth-child(2) { color: #7392ff; }
+.brand .brand-word span:nth-child(3) { color: #568cff; }
+.brand .brand-sub {
+  display: block;
+  max-width: none;
+  color: #acbad6;
+  font-size: .65rem;
+  letter-spacing: .015em;
+  font-weight: 600;
+}
+.footer-brand { letter-spacing: normal; width: fit-content; }
+.footer-brand + p { margin-top: .85rem; }
+.footer-social { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: .75rem; }
+.footer-social .small-link { display: inline-flex; align-items: center; gap: .45rem; margin: 0; }
+.footer-social svg { width: 19px; height: 19px; }
+.stats-grid { --conference-color: #8ad7ff; --journal-color: #a6aaff; }
+.stats-grid [data-stat="conference"] { color: var(--conference-color); }
+.stats-grid [data-stat="journal"] { color: var(--journal-color); }
+.stats-grid [data-stat="total"] {
+  color: var(--conference-color);
+  background-image: linear-gradient(90deg, var(--conference-color), var(--journal-color));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+@media (forced-colors: active) {
+  .stats-grid [data-stat="total"] { -webkit-text-fill-color: CanvasText; }
+}
+@media(max-width: 420px) {
+  .brand .brand-mark { width: 36px; height: 36px; }
+  .brand .brand-sub { font-size: .58rem; }
+}

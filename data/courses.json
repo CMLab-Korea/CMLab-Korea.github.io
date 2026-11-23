@@ -1,0 +1,162 @@
+[
+  {
+    "semester": "26-2",
+    "code": "60059",
+    "ko": "월드 모델 및 에이전틱 시각지능 특강",
+    "title": "Special Seminar on World Models and Agentic Visual Intelligence",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "26-2",
+    "code": "58270",
+    "ko": "생성 AI",
+    "title": "Generative AI",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "26-1",
+    "code": "58905",
+    "ko": "파이썬과인공지능및실습",
+    "title": "Python and Artificial Intelligence",
+    "level": "Undergraduate",
+    "award": ""
+  },
+  {
+    "semester": "26-1",
+    "code": "59400",
+    "ko": "생성AI 개론",
+    "title": "Introduction to Generative AI",
+    "level": "Undergraduate",
+    "award": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1785111570187_0.xlsx&rs=/attach/synap"
+  },
+  {
+    "semester": "26-1",
+    "code": "59582",
+    "ko": "멀티모달AI시스템I",
+    "title": "Multimodal AI System I",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "25-2",
+    "code": "56146",
+    "ko": "생성네트워크와 창작",
+    "title": "Generative AI and Creation",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "25-2",
+    "code": "57983",
+    "ko": "인공지능 창작프로젝트",
+    "title": "AI Creation Project",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "25-1",
+    "code": "58755",
+    "ko": "인공지능 영상 화질 개선 및 복원",
+    "title": "AI-based Media Enhancement and Restoration (Low-level Vision)",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "25-1",
+    "code": "36303",
+    "ko": "영상공학기초",
+    "title": "Computer Vision Basics",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "25-1",
+    "code": "57073",
+    "ko": "파이썬과 인공지능",
+    "title": "Python and Artificial Intelligence",
+    "level": "Undergraduate",
+    "award": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+  },
+  {
+    "semester": "25-1",
+    "code": "57074",
+    "ko": "파이썬과 인공지능 실습",
+    "title": "Practice for Python and Artificial Intelligence",
+    "level": "Undergraduate",
+    "award": "https://www.cau.ac.kr/synap/skin/doc.html?fn=1753147399434_0.xlsx&rs=/attach/synap"
+  },
+  {
+    "semester": "24-2",
+    "code": "58271",
+    "ko": "인공지능 영상 화질 개선 및 복원 특강",
+    "title": "Special Seminar on AI-based Low-Level Vision",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "24-2",
+    "code": "58270",
+    "ko": "생성 AI",
+    "title": "Generative AI",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "24-2",
+    "code": "17086",
+    "ko": "이산수학",
+    "title": "Discrete Mathematics",
+    "level": "Undergraduate",
+    "award": ""
+  },
+  {
+    "semester": "24-1",
+    "code": "57983",
+    "ko": "인공지능 창작프로젝트",
+    "title": "AI Creation Project",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "24-1",
+    "code": "57073",
+    "ko": "파이썬과 인공지능",
+    "title": "Python and Artificial Intelligence",
+    "level": "Undergraduate",
+    "award": ""
+  },
+  {
+    "semester": "24-1",
+    "code": "57074",
+    "ko": "파이썬과 인공지능 실습",
+    "title": "Practice for Python and Artificial Intelligence",
+    "level": "Undergraduate",
+    "award": ""
+  },
+  {
+    "semester": "24-1",
+    "code": "36303",
+    "ko": "영상공학기초",
+    "title": "Computer Vision Basics",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "23-2",
+    "code": "36303",
+    "ko": "영상공학수학",
+    "title": "Computer Vision Mathematics",
+    "level": "Graduate",
+    "award": ""
+  },
+  {
+    "semester": "23-2",
+    "code": "56146",
+    "ko": "생성네트워크와 창작",
+    "title": "Generative AI and Creation",
+    "level": "Graduate",
+    "award": ""
+  }
+]

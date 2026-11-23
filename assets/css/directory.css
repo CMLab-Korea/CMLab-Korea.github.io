@@ -1,0 +1,47 @@
+.pi-photo { width: 100%; max-width: 220px; aspect-ratio: 1; object-fit: cover; border-radius: 14px; }
+.pi-cv { display: grid; gap: 8px; margin-top: 18px; }
+.profile-details { border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; }
+.profile-details summary { cursor: pointer; font-weight: 650; }
+.profile-details p { color: var(--muted); margin-block: .9rem; }
+.profile-details a, .profile-link, .course-award, .lab-partner { color: var(--highlight); }
+.profile-link:hover, .profile-link:focus-visible, .course-award:hover, .profile-details a:hover { text-decoration: underline; }
+.people-legend { font-size: .85rem; }
+.member-photo { width: 100%; aspect-ratio: 5 / 6; object-fit: cover; object-position: center 30%; border-radius: 8px; }
+.member-note { display: block; margin-block: .45rem; color: var(--highlight); }
+.person-card .profile-link { overflow-wrap: anywhere; }
+#alumni-heading { margin: 0; font-size: 1.75rem; }
+.alumni-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 235px), 1fr)); gap: 14px; }
+.alumni-card { padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--layer); }
+.alumni-card h3, .alumni-card p, .directory-card h4, .directory-card p { margin: 0 0 .4rem; }
+.directory-card { display: block; }
+.collab-pictures { display: flex; align-items: center; gap: 12px; height: 58px; margin-bottom: 12px; }
+.collab-photo { width: 57px; height: 57px; border-radius: 50%; object-fit: cover; }
+.organization-logo { width: 70px; height: 52px; object-fit: contain; background: #fff; padding: 5px; border-radius: 7px; }
+.collab-paper-links { display: flex; flex-wrap: wrap; gap: .4rem .65rem; margin-top: .75rem; font-size: .76rem; }
+.lab-partner, .course-award, .gallery-category { display: inline-flex; gap: .38rem; align-items: center; }
+.lab-partner svg, .course-award svg, .gallery-category svg {
+  width: 1.05rem; height: 1.05rem; fill: none; stroke: currentColor; stroke-width: 1.65;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.directory-content { padding-block: 0 90px; }
+.course-semester { margin-block: 0 2.5rem; }
+.course-semester h2 { margin-bottom: .8rem; }
+.course-list { list-style: none; margin: 0; padding: 0; }
+.course-item { display: flex; align-items: center; flex-wrap: wrap; gap: .55rem 1.25rem; padding: .9rem .45rem; border-top: 1px solid var(--line); }
+.course-item div { flex: 1 1 245px; }
+.course-item h3, .course-item p { margin: 0; }
+.course-item p, .directory-meta { color: var(--muted); font-size: .83rem; }
+.course-award { padding: .33rem .67rem; border: 1px solid var(--line); border-radius: 7px; font-size: .8rem; }
+.directory-filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.directory-filter, .gallery-controls button { background: var(--layer); color: var(--text); border: 1px solid var(--line); border-radius: 8px; cursor: pointer; padding: .5rem .7rem; }
+.directory-filter[aria-pressed="true"] { color: var(--highlight); border-color: currentColor; background: var(--layer2); }
+#gallery-events { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,270px),1fr)); gap: 16px; }
+.gallery-card { align-self: start; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--layer); }
+.gallery-card-body { padding: 15px; overflow-wrap: anywhere; }
+.gallery-card-body h3 { margin: .5rem 0; }
+.gallery-card-body p { margin: .42rem 0; }
+.gallery-card-body a { color: var(--highlight); margin-right: .8rem; font-size: .83rem; }
+.gallery-category { color: var(--highlight); font-size: .82rem; }
+.gallery-photo { position: relative; background: #0a101d; }
+.gallery-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
+.gallery-controls { display: flex; align-items: center; justify-content: space-between; padding: .45rem; }

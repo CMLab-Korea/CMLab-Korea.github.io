@@ -1,168 +1,238 @@
 [
   {
+    "person": "Chanho Eom",
+    "role": "Professor",
+    "organization": "cau",
     "institution": "Chung-Ang University",
     "unit": "Perceptual AI Lab",
-    "person": "Prof. Chanho Eom",
     "category": "Academia",
-    "region": "South Korea",
-    "url": "https://pailab.cau.ac.kr/",
-    "works": []
+    "url": "https://pailab.cau.ac.kr/members/faculty",
+    "collaborative_lab": true,
+    "lab_url": "https://pailab.cau.ac.kr/"
   },
   {
-    "institution": "Chung-Ang University",
-    "unit": "VILab",
-    "person": "Prof. Jongwon Choi",
-    "category": "Academia",
-    "region": "South Korea",
-    "url": "https://www.vilab.cau.ac.kr/",
-    "works": [
-      "COREA"
-    ]
-  },
-  {
+    "person": "Munchurl Kim",
+    "role": "Professor",
+    "organization": "kaist",
     "institution": "KAIST",
     "unit": "VICLab",
-    "person": "Prof. Munchurl Kim",
     "category": "Academia",
-    "region": "South Korea",
-    "url": "https://www.viclab.kaist.ac.kr/",
-    "works": [
-      "EcoSplat",
-      "FMA-Net++"
-    ]
+    "url": "https://scholar.google.co.kr/citations?user=bGXte_4AAAAJ&hl=ko"
   },
   {
+    "person": "Geon Chang Lee",
+    "role": "CEO",
+    "organization": "inshorts",
+    "institution": "inshorts",
+    "unit": "",
+    "category": "Industry",
+    "url": "https://www.linkedin.com/in/andy-lee-b4122a98/"
+  },
+  {
+    "person": "Jongwon Choi",
+    "role": "Professor",
+    "organization": "cau",
+    "institution": "Chung-Ang University",
+    "unit": "VILab",
+    "category": "Academia",
+    "url": "https://scholar.google.co.kr/citations?user=F3u9qHcAAAAJ&hl=ko"
+  },
+  {
+    "person": "Sung-Ho Bae",
+    "role": "Professor",
+    "organization": "khu",
     "institution": "Kyung Hee University",
     "unit": "MLVC Lab",
-    "person": "Prof. Sung-Ho Bae",
     "category": "Academia",
-    "region": "South Korea",
-    "url": "https://mlvc.khu.ac.kr/",
-    "works": [
-      "SUCCESS-GS",
-      "I-INR"
-    ]
+    "url": "https://scholar.google.co.kr/citations?user=EULut5oAAAAJ&hl=ko"
   },
   {
+    "person": "Hwijae Son",
+    "role": "Professor",
+    "organization": "konkuk",
     "institution": "Konkuk University",
-    "unit": "Research group",
-    "person": "Prof. Hwijae Son",
+    "unit": "",
     "category": "Academia",
-    "region": "South Korea",
-    "url": "https://korea.konkuk.ac.kr/",
-    "works": [
-      "SoFoNO"
-    ]
+    "url": "https://scholar.google.com/citations?user=NTgm_R4AAAAJ&hl=ko"
   },
   {
+    "person": "Hyung Ju Hwang",
+    "role": "Professor",
+    "organization": "postech",
     "institution": "POSTECH",
     "unit": "AM²-LABS",
-    "person": "Prof. Hyung Ju Hwang",
     "category": "Academia",
-    "region": "South Korea",
-    "url": "https://am2.postech.ac.kr/",
-    "works": [
-      "SoFoNO"
+    "url": "https://am2.postech.ac.kr/index.php/professor/"
+  },
+  {
+    "person": "Kyle Min",
+    "role": "Researcher",
+    "organization": "oracle",
+    "institution": "Oracle",
+    "unit": "",
+    "category": "Industry",
+    "url": "https://sites.google.com/view/kylemin"
+  },
+  {
+    "person": "Soo Ye Kim",
+    "role": "Researcher",
+    "organization": "adobe",
+    "institution": "Adobe Research",
+    "unit": "",
+    "category": "Industry",
+    "url": "https://sites.google.com/view/sooyekim"
+  },
+  {
+    "person": "Juan Luis Gonzalez Bello",
+    "role": "Researcher",
+    "organization": "flawless",
+    "institution": "Flawless AI",
+    "unit": "",
+    "category": "Industry",
+    "url": "https://sites.google.com/view/juan-luis-gb/home",
+    "aliases": [
+      "Juan Luis Gonzalez"
     ]
   },
   {
+    "person": "Sangwoon Kwak",
+    "role": "Researcher",
+    "organization": "etri",
+    "institution": "ETRI",
+    "unit": "",
+    "category": "Research Institute"
+  },
+  {
+    "person": "Minkyu Jeon",
+    "role": "Ph.D. candidate",
+    "organization": "princeton",
     "institution": "Princeton University",
     "unit": "E.Z. Lab",
-    "person": "Minkyu Jeon",
     "category": "Academia",
-    "region": "USA",
-    "url": "https://ezlab.princeton.edu/",
-    "works": [
-      "CHIMERA"
-    ]
+    "url": "https://minkyujeon.github.io/",
+    "photo": "assets/img/collaborators/minkyu-jeon.webp",
+    "photo_source": "https://github.com/minkyujeon/minkyujeon.github.io/blob/f14c1f9f1fe024eb96593c354dfb4327c299ea69/assets/img/profile.jpg"
   },
   {
-    "institution": "Adobe Research",
-    "unit": "Research",
-    "person": "Dr. Soo Ye Kim",
-    "category": "Industry",
-    "region": "USA",
-    "url": "https://research.adobe.com/",
-    "works": [
-      "PRIMEdit",
-      "Chameleon",
-      "RefGC-SR²"
-    ]
-  },
-  {
-    "institution": "Oracle",
-    "unit": "Research",
-    "person": "Dr. Kyle Min",
-    "category": "Industry",
-    "region": "USA",
-    "url": "https://www.oracle.com/",
-    "works": [
-      "FLAIR"
-    ]
-  },
-  {
-    "institution": "Flawless AI",
-    "unit": "Research",
-    "person": "Dr. Juan Luis Gonzalez Bello",
-    "category": "Industry",
-    "region": "USA",
-    "url": "https://flawlessai.com/",
-    "works": [
-      "SplineGS",
-      "MoBGS",
-      "EcoSplat"
-    ]
-  },
-  {
-    "institution": "ETRI",
-    "unit": "Research",
-    "person": "Dr. Sangwoon Kwak",
-    "category": "Research Institute",
-    "region": "South Korea",
-    "url": "https://www.etri.re.kr/",
-    "works": [
-      "MoRel",
-      "MoDec-GS"
-    ]
-  },
-  {
+    "person": "Agus Gunawan",
+    "role": "Researcher",
+    "organization": "razer",
     "institution": "Razer",
-    "unit": "Industry",
-    "person": "Dr. Agus Gunawan",
+    "unit": "",
     "category": "Industry",
-    "region": "Singapore",
-    "url": "https://www.razer.com/",
-    "works": [
-      "PRIMEdit",
-      "OmniText",
-      "MotionGrounder"
-    ]
+    "url": "https://agusgun.github.io/"
   },
   {
-    "institution": "NAVER AI Lab",
-    "unit": "Research",
-    "person": "Dr. Taekyung Kim",
-    "category": "Industry",
-    "region": "South Korea",
-    "url": "https://clova.ai/",
-    "works": []
-  },
-  {
-    "institution": "Inshorts",
-    "unit": "AI",
-    "person": "CEO Geon Chang Lee",
-    "category": "Industry",
-    "region": "South Korea",
-    "url": "https://www.inshorts.ai/",
-    "works": []
-  },
-  {
+    "person": "Junho Kim",
+    "role": "Postdoctoral researcher",
+    "organization": "cornell-tech",
     "institution": "Cornell Tech",
-    "unit": "Postdoctoral researcher",
-    "person": "Dr. Junho Kim",
+    "unit": "",
     "category": "Academia",
-    "region": "USA",
-    "url": "https://tech.cornell.edu/",
-    "works": []
+    "url": "https://www.junhokim.xyz/"
+  },
+  {
+    "person": "Taekyung Kim",
+    "role": "Researcher",
+    "organization": "naver-ai",
+    "institution": "NAVER AI Lab",
+    "unit": "",
+    "category": "Industry",
+    "url": "https://taekyungkim918.github.io/",
+    "photo": "assets/img/collaborators/taekyung-kim.webp",
+    "photo_source": "https://github.com/taekyungkim918/taekyungkim918.github.io/blob/b6612f31bb5c5ca5967ca26456b3259d841280e6/img/prof_pic.jpg"
+  },
+  {
+    "person": "Geunhyuk Youk",
+    "role": "Postdoctoral researcher",
+    "organization": "kaist",
+    "institution": "KAIST",
+    "unit": "VICLab",
+    "category": "Academia",
+    "url": "https://sites.google.com/view/geunhyukyouk/"
+  },
+  {
+    "person": "Jongmin Park",
+    "role": "Postdoctoral researcher",
+    "organization": "snu",
+    "institution": "Seoul National University",
+    "unit": "PI Lab",
+    "category": "Academia",
+    "url": "https://sites.google.com/view/jongmin-park"
+  },
+  {
+    "person": "Minh-Quan Viet Bui",
+    "role": "Ph.D. candidate",
+    "organization": "kaist",
+    "institution": "KAIST",
+    "unit": "VICLab",
+    "category": "Academia",
+    "url": "https://quan5609.github.io/#",
+    "aliases": [
+      "Quan Bui"
+    ],
+    "photo": "assets/img/collaborators/quan-bui.webp",
+    "photo_source": "https://github.com/quan5609/quan5609.github.io/blob/e696aafb4f1a339ed9d7e6af6847340dd415cf66/images/profile.jpg"
+  },
+  {
+    "person": "Jaeho Moon",
+    "role": "Ph.D. candidate",
+    "organization": "kaist",
+    "institution": "KAIST",
+    "unit": "VICLab",
+    "category": "Academia",
+    "url": "https://sites.google.com/view/jaehomoon"
+  },
+  {
+    "person": "Wonyong Seo",
+    "role": "Ph.D. candidate",
+    "organization": "kaist",
+    "institution": "KAIST",
+    "unit": "VICLab",
+    "category": "Academia",
+    "url": "https://wonozlo.github.io/",
+    "photo": "assets/img/collaborators/wonyong-seo.webp",
+    "photo_source": "https://github.com/wonozlo/wonozlo.github.io/blob/4be2a6ef73ef3136503049a9f9c17db47f7ec700/static/images/hero.png"
+  },
+  {
+    "person": "Samuel Teodoro",
+    "role": "Ph.D. candidate",
+    "organization": "kaist",
+    "institution": "KAIST",
+    "unit": "VICLab",
+    "category": "Academia",
+    "url": "https://sateodoro.github.io/",
+    "photo": "assets/img/collaborators/samuel-teodoro.webp",
+    "photo_source": "https://github.com/sateodoro/sateodoro.github.io/blob/c74a96108356e6d792e21173c0cc5029c5b8935e/static/images/profile.jpg"
+  },
+  {
+    "person": "Hojoon Jung",
+    "role": "Ph.D. candidate",
+    "organization": "cau",
+    "institution": "Chung-Ang University",
+    "unit": "VILab",
+    "category": "Academia",
+    "url": "https://sites.google.com/view/hjjung-homepage/%ED%99%88"
+  },
+  {
+    "person": "JaeYoon Lee",
+    "role": "Ph.D. candidate",
+    "organization": "cau",
+    "institution": "Chung-Ang University",
+    "unit": "VILab",
+    "category": "Academia",
+    "url": "https://sites.google.com/vilab.cau.ac.kr/jaeyoonlee",
+    "aliases": [
+      "Jaeyoon Lee"
+    ],
+    "author_name": "JaeYoon Lee"
+  },
+  {
+    "person": "Jong Kwon Oh",
+    "role": "M.S. candidate",
+    "organization": "postech",
+    "institution": "POSTECH",
+    "unit": "AM²-LABS",
+    "category": "Academia"
   }
 ]
