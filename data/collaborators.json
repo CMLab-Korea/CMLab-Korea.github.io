@@ -87,25 +87,36 @@
   },
   {
     "person": "Kyle Min",
-    "role": "Researcher",
+    "role": "Principal Applied Scientist",
     "organization": "oracle",
     "institution": "Oracle",
     "unit": "",
     "category": "Industry",
-    "url": "https://sites.google.com/view/kylemin"
+    "url": "https://sites.google.com/view/kylemin",
+    "role_source": "https://sites.google.com/view/kylemin",
+    "photo": "assets/img/collaborators/kyle-min.webp",
+    "photo_source": "https://sites.google.com/view/kylemin"
   },
   {
     "person": "Soo Ye Kim",
-    "role": "Researcher",
+    "role": "Senior Research Scientist",
     "organization": "adobe",
     "institution": "Adobe Research",
     "unit": "",
     "category": "Industry",
-    "url": "https://sites.google.com/view/sooyekim"
+    "url": "https://sites.google.com/view/sooyekim",
+    "exclude_paper_ids": [
+      26,
+      27,
+      28
+    ],
+    "role_source": "https://sites.google.com/view/sooyekim",
+    "photo": "assets/img/collaborators/soo-ye-kim.webp",
+    "photo_source": "https://sites.google.com/view/sooyekim"
   },
   {
     "person": "Juan Luis Gonzalez Bello",
-    "role": "Researcher",
+    "role": "Senior Research Scientist",
     "organization": "flawless",
     "institution": "Flawless AI",
     "unit": "",
@@ -113,15 +124,22 @@
     "url": "https://sites.google.com/view/juan-luis-gb/home",
     "aliases": [
       "Juan Luis Gonzalez"
-    ]
+    ],
+    "role_source": "https://sites.google.com/view/juan-luis-gb/home",
+    "photo": "assets/img/collaborators/juan-luis-gonzalez-bello.webp",
+    "photo_source": "https://sites.google.com/view/juan-luis-gb/home"
   },
   {
     "person": "Sangwoon Kwak",
-    "role": "Researcher",
+    "role": "Senior Researcher",
     "organization": "etri",
     "institution": "ETRI",
     "unit": "",
-    "category": "Research Institute"
+    "category": "Research Institute",
+    "url": "https://skwak-kaist.github.io/",
+    "role_source": "https://skwak-kaist.github.io/",
+    "photo": "assets/img/collaborators/sangwoon-kwak.webp",
+    "photo_source": "https://skwak-kaist.github.io/"
   },
   {
     "person": "Minkyu Jeon",
@@ -136,12 +154,15 @@
   },
   {
     "person": "Agus Gunawan",
-    "role": "Researcher",
+    "role": "Senior Data Scientist",
     "organization": "razer",
     "institution": "Razer",
     "unit": "",
     "category": "Industry",
-    "url": "https://agusgun.github.io/"
+    "url": "https://agusgun.github.io/",
+    "role_source": "https://agusgun.github.io/",
+    "photo": "assets/img/collaborators/agus-gunawan.webp",
+    "photo_source": "https://agusgun.github.io/"
   },
   {
     "person": "Junho Kim",
@@ -157,14 +178,15 @@
   },
   {
     "person": "Taekyung Kim",
-    "role": "Researcher",
+    "role": "Research Scientist",
     "organization": "naver-ai",
     "institution": "NAVER AI Lab",
     "unit": "",
     "category": "Industry",
     "url": "https://taekyungkim918.github.io/",
     "photo": "assets/img/collaborators/taekyung-kim.webp",
-    "photo_source": "https://github.com/taekyungkim918/taekyungkim918.github.io/blob/b6612f31bb5c5ca5967ca26456b3259d841280e6/img/prof_pic.jpg"
+    "photo_source": "https://taekyungkim918.github.io/",
+    "role_source": "https://taekyungkim918.github.io/"
   },
   {
     "person": "Geunhyuk Youk",
@@ -258,7 +280,8 @@
       "JaeYoon Lee"
     ],
     "photo": "assets/img/collaborators/jaeyoon-lee.webp",
-    "photo_source": "https://sites.google.com/vilab.cau.ac.kr/jaeyoonlee"
+    "photo_source": "https://sites.google.com/vilab.cau.ac.kr/jaeyoonlee",
+    "author_name": "Jaeyoon Lee"
   },
   {
     "person": "Jong Kwon Oh",
@@ -267,5 +290,38 @@
     "institution": "POSTECH",
     "unit": "AM²-LABS",
     "category": "Academia"
+  },
+  {
+    "person": "Geon Yeong Park",
+    "role": "Postdoctoral researcher",
+    "organization": "kaist",
+    "institution": "KAIST",
+    "unit": "",
+    "category": "Academia",
+    "url": "https://geonyeong-park.github.io/",
+    "role_source": "https://geonyeong-park.github.io/",
+    "photo": "assets/img/collaborators/geon-yeong-park.webp",
+    "photo_source": "https://geonyeong-park.github.io/"
+  },
+  {
+    "person": "Jae Shin Yoon",
+    "role": "Research Scientist",
+    "organization": "adobe",
+    "institution": "Adobe Research",
+    "unit": "",
+    "category": "Industry",
+    "url": "https://gorokee.github.io/jsyoon/",
+    "role_source": "https://gorokee.github.io/jsyoon/",
+    "photo": "assets/img/collaborators/jae-shin-yoon.webp",
+    "photo_source": "https://gorokee.github.io/jsyoon/"
+  },
+  {
+    "person": "Ziyu Wan",
+    "role": "Member of Technical Staff",
+    "organization": "microsoft",
+    "institution": "Microsoft",
+    "unit": "AI Superintelligence",
+    "category": "Industry",
+    "url": "http://raywzy.com/"
   }
 ]

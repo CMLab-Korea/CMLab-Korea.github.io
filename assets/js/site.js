@@ -75,33 +75,92 @@
   if (page==='home') {
     const featured = $('#featured-work');
     getData('publications.json').then(items => {
-      const papers = items.filter(p => Number.isInteger(p.featured_order) && p.featured_order > 0)
-        .sort((a, b) => a.featured_order - b.featured_order).slice(0, 4);
-      featured.replaceChildren(...papers.map(paper => {
+      const pools = [
+        items.filter(paper => paper.type === 'Preprint').slice(0, 6),
+        items.filter(paper => paper.type !== 'Preprint').slice(0, 6)
+      ];
+      const controls = $('#selected-controls');
+      const motion = matchMedia('(prefers-reduced-motion: reduce)');
+      let paused = motion.matches;
+      let previous = [];
+      let timer;
+
+      function choosePair(pool) {
+        const fresh = pool.filter(paper => !previous.includes(paper.id));
+        const available = [...(fresh.length >= 2 ? fresh : pool)];
+        const selected = [];
+        while (available.length && selected.length < 2) {
+          const index = Math.floor(Math.random() * available.length);
+          selected.push(available.splice(index, 1)[0]);
+        }
+        return selected;
+      }
+
+      function featureCard(paper) {
         const card = node('a', 'feature-card');
-        card.href = safeURL(paper.project_url || paper.venue_url || paper.arxiv_url);
-        card.target = '_blank';
-        card.rel = 'noopener noreferrer';
+        const external = [paper.project_url, paper.venue_url, paper.arxiv_url]
+          .find(url => url && !paper.unavailable_urls?.includes(url));
+        card.href = external || 'publications.html#paper-' + paper.id;
+        if (external) {
+          card.target = '_blank';
+          card.rel = 'noopener noreferrer';
+        }
         if (paper.teaser) {
-          const image = node('img', 'feature-poster');
-          image.src = paper.teaser;
-          image.alt = paper.teaser_alt || '';
-          image.loading = 'lazy';
-          card.append(image);
+          card.append(photo(paper.teaser, 'feature-poster', paper.teaser_alt || ''));
+        } else {
+          const placeholder = node('span', 'feature-poster feature-placeholder', paper.mark || paper.short);
+          placeholder.setAttribute('aria-hidden', 'true');
+          card.append(placeholder);
         }
         const venue = node('p', 'feature-venue', paper.venue_short || paper.venue);
         if (paper.distinction && paper.distinction_percent) {
-          const label = [paper.distinction, paper.distinction_percent].filter(Boolean).join(' · ');
-          venue.append(' · ', node('strong', 'feature-distinction', label));
+          venue.append(' · ', node('strong', 'feature-distinction', paper.distinction + ' · ' + paper.distinction_percent));
         }
-        card.append(
-          node('h3', 'feature-name', paper.short),
-          venue,
-          node('p', 'feature-title', paper.title)
-        );
+        card.append(node('h3', 'feature-name', paper.short), venue, node('p', 'feature-title', paper.title));
         return card;
-      }));
-      featured.closest('section').hidden = papers.length === 0;
+      }
+
+      function showWorks() {
+        const papers = pools.flatMap(choosePair);
+        previous = papers.map(paper => paper.id);
+        featured.replaceChildren(...papers.map(featureCard));
+        featured.closest('section').hidden = papers.length === 0;
+      }
+
+      function schedule() {
+        clearTimeout(timer);
+        pause.textContent = paused ? 'Resume' : 'Pause';
+        if (paused || document.hidden || featured.matches(':hover, :focus-within')) return;
+        timer = setTimeout(() => {
+          showWorks();
+          schedule();
+        }, 5000);
+      }
+
+      const pause = node('button', 'selected-control');
+      const next = node('button', 'selected-control', 'Next works');
+      pause.type = next.type = 'button';
+      pause.setAttribute('aria-controls', 'featured-work');
+      next.setAttribute('aria-controls', 'featured-work');
+      pause.addEventListener('click', () => {
+        paused = !paused;
+        schedule();
+      });
+      next.addEventListener('click', () => {
+        showWorks();
+        schedule();
+      });
+      for (const event of ['mouseenter', 'mouseleave', 'focusin']) featured.addEventListener(event, schedule);
+      featured.addEventListener('focusout', () => setTimeout(schedule, 0));
+      document.addEventListener('visibilitychange', schedule);
+      motion.addEventListener('change', () => {
+        paused = motion.matches;
+        schedule();
+      });
+      controls.append(pause, next);
+      controls.hidden = pools.every(pool => pool.length <= 2);
+      showWorks();
+      schedule();
     }).catch(() => { featured.textContent = 'Selected work is temporarily unavailable.'; });
 
     const news = $('#news-list');
@@ -378,8 +437,14 @@
       identities.set(identityKey('Jihyong Oh'), {local: true, url: 'people.html#principal-investigator'});
 
       for (const value of [...new Set(items.map(p => p.year))].sort((a, b) => b - a)) year.add(new Option(value, value));
-      const venues = [...new Set(items.filter(p => p.type !== 'Preprint').map(venueName))].sort();
-      for (const name of venues) venue.add(new Option(name, name));
+      const venueCounts = new Map();
+      for (const paper of items.filter(p => p.type !== 'Preprint')) {
+        const name = venueName(paper);
+        venueCounts.set(name, (venueCounts.get(name) || 0) + 1);
+      }
+      for (const [name, count] of [...venueCounts].sort(([a], [b]) => a.localeCompare(b))) {
+        venue.add(new Option(name + ' (' + count + ')', name));
+      }
 
 
       function render() {
@@ -478,12 +543,13 @@
 
   if (page === 'people') {
     getData('people.json').then(people => {
-      const intake = person => person.alumni?.from || person.semester;
-      const sorted = [...people].sort((a, b) => intake(a).localeCompare(intake(b))
+      const degreeRank = person => person.degree.startsWith('Ph.D.') ? 0 : 1;
+      const sorted = [...people].sort((a, b) => degreeRank(a) - degreeRank(b)
+        || a.semester.localeCompare(b.semester)
         || (a.sort_family_ko || '').localeCompare(b.sort_family_ko || '', 'ko')
         || a.name.localeCompare(b.name));
       for (const person of sorted) {
-        const card = node('article', 'person-card');
+        const card = node('article', degreeRank(person) === 0 ? 'person-card phd-member' : 'person-card');
         const semester = person.group === 'intern' ? '(' + person.semester + ')' : '[' + person.semester + ']';
         const heading = node('h3');
         heading.append(nameLink(person.name, person.url));
@@ -491,12 +557,14 @@
         card.append(heading,
           node('p', '', person.degree + ' ' + semester));
         if (person.note) card.append(node('small', 'member-note', person.note));
-        if (person.email) card.append(nameLink('Email', 'mailto:' + person.email));
+        if (person.email) card.append(nameLink('Email', 'mailto:' + person.email, 'profile-link member-email'));
         $('#' + person.group + '-people').append(card);
         if (person.alumni) {
           const {from, to, phd_since} = person.alumni;
           const alumni = node('article', 'alumni-card');
-          alumni.append(node('h3', '', person.name), node('p', '', 'M.S. · ' + from + ' → ' + to),
+          const alumniName = node('h3');
+          alumniName.append(nameLink(person.name, person.url));
+          alumni.append(alumniName, node('p', '', 'M.S. · ' + from + ' → ' + to),
             node('p', 'member-note', 'Ph.D. candidate at CMLab · since ' + phd_since));
           $('#alumni').append(alumni);
         }
@@ -506,8 +574,14 @@
     Promise.all([getData('collaborators.json'), getData('institutions.json'), getData('publications.json')])
       .then(([collaborators, institutions, papers]) => {
         const grid = $('#collaborators-grid');
-        for (const category of ['Ongoing collaborations', 'Academia', 'Research Institute', 'Industry']) {
-          const group = collaborators.filter(p => p.ongoing ? category === 'Ongoing collaborations' : p.category === category);
+        const universityOrder = ['princeton', 'cornell-tech', 'kaist', 'snu', 'postech', 'khu', 'cau', 'konkuk'];
+        for (const category of ['Industry', 'Academia', 'Research Institute']) {
+          const group = collaborators.filter(p => p.category === category);
+          if (category === 'Academia') {
+            const rank = person => universityOrder.includes(person.organization)
+              ? universityOrder.indexOf(person.organization) : universityOrder.length;
+            group.sort((a, b) => rank(a) - rank(b));
+          }
           if (!group.length) continue;
           const cards = node('div', 'collab-cards');
           for (const person of group) {
@@ -516,16 +590,21 @@
             const card = node('article', 'collab-card directory-card');
             const pictures = node('div', 'collab-pictures');
             if (person.photo) pictures.append(photo(person.photo, 'collab-photo', person.person));
-            if (organization.logo) pictures.append(photo(organization.logo, 'organization-logo', organization.name));
+            if (organization.logo) {
+              const logo = photo(organization.logo, 'organization-logo', organization.name);
+              if (organization.logo_vertical) {
+                const picture = node('picture');
+                const mobile = node('source');
+                mobile.media = '(max-width: 480px)';
+                mobile.srcset = organization.logo_vertical;
+                picture.append(mobile, logo);
+                pictures.append(picture);
+              } else pictures.append(logo);
+            }
             if (pictures.childElementCount) card.append(pictures);
             const heading = node('h4');
             heading.append(nameLink(person.person, person.url));
             card.append(heading, node('p', '', [person.role, person.unit, organization.name].filter(Boolean).join(' · ')));
-            if (person.ongoing) {
-              const ongoing = node('span', 'lab-partner', 'Active project');
-              ongoing.prepend(symbol('assets/img/news-icons.svg', 'collaboration'));
-              card.append(ongoing);
-            }
             if (person.collaborative_lab) {
               const label = nameLink('Close research collaboration', person.lab_url, 'lab-partner');
               label.prepend(symbol('assets/img/news-icons.svg', 'collaboration'));
@@ -539,6 +618,11 @@
               works.append(nameLink(paper.short + ' [' + paper.venue_short + ']', url, 'profile-link'));
             }
             if (works.childElementCount) card.append(works);
+            else if (person.ongoing) {
+              const ongoing = node('span', 'lab-partner', 'Active project');
+              ongoing.prepend(symbol('assets/img/news-icons.svg', 'collaboration'));
+              card.append(ongoing);
+            }
             cards.append(card);
           }
           grid.append(node('h3', 'collaborator-group-heading', category), cards);

@@ -106,3 +106,6 @@
 }
 .area-choice:hover, .area-choice:focus-visible, .area-choice[aria-pressed="true"] { background: var(--layer2); }
 .area-choice .paper-area, .area-dropdown summary .paper-area { color: inherit; }
+
+.publication-legend { margin: .35rem 0 0; max-width: 100%; color: var(--muted); line-height: 1.5; }
+.publication-legend strong { color: var(--highlight); }

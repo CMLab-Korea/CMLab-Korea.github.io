@@ -21,7 +21,6 @@
       "Jeahun Sung"
     ],
     "teaser_alt": "CHIMERA overview comparing image morphing quality and efficiency",
-    "featured_order": 4,
     "areas": [
       "Generative & Agentic Visual AI"
     ],
@@ -123,7 +122,6 @@
     "cmlab_lead_authors": [
       "Seungho Choi"
     ],
-    "featured_order": 3,
     "areas": [
       "Pixel-Level Intelligence",
       "Generative & Agentic Visual AI"
@@ -796,7 +794,6 @@
     "cmlab_lead_authors": [
       "Weeyoung Kwon"
     ],
-    "featured_order": 1,
     "metadata_source": "https://github.com/CMLab-Korea/MoRel",
     "distinction": "Highlight",
     "distinction_percent": "3.6%",
@@ -872,7 +869,6 @@
     "cmlab_lead_authors": [
       "Seungho Choi"
     ],
-    "featured_order": 2,
     "metadata_source": "https://github.com/CMLab-Korea/FRAMER",
     "areas": [
       "Pixel-Level Intelligence"
