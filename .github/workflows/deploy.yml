@@ -2,26 +2,44 @@ name: Deploy CMLab website to GitHub Pages
 on:
   workflow_dispatch:
   push:
+    branches: [main, codex/cmlab-deploy-and-profile]
+  pull_request:
     branches: [main]
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: false
 jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stage website files
+        run: |
+          mkdir _site
+          cp -r -- *.html assets data robots.txt .nojekyll _site/
+      - id: upload
+        uses: actions/upload-pages-artifact@v5
+        with:
+          name: github-pages
+          path: _site
+      - name: Verify artifact registration
+        env:
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+        run: test -n "$ARTIFACT_ID"
   deploy:
     if: github.ref == 'refs/heads/main'
+    needs: package
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages
