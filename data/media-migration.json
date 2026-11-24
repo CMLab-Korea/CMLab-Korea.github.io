@@ -1,7 +1,7 @@
 {
   "notes": "Imported assets are attributed to the named project authors under the license stated on their project site. Pending records retain empty asset paths.",
   "source_site": "https://cmlab.cau.ac.kr/",
-  "preferred": "assets/media/publications/{paper-short}/teaser.webp or preview.mp4",
+  "preferred": "assets/media/publications/{media_folder}/teaser.webp or preview.mp4",
   "status": "Five project posters and one video imported; other project media pending source and rights review.",
   "items": [
     {
@@ -18,7 +18,7 @@
     },
     {
       "paper": "FMA-Net++",
-      "image": "assets/media/publications/paper-3/teaser.webp",
+      "image": "assets/media/publications/FMA-Net++ - Motion- and Exposure-Aware Joint Video Super-Resolution and Deblurring/teaser.webp",
       "video": "",
       "status": "imported",
       "project": "https://kaist-viclab.github.io/fmanetpp_site/",
@@ -27,7 +27,7 @@
     },
     {
       "paper": "AVSR-Diff",
-      "image": "assets/media/publications/paper-4/teaser.webp",
+      "image": "assets/media/publications/AVSR-Diff - Scale-Agnostic Diffusion Priors for Temporally Consistent Arbitrary-Scale Video Super-Resolution/teaser.webp",
       "video": "",
       "status": "imported",
       "project": "https://kaist-viclab.github.io/AVSR-Diff/",
@@ -42,8 +42,8 @@
     },
     {
       "paper": "MoRel",
-      "image": "assets/media/publications/morel/teaser.webp",
-      "video": "assets/media/publications/morel/preview.mp4",
+      "image": "assets/media/publications/MoRel - Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification/teaser.webp",
+      "video": "assets/media/publications/MoRel - Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification/preview.mp4",
       "status": "imported",
       "source": "https://github.com/CMLab-Korea/MoRel/blob/2527d50a35a3b190f07160bd41fd4cc41076fa79/images/MoRel_approach.png",
       "project": "https://cmlab-korea.github.io/MoRel/",
@@ -53,7 +53,7 @@
     },
     {
       "paper": "FRAMER",
-      "image": "assets/media/publications/framer/teaser.webp",
+      "image": "assets/media/publications/FRAMER - Frequency-Aligned Self-Distillation with Adaptive Modulation Leveraging Diffusion Priors for Real-World Image Super-Resolution/teaser.webp",
       "video": "",
       "status": "imported",
       "source": "https://github.com/CMLab-Korea/FRAMER/blob/7636b47aeadc5b812a834064fdf8cf6dc2806e2c/images/tiger_framer.png",
@@ -81,7 +81,7 @@
     },
     {
       "paper": "MoCHA-former",
-      "image": "assets/media/publications/paper-11/teaser.webp",
+      "image": "assets/media/publications/MoCHA-former - Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing/teaser.webp",
       "video": "",
       "status": "imported",
       "project": "https://cmlab-korea.github.io/MoCHA-former/",
@@ -90,7 +90,7 @@
     },
     {
       "paper": "MoBGS",
-      "image": "assets/media/publications/paper-12/teaser.webp",
+      "image": "assets/media/publications/MoBGS - Motion Deblurring Dynamic 3D Gaussian Splatting for Blurry Monocular Video/teaser.webp",
       "video": "",
       "status": "imported",
       "project": "https://kaist-viclab.github.io/mobgs-site/",
@@ -117,7 +117,7 @@
     },
     {
       "paper": "MoBluRF",
-      "image": "assets/media/publications/paper-16/teaser.webp",
+      "image": "assets/media/publications/MoBluRF - Motion Deblurring Neural Radiance Fields for Blurry Monocular Video/teaser.webp",
       "video": "",
       "status": "imported",
       "project": "https://kaist-viclab.github.io/moblurf-site/",
@@ -132,7 +132,7 @@
     },
     {
       "paper": "SplineGS",
-      "image": "assets/media/publications/paper-18/teaser.webp",
+      "image": "assets/media/publications/SplineGS - Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video/teaser.webp",
       "video": "",
       "status": "imported",
       "project": "https://kaist-viclab.github.io/splinegs-site/",
@@ -147,8 +147,8 @@
     },
     {
       "paper": "BiM-VFI",
-      "image": "assets/media/publications/bim-vfi/teaser.webp",
-      "video": "assets/media/publications/bim-vfi/preview.mp4",
+      "image": "assets/media/publications/BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/teaser.webp",
+      "video": "assets/media/publications/BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/preview.mp4",
       "status": "imported",
       "video_source": "https://github.com/wonozlo/wonozlo.github.io/blob/4be2a6ef73ef3136503049a9f9c17db47f7ec700/static/gifs/bimvfi.gif",
       "project": "https://kaist-viclab.github.io/BiM-VFI_site/",
@@ -156,7 +156,7 @@
     },
     {
       "paper": "FMA-Net",
-      "image": "assets/media/publications/paper-21/teaser.webp",
+      "image": "assets/media/publications/FMA-Net - Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring/teaser.webp",
       "video": "",
       "status": "imported",
       "project": "https://kaist-viclab.github.io/fmanet-site/",
@@ -207,7 +207,7 @@
     },
     {
       "paper": "CHIMERA",
-      "image": "assets/media/publications/chimera/teaser.webp",
+      "image": "assets/media/publications/CHIMERA - Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metric/teaser.webp",
       "video": "",
       "status": "imported",
       "source": "https://github.com/CMLab-Korea/CHIMERA/blob/f000b7d76ee1ac2f0e5a5c6679318aa931407ff3/src/assets/teaser_color.pdf",
@@ -223,7 +223,7 @@
     },
     {
       "paper": "DiTTo",
-      "image": "assets/media/publications/ditto/teaser.webp",
+      "image": "assets/media/publications/DiTTo - Scalable Order-aware All-in-One Image Restoration Agent/teaser.webp",
       "video": "",
       "status": "imported",
       "source": "https://github.com/CMLab-Korea/DiTTo/blob/00c4eac6703e966b59c0fd97c9a42dd3fe1b469a/images/street_ditto.png",
@@ -239,7 +239,7 @@
     },
     {
       "paper": "RefGC-SR²",
-      "image": "assets/media/publications/refgc-sr2/teaser.webp",
+      "image": "assets/media/publications/RefGC-SR² - Reference-guided Super-Resolution and Refinement of AI Generated Content/teaser.webp",
       "video": "",
       "status": "imported",
       "source": "https://github.com/CMLab-Korea/RefGC-SR2/blob/187004e9ef33479e78b014b5a3bf5f1024a4ce20/static/images/teaser.png",
@@ -277,5 +277,28 @@
       "video": "",
       "status": "pending"
     }
-  ]
+  ],
+  "legacy_paths": {
+    "assets/img/gallery/04-24-2025-kibme-immersive-media-workshop/1.webp": "assets/img/gallery/한국방송•미디어공학회 2025년 실감미디어 워크숍 (04.24.2025)/1.webp",
+    "assets/img/gallery/05-15-2026-teachers-day/1.webp": "assets/img/gallery/Teacher’s Day (05.15.2026)/1.webp",
+    "assets/img/gallery/05-18-2026-cmlab-internal-seminar/1.webp": "assets/img/gallery/CMLab Internal Seminar (05.18.2026)/1.webp",
+    "assets/img/gallery/08-04-06-2025-kccv-25/1.webp": "assets/img/gallery/KCCV'25 (08.04~06.2025)/1.webp",
+    "assets/img/gallery/08-21-2026-cmlab-internal-seminar/1.webp": "assets/img/gallery/CMLab Internal Seminar (08.21.2026)/1.webp",
+    "assets/img/gallery/11-02-2023-inaugural-joint-lab-orientation/1.webp": "assets/img/gallery/Inaugural Joint Lab Orientation (11.02.2023)/1.webp",
+    "assets/media/publications/bim-vfi/preview.mp4": "assets/media/publications/BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/preview.mp4",
+    "assets/media/publications/bim-vfi/teaser.webp": "assets/media/publications/BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/teaser.webp",
+    "assets/media/publications/chimera/teaser.webp": "assets/media/publications/CHIMERA - Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metric/teaser.webp",
+    "assets/media/publications/ditto/teaser.webp": "assets/media/publications/DiTTo - Scalable Order-aware All-in-One Image Restoration Agent/teaser.webp",
+    "assets/media/publications/framer/teaser.webp": "assets/media/publications/FRAMER - Frequency-Aligned Self-Distillation with Adaptive Modulation Leveraging Diffusion Priors for Real-World Image Super-Resolution/teaser.webp",
+    "assets/media/publications/morel/preview.mp4": "assets/media/publications/MoRel - Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification/preview.mp4",
+    "assets/media/publications/morel/teaser.webp": "assets/media/publications/MoRel - Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification/teaser.webp",
+    "assets/media/publications/paper-11/teaser.webp": "assets/media/publications/MoCHA-former - Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing/teaser.webp",
+    "assets/media/publications/paper-12/teaser.webp": "assets/media/publications/MoBGS - Motion Deblurring Dynamic 3D Gaussian Splatting for Blurry Monocular Video/teaser.webp",
+    "assets/media/publications/paper-16/teaser.webp": "assets/media/publications/MoBluRF - Motion Deblurring Neural Radiance Fields for Blurry Monocular Video/teaser.webp",
+    "assets/media/publications/paper-18/teaser.webp": "assets/media/publications/SplineGS - Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video/teaser.webp",
+    "assets/media/publications/paper-21/teaser.webp": "assets/media/publications/FMA-Net - Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring/teaser.webp",
+    "assets/media/publications/paper-3/teaser.webp": "assets/media/publications/FMA-Net++ - Motion- and Exposure-Aware Joint Video Super-Resolution and Deblurring/teaser.webp",
+    "assets/media/publications/paper-4/teaser.webp": "assets/media/publications/AVSR-Diff - Scale-Agnostic Diffusion Priors for Temporally Consistent Arbitrary-Scale Video Super-Resolution/teaser.webp",
+    "assets/media/publications/refgc-sr2/teaser.webp": "assets/media/publications/RefGC-SR² - Reference-guided Super-Resolution and Refinement of AI Generated Content/teaser.webp"
+  }
 }
