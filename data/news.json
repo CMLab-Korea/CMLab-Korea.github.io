@@ -1,27 +1,5 @@
 [
   {
-    "date": "2026-09-17",
-    "category": "Event",
-    "headline": [
-      "Prof. Oh was lead organizer and session chair for ",
-      {
-        "text": "Many Lenses, One World (MLOW)",
-        "url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home"
-      },
-      ", an IEEE ICIP 2026 satellite workshop in Tampere, Finland, and co-curated ",
-      {
-        "text": "Many Lenses in Creative Practice",
-        "url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home"
-      },
-      ", its AI + Art exhibition. ",
-      {
-        "text": "Lab Life event",
-        "url": "life.html#09-14-18-2026-icip-26-mlow-workshop"
-      }
-    ],
-    "source_url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home"
-  },
-  {
     "date": "2026-09",
     "category": "Publication",
     "headline": [
@@ -71,6 +49,28 @@
         "url": "https://eccv.ecva.net/Conferences/2026/ProgramCommittee"
       }
     ]
+  },
+  {
+    "date": "2026-09-17",
+    "category": "Event",
+    "headline": [
+      "Prof. Oh was lead organizer and session chair for ",
+      {
+        "text": "Many Lenses, One World (MLOW)",
+        "url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home"
+      },
+      ", an IEEE ICIP 2026 satellite workshop in Tampere, Finland, and co-curated ",
+      {
+        "text": "Many Lenses in Creative Practice",
+        "url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home"
+      },
+      ", its AI + Art exhibition. ",
+      {
+        "text": "Lab Life event",
+        "url": "life.html#09-14-18-2026-icip-26-mlow-workshop"
+      }
+    ],
+    "source_url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home"
   },
   {
     "date": "2026-08",
@@ -704,7 +704,7 @@
     "headline": [
       "Prof. Oh joined ",
       {
-        "text": "inshorts",
+        "text": "inshorts.ai",
         "url": "https://www.inshorts.ai/en"
       },
       " as a CAIO to research and integrate Low-Level Vision techniques into real-world products."
@@ -876,6 +876,7 @@
         "label": "Jihyong Oh",
         "url": "https://cmlab.cau.ac.kr/our-team/principal-investigator-pi"
       }
-    ]
+    ],
+    "show_day": true
   }
 ]

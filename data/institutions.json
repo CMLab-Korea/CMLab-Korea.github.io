@@ -50,7 +50,7 @@
     "logo_source": "NAVER AI Lab brand PDFs supplied by CMLab"
   },
   "inshorts": {
-    "name": "inshorts",
+    "name": "inshorts.ai",
     "logo": "assets/img/institutions/inshorts.webp"
   },
   "cornell-tech": {
@@ -64,15 +64,11 @@
   },
   "naver-cloud": {
     "name": "NAVER Cloud",
-    "logo": "assets/img/institutions/naver-cloud.webp",
-    "compact_logo": "assets/img/institutions/naver-cloud-mark.webp",
-    "compact_logo_source": "https://github.com/CMLab-Korea/SEAL/blob/8542f267ba09d8606cc5eecfaa7a7487c5c57fd9/assets/naver.png"
+    "logo": "assets/img/institutions/naver-cloud.webp"
   },
   "lunit": {
     "name": "Lunit Inc.",
-    "logo": "assets/img/institutions/lunit.webp",
-    "compact_logo": "assets/img/institutions/lunit-mark.webp",
-    "compact_logo_source": "https://github.com/CMLab-Korea/SEAL/blob/8542f267ba09d8606cc5eecfaa7a7487c5c57fd9/assets/lunit.png"
+    "logo": "assets/img/institutions/lunit.webp"
   },
   "dexter": {
     "name": "Dexter Studios",

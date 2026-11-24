@@ -36,7 +36,25 @@
 }
 .paper-author-highlight { color: var(--highlight); font-weight: 700; }
 .paper-row { scroll-margin-top: 100px; }
-.paper-areas { display: flex; gap: .45rem 1rem; flex-wrap: wrap; margin-top: 10px; }
+.paper-areas { display: flex; justify-content: flex-end; gap: .4rem; flex-wrap: wrap; margin-top: 10px; }
+.paper-areas .paper-area {
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  color: var(--highlight);
+  background: var(--layer);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+.paper-area .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 .paper-area {
   display: inline-flex;
   align-items: center;
