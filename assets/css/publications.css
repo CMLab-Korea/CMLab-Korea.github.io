@@ -34,7 +34,7 @@
   line-height: 1.4;
   font-weight: 700;
 }
-.paper-author-highlight { color: var(--highlight); font-weight: 700; }
+.paper-author-highlight { color: var(--highlight); font-weight: 800; }
 .paper-row { scroll-margin-top: 100px; }
 .paper-areas { display: flex; justify-content: flex-end; gap: .4rem; flex-wrap: wrap; margin-top: 10px; }
 .paper-areas .paper-area {
@@ -133,18 +133,15 @@
   a.paper-author-collaborator:is(:hover, :focus-visible) { background-size: 100% 2px; }
 }
 
-@supports (background-clip: text) and (color: color-mix(in srgb, red, white)) {
+@supports (background-clip: text) {
   .paper-author-lab-name {
-    --logo-color-strength: 48%;
-    /* Colors sampled from the C and M strokes in cmlab-logo.webp. */
-    background-image: linear-gradient(90deg,
-      color-mix(in srgb, #0065c0 var(--logo-color-strength), var(--text)),
-      color-mix(in srgb, #0037af var(--logo-color-strength), var(--text)),
-      color-mix(in srgb, #0d207e var(--logo-color-strength), var(--text)));
+    background-image: linear-gradient(90deg, #c8edff, #78bdff 52%, #96acff);
     background-clip: text;
     color: transparent;
   }
-  [data-theme="light"] .paper-author-lab-name { --logo-color-strength: 83%; }
+  [data-theme="light"] .paper-author-lab-name {
+    background-image: linear-gradient(90deg, #16469e, #2348c4 52%, #0769a6);
+  }
 }
 
 @media (forced-colors: active) {
