@@ -5,12 +5,14 @@ import json
 from pathlib import Path
 import re
 from shutil import copyfile
+import subprocess
 from unicodedata import normalize
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE_EXTENSIONS = {".webp", ".png", ".jpg", ".jpeg", ".gif", ".avif"}
 VIDEO_EXTENSIONS = {".mp4", ".webm"}
 PAPERS = Path("assets/media/publications")
+PAPER_PREVIEWS = Path("assets/media/publication-previews")
 GALLERY = Path("assets/img/gallery")
 FOLDER_LIMIT = 180
 
@@ -80,13 +82,58 @@ def register_folders(records, base, label, create=False):
         yield record, folder
 
 
-def index_publication_media(create=False):
+def animated_gif(path):
+    probe = subprocess.run([
+        "ffprobe", "-v", "error", "-select_streams", "v:0",
+        "-read_intervals", "%+#2", "-show_entries", "frame=pts", "-of", "json", str(path),
+    ], check=True, capture_output=True, text=True)
+    return len(json.loads(probe.stdout).get("frames", [])) > 1
+
+
+def stage_publication_preview(paper):
+    image, video = paper["teaser"], paper["teaser_video"]
+    local_gif = image.startswith(f"{PAPERS.as_posix()}/") and image.lower().endswith(".gif")
+    source = None
+    if video.startswith(f"{PAPERS.as_posix()}/") and video.lower().endswith(".mov"):
+        source = video
+    elif not video and local_gif and animated_gif(ROOT / image):
+        source = image
+
+    poster = source if not image else None
+    if local_gif and (source or video):
+        poster = image
+    if not (source or poster):
+        return
+
+    output = PAPER_PREVIEWS / str(paper["id"])
+    (ROOT / output.parent).mkdir(parents=True, exist_ok=True)
+    ffmpeg = ["ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y"]
+    scale = "scale=w='min(iw,1280)':h='min(ih,1280)':force_original_aspect_ratio=decrease:force_divisible_by=2"
+    if source:
+        mp4 = output.with_suffix(".mp4")
+        subprocess.run([
+            *ffmpeg, "-i", str(ROOT / source), "-map", "0:v:0", "-map", "0:a:0?", "-vf", scale,
+            "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "fast", "-crf", "23",
+            "-c:a", "aac", "-movflags", "+faststart", str(ROOT / mp4),
+        ], check=True)
+        paper["teaser_video"] = mp4.as_posix()
+    if poster:
+        still = output.with_suffix(".jpg")
+        subprocess.run([
+            *ffmpeg, "-i", str(ROOT / poster), "-map", "0:v:0", "-frames:v", "1",
+            "-vf", scale, "-q:v", "3", "-update", "1", str(ROOT / still),
+        ], check=True)
+        paper["teaser"] = still.as_posix()
+
+
+def index_publication_media(create=False, stage_previews=False):
     paper_file = ROOT / "data/publications.json"
     papers = load(paper_file)
+    videos = VIDEO_EXTENSIONS | {".mov"} if stage_previews else VIDEO_EXTENSIONS
     for paper, folder in register_folders(papers, PAPERS, lambda entry: entry["title"], create):
         for field, extensions, preferred in (
             ("teaser", IMAGE_EXTENSIONS, "teaser"),
-            ("teaser_video", VIDEO_EXTENSIONS, "preview"),
+            ("teaser_video", videos, "preview"),
         ):
             matches = assets(folder, extensions)
             if matches:
@@ -99,6 +146,8 @@ def index_publication_media(create=False):
                 if fallback.startswith(("http://", "https://")) or (fallback and (ROOT / fallback).is_file()):
                     continue
                 paper[field] = ""
+        if stage_previews:
+            stage_publication_preview(paper)
     save(paper_file, papers)
 
 
@@ -151,7 +200,7 @@ if __name__ == "__main__":
         if not options.for_deploy:
             parser.error("--site-dir requires --for-deploy")
         ROOT = options.site_dir.resolve()
-    index_publication_media(create=options.sync_folders)
+    index_publication_media(create=options.sync_folders, stage_previews=bool(options.site_dir))
     if not options.publications_only:
         index_gallery_media(create=options.sync_folders)
     if not options.publications_only and not options.sync_folders:

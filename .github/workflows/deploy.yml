@@ -19,6 +19,12 @@ jobs:
         run: |
           mkdir _site
           cp -r -- *.html assets data robots.txt .nojekyll _site/
+      - name: Set up FFmpeg for paper previews
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
       - name: Index paper, gallery and profile media
         run: python3 scripts/index_site_media.py --for-deploy --site-dir _site
       - id: upload
