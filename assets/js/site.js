@@ -268,7 +268,7 @@
     getData('news.json').then(items => {
       const categories = ['All', 'Publication', 'Award', 'People', 'Event'];
       const entries = items.filter(item => categories.includes(item.category))
-        .sort((a, b) => b.date.localeCompare(a.date));
+        .sort((a, b) => b.date.slice(0, 7).localeCompare(a.date.slice(0, 7)));
 
       function categoryIcon(category) {
         const svgNamespace = 'http://www.w3.org/2000/svg';
@@ -314,7 +314,8 @@
             news.append(node('h3', 'news-year', year), list);
           }
           const item = node('li', 'news-item');
-          const time = node('time', '', day ? [month, day, year].join('/') : [month, year].join('/'));
+          const dateParts = entry.show_day && day ? [month, day, year] : [month, year];
+          const time = node('time', '', dateParts.join('/'));
           time.dateTime = entry.date;
           const category = node('span', 'news-category', entry.category);
           category.prepend(categoryIcon(entry.category));
@@ -433,10 +434,16 @@
       return line;
     }
 
-    function areaTag(name) {
+    function areaTag(name, iconOnly = false) {
       const {label, icon} = areas.get(name);
       const tag = node('span', 'paper-area');
-      tag.append(symbol('assets/img/research-symbols.svg', icon), label);
+      tag.append(symbol('assets/img/research-symbols.svg', icon));
+      if (iconOnly) {
+        tag.title = label;
+        tag.append(node('span', 'visually-hidden', label));
+      } else {
+        tag.append(label);
+      }
       return tag;
     }
 
@@ -501,9 +508,6 @@
         }
         body.append(affiliations);
       }
-      const tags = node('div', 'paper-areas');
-      tags.append(...paperAreas(paper).map(areaTag));
-      body.append(tags);
       if (links.size) {
         const resources = node('div', 'paper-meta');
         for (const [url, label] of links) resources.append(externalLink(label + ' ↗', url, 'paper-open'));
@@ -511,11 +515,15 @@
       }
       if (paper.verification) {
         const review = node('p', 'paper-verification');
-        const link = node('a', '', paper.verification);
-        link.href = 'PUBLICATIONS-REVIEW.md#' + paper.verification.toLowerCase().replaceAll(' ', '-');
+        const anchor = paper.verification.toLowerCase().replaceAll(' ', '-');
+        const link = externalLink(paper.verification,
+          'https://github.com/CMLab-Korea/CMLab-Korea.github.io/blob/main/PUBLICATIONS-REVIEW.md#' + anchor);
         review.append(link);
         body.append(review);
       }
+      const tags = node('div', 'paper-areas');
+      tags.append(...paperAreas(paper).map(name => areaTag(name, true)));
+      if (tags.childElementCount) body.append(tags);
       row.append(body);
       return row;
     }
@@ -650,8 +658,8 @@
     const roles = {L: 'PI / Research Lead', U: 'Unit Lead', P: 'Participating Researcher'};
     const status = $('#projects-status');
     const formatDate = value => {
-      const [year, month, day] = value.split('-');
-      return [month, day, year].filter(Boolean).join('.');
+      const [year, month] = value.split('-');
+      return [month, year].join('.');
     };
 
     function projectCard(project, organizations) {

@@ -12,7 +12,7 @@ Run `python3 -m http.server 8000` from the repository root, then open `http://lo
 | --- | --- |
 | `data/publications.json` | Titles, authors, venues, catalog numbers, research areas, links and teaser paths |
 | `data/publication-archive.json` | Numbered regional publications, software registrations and patents |
-| `data/projects.json` | Projects, roles, funding organizations and YYYY-MM project dates |
+| `data/projects.json` | Projects, roles, funding organizations and project dates |
 | `data/people.json` | Directly supervised graduate researchers and interns |
 | `data/collaborators.json` | People, affiliations and associated projects |
 | `data/news.json` | Selected news |
@@ -24,7 +24,7 @@ The preview bundles the lab's official logo from the [branding repository](https
 
 Home selects two preprints and two peer-reviewed papers from the first six of each group in `data/publications.json`. Keep the catalog in publication order. Titles, links, posters and videos come from the same entries as Publications. Set `manuscripts_in_preparation` in `data/research-output.json` to update both Home and Publications.
 
-Add news to `data/news.json` with a `YYYY-MM` date, headline, and category. Use `YYYY-MM-DD` for the lab opening entry. Use Publication, Award, Funding, People, Event, or Service as applicable. Keep an optional `source_url` for editorial verification. Home displays the latest ten entries and offers the rest when available.
+Add news to `data/news.json` with a `YYYY-MM` or `YYYY-MM-DD` date, headline, and category. The site displays the month and year. Entries in the same month follow catalog order. The lab opening entry uses `show_day` to display its original date. Use Publication, Award, Funding, People, Event, or Service as applicable. Keep an optional `source_url` for editorial verification. Home displays the latest ten entries and offers the rest when available.
 
 Home’s Research Vision figure uses responsive WebP derivatives and links to the original-resolution image. The asset repository file has a PNG extension and contains JPEG data. [Source figure](https://github.com/CMLab-Korea/cmlab-web-assets/blob/272aab0f610ca1f5fd5a2d5635cb4ceb9f4d99e6/research/01-%5B26.10%5D%20CMLab%20Research%20Areas.png)
 
@@ -40,7 +40,7 @@ After the catalog is complete and approved, migrate the Home At a Glance publica
 
 - Keep display names, aliases, contact links, portraits and semesters in `data/people.json`. Keep collaborator profile links and their institution IDs in `data/collaborators.json` and institution marks in `data/institutions.json`. Papers link authors and People lists collaborative work by matching the catalog’s bylines to those names and aliases. Publication logos correspond to source affiliations tracked on the paper.
 - Place a paper poster called `teaser.webp` (GIF and other browser-readable image formats are supported) and optional `preview.mp4` in `assets/media/publications/paper-<id>/`. The ID is the stable number in `data/publications.json`. Prepare media at a 16:10 ratio when practical.
-- Keep the original project IDs in `data/projects.json`. Start and end dates or months are inclusive in Asia/Seoul. Use `YYYY-MM-DD` when the exact period is known. Project organization logos are in `assets/img/project-orgs/`.
+- Keep the original project IDs in `data/projects.json`. Start and end dates or months are inclusive in Asia/Seoul. Use `YYYY-MM-DD` when the exact period is known. Cards display the month and year. Project organization logos are in `assets/img/project-orgs/`.
 - Add numbered photo files such as `01.webp` and `02.webp` to the matching folder in `assets/img/gallery/`. The folder name matches the event ID in `data/gallery.json`. Gallery controls appear when an event has more than one image.
 - For Eunseong Cho, upload one file named `eunseong-cho.png`, `eunseong-cho.jpg`, or `eunseong-cho.webp` to `assets/img/people/`. GitHub Pages packaging indexes the portrait automatically.
 - GitHub Pages packaging indexes paper media automatically. To preview new uploads locally, run `python3 scripts/index_site_media.py --publications-only`. Run without the option to index gallery photos as well. Teaching records and the university’s Outstanding Instructor links live in `data/courses.json`.

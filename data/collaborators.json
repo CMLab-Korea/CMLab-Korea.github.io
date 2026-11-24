@@ -30,14 +30,15 @@
     "ongoing": true
   },
   {
-    "person": "Geon Chang Lee",
+    "person": "Geon-Chang Lee",
     "role": "CEO",
     "organization": "inshorts",
-    "institution": "inshorts",
+    "institution": "inshorts.ai",
     "unit": "",
     "category": "Industry",
     "url": "https://www.linkedin.com/in/andy-lee-b4122a98/",
-    "ongoing": true
+    "ongoing": true,
+    "author_name": "Geon-Chang Lee"
   },
   {
     "person": "Jongwon Choi",
@@ -292,7 +293,8 @@
     "organization": "naver-cloud",
     "institution": "NAVER Cloud",
     "category": "Industry",
-    "url": "https://www.linkedin.com/in/yonghyun-jeong-5a5116248/?locale=en"
+    "url": "https://www.linkedin.com/in/yonghyun-jeong-5a5116248/?locale=en",
+    "role": "AI Researcher"
   },
   {
     "person": "Jonghyun Lee",

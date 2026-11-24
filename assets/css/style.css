@@ -26,10 +26,16 @@
 .home-icon{fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
 .stat-symbol.home-icon{width:25px;height:25px}
 .scene-chip .home-icon{display:block;width:23px;height:23px;margin:0 auto 5px}
-.area-emblem{position:absolute;top:48px;right:22px;width:clamp(60px,7vw,102px);aspect-ratio:1;color:#9ebcff;filter:drop-shadow(0 0 14px #537fff66);pointer-events:none}
-.area-emblem.motion{color:#9ccfff}
-.area-emblem.world{color:#a9bcff}
-.area-emblem.agent{color:#c5afff}
+body[data-page="home"] {
+  --pixel-accent: #9ebcff;
+  --motion-accent: #9ccfff;
+  --world-accent: #a9bcff;
+  --agent-accent: #c5afff;
+}
+.area-emblem{position:absolute;top:48px;right:22px;width:clamp(60px,7vw,102px);aspect-ratio:1;color:var(--pixel-accent);filter:drop-shadow(0 0 14px #537fff66);pointer-events:none}
+.area-emblem.motion{color:var(--motion-accent)}
+.area-emblem.world{color:var(--world-accent)}
+.area-emblem.agent{color:var(--agent-accent)}
 body[data-page="home"] .area-card{min-height:330px}
 body[data-page="home"] .area-top{margin-bottom:112px}
 @media (prefers-reduced-motion:no-preference){
@@ -137,14 +143,32 @@ body[data-page="home"] .area-top{margin-bottom:112px}
 /* Research directions and application guidance */
 #what-we-explore, #application, #what-we-explore .area-card, .person-card[id] { scroll-margin-top: 105px; }
 .translation-card {
+  --translation-radius: 16px;
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1.65fr) minmax(15rem, 1fr);
   gap: .9rem clamp(1.2rem, 3vw, 3rem);
   margin-top: 1.2rem;
   padding: clamp(1.3rem, 3.6vw, 2.55rem);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: var(--translation-radius);
   background: radial-gradient(ellipse at 16% 0%, #477cff21, transparent 74%), var(--layer);
+}
+.translation-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background:
+    linear-gradient(90deg, var(--pixel-accent), var(--motion-accent)) top / 100% var(--translation-radius) no-repeat,
+    linear-gradient(var(--motion-accent), var(--world-accent)) right / var(--translation-radius) 100% no-repeat,
+    linear-gradient(90deg, var(--agent-accent), var(--world-accent)) bottom / 100% var(--translation-radius) no-repeat,
+    linear-gradient(var(--pixel-accent), var(--agent-accent)) left / var(--translation-radius) 100% no-repeat;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: .8;
+  pointer-events: none;
 }
 .translation-path { grid-column: 1 / -1; display: flex; align-items: center; gap: 1rem; color: var(--highlight); }
 .translation-path::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--highlight), transparent 85%); opacity: .38; }
@@ -190,6 +214,7 @@ body[data-page="home"] .area-top{margin-bottom:112px}
 .application-contact { display: flex; align-items: center; justify-content: space-between; gap: 1.15rem; margin-top: 1.15rem; }
 .application-contact p { max-width: 48rem; margin: 0; color: var(--muted); }
 .application-contact a { flex: 0 0 auto; }
+.application-contact .application-policy { margin-top: .5rem; }
 
 @media (max-width: 770px) {
   .translation-card, .application-checklist { grid-template-columns: minmax(0, 1fr); }
