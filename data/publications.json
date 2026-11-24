@@ -1,5 +1,107 @@
 [
   {
+    "id": 30,
+    "short": "Self-Geometry",
+    "title": "Self-Geometry: GT-Free and Plug-and-Play Test-Time Adaptation for Geometrically Consistent 3D Vision Foundation Models",
+    "year": 2026,
+    "venue": "Preprint / Under Review",
+    "type": "Preprint",
+    "area": "3D/4D World Modeling",
+    "status": "Preprint / Under Review",
+    "venue_short": "Preprint",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Seokhyun Youn, Dahyeon Kye, Ziyu Wan, Sung-Ho Bae+, Jihyong Oh+",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "areas": [
+      "3D/4D World Modeling"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2026",
+        "url": "https://arxiv.org/abs/2608.10708"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://cmlab-korea.github.io/Self-Geometry/"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe21XQDOyc0Dl-_cyjtgpzY0cVuYNdU0ozXWHmeRzehj_Mi9O5SOvpAEKbPedGZte5E2YgnBZOoZhdNZzvuL6S0h6SfNMY6-vJgVak9dAtUZ-y7c1X4l7Z0GtmFajBpO1jV_TVzMCIYAPD7uHl9QlVSwPQ-kO0uDvpeXjlCI-_uj1leEUXahd2uDzHGrX5mkjxtKWh5TAsgBapn9hbuVGMxnclWCUu5wYRL5cNjuvU=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe21XQDOyc0Dl-_cyjtgpzY0cVuYNdU0ozXWHmeRzehj_Mi9O5SOvpAEKbPedGZte5E2YgnBZOoZhdNZzvuL6S0h6SfNMY6-vJgVak9dAtUZ-y7c1X4l7Z0GtmFajBpO1jV_TVzMCIYAPD7uHl9QlVSwPQ-kO0uDvpeXjlCI-_uj1leEUXahd2uDzHGrX5mkjxtKWh5TAsgBapn9hbuVGMxnclWCUu5wYRL5cNjuvU=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2608.10708",
+    "project_url": "https://cmlab-korea.github.io/Self-Geometry/",
+    "source_affiliations": "KyungheeUniv.",
+    "organizations": [
+      "khu"
+    ],
+    "listed_on": "2026-11-24",
+    "use_current_collaborator_affiliations": true
+  },
+  {
+    "id": 41,
+    "short": "STLoD-GS",
+    "title": "STLoD-GS: Spatio-Temporal Level-of-Detail 4D Gaussian Splatting via On-Demand Test-Time Densification",
+    "year": 2026,
+    "venue": "Preprint / Under Review",
+    "type": "Preprint",
+    "area": "3D/4D World Modeling",
+    "status": "Preprint / Under Review",
+    "venue_short": "Manuscript",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Sangwoon Kwak*, Weeyoung Kwon*, Jun Young Jeong, Won-Sik Cheong, Hyon-Gon Choo, Jihyong Oh+",
+    "areas": [
+      "3D/4D World Modeling"
+    ],
+    "listed_on": "2026-11-24",
+    "use_current_collaborator_affiliations": true
+  },
+  {
+    "id": 42,
+    "short": "PerturbGS",
+    "title": "PerturbGS: Fast and Scalable Gaussian Splatting via Camera Perturbations",
+    "year": 2026,
+    "venue": "Preprint / Under Review",
+    "type": "Preprint",
+    "area": "3D/4D World Modeling",
+    "status": "Preprint / Under Review",
+    "venue_short": "Manuscript",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Seokhyun Youn*, Weeyoung Kwon*, Junho Kim, Jihyong Oh+",
+    "areas": [
+      "3D/4D World Modeling"
+    ],
+    "listed_on": "2026-11-24",
+    "use_current_collaborator_affiliations": true
+  },
+  {
+    "id": 43,
+    "short": "DOMINO",
+    "title": "DOMINO: A Cause-and-Effect-Aware Graph-based Agent and Real-World Benchmark for Physically Plausible Multi-Turn Image Editing",
+    "year": 2026,
+    "venue": "Preprint / Under Review",
+    "type": "Preprint",
+    "area": "Generative & Agentic Visual AI",
+    "status": "Preprint / Under Review",
+    "venue_short": "Manuscript",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Jeahun Sung*, Seungho Choi*, Taekyung Kim+, Jihyong Oh+",
+    "areas": [
+      "Generative & Agentic Visual AI"
+    ],
+    "listed_on": "2026-11-24",
+    "use_current_collaborator_affiliations": true
+  },
+  {
     "id": 29,
     "short": "CHIMERA",
     "title": "CHIMERA: Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metric",
@@ -56,49 +158,6 @@
     "source_affiliations": "PrincetonUniv.",
     "organizations": [
       "princeton"
-    ]
-  },
-  {
-    "id": 30,
-    "short": "Self-Geometry",
-    "title": "Self-Geometry: GT-Free and Plug-and-Play Test-Time Adaptation for Geometrically Consistent 3D Vision Foundation Models",
-    "year": 2026,
-    "venue": "Preprint / Under Review",
-    "type": "Preprint",
-    "area": "3D/4D World Modeling",
-    "status": "Preprint / Under Review",
-    "venue_short": "Preprint",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "Seokhyun Youn, Dahyeon Kye, Sung-Ho Bae†, and Jihyong Oh†",
-    "affiliations": [],
-    "metadata_reviewed": true,
-    "areas": [
-      "3D/4D World Modeling"
-    ],
-    "source_url": "https://cmlab.cau.ac.kr/publications",
-    "source_links": [
-      {
-        "label": "arXiv2026",
-        "url": "https://arxiv.org/abs/2608.10708"
-      },
-      {
-        "label": "Project Page",
-        "url": "https://cmlab-korea.github.io/Self-Geometry/"
-      }
-    ],
-    "source_media": [
-      {
-        "tag": "img",
-        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe21XQDOyc0Dl-_cyjtgpzY0cVuYNdU0ozXWHmeRzehj_Mi9O5SOvpAEKbPedGZte5E2YgnBZOoZhdNZzvuL6S0h6SfNMY6-vJgVak9dAtUZ-y7c1X4l7Z0GtmFajBpO1jV_TVzMCIYAPD7uHl9QlVSwPQ-kO0uDvpeXjlCI-_uj1leEUXahd2uDzHGrX5mkjxtKWh5TAsgBapn9hbuVGMxnclWCUu5wYRL5cNjuvU=w1280",
-        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe21XQDOyc0Dl-_cyjtgpzY0cVuYNdU0ozXWHmeRzehj_Mi9O5SOvpAEKbPedGZte5E2YgnBZOoZhdNZzvuL6S0h6SfNMY6-vJgVak9dAtUZ-y7c1X4l7Z0GtmFajBpO1jV_TVzMCIYAPD7uHl9QlVSwPQ-kO0uDvpeXjlCI-_uj1leEUXahd2uDzHGrX5mkjxtKWh5TAsgBapn9hbuVGMxnclWCUu5wYRL5cNjuvU=w1280"
-      }
-    ],
-    "arxiv_url": "https://arxiv.org/abs/2608.10708",
-    "project_url": "https://cmlab-korea.github.io/Self-Geometry/",
-    "source_affiliations": "KyungheeUniv.",
-    "organizations": [
-      "khu"
     ]
   },
   {
@@ -343,6 +402,96 @@
     ]
   },
   {
+    "id": 38,
+    "short": "R3eVision",
+    "title": "R3eVision: A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision",
+    "year": 2025,
+    "venue": "Preprint / Under Review",
+    "type": "Preprint",
+    "area": "3D/4D World Modeling",
+    "status": "Preprint / Under Review",
+    "venue_short": "Preprint",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Weeyoung Kwon, Jeahun Sung, Minkyu Jeon, Chanho Eom, and Jihyong Oh†",
+    "affiliations": [],
+    "metadata_reviewed": true,
+    "metadata_source": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision",
+    "areas": [
+      "3D/4D World Modeling",
+      "Pixel-Level Intelligence"
+    ],
+    "source_url": "https://cmlab.cau.ac.kr/publications",
+    "source_links": [
+      {
+        "label": "arXiv2025",
+        "url": "https://arxiv.org/abs/2506.16262"
+      },
+      {
+        "label": "Awesome-3D-Low-Level-Vision",
+        "url": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision/tree/main"
+      }
+    ],
+    "source_media": [
+      {
+        "tag": "img",
+        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdOyHWXwikf0JJ0DZiDJ6QJqKIw4dVauswkfYjTkL2KFCYc7osdIz8pIVxl5k05-wDYGm1FGOeGELJIriZFM2yvJXS6KEqo_Qkv_pc7lmlYGYb4bKFQfBGrb2zmK-pxlpFyWnVOpCc8z6L3Eft21sXejzA8l0xYsAb5TaC4xOH8FN3-6K18LfYn6lDZjq0nI99w5PzFgBDhklGEraiYEErqlHdJBDsriKAnWtV7O2A=w1280",
+        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdOyHWXwikf0JJ0DZiDJ6QJqKIw4dVauswkfYjTkL2KFCYc7osdIz8pIVxl5k05-wDYGm1FGOeGELJIriZFM2yvJXS6KEqo_Qkv_pc7lmlYGYb4bKFQfBGrb2zmK-pxlpFyWnVOpCc8z6L3Eft21sXejzA8l0xYsAb5TaC4xOH8FN3-6K18LfYn6lDZjq0nI99w5PzFgBDhklGEraiYEErqlHdJBDsriKAnWtV7O2A=w1280"
+      }
+    ],
+    "arxiv_url": "https://arxiv.org/abs/2506.16262",
+    "additional_links": [
+      {
+        "label": "Awesome-3D-Low-Level-Vision",
+        "url": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision/tree/main"
+      }
+    ],
+    "source_affiliations": "PrincetonUniv.",
+    "organizations": [
+      "princeton"
+    ]
+  },
+  {
+    "id": 39,
+    "short": "OnQue",
+    "title": "OnQue: Spatial Memory with Query-adaptive Agentic Graphs for Streaming 3D Visual Grounding",
+    "year": 2026,
+    "venue": "Preprint / Under Review",
+    "type": "Preprint",
+    "area": "3D/4D World Modeling",
+    "status": "Preprint / Under Review",
+    "venue_short": "Manuscript",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Jaeyoon Lee*, Hojoon Jung*, Woohyeon Kim, Jihyong Oh+, Jongwon Choi+",
+    "areas": [
+      "3D/4D World Modeling",
+      "Generative & Agentic Visual AI"
+    ],
+    "listed_on": "2026-11-24",
+    "use_current_collaborator_affiliations": true
+  },
+  {
+    "id": 40,
+    "short": "TACO-Zero",
+    "title": "TACO-Zero: Zero-Shot Multi-Reference Compositional Video Editing",
+    "year": 2026,
+    "venue": "Preprint / Under Review",
+    "type": "Preprint",
+    "area": "Video & Motion Intelligence",
+    "status": "Preprint / Under Review",
+    "venue_short": "Manuscript",
+    "teaser": "",
+    "teaser_video": "",
+    "authors": "Samuel Teodoro, Soo Ye Kim, Jihyong Oh+, Munchurl Kim+",
+    "areas": [
+      "Video & Motion Intelligence",
+      "Generative & Agentic Visual AI"
+    ],
+    "listed_on": "2026-11-24",
+    "use_current_collaborator_affiliations": true
+  },
+  {
     "id": 36,
     "short": "COREA",
     "title": "COREA: Coupled Relightable 3D Gaussians and SDFs for Efficient Normal Alignment",
@@ -413,56 +562,6 @@
     "organizations": [
       "razer",
       "kaist"
-    ]
-  },
-  {
-    "id": 38,
-    "short": "R3eVision",
-    "title": "R3eVision: A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision",
-    "year": 2025,
-    "venue": "Preprint / Under Review",
-    "type": "Preprint",
-    "area": "3D/4D World Modeling",
-    "status": "Preprint / Under Review",
-    "venue_short": "Preprint",
-    "teaser": "",
-    "teaser_video": "",
-    "authors": "Weeyoung Kwon, Jeahun Sung, Minkyu Jeon, Chanho Eom, and Jihyong Oh†",
-    "affiliations": [],
-    "metadata_reviewed": true,
-    "metadata_source": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision",
-    "areas": [
-      "3D/4D World Modeling",
-      "Pixel-Level Intelligence"
-    ],
-    "source_url": "https://cmlab.cau.ac.kr/publications",
-    "source_links": [
-      {
-        "label": "arXiv2025",
-        "url": "https://arxiv.org/abs/2506.16262"
-      },
-      {
-        "label": "Awesome-3D-Low-Level-Vision",
-        "url": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision/tree/main"
-      }
-    ],
-    "source_media": [
-      {
-        "tag": "img",
-        "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdOyHWXwikf0JJ0DZiDJ6QJqKIw4dVauswkfYjTkL2KFCYc7osdIz8pIVxl5k05-wDYGm1FGOeGELJIriZFM2yvJXS6KEqo_Qkv_pc7lmlYGYb4bKFQfBGrb2zmK-pxlpFyWnVOpCc8z6L3Eft21sXejzA8l0xYsAb5TaC4xOH8FN3-6K18LfYn6lDZjq0nI99w5PzFgBDhklGEraiYEErqlHdJBDsriKAnWtV7O2A=w1280",
-        "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQdOyHWXwikf0JJ0DZiDJ6QJqKIw4dVauswkfYjTkL2KFCYc7osdIz8pIVxl5k05-wDYGm1FGOeGELJIriZFM2yvJXS6KEqo_Qkv_pc7lmlYGYb4bKFQfBGrb2zmK-pxlpFyWnVOpCc8z6L3Eft21sXejzA8l0xYsAb5TaC4xOH8FN3-6K18LfYn6lDZjq0nI99w5PzFgBDhklGEraiYEErqlHdJBDsriKAnWtV7O2A=w1280"
-      }
-    ],
-    "arxiv_url": "https://arxiv.org/abs/2506.16262",
-    "additional_links": [
-      {
-        "label": "Awesome-3D-Low-Level-Vision",
-        "url": "https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision/tree/main"
-      }
-    ],
-    "source_affiliations": "PrincetonUniv.",
-    "organizations": [
-      "princeton"
     ]
   },
   {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Register local paper and gallery media in the static site JSON catalogs."""
+"""Register local paper, portrait and gallery media in the static site catalogs."""
 import argparse
 import json
 from pathlib import Path
@@ -52,10 +52,28 @@ def index_gallery_media():
     save(gallery_file, events)
 
 
+def index_profile_photos():
+    people_file = ROOT / "data/people.json"
+    people = json.loads(people_file.read_text(encoding="utf-8"))
+    for person in people:
+        if person.get("photo_upload"):
+            target = ROOT / person["photo_upload"]
+            matches = assets(target.parent, IMAGE_EXTENSIONS, target.name)
+            if len(matches) > 1:
+                raise ValueError(f"Choose one portrait file for {person['name']}")
+            if matches:
+                person["photo"] = matches[0]
+    save(people_file, people)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--publications-only", action="store_true")
+    scope = parser.add_mutually_exclusive_group()
+    scope.add_argument("--publications-only", action="store_true")
+    scope.add_argument("--for-deploy", action="store_true")
     options = parser.parse_args()
     index_publication_media()
     if not options.publications_only:
+        index_profile_photos()
+    if not options.publications_only and not options.for_deploy:
         index_gallery_media()

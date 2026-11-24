@@ -39,7 +39,8 @@
       "Choi Seungho"
     ],
     "sort_family_ko": "최",
-    "author_name": "Seungho Choi"
+    "author_name": "Seungho Choi",
+    "email": "choiseungho1019@cau.ac.kr"
   },
   {
     "group": "core",
@@ -62,7 +63,8 @@
     "photo": "assets/img/people/sukhun-ko.webp",
     "semester": "25-1",
     "url": "https://hun-hub.github.io/",
-    "sort_family_ko": "고"
+    "sort_family_ko": "고",
+    "email": "looloo330@cau.ac.kr"
   },
   {
     "group": "core",
@@ -71,7 +73,8 @@
     "photo": "assets/img/people/weeyoung-kwon.webp",
     "semester": "25-1",
     "url": "https://klavna.github.io/WeeyoungKwon.github.io/",
-    "sort_family_ko": "권"
+    "sort_family_ko": "권",
+    "email": "weeyoungkwon@cau.ac.kr"
   },
   {
     "group": "core",
@@ -116,6 +119,7 @@
     "degree": "Research intern",
     "name": "Eunseong Cho",
     "semester": "27-2",
-    "sort_family_ko": "조"
+    "sort_family_ko": "조",
+    "photo_upload": "assets/img/people/eunseong-cho"
   }
 ]

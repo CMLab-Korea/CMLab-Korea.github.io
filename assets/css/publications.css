@@ -116,7 +116,7 @@
 .publication-legend .author-mark { color: var(--highlight); }
 .preprint-heading-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem .95rem; margin-bottom: 22px; }
 #publication-list .preprint-heading-row h2 { margin: 0; }
-.preprint-project-count {
+.preprint-manuscript-count {
   display: inline-flex;
   gap: .38rem;
   align-items: baseline;
@@ -128,9 +128,9 @@
   white-space: nowrap;
   color: var(--muted);
 }
-.preprint-project-count[hidden] { display: none; }
-.preprint-project-count strong { color: var(--highlight); }
-.preprint-project-count:hover { border-color: var(--highlight); color: var(--text); }
+.preprint-manuscript-count[hidden] { display: none; }
+.preprint-manuscript-count strong { color: var(--highlight); }
+#publication-list { scroll-margin-top: 92px; }
 
 .paper-nickname { color: #aab8ff; }
 .paper-teaser {

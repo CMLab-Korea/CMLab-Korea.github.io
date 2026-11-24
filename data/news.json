@@ -1,5 +1,27 @@
 [
   {
+    "date": "2026-09-17",
+    "category": "Event",
+    "headline": [
+      "Prof. Oh was lead organizer and session chair for ",
+      {
+        "text": "Many Lenses, One World (MLOW)",
+        "url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home"
+      },
+      ", an IEEE ICIP 2026 satellite workshop in Tampere, Finland, and co-curated ",
+      {
+        "text": "Many Lenses in Creative Practice",
+        "url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home"
+      },
+      ", its AI + Art exhibition. ",
+      {
+        "text": "Lab Life event",
+        "url": "life.html#09-14-18-2026-icip-26-mlow-workshop"
+      }
+    ],
+    "source_url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home"
+  },
+  {
     "date": "2026-09",
     "category": "Publication",
     "headline": [
@@ -335,7 +357,7 @@
     "headline": [
       "One paper on Video Demoiréing Transformer (",
       {
-        "text": "☕ MoCHA-former",
+        "text": "MoCHA-former",
         "url": "https://cmlab-korea.github.io/MoCHA-former/"
       },
       ") has been accepted to ",
@@ -370,12 +392,12 @@
     "headline": [
       "Two papers (",
       {
-        "text": "♻ I-INR",
+        "text": "I-INR",
         "url": "https://arxiv.org/abs/2504.17364"
       },
       ", ",
       {
-        "text": "♂ MoBGS",
+        "text": "MoBGS",
         "url": "https://arxiv.org/abs/2504.15122"
       },
       ") have been accepted to ",
@@ -512,7 +534,7 @@
     "date": "2025-09",
     "category": "People",
     "headline": [
-      "Seokhyun, Yejong, and Hyungyu joined our lab in the fall of 2025 as MS students. Welcome!"
+      "Seokhyun Youn joined CMLab as an M.S. student in fall 2025. Welcome!"
     ],
     "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
     "source_links": []
@@ -671,7 +693,7 @@
     "date": "2025-02",
     "category": "People",
     "headline": [
-      "Sukhun, Weeyoung, and Gyuwon joined our lab in the spring of 2025 as MS students. Welcome!"
+      "Sukhun Ko and Weeyoung Kwon joined CMLab as M.S. students in spring 2025. Welcome!"
     ],
     "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
     "source_links": []
@@ -694,15 +716,6 @@
         "url": "https://www.inshorts.ai/en"
       }
     ]
-  },
-  {
-    "date": "2024-09",
-    "category": "People",
-    "headline": [
-      "Juhyun joined our lab in the fall of 2024 as MS student. Welcome!"
-    ],
-    "source_url": "https://cmlab.cau.ac.kr/#h.51z2i28nxvb5",
-    "source_links": []
   },
   {
     "date": "2024-08",
