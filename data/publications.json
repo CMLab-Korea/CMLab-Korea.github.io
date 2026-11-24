@@ -42,7 +42,8 @@
       "khu"
     ],
     "listed_on": "2026-11-24",
-    "use_current_collaborator_affiliations": true
+    "use_current_collaborator_affiliations": true,
+    "media_folder": "Self-Geometry - GT-Free and Plug-and-Play Test-Time Adaptation for Geometrically Consistent 3D Vision Foundation Models"
   },
   {
     "id": 41,
@@ -61,7 +62,8 @@
       "3D/4D World Modeling"
     ],
     "listed_on": "2026-11-24",
-    "use_current_collaborator_affiliations": true
+    "use_current_collaborator_affiliations": true,
+    "media_folder": "STLoD-GS - Spatio-Temporal Level-of-Detail 4D Gaussian Splatting via On-Demand Test-Time Densification"
   },
   {
     "id": 42,
@@ -80,7 +82,8 @@
       "3D/4D World Modeling"
     ],
     "listed_on": "2026-11-24",
-    "use_current_collaborator_affiliations": true
+    "use_current_collaborator_affiliations": true,
+    "media_folder": "PerturbGS - Fast and Scalable Gaussian Splatting via Camera Perturbations"
   },
   {
     "id": 43,
@@ -99,7 +102,8 @@
       "Generative & Agentic Visual AI"
     ],
     "listed_on": "2026-11-24",
-    "use_current_collaborator_affiliations": true
+    "use_current_collaborator_affiliations": true,
+    "media_folder": "DOMINO - A Cause-and-Effect-Aware Graph-based Agent and Real-World Benchmark for Physically Plausible Multi-Turn Image Editing"
   },
   {
     "id": 29,
@@ -111,7 +115,7 @@
     "area": "Generative & Agentic Visual AI",
     "status": "Preprint / Under Review",
     "venue_short": "Preprint",
-    "teaser": "assets/media/publications/chimera/teaser.webp",
+    "teaser": "assets/media/publications/CHIMERA - Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metric/teaser.webp",
     "teaser_video": "",
     "authors": "Dahyeon Kye*, Jeahun Sung*, Minkyu Jeon, and Jihyong Oh†",
     "affiliations": [
@@ -158,7 +162,8 @@
     "source_affiliations": "PrincetonUniv.",
     "organizations": [
       "princeton"
-    ]
+    ],
+    "media_folder": "CHIMERA - Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metric"
   },
   {
     "id": 31,
@@ -170,7 +175,7 @@
     "area": "Pixel-Level Intelligence",
     "status": "Preprint / Under Review",
     "venue_short": "Preprint",
-    "teaser": "assets/media/publications/ditto/teaser.webp",
+    "teaser": "assets/media/publications/DiTTo - Scalable Order-aware All-in-One Image Restoration Agent/teaser.webp",
     "teaser_video": "",
     "authors": "Seungho Choi, and Jihyong Oh†",
     "affiliations": [],
@@ -203,7 +208,8 @@
     ],
     "arxiv_url": "https://arxiv.org/abs/2605.30915",
     "project_url": "https://cmlab-korea.github.io/DiTTo/",
-    "code_url": "https://github.com/CMLab-Korea/DiTTo-arxiv"
+    "code_url": "https://github.com/CMLab-Korea/DiTTo-arxiv",
+    "media_folder": "DiTTo - Scalable Order-aware All-in-One Image Restoration Agent"
   },
   {
     "id": 32,
@@ -252,7 +258,8 @@
     "source_affiliations": "AdobeResearch",
     "organizations": [
       "adobe"
-    ]
+    ],
+    "media_folder": "Chameleon - Style-Content Disentangled Framework for Cross-Domain Object Compositing"
   },
   {
     "id": 33,
@@ -264,7 +271,7 @@
     "area": "Pixel-Level Intelligence",
     "status": "Preprint / Under Review",
     "venue_short": "Preprint",
-    "teaser": "assets/media/publications/refgc-sr2/teaser.webp",
+    "teaser": "assets/media/publications/RefGC-SR² - Reference-guided Super-Resolution and Refinement of AI Generated Content/teaser.webp",
     "teaser_video": "",
     "authors": "Jeahun Sung*, Dahyeon Kye*, Soo Ye Kim† and Jihyong Oh†",
     "affiliations": [
@@ -301,7 +308,8 @@
     "source_affiliations": "AdobeResearch",
     "organizations": [
       "adobe"
-    ]
+    ],
+    "media_folder": "RefGC-SR² - Reference-guided Super-Resolution and Refinement of AI Generated Content"
   },
   {
     "id": 34,
@@ -345,7 +353,8 @@
     "organizations": [
       "naver-cloud",
       "lunit"
-    ]
+    ],
+    "media_folder": "SEAL - Semantic-aware Single-image Sticker Personalization with a Large-scale Sticker-tag Dataset"
   },
   {
     "id": 35,
@@ -399,7 +408,8 @@
     "source_affiliations": "KyungheeUniv.",
     "organizations": [
       "khu"
-    ]
+    ],
+    "media_folder": "SUCCESS-GS - Survey of Compactness and Compression for Efficient Static and Dynamic Gaussian Splatting"
   },
   {
     "id": 38,
@@ -449,7 +459,8 @@
     "source_affiliations": "PrincetonUniv.",
     "organizations": [
       "princeton"
-    ]
+    ],
+    "media_folder": "R3eVision - A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision"
   },
   {
     "id": 39,
@@ -469,7 +480,8 @@
       "Generative & Agentic Visual AI"
     ],
     "listed_on": "2026-11-24",
-    "use_current_collaborator_affiliations": true
+    "use_current_collaborator_affiliations": true,
+    "media_folder": "OnQue - Spatial Memory with Query-adaptive Agentic Graphs for Streaming 3D Visual Grounding"
   },
   {
     "id": 40,
@@ -489,7 +501,8 @@
       "Generative & Agentic Visual AI"
     ],
     "listed_on": "2026-11-24",
-    "use_current_collaborator_affiliations": true
+    "use_current_collaborator_affiliations": true,
+    "media_folder": "TACO-Zero - Zero-Shot Multi-Reference Compositional Video Editing"
   },
   {
     "id": 36,
@@ -528,7 +541,8 @@
       }
     ],
     "arxiv_url": "https://www.arxiv.org/abs/2512.07107",
-    "project_url": "https://cau-vilab.github.io/COREA/"
+    "project_url": "https://cau-vilab.github.io/COREA/",
+    "media_folder": "COREA - Coupled Relightable 3D Gaussians and SDFs for Efficient Normal Alignment"
   },
   {
     "id": 37,
@@ -562,7 +576,8 @@
     "organizations": [
       "razer",
       "kaist"
-    ]
+    ],
+    "media_folder": "Training-free Style Control and Style Fidelity Metric for Text-Image Manipulation"
   },
   {
     "id": 1,
@@ -613,7 +628,8 @@
       "adobe",
       "kaist"
     ],
-    "catalog_number": "C20"
+    "catalog_number": "C20",
+    "media_folder": "MotionGrounder - Grounded Multi-Object Motion Transfer via Diffusion Transformer"
   },
   {
     "id": 2,
@@ -679,7 +695,8 @@
       "adobe",
       "kaist"
     ],
-    "catalog_number": "J8"
+    "catalog_number": "J8",
+    "media_folder": "PRIMEdit - Probability Redistribution for Instance-aware Multi-object Video Editing with a New Benchmark Dataset"
   },
   {
     "id": 3,
@@ -691,7 +708,7 @@
     "area": "Video & Motion Intelligence",
     "status": "Published",
     "venue_short": "ECCV'26",
-    "teaser": "assets/media/publications/paper-3/teaser.webp",
+    "teaser": "assets/media/publications/FMA-Net++ - Motion- and Exposure-Aware Joint Video Super-Resolution and Deblurring/teaser.webp",
     "teaser_video": "",
     "authors": "Geunhyuk Youk, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [
@@ -743,7 +760,8 @@
       "kaist"
     ],
     "teaser_alt": "FMA-Net++ framework diagram",
-    "catalog_number": "C19"
+    "catalog_number": "C19",
+    "media_folder": "FMA-Net++ - Motion- and Exposure-Aware Joint Video Super-Resolution and Deblurring"
   },
   {
     "id": 4,
@@ -755,7 +773,7 @@
     "area": "Video & Motion Intelligence",
     "status": "Published",
     "venue_short": "ECCV'26",
-    "teaser": "assets/media/publications/paper-4/teaser.webp",
+    "teaser": "assets/media/publications/AVSR-Diff - Scale-Agnostic Diffusion Priors for Temporally Consistent Arbitrary-Scale Video Super-Resolution/teaser.webp",
     "teaser_video": "",
     "authors": "Geunhyuk Youk, Jeonghyeok Do, Dayeon Kim, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [
@@ -807,7 +825,8 @@
       "kaist"
     ],
     "teaser_alt": "AVSR-Diff qualitative comparisons across scales",
-    "catalog_number": "C18"
+    "catalog_number": "C18",
+    "media_folder": "AVSR-Diff - Scale-Agnostic Diffusion Priors for Temporally Consistent Arbitrary-Scale Video Super-Resolution"
   },
   {
     "id": 5,
@@ -859,7 +878,8 @@
       }
     ],
     "source_venue": "IEEE TCSVT (IF=11.1) vol. 36, issue 7, pp. 9477-9501, July 2026. (DOI: 10.1109/TCSVT.2026.3672288)",
-    "catalog_number": "J7"
+    "catalog_number": "J7",
+    "media_folder": "AceVFI - A Comprehensive Survey of Advances in Video Frame Interpolation"
   },
   {
     "id": 6,
@@ -871,8 +891,8 @@
     "area": "3D/4D World Modeling",
     "status": "Published",
     "venue_short": "CVPR'26",
-    "teaser": "assets/media/publications/morel/teaser.webp",
-    "teaser_video": "assets/media/publications/morel/preview.mp4",
+    "teaser": "assets/media/publications/MoRel - Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification/teaser.webp",
+    "teaser_video": "assets/media/publications/MoRel - Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification/preview.mp4",
     "authors": "Sangwoon Kwak*, Weeyoung Kwon*, Jun Young Jeong, Geonho Kim, Won-Sik Cheong, and Jihyong Oh†",
     "affiliations": [
       "ETRI"
@@ -937,7 +957,8 @@
     "organizations": [
       "etri"
     ],
-    "catalog_number": "C17"
+    "catalog_number": "C17",
+    "media_folder": "MoRel - Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification"
   },
   {
     "id": 7,
@@ -949,7 +970,7 @@
     "area": "Pixel-Level Intelligence",
     "status": "Published",
     "venue_short": "CVPR'26",
-    "teaser": "assets/media/publications/framer/teaser.webp",
+    "teaser": "assets/media/publications/FRAMER - Frequency-Aligned Self-Distillation with Adaptive Modulation Leveraging Diffusion Priors for Real-World Image Super-Resolution/teaser.webp",
     "teaser_video": "",
     "authors": "Seungho Choi, Jeahun Sung, and Jihyong Oh†",
     "affiliations": [],
@@ -1003,7 +1024,8 @@
       }
     ],
     "source_venue": "CVPR 2026 (Acceptance Rate: 25.42% ≈ 4,090/16,092)",
-    "catalog_number": "C16"
+    "catalog_number": "C16",
+    "media_folder": "FRAMER - Frequency-Aligned Self-Distillation with Adaptive Modulation Leveraging Diffusion Priors for Real-World Image Super-Resolution"
   },
   {
     "id": 8,
@@ -1064,7 +1086,8 @@
     "organizations": [
       "kaist"
     ],
-    "catalog_number": "C15"
+    "catalog_number": "C15",
+    "media_folder": "EcoSplat - Efficiency-controllable Feed-forward 3D Gaussian Splatting from Multi-view Images"
   },
   {
     "id": 9,
@@ -1132,7 +1155,8 @@
     "organizations": [
       "oracle"
     ],
-    "catalog_number": "C14"
+    "catalog_number": "C14",
+    "media_folder": "FLAIR - Frequency- and Locality-Aware Implicit Neural Representations"
   },
   {
     "id": 10,
@@ -1190,7 +1214,8 @@
       "adobe",
       "kaist"
     ],
-    "catalog_number": "C13"
+    "catalog_number": "C13",
+    "media_folder": "OmniText - A Training-Free Generalist for Controllable Text-Image Manipulation"
   },
   {
     "id": 11,
@@ -1202,7 +1227,7 @@
     "area": "Video & Motion Intelligence",
     "status": "Published",
     "venue_short": "Neurocomputing'26",
-    "teaser": "assets/media/publications/paper-11/teaser.webp",
+    "teaser": "assets/media/publications/MoCHA-former - Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing/teaser.webp",
     "teaser_video": "",
     "authors": "Jeahun Sung, Changhyun Roh, Chanho Eom, and Jihyong Oh†",
     "affiliations": [],
@@ -1240,7 +1265,8 @@
     "arxiv_url": "https://arxiv.org/pdf/2508.14423",
     "source_venue": "Neurocomputing (IF=6.5) vol. 669, 132477, March 07, 2026 (DOI: https://doi.org/10.1016/j.neucom.2025.132477)",
     "teaser_alt": "MoCHA-former framework diagram",
-    "catalog_number": "J6"
+    "catalog_number": "J6",
+    "media_folder": "MoCHA-former - Moiré-Conditioned Hybrid Adaptive Transformer for Video Demoiréing"
   },
   {
     "id": 12,
@@ -1252,7 +1278,7 @@
     "area": "3D/4D World Modeling",
     "status": "Published",
     "venue_short": "AAAI'26",
-    "teaser": "assets/media/publications/paper-12/teaser.webp",
+    "teaser": "assets/media/publications/MoBGS - Motion Deblurring Dynamic 3D Gaussian Splatting for Blurry Monocular Video/teaser.webp",
     "teaser_video": "",
     "authors": "Minh-Quan Viet Bui*, Jongmin Park*, Juan Luis Gonzalez Bello, Jaeho Moon, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
@@ -1300,7 +1326,8 @@
       "kaist"
     ],
     "teaser_alt": "MoBGS architecture diagram",
-    "catalog_number": "C12"
+    "catalog_number": "C12",
+    "media_folder": "MoBGS - Motion Deblurring Dynamic 3D Gaussian Splatting for Blurry Monocular Video"
   },
   {
     "id": 13,
@@ -1351,7 +1378,8 @@
       "adobe",
       "khu"
     ],
-    "catalog_number": "C11"
+    "catalog_number": "C11",
+    "media_folder": "I-INR - Iterative Implicit Neural Representations"
   },
   {
     "id": 14,
@@ -1403,7 +1431,8 @@
       "postech",
       "konkuk"
     ],
-    "catalog_number": "J5"
+    "catalog_number": "J5",
+    "media_folder": "SoFoNO - Arbitrary-Scale Image Super-Resolution via Sobolev Fourier Neural Operator"
   },
   {
     "id": 15,
@@ -1457,7 +1486,8 @@
     "organizations": [
       "snu"
     ],
-    "catalog_number": "C10"
+    "catalog_number": "C10",
+    "media_folder": "Leveraging Prior Knowledge of Diffusion Model for Person Search"
   },
   {
     "id": 16,
@@ -1469,7 +1499,7 @@
     "area": "3D/4D World Modeling",
     "status": "Published",
     "venue_short": "TPAMI'25",
-    "teaser": "assets/media/publications/paper-16/teaser.webp",
+    "teaser": "assets/media/publications/MoBluRF - Motion Deblurring Neural Radiance Fields for Blurry Monocular Video/teaser.webp",
     "teaser_video": "",
     "authors": "Minh-Quan Viet Bui*, Jongmin Park*, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
@@ -1523,7 +1553,8 @@
       "kaist"
     ],
     "teaser_alt": "MoBluRF architecture diagram",
-    "catalog_number": "J4"
+    "catalog_number": "J4",
+    "media_folder": "MoBluRF - Motion Deblurring Neural Radiance Fields for Blurry Monocular Video"
   },
   {
     "id": 17,
@@ -1574,7 +1605,8 @@
       }
     ],
     "source_venue": "Neurocomputing (IF=6.5) vol. 649, no. 10, pp. 130763-130782, Oct. 07, 2025 (DOI: https://doi.org/10.1016/j.neucom.2025.130763)",
-    "catalog_number": "J3"
+    "catalog_number": "J3",
+    "media_folder": "Domain Generalization for Person Re-identification - A Survey Towards Domain-Agnostic Person Matching"
   },
   {
     "id": 18,
@@ -1586,7 +1618,7 @@
     "area": "3D/4D World Modeling",
     "status": "Published",
     "venue_short": "CVPR'25",
-    "teaser": "assets/media/publications/paper-18/teaser.webp",
+    "teaser": "assets/media/publications/SplineGS - Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video/teaser.webp",
     "teaser_video": "",
     "authors": "Jongmin Park*, Minh-Quan Viet Bui*, Juan Luis Gonzalez Bello, Jaeho Moon, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
@@ -1628,7 +1660,8 @@
       "kaist"
     ],
     "teaser_alt": "SplineGS architecture diagram",
-    "catalog_number": "C9"
+    "catalog_number": "C9",
+    "media_folder": "SplineGS - Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video"
   },
   {
     "id": 19,
@@ -1680,7 +1713,8 @@
       "etri",
       "kaist"
     ],
-    "catalog_number": "C8"
+    "catalog_number": "C8",
+    "media_folder": "MoDec-GS - Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting"
   },
   {
     "id": 20,
@@ -1692,8 +1726,8 @@
     "area": "Video & Motion Intelligence",
     "status": "Published",
     "venue_short": "CVPR'25",
-    "teaser": "assets/media/publications/bim-vfi/teaser.webp",
-    "teaser_video": "assets/media/publications/bim-vfi/preview.mp4",
+    "teaser": "assets/media/publications/BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/teaser.webp",
+    "teaser_video": "assets/media/publications/BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/preview.mp4",
     "authors": "Wonyong Seo, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
     "metadata_reviewed": true,
@@ -1733,7 +1767,8 @@
     ],
     "teaser_alt": "BiM-VFI frame interpolation result",
     "teaser_video_label": "BiM-VFI frame interpolation demo",
-    "catalog_number": "C7"
+    "catalog_number": "C7",
+    "media_folder": "BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions"
   },
   {
     "id": 21,
@@ -1745,7 +1780,7 @@
     "area": "Video & Motion Intelligence",
     "status": "Published",
     "venue_short": "CVPR'24",
-    "teaser": "assets/media/publications/paper-21/teaser.webp",
+    "teaser": "assets/media/publications/FMA-Net - Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring/teaser.webp",
     "teaser_video": "",
     "authors": "Geunhyuk Youk, Jihyong Oh†, and Munchurl Kim†",
     "affiliations": [],
@@ -1807,7 +1842,8 @@
       "kaist"
     ],
     "teaser_alt": "FMA-Net joint video super-resolution and deblurring results",
-    "catalog_number": "C6"
+    "catalog_number": "C6",
+    "media_folder": "FMA-Net - Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring"
   },
   {
     "id": 22,
@@ -1885,7 +1921,8 @@
       }
     ],
     "source_venue": "ECCV 2022 (Acceptance Rate: 28% ≈ 1,650/5,803 )",
-    "catalog_number": "C5"
+    "catalog_number": "C5",
+    "media_folder": "DeMFI - Deep Joint Deblurring and Multi-Frame Interpolation with Flow-Guided Attentive Correlation and Recursive Boosting"
   },
   {
     "id": 23,
@@ -1982,7 +2019,8 @@
     "distinction": "Oral",
     "distinction_percent": "3%",
     "distinction_source": "https://cmlab.cau.ac.kr/publications",
-    "catalog_number": "C4"
+    "catalog_number": "C4",
+    "media_folder": "XVFI - eXtreme Video Frame Interpolation"
   },
   {
     "id": 24,
@@ -2018,7 +2056,8 @@
     ],
     "venue_url": "https://www.mdpi.com/2072-4292/13/19/3939",
     "source_venue": "Remote Sensing (IF=5.0) vol. 13, issue 19: 3939, Oct. 2021 (DOI: https://doi.org/10.3390/rs13193939)",
-    "catalog_number": "J2"
+    "catalog_number": "J2",
+    "media_folder": "PeaceGAN - A GAN-based Multi-Task Learning Method for SAR Target Image Generation with a Pose Estimator and an Auxiliary Classifier"
   },
   {
     "id": 25,
@@ -2065,7 +2104,8 @@
       }
     ],
     "source_venue": "IEEE TCSVT (IF=8.4) vol. 31, issue 2, pp. 701-714, Feb. 2021. (DOI: 10.1109/TCSVT.2020.2987346)",
-    "catalog_number": "J1"
+    "catalog_number": "J1",
+    "media_folder": "SPAM-Net - A CNN-based SAR Target Recognition Network with Pose Angle Marginalization Learning"
   },
   {
     "id": 26,
@@ -2127,7 +2167,8 @@
       }
     ],
     "source_venue": "AAAI 2020 (Acceptance Rate: 20.6% ≈ 1,591/7,737 )",
-    "catalog_number": "C3"
+    "catalog_number": "C3",
+    "media_folder": "FISR - Deep Joint Frame Interpolation and Super-Resolution with a Multi-Scale Temporal Loss"
   },
   {
     "id": 27,
@@ -2189,7 +2230,8 @@
       }
     ],
     "source_venue": "AAAI 2020 (Acceptance Rate: 20.6% ≈ 1,591/7,737 )",
-    "catalog_number": "C2"
+    "catalog_number": "C2",
+    "media_folder": "JSI-GAN - GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video"
   },
   {
     "id": 28,
@@ -2257,6 +2299,7 @@
       "http://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_Deep_SR-ITM_Joint_Learning_of_Super-Resolution_and_Inverse_Tone-Mapping_for_ICCV_2019_paper.pdf"
     ],
     "verification": "needs verification 28",
-    "catalog_number": "C1"
+    "catalog_number": "C1",
+    "media_folder": "Deep SR-ITM - Joint Learning of Super-Resolution and Inverse Tone-Mapping for 4K UHD HDR Applications"
   }
 ]

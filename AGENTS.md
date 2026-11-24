@@ -57,6 +57,7 @@ Real-World AI Systems and Industry Translation is a cross-cutting application di
 - Do not overwrite the old assets repo and its GitHub Actions. Keep publication URLs and old paths working during migration planning.
 - Treat user-provided initial v1.1 archive as preliminary. Check every publication, collaborator, student and link before production launch.
 - For small future updates, change the relevant structured data entry only, verify it, create a PR, and request approval to publish.
+- When adding a paper or Lab Life event, run `python3 scripts/index_site_media.py --sync-folders` and commit the generated title-based upload folder with the catalog record.
 - Use precise date in update logs; do not silently rewrite existing people, paper or recruitment facts.
 
 ## Basic local checks

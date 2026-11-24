@@ -135,16 +135,20 @@
     return {title: paper.title};
   }
 
+  function mediaURL(path) {
+    return path.startsWith('assets/') ? path.split('/').map(encodeURIComponent).join('/') : path;
+  }
+
   function paperMedia(paper, imageClass, videoClass, controls) {
     if (!paper.teaser_video) {
-      return paper.teaser ? photo(paper.teaser, imageClass, paper.teaser_alt || '') : null;
+      return paper.teaser ? photo(mediaURL(paper.teaser), imageClass, paper.teaser_alt || '') : null;
     }
     const video = node('video', videoClass);
-    video.src = paper.teaser_video;
+    video.src = mediaURL(paper.teaser_video);
     video.controls = controls;
     video.playsInline = video.muted = video.loop = true;
     video.preload = controls ? 'none' : 'metadata';
-    if (paper.teaser) video.poster = paper.teaser;
+    if (paper.teaser) video.poster = mediaURL(paper.teaser);
     video.setAttribute('aria-label', paper.teaser_video_label || `${paper.short || paper.title} teaser`);
     return video;
   }
@@ -889,29 +893,41 @@
       if (icons.has(category)) badge.prepend(symbol('assets/img/news-icons.svg', icons.get(category)));
       return badge;
     }
+    const isVideo = path => /\.(mp4|webm)$/i.test(path);
+    function galleryMedia(path, title) {
+      if (!isVideo(path)) return photo(mediaURL(path), '', title);
+      const video = node('video');
+      video.src = mediaURL(path);
+      video.controls = video.playsInline = true;
+      video.preload = 'none';
+      video.setAttribute('aria-label', title + ' video');
+      return video;
+    }
     getData('gallery.json').then(events => {
       const gallery = $('#gallery-events');
       const filters = $('#gallery-filters');
       const cards = events.map(event => {
         const card = node('article', 'gallery-card');
         card.id = event.id;
-        if (event.images.length) {
+        const media = event.media || event.images || [];
+        if (media.length) {
           const frame = node('div', 'gallery-photo');
-          const img = photo(event.images[0], '', event.title);
-          frame.append(img);
-          if (event.images.length > 1) {
+          frame.append(galleryMedia(media[0], event.title));
+          if (media.length > 1) {
             let index = 0;
             const controls = node('div', 'gallery-controls');
-            const status = node('span', '', '1 / ' + event.images.length);
+            const status = node('span', '', '1 / ' + media.length);
             status.setAttribute('aria-live', 'polite');
-            for (const [label, arrow, step] of [['Previous photo', '←', -1], ['Next photo', '→', 1]]) {
+            const label = media.some(isVideo) ? 'item' : 'photo';
+            for (const [direction, arrow, step] of [['Previous', '←', -1], ['Next', '→', 1]]) {
               const button = node('button', '', arrow);
               button.type = 'button';
-              button.setAttribute('aria-label', label);
+              button.setAttribute('aria-label', direction + ' ' + label);
               button.addEventListener('click', () => {
-                index = (index + step + event.images.length) % event.images.length;
-                img.src = event.images[index];
-                status.textContent = (index + 1) + ' / ' + event.images.length;
+                frame.querySelector('video')?.pause();
+                index = (index + step + media.length) % media.length;
+                frame.firstElementChild.replaceWith(galleryMedia(media[index], event.title));
+                status.textContent = (index + 1) + ' / ' + media.length;
               });
               controls.append(button);
               if (step === -1) controls.append(status);
@@ -939,7 +955,10 @@
         tab.append(galleryBadge(category));
         tab.addEventListener('click', () => {
           for (const button of filters.children) button.setAttribute('aria-pressed', String(button === tab));
-          cards.forEach((card, i) => { card.hidden = category !== 'All' && events[i].category !== category; });
+          cards.forEach((card, i) => {
+            card.hidden = category !== 'All' && events[i].category !== category;
+            if (card.hidden) card.querySelector('video')?.pause();
+          });
         });
         filters.append(tab);
       }

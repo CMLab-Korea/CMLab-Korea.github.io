@@ -67,7 +67,7 @@
 .gallery-card-body a { color: var(--highlight); margin-right: .8rem; font-size: .83rem; }
 .gallery-category { color: var(--highlight); font-size: .82rem; }
 .gallery-photo { position: relative; background: #0a101d; }
-.gallery-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
+.gallery-photo :is(img, video) { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
 .gallery-controls { display: flex; align-items: center; justify-content: space-between; padding: .45rem; }
 
 #core-graduate-researchers { scroll-margin-top: 110px; }

@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Index paper media and profile photos
-        run: python3 scripts/index_site_media.py --for-deploy
       - name: Stage website files
         run: |
           mkdir _site
           cp -r -- *.html assets data robots.txt .nojekyll _site/
+      - name: Index paper, gallery and profile media
+        run: python3 scripts/index_site_media.py --for-deploy --site-dir _site
       - id: upload
         uses: actions/upload-pages-artifact@v5
         with:

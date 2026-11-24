@@ -39,11 +39,13 @@ After the catalog is complete and approved, migrate the Home At a Glance publica
 ## Projects and media
 
 - Keep display names, aliases, contact links, portraits and semesters in `data/people.json`. Keep collaborator profile links and their institution IDs in `data/collaborators.json` and institution marks in `data/institutions.json`. Papers link authors and People lists collaborative work by matching the catalog’s bylines to those names and aliases. Publication logos correspond to source affiliations tracked on the paper.
-- Place a paper poster called `teaser.webp` (GIF and other browser-readable image formats are supported) and optional `preview.mp4` in `assets/media/publications/paper-<id>/`. The ID is the stable number in `data/publications.json`. Prepare media at a 16:10 ratio when practical.
+- Upload paper media to its full-title folder under [assets/media/publications](assets/media/publications). Each card uses up to one image and one video. For multiple candidates, `teaser.*` and `preview.*` take precedence, then the first filename in natural order. Prepare media at a 16:10 ratio when practical.
 - Keep the original project IDs in `data/projects.json`. Start and end dates or months are inclusive in Asia/Seoul. Use `YYYY-MM-DD` when the exact period is known. Cards display the month and year. Project organization logos are in `assets/img/project-orgs/`.
-- Add numbered photo files such as `01.webp` and `02.webp` to the matching folder in `assets/img/gallery/`. The folder name matches the event ID in `data/gallery.json`. Gallery controls appear when an event has more than one image.
+- Upload Lab Life images and videos to the event-title-and-date folder under [assets/img/gallery](assets/img/gallery). Number files to set the order, such as `01.jpg`, `02.mp4`, and `03.webp`. Gallery controls appear when an event has multiple items.
+- Both catalogs accept PNG, JPEG, WebP, GIF, AVIF, MP4, and WebM. Add files to the relevant folder with GitHub's **Add file → Upload files**. GitHub Pages indexes the media on the next deployment after the changes reach `main`.
+- For a new paper or event, add its record to the catalog, run `python3 scripts/index_site_media.py --sync-folders`, and commit the generated folder with the record. The catalog stores the folder name in `media_folder` so title edits can retain the existing upload path. Folder names use hyphens in place of reserved punctuation such as `:` and `/`.
 - For Eunseong Cho, upload one file named `eunseong-cho.png`, `eunseong-cho.jpg`, or `eunseong-cho.webp` to `assets/img/people/`. GitHub Pages packaging indexes the portrait automatically.
-- GitHub Pages packaging indexes paper media automatically. To preview new uploads locally, run `python3 scripts/index_site_media.py --publications-only`. Run without the option to index gallery photos as well. Teaching records and the university’s Outstanding Instructor links live in `data/courses.json`.
+- Run `python3 scripts/index_site_media.py` to preview media uploads locally. Use `--publications-only` to index the paper catalog on its own. Teaching records and the university’s Outstanding Instructor links live in `data/courses.json`.
 
 ## Visitor statistics
 
