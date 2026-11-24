@@ -439,13 +439,14 @@
         const member = identities.get(identityKey(plain));
         const label = member?.author_name || plain;
         const author = member?.url ? externalLink(label, member.url, 'paper-author-link') : node('span', '', label);
-        if (member?.local) author.classList.add('paper-author-highlight');
-        const institution = organizations?.get(member?.organization);
-        if (institution && !member.local) {
-          const name = node('span', 'paper-author-color', label);
-          if (applyInstitutionColors(name, institution)) {
-            name.title = institution.name;
-            author.replaceChildren(name);
+        if (member?.local) {
+          author.classList.add('paper-author-highlight');
+          author.replaceChildren(node('span', 'paper-author-lab-name', label));
+        } else {
+          const institution = organizations?.get(member?.organization);
+          if (applyInstitutionColors(author, institution)) {
+            author.classList.add('paper-author-collaborator');
+            author.title = institution.name;
           }
         }
         line.append(author);
