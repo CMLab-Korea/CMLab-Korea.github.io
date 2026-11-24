@@ -146,7 +146,7 @@
     const video = node('video', videoClass);
     video.src = mediaURL(paper.teaser_video);
     video.controls = controls;
-    video.playsInline = video.muted = video.loop = true;
+    video.playsInline = video.defaultMuted = video.muted = video.loop = true;
     video.preload = controls ? 'none' : 'metadata';
     if (paper.teaser) video.poster = mediaURL(paper.teaser);
     video.setAttribute('aria-label', paper.teaser_video_label || `${paper.short || paper.title} teaser`);
@@ -368,6 +368,54 @@
     const year = $('#paper-year');
     const venue = $('#paper-venue');
     const area = $('#paper-area');
+    const publicationList = $('#publication-list');
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    const visibleVideos = new Set();
+    const viewerPaused = new WeakSet();
+    const pagePaused = new WeakSet();
+    const videoObserver = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
+      for (const {target, intersectionRatio} of entries) {
+        if (!target.isConnected) continue;
+        if (intersectionRatio >= .2) {
+          visibleVideos.add(target);
+          playVisibleVideo(target);
+        } else {
+          visibleVideos.delete(target);
+          pausePaperVideo(target);
+        }
+      }
+    }, {threshold: .2}) : null;
+
+    function playVisibleVideo(video) {
+      if (!motion.matches && !document.hidden && !viewerPaused.has(video) && video.paused) {
+        video.play().catch(() => {});
+      }
+    }
+
+    function pausePaperVideo(video) {
+      if (video.paused) return;
+      pagePaused.add(video);
+      video.pause();
+    }
+
+    function updateVisibleVideos() {
+      for (const video of visibleVideos) {
+        if (motion.matches || document.hidden) pausePaperVideo(video);
+        else playVisibleVideo(video);
+      }
+    }
+
+    document.addEventListener('visibilitychange', updateVisibleVideos);
+    motion.addEventListener('change', updateVisibleVideos);
+
+    function observePaperVideo(video) {
+      video.addEventListener('pause', () => {
+        if (!pagePaused.delete(video)) viewerPaused.add(video);
+      });
+      video.addEventListener('play', () => viewerPaused.delete(video));
+      videoObserver?.observe(video);
+    }
+
     let selectedArea = 'all';
     const identities = new Map();
     let institutions = {};
@@ -594,10 +642,14 @@
         });
         const preprints = matches.filter(p => p.type === 'Preprint');
         const published = matches.filter(p => p.type !== 'Preprint');
+        videoObserver?.disconnect();
+        visibleVideos.forEach(pausePaperVideo);
+        visibleVideos.clear();
         $('#preprint-section').hidden = preprints.length === 0;
         $('#international-section').hidden = published.length === 0;
         $('#preprint-list').replaceChildren(...preprints.map(paperRow));
         $('#published-list').replaceChildren(...published.map(paperRow));
+        $$('.paper-video', publicationList).forEach(observePaperVideo);
         counter.textContent = `${matches.length} of ${items.length} entries`;
         feedback.textContent = 'No publications match these filters.';
         feedback.hidden = matches.length > 0;
