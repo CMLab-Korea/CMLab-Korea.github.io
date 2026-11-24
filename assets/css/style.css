@@ -40,7 +40,7 @@ body[data-page="home"] .area-top{margin-bottom:112px}
 #featured-work .feature-card{padding:12px 12px 16px;background:#10182b;border:1px solid var(--line);border-radius:14px}
 #featured-work .feature-card:is(:hover,:focus-visible){border-color:#6d99ff}
 .feature-poster{display:block;width:100%;aspect-ratio:16 / 10;object-fit:contain;border-radius:8px;background:#080e1c}
-#featured-work .feature-name{font-size:1.3rem;line-height:1.2;margin:12px 0 4px}
+#featured-work .feature-name{font-size:1.3rem;line-height:1.2;margin:12px 0 4px;overflow-wrap:anywhere}
 .feature-venue{color:#a7baff;font-size:.72rem;margin:0 0 8px}
 .feature-distinction{color:var(--highlight)}
 .feature-title{color:#b7c6e3;font-size:.82rem;line-height:1.45;margin:0;overflow-wrap:anywhere}
@@ -132,4 +132,67 @@ body[data-page="home"] .area-top{margin-bottom:112px}
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+/* Research directions and application guidance */
+#what-we-explore, #application, #what-we-explore .area-card, .person-card[id] { scroll-margin-top: 105px; }
+.translation-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(15rem, 1fr);
+  gap: .9rem clamp(1.2rem, 3vw, 3rem);
+  margin-top: 1.2rem;
+  padding: clamp(1.3rem, 3.6vw, 2.55rem);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: radial-gradient(ellipse at 16% 0%, #477cff21, transparent 74%), var(--layer);
+}
+.translation-path { grid-column: 1 / -1; display: flex; align-items: center; gap: 1rem; color: var(--highlight); }
+.translation-path::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--highlight), transparent 85%); opacity: .38; }
+.translation-path svg { width: 21px; height: 21px; }
+.translation-path span { font-size: 1.3rem; line-height: 1; margin-left: .2rem; }
+.translation-content h3 { margin: 0 0 .6rem; font-size: clamp(1.45rem, 3vw, 2.4rem); }
+.translation-content p, .translation-partners span { color: var(--muted); }
+.translation-content p { margin-bottom: .85rem; }
+.translation-keywords { display: flex; flex-wrap: wrap; gap: .38rem; list-style: none; margin: 0; padding: 0; }
+.translation-keywords li {
+  padding: .24rem .48rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  color: var(--highlight);
+  font-size: .75rem;
+}
+.translation-partners { border-left: 1px solid var(--line); padding-left: 1.2rem; }
+.translation-partners p { margin: 0 0 .68rem; font-size: .85rem; }
+.translation-partners p:last-child { margin: 0; }
+.translation-partners a { display: inline-block; font-weight: 800; color: var(--highlight); }
+.translation-partners a:hover { text-decoration: underline; }
+.translation-partners span { display: block; }
+
+.application-priority { color: var(--highlight); }
+.application-checklist { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.application-checklist article { min-width: 0; }
+.application-checklist h3 { font-size: 1.4rem; margin-bottom: .8rem; }
+.application-checklist p { margin: .7rem 0; }
+.application-checklist p:last-child { margin-bottom: 0; }
+.application-checklist ol { margin: .65rem 0 1.1rem; padding-left: 1.25rem; color: var(--text); }
+.application-checklist li { margin-bottom: .5rem; line-height: 1.55; }
+.application-subject {
+  display: block;
+  padding: .65rem .8rem;
+  overflow-wrap: anywhere;
+  background: var(--layer2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--highlight);
+  font-size: .85rem;
+  line-height: 1.6;
+}
+.application-contact { display: flex; align-items: center; justify-content: space-between; gap: 1.15rem; margin-top: 1.15rem; }
+.application-contact p { max-width: 48rem; margin: 0; color: var(--muted); }
+.application-contact a { flex: 0 0 auto; }
+
+@media (max-width: 770px) {
+  .translation-card, .application-checklist { grid-template-columns: minmax(0, 1fr); }
+  .translation-partners { border-left: 0; border-top: 1px solid var(--line); padding: .85rem 0 0; }
+  .application-contact { flex-wrap: wrap; }
 }

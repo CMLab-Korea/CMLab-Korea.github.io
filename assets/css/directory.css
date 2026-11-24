@@ -60,6 +60,7 @@
 .directory-filter[aria-pressed="true"] { color: var(--highlight); border-color: currentColor; background: var(--layer2); }
 #gallery-events { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,270px),1fr)); gap: 16px; }
 .gallery-card { align-self: start; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--layer); }
+.gallery-card[id] { scroll-margin-top: 95px; }
 .gallery-card-body { padding: 15px; overflow-wrap: anywhere; }
 .gallery-card-body h3 { margin: .5rem 0; }
 .gallery-card-body p { margin: .42rem 0; }
@@ -123,7 +124,8 @@
 }
 .pi-logo picture { display: block; width: 100%; height: 100%; }
 .pi-logo.service-logo {
-  width: 100px; height: 72px; grid-template-rows: minmax(0, 1fr) auto; gap: 3px;
-  color: #14213c; font-size: .65rem; font-weight: 700; text-align: center;
+  width: 100px;
+  height: 62px;
+  padding: 8px;
 }
 .pi-logo.service-logo:is(:hover, :focus-visible) { box-shadow: inset 0 0 0 2px #789dda; }

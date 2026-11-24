@@ -78,9 +78,31 @@
     "bk21": {
       "name": "Brain Korea 21",
       "logo": "assets/img/project-orgs/bk21.webp"
+    },
+    "ksc": {
+      "name": "KISTI National Supercomputing Center",
+      "url": "https://www.ksc.re.kr/"
     }
   },
   "projects": [
+    {
+      "id": "L10",
+      "role": "L",
+      "support_type": "Compute support",
+      "organizations": [
+        "ksc"
+      ],
+      "start": "2026-12-14",
+      "end": "2027-12-13",
+      "title": "사용자 상호작용 기반 실시간 스트리밍 비디오 합성 모델 개발",
+      "topic": "Development of a Real-Time Streaming Video Synthesis Model for User Interaction",
+      "programs": [
+        "국가슈퍼컴퓨터 6호기 혁신지원사업 · R&D혁신 프로그램"
+      ],
+      "compute": "Hangang GPU partition · 54 slots",
+      "reference": "KSC-06-2026-CRE-10324",
+      "url": "https://www.ksc.re.kr/jwsc/hsjw/hsjwsc/view/1426?page=&gs_gigan=&gs_startScDate=&gs_endScDate=&pageSize=&rootPage=true"
+    },
     {
       "id": "L9",
       "role": "L",

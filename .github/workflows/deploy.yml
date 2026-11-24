@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Index paper media
-        run: python3 scripts/index_site_media.py --publications-only
+      - name: Index paper media and profile photos
+        run: python3 scripts/index_site_media.py --for-deploy
       - name: Stage website files
         run: |
           mkdir _site
