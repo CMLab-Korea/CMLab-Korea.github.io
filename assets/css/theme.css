@@ -60,7 +60,7 @@
 [data-theme="light"] .area-emblem { filter: drop-shadow(0 0 9px #789cfb70); }
 [data-theme="light"] :is(.pi-panel, .person-card:not(.phd-member), .collab-card, .glass-panel, .industry-card, .steps-grid > div, .collab-paper-links .profile-link, .collab-paper-links > span:not(.active-project), .area-dropdown summary, .area-choices, .pub-toolbar input, .pub-toolbar select, #featured-work .feature-card) { background: var(--layer); color: var(--text); border-color: var(--line); }
 [data-theme="light"] .pub-toolbar input::placeholder { color: var(--muted); }
-[data-theme="light"] :is(.feature-poster, .affiliation-tag, .news-filter, .news-category, .archive-notice, .paper-row:hover, .gallery-photo) { background: var(--layer2); color: var(--entry-ink); border-color: var(--line); }
+[data-theme="light"] :is(.feature-poster, .news-filter, .news-category, .archive-notice, .paper-row:hover, .gallery-photo) { background: var(--layer2); color: var(--entry-ink); border-color: var(--line); }
 [data-theme="light"] :is(.news-filter[aria-pressed="true"], .news-section .news-filter[aria-pressed="true"]) { background: #dce7ff; border-color: #3366c0; color: #103b86; }
 [data-theme="light"] :is(.archive-notice a, .inline-links a, .paper-title:hover, .paper-author-link:hover, .paper-author-link:focus-visible, .news-headline a:hover) { color: #174ca9; }
 [data-theme="light"] .distinguished-paper { background: linear-gradient(105deg, #e3edff, transparent 80%); border-left-color: #7c9cd9; }

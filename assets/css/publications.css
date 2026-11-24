@@ -98,7 +98,46 @@
 .author-mark { font-size: .7em; }
 .paper-affiliations { align-items: center; }
 .paper-collaboration-icon { width: 18px; height: 18px; fill: none; stroke: var(--highlight); stroke-width: 1.65; vertical-align: middle; }
-.affiliation-tag { display: inline-flex; gap: 6px; align-items: center; }
+.affiliation-tag {
+  --affiliation-fill: #192641;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  background: var(--affiliation-fill);
+}
+[data-theme="light"] .affiliation-tag {
+  --affiliation-fill: var(--layer2);
+  color: var(--entry-ink);
+  border-color: var(--line);
+}
+.paper-author-color { color: var(--text); }
+
+@supports (background-clip: text) and (color: color-mix(in srgb, red, white)) {
+  .affiliation-tag.institution-branded {
+    border-color: transparent;
+    background:
+      linear-gradient(var(--affiliation-fill), var(--affiliation-fill)) padding-box,
+      linear-gradient(118deg,
+        color-mix(in srgb, var(--institution-color-1) 72%, var(--muted)),
+        color-mix(in srgb, var(--institution-color-2) 72%, var(--muted)),
+        color-mix(in srgb, var(--institution-color-3) 72%, var(--muted))) border-box;
+  }
+  .paper-author-color {
+    --institution-ink-strength: 43%;
+    background-image: linear-gradient(105deg,
+      color-mix(in srgb, var(--institution-color-1) var(--institution-ink-strength), var(--text)),
+      color-mix(in srgb, var(--institution-color-2) var(--institution-ink-strength), var(--text)),
+      color-mix(in srgb, var(--institution-color-3) var(--institution-ink-strength), var(--text)));
+    background-clip: text;
+    color: transparent;
+  }
+  [data-theme="light"] .paper-author-color { --institution-ink-strength: 40%; }
+}
+
+@media (forced-colors: active) {
+  .affiliation-tag.institution-branded { background: Canvas; border-color: CanvasText; }
+  .paper-author-color { background: none; color: inherit; }
+}
 .paper-org-logo { width: 32px; height: 22px; border-radius: 3px; object-fit: contain; background: #fff; padding: 2px; }
 .area-dropdown { position: relative; min-width: 0; z-index: 4; }
 .area-dropdown summary {

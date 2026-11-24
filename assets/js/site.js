@@ -421,7 +421,15 @@
       return link;
     }
 
-    function authorLine(authors) {
+    function applyInstitutionColors(element, institution) {
+      const colors = institution?.brand_colors;
+      if (!Array.isArray(colors) || colors.length !== 3 || !colors.every(color => /^#[\da-f]{6}$/i.test(color))) return false;
+      element.classList.add('institution-branded');
+      colors.forEach((color, index) => element.style.setProperty('--institution-color-' + (index + 1), color));
+      return true;
+    }
+
+    function authorLine(authors, organizations) {
       const line = node('p', 'paper-authors');
       const names = authorNames(authors);
       names.forEach((name, i) => {
@@ -432,6 +440,14 @@
         const label = member?.author_name || plain;
         const author = member?.url ? externalLink(label, member.url, 'paper-author-link') : node('span', '', label);
         if (member?.local) author.classList.add('paper-author-highlight');
+        const institution = organizations?.get(member?.organization);
+        if (institution && !member.local) {
+          const name = node('span', 'paper-author-color', label);
+          if (applyInstitutionColors(name, institution)) {
+            name.title = institution.name;
+            author.replaceChildren(name);
+          }
+        }
         line.append(author);
         if (marks) line.append(node('sup', 'author-mark', marks));
       });
@@ -488,7 +504,6 @@
       titleLabel.append(title);
       if (destination) heading.append(titleLabel);
       body.append(heading);
-      if (paper.authors) body.append(authorLine(paper.authors));
       const organizationIds = new Set(paper.organizations || []);
       if (paper.use_current_collaborator_affiliations) {
         for (const author of authorNames(paper.authors)) {
@@ -496,8 +511,10 @@
           if (person && !person.local && person.organization) organizationIds.add(person.organization);
         }
       }
-      const organizations = [...organizationIds].map(id => institutions[id]).filter(Boolean);
-      const affiliationLabels = [...new Set([...(paper.affiliations || []), ...organizations.map(org => org.name)])];
+      const organizations = new Map([...organizationIds].filter(id => institutions[id]).map(id => [id, institutions[id]]));
+      if (paper.authors) body.append(authorLine(paper.authors, organizations));
+      const organizationsByName = new Map([...organizations.values()].map(org => [org.name, org]));
+      const affiliationLabels = [...new Set([...(paper.affiliations || []), ...organizationsByName.keys()])];
       if (affiliationLabels.length) {
         const affiliations = node('div', 'paper-affiliations');
         affiliations.setAttribute('aria-label', 'Research collaborators');
@@ -506,7 +523,9 @@
         affiliations.append(icon);
         for (const name of affiliationLabels) {
           const badge = node('span', 'affiliation-tag', name);
-          const logo = organizations.find(org => org.name === name)?.logo;
+          const institution = organizationsByName.get(name);
+          applyInstitutionColors(badge, institution);
+          const logo = institution?.logo;
           if (logo) badge.prepend(photo(logo, 'paper-org-logo', ''));
           affiliations.append(badge);
         }

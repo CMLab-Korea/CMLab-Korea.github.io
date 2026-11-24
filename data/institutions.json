@@ -1,82 +1,177 @@
 {
   "cau": {
     "name": "Chung-Ang University",
-    "logo": "assets/img/institutions/cau.webp"
+    "logo": "assets/img/institutions/cau.webp",
+    "brand_colors": [
+      "#0174b7",
+      "#808183",
+      "#8f4559"
+    ]
   },
   "kaist": {
     "name": "KAIST",
-    "logo": "assets/img/institutions/kaist.webp"
+    "logo": "assets/img/institutions/kaist.webp",
+    "brand_colors": [
+      "#1c3d7a",
+      "#1c4897",
+      "#4e7ab4"
+    ]
   },
   "khu": {
     "name": "Kyung Hee University",
-    "logo": "assets/img/institutions/khu.webp"
+    "logo": "assets/img/institutions/khu.webp",
+    "brand_colors": [
+      "#8b1b15",
+      "#9c1a1e",
+      "#cb8666"
+    ]
   },
   "konkuk": {
     "name": "Konkuk University",
-    "logo": "assets/img/institutions/konkuk.webp"
+    "logo": "assets/img/institutions/konkuk.webp",
+    "brand_colors": [
+      "#237d38",
+      "#169136",
+      "#83b392"
+    ]
   },
   "postech": {
     "name": "POSTECH",
-    "logo": "assets/img/institutions/postech.webp"
+    "logo": "assets/img/institutions/postech.webp",
+    "brand_colors": [
+      "#373737",
+      "#a80245",
+      "#d4c6cd"
+    ]
   },
   "princeton": {
     "name": "Princeton University",
-    "logo": "assets/img/institutions/princeton.webp"
+    "logo": "assets/img/institutions/princeton.webp",
+    "brand_colors": [
+      "#020101",
+      "#fe6503",
+      "#815b43"
+    ]
   },
   "adobe": {
     "name": "Adobe Research",
-    "logo": "assets/img/institutions/adobe.webp"
+    "logo": "assets/img/institutions/adobe.webp",
+    "brand_colors": [
+      "#d61309",
+      "#ea1001",
+      "#fdb8b3"
+    ]
   },
   "oracle": {
     "name": "Oracle",
-    "logo": "assets/img/institutions/oracle.webp"
+    "logo": "assets/img/institutions/oracle.webp",
+    "brand_colors": [
+      "#d3151a",
+      "#fe131c",
+      "#f1656a"
+    ]
   },
   "flawless": {
     "name": "Flawless AI",
-    "logo": "assets/img/institutions/flawless.webp"
+    "logo": "assets/img/institutions/flawless.webp",
+    "brand_colors": [
+      "#ab2926",
+      "#d93330",
+      "#de807e"
+    ]
   },
   "etri": {
     "name": "ETRI",
-    "logo": "assets/img/institutions/etri.webp"
+    "logo": "assets/img/institutions/etri.webp",
+    "brand_colors": [
+      "#0166a6",
+      "#3e7aa2",
+      "#f15921"
+    ]
   },
   "razer": {
     "name": "Razer",
-    "logo": "assets/img/institutions/razer.webp"
+    "logo": "assets/img/institutions/razer.webp",
+    "brand_colors": [
+      "#48b542",
+      "#43be3d",
+      "#82bd7f"
+    ]
   },
   "naver-ai": {
     "name": "NAVER AI Lab",
     "logo": "assets/img/institutions/naver-ai-horizontal.webp",
     "logo_vertical": "assets/img/institutions/naver-ai-vertical.webp",
-    "logo_source": "NAVER AI Lab brand PDFs supplied by CMLab"
+    "logo_source": "NAVER AI Lab brand PDFs supplied by CMLab",
+    "brand_colors": [
+      "#2ce95a",
+      "#2bccaa",
+      "#469be2"
+    ]
   },
   "inshorts": {
     "name": "inshorts.ai",
-    "logo": "assets/img/institutions/inshorts.webp"
+    "logo": "assets/img/institutions/inshorts.webp",
+    "brand_colors": [
+      "#010101",
+      "#3c3c3c",
+      "#666666"
+    ]
   },
   "cornell-tech": {
     "name": "Cornell Tech",
     "logo": "assets/img/institutions/cornell-tech.webp",
-    "logo_source": "https://tech.cornell.edu/"
+    "logo_source": "https://tech.cornell.edu/",
+    "brand_colors": [
+      "#000000",
+      "#404040",
+      "#a5a5a5"
+    ]
   },
   "snu": {
     "name": "Seoul National University",
-    "logo": "assets/img/institutions/snu.webp"
+    "logo": "assets/img/institutions/snu.webp",
+    "brand_colors": [
+      "#0a316e",
+      "#00337e",
+      "#7693bb"
+    ]
   },
   "naver-cloud": {
     "name": "NAVER Cloud",
-    "logo": "assets/img/institutions/naver-cloud.webp"
+    "logo": "assets/img/institutions/naver-cloud.webp",
+    "brand_colors": [
+      "#2b2b2b",
+      "#02cf5c",
+      "#16c05f"
+    ]
   },
   "lunit": {
     "name": "Lunit Inc.",
-    "logo": "assets/img/institutions/lunit.webp"
+    "logo": "assets/img/institutions/lunit.webp",
+    "brand_colors": [
+      "#010101",
+      "#02cbea",
+      "#1cc3de"
+    ]
   },
   "dexter": {
     "name": "Dexter Studios",
-    "logo": "assets/img/institutions/dexter.webp"
+    "logo": "assets/img/institutions/dexter.webp",
+    "brand_colors": [
+      "#211f1f",
+      "#747373",
+      "#bbbabb"
+    ]
   },
   "microsoft": {
     "name": "Microsoft",
     "logo": "assets/img/institutions/microsoft.webp",
-    "logo_source": "https://www.microsoft.com/en-us/"
+    "logo_source": "https://www.microsoft.com/en-us/",
+    "brand_colors": [
+      "#db5932",
+      "#82be10",
+      "#0ca7eb"
+    ]
   }
 }
