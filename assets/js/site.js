@@ -1055,10 +1055,11 @@
       return line;
     }
 
-    function albumPlayer(event, controls = false) {
+    function albumPlayer(event, controls = false, initialIndex = 0) {
       const media = event.media || event.images || [];
       const frame = node('div', 'gallery-photo');
-      let index = 0;
+      let index = initialIndex;
+      let displayedIndex = initialIndex;
       let timer;
       let visible = false;
       let paused = false;
@@ -1110,6 +1111,7 @@
           if (current) current.replaceWith(visual);
           else frame.prepend(visual);
           current = visual;
+          displayedIndex = index;
           status.textContent = (index + 1) + ' / ' + media.length;
           refresh();
         }
@@ -1156,6 +1158,7 @@
       updatePlayback();
       return {
         frame, refresh, updatePlayback, select,
+        get displayedIndex() { return displayedIndex; },
         setVisible(value) { visible = value; refresh(); }
       };
     }
@@ -1233,14 +1236,14 @@
         return content;
       }
 
-      function openAlbum(event, trigger) {
+      function openAlbum(event, trigger, initialIndex) {
         const close = node('button', 'gallery-close', 'Close');
         close.type = 'button';
         close.addEventListener('click', () => dialog.close());
         const content = albumDetails(event);
         dialog.replaceChildren(close);
         if (event.media?.length) {
-          openedPlayer = albumPlayer(event, true);
+          openedPlayer = albumPlayer(event, true, initialIndex);
           dialog.append(openedPlayer.frame);
         }
         dialog.append(content);
@@ -1287,6 +1290,9 @@
         const badges = node('div', 'gallery-card-badges');
         badges.append(galleryBadge(event.category));
         if (event.catalog_number) badges.append(node('span', 'gallery-number', '[' + event.catalog_number + ']'));
+        const expand = node('span', 'gallery-expand-mark', '↗');
+        expand.setAttribute('aria-hidden', 'true');
+        badges.append(expand);
         const heading = node('h3', '', event.title);
         body.append(badges, heading, metadata(event));
         if (event.summary) body.append(node('p', 'gallery-summary', event.summary));
@@ -1302,7 +1308,7 @@
         trigger.type = 'button';
         trigger.setAttribute('aria-label', 'Open ' + event.title + ', ' + eventDate(event));
         trigger.setAttribute('aria-haspopup', 'dialog');
-        trigger.addEventListener('click', () => openAlbum(event, trigger));
+        trigger.addEventListener('click', () => openAlbum(event, trigger, players.get(card)?.displayedIndex));
         card.append(body, trigger);
         return card;
       });

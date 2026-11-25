@@ -83,16 +83,19 @@
 .gallery-card-body p { margin: .3rem 0 0; }
 .gallery-summary { font-size: .89rem; color: var(--muted); }
 .gallery-media-total { color: var(--highlight); font-size: .77rem; }
-.gallery-card-badges { display: flex; justify-content: space-between; gap: .45rem; align-items: center; }
+.gallery-card-badges { display: flex; gap: .45rem; align-items: center; }
 .gallery-category { color: var(--highlight); font-size: .82rem; }
 .gallery-number {
   flex: none;
+  margin-inline-start: auto;
   font: 700 .74rem/1 'Space Grotesk', system-ui, sans-serif;
   color: var(--highlight);
   padding: .35rem;
   border: 1px solid var(--line);
   border-radius: 5px;
 }
+.gallery-expand-mark { color: var(--muted); font-size: .9rem; }
+.gallery-card:is(:hover, :focus-within) .gallery-expand-mark { color: var(--highlight); }
 .gallery-open {
   position: absolute;
   inset: 0;
