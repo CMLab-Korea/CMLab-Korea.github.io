@@ -150,6 +150,45 @@
   }
 
   if (page==='home') {
+    const research = $('#what-we-explore');
+    const translation = $('.translation-card', research);
+    const directions = $$('.translation-path a', translation).map(link => ({
+      link, card: document.getElementById(link.hash.slice(1))
+    }));
+    const hover = matchMedia('(hover: hover)');
+
+    function linkResearchDirection() {
+      const focused = directions.find(({link, card}) => link.matches(':focus-visible') || card.matches(':focus-visible'));
+      const pointed = hover.matches && directions.find(({link, card}) => link.matches(':hover') || card.matches(':hover'));
+      const active = focused || pointed || directions.find(({link}) => link.hash === location.hash);
+      for (const direction of directions) {
+        direction.link.classList.toggle('direction-linked', direction === active);
+        direction.card.classList.toggle('direction-linked', direction === active);
+      }
+      translation.classList.toggle('direction-linked', Boolean(active));
+      if (active) {
+        translation.style.setProperty('--translation-accent', `var(--${active.card.id}-accent)`);
+      }
+    }
+
+    for (const {link, card} of directions) {
+      for (const target of [link, card]) {
+        for (const event of ['pointerenter', 'pointerleave', 'focus', 'blur']) {
+          target.addEventListener(event, () => requestAnimationFrame(linkResearchDirection));
+        }
+      }
+    }
+    addEventListener('hashchange', linkResearchDirection);
+    linkResearchDirection();
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => {
+        translation.classList.toggle('translation-visible', entry.isIntersecting);
+      }).observe(translation);
+    } else {
+      translation.classList.add('translation-visible');
+    }
+
     const featured = $('#featured-work');
     const publications = getPublications();
     publications.then(items => {
