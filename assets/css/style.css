@@ -142,38 +142,80 @@ body[data-page="home"] .area-top{margin-bottom:112px}
 
 /* Research directions and application guidance */
 #what-we-explore, #application, #what-we-explore .area-card, .person-card[id] { scroll-margin-top: 105px; }
+@property --translation-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
 .translation-card {
-  --translation-radius: 16px;
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1.65fr) minmax(15rem, 1fr);
   gap: .9rem clamp(1.2rem, 3vw, 3rem);
   margin-top: 1.2rem;
   padding: clamp(1.3rem, 3.6vw, 2.55rem);
-  border: 1px solid var(--line);
-  border-radius: var(--translation-radius);
+  border: 2px solid var(--line);
+  border-radius: 16px;
   background: radial-gradient(ellipse at 16% 0%, #477cff21, transparent 74%), var(--layer);
 }
 .translation-card::before {
   content: '';
   position: absolute;
-  inset: -1px;
+  inset: -2px;
   border-radius: inherit;
-  padding: 1px;
-  background:
-    linear-gradient(90deg, var(--pixel-accent), var(--motion-accent)) top / 100% var(--translation-radius) no-repeat,
-    linear-gradient(var(--motion-accent), var(--world-accent)) right / var(--translation-radius) 100% no-repeat,
-    linear-gradient(90deg, var(--agent-accent), var(--world-accent)) bottom / 100% var(--translation-radius) no-repeat,
-    linear-gradient(var(--pixel-accent), var(--agent-accent)) left / var(--translation-radius) 100% no-repeat;
+  padding: 2px;
+  background: conic-gradient(from var(--translation-angle, 0deg),
+    var(--pixel-accent), var(--motion-accent), var(--world-accent), var(--agent-accent), var(--pixel-accent));
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
   opacity: .8;
   pointer-events: none;
+  transition: opacity .2s ease;
 }
-.translation-path { grid-column: 1 / -1; display: flex; align-items: center; gap: 1rem; color: var(--highlight); }
-.translation-path::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--highlight), transparent 85%); opacity: .38; }
+.translation-card.direction-linked {
+  background: radial-gradient(ellipse at 16% 0%, color-mix(in srgb, var(--translation-accent) 17%, transparent), transparent 74%), var(--layer);
+}
+.translation-card.direction-linked::before { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  .translation-card::before { animation: translation-orbit 16s linear infinite paused; }
+  .translation-card.translation-visible::before { animation-play-state: running; }
+  @keyframes translation-orbit { to { --translation-angle: 360deg; } }
+}
+.translation-path { grid-column: 1 / -1; display: flex; align-items: center; gap: clamp(.45rem, 1.8vw, .9rem); }
+.translation-path::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--pixel-accent), var(--motion-accent), var(--world-accent), var(--agent-accent), transparent);
+  opacity: .52;
+}
+.direction-linked .translation-path::after {
+  background: linear-gradient(90deg, var(--translation-accent), transparent);
+  opacity: .9;
+}
+.translation-path a {
+  display: grid;
+  flex: 0 0 44px;
+  height: 44px;
+  place-items: center;
+  color: var(--direction-accent);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: color-mix(in srgb, currentColor 6%, transparent);
+}
+.translation-path a:is(:hover, :focus-visible, .direction-linked) {
+  border-color: currentColor;
+  background: color-mix(in srgb, currentColor 16%, transparent);
+}
 .translation-path svg { width: 21px; height: 21px; }
-.translation-path span { font-size: 1.3rem; line-height: 1; margin-left: .2rem; }
+#what-we-explore :is(#pixel, a[href="#pixel"]) { --direction-accent: var(--pixel-accent); }
+#what-we-explore :is(#motion, a[href="#motion"]) { --direction-accent: var(--motion-accent); }
+#what-we-explore :is(#world, a[href="#world"]) { --direction-accent: var(--world-accent); }
+#what-we-explore :is(#agent, a[href="#agent"]) { --direction-accent: var(--agent-accent); }
+#what-we-explore .area-card.direction-linked {
+  border-color: var(--direction-accent);
+  box-shadow: 0 0 22px color-mix(in srgb, var(--direction-accent) 24%, transparent);
+}
 .translation-content h3 { margin: 0 0 .6rem; font-size: clamp(1.45rem, 3vw, 2.4rem); }
 .translation-content p, .translation-partners span { color: var(--muted); }
 .translation-content p { margin-bottom: .85rem; }
