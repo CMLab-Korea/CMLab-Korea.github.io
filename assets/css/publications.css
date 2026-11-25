@@ -226,10 +226,10 @@
   font-variant-numeric: tabular-nums;
 }
 .record-journal, .record-s { --record-color: #bba9ff; }
-.record-i, .record-p { --record-color: #7ecddb; }
+.record-i, .record-p, .record-preprint { --record-color: #7ecddb; }
 [data-theme="light"] .paper-nickname { color: #4b51a7; }
 [data-theme="light"] :is(.record-journal, .record-s) { --record-color: #6349a5; }
-[data-theme="light"] :is(.record-i, .record-p) { --record-color: #146775; }
+[data-theme="light"] :is(.record-i, .record-p, .record-preprint) { --record-color: #146775; }
 
 .publication-archive { margin-top: 4rem; }
 .publication-archive h2 { font-size: clamp(1.55rem, 3.2vw, 2.55rem); margin-bottom: 1.3rem; }

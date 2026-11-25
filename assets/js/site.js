@@ -119,12 +119,8 @@
 
   async function getPublications() {
     const papers = await getData('publications.json');
-    const preprints = papers.filter(paper => paper.type === 'Preprint');
-    const lastCorresponding = paper => /^Jihyong Oh[*†‡]*†[*†‡]*$/i.test(authorNames(paper.authors).at(-1));
-    preprints.sort((a, b) => Number(lastCorresponding(b)) - Number(lastCorresponding(a))
-      || (b.listed_on || '').localeCompare(a.listed_on || ''));
-    putStat('preprint', preprints.length);
-    return [...preprints, ...papers.filter(paper => paper.type !== 'Preprint')];
+    putStat('preprint', papers.filter(paper => paper.type === 'Preprint').length);
+    return papers;
   }
 
   function paperTitleParts(paper) {
@@ -155,7 +151,8 @@
 
   if (page==='home') {
     const featured = $('#featured-work');
-    getPublications().then(items => {
+    const publications = getPublications();
+    publications.then(items => {
       const pools = [
         items.filter(paper => paper.type === 'Preprint').slice(0, 6),
         items.filter(paper => paper.type !== 'Preprint').slice(0, 6)
@@ -269,7 +266,8 @@
     const filters = $('#news-filters');
     const more = $('#news-more');
     const initialNewsCount = 10;
-    getData('news.json').then(items => {
+    Promise.all([getData('news.json'), publications.catch(() => [])]).then(([items, papers]) => {
+      const papersById = new Map(papers.map(paper => [paper.id, paper]));
       const categories = ['All', 'Publication', 'Award', 'People', 'Event'];
       const entries = items.filter(item => categories.includes(item.category))
         .sort((a, b) => b.date.slice(0, 7).localeCompare(a.date.slice(0, 7)));
@@ -285,17 +283,35 @@
         return icon;
       }
 
-      function renderHeadline(parts) {
+      function renderHeadline(entry) {
+        const parts = entry.headline;
         const headline = node('p', 'news-headline');
+        const seen = new Set();
         for (const part of Array.isArray(parts) ? parts : [parts]) {
           if (typeof part === 'string') {
             headline.append(part);
           } else if (part.url) {
             const link = node('a', '', part.text);
             link.href = safeURL(part.url);
+            seen.add(link.href);
             headline.append(link);
           } else {
             headline.append(node('strong', '', part.text));
+          }
+        }
+        for (const {id} of entry.publication_updates || []) {
+          const paper = papersById.get(id);
+          if (!paper) continue;
+          const card = 'publications.html#paper-' + id;
+          const label = entry.publication_updates.length === 1 ? 'Publication card' : paper.short || paper.title;
+          for (const [text, url] of [[label, card], ['Paper', paper.venue_url || paper.arxiv_url], ['Project', paper.project_url]]) {
+            if (!url || paper.unavailable_urls?.includes(url)) continue;
+            const href = safeURL(url);
+            if (seen.has(href)) continue;
+            const link = node('a', '', text);
+            link.href = href;
+            headline.append(' · ', link);
+            seen.add(href);
           }
         }
         return headline;
@@ -323,7 +339,7 @@
           time.dateTime = entry.date;
           const category = node('span', 'news-category', entry.category);
           category.prepend(categoryIcon(entry.category));
-          item.append(time, category, renderHeadline(entry.headline));
+          item.append(time, category, renderHeadline(entry));
           list.append(item);
         }
         if (!visible.length) news.append(node('p', 'muted', 'No updates in this category yet.'));
@@ -522,7 +538,8 @@
       if (paper.distinction_percent) row.classList.add('distinguished-paper');
       const badge = node('div', 'venue-column');
       if (paper.catalog_number) {
-        badge.append(node('span', `record-number record-${paper.type.toLowerCase()}`, paper.catalog_number));
+        const number = paper.type === 'Preprint' ? `[${paper.catalog_number}]` : paper.catalog_number;
+        badge.append(node('span', `record-number record-${paper.type.toLowerCase()}`, number));
       }
       badge.append(node('span', 'venue-abbr', venueBadge(paper)));
       badge.append(node('span', 'venue-kind', paper.type === 'Preprint' ? String(paper.year) : paper.type));
@@ -540,8 +557,7 @@
 
       const body = node('div', 'paper-rich-body');
       const links = paperLinks(paper);
-      const destination = paper.venue_url && links.has(paper.venue_url) ? paper.venue_url
-        : paper.arxiv_url && links.has(paper.arxiv_url) ? paper.arxiv_url : undefined;
+      const destination = [paper.venue_url, paper.arxiv_url, paper.project_url].find(url => links.has(url));
       const heading = node('h3');
       const {nickname, title} = paperTitleParts(paper);
       const titleLabel = destination ? externalLink('', destination, 'paper-title') : heading;

@@ -11,6 +11,7 @@ from unicodedata import normalize
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE_EXTENSIONS = {".webp", ".png", ".jpg", ".jpeg", ".gif", ".avif"}
 VIDEO_EXTENSIONS = {".mp4", ".webm"}
+CONVERTED_VIDEO_EXTENSIONS = {".mov", ".m4v", ".mkv", ".avi", ".mpg", ".mpeg", ".ogv", ".wmv"}
 PAPERS = Path("assets/media/publications")
 PAPER_PREVIEWS = Path("assets/media/publication-previews")
 GALLERY = Path("assets/img/gallery")
@@ -90,12 +91,25 @@ def animated_gif(path):
     return len(json.loads(probe.stdout).get("frames", [])) > 1
 
 
+def browser_mp4(path):
+    probe = subprocess.run([
+        "ffprobe", "-v", "error", "-select_streams", "v:0",
+        "-show_entries", "stream=codec_name,pix_fmt", "-of", "json", str(path),
+    ], check=True, capture_output=True, text=True)
+    streams = json.loads(probe.stdout).get("streams", [])
+    return bool(streams and streams[0].get("codec_name") == "h264"
+                and streams[0].get("pix_fmt") in ("yuv420p", "yuvj420p"))
+
+
 def stage_publication_preview(paper):
     image, video = paper["teaser"], paper["teaser_video"]
     local_gif = image.startswith(f"{PAPERS.as_posix()}/") and image.lower().endswith(".gif")
     source = None
-    if video.startswith(f"{PAPERS.as_posix()}/") and video.lower().endswith(".mov"):
-        source = video
+    if video.startswith(f"{PAPERS.as_posix()}/"):
+        extension = Path(video).suffix.lower()
+        if (extension in CONVERTED_VIDEO_EXTENSIONS or extension == ".gif"
+                or (extension == ".mp4" and not browser_mp4(ROOT / video))):
+            source = video
     elif not video and local_gif and animated_gif(ROOT / image):
         source = image
 
@@ -126,11 +140,12 @@ def stage_publication_preview(paper):
         paper["teaser"] = still.as_posix()
 
 
-def index_publication_media(create=False, stage_previews=False):
+def index_publication_media(stage_previews=False):
     paper_file = ROOT / "data/publications.json"
     papers = load(paper_file)
-    videos = VIDEO_EXTENSIONS | {".mov"} if stage_previews else VIDEO_EXTENSIONS
-    for paper, folder in register_folders(papers, PAPERS, lambda entry: entry["title"], create):
+    videos = VIDEO_EXTENSIONS | CONVERTED_VIDEO_EXTENSIONS if stage_previews else VIDEO_EXTENSIONS
+    for paper in papers:
+        folder = ROOT / PAPERS / paper["media_folder"]
         for field, extensions, preferred in (
             ("teaser", IMAGE_EXTENSIONS, "teaser"),
             ("teaser_video", videos, "preview"),
@@ -147,6 +162,10 @@ def index_publication_media(create=False, stage_previews=False):
                     continue
                 paper[field] = ""
         if stage_previews:
+            if not paper["teaser_video"]:
+                gif = next(iter(assets(folder, {".gif"}, "preview")), None)
+                if gif and animated_gif(ROOT / gif):
+                    paper["teaser_video"] = gif
             stage_publication_preview(paper)
     save(paper_file, papers)
 
@@ -200,7 +219,9 @@ if __name__ == "__main__":
         if not options.for_deploy:
             parser.error("--site-dir requires --for-deploy")
         ROOT = options.site_dir.resolve()
-    index_publication_media(create=options.sync_folders, stage_previews=bool(options.site_dir))
+    from sync_publications import sync
+    sync(ROOT)
+    index_publication_media(stage_previews=bool(options.site_dir))
     if not options.publications_only:
         index_gallery_media(create=options.sync_folders)
     if not options.publications_only and not options.sync_folders:
