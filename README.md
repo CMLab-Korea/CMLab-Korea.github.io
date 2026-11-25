@@ -30,7 +30,30 @@ Home’s Research Vision figure uses responsive WebP derivatives and links to th
 
 ## Publications migration
 
-`data/publications.json` is the editable site catalog. Keep the stable paper ID and list order. Keep the original C/J number in `catalog_number` on peer-reviewed entries. Store the full title separately from the optional `short` nickname. For a new or substantially updated manuscript, set `listed_on` to the date CMLab lists it. The site prioritizes manuscripts with Jihyong Oh as last and corresponding author, then newer listings. Use `*` for equal contribution and `+` or `†` for corresponding authors. Set `use_current_collaborator_affiliations` when the paper should derive institution badges from its coauthors in the Research Network. Store official, project, arXiv, code and dataset links in their corresponding URL fields. Use `areas` for the research tags and `teaser` / `teaser_video` for the verified publication media. Home reads the same catalog.
+`data/publications.json` is the editable site catalog. Keep each paper's stable numeric `id`, original C/J catalog number, full title and optional `short` nickname. For a new or substantially updated manuscript, set `listed_on` to the listing date. The catalog gives priority to papers with Jihyong Oh as last and corresponding author, then newer listings, and numbers this section from `U1` at the bottom. A verified `arxiv_url` or `project_url` changes its label from Manuscript to Preprint. Use `*` for equal contribution and `+` or `†` for corresponding authors. Set `use_current_collaborator_affiliations` when the paper should derive institution badges from its coauthors in the Research Network. Use `areas` for the research tags and `teaser` / `teaser_video` for verified media. Home reads the same catalog.
+
+For a publication news item, use `publication_updates` with the existing paper IDs, verified links, and an optional acceptance. Each acceptance moves that paper to Peer-reviewed Publications, assigns the next C or J number, and moves its upload folder while retaining existing Pages media URLs. Keep the announcement and catalog changes together by running `python3 scripts/sync_publications.py` before committing. A merge of the news edit alone also triggers the same sync on `main` before Pages deploys. Home adds links to the publication card, paper and project when available. The deployment run summary lists newly assigned numbers when the sync runs on `main`.
+
+```json
+{
+  "date": "2027-02",
+  "category": "Publication",
+  "headline": ["Example Paper has been accepted to Example Conference 2027."],
+  "publication_updates": [
+    {
+      "id": 123,
+      "acceptance": {
+        "type": "Conference",
+        "venue": "Example Conference",
+        "venue_short": "ExampleConf'27",
+        "year": 2027
+      }
+    }
+  ]
+}
+```
+
+Use `Journal` for a journal acceptance. For a release announcement, add only the paper ID and the new `arxiv_url` or `project_url`. Put an official paper page in `venue_url` once it is public.
 
 `scripts/collect_cmlab_sources.py` captures rendered source HTML and structured evidence. Run it in a Python environment with Playwright Chromium installed and pass `--output capture`. For Chrome exports, pass `--publications-html`, `--home-html` or `--lab-html` with the saved page file. Review the candidates against their source HTML before transferring them into the catalog. The Actions run retains the HTML in its archive.
 
@@ -39,12 +62,12 @@ After the catalog is complete and approved, migrate the Home At a Glance publica
 ## Projects and media
 
 - Keep display names, aliases, contact links, portraits and semesters in `data/people.json`. Keep collaborator profile links and their institution IDs in `data/collaborators.json` and institution marks in `data/institutions.json`. Papers link authors and People lists collaborative work by matching the catalog’s bylines to those names and aliases. Publication logos correspond to source affiliations tracked on the paper.
-- Upload paper media to its full-title folder under [assets/media/publications](assets/media/publications). Each card uses up to one image and one video. For multiple candidates, `teaser.*` and `preview.*` take precedence, then the first filename in natural order. Prepare media at a 16:10 ratio when practical.
+- Upload paper media to its numbered full-title folder under [assets/media/publications](assets/media/publications). The first number sorts the folder in the same order as the website. The bracketed U, C or J number is the paper's catalog label. The current upload path is in `media_folder`. Each card uses up to one image and one video. For multiple candidates, `teaser.*` and `preview.*` take precedence, then the first filename in natural order. Prepare media at a 16:10 ratio when practical.
 - Keep the original project IDs in `data/projects.json`. Start and end dates or months are inclusive in Asia/Seoul. Use `YYYY-MM-DD` when the exact period is known. Cards display the month and year. Project organization logos are in `assets/img/project-orgs/`.
 - Upload Lab Life images and videos to the event-title-and-date folder under [assets/img/gallery](assets/img/gallery). Number files to set the order, such as `01.jpg`, `02.mp4`, and `03.webp`. Gallery controls appear when an event has multiple items.
-- Both catalogs accept PNG, JPEG, WebP, GIF, AVIF, MP4, and WebM. Publication folders also accept MOV uploads. Use GitHub's **Add file → Upload files** and merge to `main`. GitHub Pages indexes the files automatically. The Pages build uses FFmpeg to prepare browser-compatible MP4 previews from MOV and standalone animated GIFs while keeping the original uploads in place.
+- Both catalogs accept PNG, JPEG, WebP, GIF, AVIF, MP4, and WebM. Publication folders also accept MOV, M4V, MKV, AVI, MPG, MPEG, OGV, and WMV. Use GitHub's **Add file → Upload files** and merge to `main`. GitHub Pages indexes the files automatically and prepares compatible MP4 previews for these additional video formats and standalone animated GIFs.
 - Publication videos start silently when their cards come into view and loop. Use the player controls to pause a preview. The page respects the device's reduced-motion setting.
-- For a new paper or event, add its record to the catalog, run `python3 scripts/index_site_media.py --sync-folders`, and commit the generated folder with the record. The catalog stores the folder name in `media_folder` so title edits can retain the existing upload path. Folder names use hyphens in place of reserved punctuation such as `:` and `/`.
+- For a new paper or event, add its record to the catalog, run `python3 scripts/index_site_media.py --sync-folders`, and commit the generated folder with the record. Folder names use hyphens in place of reserved punctuation such as `:` and `/`.
 - For Eunseong Cho, upload one file named `eunseong-cho.png`, `eunseong-cho.jpg`, or `eunseong-cho.webp` to `assets/img/people/`. GitHub Pages packaging indexes the portrait automatically.
 - Run `python3 scripts/index_site_media.py` to preview media uploads locally. Use `--publications-only` to index the paper catalog on its own. To generate the same MOV and GIF previews as Pages, copy the site files to a staging folder and index that folder with `--for-deploy --site-dir`. FFmpeg and FFprobe are required for that build. Teaching records and the university’s Outstanding Instructor links live in `data/courses.json`.
 

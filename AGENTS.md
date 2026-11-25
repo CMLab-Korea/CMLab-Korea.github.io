@@ -58,6 +58,7 @@ Real-World AI Systems and Industry Translation is a cross-cutting application di
 - Treat user-provided initial v1.1 archive as preliminary. Check every publication, collaborator, student and link before production launch.
 - For small future data updates, change the relevant structured data entry only and follow the same verification and publication workflow.
 - When adding a paper or Lab Life event, run `python3 scripts/index_site_media.py --sync-folders` and commit the generated title-based upload folder with the catalog record.
+- When the owner announces a paper acceptance or public release, match it to its existing publication ID and add a `publication_updates` entry to the news record with the verified venue and public links available at the time. Run `python3 scripts/sync_publications.py` and include the catalog and folder moves in the same PR. Confirm the new catalog number, status and live paper link after deployment.
 - Use precise date in update logs; do not silently rewrite existing people, paper or recruitment facts.
 
 ## Basic local checks

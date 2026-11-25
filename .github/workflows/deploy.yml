@@ -11,10 +11,34 @@ concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: false
 jobs:
+  sync-catalog:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      sha: ${{ steps.sync.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync publication news, numbers and folders
+        id: sync
+        shell: bash
+        run: |
+          python3 scripts/sync_publications.py | tee -a "$GITHUB_STEP_SUMMARY"
+          git add -- data/publications.json data/media-migration.json assets/media/publications
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Sync publication news and media folders"
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD | sed 's/^/sha=/' >> "$GITHUB_OUTPUT"
   package:
+    needs: sync-catalog
+    if: ${{ !cancelled() && (needs.sync-catalog.result == 'success' || needs.sync-catalog.result == 'skipped') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.sync-catalog.outputs.sha || github.sha }}
       - name: Stage website files
         run: |
           mkdir _site
