@@ -319,12 +319,12 @@
     }
   ],
   "legacy_paths": {
-    "assets/img/gallery/04-24-2025-kibme-immersive-media-workshop/1.webp": "assets/img/gallery/한국방송•미디어공학회 2025년 실감미디어 워크숍 (04.24.2025)/1.webp",
-    "assets/img/gallery/05-15-2026-teachers-day/1.webp": "assets/img/gallery/Teacher’s Day (05.15.2026)/1.webp",
-    "assets/img/gallery/05-18-2026-cmlab-internal-seminar/1.webp": "assets/img/gallery/CMLab Internal Seminar (05.18.2026)/1.webp",
-    "assets/img/gallery/08-04-06-2025-kccv-25/1.webp": "assets/img/gallery/KCCV'25 (08.04~06.2025)/1.webp",
-    "assets/img/gallery/08-21-2026-cmlab-internal-seminar/1.webp": "assets/img/gallery/CMLab Internal Seminar (08.21.2026)/1.webp",
-    "assets/img/gallery/11-02-2023-inaugural-joint-lab-orientation/1.webp": "assets/img/gallery/Inaugural Joint Lab Orientation (11.02.2023)/1.webp",
+    "assets/img/gallery/04-24-2025-kibme-immersive-media-workshop/1.webp": "assets/img/gallery/034 [L10] 2025 KIBME Immersive Media Workshop (2025-04-24)/1.webp",
+    "assets/img/gallery/05-15-2026-teachers-day/1.webp": "assets/img/gallery/016 [L28] Teacher’s Day (2026-05-15)/1.webp",
+    "assets/img/gallery/05-18-2026-cmlab-internal-seminar/1.webp": "assets/img/gallery/015 [L29] CMLab Internal Seminar (2026-05-18)/1.webp",
+    "assets/img/gallery/08-04-06-2025-kccv-25/1.webp": "assets/img/gallery/029 [L15] KCCV 2025 (2025-08-04 to 2025-08-06)/1.webp",
+    "assets/img/gallery/08-21-2026-cmlab-internal-seminar/1.webp": "assets/img/gallery/006 [L38] CMLab Internal Seminar (2026-08-21)/1.webp",
+    "assets/img/gallery/11-02-2023-inaugural-joint-lab-orientation/1.webp": "assets/img/gallery/042 [L2] Inaugural Joint Lab Orientation (2023-11-02)/1.webp",
     "assets/media/publications/bim-vfi/preview.mp4": "assets/media/publications/02 Peer-reviewed Publications/020 [C7] BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/preview.mp4",
     "assets/media/publications/bim-vfi/teaser.webp": "assets/media/publications/02 Peer-reviewed Publications/020 [C7] BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/teaser.webp",
     "assets/media/publications/chimera/teaser.webp": "assets/media/publications/01 Preprints and Under Review/005 [U11] CHIMERA - Adaptive Cache Injection and Semantic Anchor Prompting for Zero-shot Image Morphing with Morphing-oriented Metric/teaser.webp",
@@ -357,6 +357,12 @@
     "assets/media/publications/SplineGS - Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video/teaser.webp": "assets/media/publications/02 Peer-reviewed Publications/018 [C9] SplineGS - Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video/teaser.webp",
     "assets/media/publications/BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/preview.mp4": "assets/media/publications/02 Peer-reviewed Publications/020 [C7] BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/preview.mp4",
     "assets/media/publications/BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/teaser.webp": "assets/media/publications/02 Peer-reviewed Publications/020 [C7] BiM-VFI - Bidirectional Motion Field-Guided Frame Interpolation for Video with Non-uniform Motions/teaser.webp",
-    "assets/media/publications/FMA-Net - Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring/teaser.webp": "assets/media/publications/02 Peer-reviewed Publications/021 [C6] FMA-Net - Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring/teaser.webp"
+    "assets/media/publications/FMA-Net - Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring/teaser.webp": "assets/media/publications/02 Peer-reviewed Publications/021 [C6] FMA-Net - Flow-Guided Dynamic Filtering and Iterative Feature Refinement with Multi-Attention for Joint Video Super-Resolution and Deblurring/teaser.webp",
+    "assets/img/gallery/CMLab Internal Seminar (08.21.2026)/1.webp": "assets/img/gallery/006 [L38] CMLab Internal Seminar (2026-08-21)/1.webp",
+    "assets/img/gallery/CMLab Internal Seminar (05.18.2026)/1.webp": "assets/img/gallery/015 [L29] CMLab Internal Seminar (2026-05-18)/1.webp",
+    "assets/img/gallery/Teacher’s Day (05.15.2026)/1.webp": "assets/img/gallery/016 [L28] Teacher’s Day (2026-05-15)/1.webp",
+    "assets/img/gallery/KCCV'25 (08.04~06.2025)/1.webp": "assets/img/gallery/029 [L15] KCCV 2025 (2025-08-04 to 2025-08-06)/1.webp",
+    "assets/img/gallery/한국방송•미디어공학회 2025년 실감미디어 워크숍 (04.24.2025)/1.webp": "assets/img/gallery/034 [L10] 2025 KIBME Immersive Media Workshop (2025-04-24)/1.webp",
+    "assets/img/gallery/Inaugural Joint Lab Orientation (11.02.2023)/1.webp": "assets/img/gallery/042 [L2] Inaugural Joint Lab Orientation (2023-11-02)/1.webp"
   }
 }

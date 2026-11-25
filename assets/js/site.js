@@ -1015,81 +1015,336 @@
   if (page === 'life') {
     const icons = new Map([['Conference', 'conference'], ['Seminar', 'seminar'],
       ['Lab gathering', 'people'], ['Milestone', 'award'], ['Outreach', 'event']]);
+    const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+    const gallery = $('#gallery-events');
+    const dialog = node('dialog', 'gallery-dialog');
+    dialog.setAttribute('aria-labelledby', 'album-title');
+    gallery.after(dialog);
+    let openedPlayer;
+    let opener;
+    let previewsPaused = false;
+
     function galleryBadge(category) {
       const badge = node('span', 'gallery-category', category);
       if (icons.has(category)) badge.prepend(symbol('assets/img/news-icons.svg', icons.get(category)));
       return badge;
     }
+
+    const month = new Intl.DateTimeFormat('en-US', {month: 'short', timeZone: 'UTC'});
     const isVideo = path => /\.(mp4|webm)$/i.test(path);
-    function galleryMedia(path, title) {
-      if (!isVideo(path)) return photo(mediaURL(path), '', title);
-      const video = node('video');
-      video.src = mediaURL(path);
-      video.controls = video.playsInline = true;
-      video.preload = 'none';
-      video.setAttribute('aria-label', title + ' video');
-      return video;
+
+    function eventDate(event) {
+      const start = new Date(event.date);
+      const [year, , day] = event.date.split('-');
+      if (!day) return new Intl.DateTimeFormat('en-US', {month: 'long', timeZone: 'UTC', year: 'numeric'}).format(start);
+      const first = month.format(start) + ' ' + Number(day);
+      if (!event.end_date || event.end_date === event.date) return first + ', ' + year;
+      const end = new Date(event.end_date);
+      const [, endMonth, endDay] = event.end_date.split('-');
+      const last = Number(endDay) + ', ' + end.getUTCFullYear();
+      if (end.getUTCFullYear() !== start.getUTCFullYear()) return first + ', ' + year + ' – ' + month.format(end) + ' ' + last;
+      if (event.date.slice(5, 7) === endMonth) return first + '–' + last;
+      return first + ' – ' + month.format(end) + ' ' + last;
     }
-    getData('gallery.json').then(events => {
-      const gallery = $('#gallery-events');
-      const filters = $('#gallery-filters');
+
+    function metadata(event) {
+      const line = node('p', 'directory-meta');
+      const time = node('time', '', eventDate(event));
+      time.dateTime = event.date;
+      line.append(time, ' · ', event.location);
+      return line;
+    }
+
+    function albumPlayer(event, controls = false, initialIndex = 0) {
+      const media = event.media || event.images || [];
+      const frame = node('div', 'gallery-photo');
+      let index = initialIndex;
+      let displayedIndex = initialIndex;
+      let timer;
+      let visible = false;
+      let paused = false;
+      let touchStart;
+      let current;
+      let revision = 0;
+      const status = node('span', 'gallery-count');
+      const playback = node('button');
+      playback.type = 'button';
+
+      function refresh() {
+        clearTimeout(timer);
+        if (visible && !document.hidden && !motionPreference.matches && !paused && media.length > 1
+            && (controls ? dialog.open : !dialog.open && !previewsPaused
+              && !frame.parentElement?.matches(':hover, :focus-within'))) {
+          timer = setTimeout(() => advance(1), 3000);
+        }
+      }
+
+      function updatePlayback() {
+        playback.textContent = paused ? 'Play slideshow' : 'Pause slideshow';
+        playback.hidden = motionPreference.matches;
+      }
+
+      function advance(step) {
+        if (!visible && step !== 0) return;
+        clearTimeout(timer);
+        index = (index + step + media.length) % media.length;
+        const path = media[index];
+        const isMovie = isVideo(path);
+        const visual = isMovie && controls ? node('video') : isMovie ? node('span', 'gallery-video-label', 'Video')
+          : photo(mediaURL(path), '', event.title + (media.length > 1 ? ' · photo ' + (index + 1) : ''));
+        if (visual.tagName === 'VIDEO') {
+          visual.src = mediaURL(path);
+          visual.controls = visual.playsInline = true;
+          visual.preload = 'metadata';
+          visual.setAttribute('aria-label', event.title + ' video');
+          visual.addEventListener('play', () => {
+            paused = true;
+            updatePlayback();
+            refresh();
+          });
+        }
+        visual.classList.add('gallery-slide');
+        const request = ++revision;
+        function show() {
+          if (request !== revision) return;
+          if (current?.tagName === 'VIDEO') current.pause();
+          if (current) current.replaceWith(visual);
+          else frame.prepend(visual);
+          current = visual;
+          displayedIndex = index;
+          status.textContent = (index + 1) + ' / ' + media.length;
+          refresh();
+        }
+        if (!isMovie && (current || controls)) visual.loading = 'eager';
+        if (!isMovie && current) visual.decode().then(show, show);
+        else show();
+      }
+
+      function select(step) {
+        paused = true;
+        updatePlayback();
+        advance(step);
+      }
+
+      if (controls && media.length > 1) {
+        const bar = node('div', 'gallery-controls');
+        for (const [label, arrow, step] of [['Previous item', '←', -1], ['Next item', '→', 1]]) {
+          const button = node('button', '', arrow);
+          button.type = 'button';
+          button.setAttribute('aria-label', label);
+          button.addEventListener('click', () => select(step));
+          bar.append(button);
+          if (step === -1) bar.append(status);
+        }
+        playback.className = 'gallery-playback';
+        playback.addEventListener('click', () => {
+          paused = !paused;
+          updatePlayback();
+          refresh();
+        });
+        bar.append(playback);
+        frame.append(bar);
+        frame.addEventListener('pointerdown', event => {
+          if (event.pointerType === 'touch' && !event.target.closest('button, video')) touchStart = event.clientX;
+        });
+        frame.addEventListener('pointerup', event => {
+          const distance = event.clientX - touchStart;
+          if (Math.abs(distance) > 50) select(distance > 0 ? -1 : 1);
+          touchStart = undefined;
+        });
+        frame.addEventListener('pointercancel', () => { touchStart = undefined; });
+      }
+      advance(0);
+      updatePlayback();
+      return {
+        frame, refresh, updatePlayback, select,
+        get displayedIndex() { return displayedIndex; },
+        setVisible(value) { visible = value; refresh(); }
+      };
+    }
+
+    function eventLinks(event, papers) {
+      const links = node('ul', 'gallery-links');
+      for (const item of event.links || []) {
+        const entry = node('li');
+        const paper = papers.get(item.paper_id);
+        if (paper) {
+          const primary = [paper.project_url, paper.venue_url, paper.arxiv_url]
+            .find(url => url && !paper.unavailable_urls?.includes(url));
+          entry.append(nameLink(paper.short || paper.title, primary || 'publications.html#paper-' + paper.id));
+          const venue = item.venue_label || paper.venue_short;
+          if (venue) entry.append(' ', nameLink('[' + venue + ']', item.venue_url || paper.venue_url, 'gallery-venue-link'));
+        } else if (item.label) {
+          entry.append(nameLink(item.label, item.url));
+        } else continue;
+        links.append(entry);
+      }
+      return links;
+    }
+
+    Promise.all([
+      getData('gallery.json'), getData('people.json').catch(() => []), getData('publications.json').catch(() => [])
+    ]).then(([events, people, papers]) => {
+      const paperDirectory = new Map(papers.map(paper => [paper.id, paper]));
+      const directory = new Map(people.flatMap(person => identityNames(person).map(key => [key, person])));
+      directory.set(identityKey('Jihyong Oh'), {name: 'Jihyong Oh', url: 'people.html#principal-investigator'});
+      const players = new Map();
+      const observer = 'IntersectionObserver' in window
+        ? new IntersectionObserver(entries => entries.forEach(entry => {
+          players.get(entry.target)?.setVisible(entry.isIntersecting);
+        }), {threshold: .15})
+        : null;
+
+      function refreshAll() {
+        for (const player of [...players.values(), openedPlayer].filter(Boolean)) {
+          player.updatePlayback();
+          player.refresh();
+        }
+      }
+
+      function albumDetails(event) {
+        const content = node('div', 'gallery-dialog-content');
+        const heading = node('h2', '', event.title);
+        heading.id = 'album-title';
+        content.append(galleryBadge(event.category), heading, metadata(event));
+        if (event.summary) content.append(node('p', '', event.summary));
+        if (event.title_ko || event.summary_ko) {
+          const korean = node('div', 'gallery-translation');
+          korean.lang = 'ko';
+          if (event.title_ko) korean.append(node('p', 'gallery-korean-title', event.title_ko));
+          if (event.summary_ko) korean.append(node('p', '', event.summary_ko));
+          content.append(korean);
+        }
+        if (event.participants?.length) {
+          const names = node('p', 'gallery-people');
+          event.participants.forEach((name, index) => {
+            if (index) names.append(', ');
+            const person = directory.get(identityKey(name));
+            if (!person) {
+              names.append(name);
+              return;
+            }
+            const link = nameLink('', person.url, 'gallery-person-link');
+            link.classList.add('paper-author-highlight');
+            link.append(node('span', 'paper-author-lab-name', person.name));
+            names.append(link);
+          });
+          content.append(names);
+        }
+        const links = eventLinks(event, paperDirectory);
+        if (links.childElementCount) content.append(links);
+        return content;
+      }
+
+      function openAlbum(event, trigger, initialIndex) {
+        const close = node('button', 'gallery-close', 'Close');
+        close.type = 'button';
+        close.addEventListener('click', () => dialog.close());
+        const content = albumDetails(event);
+        dialog.replaceChildren(close);
+        if (event.media?.length) {
+          openedPlayer = albumPlayer(event, true, initialIndex);
+          dialog.append(openedPlayer.frame);
+        }
+        dialog.append(content);
+        opener = trigger;
+        dialog.showModal();
+        openedPlayer?.setVisible(true);
+        refreshAll();
+      }
+
+      dialog.addEventListener('close', () => {
+        openedPlayer?.setVisible(false);
+        dialog.querySelector('video')?.pause();
+        openedPlayer = undefined;
+        opener?.focus({preventScroll: true});
+        refreshAll();
+      });
+      dialog.addEventListener('click', event => {
+        if (event.target === dialog) dialog.close();
+      });
+      dialog.addEventListener('keydown', event => {
+        if (!openedPlayer || event.target.closest('video')) return;
+        if (['ArrowLeft', 'ArrowRight'].includes(event.key) && $('.gallery-controls', dialog)) {
+          event.preventDefault();
+          openedPlayer.select(event.key === 'ArrowLeft' ? -1 : 1);
+        }
+      });
+      document.addEventListener('visibilitychange', refreshAll);
+      motionPreference.addEventListener('change', refreshAll);
+
       const cards = events.map(event => {
         const card = node('article', 'gallery-card');
         card.id = event.id;
-        const media = event.media || event.images || [];
-        if (media.length) {
-          const frame = node('div', 'gallery-photo');
-          frame.append(galleryMedia(media[0], event.title));
-          if (media.length > 1) {
-            let index = 0;
-            const controls = node('div', 'gallery-controls');
-            const status = node('span', '', '1 / ' + media.length);
-            status.setAttribute('aria-live', 'polite');
-            const label = media.some(isVideo) ? 'item' : 'photo';
-            for (const [direction, arrow, step] of [['Previous', '←', -1], ['Next', '→', 1]]) {
-              const button = node('button', '', arrow);
-              button.type = 'button';
-              button.setAttribute('aria-label', direction + ' ' + label);
-              button.addEventListener('click', () => {
-                frame.querySelector('video')?.pause();
-                index = (index + step + media.length) % media.length;
-                frame.firstElementChild.replaceWith(galleryMedia(media[index], event.title));
-                status.textContent = (index + 1) + ' / ' + media.length;
-              });
-              controls.append(button);
-              if (step === -1) controls.append(status);
-            }
-            frame.append(controls);
+        if (event.media?.length) {
+          const player = albumPlayer(event);
+          players.set(card, player);
+          card.append(player.frame);
+          for (const signal of ['pointerenter', 'pointerleave', 'focusin', 'focusout']) {
+            card.addEventListener(signal, () => requestAnimationFrame(player.refresh));
           }
-          card.append(frame);
+          if (observer) observer.observe(card);
+          else player.setVisible(true);
         }
         const body = node('div', 'gallery-card-body');
-        body.append(galleryBadge(event.category), node('h3', '', event.title),
-          node('p', 'directory-meta', event.date + ' · ' + event.location));
-        for (const detail of event.details) body.append(node('p', '', detail));
-        for (const link of event.links) {
-          body.append(nameLink(link.label, link.url || 'publications.html#paper-' + link.paper_id));
+        const badges = node('div', 'gallery-card-badges');
+        badges.append(galleryBadge(event.category));
+        if (event.catalog_number) badges.append(node('span', 'gallery-number', '[' + event.catalog_number + ']'));
+        const expand = node('span', 'gallery-expand-mark', '↗');
+        expand.setAttribute('aria-hidden', 'true');
+        badges.append(expand);
+        const heading = node('h3', '', event.title);
+        body.append(badges, heading, metadata(event));
+        if (event.summary) body.append(node('p', 'gallery-summary', event.summary));
+        if (event.media?.length) {
+          const photos = event.media.filter(path => !isVideo(path)).length;
+          const videos = event.media.length - photos;
+          const count = [];
+          if (photos) count.push(photos + (photos === 1 ? ' photo' : ' photos'));
+          if (videos) count.push(videos + (videos === 1 ? ' video' : ' videos'));
+          body.append(node('p', 'gallery-media-total', count.join(' · ')));
         }
-        card.append(body);
+        const trigger = node('button', 'gallery-open');
+        trigger.type = 'button';
+        trigger.setAttribute('aria-label', 'Open ' + event.title + ', ' + eventDate(event));
+        trigger.setAttribute('aria-haspopup', 'dialog');
+        trigger.addEventListener('click', () => openAlbum(event, trigger, players.get(card)?.displayedIndex));
+        card.append(body, trigger);
         return card;
       });
       gallery.replaceChildren(...cards);
       if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+      const filters = $('#gallery-filters');
       for (const category of ['All', ...icons.keys()]) {
         const tab = node('button', 'directory-filter');
         tab.type = 'button';
         tab.setAttribute('aria-pressed', String(category === 'All'));
         tab.append(galleryBadge(category));
         tab.addEventListener('click', () => {
-          for (const button of filters.children) button.setAttribute('aria-pressed', String(button === tab));
+          for (const button of $$('.directory-filter[aria-pressed]', filters)) {
+            button.setAttribute('aria-pressed', String(button === tab));
+          }
           cards.forEach((card, i) => {
             card.hidden = category !== 'All' && events[i].category !== category;
-            if (card.hidden) card.querySelector('video')?.pause();
+            if (card.hidden) players.get(card)?.setVisible(false);
+            else if (!observer) players.get(card)?.setVisible(true);
           });
         });
         filters.append(tab);
       }
-    }).catch(() => { $('#gallery-events').textContent = 'Lab Life is temporarily unavailable.'; });
+      if (events.some(event => event.media?.length > 1)) {
+        const toggle = node('button', 'directory-filter gallery-preview-toggle', 'Pause previews');
+        toggle.type = 'button';
+        toggle.hidden = motionPreference.matches;
+        toggle.addEventListener('click', () => {
+          previewsPaused = !previewsPaused;
+          toggle.textContent = previewsPaused ? 'Resume previews' : 'Pause previews';
+          refreshAll();
+        });
+        motionPreference.addEventListener('change', () => { toggle.hidden = motionPreference.matches; });
+        filters.append(toggle);
+      }
+    }).catch(() => { gallery.textContent = 'Lab Life is temporarily unavailable.'; });
   }
 
   const visitorPanel = $('.visitor-stats');

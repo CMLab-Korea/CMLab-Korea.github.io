@@ -263,3 +263,20 @@ body[data-page="home"] .area-top{margin-bottom:112px}
   .translation-partners { border-left: 0; border-top: 1px solid var(--line); padding: .85rem 0 0; }
   .application-contact { flex-wrap: wrap; }
 }
+
+/* Shared publication and event bylines. */
+.paper-author-highlight { color: var(--highlight); font-weight: 800; }
+@supports (background-clip: text) {
+  .paper-author-lab-name {
+    background-image: linear-gradient(90deg, #c8edff, #78bdff 52%, #96acff);
+    background-clip: text;
+    color: transparent;
+  }
+  [data-theme="light"] .paper-author-lab-name {
+    background-image: linear-gradient(90deg, #16469e, #2348c4 52%, #0769a6);
+  }
+}
+
+@media (forced-colors: active) {
+  .paper-author-lab-name { background: none; color: inherit; }
+}
