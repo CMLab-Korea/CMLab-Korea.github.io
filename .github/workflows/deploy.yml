@@ -20,14 +20,15 @@ jobs:
       sha: ${{ steps.sync.outputs.sha }}
     steps:
       - uses: actions/checkout@v4
-      - name: Sync publication news, numbers and folders
+      - name: Sync publication news and numbered media folders
         id: sync
         shell: bash
         run: |
           python3 scripts/sync_publications.py | tee -a "$GITHUB_STEP_SUMMARY"
-          git add -- data/publications.json data/media-migration.json assets/media/publications
+          python3 scripts/index_site_media.py --gallery-only
+          git add -- data/publications.json data/gallery.json data/media-migration.json assets/media/publications assets/img/gallery
           if ! git diff --cached --quiet; then
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Sync publication news and media folders"
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Sync publication news and numbered media folders"
             git push origin HEAD:main
           fi
           git rev-parse HEAD | sed 's/^/sha=/' >> "$GITHUB_OUTPUT"
@@ -43,11 +44,19 @@ jobs:
         run: |
           mkdir _site
           cp -r -- *.html assets data robots.txt .nojekyll _site/
-      - name: Set up FFmpeg for paper previews
+      - name: Set up media preview tools
         run: |
+          packages=()
           if ! command -v ffmpeg >/dev/null; then
+            packages+=(ffmpeg)
+          fi
+          if ! command -v heif-convert >/dev/null &&
+             [[ -n "$(find _site/assets/img/gallery -type f \( -iname '*.heic' -o -iname '*.heif' \) -print -quit)" ]]; then
+            packages+=(libheif-examples)
+          fi
+          if (( ${#packages[@]} )); then
             sudo apt-get update
-            sudo apt-get install -y ffmpeg
+            sudo apt-get install -y "${packages[@]}"
           fi
       - name: Index paper, gallery and profile media
         run: python3 scripts/index_site_media.py --for-deploy --site-dir _site

@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 from shutil import copyfile
 import subprocess
+from tempfile import TemporaryDirectory, mkdtemp
 from unicodedata import normalize
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +16,9 @@ CONVERTED_VIDEO_EXTENSIONS = {".mov", ".m4v", ".mkv", ".avi", ".mpg", ".mpeg", "
 PAPERS = Path("assets/media/publications")
 PAPER_PREVIEWS = Path("assets/media/publication-previews")
 GALLERY = Path("assets/img/gallery")
+GALLERY_PREVIEWS = Path("assets/media/gallery-previews")
+GALLERY_NATIVE_IMAGES = IMAGE_EXTENSIONS | {".svg", ".apng", ".ico", ".jfif", ".jpe"}
+GALLERY_CONVERTED_IMAGES = {".heic", ".heif", ".tif", ".tiff", ".bmp", ".jxl", ".jp2"}
 FOLDER_LIMIT = 180
 
 
@@ -56,31 +60,41 @@ def title_folder(title):
     return name or "Untitled"
 
 
-def register_folders(records, base, label, create=False):
-    used = set()
-    for record in records:
-        name = record.get("media_folder")
-        if name:
-            if title_folder(name) != name or name.casefold() in used:
-                raise ValueError(f"Invalid or duplicate media folder {name!r} in {base}")
-            used.add(name.casefold())
+def relocate_media_folders(root, base, plans):
+    directory = root / base
+    directory.mkdir(parents=True, exist_ok=True)
+    owners = {old for old, _ in plans if old is not None}
+    if len(owners) != sum(old is not None for old, _ in plans):
+        raise ValueError(f"Duplicate source folders in {base}")
+    for old, new in plans:
+        if (directory / new).exists() and old != new and new not in owners:
+            raise FileExistsError(directory / new)
 
-    for record in records:
-        name = record.get("media_folder")
-        if not name:
-            name = title_folder(label(record))
-            if name.casefold() in used:
-                suffix = f' [{record["id"]}]'
-                name = title_folder(shorten(name, FOLDER_LIMIT - len(suffix.encode("utf-8"))) + suffix)
-            if name.casefold() in used:
-                raise ValueError(f"Duplicate media folder {name!r} in {base}")
-            used.add(name.casefold())
-            record["media_folder"] = name
-        folder = ROOT / base / name
-        if create:
-            folder.mkdir(parents=True, exist_ok=True)
-            (folder / ".gitkeep").touch(exist_ok=True)
-        yield record, folder
+    # Preserve intermediate files if any filesystem operation interrupts the move.
+    scratch = Path(mkdtemp(prefix=".folder-sync-", dir=directory))
+    moved = []
+    changes = {}
+    for index, (old, new) in enumerate(plans):
+        if old is not None and old != new and (directory / old).is_dir():
+            temporary = scratch / str(index)
+            (directory / old).rename(temporary)
+            moved.append((temporary, directory / new))
+            for file in temporary.rglob("*"):
+                if file.is_file() and file.name != ".gitkeep":
+                    child = file.relative_to(temporary)
+                    changes[(base / old / child).as_posix()] = (base / new / child).as_posix()
+    for temporary, target in moved:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        temporary.rename(target)
+    scratch.rmdir()
+    return changes
+
+
+def update_media_aliases(manifest, changes):
+    aliases = {old: changes.get(current, current)
+               for old, current in manifest.get("legacy_paths", {}).items()}
+    aliases.update(changes)
+    manifest["legacy_paths"] = {old: current for old, current in aliases.items() if old != current}
 
 
 def animated_gif(path):
@@ -170,17 +184,59 @@ def index_publication_media(stage_previews=False):
     save(paper_file, papers)
 
 
-def index_gallery_media(create=False):
+def gallery_preview(path, event_id, index):
+    source = ROOT / path
+    relative = GALLERY_PREVIEWS / event_id / f"{index}.jpg"
+    target = ROOT / relative
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if source.suffix.lower() in {".heic", ".heif"}:
+        with TemporaryDirectory() as scratch:
+            directory = Path(scratch)
+            subprocess.run(["heif-convert", "-q", "88", str(source), str(directory / "image.jpg")], check=True)
+            first = min(directory.glob("*.jpg"), key=filename_order)
+            copyfile(first, target)
+    else:
+        subprocess.run([
+            "ffmpeg", "-nostdin", "-loglevel", "error", "-y", "-i", str(source),
+            "-frames:v", "1", "-vf", "scale='min(1600,iw)':-1", "-q:v", "3",
+            "-update", "1", str(target),
+        ], check=True)
+    return relative.as_posix()
+
+
+def index_gallery_media(stage_previews=False):
     gallery_file = ROOT / "data/gallery.json"
-    events = load(gallery_file)
-    for event, folder in register_folders(
-        events, GALLERY, lambda entry: f'{entry["title"]} ({entry["date"]})', create
-    ):
-        if not folder.exists():
-            folder = ROOT / GALLERY / event["id"]
-        event["media"] = assets(folder, IMAGE_EXTENSIONS | VIDEO_EXTENSIONS)
+    manifest_file = ROOT / "data/media-migration.json"
+    events = sorted(load(gallery_file), key=lambda event: event["date"], reverse=True)
+    plans = []
+    for rank, event in enumerate(events, 1):
+        old = event.get("media_folder") or event["id"]
+        if title_folder(old) != old or title_folder(event["id"]) != event["id"]:
+            raise ValueError(f"Invalid gallery media folder {old!r}")
+        number = len(events) + 1 - rank
+        dates = event["date"]
+        if event.get("end_date"):
+            dates += " to " + event["end_date"]
+        folder = title_folder(f'{rank:03d} [L{number}] {event["title"]} ({dates})')
+        event["catalog_number"] = f"L{number}"
+        event["media_folder"] = folder
+        plans.append((Path(old), Path(folder)))
+    changes = relocate_media_folders(ROOT, GALLERY, plans)
+    manifest = load(manifest_file)
+    update_media_aliases(manifest, changes)
+    for event in events:
+        folder = ROOT / GALLERY / event["media_folder"]
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / ".gitkeep").touch(exist_ok=True)
+        media = assets(folder, GALLERY_NATIVE_IMAGES | GALLERY_CONVERTED_IMAGES | VIDEO_EXTENSIONS)
+        if stage_previews:
+            media = [gallery_preview(path, event["id"], index)
+                     if Path(path).suffix.lower() in GALLERY_CONVERTED_IMAGES else path
+                     for index, path in enumerate(media, 1)]
+        event["media"] = media
         event.pop("images", None)
     save(gallery_file, events)
+    save(manifest_file, manifest)
 
 
 def index_profile_photos():
@@ -211,6 +267,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     scope = parser.add_mutually_exclusive_group()
     scope.add_argument("--publications-only", action="store_true")
+    scope.add_argument("--gallery-only", action="store_true")
     scope.add_argument("--for-deploy", action="store_true")
     scope.add_argument("--sync-folders", action="store_true", help="Create and register upload folders")
     parser.add_argument("--site-dir", type=Path, help="Index a staged deployment directory")
@@ -219,12 +276,13 @@ if __name__ == "__main__":
         if not options.for_deploy:
             parser.error("--site-dir requires --for-deploy")
         ROOT = options.site_dir.resolve()
-    from sync_publications import sync
-    sync(ROOT)
-    index_publication_media(stage_previews=bool(options.site_dir))
+    if not options.gallery_only:
+        from sync_publications import sync
+        sync(ROOT)
+        index_publication_media(stage_previews=bool(options.site_dir))
     if not options.publications_only:
-        index_gallery_media(create=options.sync_folders)
-    if not options.publications_only and not options.sync_folders:
+        index_gallery_media(stage_previews=bool(options.site_dir))
+    if not (options.publications_only or options.sync_folders or options.gallery_only):
         index_profile_photos()
     if options.site_dir:
         copy_legacy_media_paths()

@@ -4,10 +4,12 @@ import argparse
 from collections import Counter
 from pathlib import Path
 import re
-from tempfile import mkdtemp
 from urllib.parse import urlsplit
 
-from index_site_media import FOLDER_LIMIT, PAPERS, ROOT, load, save, shorten, title_folder
+from index_site_media import (
+    FOLDER_LIMIT, PAPERS, ROOT, load, relocate_media_folders, save, shorten, title_folder,
+    update_media_aliases,
+)
 
 TYPES = {"Conference": "C", "Journal": "J"}
 LINK_FIELDS = ("arxiv_url", "project_url", "venue_url", "code_url", "dataset_url")
@@ -105,31 +107,7 @@ def sync_folders(root, sections, manifest):
             new = Path(group) / (prefix + shorten(title, FOLDER_LIMIT - len(prefix.encode("utf-8"))))
             plans.append((paper, old, new))
 
-    owners = {old for _, old, _ in plans if old is not None}
-    if len(owners) != sum(old is not None for _, old, _ in plans):
-        raise ValueError("Duplicate source publication folders")
-    for _, old, new in plans:
-        if (base / new).exists() and old != new and new not in owners:
-            raise FileExistsError(base / new)
-
-    aliases = manifest.setdefault("legacy_paths", {})
-    changes = {}
-    # Keep intermediate files recoverable if a filesystem error interrupts a move.
-    scratch = Path(mkdtemp(prefix=".folder-sync-", dir=base))
-    moved = []
-    for paper, old, new in plans:
-        if old is not None and old != new and (base / old).is_dir():
-            temporary = scratch / str(paper["id"])
-            (base / old).rename(temporary)
-            moved.append((temporary, base / new))
-            for file in temporary.rglob("*"):
-                if file.is_file() and file.name != ".gitkeep":
-                    child = file.relative_to(temporary)
-                    changes[(PAPERS / old / child).as_posix()] = (PAPERS / new / child).as_posix()
-    for temporary, target in moved:
-        target.parent.mkdir(parents=True, exist_ok=True)
-        temporary.rename(target)
-    scratch.rmdir()
+    changes = relocate_media_folders(root, PAPERS, [(old, new) for _, old, new in plans])
 
     for paper, _, new in plans:
         folder = base / new
@@ -146,10 +124,7 @@ def sync_folders(root, sections, manifest):
         for field in ("image", "video"):
             if record.get(field) in changes:
                 record[field] = changes[record[field]]
-    for old, current in list(aliases.items()):
-        aliases[old] = changes.get(current, current)
-    aliases.update(changes)
-    manifest["legacy_paths"] = {old: current for old, current in aliases.items() if old != current}
+    update_media_aliases(manifest, changes)
 
 
 def sync(root=ROOT):
