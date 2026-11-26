@@ -199,20 +199,6 @@
   background: radial-gradient(ellipse at 22% 12%, #688fff26, transparent 65%), var(--layer);
   border-style: dashed;
 }
-.record-number {
-  --record-color: var(--highlight);
-  display: inline-grid;
-  place-items: center;
-  width: 2.5rem;
-  min-height: 1.65rem;
-  padding-inline: .25rem;
-  border-radius: 5px;
-  border: 1px solid color-mix(in srgb, var(--record-color) 38%, transparent);
-  background: color-mix(in srgb, var(--record-color) 9%, transparent);
-  color: var(--record-color);
-  font: 700 .73rem/1 'Space Grotesk', system-ui, sans-serif;
-  font-variant-numeric: tabular-nums;
-}
 .record-journal, .record-s { --record-color: #bba9ff; }
 .record-i, .record-p, .record-preprint { --record-color: #7ecddb; }
 [data-theme="light"] .paper-nickname { color: #4b51a7; }
