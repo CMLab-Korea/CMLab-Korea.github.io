@@ -20,6 +20,10 @@ GALLERY_PREVIEWS = Path("assets/media/gallery-previews")
 GALLERY_NATIVE_IMAGES = IMAGE_EXTENSIONS | {".svg", ".apng", ".ico", ".jfif", ".jpe"}
 GALLERY_CONVERTED_IMAGES = {".heic", ".heif", ".tif", ".tiff", ".bmp", ".jxl", ".jp2"}
 FOLDER_LIMIT = 180
+RETIRED_SITE = re.compile(r"(?<![\w-])cmlab\.cau\.ac\.kr(?=$|[./:#?\s\"'])", re.I)
+SITES_IMAGE = re.compile(r"\.googleusercontent\.com/sitesv-images-rt/", re.I)
+EDITORIAL_SOURCE_FIELDS = {"source_url", "source_site", "distinction_source", "source_links",
+                           "source_media", "source_images"}
 
 
 def filename_order(path):
@@ -263,6 +267,44 @@ def copy_legacy_media_paths():
             copyfile(original, alias)
 
 
+def omit_retired_site_sources(value):
+    """Omit old site references from editorial fields in the staged catalog only."""
+    if isinstance(value, list):
+        return [omit_retired_site_sources(item) for item in value]
+    if not isinstance(value, dict):
+        return value
+
+    def retired_source(item):
+        text = json.dumps(item, ensure_ascii=False)
+        return RETIRED_SITE.search(text) or SITES_IMAGE.search(text)
+
+    result = {}
+    for field, item in value.items():
+        if field in EDITORIAL_SOURCE_FIELDS:
+            if isinstance(item, list):
+                item = [source for source in item if not retired_source(source)]
+            elif retired_source(item):
+                continue
+        result[field] = omit_retired_site_sources(item)
+    return result
+
+
+def check_staged_site_links():
+    """Clean editorial references and catch active links to the retired site."""
+    for path in (ROOT / "data").glob("*.json"):
+        record = load(path)
+        public_record = omit_retired_site_sources(record)
+        if public_record != record:
+            save(path, public_record)
+
+    text_suffixes = {".html", ".js", ".css", ".json", ".svg", ".xml", ".txt"}
+    for path in ROOT.rglob("*"):
+        if path.is_file() and path.suffix.lower() in text_suffixes:
+            source = path.read_text(encoding="utf-8")
+            if RETIRED_SITE.search(source) or "cmlab-web-assets/data/publication-stats.js" in source:
+                raise ValueError(f"Retired CMLab site reference in {path.relative_to(ROOT)}")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     scope = parser.add_mutually_exclusive_group()
@@ -286,3 +328,4 @@ if __name__ == "__main__":
         index_profile_photos()
     if options.site_dir:
         copy_legacy_media_paths()
+        check_staged_site_links()
