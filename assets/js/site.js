@@ -189,8 +189,8 @@
     const publications = getPublications();
     publications.then(items => {
       const pools = [
-        items.filter(paper => paper.type === 'Preprint').slice(0, 6),
-        items.filter(paper => paper.type !== 'Preprint').slice(0, 6)
+        items.filter(paper => paper.type === 'Preprint').slice(0, 10),
+        items.filter(paper => paper.type !== 'Preprint').slice(0, 10)
       ];
       const controls = $('#selected-controls');
       const motion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -301,8 +301,7 @@
     const filters = $('#news-filters');
     const more = $('#news-more');
     const initialNewsCount = 10;
-    Promise.all([getData('news.json'), publications.catch(() => [])]).then(([items, papers]) => {
-      const papersById = new Map(papers.map(paper => [paper.id, paper]));
+    getData('news.json').then(items => {
       const categories = ['All', 'Publication', 'Award', 'People', 'Event'];
       const entries = items.filter(item => categories.includes(item.category))
         .sort((a, b) => b.date.slice(0, 7).localeCompare(a.date.slice(0, 7)));
@@ -321,32 +320,15 @@
       function renderHeadline(entry) {
         const parts = entry.headline;
         const headline = node('p', 'news-headline');
-        const seen = new Set();
         for (const part of Array.isArray(parts) ? parts : [parts]) {
           if (typeof part === 'string') {
             headline.append(part);
           } else if (part.url) {
             const link = node('a', '', part.text);
             link.href = safeURL(part.url);
-            seen.add(link.href);
             headline.append(link);
           } else {
             headline.append(node('strong', '', part.text));
-          }
-        }
-        for (const {id} of entry.publication_updates || []) {
-          const paper = papersById.get(id);
-          if (!paper) continue;
-          const card = 'publications.html#paper-' + id;
-          const label = entry.publication_updates.length === 1 ? 'Publication card' : paper.short || paper.title;
-          for (const [text, url] of [[label, card], ['Paper', paper.venue_url || paper.arxiv_url], ['Project', paper.project_url]]) {
-            if (!url || paper.unavailable_urls?.includes(url)) continue;
-            const href = safeURL(url);
-            if (seen.has(href)) continue;
-            const link = node('a', '', text);
-            link.href = href;
-            headline.append(' · ', link);
-            seen.add(href);
           }
         }
         return headline;
@@ -565,8 +547,7 @@
       if (paper.distinction_percent) row.classList.add('distinguished-paper');
       const badge = node('div', 'venue-column');
       if (paper.catalog_number) {
-        const number = paper.type === 'Preprint' ? `[${paper.catalog_number}]` : paper.catalog_number;
-        badge.append(node('span', `record-number record-${paper.type.toLowerCase()}`, number));
+        badge.append(node('span', `record-number record-${paper.type.toLowerCase()}`, paper.catalog_number));
       }
       badge.append(node('span', 'venue-abbr', venueBadge(paper)));
       badge.append(node('span', 'venue-kind', paper.type === 'Preprint' ? String(paper.year) : paper.type));
@@ -915,12 +896,21 @@
       for (const person of sorted) {
         const card = node('article', degreeRank(person) === 0 ? 'person-card phd-member' : 'person-card');
         card.id = 'member-' + identityKey(person.name);
+        const degree = node('p', 'member-degree');
+        const phd = 'Ph.D.';
+        if (degreeRank(person) === 0) {
+          degree.append(node('strong', 'member-phd', phd), person.degree.slice(phd.length));
+        } else {
+          degree.append(person.degree);
+        }
         const semester = person.group === 'intern' ? '(' + person.semester + ')' : '[' + person.semester + ']';
         const heading = node('h3');
         heading.append(nameLink(person.name, person.url));
         if (person.photo) card.append(photo(person.photo, 'member-photo', person.name));
-        card.append(heading,
-          node('p', '', person.degree + ' ' + semester));
+        const intake = node('span', 'record-number member-intake', semester);
+        intake.title = person.group === 'intern' ? 'Expected admission semester' : 'Admission semester';
+        degree.append(' ', intake);
+        card.append(heading, degree);
         if (person.note) card.append(node('small', 'member-note', person.note));
         if (person.email) card.append(nameLink('Email', 'mailto:' + person.email, 'profile-link member-email'));
         $('#' + person.group + '-people').append(card);
@@ -1301,7 +1291,7 @@
         const body = node('div', 'gallery-card-body');
         const badges = node('div', 'gallery-card-badges');
         badges.append(galleryBadge(event.category));
-        if (event.catalog_number) badges.append(node('span', 'gallery-number', '[' + event.catalog_number + ']'));
+        if (event.catalog_number) badges.append(node('span', 'record-number record-l gallery-number', event.catalog_number));
         const expand = node('span', 'gallery-expand-mark', '↗');
         expand.setAttribute('aria-hidden', 'true');
         badges.append(expand);

@@ -186,10 +186,11 @@
   },
   "superb-ai": {
     "name": "Superb AI",
+    "logo": "assets/img/institutions/superb-ai.webp",
     "brand_colors": [
-      "#ff625a",
-      "#ee6c61",
-      "#f19f8d"
+      "#0a0d2b",
+      "#223882",
+      "#1857e7"
     ]
   },
   "ucla": {

@@ -102,15 +102,7 @@
 .gallery-media-total { color: var(--highlight); font-size: .77rem; }
 .gallery-card-badges { display: flex; gap: .45rem; align-items: center; }
 .gallery-category { color: var(--highlight); font-size: .82rem; }
-.gallery-number {
-  flex: none;
-  margin-inline-start: auto;
-  font: 700 .74rem/1 'Space Grotesk', system-ui, sans-serif;
-  color: var(--highlight);
-  padding: .35rem;
-  border: 1px solid var(--line);
-  border-radius: 5px;
-}
+.gallery-number { flex: none; margin-inline-start: auto; }
 .gallery-expand-mark { color: var(--muted); font-size: .9rem; }
 .gallery-card:is(:hover, :focus-within) .gallery-expand-mark { color: var(--highlight); }
 .gallery-open {
@@ -226,3 +218,14 @@ body:has(.gallery-dialog[open]) { overflow: hidden; }
   padding: 8px;
 }
 .pi-logo.service-logo:is(:hover, :focus-visible) { box-shadow: inset 0 0 0 2px #789dda; }
+
+.record-l { --record-color: #8ec6fd; }
+.record-a { --record-color: #abb7ff; }
+.record-m { --record-color: #c4aeff; }
+[data-theme="light"] .record-l { --record-color: #205f99; }
+[data-theme="light"] .record-a { --record-color: #414f9f; }
+[data-theme="light"] .record-m { --record-color: #6546a1; }
+.pi-entry h3 .record-number { vertical-align: middle; margin-inline-end: .35rem; }
+.person-card .member-degree { line-height: 1.55; }
+.member-phd { color: var(--highlight); font-weight: 800; }
+.member-intake { vertical-align: middle; width: auto; min-height: 1.3rem; font-size: .69rem; white-space: nowrap; }
