@@ -18,7 +18,7 @@ Run `python3 -m http.server 8000` from the repository root, then open `http://lo
 | `data/news.json` | Selected news |
 | `data/media-migration.json` | Original project asset paths, revisions, licenses and adaptations |
 
-The preview bundles the lab's official logo from the [branding repository](https://github.com/CMLab-Korea/cmlab-web-assets/tree/272aab0f610ca1f5fd5a2d5635cb4ceb9f4d99e6/branding). Media credits and source links are in the migration manifest. Publication and career-wide PI Scholar metrics load the existing public scripts produced by the [asset repository](https://github.com/CMLab-Korea/cmlab-web-assets). Publication counts fall back to the bundled snapshot, and unavailable Scholar values display an em dash.
+The preview bundles the lab's official logo from the [branding repository](https://github.com/CMLab-Korea/cmlab-web-assets/tree/272aab0f610ca1f5fd5a2d5635cb4ceb9f4d99e6/branding). Media credits and source links are in the migration manifest. Home and Publications calculate their counts from the deployed publication catalog. Home loads career-wide PI Scholar metrics from the [asset repository](https://github.com/CMLab-Korea/cmlab-web-assets) and shows an em dash if those metrics are unavailable.
 
 ## Home updates
 
@@ -57,7 +57,7 @@ Use `Journal` for a journal acceptance. For a release announcement, add only the
 
 `scripts/collect_cmlab_sources.py` captures rendered source HTML and structured evidence. Run it in a Python environment with Playwright Chromium installed and pass `--output capture`. For Chrome exports, pass `--publications-html`, `--home-html` or `--lab-html` with the saved page file. Review the candidates against their source HTML before transferring them into the catalog. The Actions run retains the HTML in its archive.
 
-After the catalog is complete and approved, migrate the Home At a Glance publication counts to `data/publications.json` before retiring the legacy site. Keep the career-wide PI citation metrics and venue metrics distinct.
+The Pages build excludes legacy-site and captured Google Sites image references from editorial source fields in the staged catalog. The source files in this repository retain those references for migration records. Keep the career-wide PI citation metrics and venue metrics distinct.
 
 ## Projects and media
 

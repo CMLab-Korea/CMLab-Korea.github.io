@@ -7,7 +7,7 @@ Maintain the official public website of the Creative Vision & Multimedia Lab (CM
 - Primary website repository: `CMLab-Korea/CMLab-Korea.github.io` (to be created by the owner if not present).
 - Existing media/metrics repository: `CMLab-Korea/cmlab-web-assets`. DO NOT rewrite its existing Actions or data generators without a separate request.
 - Existing legacy public website: `https://cmlab.cau.ac.kr/`. Keep this live and unchanged unless the owner explicitly approves a migration and the institution authorizes DNS changes.
-- Existing metrics are exposed by public JS assets `https://cmlab-korea.github.io/cmlab-web-assets/data/publication-stats.js` and `.../data/scholar-stats.js`. Do not put API keys into client-side code.
+- Home and Publications count records from `data/publications.json`. Home loads Google Scholar counts from `https://cmlab-korea.github.io/cmlab-web-assets/data/scholar-stats.js`. Do not put API keys into client-side code.
 - An initial static HTML/CSS/JS website prototype was produced in the companion ZIP. It is a design and content starting point, not a fully verified canonical database.
 
 ## Information architecture
@@ -35,7 +35,7 @@ Real-World AI Systems and Industry Translation is a cross-cutting application di
 - Collaborators should be grouped by affiliation using verified institutions and people. Institutional logos must not imply formal institutional partnership without supporting evidence.
 
 ## Publications
-- Source is the CMLab legacy Publications page. Snapshot: 28 peer-reviewed papers (20 top-tier conference, 8 international journal) + 10 under-review/preprints (Nov 2026). Reverify counts before promoting to current facts.
+- Use the checked-in publication catalog as the current source. The legacy Publications page and its captures are historical references. Verify the catalog before quoting counts.
 - Venue at left (e.g. CVPR '26); small verified teaser/poster/MP4 at center; title, authors, venue distinction, year, Paper/Project/Code links, optional collaboration affiliation chips at right.
 - Highlight CMLab student first/co-first authors and the PI based on verified authorship. Preserve equal-contribution and corresponding-author symbols where known. Do not infer co-authorship roles.
 - Prefer 'SCIE-indexed Journal Papers' only when all included journals are verified to meet that definition. Otherwise use 'Journal Papers'.
