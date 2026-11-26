@@ -517,7 +517,8 @@
           author.classList.add('paper-author-highlight');
           author.replaceChildren(node('span', 'paper-author-lab-name', label));
         } else {
-          const institution = organizations.get(authorOrganizations.get(key) || member?.organization);
+          const organizationId = authorOrganizations?.get(key) ?? member?.organization;
+          const institution = organizations?.get(organizationId);
           if (applyInstitutionColors(author, institution)) {
             author.classList.add('paper-author-collaborator');
             author.title = institution.name;
