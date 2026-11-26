@@ -259,6 +259,8 @@
   padding-block: .85rem;
 }
 .archive-record p { margin: 0; overflow-wrap: anywhere; font-size: .9rem; }
+.archive-record[id] { scroll-margin-top: 100px; }
+.archive-record.archive-current { background: color-mix(in srgb, var(--highlight) 9%, transparent); }
 .archive-paper-title { margin: 0 0 .25rem; line-height: 1.45; font-size: .96rem; overflow-wrap: anywhere; }
 .archive-record :is(.archive-venue, .paper-authors) { color: var(--muted); font-size: .79rem; line-height: 1.6; }
 .archive-date { color: var(--muted); font-size: .78rem; }
