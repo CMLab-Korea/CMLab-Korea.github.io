@@ -230,7 +230,9 @@ body[data-page="home"] .area-top{margin-bottom:112px}
 .translation-partners { border-left: 1px solid var(--line); padding-left: 1.2rem; }
 .translation-partners p { margin: 0 0 .68rem; font-size: .85rem; }
 .translation-partners p:last-child { margin: 0; }
-.translation-partners a { display: inline-block; font-weight: 800; color: var(--highlight); }
+.translation-partners a { color: var(--highlight); }
+.translation-partners p > a { display: inline-block; font-weight: 800; }
+.translation-partners span a { text-decoration: underline; text-underline-offset: .17em; }
 .translation-partners a:hover { text-decoration: underline; }
 .translation-partners span { display: block; }
 
