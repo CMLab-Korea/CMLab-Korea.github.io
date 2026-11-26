@@ -755,6 +755,7 @@
         const entries = records.filter(record => record.id.startsWith(list.dataset.records));
         list.replaceChildren(...entries.map(record => {
           const entry = node('li', 'archive-record');
+          if (record.anchor) entry.id = record.anchor;
           entry.append(node('span', 'record-number record-' + record.id[0].toLowerCase(), record.id));
           const body = node('div');
           if (record.date) {
@@ -779,6 +780,19 @@
         $('.archive-count', details).textContent = $$('.archive-record', details).length;
       }
       archive.hidden = false;
+
+      function openArchivedRecord() {
+        $('.archive-record.archive-current', archive)?.classList.remove('archive-current');
+        const target = document.getElementById(location.hash.slice(1));
+        const details = target?.closest('details');
+        if (!target?.classList.contains('archive-record') || !details || !archive.contains(details)) return;
+        details.open = true;
+        target.classList.add('archive-current');
+        target.scrollIntoView({block: 'start'});
+      }
+
+      openArchivedRecord();
+      addEventListener('hashchange', openArchivedRecord);
     }).catch(() => {
       archive.replaceChildren(node('p', 'archive-notice', 'Additional publication records are temporarily unavailable.'));
       archive.hidden = false;

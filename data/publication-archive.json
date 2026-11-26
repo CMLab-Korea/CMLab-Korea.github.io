@@ -130,54 +130,66 @@
     "venue": "2018 한국군사과학기술학회 (KIMST) 창립 20주년 종합학술대회."
   },
   {
-    "id": "I2",
+    "id": "I3",
     "text": "US Application No. 19/810,559, “Method and Apparatus for Object Search Based on Diffusion Model” [Chanho Eom, Giyeol Kim, Myeongju Kang, Sooyoung Yang, Jihyong Oh]",
     "date": "2026-09-17"
   },
   {
-    "id": "I1",
+    "id": "I2",
     "text": "CN Application No. 202611444958.9, “Method and Apparatus for Object Search Based on Diffusion Model” [Chanho Eom, Giyeol Kim, Myeongju Kang, Sooyoung Yang, Jihyong Oh]",
     "date": "2026-09-17"
   },
   {
-    "id": "P10",
+    "id": "I1",
+    "anchor": "patent-us-19442364",
+    "text": "US Application No. 19/442,364, “Method and Apparatus for 3D Gaussian-Based Dynamic Scene Representation Using Motion Decomposition” [Sang Woon Kwak, Joon Soo Kim, Jun Young Jeong, Ji Hyong Oh]",
+    "date": "2026-01-07"
+  },
+  {
+    "id": "P11",
     "text": "출원번호: 10-2026-0234550, \"물리적 인과관계 추론 기반 다중 턴 이미지 편집 장치 및 방법 (Apparatus and Method for Multi-Turn Image Editing Based on Physical Cause-and-Effect Reasoning)\" [오지형, 성제훈, 최승호]",
     "date": "2026-11-20"
   },
   {
-    "id": "P9",
+    "id": "P10",
     "text": "출원번호: 10-2026-0111361, \"인공지능 생성 콘텐츠의 참조 기반 초해상도화 및 정제 방법 및 장치 (Apparatus and Method for Reference-guided Super-Resolution and Refinement of AI-Generated Content)\" [오지형, 계다현, 성제훈]",
     "date": "2026-06-18"
   },
   {
-    "id": "P8",
+    "id": "P9",
     "text": "출원번호: 10-2026-0111362, \"스타일-콘텐츠 분리 기반 크로스 도메인 객체 합성 방법 및 장치 (Apparatus and Method for Cross-Domain Object Compositing Based on Style-Content Disentanglement)\" [오지형, 고석훈]",
     "date": "2026-06-18"
   },
   {
-    "id": "P7",
+    "id": "P8",
     "text": "출원번호: 10-2026-0111360, \"순서 인식형 올인원 이미지 복원 장치 및 방법 (Apparatus and Method for Multi-Degradation Image Restoration Based on Order-aware Restoration)\" [오지형, 최승호]",
     "date": "2026-06-18"
   },
   {
-    "id": "P6",
+    "id": "P7",
     "text": "출원번호: 10-2026-0028291, \"소볼레프 푸리에 신경 연산자를 이용한 임의 배율 영상 초해상화 방법 및 장치 (Arbitrary-scale image super-resolution method and apparatus using a Sobolev Fourier neural operator)\" [오지형, 황형주, 오종권, 손휘재]",
     "date": "2026-02-12"
   },
   {
-    "id": "P5",
+    "id": "P6",
     "text": "출원번호: 10-2026-0018369, \"이종 3차원 표현 간의 양방향 기하 감독 기반 단계적 정렬 방법 및 장치 (Method and Apparatus for Progressive Alignment Between Heterogeneous 3D Representations Using Bidirectional Geometric Supervision)\" [오지형, 최종원, 정호준, 이재윤]",
     "date": "2026-01-29"
   },
   {
-    "id": "P4",
+    "id": "P5",
     "text": "출원번호: 10-2026-0018370, \"적응적 캐시 주입 및 시맨틱 앵커 프롬프트를 이용한 제로샷 이미지 모핑 장치 및 방법 (Zero-shot Image Morphing Apparatus and Method Using Adaptive Cache Injection and Semantic Anchor Prompting)\" [오지형, 성제훈, 계다현]",
     "date": "2026-01-29"
   },
   {
-    "id": "P3",
+    "id": "P4",
     "text": "출원번호: 10-2026-0018368, \"주파수 정렬 자기 증류와 적응형 모듈레이션을 이용한 실세계 이미지 초해상도 학습 방법 및 장치 (Method and Apparatus for Real-World Image Super-Resolution Using Frequency-Aligned Self-Distillation and Adaptive Modulation)\" [오지형, 최승호]",
     "date": "2026-01-29"
+  },
+  {
+    "id": "P3",
+    "anchor": "patent-kr-10-2025-0192830",
+    "text": "출원번호: 10-2025-0192830, \"장기 비디오의 4DGS 재구성을 위한 양방향 변형 및 혼합 방법 (A method of bidirectional deformation and blending for 4DGS reconstruction of long-range videos)\" [곽상운, 정준영, 권의영, 오지형]",
+    "date": "2025-12-08"
   },
   {
     "id": "P2",
