@@ -308,6 +308,18 @@ body[data-page="home"] .area-top{margin-bottom:112px}
   .paper-author-lab-name { background: none; color: inherit; }
 }
 
+.distinction-icon {
+  display: inline-block;
+  width: 1.05rem;
+  height: 1.05rem;
+  margin-inline-end: .25rem;
+  vertical-align: -.19em;
+  fill: none;
+  stroke: var(--highlight);
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .record-number {
   --record-color: var(--highlight);
   display: inline-grid;

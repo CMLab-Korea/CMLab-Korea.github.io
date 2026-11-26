@@ -162,7 +162,6 @@
     "unavailable_urls": [
       "https://github.com/CMLab-Korea/ECCV26-CHIMERA"
     ],
-    "verification": "needs verification 29",
     "source_affiliations": "PrincetonUniv.",
     "organizations": [
       "princeton"
@@ -229,7 +228,7 @@
     "venue_short": "Preprint",
     "teaser": "assets/media/publications/01 Preprints and Under Review/007 [U9] Chameleon - Style-Content Disentangled Framework for Cross-Domain Object Compositing/teaser.webp",
     "teaser_video": "",
-    "authors": "Sukhun Ko, Soo Ye Kim† and Jihyong Oh†",
+    "authors": "Sukhun Ko, Jeahun Sung, Soo Ye Kim† and Jihyong Oh†",
     "affiliations": [
       "Adobe Research"
     ],
@@ -258,7 +257,6 @@
         "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQeZ0qIsN6r1wYu1KyLh5Um32vTmCwmN7No169Gf1XywoZ3m-WMRTV8SCE6dT82HBfY597MvC-K6dsDhCVxFO0U1R7xCDt40Jo1owAGx7JLv85X6l_BfpIhH7c1YMBzAHlPCRuwzbtnGNMSwCOl36KAVrgz8nt6xSYfGwA2t9fPAAzHMRWwOVQoe_mDqr5G_YRAsaHK-MUggAS5fLlD_p2z19Ql9w1hGj7UjUmUjKoQ=w1280"
       }
     ],
-    "verification": "needs verification 32",
     "arxiv_url": "https://arxiv.org/abs/2606.01079",
     "project_url": "https://cmlab-korea.github.io/Chameleon/",
     "source_affiliations": "AdobeResearch",
@@ -308,7 +306,6 @@
         "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc6LP1_VdZLU0ZVQ9yXfO2Yhodc_mcEjsi3kWqpXobE0P2fIGQp8iOZdKcZ20jaDDVQR0yRLT-ZwAFTU2hpqomaewePFbF4Ee58GbHfnhs4n4ACDGz_AaOVlz26rJO2JLd4-eKVlgaV5Uqh87RoDKj9VcHoSvaiwWBjBunpqB8LMhEbuFP0MQF9Hga_MOo3flOGCaCa3DIrFLvbFYSV_1BkTFR2903mA2INsMs5tOo=w1280"
       }
     ],
-    "verification": "needs verification 33",
     "arxiv_url": "https://arxiv.org/pdf/2606.15158",
     "project_url": "https://cmlab-korea.github.io/RefGC-SR2/",
     "code_url": "https://github.com/CMLab-Korea/arXiv26-RefGC-SR2",
@@ -585,11 +582,11 @@
         "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQffb1SJG8BXMEGqhpcHVQ-HlzCEnr-SsoQnB3VHJn76AX6uQrQLBpjX_4wH61tXpTlPOkpk4OkUNFzx_vFjWgXWKQVZrjoly0jo8_H1iFXsM1p3vCkV5D2mO46mPEKb3yaIPKHYDGmIDmRW7L88mft7kCJDCHIy4wO85ZgUnv61JLGFoXP4m22tumIpWX5i6opSKu-AB1QpMGF2l67Ek8Sq0bfT7_BK7nfFDpCFLiA=w1280"
       }
     ],
-    "verification": "needs verification 37",
     "source_affiliations": "RAZER,KAIST",
     "organizations": [
       "razer",
-      "kaist"
+      "kaist",
+      "adobe"
     ],
     "media_folder": "01 Preprints and Under Review/015 [U1] Training-free Style Control and Style Fidelity Metric for Text-Image Manipulation",
     "catalog_number": "U1"
@@ -634,7 +631,6 @@
         "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc1_QhF3TqeHMPBt_yFOG2Sv8rCtIH5zt9QAx5ap9fz-8IwCzqwB4ep9bO0n039SW19CchODNIgmMImbLBougBM4aORL6j_3TpMwea69eROnxNhmJgdaaB1Bl73bH1ScRVSbITjMfNRCkLVlJMjdEUpa8QeOmYU3VjN7nHjT0iy24C8Qug6d9HM_wkEGNbzjmyTKm7fXJmAtFLRCT1VWSuZ3NJY8TYH9z0XnqB2suw=w1280"
       }
     ],
-    "verification": "needs verification 1",
     "arxiv_url": "https://arxiv.org/abs/2604.00853",
     "project_url": "https://kaist-viclab.github.io/motiongrounder-site/",
     "source_venue": "NeurIPS 2026 (Acceptance Rate: 25.7% ≈ 7,900/30,709)",
@@ -1492,7 +1488,6 @@
         "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQe6tvcZ59JvndgCcTiVwot2yO7yZqUnBiQRVRBR8e5K01ABBwa_XU2ouJCpFIMO1H_XqHHaqVaWRuRTCh29UGs2-6mk0Yx6lzhso3VEUvgzvJsL0EXFfgncOtOgI1CKD0CbkoSPHKNuHyBSwaExQ55YgM4s26yvmYAUNlsRZlZ92AT4MqzJSvlhuo1sWPANl9cYdS5kIGBE0VCribbzX4Du9BN7vvl4cOZYQ1cyXb0=w1280"
       }
     ],
-    "verification": "needs verification 15",
     "venue_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Kim_Leveraging_Prior_Knowledge_of_Diffusion_Model_for_Person_Search_ICCV_2025_paper.pdf",
     "project_url": "https://perceptualai-lab.github.io/DiffPS/",
     "code_url": "https://github.com/PerceptualAI-Lab/DiffPS",
@@ -1502,7 +1497,11 @@
       "snu"
     ],
     "catalog_number": "C10",
-    "media_folder": "02 Peer-reviewed Publications/015 [C10] Leveraging Prior Knowledge of Diffusion Model for Person Search"
+    "media_folder": "02 Peer-reviewed Publications/015 [C10] Leveraging Prior Knowledge of Diffusion Model for Person Search",
+    "author_organizations": {
+      "Sooyoung Yang": "snu",
+      "Myungjoo Kang": "snu"
+    }
   },
   {
     "id": 16,
@@ -1587,7 +1586,8 @@
     "affiliations": [],
     "metadata_reviewed": false,
     "areas": [
-      "Generative & Agentic Visual AI"
+      "Generative & Agentic Visual AI",
+      "Pixel-Level Intelligence"
     ],
     "source_url": "https://cmlab.cau.ac.kr/publications",
     "source_links": [
@@ -1611,7 +1611,6 @@
         "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcdy33Lm8RBZhGx8d9WJzu0MWve_CiJROjkjBhfcTwdANP9Ev7zK7Ef4j1YZwtAC638fkeQvVKwlV_z0Gn_MlVuVfig673yYmw1Y0swS9iCTzixSk_Fsz1g94-b1Lrz2uL0C0rceNk4421-LV7qtpKyOcun3tXLhV_7HREoPfZzeL3St0fVDw72qTGETRPGA_nv5b_f5c1atF75xwMHuu_r3SjoTP2FT4oTxs3iQbg=w1280"
       }
     ],
-    "verification": "needs verification 17",
     "venue_url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014353",
     "additional_links": [
       {
@@ -2110,7 +2109,6 @@
         "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQcTkBC1N6e-1nKXA8IY-h80EvjK6ec_C0_csXnSaBKpOSEmumj3LEYqXotWC7_K93_3AkpbHKJ026uVVJHjv24Jv_B4O7sqiIE7ahLqs0pQ-mdGmFdD2oZQSRTdMlUmOhzErhrmMYrBDKcGqxJpj4y0BP21O_YPY0PC3qQIQ1I_peyidKUdqn5q9GWB-0sV1M1Rn7hOjGHIGzLrkrXdzjCPu7EMaq6By7V0Vp2Y8Y0=w1280"
       }
     ],
-    "verification": "needs verification 25",
     "venue_url": "https://ieeexplore.ieee.org/document/9064495",
     "additional_links": [
       {
@@ -2294,7 +2292,7 @@
         "src": "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQc51f-rD2ToEi3NSsx8qQhV-5J484Di-FjynsJbhy-KJcnvnykHfupzLhPZl20_pNUc2xC_TKCL-s3HXd9J3hLBBjExdOeFcCnZQPe9-LVB2366ji1R5pxtdqNTC6-L1_TnkI8chY9M3ipl2BJNsrkFyfkvIJJrVf_S4cb-nCxI84cTRmBKtWCjKQNU2_Lm7Iqqd60PsVMeomam15b8xToddkc3gtCA37jILIcB=w1280"
       }
     ],
-    "venue_url": "http://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_Deep_SR-ITM_Joint_Learning_of_Super-Resolution_and_Inverse_Tone-Mapping_for_ICCV_2019_paper.pdf",
+    "venue_url": "https://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_Deep_SR-ITM_Joint_Learning_of_Super-Resolution_and_Inverse_Tone-Mapping_for_ICCV_2019_paper.pdf",
     "code_url": "https://github.com/sooyekim/Deep-SR-ITM",
     "additional_links": [
       {
@@ -2313,7 +2311,6 @@
     "unavailable_urls": [
       "http://openaccess.thecvf.com/content_ICCV_2019/papers/Kim_Deep_SR-ITM_Joint_Learning_of_Super-Resolution_and_Inverse_Tone-Mapping_for_ICCV_2019_paper.pdf"
     ],
-    "verification": "needs verification 28",
     "catalog_number": "C1",
     "media_folder": "02 Peer-reviewed Publications/028 [C1] Deep SR-ITM - Joint Learning of Super-Resolution and Inverse Tone-Mapping for 4K UHD HDR Applications"
   }

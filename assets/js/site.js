@@ -502,21 +502,22 @@
       return link;
     }
 
-    function authorLine(authors, organizations) {
+    function authorLine(authors, organizations, authorOrganizations) {
       const line = node('p', 'paper-authors');
       const names = authorNames(authors);
       names.forEach((name, i) => {
         if (i) line.append(', ');
         const marks = name.match(/[†*‡]+$/)?.[0] || '';
         const plain = name.slice(0, name.length - marks.length).trim();
-        const member = identities.get(identityKey(plain));
+        const key = identityKey(plain);
+        const member = identities.get(key);
         const label = member?.author_name || plain;
         const author = member?.url ? externalLink(label, member.url, 'paper-author-link') : node('span', '', label);
         if (member?.local) {
           author.classList.add('paper-author-highlight');
           author.replaceChildren(node('span', 'paper-author-lab-name', label));
         } else {
-          const institution = organizations?.get(member?.organization);
+          const institution = organizations.get(authorOrganizations.get(key) || member?.organization);
           if (applyInstitutionColors(author, institution)) {
             author.classList.add('paper-author-collaborator');
             author.title = institution.name;
@@ -552,7 +553,14 @@
       badge.append(node('span', 'venue-abbr', venueBadge(paper)));
       badge.append(node('span', 'venue-kind', paper.type === 'Preprint' ? String(paper.year) : paper.type));
       if (paper.distinction && paper.distinction_percent) {
-        badge.append(node('span', 'paper-distinction', [paper.distinction, paper.distinction_percent].filter(Boolean).join(' · ')));
+        const distinction = node('span', 'paper-distinction', paper.distinction + ' · ' + paper.distinction_percent);
+        const iconId = {Oral: 'oral', Highlight: 'award'}[paper.distinction];
+        if (iconId) {
+          const icon = symbol('assets/img/news-icons.svg', iconId);
+          icon.classList.add('distinction-icon');
+          distinction.prepend(icon);
+        }
+        badge.append(distinction);
       }
       if (paper.venue.includes('Findings')) badge.append(node('span', 'venue-kind', 'Findings'));
       row.append(badge);
@@ -577,7 +585,9 @@
       titleLabel.append(title);
       if (destination) heading.append(titleLabel);
       body.append(heading);
-      const organizationIds = new Set(paper.organizations || []);
+      const authorOrganizations = new Map(Object.entries(paper.author_organizations || {})
+        .map(([author, organization]) => [identityKey(author), organization]));
+      const organizationIds = new Set([...(paper.organizations || []), ...authorOrganizations.values()]);
       if (paper.use_current_collaborator_affiliations) {
         for (const author of authorNames(paper.authors)) {
           const person = identities.get(identityKey(author));
@@ -585,7 +595,7 @@
         }
       }
       const organizations = new Map([...organizationIds].filter(id => institutions[id]).map(id => [id, institutions[id]]));
-      if (paper.authors) body.append(authorLine(paper.authors, organizations));
+      if (paper.authors) body.append(authorLine(paper.authors, organizations, authorOrganizations));
       const organizationsByName = new Map([...organizations.values()].map(org => [org.name, org]));
       const affiliationLabels = [...new Set([...(paper.affiliations || []), ...organizationsByName.keys()])];
       if (affiliationLabels.length) {
@@ -924,8 +934,18 @@
           $('#alumni').append(alumni);
         }
       }
-      if (location.hash.startsWith('#member-')) document.getElementById(location.hash.slice(1))?.scrollIntoView();
-    }).catch(() => { $('#core-people').textContent = 'Member profiles are temporarily unavailable.'; });
+    }).catch(() => {
+      $('#core-people').textContent = 'Member profiles are temporarily unavailable.';
+    }).then(async () => {
+      const hash = location.hash;
+      if (hash !== '#research-network' && !hash.startsWith('#member-')) return;
+
+      // The first anchor jump can precede the cards and fonts above the target.
+      await document.fonts.ready;
+      if (location.hash === hash) {
+        document.getElementById(hash.slice(1))?.scrollIntoView({block: 'start', behavior: 'instant'});
+      }
+    });
 
     Promise.all([getData('collaborators.json'), getData('institutions.json'), getPublications()])
       .then(([collaborators, institutions, papers]) => {
