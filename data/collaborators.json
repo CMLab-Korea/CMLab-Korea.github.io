@@ -304,5 +304,32 @@
     "category": "Industry",
     "url": "https://tomtom1103.github.io/",
     "role_source": "https://tomtom1103.github.io/"
+  },
+  {
+    "person": "JungHyuk Im",
+    "organization": "innerverz",
+    "institution": "INNERVERZ",
+    "category": "Industry",
+    "url": "https://sites.google.com/view/mlow-icip26-satellite-workshop/home",
+    "ongoing": true
+  },
+  {
+    "person": "Donghoon Han",
+    "organization": "superb-ai",
+    "institution": "Superb AI",
+    "category": "Industry",
+    "url": "https://www.linkedin.com/in/dhhan/",
+    "ongoing": true
+  },
+  {
+    "person": "Victoria Vesna",
+    "role": "Professor",
+    "organization": "ucla",
+    "institution": "UCLA Art|Sci Center",
+    "unit": "Design Media Arts",
+    "category": "Academia",
+    "url": "https://victoriavesna.com/",
+    "role_source": "https://artsci.ucla.edu/",
+    "ongoing": true
   }
 ]

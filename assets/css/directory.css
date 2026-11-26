@@ -19,6 +19,23 @@
 .collab-identity { min-width: 0; }
 .directory-card h4 { margin-bottom: .2rem; line-height: 1.3; overflow-wrap: anywhere; }
 .directory-card .collab-organization { color: var(--text); font-size: .8rem; line-height: 1.4; margin-bottom: .15rem; overflow-wrap: anywhere; }
+@supports (background-clip: text) and (color: color-mix(in srgb, red, white)) {
+  .directory-card .collab-organization.institution-branded {
+    --institution-ink: 44%;
+    width: fit-content;
+    background-image: linear-gradient(90deg,
+      color-mix(in srgb, var(--institution-color-1) var(--institution-ink), var(--text)),
+      color-mix(in srgb, var(--institution-color-2) var(--institution-ink), var(--text)),
+      color-mix(in srgb, var(--institution-color-3) var(--institution-ink), var(--text)));
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+  }
+  [data-theme="light"] .directory-card .collab-organization.institution-branded { --institution-ink: 36%; }
+}
+@media (forced-colors: active) {
+  .directory-card .collab-organization.institution-branded { background: none; color: CanvasText; }
+}
 .directory-card .collab-position { color: var(--muted); font-size: .74rem; line-height: 1.4; margin-bottom: 0; overflow-wrap: anywhere; }
 .organization-logo {
   flex: 0 0 auto;
