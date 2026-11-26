@@ -520,14 +520,6 @@
       return link;
     }
 
-    function applyInstitutionColors(element, institution) {
-      const colors = institution?.brand_colors;
-      if (!Array.isArray(colors) || colors.length !== 3 || !colors.every(color => /^#[\da-f]{6}$/i.test(color))) return false;
-      element.classList.add('institution-branded');
-      colors.forEach((color, index) => element.style.setProperty('--institution-color-' + (index + 1), color));
-      return true;
-    }
-
     function authorLine(authors, organizations) {
       const line = node('p', 'paper-authors');
       const names = authorNames(authors);
@@ -895,6 +887,14 @@
     return img;
   }
 
+  function applyInstitutionColors(element, institution) {
+    const colors = institution?.brand_colors;
+    if (!Array.isArray(colors) || colors.length !== 3 || !colors.every(color => /^#[\da-f]{6}$/i.test(color))) return false;
+    element.classList.add('institution-branded');
+    colors.forEach((color, index) => element.style.setProperty('--institution-color-' + (index + 1), color));
+    return true;
+  }
+
   function symbol(path, id) {
     const namespace = 'http://www.w3.org/2000/svg';
     const svg = document.createElementNS(namespace, 'svg');
@@ -941,8 +941,8 @@
       .then(([collaborators, institutions, papers]) => {
         const grid = $('#collaborators-grid');
         const organizationOrder = {
-          Industry: ['microsoft', 'adobe', 'oracle', 'razer', 'flawless', 'naver-ai', 'naver-cloud', 'lunit', 'inshorts'],
-          Academia: ['princeton', 'cornell-tech', 'kaist', 'snu', 'postech', 'khu', 'cau', 'konkuk']
+          Industry: ['microsoft', 'adobe', 'oracle', 'razer', 'flawless', 'naver-ai', 'naver-cloud', 'lunit', 'superb-ai', 'innerverz', 'inshorts'],
+          Academia: ['princeton', 'ucla', 'cornell-tech', 'kaist', 'snu', 'postech', 'khu', 'cau', 'konkuk']
         };
         for (const category of ['Industry', 'Academia', 'Research Institute']) {
           const group = collaborators.filter(p => p.category === category);
@@ -962,7 +962,9 @@
             const name = node('div', 'collab-identity');
             const heading = node('h4');
             heading.append(nameLink(person.person, person.url));
-            name.append(heading, node('p', 'collab-organization', organization.name));
+            const affiliation = node('p', 'collab-organization', organization.name);
+            applyInstitutionColors(affiliation, organization);
+            name.append(heading, affiliation);
             const position = [person.role, person.unit].filter(Boolean).join(' · ');
             if (position) name.append(node('p', 'collab-position', position));
             header.append(name);

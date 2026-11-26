@@ -173,5 +173,33 @@
       "#82be10",
       "#0ca7eb"
     ]
+  },
+  "innerverz": {
+    "name": "INNERVERZ",
+    "logo": "assets/img/institutions/innerverz.webp",
+    "logo_source": "https://github.com/chowy333/Innerverz-AI.github.io/blob/92e54a20dec9e0b2acc84d30373725300ae3a133/assets/images/logo-innerverz.png",
+    "brand_colors": [
+      "#383635",
+      "#a2a1a1",
+      "#dcdddd"
+    ]
+  },
+  "superb-ai": {
+    "name": "Superb AI",
+    "brand_colors": [
+      "#ff625a",
+      "#ee6c61",
+      "#f19f8d"
+    ]
+  },
+  "ucla": {
+    "name": "UCLA Art|Sci Center",
+    "logo": "assets/img/project-orgs/ucla-artsci.webp",
+    "logo_source": "https://artsci.ucla.edu/",
+    "brand_colors": [
+      "#13c8b9",
+      "#5fd9cc",
+      "#7ce6d7"
+    ]
   }
 }
