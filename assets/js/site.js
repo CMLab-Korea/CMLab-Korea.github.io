@@ -1396,8 +1396,7 @@
       } catch {
         id = null;
       }
-      const path = page === '404' ? '/404.html'
-        : location.pathname === '/' ? '/index.html' : location.pathname;
+      const path = location.pathname === '/' ? '/index.html' : location.pathname;
       const recordVisit = Boolean(id && location.origin === 'https://cmlab-korea.github.io');
       const request = recordVisit ? {
         method: 'POST',
@@ -1418,7 +1417,9 @@
           const breakdown = await response.json();
           const countryNames = new Intl.DisplayNames(['en'], {type: 'region'});
           for (const [key, list] of [['countries', breakdown.countries], ['pages', breakdown.pages]]) {
-            const rows = Array.isArray(list) ? list : [];
+            const rows = Array.isArray(list)
+              ? list.filter(row => key !== 'pages' || row.label !== '/404.html')
+              : [];
             const target = $('[data-visitor-breakdown="' + key + '"]', dialog);
             target.replaceChildren(...rows.map(row => {
               const label = key === 'countries' && /^[A-Z]{2}$/.test(row.label) ? countryNames.of(row.label) : row.label;
