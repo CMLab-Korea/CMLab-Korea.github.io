@@ -6,7 +6,9 @@
       "#0174b7",
       "#808183",
       "#8f4559"
-    ]
+    ],
+    "network_order": 8,
+    "country": "KR"
   },
   "kaist": {
     "name": "KAIST",
@@ -15,7 +17,9 @@
       "#1c3d7a",
       "#1c4897",
       "#4e7ab4"
-    ]
+    ],
+    "network_order": 5,
+    "country": "KR"
   },
   "khu": {
     "name": "Kyung Hee University",
@@ -24,7 +28,9 @@
       "#8b1b15",
       "#9c1a1e",
       "#cb8666"
-    ]
+    ],
+    "network_order": 7,
+    "country": "KR"
   },
   "konkuk": {
     "name": "Konkuk University",
@@ -33,7 +39,9 @@
       "#237d38",
       "#169136",
       "#83b392"
-    ]
+    ],
+    "network_order": 9,
+    "country": "KR"
   },
   "postech": {
     "name": "POSTECH",
@@ -42,7 +50,9 @@
       "#373737",
       "#a80245",
       "#d4c6cd"
-    ]
+    ],
+    "network_order": 6,
+    "country": "KR"
   },
   "princeton": {
     "name": "Princeton University",
@@ -51,7 +61,8 @@
       "#020101",
       "#fe6503",
       "#815b43"
-    ]
+    ],
+    "network_order": 2
   },
   "adobe": {
     "name": "Adobe Research",
@@ -87,7 +98,8 @@
       "#0166a6",
       "#3e7aa2",
       "#f15921"
-    ]
+    ],
+    "country": "KR"
   },
   "razer": {
     "name": "Razer",
@@ -107,7 +119,8 @@
       "#2ce95a",
       "#2bccaa",
       "#469be2"
-    ]
+    ],
+    "country": "KR"
   },
   "inshorts": {
     "name": "inshorts.ai",
@@ -116,7 +129,8 @@
       "#010101",
       "#3c3c3c",
       "#666666"
-    ]
+    ],
+    "country": "KR"
   },
   "cornell-tech": {
     "name": "Cornell Tech",
@@ -126,7 +140,8 @@
       "#000000",
       "#404040",
       "#a5a5a5"
-    ]
+    ],
+    "network_order": 1
   },
   "snu": {
     "name": "Seoul National University",
@@ -135,7 +150,9 @@
       "#0a316e",
       "#00337e",
       "#7693bb"
-    ]
+    ],
+    "network_order": 4,
+    "country": "KR"
   },
   "naver-cloud": {
     "name": "NAVER Cloud",
@@ -144,7 +161,8 @@
       "#2b2b2b",
       "#02cf5c",
       "#16c05f"
-    ]
+    ],
+    "country": "KR"
   },
   "lunit": {
     "name": "Lunit Inc.",
@@ -153,7 +171,8 @@
       "#010101",
       "#02cbea",
       "#1cc3de"
-    ]
+    ],
+    "country": "KR"
   },
   "dexter": {
     "name": "Dexter Studios",
@@ -162,7 +181,8 @@
       "#211f1f",
       "#747373",
       "#bbbabb"
-    ]
+    ],
+    "country": "KR"
   },
   "microsoft": {
     "name": "Microsoft",
@@ -182,7 +202,8 @@
       "#383635",
       "#a2a1a1",
       "#dcdddd"
-    ]
+    ],
+    "country": "KR"
   },
   "superb-ai": {
     "name": "Superb AI",
@@ -191,7 +212,8 @@
       "#0a0d2b",
       "#223882",
       "#1857e7"
-    ]
+    ],
+    "country": "KR"
   },
   "ucla": {
     "name": "UCLA Art|Sci Center",
@@ -201,6 +223,7 @@
       "#13c8b9",
       "#5fd9cc",
       "#7ce6d7"
-    ]
+    ],
+    "network_order": 3
   }
 }
