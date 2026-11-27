@@ -1,6 +1,6 @@
 const SITE = 'https://cmlab-korea.github.io';
 const PATHS = new Set(['/index.html', '/publications.html', '/people.html', '/projects.html', '/join.html',
-  '/life.html', '/research.html', '/teaching.html', '/collaborate.html', '/404.html']);
+  '/life.html', '/research.html', '/teaching.html', '/collaborate.html']);
 
 function koreanDay() {
   return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
@@ -53,7 +53,7 @@ export default {
     const [counts, countries, pages] = await env.DB.batch([
       totals,
       env.DB.prepare('SELECT country AS label, COUNT(DISTINCT browser_id) AS count FROM visits GROUP BY country ORDER BY count DESC LIMIT 20'),
-      env.DB.prepare('SELECT path AS label, COUNT(DISTINCT browser_id) AS count FROM visits GROUP BY path ORDER BY count DESC')
+      env.DB.prepare('SELECT path AS label, COUNT(DISTINCT browser_id) AS count FROM visits WHERE path != ? GROUP BY path ORDER BY count DESC').bind('/404.html')
     ]);
     return reply({...counts.results[0], countries: countries.results, pages: pages.results});
   }
