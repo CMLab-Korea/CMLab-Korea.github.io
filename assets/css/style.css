@@ -407,3 +407,57 @@ body[data-page="home"] .area-top{margin-bottom:112px}
 @media (forced-colors: active) {
   .scene-center b { color: CanvasText; background: none; filter: none; }
 }
+
+@supports (background-clip: text) {
+  .hero-lab-name strong {
+    background-image: linear-gradient(135deg, #eff9ff 12%, #88cbff 43%, #799bff 76%, #beaaff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 .4em #6c9dff65);
+  }
+  [data-theme="light"] .hero-lab-name strong {
+    background-image: linear-gradient(135deg, #006ba0, #234cab 48%, #47388c);
+    filter: none;
+  }
+  @media (forced-colors: active) {
+    .hero-lab-name strong { -webkit-text-fill-color: currentColor; filter: none; }
+  }
+}
+
+.network-showcase {
+  grid-column: 1 / -1;
+  padding: clamp(1rem, 4vw, 2.8rem);
+  background: radial-gradient(ellipse at 95% 0%, color-mix(in srgb, var(--blue) 13%, transparent), transparent 64%), var(--layer);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.network-showcase-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .7rem 2rem; }
+.network-showcase-heading h2 { font-size: clamp(1.7rem, 3.6vw, 2.75rem); margin: 0; }
+.network-showcase-heading a { color: var(--highlight); font-size: .85rem; font-weight: 700; }
+.network-showcase-heading a:hover { text-decoration: underline; }
+.network-logo-group { border-top: 1px solid var(--line); padding-top: .85rem; margin-top: 1rem; }
+.network-logo-group h3 {
+  color: var(--muted);
+  font: 700 .72rem/1.35 'DM Sans', system-ui, sans-serif;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  margin: 0 0 .65rem;
+}
+.network-logo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 8rem), 1fr));
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.network-logo-tile {
+  display: grid;
+  place-items: center;
+  height: 3.4rem;
+  padding: .55rem;
+  background: #fcfdff;
+  border: 1px solid #bdccec;
+  border-radius: 8px;
+}
+.network-logo-tile img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }

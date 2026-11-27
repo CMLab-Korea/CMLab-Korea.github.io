@@ -146,6 +146,32 @@
   }
 
   if (page==='home') {
+    const networkLogos = $('#home-network-logos');
+    Promise.all([getData('collaborators.json'), getData('institutions.json')])
+      .then(([collaborators, institutions]) => {
+        const groups = [];
+        for (const [category, label] of [['Academia', 'Academia'], ['Industry', 'Industry'], ['Research Institute', 'Research Institutes']]) {
+          const ids = new Set(collaborators.filter(person => person.category === category).map(person => person.organization));
+          const organizations = [...ids].map(id => institutions[id])
+            .filter(organization => organization?.logo || organization?.compact_logo)
+            .sort((a, b) => Number(a.country === 'KR') - Number(b.country === 'KR')
+              || (a.network_order ?? Number.MAX_SAFE_INTEGER) - (b.network_order ?? Number.MAX_SAFE_INTEGER)
+              || a.name.localeCompare(b.name));
+          if (!organizations.length) continue;
+          const group = node('section', 'network-logo-group');
+          const logos = node('ul', 'network-logo-list');
+          for (const organization of organizations) {
+            const tile = node('li', 'network-logo-tile');
+            tile.append(photo(organization.logo || organization.compact_logo, '', organization.name));
+            logos.append(tile);
+          }
+          group.append(node('h3', '', label), logos);
+          groups.push(group);
+        }
+        networkLogos.replaceChildren(...groups);
+        networkLogos.closest('.network-showcase').hidden = !groups.length;
+      }).catch(() => { networkLogos.closest('.network-showcase').hidden = true; });
+
     const research = $('#what-we-explore');
     const translation = $('.translation-card', research);
     const directions = $$('.translation-path a', translation).map(link => ({
