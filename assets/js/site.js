@@ -132,15 +132,25 @@
   }
 
   function paperMedia(paper, imageClass, videoClass, controls) {
-    if (!paper.teaser_video) {
-      return paper.teaser ? photo(mediaURL(paper.teaser), imageClass, paper.teaser_alt || '') : null;
+    function poster() {
+      if (!paper.teaser) return null;
+      const image = photo(mediaURL(paper.teaser), imageClass, paper.teaser_alt || '');
+      image.addEventListener('error', () => image.remove(), {once: true});
+      return image;
     }
+
+    if (!paper.teaser_video) return poster();
     const video = node('video', videoClass);
     video.src = mediaURL(paper.teaser_video);
     video.controls = controls;
     video.playsInline = video.defaultMuted = video.muted = video.loop = true;
     video.preload = controls ? 'none' : 'metadata';
     if (paper.teaser) video.poster = mediaURL(paper.teaser);
+    video.addEventListener('error', () => {
+      const image = poster();
+      if (image) video.replaceWith(image);
+      else video.remove();
+    }, {once: true});
     video.setAttribute('aria-label', paper.teaser_video_label || `${paper.short || paper.title} teaser`);
     return video;
   }

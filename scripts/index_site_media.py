@@ -131,7 +131,7 @@ def stage_publication_preview(paper):
     elif not video and local_gif and animated_gif(ROOT / image):
         source = image
 
-    poster = source if not image else None
+    poster = video if not image and video.startswith(f"{PAPERS.as_posix()}/") else None
     if local_gif and (source or video):
         poster = image
     if not (source or poster):
