@@ -328,6 +328,6 @@ if __name__ == "__main__":
         index_profile_photos()
     if options.site_dir:
         from validate_journal_metrics import validate_public_projection
-        validate_public_projection(load(ROOT / "data/journals.json"))
         copy_legacy_media_paths()
         check_staged_site_links()
+        validate_public_projection(load(ROOT / "data/journals.json"))

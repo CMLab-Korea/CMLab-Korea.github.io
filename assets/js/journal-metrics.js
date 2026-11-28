@@ -65,12 +65,23 @@
     }};
   }
 
+  function isPublishedJournal(paper) {
+    return paper.type === 'Journal' && paper.status === 'Published';
+  }
+
+  function scieStatus(paper, journal) {
+    const evidence = journal.scie?.find(entry => entry.year === paper.year
+      && entry.verification_status === 'verified' && entry.public_authorized === true);
+    return ['indexed', 'not_indexed'].includes(evidence?.status) ? evidence.status : 'unconfirmed';
+  }
+
   function summarize(items, registry) {
-    const published = items.filter(p => p.type === 'Journal' && p.status === 'Published');
+    const published = items.filter(isPublishedJournal);
     const distinct = [...new Map(published.map(paper => [paper.id, paper])).values()];
     const rows = registry.journals.map(journal => ({journal, papers: 0, metric: select(journal, registry.public_edition)}));
     const byJournal = new Map(rows.map(row => [row.journal.journal_id, row]));
     const review = [];
+    const metricsByPaper = new Map();
     const counts = {q1: 0, top10: 0, top5: 0, top1: 0, covered: 0, total: distinct.length, scieVerified: 0, scieReviewed: 0};
     for (const paper of distinct) {
       const result = match(paper, registry.journals);
@@ -80,17 +91,19 @@
       }
       const row = byJournal.get(result.journal.journal_id);
       row.papers++;
-      const scie = result.journal.scie?.find(entry => entry.year === paper.year
-        && entry.verification_status === 'verified' && entry.public_authorized === true);
-      if (scie) counts.scieReviewed++;
-      if (scie?.status === 'indexed') counts.scieVerified++;
+      const scie = scieStatus(paper, result.journal);
+      if (scie !== 'unconfirmed') counts.scieReviewed++;
+      if (scie === 'indexed') counts.scieVerified++;
       if (!row.metric) continue;
+      metricsByPaper.set(paper.id, row.metric);
       const category = row.metric.category;
       counts.covered++;
       if (category.quartile === 'Q1') counts.q1++;
       for (const top of [10, 5, 1]) if (category.s2_if_percent <= top) counts['top' + top]++;
     }
-    return {rows, counts, review};
+    const allJournalPapersScie = counts.total > 0 && counts.scieVerified === counts.total
+      && counts.total === items.filter(p => p.type === 'Journal').length;
+    return {rows, counts, metricsByPaper, review, allJournalPapersScie};
   }
 
   globalThis.CMLabJournalMetrics = {match, select, summarize};

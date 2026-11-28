@@ -108,6 +108,15 @@
       .map(name => name.trim().replace(/\+(?=[*†‡+]*$)/g, '†')).filter(Boolean);
   }
 
+  async function publicationJournalReport(papers) {
+    const registry = await getData('journals.json');
+    const report = globalThis.CMLabJournalMetrics.summarize(papers, registry);
+    if (report.allJournalPapersScie) {
+      for (const label of $$('[data-journal-label]')) label.textContent = 'SCIE-INDEXED JOURNAL PAPERS';
+    }
+    return {report, edition: registry.public_edition};
+  }
+
   async function getPublications() {
     const papers = await getData('publications.json');
     const conferences = papers.filter(paper => paper.type === 'Conference').length;
@@ -116,6 +125,9 @@
     putStat('journal', journals);
     putStat('total', conferences + journals);
     putStat('preprint', papers.filter(paper => paper.type === 'Preprint').length);
+    if (page === 'home' && globalThis.CMLabJournalMetrics) {
+      publicationJournalReport(papers).catch(() => { /* Keep the ordinary journal label. */ });
+    }
     return papers;
   }
 
@@ -580,7 +592,7 @@
     }
 
     const journalMetrics = globalThis.CMLabJournalMetrics;
-    const journalMetricsByPaper = new Map();
+    let journalMetricsByPaper = new Map();
     const displayMetric = value => Number.isInteger(value) ? value.toFixed(1) : String(value);
     const displayTop = value => displayMetric(value) + '%';
 
@@ -601,16 +613,15 @@
 
     function paintJournalOverview(report, edition) {
       const {rows, counts} = report;
+      if (!counts.covered) return;
       $('#journal-edition').textContent = `${edition.data_year} JCR · ${edition.release_year} release`;
       const coverage = `Verified JCR metrics for ${counts.covered}/${counts.total} published journal papers.`;
-      const verified = counts.covered
-        ? ` Verified counts · Q1 ${counts.q1} · Top 10% ${counts.top10} · Top 5% ${counts.top5} · Top 1% ${counts.top1}.`
-        : ' No approved metrics for this edition.';
+      const verified = ` Verified counts · Q1 ${counts.q1} · Top 10% ${counts.top10} · Top 5% ${counts.top5} · Top 1% ${counts.top1}.`;
       const scie = counts.scieReviewed
         ? ` Confirmed SCIE at publication: ${counts.scieVerified}/${counts.scieReviewed} reviewed papers.`
         : '';
       $('#journal-coverage').textContent = coverage + verified + scie;
-      $('#journal-metrics-rows').replaceChildren(...rows.map(({journal, papers, metric}) => {
+      $('#journal-metrics-rows').replaceChildren(...rows.filter(row => row.papers > 0).map(({journal, papers, metric}) => {
         const tr = node('tr');
         const title = node('th', '', journal.official_name);
         title.scope = 'row';
@@ -773,15 +784,9 @@
       }
 
       if (journalMetrics) {
-        getData('journals.json').then(registry => {
-          const report = journalMetrics.summarize(items, registry);
-          const rows = new Map(report.rows.map(row => [row.journal.journal_id, row]));
-          paintJournalOverview(report, registry.public_edition);
-          for (const paper of items) {
-            const {journal} = journalMetrics.match(paper, registry.journals);
-            const metric = rows.get(journal?.journal_id)?.metric;
-            if (metric) journalMetricsByPaper.set(paper.id, metric);
-          }
+        publicationJournalReport(items).then(({report, edition}) => {
+          paintJournalOverview(report, edition);
+          journalMetricsByPaper = report.metricsByPaper;
           if (journalMetricsByPaper.size) render();
         }).catch(() => { /* The publication catalog is independent of metrics availability. */ });
       }

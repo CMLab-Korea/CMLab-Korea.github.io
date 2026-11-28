@@ -207,7 +207,33 @@ def select_metric(journal, edition, *, mode="common", year=None, publication_yea
     return record, category
 
 
+def validate_catalog(papers):
+    require(isinstance(papers, list), "Expected a publication list")
+    seen_ids, seen_numbers, seen_titles = set(), set(), set()
+    prefixes = {"Journal": "J", "Conference": "C", "Preprint": "U"}
+    for paper in papers:
+        require(isinstance(paper, dict), "Invalid publication record")
+        paper_id = paper.get("id")
+        require(type(paper_id) is int and paper_id > 0 and paper_id not in seen_ids, "Invalid or duplicate paper ID")
+        seen_ids.add(paper_id)
+        kind = paper.get("type")
+        require(kind in prefixes and year(paper.get("year")), "Invalid publication type or year")
+        number = paper.get("catalog_number")
+        require(isinstance(number, str) and re.fullmatch(prefixes[kind] + r"[1-9][0-9]*", number)
+                and number not in seen_numbers, "Invalid or duplicate catalog number")
+        seen_numbers.add(number)
+        title = paper.get("title")
+        require(isinstance(title, str) and bool(norm(title)) and norm(title) not in seen_titles,
+                "Missing or duplicate normalized publication title")
+        seen_titles.add(norm(title))
+        require(all(isinstance(paper.get(key), str) and paper[key].strip()
+                    for key in ("venue", "venue_short", "status")), "Missing publication display metadata")
+        if kind == "Journal":
+            require(paper["status"] in ("Accepted", "Published"), "Invalid journal publication status")
+
+
 def audit(registry, papers):
+    validate_catalog(papers)
     journals = registry["journals"]
     edition = registry["public_edition"]
     counts = {j["journal_id"]: 0 for j in journals}

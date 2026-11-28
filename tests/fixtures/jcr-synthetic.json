@@ -93,5 +93,73 @@
       "verification_status": "verified",
       "public_authorized": true
     }
+  ],
+  "registry": {
+    "schema_version": 1,
+    "public_edition": {
+      "data_year": 2025,
+      "release_year": 2026
+    },
+    "journals": [
+      {
+        "journal_id": "synthetic-journal",
+        "official_name": "Synthetic Journal",
+        "aliases": [
+          "Synth"
+        ],
+        "issn": "0162-8828",
+        "eissn": null,
+        "bibliography": {
+          "source": "Synthetic fixture",
+          "source_url": "https://example.invalid/synthetic-fixture",
+          "verification_status": "provided",
+          "last_verified": null
+        },
+        "scie": [],
+        "metrics": []
+      }
+    ]
+  },
+  "publications": [
+    {
+      "id": 1,
+      "catalog_number": "J1",
+      "type": "Journal",
+      "status": "Published",
+      "year": 2025,
+      "title": "Synthetic Published Paper",
+      "venue": "Synthetic Journal",
+      "venue_short": "Synth'25"
+    },
+    {
+      "id": 2,
+      "catalog_number": "J2",
+      "type": "Journal",
+      "status": "Accepted",
+      "year": 2026,
+      "title": "Synthetic Accepted Paper",
+      "venue": "Synthetic Journal",
+      "venue_short": "Synth'26"
+    },
+    {
+      "id": 3,
+      "catalog_number": "C1",
+      "type": "Conference",
+      "status": "Published",
+      "year": 2025,
+      "title": "Synthetic Conference Paper",
+      "venue": "Synthetic Conference",
+      "venue_short": "SConf'25"
+    },
+    {
+      "id": 4,
+      "catalog_number": "U1",
+      "type": "Preprint",
+      "status": "Preprint / Under Review",
+      "year": 2026,
+      "title": "Synthetic Preprint",
+      "venue": "Synthetic Repository",
+      "venue_short": "Preprint"
+    }
   ]
 }

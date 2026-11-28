@@ -2,25 +2,9 @@ const assert = require('node:assert/strict');
 const {test} = require('node:test');
 require('../assets/js/journal-metrics.js');
 const {match, select, summarize} = globalThis.CMLabJournalMetrics;
-const publicRegistry = require('../data/journals.json');
-const papers = require('../data/publications.json');
 const fixture = require('./fixtures/jcr-synthetic.json');
-const synthetic = {
-  journal_id:'synthetic-journal', official_name:'Synthetic Journal', aliases:['Synth'],
-  issn:'0162-8828', metrics:fixture.records
-};
-const edition = publicRegistry.public_edition;
-
-test('public catalog counts, exact existing journal matches and blank approved metrics', () => {
-  assert.deepEqual(Object.fromEntries(['Conference','Journal','Preprint'].map(type => [
-    type, papers.filter(p => p.type === type).length
-  ])), {Conference:20, Journal:8, Preprint:15});
-  const report = summarize(papers, publicRegistry);
-  assert.deepEqual(report.rows.map(r => r.papers), [2,2,3,1]);
-  assert.equal(report.review.length, 0);
-  assert.equal(report.counts.covered, 0);
-  assert.ok(publicRegistry.journals.every(j => !j.metrics.length));
-});
+const synthetic = {...fixture.registry.journals[0], metrics:fixture.records};
+const edition = fixture.registry.public_edition;
 
 test('matching priority, unknown, ambiguous and skipped types', () => {
   const list = [synthetic, {...synthetic, journal_id:'other', issn:null}];
@@ -63,6 +47,8 @@ test('published paper totals are deduplicated and top tiers are cumulative', () 
     {...paper,id:7,status:'Accepted'}],{journals:[synthetic],public_edition:edition});
   assert.deepEqual(report.counts,{q1:1,top10:1,top5:1,top1:0,covered:1,total:2,scieVerified:0,scieReviewed:0});
   assert.equal(report.review.length,1);
+  assert.deepEqual([...report.metricsByPaper.keys()], [5]);
+  assert.equal(report.allJournalPapersScie, false);
 });
 
 test('optional rank fields and separate SCIE evidence', () => {
@@ -70,13 +56,39 @@ test('optional rank fields and separate SCIE evidence', () => {
     ({...c,rank:null,total:null,jif_percentile:null,rank_percent:null}))};
   const journal = {...synthetic,metrics:[record],scie:[
     {year:2025,status:'indexed',verification_status:'verified',public_authorized:true},
-    {year:2026,status:'indexed',verification_status:'verified',public_authorized:false}
+    {year:2026,status:'indexed',verification_status:'verified',public_authorized:false},
+    {year:2024,status:'not_indexed',verification_status:'verified',public_authorized:true}
   ]};
   assert.deepEqual(select(journal,edition).percentages,{s2:5,officialTop:null,rankBased:null});
   const make = year => ({id:year,year,type:'Journal',status:'Published',venue:'Synthetic Journal'});
-  const report = summarize([make(2025),make(2026)],{journals:[journal],public_edition:edition});
-  assert.equal(report.counts.total,2);
-  assert.equal(report.counts.covered,2);
+  const registry = {journals:[journal],public_edition:edition};
+  const report = summarize([make(2025),make(2026),make(2024)],registry);
+  assert.equal(report.counts.total,3);
+  assert.equal(report.counts.covered,3);
   assert.equal(report.counts.scieVerified,1);
-  assert.equal(report.counts.scieReviewed,1);
+  assert.equal(report.counts.scieReviewed,2);
+  assert.equal(report.allJournalPapersScie,false);
+  assert.equal(summarize([make(2025)],registry).allJournalPapersScie,true);
+});
+
+test('zero, partial and full coverage after adding a journal and publication', () => {
+  const items = [...fixture.publications,
+    {id:5,catalog_number:'J3',type:'Journal',status:'Published',year:2026,venue:'Synthetic New Journal'}];
+  const added = {...synthetic,journal_id:'synthetic-new',official_name:'Synthetic New Journal',aliases:[],issn:null,metrics:[]};
+  const summarizeWith = journals => summarize(items,{journals,public_edition:edition});
+  assert.equal(summarizeWith([...fixture.registry.journals,added]).counts.covered,0);
+  assert.equal(summarizeWith([synthetic,added]).counts.covered,1);
+  const full = summarizeWith([synthetic,{...added,metrics:fixture.records}]);
+  assert.equal(full.counts.total,2);
+  assert.equal(full.counts.covered,2);
+  assert.deepEqual([...full.metricsByPaper.keys()],[1,5]);
+});
+
+test('common edition change and revision preserve historical selection', () => {
+  const added = {...fixture.records[1],data_year:2026,release_year:2027,release_date:'2027-06-20',last_verified:'2027-06-21'};
+  const revision = {...added,revision:2,revision_date:'2027-07-01',last_verified:'2027-07-02'};
+  const journal = {...synthetic,metrics:[...fixture.records,added,revision]};
+  assert.equal(select(journal,edition).record.data_year,2025);
+  assert.equal(select(journal,{data_year:2026,release_year:2027}).record.revision,2);
+  assert.equal(select(journal,edition,{mode:'historical',year:2024}).record.data_year,2024);
 });

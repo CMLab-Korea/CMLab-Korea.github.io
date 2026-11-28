@@ -18,11 +18,11 @@ FIXTURE = json.loads((ROOT / "tests/fixtures/jcr-synthetic.json").read_text())
 
 class JournalMetricsTests(unittest.TestCase):
     def setUp(self):
-        self.registry = json.loads((ROOT / "data/journals.json").read_text())
+        self.registry = copy.deepcopy(FIXTURE["registry"])
 
     def rows(self, record):
         return [{
-            "journal_id": "ieee-tpami", **{k: v for k, v in record.items() if k in COLUMNS},
+            "journal_id": "synthetic-journal", **{k: v for k, v in record.items() if k in COLUMNS},
             "category": c["name"], **{k: c[k] for k in
                 ("rank", "total", "quartile", "s2_if_percent", "jif_percentile")}
         } for c in record["categories"]]
@@ -46,18 +46,6 @@ class JournalMetricsTests(unittest.TestCase):
                     writer.writeheader()
                     writer.writerows(rows)
             apply_projection(self.registry, path)
-
-    def test_published_registry_and_fixture_boundary(self):
-        validate_registry(self.registry)
-        counts, issues, missing = audit(self.registry, json.loads((ROOT / "data/publications.json").read_text()))
-        self.assertEqual(list(counts.values()), [2, 2, 3, 1])
-        self.assertEqual(issues, [])
-        self.assertEqual(len(missing), 4)
-        with self.assertRaises(ValueError):
-            validate_registry(FIXTURE)
-        self.registry["journals"][0]["metrics"] = FIXTURE["records"]
-        with self.assertRaisesRegex(ValueError, "placeholder provenance"):
-            validate_public_projection(self.registry)
 
     def test_csv_preserves_previous_year_and_revision(self):
         history, edition = FIXTURE["records"]
@@ -148,9 +136,65 @@ console.log(JSON.stringify(result));
         edition = FIXTURE["records"][1]
         with self.assertRaisesRegex(ValueError, "duplicate category"):
             validate_record({**edition, "categories": [edition["categories"][0]] * 2})
-        self.registry["journals"][1]["aliases"].append("TPAMI")
+        other = copy.deepcopy(self.registry["journals"][0])
+        other.update(journal_id="synthetic-other", official_name="Synthetic Other", issn=None)
+        self.registry["journals"].append(other)
         with self.assertRaisesRegex(ValueError, "ambiguous journal name"):
             validate_registry(self.registry)
+
+
+class ProductionIntegrityTests(unittest.TestCase):
+    def test_current_catalog_reconciles(self):
+        registry = json.loads((ROOT / "data/journals.json").read_text())
+        papers = json.loads((ROOT / "data/publications.json").read_text())
+        validate_public_projection(registry)
+        counts, issues, missing = audit(registry, papers)
+        self.assertEqual(issues, [])
+        self.assertEqual(sum(counts.values()), sum(p["type"] == "Journal" for p in papers))
+        self.assertTrue(set(missing) <= set(counts))
+
+    def test_rejects_duplicate_papers_and_synthetic_projections(self):
+        registry = copy.deepcopy(FIXTURE["registry"])
+        papers = copy.deepcopy(FIXTURE["publications"])
+        with self.assertRaisesRegex(ValueError, "duplicate paper ID"):
+            audit(registry, [*papers, papers[0]])
+        with self.assertRaisesRegex(ValueError, "placeholder provenance"):
+            validate_public_projection(registry)
+        with self.assertRaises(ValueError):
+            validate_public_projection(FIXTURE)
+
+    def test_production_cli_accepts_populated_expanded_temporary_catalog(self):
+        # Only a transient test projection with a structurally public-form URL.
+        # The checked-in fixture, real registry and deployment copy stay independent.
+        registry = copy.deepcopy(FIXTURE["registry"])
+        papers = copy.deepcopy(FIXTURE["publications"])
+        journal = registry["journals"][0]
+        journal["bibliography"]["source_url"] = "https://review-fixture.cmlab-korea.github.io/"
+        history, current = copy.deepcopy(FIXTURE["records"])
+        for record in (history, current):
+            record["source_url"] = "https://review-fixture.cmlab-korea.github.io/"
+        added = {**current, "data_year": 2026, "release_year": 2027, "release_date": "2027-06-20",
+                 "last_verified": "2027-06-21"}
+        journal["metrics"] = [history, current, added]
+        other = copy.deepcopy(journal)
+        other.update(journal_id="synthetic-new", official_name="Synthetic New Journal", aliases=["New"],
+                     issn=None, metrics=[added])
+        registry["journals"].append(other)
+        registry["public_edition"] = {"data_year": 2026, "release_year": 2027}
+        papers.append({**papers[0], "id": 5, "title": "New Synthetic Paper", "catalog_number": "J3",
+                       "venue": "Synthetic New Journal", "venue_short": "New'26"})
+        with tempfile.TemporaryDirectory() as folder:
+            target = Path(folder)
+            (target / "journals.json").write_text(json.dumps(registry))
+            (target / "publications.json").write_text(json.dumps(papers))
+            run = subprocess.run([sys.executable, "-B", str(ROOT / "scripts/validate_journal_metrics.py"),
+                                  "--registry", str(target / "journals.json"), "--publications",
+                                  str(target / "publications.json")], text=True, capture_output=True, check=True)
+            self.assertIn("Missing or incomplete common-edition metrics: none", run.stdout)
+            self.assertIn('"synthetic-new": 1', run.stdout)
+            node = subprocess.run(["node", str(ROOT / "tests/journal-production.test.cjs"), str(target)],
+                                  text=True, capture_output=True, check=True)
+            self.assertIn("current public catalog and registry reconcile", node.stdout)
 
 
 if __name__ == "__main__":

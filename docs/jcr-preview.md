@@ -6,6 +6,6 @@ These screenshots show the CMLab site UI. Values marked synthetic come from the 
 - [Desktop, light theme](jcr-preview/card-light.png)
 - [Mobile](jcr-preview/card-mobile.png)
 - [Overview with hypothetical values](jcr-preview/overview-synthetic.png)
-- [Current overview without approved metrics](jcr-preview/overview-empty.png)
+- [Current journal card without approved metrics (overview hidden)](jcr-preview/overview-empty.png)
 
 See the [CSV template](jcr-metrics-template.csv) and [input guide](jcr-metrics-input.md).
