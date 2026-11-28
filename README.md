@@ -6,6 +6,19 @@ Static website for the Creative Vision & Multimedia Lab at Chung-Ang University.
 
 Run `python3 -m http.server 8000` from the repository root, then open `http://localhost:8000`. Serving over HTTP allows the browser to load the JSON data. The custom 404 page uses root-relative navigation for the organization's root GitHub Pages site.
 
+## Data security
+
+1. Manage data according to the current repository's visibility and access permissions.
+2. Store only lab materials approved for public release in a public repository.
+3. Keep personal materials, internal strategy documents, evaluation materials, unpublished documents, and access-restricted data out of this repository and its sync workflows.
+4. Treat every branch, hidden folder, GitHub Actions artifact, issue, pull request, and commit message in a public repository as potentially public.
+5. Before importing data from an external repository, confirm that public release and synchronization are both authorized.
+6. Keep API keys, tokens, credentials, and sensitive raw data out of Git commits.
+7. Verify the destination repository and its visibility before transferring or pushing data to it.
+8. Copy or combine data across workspaces with different access permissions only with explicit authorization.
+9. Obtain authorization before deleting existing data or user work or changing repository visibility.
+10. If a security issue is suspected, stop automated deployments and pushes and notify the user.
+
 ## Content maintenance
 
 | File | Content |
