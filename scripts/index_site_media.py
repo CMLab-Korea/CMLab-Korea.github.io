@@ -327,5 +327,7 @@ if __name__ == "__main__":
     if not (options.publications_only or options.sync_folders or options.gallery_only):
         index_profile_photos()
     if options.site_dir:
+        from validate_journal_metrics import validate_public_projection
         copy_legacy_media_paths()
         check_staged_site_links()
+        validate_public_projection(load(ROOT / "data/journals.json"))

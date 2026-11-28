@@ -23,6 +23,12 @@ Maintain the official public website of the Creative Vision & Multimedia Lab (CM
 9. Obtain authorization before deleting existing data or user work or changing repository visibility.
 10. If a security issue is suspected, stop automated deployments and pushes and notify the user.
 
+### Journal metrics
+
+- Keep licensed JCR material, S2Journal screenshots, raw exports, and credentials in an approved private environment. Treat public branches, commit history, PRs, issues, Actions logs, and artifacts as public surfaces.
+- Use an explicit projection of approved fields for the public registry. Confirm rights for each destination and output, including the website and report exports. Do not access other repositories or personal workspaces for this integration.
+- Publish only verified, explicitly approved metrics with a public provenance reference. Keep unknown values absent. Store synthetic test fixtures outside deployed paths and keep fixture values out of Pages artifacts.
+
 ## Information architecture
 Top level: Home, Research, Publications, People, Join Us, Collaborate.
 Secondary content: Lab Life/Gallery and Teaching/Courses. Keep existing contact channels available from appropriate pages and the footer.

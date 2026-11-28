@@ -108,6 +108,15 @@
       .map(name => name.trim().replace(/\+(?=[*†‡+]*$)/g, '†')).filter(Boolean);
   }
 
+  async function publicationJournalReport(papers) {
+    const registry = await getData('journals.json');
+    const report = globalThis.CMLabJournalMetrics.summarize(papers, registry);
+    if (report.allJournalPapersScie) {
+      for (const label of $$('[data-journal-label]')) label.textContent = 'SCIE-INDEXED JOURNAL PAPERS';
+    }
+    return {report, edition: registry.public_edition};
+  }
+
   async function getPublications() {
     const papers = await getData('publications.json');
     const conferences = papers.filter(paper => paper.type === 'Conference').length;
@@ -116,6 +125,9 @@
     putStat('journal', journals);
     putStat('total', conferences + journals);
     putStat('preprint', papers.filter(paper => paper.type === 'Preprint').length);
+    if (page === 'home' && globalThis.CMLabJournalMetrics) {
+      publicationJournalReport(papers).catch(() => { /* Keep the ordinary journal label. */ });
+    }
     return papers;
   }
 
@@ -579,6 +591,49 @@
       return tag;
     }
 
+    const journalMetrics = globalThis.CMLabJournalMetrics;
+    let journalMetricsByPaper = new Map();
+    const displayMetric = value => Number.isInteger(value) ? value.toFixed(1) : String(value);
+    const displayTop = value => displayMetric(value) + '%';
+
+    function journalMetricBadge(metric) {
+      const {record, category} = metric;
+      const details = node('details', 'journal-metric-badge');
+      const tier = [1, 5, 10].find(threshold => category.s2_if_percent <= threshold);
+      if (tier) details.dataset.tier = String(tier);
+      const summary = node('summary', '', `JCR Top ${displayTop(category.s2_if_percent)} · ${category.quartile} · IF ${displayMetric(record.jif)}`);
+      const ranking = category.rank !== null && category.total !== null ? ` · Rank ${category.rank}/${category.total}` : '';
+      const explanation = node('p', '', `${record.data_year} JCR · ${record.release_year} release · ${category.name}${ranking}. Top percentage uses S2Journal IF(%).`);
+      if (/^https:\/\//.test(record.source_url)) {
+        explanation.append(' ', externalLink(record.source, record.source_url, ''));
+      }
+      details.append(summary, explanation);
+      return details;
+    }
+
+    function paintJournalOverview(report, edition) {
+      const {rows, counts} = report;
+      if (!counts.covered) return;
+      $('#journal-edition').textContent = `${edition.data_year} JCR · ${edition.release_year} release`;
+      const coverage = `Verified JCR metrics for ${counts.covered}/${counts.total} published journal papers.`;
+      const verified = ` Verified counts · Q1 ${counts.q1} · Top 10% ${counts.top10} · Top 5% ${counts.top5} · Top 1% ${counts.top1}.`;
+      const scie = counts.scieReviewed
+        ? ` Confirmed SCIE at publication: ${counts.scieVerified}/${counts.scieReviewed} reviewed papers.`
+        : '';
+      $('#journal-coverage').textContent = coverage + verified + scie;
+      $('#journal-metrics-rows').replaceChildren(...rows.filter(row => row.papers > 0).map(({journal, papers, metric}) => {
+        const tr = node('tr');
+        const title = node('th', '', journal.official_name);
+        title.scope = 'row';
+        tr.append(title);
+        const values = metric ? [displayMetric(metric.record.jif), displayTop(metric.category.s2_if_percent), metric.category.quartile,
+          metric.category.name, metric.record.data_year, papers] : ['—', '—', '—', '—', '—', papers];
+        tr.append(...values.map(value => node('td', '', String(value))));
+        return tr;
+      }));
+      $('#journal-metrics').hidden = false;
+    }
+
     function paperRow(paper) {
       const row = node('article', 'paper-row rich-paper');
       row.id = 'paper-' + paper.id;
@@ -599,6 +654,8 @@
         }
         badge.append(distinction);
       }
+      const journalMetric = journalMetricsByPaper.get(paper.id);
+      if (journalMetric) badge.append(journalMetricBadge(journalMetric));
       if (paper.venue.includes('Findings')) badge.append(node('span', 'venue-kind', 'Findings'));
       row.append(badge);
 
@@ -724,6 +781,14 @@
         counter.textContent = `${matches.length} of ${items.length} entries`;
         feedback.textContent = 'No publications match these filters.';
         feedback.hidden = matches.length > 0;
+      }
+
+      if (journalMetrics) {
+        publicationJournalReport(items).then(({report, edition}) => {
+          paintJournalOverview(report, edition);
+          journalMetricsByPaper = report.metricsByPaper;
+          if (journalMetricsByPaper.size) render();
+        }).catch(() => { /* The publication catalog is independent of metrics availability. */ });
       }
 
       search.addEventListener('input', render);

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "public_edition": {
+    "data_year": 2025,
+    "release_year": 2026
+  },
+  "journals": [
+    {
+      "journal_id": "ieee-tpami",
+      "official_name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "aliases": [
+        "IEEE TPAMI",
+        "TPAMI"
+      ],
+      "issn": "0162-8828",
+      "eissn": "1939-3539",
+      "bibliography": {
+        "source": "User-provided P1/P2 public bibliographic identifiers",
+        "source_url": "https://portal.issn.org/resource/ISSN/0162-8828",
+        "verification_status": "provided",
+        "last_verified": null
+      },
+      "scie": [],
+      "metrics": []
+    },
+    {
+      "journal_id": "ieee-tcsvt",
+      "official_name": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "aliases": [
+        "IEEE TCSVT",
+        "TCSVT"
+      ],
+      "issn": "1051-8215",
+      "eissn": "1558-2205",
+      "bibliography": {
+        "source": "User-provided P1/P2 public bibliographic identifiers",
+        "source_url": "https://portal.issn.org/resource/ISSN/1051-8215",
+        "verification_status": "provided",
+        "last_verified": null
+      },
+      "scie": [],
+      "metrics": []
+    },
+    {
+      "journal_id": "neurocomputing",
+      "official_name": "Neurocomputing",
+      "aliases": [],
+      "issn": "0925-2312",
+      "eissn": "1872-8286",
+      "bibliography": {
+        "source": "User-provided P1/P2 public bibliographic identifiers",
+        "source_url": "https://portal.issn.org/resource/ISSN/0925-2312",
+        "verification_status": "provided",
+        "last_verified": null
+      },
+      "scie": [],
+      "metrics": []
+    },
+    {
+      "journal_id": "remote-sensing",
+      "official_name": "Remote Sensing",
+      "aliases": [],
+      "issn": null,
+      "eissn": "2072-4292",
+      "bibliography": {
+        "source": "User-provided P1/P2 public bibliographic identifiers",
+        "source_url": "https://portal.issn.org/resource/ISSN/2072-4292",
+        "verification_status": "provided",
+        "last_verified": null
+      },
+      "scie": [],
+      "metrics": []
+    }
+  ]
+}
