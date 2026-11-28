@@ -21,7 +21,54 @@
         "last_verified": null
       },
       "scie": [],
-      "metrics": []
+      "metrics": [
+        {
+          "data_year": 2025,
+          "release_year": 2026,
+          "revision": 1,
+          "category_count": 2,
+          "category_completeness": "complete",
+          "source": "S2Journal",
+          "source_url": "https://s2journal.bwise.kr/",
+          "ranking": "jcr",
+          "last_verified": "2026-11-28",
+          "verification_status": "verified",
+          "jif": 20.4,
+          "release_date": null,
+          "revision_date": null,
+          "public_authorized": true,
+          "categories": [
+            {
+              "name": "COMPUTER SCIENCE, ARTIFICIAL INTELLIGENCE",
+              "rank": null,
+              "total": null,
+              "quartile": "Q1",
+              "s2_if_percent": 1.7,
+              "jif_percentile": null,
+              "rank_percent": null,
+              "methods": {
+                "s2_if_percent": "source",
+                "jif_percentile": "official",
+                "rank_percent": "rank / total * 100"
+              }
+            },
+            {
+              "name": "ENGINEERING, ELECTRICAL & ELECTRONIC",
+              "rank": null,
+              "total": null,
+              "quartile": "Q1",
+              "s2_if_percent": 0.9,
+              "jif_percentile": null,
+              "rank_percent": null,
+              "methods": {
+                "s2_if_percent": "source",
+                "jif_percentile": "official",
+                "rank_percent": "rank / total * 100"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "journal_id": "ieee-tcsvt",
@@ -39,7 +86,40 @@
         "last_verified": null
       },
       "scie": [],
-      "metrics": []
+      "metrics": [
+        {
+          "data_year": 2025,
+          "release_year": 2026,
+          "revision": 1,
+          "category_count": 1,
+          "category_completeness": "complete",
+          "source": "S2Journal",
+          "source_url": "https://s2journal.bwise.kr/",
+          "ranking": "jcr",
+          "last_verified": "2026-11-28",
+          "verification_status": "verified",
+          "jif": 10.8,
+          "release_date": null,
+          "revision_date": null,
+          "public_authorized": true,
+          "categories": [
+            {
+              "name": "ENGINEERING, ELECTRICAL & ELECTRONIC",
+              "rank": null,
+              "total": null,
+              "quartile": "Q1",
+              "s2_if_percent": 3.9,
+              "jif_percentile": null,
+              "rank_percent": null,
+              "methods": {
+                "s2_if_percent": "source",
+                "jif_percentile": "official",
+                "rank_percent": "rank / total * 100"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "journal_id": "neurocomputing",
@@ -54,7 +134,40 @@
         "last_verified": null
       },
       "scie": [],
-      "metrics": []
+      "metrics": [
+        {
+          "data_year": 2025,
+          "release_year": 2026,
+          "revision": 1,
+          "category_count": 1,
+          "category_completeness": "complete",
+          "source": "S2Journal",
+          "source_url": "https://s2journal.bwise.kr/",
+          "ranking": "jcr",
+          "last_verified": "2026-11-28",
+          "verification_status": "verified",
+          "jif": 6.7,
+          "release_date": null,
+          "revision_date": null,
+          "public_authorized": true,
+          "categories": [
+            {
+              "name": "COMPUTER SCIENCE, ARTIFICIAL INTELLIGENCE",
+              "rank": null,
+              "total": null,
+              "quartile": "Q1",
+              "s2_if_percent": 20.2,
+              "jif_percentile": null,
+              "rank_percent": null,
+              "methods": {
+                "s2_if_percent": "source",
+                "jif_percentile": "official",
+                "rank_percent": "rank / total * 100"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "journal_id": "remote-sensing",
@@ -69,7 +182,82 @@
         "last_verified": null
       },
       "scie": [],
-      "metrics": []
+      "metrics": [
+        {
+          "data_year": 2025,
+          "release_year": 2026,
+          "revision": 1,
+          "category_count": 4,
+          "category_completeness": "complete",
+          "source": "S2Journal",
+          "source_url": "https://s2journal.bwise.kr/",
+          "ranking": "jcr",
+          "last_verified": "2026-11-28",
+          "verification_status": "verified",
+          "jif": 4.3,
+          "release_date": null,
+          "revision_date": null,
+          "public_authorized": true,
+          "categories": [
+            {
+              "name": "ENVIRONMENTAL SCIENCES",
+              "rank": null,
+              "total": null,
+              "quartile": "Q2",
+              "s2_if_percent": 39.4,
+              "jif_percentile": null,
+              "rank_percent": null,
+              "methods": {
+                "s2_if_percent": "source",
+                "jif_percentile": "official",
+                "rank_percent": "rank / total * 100"
+              }
+            },
+            {
+              "name": "GEOSCIENCES, MULTIDISCIPLINARY",
+              "rank": null,
+              "total": null,
+              "quartile": "Q1",
+              "s2_if_percent": 22.0,
+              "jif_percentile": null,
+              "rank_percent": null,
+              "methods": {
+                "s2_if_percent": "source",
+                "jif_percentile": "official",
+                "rank_percent": "rank / total * 100"
+              }
+            },
+            {
+              "name": "IMAGING SCIENCE & PHOTOGRAPHIC TECHNOLOGY",
+              "rank": null,
+              "total": null,
+              "quartile": "Q2",
+              "s2_if_percent": 39.7,
+              "jif_percentile": null,
+              "rank_percent": null,
+              "methods": {
+                "s2_if_percent": "source",
+                "jif_percentile": "official",
+                "rank_percent": "rank / total * 100"
+              }
+            },
+            {
+              "name": "REMOTE SENSING",
+              "rank": null,
+              "total": null,
+              "quartile": "Q2",
+              "s2_if_percent": 36.6,
+              "jif_percentile": null,
+              "rank_percent": null,
+              "methods": {
+                "s2_if_percent": "source",
+                "jif_percentile": "official",
+                "rank_percent": "rank / total * 100"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
