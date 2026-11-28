@@ -25,3 +25,9 @@ Candidate links supplied for the publication-year review are the Pusan National 
 4. Run the import dry-run on the **approved projection** and inspect the diff before applying. Review the public JSON and stage only approved changes through a PR. Keep restricted values out of the repository, PR, Actions logs and Pages artifacts.
 
 See the [input guide](jcr-metrics-input.md) for the column formats and dry-run command.
+
+## 2025 data / 2026 release activation
+
+On 2026-11-28, the site owner supplied the S2Journal General JCR Ranking results, using the SCIE filter and journal identifiers. The submitted table agrees with the supplied tabulation for the eight categories (TPAMI 2, TCSVT 1, Neurocomputing 1, Remote Sensing 4), identified by the owner as the complete sets. The owner confirmed the approved fields may be displayed on the lab website. The registry links to the public S2Journal entry point and records the date of the supplied lookup and cross-check.
+
+Rank, category size and official JIF percentile remain unavailable. The SCIE filter describes the supplied JCR lookup. Publication-year SCIE coverage remains pending independent public evidence. The 2021 JCR edition remains outside this activation.
