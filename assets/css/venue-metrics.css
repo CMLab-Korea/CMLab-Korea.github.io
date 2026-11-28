@@ -1,19 +1,19 @@
-#venue-metrics {
+:is(#venue-metrics, #journal-metrics) {
   margin: 1rem 0 1.5rem;
   border-block: 1px solid var(--line);
 }
-#venue-metrics summary {
+:is(#venue-metrics, #journal-metrics) summary {
   padding: .9rem .25rem;
   cursor: pointer;
   font-weight: 700;
 }
-#venue-metrics summary span {
+:is(#venue-metrics, #journal-metrics) summary span {
   margin-inline-start: .5rem;
   color: var(--muted);
   font-size: .8rem;
   font-weight: 500;
 }
-#venue-metrics summary:focus-visible {
+:is(#venue-metrics, #journal-metrics) summary:focus-visible {
   outline: 2px solid var(--highlight, var(--ice));
   outline-offset: 2px;
 }
@@ -45,4 +45,32 @@
 }
 .venue-metrics-content :is(th, td):nth-last-child(-n+2) {
   text-align: right;
+}
+
+#journal-metrics .venue-metrics-content { max-width: none; }
+.journal-table-scroll { overflow-x: auto; }
+.journal-table-scroll table { min-width: 35rem; }
+.journal-metric-badge { position: relative; color: var(--muted); font-size: .72rem; overflow-wrap: anywhere; }
+.journal-metric-badge summary { cursor: pointer; color: var(--highlight); }
+.journal-metric-badge[data-tier="10"] summary { text-decoration: underline; text-underline-offset: .18em; }
+.journal-metric-badge[data-tier="5"] summary { font-weight: 700; }
+.journal-metric-badge[data-tier="1"] summary { font-weight: 800; text-decoration: underline; text-underline-offset: .18em; }
+.journal-metric-badge p {
+  position: absolute;
+  z-index: 5;
+  inset-block-start: 100%;
+  inset-inline-start: 0;
+  width: min(16rem, 70vw);
+  margin: .35rem 0 0;
+  padding: .65rem;
+  background: var(--layer);
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+  box-shadow: 0 .35rem 1rem #0003;
+  line-height: 1.4;
+}
+.journal-metric-badge a { text-decoration: underline; }
+.journal-metric-badge summary:focus-visible, .journal-table-scroll:focus-visible {
+  outline: 2px solid var(--highlight);
+  outline-offset: 2px;
 }

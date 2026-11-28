@@ -1,0 +1,97 @@
+{
+  "synthetic": true,
+  "records": [
+    {
+      "data_year": 2024,
+      "release_year": 2025,
+      "release_date": "2025-06-20",
+      "revision": 1,
+      "revision_date": null,
+      "jif": 7.0,
+      "category_completeness": "complete",
+      "category_count": 2,
+      "categories": [
+        {
+          "name": "Synthetic Vision Category",
+          "rank": 3,
+          "total": 100,
+          "quartile": "Q1",
+          "s2_if_percent": 5.0,
+          "jif_percentile": 96.0,
+          "rank_percent": 3.0,
+          "methods": {
+            "s2_if_percent": "source",
+            "jif_percentile": "official",
+            "rank_percent": "rank / total * 100"
+          }
+        },
+        {
+          "name": "Synthetic Imaging Category",
+          "rank": 6,
+          "total": 100,
+          "quartile": "Q1",
+          "s2_if_percent": 7.5,
+          "jif_percentile": 94.0,
+          "rank_percent": 6.0,
+          "methods": {
+            "s2_if_percent": "source",
+            "jif_percentile": "official",
+            "rank_percent": "rank / total * 100"
+          }
+        }
+      ],
+      "source": "S2Journal",
+      "source_url": "https://example.invalid/synthetic-fixture",
+      "ranking": "jcr",
+      "last_verified": "2025-06-21",
+      "verification_status": "verified",
+      "public_authorized": true
+    },
+    {
+      "data_year": 2025,
+      "release_year": 2026,
+      "release_date": "2026-06-20",
+      "revision": 1,
+      "revision_date": null,
+      "jif": 8.0,
+      "category_completeness": "complete",
+      "category_count": 2,
+      "categories": [
+        {
+          "name": "Synthetic Vision Category",
+          "rank": 3,
+          "total": 100,
+          "quartile": "Q1",
+          "s2_if_percent": 5.0,
+          "jif_percentile": 96.0,
+          "rank_percent": 3.0,
+          "methods": {
+            "s2_if_percent": "source",
+            "jif_percentile": "official",
+            "rank_percent": "rank / total * 100"
+          }
+        },
+        {
+          "name": "Synthetic Imaging Category",
+          "rank": 6,
+          "total": 100,
+          "quartile": "Q1",
+          "s2_if_percent": 7.5,
+          "jif_percentile": 94.0,
+          "rank_percent": 6.0,
+          "methods": {
+            "s2_if_percent": "source",
+            "jif_percentile": "official",
+            "rank_percent": "rank / total * 100"
+          }
+        }
+      ],
+      "source": "S2Journal",
+      "source_url": "https://example.invalid/synthetic-fixture",
+      "ranking": "jcr",
+      "last_verified": "2026-06-21",
+      "verification_status": "verified",
+      "public_authorized": true
+    }
+  ]
+}
