@@ -13,6 +13,8 @@ Check each year against a dated Clarivate coverage record or another authoritati
 | Neurocomputing | 2025, 2026 | J3, J5, J6 | [ScienceDirect](https://www.sciencedirect.com/journal/neurocomputing), ISSN 0925-2312 |
 | Remote Sensing | 2021 | J2 | [MDPI](https://www.mdpi.com/journal/remotesensing/indexing), eISSN 2072-4292 |
 
+Candidate links supplied for the publication-year review are the Pusan National University records for [TPAMI](https://scholar2.pusan.ac.kr/journals/019f8e79-d504-7899-95fb-89129ddb0585), [TCSVT](https://scholar2.pusan.ac.kr/en/journals/019f8e7a-4f98-7109-8b44-4eca8f343fca), and [Neurocomputing](https://scholar2.pusan.ac.kr/journals/019f8e7a-797d-7274-9fed-27488858f6df), and the MDPI [Remote Sensing history](https://www.mdpi.com/journal/RemoteSensing/history) and [SCIE journal list](https://www.mdpi.com/about/journals/sci). Access from the review workspace returned HTTP 403 for these sources. The links are retained for follow-up, with journal identity and publication-year SCIE verification still pending.
+
 [Clarivate Master Journal List](https://mjl.clarivate.com/home) is a lookup starting point. Keep dated evidence in an approved private workspace. Enter a year-specific registry record only once the status and evidence are verified and its public disclosure is approved. Keep unknown years absent, and use `not_indexed` only when supported by verified evidence.
 
 ## Private staging to public projection
